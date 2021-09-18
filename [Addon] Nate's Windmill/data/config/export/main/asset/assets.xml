@@ -1,0 +1,372 @@
+<!-- 
+Nate's Windmill Mod 
+
+GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
+
+1500010001 windmill
+1500010002 provided service text
+1500010003 loading tip
+1500010004 building description
+1500010005 unhide trigger
+1500010006 unlock trigger
+
+TODOs
+- sounds, ambient stuff
+- incidents
+- LineIDs
+
+-->
+
+<ModOps>
+  <!-- BUILDINGS -->
+  <!-- ========= -->
+
+  <!-- Nate's Windmill -->
+  <ModOp Path="//Assets[Asset/Values/Standard/GUID='100780']" Type="add">
+    <Asset>
+      <Template>PublicServiceBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010001</GUID>
+          <Name>nates_windmill</Name>
+          <IconFilename>data/jakob/ui/icons/icon_nates_windmill.png</IconFilename>
+          <InfoDescription>1500010004</InfoDescription>
+          <Version>dlc01</Version>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Nate's Windmill</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>23382</LineID> <!-- TODO -->
+        </Text>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Amount>90000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient> <!-- Steel Beams -->
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010210</Ingredient> <!-- Sail Cloth -->
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010224</Ingredient> <!-- Steam Machines -->
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Maintenance>
+          <IncomeCategory>InfrastructureBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>400</Amount>
+            </Item>
+            <Item>
+              <Product>1010117</Product> <!-- Engineers -->
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Selection>
+          <GUIType>PublicService</GUIType> <!-- PublicService uses FunctionDescription instead of InfoDescription (Generic) -->
+        </Selection>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/public/nates_windmill/nates_windmill_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable />
+        <Mesh />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>235839</Sound> <!-- metalic sound from carbon filament factory -->
+            </Item>
+          </ActiveSounds>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+        </SoundEmitter>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410040</DLCDependency> <!-- Sunken Treasures -->
+        </Locked>
+        <FeedbackController />
+        <AmbientMoodProvider />
+        <Attackable>
+          <!-- important for burn damage -->
+          <MaximumHitPoints>8000</MaximumHitPoints>
+          <SelfHealPerHealTick>10</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <!-- can burn, TODO need to play test more -->
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+        </IncidentInfectable>
+        <Infolayer />
+        <ItemContainer>
+          <!-- prevent overlapping with guild houses and other wind power plants -->
+          <SocketCount>0</SocketCount>
+          <SocketScopeRadiusOverlapCategory>GuildHouse</SocketScopeRadiusOverlapCategory>
+          <SocketScope>Radius</SocketScope>
+          <SocketScopeRadius>5</SocketScopeRadius>
+        </ItemContainer>
+        <Culture />
+
+        <!-- provide electricity, the power plant way -->
+        <FactoryBase />
+        <Powerplant>
+          <!-- industry power supply, visual power lines? -->
+          <ElectricityDistance>6</ElectricityDistance>
+          <IndustrializationDistance>6</IndustrializationDistance>
+        </Powerplant>
+        <PublicService>
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>6</FullSatisfactionDistance>
+          <NoSatisfactionDistance>6</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1010354</Product>
+            </Item>
+          </PublicServiceOutputs>
+          <FunctionDescription>1500010002</FunctionDescription> <!-- "provides electricity" -->
+        </PublicService>
+      </Values>
+    </Asset>
+  </ModOp>
+
+
+  <!-- BUFF TARGET POOLS -->
+  <!-- ================= -->
+
+  <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
+  <!-- (don't use old 190611) -->
+  <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010001</GUID>
+    </Item>
+  </ModOp>
+  <!-- no palace buffs -->
+  <!-- no guild house buffs -->
+
+
+  <!-- CONSTRUCTION MENUS -->
+  <!-- ================== -->
+
+  <!-- Old World Menu Engineers, insert after oil power plant -->
+  <ModOp Type="addNextSibling" GUID='25000192' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
+    <Item>
+      <Building>1500010001</Building>
+    </Item>
+  </ModOp>
+  <!-- Old World Menu Sorting City, insert after oil power plant -->
+  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
+    <Item>
+      <Building>1500010001</Building>
+    </Item>
+  </ModOp>
+
+
+  <!-- UNLOCK CONDITIONS -->
+  <!-- ================= -->
+
+  <!-- unhide on first engineer, unlock with motor assembly (500 engineers) -->
+  <ModOp Path="//Assets" Type="add">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010005</GUID>
+          <Name>Nate's Windmill</Name>
+          <Version>dlc01</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context> <!-- engineers -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010001</Asset> <!-- windmill -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+          <SubTriggers>
+            <Item>
+              <SubTrigger>
+                <Template>AutoCreateTrigger</Template>
+                <Values>
+                  <Trigger>
+                    <TriggerCondition>
+                      <Template>ConditionIsDLCActive</Template>
+                      <Values>
+                        <Condition />
+                        <ConditionIsDLCActive>
+                          <DLCAssetList>
+                            <Item>
+                              <DLCAsset>410040</DLCAsset> <!-- Sunken Treasures -->
+                            </Item>
+                          </DLCAssetList>
+                        </ConditionIsDLCActive>
+                        <ConditionPropsNegatable />
+                      </Values>
+                    </TriggerCondition>
+                  </Trigger>
+                </Values>
+              </SubTrigger>
+            </Item>
+          </SubTriggers>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010006</GUID>
+          <Name>Nate's Windmill</Name>
+          <Version>dlc01</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context> <!-- engineers -->
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010001</Asset> <!-- windmill -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+
+  <!-- TEXTS -->
+  <!-- ===== -->
+
+  <!-- add building description -->
+  <ModOp Path="//Assets" Type="add">
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010002</GUID>
+          <Name>Provides Electricity</Name>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Provides electricity to your industry and residents.</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>14506</LineID> <!-- TODO -->
+        </Text>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010004</GUID>
+          <Name>production building infocorner</Name>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Provides electricity to your industry and residents. Cannot be built in the area of guild houses.</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>14451</LineID>
+        </Text>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- loading tips -->
+  <ModOp Type="add" GUID='501477' Path="/Values/LoadingScene/LoadingTips">
+    <Item>
+      <Texts>
+        <Item>
+          <Text>1500010003</Text>
+        </Item>
+      </Texts>
+      <UnlockRequirement>410040</UnlockRequirement> <!-- Sunken Treasure -->
+    </Item>
+  </ModOp>
+</ModOps>
