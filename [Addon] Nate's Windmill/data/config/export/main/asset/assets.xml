@@ -5,7 +5,7 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
 
 1500010001 windmill
 1500010002 provided service text
-1500010003 loading tip
+1500010003 unused
 1500010004 building description
 1500010005 unhide trigger
 1500010006 unlock trigger
@@ -356,17 +356,5 @@ TODOs
         </Text>
       </Values>
     </Asset>
-  </ModOp>
-
-  <!-- loading tips -->
-  <ModOp Type="add" GUID='501477' Path="/Values/LoadingScene/LoadingTips">
-    <Item>
-      <Texts>
-        <Item>
-          <Text>1500010003</Text>
-        </Item>
-      </Texts>
-      <UnlockRequirement>410040</UnlockRequirement> <!-- Sunken Treasure -->
-    </Item>
   </ModOp>
 </ModOps>
