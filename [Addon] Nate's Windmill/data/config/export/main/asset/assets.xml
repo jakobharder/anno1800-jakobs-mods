@@ -81,6 +81,7 @@ TODOs
             <Item>
               <Product>1010117</Product> <!-- Engineers -->
               <Amount>50</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -116,8 +117,8 @@ TODOs
         <AmbientMoodProvider />
         <Attackable>
           <!-- important for burn damage -->
-          <MaximumHitPoints>8000</MaximumHitPoints>
-          <SelfHealPerHealTick>10</SelfHealPerHealTick>
+          <MaximumHitPoints>3000</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>
         <Pausable />
         <IncidentInfectable>
