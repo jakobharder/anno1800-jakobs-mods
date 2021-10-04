@@ -11,3 +11,7 @@
 ![](./%5BAddon%5D%20Nate's%20Windmill/banner.png)
 
 [\[Addon\] Nate's Windmill](./%5BAddon%5D%20Nate's%20Windmill/) - The windmill provides electricity within a very small area.
+
+![](./%5BAddon%5D%20Small%20Gas%20Power%20Plant/banner.png)
+
+[\[Addon\] Small Gas Power Plant](./%5BAddon%5D%20Small%20Gas%20Power%20Plant/) - Half cost, half range gas-fired power plant.
