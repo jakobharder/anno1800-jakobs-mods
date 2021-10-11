@@ -29,9 +29,16 @@ Palace buffs and obviously guild house buffs don't.
 - Guild house radius: 5
 - Electricity range: 6
 
-### Required DLCs & Compatibility
+## Required DLCs & Compatibility
 
 - Installed and activated Sunken Treasures (uses model + texture assets)
 - Works with existing save games
 - GUID range 1500010001 - 1500010006
 - I don't expect any issues as there are only additions
+
+## Translations
+
+Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
+Missing: none
+
+Contact me if you have new or improved translations.
