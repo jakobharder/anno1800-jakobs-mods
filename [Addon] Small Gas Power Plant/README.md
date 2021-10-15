@@ -26,14 +26,16 @@ Influence, palace and guild house buffs apply.
 - Unlock: same as gas power plant (1 investor)
 - Electricity range: 21
 
-### Required DLCs & Compatibility
+## Required DLCs & Compatibility
 
 - Installed and activated The Passage DLC (gas production)
 - Works with existing save games
 - GUID range: 1500010020
 - I don't expect any issues as there are only additions
 
-### Translations
+## Translations
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
 Missing: none
+
+Contact me if you have new or improved translations.

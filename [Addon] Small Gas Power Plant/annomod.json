@@ -1,0 +1,67 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,**/icons/*.png,banner.png,README.md}"
+    },
+    {
+      "action": "cf7",
+      "pattern": "**/*.cf7"
+    },
+    {
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,height,metal}.png",
+      "lods": 1
+    },
+    {
+      "action": "gltf",
+      "pattern": "**/*.{glb,gltf}"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0.0",
+    "ModID": "jakob_Small_Gas_Power_Plant",
+    "IncompatibleIds": [],
+    "ModDependencies": null,
+    "Category": {
+      "English": "Addon"
+    },
+    "ModName": {
+      "Chinese": "小型燃气发电厂",
+      "English": "Small Gas Power Plant",
+      "French": "Petit centrale au gaz",
+      "German": "Kleines Gaskraftwerk",
+      "Italian": "Piccola centrale elettrica a gas",
+      "Japanese": "小型ガス火力発電所",
+      "Korean": "소형 가스 화력 발전소",
+      "Polish": "Mała elektrownia gazowa",
+      "Russian": "Малая газовая электростанция",
+      "Spanish": "Pequeña central eléctrica a gas",
+      "Taiwanese": "小型燃氣發電廠"
+    },
+    "Description": {
+      "English": "README.md",
+      "German": "README_german.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [
+      {
+        "DLC": "ThePassage",
+        "Dependant": "required"
+      }
+    ],
+    "CreatorName": "Jakob",
+    "CreatorContact": null,
+    "Image" : null
+  }
+}

@@ -1,9 +1,5 @@
-# a little unusual to exclude all but a few, it's an easy way to allow cloning directly into the mods/ folder with other mods.
-*
-!.gitignore
-!\[Addon\] Nate's Windmill
-!\[Addon\] Nate's Windmill/**
-!\[Addon\] Small Gas Power Plant
-!\[Addon\] Small Gas Power Plant/**
-!jakobs-mods.code-workspace
-!README.md
+out/**
+**.modcache/
+# Only original textures exported via Blender include the lod ending _0
+# Custom textures never include that ending. There's no need to save them.
+**/*_0.png
