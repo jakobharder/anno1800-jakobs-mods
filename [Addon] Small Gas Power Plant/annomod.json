@@ -8,7 +8,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,**/icons/*.png,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.png,README.md}"
     },
     {
       "action": "cf7",
@@ -16,12 +16,21 @@
     },
     {
       "action": "texture",
+      "pattern": "**/icons/*.png",
+      "lods": 0
+    },
+    {
+      "action": "texture",
       "pattern": "**/*_{diff,norm,height,metal}.png",
-      "lods": 1
+      "lods": 3,
+      "changePath": "maps/"
     },
     {
       "action": "gltf",
-      "pattern": "**/*.{glb,gltf}"
+      "pattern": "**/*.{glb,gltf}",
+      "lods": 4,
+      "changePath": "rdm/",
+      "animPath": "anim/"
     },
     {
       "action": "modinfo",
