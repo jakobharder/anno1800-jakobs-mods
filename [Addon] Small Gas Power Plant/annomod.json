@@ -8,11 +8,15 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/effects/*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
+    },
+    {
+      "action": "rdpxml",
+      "pattern": "**/*.rdp.xml"
     },
     {
       "action": "texture",
@@ -38,7 +42,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.0.0",
+    "Version": "1.1.0",
     "ModID": "jakob_Small_Gas_Power_Plant",
     "IncompatibleIds": [],
     "ModDependencies": null,
@@ -70,7 +74,7 @@
       }
     ],
     "CreatorName": "Jakob",
-    "CreatorContact": null,
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null
   }
 }
