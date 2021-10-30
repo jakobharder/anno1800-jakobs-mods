@@ -8,6 +8,12 @@ variant:
       cModelDiffTex: data/jakob/buildings/townhall/maps/townhall_bluish_diff.psd
     - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
       cModelDiffTex: data/jakob/buildings/townhall/maps/townhall_bluish_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="building_base"]
+      cModelMetallicTex: data/jakob/buildings/townhall/maps/townhall_metal.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="building"]
+      cModelMetallicTex: data/jakob/buildings/townhall/maps/townhall_metal.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cModelMetallicTex: data/jakob/buildings/townhall/maps/townhall_metal.psd
     - xpath: //Config/Models/Config[Name="top"]
       FileName: data/jakob/buildings/townhall/rdm/townhall_2_lod0.rdm
     # disable smoke
