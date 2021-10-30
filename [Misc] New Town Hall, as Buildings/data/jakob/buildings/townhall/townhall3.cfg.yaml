@@ -1,0 +1,34 @@
+variant: 
+  source: townhall.cfg
+  modifications:
+    # model changes
+    - xpath: //Config/Models/Config/Materials/Config[Name="building_base"]
+      cModelDiffTex: data\dlc09\graphics\buildings\public\mall\maps\mall_diff_03.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="building"]
+      cModelDiffTex: data\dlc09\graphics\buildings\public\mall\maps\mall_diff_03.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cModelDiffTex: data/jakob/buildings/townhall/maps/townhall_bluish_diff.psd
+    - xpath: //Config/Models/Config[Name="top"]
+      FileName: data/jakob/buildings/townhall/rdm/townhall_1_lod0.rdm
+    # disable smoke
+    - xpath-remove: //Config/Particles/Config[Name="particle_smoke1"]
+    - xpath-remove: //Config/Particles/Config[Name="particle_smoke2"]
+    - xpath-remove: //Config/Particles/Config[Name="particle_smoke3"]
+    # move flags
+    - xpath: //Config/Files/Config[Name="file_flag1"]/Transformer/Config
+      Position.x: 0.684085
+      Position.y: 4.62695
+      Position.z: 0.684085
+    - xpath: //Config/Files/Config[Name="file_flag2"]/Transformer/Config
+      Position.x: -0.684085
+      Position.y: 4.62695
+      Position.z: -0.684085
+  ifo:
+    # adjust hitbox to new height
+    - xpath: //Info/IntersectBox[Name="Hitbox1"]
+      Position:
+        yf: 1.87816
+      Extents:
+        yf: 2.26325
+    - xpath-remove: //Info/IntersectBox[Name="Hitbox2"]
+    - xpath-remove: //Info/IntersectBox[Name="Hitbox3"]

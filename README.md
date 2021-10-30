@@ -15,8 +15,14 @@
 
 ![](./%5BAddon%5D%20Small%20Gas%20Power%20Plant/banner.png)
 
-[\[Addon\] Small Gas Power Plant](./%5BAddon%5D%20Small%20Gas%20Power%20Plant/) - Half cost, half range gas-fired power plant.
+[\[Addon\] Small Gas Power Plant](./%5BAddon%5D%20Small%20Gas%20Power%20Plant/) - Half cost, 40% coverage gas-fired power plant.
+
+![](./%5BMisc%5D%20New%20Town%20Hall,%20as%20Buildings//banner.png)
+
+[\[Misc\] New Town Hall, as Buidings](./%5BMisc%5D%20New%20Town%20Hall,%20as%20Buildings/) - New town hall and city hall tower buildings.
+
+[\[Misc\] New Town Hall, as Variations](./%5BMisc%5D%20New%20Town%20Hall,%20as%20Variations/) - New town hall as shift+v variations.
 
 ## Build and Modify Yourself
 
-The mods in this repository are built with the [Anno Modding Tools](https://github.com/jakobharder/vscode-anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
+The mods in this repository are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).

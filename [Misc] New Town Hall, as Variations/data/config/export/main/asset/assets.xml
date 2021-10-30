@@ -1,0 +1,27 @@
+<!-- 
+Town Hall Variations
+-->
+
+<ModOps>
+  <!-- VARIATIONS -->
+  <!-- ========== -->
+  <!-- 
+    This ModOp should actually be a merge, but the modloader doesn't add missing entries.
+    The resulting assets.xml may have several AllowChangeVariation because of it.
+  -->
+  <ModOp Type="add" GUID='100415' Path="/Values/Building">
+    <!-- enable variations -->
+    <AllowChangeVariation>1</AllowChangeVariation>
+  </ModOp>
+  <ModOp Type="add" GUID='100415' Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data/jakob/buildings/townhall/townhall.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data/jakob/buildings/townhall/townhall1.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data/jakob/buildings/townhall/townhall2.cfg</Filename>
+    </Item>
+  </ModOp>
+</ModOps>

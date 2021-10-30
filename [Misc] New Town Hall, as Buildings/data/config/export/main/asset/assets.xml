@@ -1,0 +1,540 @@
+<!-- 
+New Town Hall
+
+1500010021 new town hall
+1500010022 unhide trigger
+1500010023 unlock trigger
+1500010024 town hall tower
+1500010025 unhide trigger
+1500010026 unlock trigger
+1500010027 tower buff
+
+-->
+
+<ModOps>
+  <!-- BUILDINGS -->
+  <!-- ========= -->
+
+  <!-- normal variant -->
+  <ModOp Path="//Assets[Asset/Values/Standard/GUID='100415']" Type="add">
+    <Asset>
+      <BaseAssetGUID>100415</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010021</GUID>
+          <Name>new_town_hall</Name>
+          <Version>dlc09</Version>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall.psd</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>5000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/townhall.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/townhall1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/townhall2.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Upgradable>
+          <NextGUID>1500010024</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Amount>45000</Amount>
+              <Ingredient>1010017</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Amount>5</Amount>
+              <Ingredient>134623</Ingredient>
+            </Item>
+          </UpgradeCost>
+        </Upgradable>
+        <Mesh />
+        <Selection />
+        <Text>
+          <LineID>8504</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList />
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- tower variant -->
+  <ModOp Path="//Assets[Asset/Values/Standard/GUID='134619']" Type="add">
+    <Asset>
+      <BaseAssetGUID>100415</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010024</GUID>
+          <Name>town_hall_tower</Name>
+          <Version>dlc09</Version>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.psd</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>50000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Amount>5</Amount>
+              <Ingredient>134623</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/townhall3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/townhall4.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>500</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Mesh />
+        <Selection />
+        <Text>
+          <LineID>8504</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <ItemContainer />
+        <UpgradeList>
+          <!-- apply forward buff instead of bufffactory to be similar to palace town hall effects -->
+          <DefaultBuff>1500010027</DefaultBuff>
+        </UpgradeList>
+        <Attackable />
+        <Pausable />
+        <Maintenance />
+        <IncidentInfluencer />
+        <Culture />
+        <StorageBase />
+        <Warehouse />
+        <LogisticNode />
+        <Distribution />
+        <InfluenceSource />
+      </Values>
+    </Asset>
+  </ModOp>
+
+
+  <!-- CONSTRUCTION MENUS -->
+  <!-- ================== -->
+
+  <!-- Old World Menu Artisans, insert after town hall -->
+  <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
+    <Item>
+      <Building>1500010021</Building>
+    </Item>
+  </ModOp>
+  <!-- Old World Menu Investors, insert after elevator assembly -->
+  <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602']">
+    <Item>
+      <Building>1500010024</Building>
+    </Item>
+  </ModOp>
+  <!-- Old World Menu Sorting City, insert after town hall -->
+  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
+    <Item>
+      <Building>1500010021</Building>
+    </Item>
+    <Item>
+      <Building>1500010024</Building>
+    </Item>
+  </ModOp>
+
+
+  <!-- BUFFS -->
+  <!-- ================== -->
+
+  <ModOp Path="//Assets" Type="add">
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010027</GUID>
+          <Name>town_hall_tower_forward</Name>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.psd</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Town Hall Tower Forward Buff</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>36613</LineID>
+        </Text>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010024</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <EffectForward>
+          <ForwardEffect>1500010028</ForwardEffect>
+          <ForwardEffectRange>20</ForwardEffectRange>
+        </EffectForward>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Path="//Assets" Type="add">
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010028</GUID>
+          <Name>town_hall_tower_buff</Name>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.psd</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Town Hall Tower Buff</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>36613</LineID>
+        </Text>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>194018</GUID> <!-- all skyscrapers -->
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <FactoryUpgrade />
+        <BuildingUpgrade>
+          <MaintenanceUpgrade>
+            <Value>-10</Value>
+            <Percental>1</Percental>
+          </MaintenanceUpgrade>
+        </BuildingUpgrade>
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <ResidenceUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- BUFF TARGET POOLS -->
+  <!-- ================= -->
+
+  <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
+  <!-- (don't use old 190611) -->
+  <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010021</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010024</GUID>
+    </Item>
+  </ModOp>
+  <!-- add to all town halls -->
+  <ModOp Type="add" GUID='190781' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010021</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010024</GUID>
+    </Item>
+  </ModOp>
+
+
+  <!-- UNLOCK CONDITIONS -->
+  <!-- ================= -->
+
+  <!-- new town hall -->
+  <!-- unhide on first artisan -->
+  <ModOp Path="//Assets" Type="add">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010022</GUID>
+          <Name>unhide_new_town_hall</Name>
+          <Version>dlc09</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010021</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010023</GUID>
+          <Name>unlock_new_town_hall</Name>
+          <Version>dlc09</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010021</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  
+  <!-- town hall tower -->
+  <!-- unhide on first investor -->
+  <ModOp Path="//Assets" Type="add">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010025</GUID>
+          <Name>unhide_town_hall_tower</Name>
+          <Version>dlc09</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context> <!-- artisans -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010024</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010026</GUID>
+          <Name>unlock_town_hall_tower</Name>
+          <Version>dlc09</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context> <!-- investors -->
+                <CounterAmount>3000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010024</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>
