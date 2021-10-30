@@ -12,7 +12,7 @@ The variation and building versions are completely separate and can be activated
 
 The new town hall is the same as the original town hall. Except it may cost a few coins more :)
 
-The city hall tower is more expensive to maintain, but has a small buff to decrease maintenance cost of surrounging skyscrapers.
+The city hall tower is more expensive to maintain but has a small buff to decrease maintenance cost of surrounding skyscrapers.
 
 You can upgrade from the new town hall to the city hall tower by pressing "U" or using the upgrade cursor.
 
