@@ -12,8 +12,8 @@ New Town Hall
 -->
 
 <ModOps>
-  <!-- BUILDINGS -->
-  <!-- ========= -->
+  <!-- # Buildings -->
+  <!-- =========== -->
 
   <!-- normal variant -->
   <ModOp Path="//Assets[Asset/Values/Standard/GUID='100415']" Type="add">
@@ -215,8 +215,8 @@ New Town Hall
   </ModOp>
 
 
-  <!-- CONSTRUCTION MENUS -->
-  <!-- ================== -->
+  <!-- # Build Menus -->
+  <!-- ============= -->
 
   <!-- Old World Menu Artisans, insert after town hall -->
   <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
@@ -241,8 +241,8 @@ New Town Hall
   </ModOp>
 
 
-  <!-- BUFFS -->
-  <!-- ================== -->
+  <!-- # Buffs -->
+  <!-- ======= -->
 
   <ModOp Path="//Assets" Type="add">
     <Asset>
@@ -325,8 +325,8 @@ New Town Hall
     </Asset>
   </ModOp>
 
-  <!-- BUFF TARGET POOLS -->
-  <!-- ================= -->
+  <!-- # Buff Target Pools -->
+  <!-- =================== -->
 
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
@@ -349,8 +349,8 @@ New Town Hall
   </ModOp>
 
 
-  <!-- UNLOCK CONDITIONS -->
-  <!-- ================= -->
+  <!-- # Unlock Conditions -->
+  <!-- =================== -->
 
   <!-- new town hall -->
   <!-- unhide on first artisan -->

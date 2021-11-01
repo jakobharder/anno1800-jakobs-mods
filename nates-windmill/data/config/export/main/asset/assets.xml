@@ -18,8 +18,8 @@ TODOs
 -->
 
 <ModOps>
-  <!-- BUILDINGS -->
-  <!-- ========= -->
+  <!-- # Buildings -->
+  <!-- =========== -->
 
   <!-- Nate's Windmill -->
   <ModOp Path="//Assets[Asset/Values/Standard/GUID='100780']" Type="add">
@@ -162,7 +162,7 @@ TODOs
   </ModOp>
 
 
-  <!-- BUFF TARGET POOLS -->
+  <!-- # Buff Target Pools -->
   <!-- ================= -->
 
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
@@ -176,8 +176,8 @@ TODOs
   <!-- no guild house buffs -->
 
 
-  <!-- CONSTRUCTION MENUS -->
-  <!-- ================== -->
+  <!-- # Build Menus -->
+  <!-- ============= -->
 
   <!-- Old World Menu Engineers, insert after oil power plant -->
   <ModOp Type="addNextSibling" GUID='25000192' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
@@ -193,8 +193,8 @@ TODOs
   </ModOp>
 
 
-  <!-- UNLOCK CONDITIONS -->
-  <!-- ================= -->
+  <!-- # Unlock Conditions -->
+  <!-- =================== -->
 
   <!-- unhide on first engineer, unlock with motor assembly (500 engineers) -->
   <ModOp Path="//Assets" Type="add">
@@ -314,8 +314,8 @@ TODOs
   </ModOp>
 
 
-  <!-- TEXTS -->
-  <!-- ===== -->
+  <!-- # Texts -->
+  <!-- ======= -->
 
   <!-- add building description -->
   <ModOp Path="//Assets" Type="add">
