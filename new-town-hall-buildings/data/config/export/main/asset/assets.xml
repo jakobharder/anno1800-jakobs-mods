@@ -270,14 +270,32 @@ New Town Hall
       </Values>
     </Asset>
   </ModOp>
-  <!-- Old World Menu Investors, insert after elevator assembly -->
+  <!-- insert after townhall in city and artisan menu -->
+  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
+    <Item>
+      <Building>1500010024</Building>
+    </Item>
+  </ModOp>
+  <!-- fallback: append to city menu, skip artisan and rely on investors instead -->
+  <ModOp Type="add" GUID='500944' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1500010024'])]">
+    <Item>
+      <Building>1500010024</Building>
+    </Item>
+  </ModOp>
+  <!-- foreign mods: append to every menu that has the town hall, but doesn't have the new one yet -->
+  <ModOp Type="add" Path="//ConstructionCategory/BuildingList[Item/Building='100415' and not(Item[Building='1500010024'])]">
+    <Item>
+      <Building>1500010024</Building>
+    </Item>
+  </ModOp>
+  <!-- insert after elevator chain in investor menu -->
   <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602']">
     <Item>
       <Building>1500010024</Building>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting City, insert after town hall -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
+  <!-- fallback: append to investor menu -->
+  <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='137602'])]/Item[last()]">
     <Item>
       <Building>1500010024</Building>
     </Item>
@@ -488,14 +506,20 @@ New Town Hall
       </Values>
     </Asset>
   </ModOp>  
-  <!-- Old World Menu Artisans, insert after town hall -->
-  <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
+  <!-- insert after townhall in city and artisan menu -->
+  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
     <Item>
       <Building>1500010021</Building>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting City, insert after town hall -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
+  <!-- fallback: append to city and artisan menu -->
+  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1500010021'])]/Item[not(Building='1500010024')][last()]">
+    <Item>
+      <Building>1500010021</Building>
+    </Item>
+  </ModOp>
+  <!-- foreign mods: append to every menu that has the town hall, but doesn't have the new one yet -->
+  <ModOp Type="addNextSibling" Path="//ConstructionCategory/BuildingList[Item/Building='100415' and not(Item[Building='1500010021'])]/Item[not(Building='1500010024')][last()]">
     <Item>
       <Building>1500010021</Building>
     </Item>
