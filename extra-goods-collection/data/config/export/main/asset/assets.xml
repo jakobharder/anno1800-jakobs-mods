@@ -46,6 +46,8 @@ Jakob's Extra Goods
 1500010167 cheese asset pool
 1500010168 premium beer asset pool
 
+1500010181 unlock all goods at 1500 artisans
+
 -->
 
 <ModOps>
@@ -127,6 +129,65 @@ Jakob's Extra Goods
             </Item>
           </List>
         </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010181</GUID>
+          <Name>unlock everything</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>1500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010162</Asset> <!-- wooden accessory asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010163</Asset> <!-- tools asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010164</Asset> <!-- canned fish asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010165</Asset> <!-- OW suits asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010166</Asset> <!-- olive soap asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010167</Asset> <!-- cheese asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010168</Asset> <!-- premium beer asset pool -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
       </Values>
     </Asset>
   </ModOp>
@@ -450,8 +511,8 @@ Jakob's Extra Goods
       <Product>1500010156</Product>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting Consumables, insert after soap -->
-  <ModOp Type="addNextSibling" GUID='500945' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- OW consumables, workers menu: insert after beer -->
+  <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>
       <Building>1500010158</Building>
     </Item>
@@ -743,8 +804,8 @@ Jakob's Extra Goods
       <Product>1500010153</Product>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting Consumables, insert after soap -->
-  <ModOp Type="addNextSibling" GUID='500945' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- OW consumables, workers menu: insert after beer -->
+  <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>
       <Building>1500010155</Building>
     </Item>
@@ -1019,14 +1080,8 @@ Jakob's Extra Goods
       <Product>1500010150</Product>
     </Item>
   </ModOp>
-  <!-- consumable menu: insert after schnapps -->
-  <ModOp Type="addNextSibling" GUID='500945' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500002']">
-    <Item>
-      <Building>1500010152</Building>
-    </Item>
-  </ModOp>
-  <!-- farmers menu: insert after schnapps -->
-  <ModOp Type="addNextSibling" GUID='25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500002']">
+  <!-- OW consumables, farmers menu: insert after workers cloth -->
+  <ModOp Type="addNextSibling" GUID='500945,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500505']">
     <Item>
       <Building>1500010152</Building>
     </Item>
@@ -1321,8 +1376,8 @@ Jakob's Extra Goods
       <Product>1500010120</Product>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting Consumables, insert after canned food -->
-  <ModOp Type="addNextSibling" GUID='500945' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- OW consumables, artisans menu: insert after fur coats -->
+  <ModOp Type="addNextSibling" GUID='500945,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
     <Item>
       <Building>1500010122</Building>
     </Item>
@@ -1995,6 +2050,9 @@ Jakob's Extra Goods
                 </Item>
               </Tier2>
             </Item>
+            <Item>
+              <Building>1010267</Building>
+            </Item>
           </Tier1>
         </ProductionChain>
         <Locked />
@@ -2076,8 +2134,8 @@ Jakob's Extra Goods
       <Product>114391</Product>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting Consumables, insert after canned food -->
-  <ModOp Type="addNextSibling" GUID='500945' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- OW consumables, artisans menu: insert after fur coats -->
+  <ModOp Type="addNextSibling" GUID='500945,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
     <Item>
       <Building>1500010129</Building>
     </Item>
@@ -2573,8 +2631,8 @@ Jakob's Extra Goods
       <Product>1500010106</Product>
     </Item>
   </ModOp>
-  <!-- Old World Menu Sorting Consumables, insert after soap -->
-  <ModOp Type="addNextSibling" GUID='500945' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- OW consumables, workers menu: insert after beer -->
+  <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>
       <Building>1500010109</Building>
     </Item>

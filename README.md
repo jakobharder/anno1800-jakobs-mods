@@ -27,6 +27,8 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 [\[Misc\] New Town Hall, as Variations](./new-town-hall-variations/) - New town hall as shift+v variations.
 
-### Extra Goods Collection
+![](./pescatarians/banner.png)
+
+[\[Addon\] Pescatarians](./pescatarians/) - Alternative tiers with same workforce but different needs.
 
 [\[Shared\] Extra Goods Collection](./extra-goods-collection) - Cheese, Olive Soap, Hemp, Canned Fish, ...
