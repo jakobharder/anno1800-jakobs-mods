@@ -2,11 +2,21 @@
 
 ![](./banner.png)
 
-The building version of this mod enables the new town hall as separate buildings.
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
 
-If you do not need the tower versions and prefer shift+v variations you can use the other mod.
+## Notes
 
-The variation and building versions are completely separate and can be activated/deactivated to your liking.
+- You need the High Life DLC.
+
+- This mod ("as Buildings") enables the new town hall as separate buildings.
+
+  If you do not need the tower versions and prefer only shift+v variations you can use the other mod ("as Variations").
+
+  The variation and building versions are completely separate and can be activated/deactivated to your liking.
+
+  ⚠ Please always update both, if you use both. They share models and textures to reduce GPU memory usage.
+
+- Works with existing save games.
 
 ## How it works
 
@@ -16,37 +26,18 @@ The city hall tower is more expensive to maintain but has a small buff to decrea
 
 You can upgrade from the new town hall to the city hall tower by pressing "U" or using the upgrade cursor.
 
-### Construction Menu
+### New Town Hall
 
-- Artisans Menu: after original town hall (small)
-- Investors Menu: after elevator production (tower)
-- City Menu: both after original town hall
-
-### Stats
-
-New Town Hall
-
-- Cost: 5000 credits, 20 timber, 25 bricks, 20 steel beams and 5 windows
-- Maintenance: 50 credits
 - Unlock: 500 artisans
+- Menu: after original town hall in artisan and city menu.
 
-City Hall Tower
+### City Hall Tower
 
-- Cost: 50000 credits, 20 timber, 25 bricks, 40 steel beams, 40 windows, 40 concrete and 5 elevators
-- Maintenance: 500 credits
-- Unlock: same as elevator production chain (3000 investors)
-
-
-## Required DLCs & Compatibility
-
-- Installed and activated High Life DLC (models and textures are reused from there)
-- Works with existing save games
-- I don't expect any other issues as only buildings are added.
-- Models and textures are performance optimized with LODs
+- Unlock: 3000 investors
+- Menu: after original town hall in artisan and city menu. Also after elevators in investor menu.
 
 ## Translations
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
-Missing: none
 
 Contact me if you have new or improved translations.
