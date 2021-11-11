@@ -14,7 +14,7 @@ New Town Hall
 <ModOps>
   <!-- # Town Hall Tower -->
   <!-- ================= -->
-  <ModOp Path="//Assets" Type="add">
+  <ModOp GUID='100415' Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>100415</BaseAssetGUID>
       <Values>
@@ -89,7 +89,9 @@ New Town Hall
         <SoundEmitter />
         <FeedbackController />
         <Infolayer />
-        <ItemContainer />
+        <ItemContainer>
+          <SocketCount>3</SocketCount> <!-- change this number to 4, if you want to have 4 item slots -->
+        </ItemContainer>
         <UpgradeList>
           <!-- apply forward buff instead of bufffactory to be similar to palace town hall effects -->
           <DefaultBuff>1500010027</DefaultBuff>
@@ -316,7 +318,7 @@ New Town Hall
   
   <!-- # New Town Hall -->
   <!-- =============== -->
-  <ModOp Path="//Assets" Type="add">
+  <ModOp GUID='100415' Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>100415</BaseAssetGUID>
       <Values>

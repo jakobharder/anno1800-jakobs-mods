@@ -36,6 +36,10 @@ You can upgrade from the new town hall to the city hall tower by pressing "U" or
 - Unlock: 3000 investors
 - Menu: after original town hall in artisan and city menu. Also after elevators in investor menu.
 
+The tower has 3 item slots, but if you like to use 4 instead you can change the mod as follows:
+- Open `[Misc] New Town Hall, as Buildings/data/config/export/main/asset/assets.xml`
+- You'll find `<SocketCount>3</SocketCount>` at line 93. Change that number into 4.
+
 ## Translations
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
