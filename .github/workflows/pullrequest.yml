@@ -1,0 +1,27 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+name: Delta build
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # to be able to do git diff
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: install dependencies
+        run: npm install .
+      - name: build mods
+        run: npm run build-changed
+      - name: upload mods
+        uses: actions/upload-artifact@v2
+        with:
+          name: changed-mods
+          path: out/**
+          if-no-files-found: error
