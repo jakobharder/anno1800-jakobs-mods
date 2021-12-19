@@ -19,10 +19,14 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 ![](./small-gas-power-plant/banner.png)
 
-[\[Addon\] Small Gas Power Plant](./small-gas-power-plant/) - Half cost, 40% coverage gas-fired power plant.
+[\[Gameplay\] Small Gas Power Plant](./small-gas-power-plant/) - Half cost, 40% coverage gas-fired power plant.
 
 ![](./new-town-hall-buildings/banner.png)
 
 [\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/) - New town hall and city hall tower buildings.
 
 [\[Misc\] New Town Hall, as Variations](./new-town-hall-variations/) - New town hall as shift+v variations.
+
+### Extra Goods Collection
+
+[\[Shared\] Extra Goods Collection](./extra-goods-collection) - Cheese, Olive Soap, Hemp, Canned Fish, ...
