@@ -1,0 +1,60 @@
+<!-- 
+Upgradable Low Tiers
+
+1500010200 worker skyscraper
+
+-->
+
+<ModOps>
+  <!-- # Residence: Worker -->
+  <ModOp GUID='1010344' Type="add" Path="Values">
+    <FloorStackOwner>
+      <UpgradeTargetGUID>1500010200</UpgradeTargetGUID>
+      <AddFloorCost>
+        <Item>
+          <Ingredient>1010017</Ingredient>
+          <Amount>500</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>10</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010205</Ingredient>
+          <Amount>10</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010218</Ingredient>
+          <Amount>5</Amount>
+        </Item>
+      </AddFloorCost>
+    </FloorStackOwner>
+  </ModOp>
+  <ModOp GUID='1010344' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010344</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010200</GUID>
+          <Name>worker_skyscraper</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/residence/worker_scraper/worker_scraper_1.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <!-- disable skins -->
+            <SkinList />
+          </Skins>
+        </Object>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>
