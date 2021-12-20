@@ -1,0 +1,10 @@
+variant: 
+  source: ../worker_scraper_3.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="building1"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_narrow_2f_lod0.rdm
+    # roofs
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd

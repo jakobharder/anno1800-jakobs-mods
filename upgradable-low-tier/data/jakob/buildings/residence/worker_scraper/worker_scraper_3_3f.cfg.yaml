@@ -1,0 +1,23 @@
+variant: 
+  source: worker_scraper_3.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="building2"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_1_var1_3f_lod0.rdm
+    - xpath: //Config/Models/Config[Name="building1"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_narrow_3f_lod0.rdm
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 2.14551
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.y: 2.29896
+  ifo:
+    # adjust hitbox to new height
+    - xpath: //Info/IntersectBox[Name="hitbox_0"]
+      Position:
+        xf: 0.267113
+        yf: 0.820739
+        zf: 0.204317
+      Extents:
+        xf: 0.752791
+        yf: 0.820739
+        zf: 1.295805

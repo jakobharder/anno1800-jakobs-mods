@@ -1,0 +1,31 @@
+variant: 
+  source: ../worker_scraper_corner.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="building1"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_corner_var1_3f_lod0.rdm
+    - xpath: //Config/Models/Config[Name="building2"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_narrow_3f_lod0.rdm
+    - xpath: //Config/Models/Config[Name="building3"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_narrow_3f_lod0.rdm
+    # roofs
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+      cDiffuseColor.r: 0.8400
+      cDiffuseColor.g: 0.8800
+      cDiffuseColor.b: 0.8500
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_diff.psd
+      cDiffuseColor.r: 0.9000
+      cDiffuseColor.g: 0.7500
+      cDiffuseColor.b: 0.7000
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof3"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt_diff.psd
+      cDiffuseColor.r: 0.8000
+      cDiffuseColor.g: 0.9000
+      cDiffuseColor.b: 0.9000
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 2.15017
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.y: 2.3176

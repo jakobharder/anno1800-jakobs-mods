@@ -1,0 +1,12 @@
+variant: 
+  source: worker_scraper_1.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="building2"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_1_var2_2f_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config[Name="main1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_diff.psd
+      cDiffuseColor.r: 1.0000
+      cDiffuseColor.g: 1.1250
+      cDiffuseColor.b: 1.2500

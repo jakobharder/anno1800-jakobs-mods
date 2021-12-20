@@ -1,0 +1,13 @@
+variant: 
+  source: ../worker_scraper_3.cfg
+  modifications:
+    # roofs
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_diff.psd
+    # walls
+    - xpath: //Config/Models/Config/Materials/Config[Name="main1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="main2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_norm.psd

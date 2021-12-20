@@ -1,0 +1,37 @@
+variant: 
+  source: ../worker_scraper_end_right_2f.cfg
+  modifications:
+    # left
+    - xpath: //Config/Models/Config[Name="building1"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_1_var1_3f_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config[Name="main1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_diff.psd
+      cDiffuseColor.r: 1.0000
+      cDiffuseColor.g: 0.7000
+      cDiffuseColor.b: 0.7000
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    # right
+    - xpath: //Config/Models/Config[Name="building2"]
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_narrow_3f_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config[Name="main2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 2.14551
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.y: 2.29896
+    # walls
+    - xpath: //Config/Models/Config/Materials/Config[Name="main1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_painted3_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="main2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_painted2_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="main3"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_painted_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
