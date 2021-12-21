@@ -1,0 +1,10 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\residence\residence_tier01_estate04\residence_tier01_estate04.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="01_building"]
+      cModelDiffTex: data\jakob\buildings\residence\residence_tier01\maps\residence_tier1_6_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="02_building"]
+      cModelDiffTex: data\jakob\buildings\residence\residence_tier01\maps\residence_tier1_3_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="03_building"]
+      cModelDiffTex: data\jakob\buildings\residence\residence_tier01\maps\residence_tier1_4_diff.psd
