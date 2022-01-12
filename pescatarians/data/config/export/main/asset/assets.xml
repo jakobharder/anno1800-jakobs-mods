@@ -32,6 +32,10 @@ Pescatarian
 1500010184 close production bonus
 1500010185 unlock
 
+1500010186 construction menu
+1500010187 unlock construction menu
+1500010188 menu description text
+
 -->
 
 <ModOps>
@@ -657,18 +661,6 @@ Pescatarian
         </Text>
       </Values>
     </Asset>
-  </ModOp>
-  <!-- insert after market in city and farmers menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
-    <Item>
-      <Building>1500010142</Building>
-    </Item>
-  </ModOp>
-  <!-- fallback: append to city and farmers menu -->
-  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010343'])]">
-    <Item>
-      <Building>1500010142</Building>
-    </Item>
   </ModOp>
 
   <!-- # Residence: Worker -->
@@ -1326,16 +1318,51 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # construction menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010186</GUID>
+          <Name>Pescatarians Menu</Name>
+          <IconFilename>data\jakob\ui\icons\icon_pescatarian_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010100</Building>
+            </Item>
+            <Item>
+              <Building>1500010142</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010188</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010188</GUID>
+          <Name>pescatarian_menu_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
   <!-- insert after market in city and farmers menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372']">
+  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
     <Item>
-      <Building>1500010100</Building>
+      <Building>1500010186</Building>
     </Item>
   </ModOp>
   <!-- fallback: append to city and farmers menu -->
-  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010372'])]">
+  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010343'])]">
     <Item>
-      <Building>1500010100</Building>
+      <Building>1500010186</Building>
     </Item>
   </ModOp>
 
@@ -1533,7 +1560,7 @@ Pescatarian
       <Values>
         <Standard>
           <GUID>1500010180</GUID>
-          <Name>unhide farmer residence, community center</Name>
+          <Name>unhide construction menu</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -1552,10 +1579,13 @@ Pescatarian
                   <ActionUnlockAsset>
                     <UnhideAssets>
                       <Item>
-                        <Asset>1500010142</Asset>
+                        <Asset>1500010186</Asset>
                       </Item>
                       <Item>
                         <Asset>1500010100</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010142</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
@@ -1630,6 +1660,48 @@ Pescatarian
                       </Item>
                       <Item>
                         <Asset>1500010168</Asset> <!-- premium beer asset pool -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- extra unlock because added in a newer version -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010187</GUID>
+          <Name>unlock construction menu</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>1500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010186</Asset> <!-- construction menu -->
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
