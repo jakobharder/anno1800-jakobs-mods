@@ -8,8 +8,172 @@ Upgradable Low Tiers
 -->
 
 <ModOps>
-  <!-- # Residence: Worker -->
+  <!-- # shared products -->
+  <!-- copy in case somebody forgot to include the extra goods collection -->
+  <ModOp GUID='1010200' Type="addNextSibling">
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010153</GUID>
+          <Name>tools</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Tools</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11705</ProductCategory>
+          <BasePrice>240</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>10</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Crafting</Attribute>
+              <Amount>50</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>19796</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010120</GUID>
+          <Name>canned_fish</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Canned Fish</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- natural products -->
+          <BasePrice>563</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>40</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010127</GUID>
+          <Name>suits</Name>
+          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
+          <Version>dlc06</Version>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Suits</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- natural products -->
+          <BasePrice>480</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>6</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>15</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>129492</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010102</GUID>
+          <Name>cheese</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Cheese</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <BasePrice>45</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute> <!-- TODO make edible --> 
+          <BaseMorale>20</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- # modify vanilla worker upgrade path -->
   <ModOp GUID='1010344' Type="add" Path="Values">
+    <!-- TODO this will not work if another mod already adds floors -->
     <FloorStackOwner>
       <UpgradeTargetGUID>1500010200</UpgradeTargetGUID>
       <AddFloorCost>
@@ -36,6 +200,7 @@ Upgradable Low Tiers
       </AddFloorCost>
     </FloorStackOwner>
   </ModOp>
+  <!-- # Residence: Worker -->
   <ModOp GUID='1010346' Type="addNextSibling">
     <Asset>
       <!-- inherit from engineers instead of workers to get InfluencedByNeighbors -->
