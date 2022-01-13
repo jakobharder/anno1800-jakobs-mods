@@ -6,9 +6,9 @@
 
 ## Notes
 
-- This is a preview version.
-  Expect some updates with fine tuning.
 - You need "Land of Lions" DLC and the mod "[Shared] Extra Goods Collection".
+  Products like Linen (LoL) and basic needs like Cheese (Extra Goods Collection) are required! 
+- Optional: use "[Misc] Residence Skin Pack" to change the default look of Pescatarians to differ from the main game.
 - Works with existing save games.
 
 ## How it works
@@ -33,7 +33,7 @@ They like to live together as a community across tiers, thus higher tier residen
   - Luxury: tools (iron, wood)
   - Luxury: bottled beer (malt, hops, glass)
 - Suit and canned fish factories reduce needs when close to residences.
-- Artisan residences include a white and a colorful skin.
+- Artisan residences get several skins with the "[Misc] Residence Skin Pack".
 
 ### Build menu
 

@@ -1,0 +1,79 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.png,README.md}"
+    },
+    {
+      "action": "cf7",
+      "pattern": "**/*.cf7"
+    },
+    {
+      "action": "static",
+      "pattern": "data/jakob/ui/icons/*.png"
+    },
+    {
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
+      "lods": 3,
+      "changePath": "maps/"
+    },
+    {
+      "action": "gltf",
+      "pattern": "**/*.gltf",
+      "lods": 4,
+      "changePath": "rdm/",
+      "animPath": "anim/"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0.0",
+    "ModID": "jakob_skin_pack",
+    "IncompatibleIds": [],
+    "ModDependencies": [],
+    "Category": {
+      "English": "Misc"
+    },
+    "ModName": {
+      "Chinese": null,
+      "English": "Residence Skin Pack",
+      "French": null,
+      "German": null,
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    },
+    "Description": {
+      "English": "README.md",
+      "German": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [
+      {
+        "DLC": "LandOfLions",
+        "Dependant": "required"
+      }
+    ],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}
