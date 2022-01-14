@@ -1518,16 +1518,6 @@ Jakob's Extra Goods
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Teff Farm</Text>
-              <Status>Exported</Status>
-              <ExportCount>2</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>44427</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter>
@@ -1591,7 +1581,7 @@ Jakob's Extra Goods
               <ModuleGUID>1500010125</ModuleGUID>
             </Item>
           </ConstructionOptions>
-          <AdditionalModule>269837</AdditionalModule>
+          <AdditionalModule>269839</AdditionalModule> <!-- same as grain farm -->
           <AdjustModuleOrientationOnceAdditionalModuleWasPlaced>1</AdjustModuleOrientationOnceAdditionalModuleWasPlaced>
           <ModuleBuildRadius>0</ModuleBuildRadius>
           <HardFarmsConfig>2</HardFarmsConfig>
@@ -2276,13 +2266,6 @@ Jakob's Extra Goods
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Grain Farm (GASOLINE TEST)</Text>
-            </English>
-          </LocaText>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter>
@@ -2346,7 +2329,7 @@ Jakob's Extra Goods
             </Item>
           </ConstructionOptions>
           <ModuleBuildRadius>0</ModuleBuildRadius>
-          <HardFarmsConfig>1</HardFarmsConfig>
+          <AdditionalModule>269837</AdditionalModule> <!-- same as non-grain farms -->
         </ModuleOwner>
         <AmbientMoodProvider>
           <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
@@ -2402,7 +2385,9 @@ Jakob's Extra Goods
         </Culture>
         <QuestObject />
         <Industrializable />
-        <Motorizable />
+        <Motorizable>
+          <MotorizableType>Tractor</MotorizableType>
+        </Motorizable>
       </Values>
     </Asset>
     <Asset>
@@ -3034,6 +3019,227 @@ Jakob's Extra Goods
   <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>
       <Building>1500010111</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # buff targets -->
+  <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
+  <ModOp Type="add" GUID="194006,191471,190865" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010107</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <!-- orchards -->
+  <ModOp Type="add" GUID="194008" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010107</GUID>
+    </Item>
+  </ModOp>
+  <!-- all farms, including cattle farm -->
+  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010107</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+  </ModOp>
+  <!-- cattle farms -->
+  <ModOp Type="add" GUID="190872,193958" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+  </ModOp>
+  <!-- all food productions -->
+  <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010121</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010103</GUID>
+    </Item>
+  </ModOp>
+  <!-- all cloth productions -->
+  <ModOp Type="add" GUID="190890" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010128</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010126</GUID>
+    </Item>
+  </ModOp>
+  
+  <!-- specific items -->
+  <ModOp Type="add" GUID="190745,190747,190749,190751" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010107</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191398" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010121</GUID>
+    </Item>
+    <Item>
+      <GUID>1010278</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="136823,190751,190749" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010107</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="190841,190840" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010121</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010154</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="125067,191328,125138,191347,191329,191327" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010128</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191424,191464,191422,191419" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010154</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="136827,190894" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="190910,191431,191429" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010151</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191405,191407,191404" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010121</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191319,191317" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010108</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="190748" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+  </ModOp>
+  <!-- general production targets -->
+  <ModOp Type="add" GUID="193879,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010157</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010154</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010151</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010121</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010126</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010124</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010128</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010107</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010108</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010103</GUID>
+    </Item>
+  </ModOp>
+  <!-- electricity -->
+  <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010157</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010154</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010151</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010121</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010126</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010128</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010108</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010103</GUID>
+    </Item>
+  </ModOp>
+  <!-- boostable buildings -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010157</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010154</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010151</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010121</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010126</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010124</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010128</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010107</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010108</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010104</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010103</Factory>
     </Item>
   </ModOp>
 </ModOps>
