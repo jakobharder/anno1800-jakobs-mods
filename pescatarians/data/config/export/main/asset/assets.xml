@@ -1078,8 +1078,22 @@ Pescatarian
     </Item>
   </ModOp>
 
-  <!-- # Vanilla residence InfluencedByNeighbors -->
+  <!-- # InfluencedByNeighbors, spawn feedback, ... -->
   <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500010142</Building>
+    </Item>
+    <Item>
+      <Building>1500010143</Building>
+    </Item>
+    <Item>
+      <Building>1500010144</Building>
+    </Item>
+    <Item>
+      <Building>1500010145</Building>
+    </Item>
+  </ModOp>
+  <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500010142</Building>
     </Item>
@@ -1418,6 +1432,48 @@ Pescatarian
     </Asset>
   </ModOp>
 
+  <!-- # Buff Targets -->
+  <!-- the below modops are very expensive, but in case of farmers, workers, ... it's impossible to hardcode all targets -->
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343']">
+    <Item>
+      <GUID>1500010142</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010343']">
+    <Item>
+      <GUID>1500010142</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010344']">
+    <Item>
+      <GUID>1500010143</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
+    <Item>
+      <GUID>1500010143</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010144</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010144</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010145</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010145</GUID>
+    </Item>
+  </ModOp>
 
   <!-- # Unlocks, notifications -->
   <!-- <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">
