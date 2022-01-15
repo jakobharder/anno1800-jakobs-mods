@@ -658,14 +658,14 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
-  <!-- city menu: insert after vanilla farmer, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343'] | /Values/ConstructionCategory/BuildingList[not(Item/Building='1010343')]/Item[last()]">
+  <!-- insert after market in city and farmers menu -->
+  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
     <Item>
       <Building>1500010142</Building>
     </Item>
   </ModOp>
-  <!-- farmers menu: insert after market place, fallback after dirty road or append -->
-  <ModOp Type="addNextSibling" GUID='25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343'] | /Values/ConstructionCategory/BuildingList[not(Item/Building='1010343')]/Item[Building='1000178'] | /Values/ConstructionCategory/BuildingList[not(Item/Building='1010343') and not(Item/Building='1000178')]/Item[last()]">
+  <!-- fallback: append to city and farmers menu -->
+  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010343'])]">
     <Item>
       <Building>1500010142</Building>
     </Item>
@@ -1326,14 +1326,14 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
-  <!-- city menu: insert after market place -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372']">
+  <!-- insert after market in city and farmers menu -->
+  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372']">
     <Item>
       <Building>1500010100</Building>
     </Item>
   </ModOp>
-  <!-- farmers menu: insert after market place, fallback after dirty road or append -->
-  <ModOp Type="addNextSibling" GUID='25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372'] | /Values/ConstructionCategory/BuildingList[not(Item/Building='1010372')]/Item[Building='1000178'] | /Values/ConstructionCategory/BuildingList[not(Item/Building='1010372') and not(Item/Building='1000178')]/Item[last()]">
+  <!-- fallback: append to city and farmers menu -->
+  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010372'])]">
     <Item>
       <Building>1500010100</Building>
     </Item>
