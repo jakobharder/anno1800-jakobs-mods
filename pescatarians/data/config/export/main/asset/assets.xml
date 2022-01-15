@@ -5,6 +5,8 @@ Pescatarian
 
 1500010119 church service
 
+1500010101 - 1500010129 (moved to extra goods)
+
 601382 (1500010130) farmer # must be unsafe GUIDs between tourist 601379 and farmers 15000000
 601383 (1500010131) worker
 601384 (1500010132) artisan
@@ -23,6 +25,10 @@ Pescatarian
 1500010147 farmer boost for workers
 1500010148 farmer boost for artisans
 1500010149 engineers are converters
+
+1500010150 - 1500010168 (moved to extra goods)
+
+1500010169 engineers are converters desc
 
 1500010180 unhide
 1500010181 (unlock goods, moved to extra goods collection)
@@ -785,6 +791,7 @@ Pescatarian
           <GUID>1500010147</GUID>
           <Name>workers_love_to_farm</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -793,16 +800,6 @@ Pescatarian
             </Item>
           </EffectTargets>
         </ItemEffect>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Workers love to farm</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
         <BuildingUpgrade />
         <Buff />
         <PopulationUpgrade />
@@ -942,18 +939,9 @@ Pescatarian
           <GUID>1500010148</GUID>
           <Name>artisans_love_to_farm</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
         </Standard>
         <ItemEffect />
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Artisans love to farm</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
         <BuildingUpgrade />
         <Buff />
         <PopulationUpgrade />
@@ -1005,32 +993,12 @@ Pescatarian
           <GUID>1500010149</GUID>
           <Name>engineers_are_converters</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010169</InfoDescription>
         </Standard>
         <ItemEffect />
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Engineers are converters</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
         <BuildingUpgrade />
         <Buff />
-        <PopulationUpgrade>
-          <InputBenefitModifier>
-            <Item>
-              <Product>1500010120</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>1500010127</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
-            </Item>
-          </InputBenefitModifier>
-        </PopulationUpgrade>
+        <PopulationUpgrade />
         <ResidenceUpgrade>
           <NeedProvideNeedUpgrade>
             <Item>
@@ -1049,6 +1017,15 @@ Pescatarian
         <WarehouseUpgrade />
         <DistributionUpgrade />
         <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010169</GUID>
+          <Name>pesca_engineer_fluff</Name>
+        </Standard>
       </Values>
     </Asset>
   </ModOp>
@@ -1339,7 +1316,7 @@ Pescatarian
           <GUID>1500010184</GUID>
           <Name>suits_maker_reduced_needs</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <InfoDescription></InfoDescription>
+          <InfoDescription>1500010170</InfoDescription>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -1388,7 +1365,7 @@ Pescatarian
           <GUID>1500010183</GUID>
           <Name>cannery_reduced_needs</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
-          <InfoDescription></InfoDescription>
+          <InfoDescription>1500010170</InfoDescription>
         </Standard>
         <ItemEffect>
           <EffectTargets>
