@@ -136,7 +136,7 @@ Jakob's Extra Goods
       <Values>
         <Standard>
           <GUID>1500010181</GUID>
-          <Name>unlock everything</Name>
+          <Name>unlock everything 1500 artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -146,8 +146,68 @@ Jakob's Extra Goods
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context> <!-- artisans -->
+                <Context>15000002</Context>
                 <CounterAmount>1500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010162</Asset> <!-- wooden accessory asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010163</Asset> <!-- tools asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010164</Asset> <!-- canned fish asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010165</Asset> <!-- OW suits asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010166</Asset> <!-- olive soap asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010167</Asset> <!-- cheese asset pool -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010168</Asset> <!-- premium beer asset pool -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- add another trigger for 1 engineer, happens when you already progressed and don't have 1500 artisans anymore -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010179</GUID>
+          <Name>unlock everything 1 engineer</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -1193,7 +1253,10 @@ Jakob's Extra Goods
           <LineID>5260</LineID>
         </Text>
         <Constructable />
-        <Locked />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410071</DLCDependency>
+        </Locked>
         <SoundEmitter>
           <ActiveSounds>
             <Item>
@@ -1325,7 +1388,10 @@ Jakob's Extra Goods
             </Item>
           </Tier1>
         </ProductionChain>
-        <Locked />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410071</DLCDependency>
+        </Locked>
         <Text>
           <LocaText>
             <English>
@@ -1788,7 +1854,10 @@ Jakob's Extra Goods
             </Item>
           </Maintenances>
         </Maintenance>
-        <Locked />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410071</DLCDependency>
+        </Locked>
       </Values>
     </Asset>
     <Asset>
@@ -1930,7 +1999,10 @@ Jakob's Extra Goods
           <LineID>44491</LineID>
         </Text>
         <Constructable />
-        <Locked />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410071</DLCDependency>
+        </Locked>
         <SoundEmitter>
           <ActiveSounds>
             <Item>
@@ -2045,7 +2117,10 @@ Jakob's Extra Goods
             </Item>
           </Tier1>
         </ProductionChain>
-        <Locked />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410071</DLCDependency>
+        </Locked>
         <Text>
           <LocaText>
             <English>
