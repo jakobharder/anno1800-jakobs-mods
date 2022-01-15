@@ -1029,29 +1029,19 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
-  <ModOp GUID='15000003' Type="addPrevSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010217']">
+  <ModOp GUID='15000003' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+    <!-- append new needs to the end, so that normal Engineers will never show a (faulty) missing warning -->
     <Item>
       <Product>1500010120</Product>
       <Amount>0.00034188</Amount>
-      <!-- <HappinessValue>1</HappinessValue> -->
       <SupplyWeight>1</SupplyWeight>
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
-      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
-      <FullWeightPopulationCount>10000000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>9999999</NoWeightPopulationCount>
-      <OptionalInputPopulationUnlock>1</OptionalInputPopulationUnlock>
     </Item>
-  </ModOp>
-  <ModOp GUID='15000003' Type="addPrevSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010247']">
     <Item>
       <Product>1500010127</Product>
       <Amount>0.000888889</Amount>
       <SupplyWeight>1</SupplyWeight>
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
-      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
-      <FullWeightPopulationCount>10000000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>9999999</NoWeightPopulationCount>
-      <OptionalInputPopulationUnlock>1</OptionalInputPopulationUnlock>
     </Item>
   </ModOp>
 
