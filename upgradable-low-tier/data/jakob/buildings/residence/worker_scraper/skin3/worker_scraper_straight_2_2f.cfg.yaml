@@ -1,0 +1,28 @@
+variant: 
+  source: ../worker_scraper_1.cfg
+  modifications:
+    # left
+    - xpath: //Config/Models/Config/Materials/Config[Name="main1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+    # right
+    - xpath: //Config/Models/Config/Materials/Config[Name="main2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt3_diff.psd
+      cDiffuseColor.r: 0.8500
+      cDiffuseColor.g: 0.8000
+      cDiffuseColor.b: 0.6500
+    # walls
+    - xpath: //Config/Models/Config/Materials/Config[Name="main1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_painted_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="main2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_painted_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="main3"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_painted_diff.psd
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd

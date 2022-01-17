@@ -1,0 +1,24 @@
+variant: 
+  source: ../worker_scraper_1.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_1_var1_3f_lod0.rdm
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 2.15017
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.y: 2.29506
+    # TODO different walls
+    # roofs
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof1"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_diff.psd
+      cDiffuseColor.r: 1.0000
+      cDiffuseColor.g: 0.7000
+      cDiffuseColor.b: 0.7000
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof2"]
+      cModelDiffTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_diff.psd
+      cDiffuseColor.r: 1.0000
+      cDiffuseColor.g: 0.7700
+      cDiffuseColor.b: 0.7500
+      cModelNormalTex: data\jakob\buildings\residence\worker_scraper\maps\workers_alt2_norm.psd

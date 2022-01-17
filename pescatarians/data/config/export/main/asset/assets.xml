@@ -5,6 +5,8 @@ Pescatarian
 
 1500010119 church service
 
+1500010101 - 1500010129 (moved to extra goods)
+
 601382 (1500010130) farmer # must be unsafe GUIDs between tourist 601379 and farmers 15000000
 601383 (1500010131) worker
 601384 (1500010132) artisan
@@ -24,17 +26,233 @@ Pescatarian
 1500010148 farmer boost for artisans
 1500010149 engineers are converters
 
+1500010150 - 1500010168 (moved to extra goods)
+
+1500010169 engineers are converters desc
+
 1500010180 unhide
 1500010181 (unlock goods, moved to extra goods collection)
 
-1500010182 artisan skins
+1500010182 (artisan skins, moved to skin
 1500010183 close production bonus
 1500010184 close production bonus
 1500010185 unlock
 
+1500010186 construction menu
+1500010187 unlock construction menu
+1500010188 menu description text
+
 -->
 
 <ModOps>
+  <!-- # shared basic needs -->
+  <!-- copy in case somebody forgot to include the extra goods collection -->
+  <!-- luxury goods are not needed, so let's not copy them unnecessarily -->
+  <ModOp GUID='1010200' Type="addNextSibling">
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010153</GUID>
+          <Name>tools</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Tools</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11705</ProductCategory>
+          <BasePrice>240</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>10</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Crafting</Attribute>
+              <Amount>50</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>19796</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010120</GUID>
+          <Name>canned_fish</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Canned Fish</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- natural products -->
+          <BasePrice>563</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>40</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010127</GUID>
+          <Name>suits</Name>
+          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
+          <Version>dlc06</Version>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Suits</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- natural products -->
+          <BasePrice>480</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>6</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>15</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>129492</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010102</GUID>
+          <Name>cheese</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Cheese</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <BasePrice>45</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute> <!-- TODO make edible --> 
+          <BaseMorale>20</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010106</GUID>
+          <Name>olive_soap</Name>
+          <IconFilename>data/jakob/ui/icons/icon_olive_soap.png</IconFilename>
+          <InfoDescription>1500010017</InfoDescription>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Olive Soap</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <BasePrice>120</BasePrice>
+          <CivLevel>2</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>0</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Medicine</Attribute>
+              <Amount>15</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>12834</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+  </ModOp>
   <!-- # Population: Farmers to Artisans -->
   <ModOp GUID='15000000' Type="addNextSibling">
     <Asset>
@@ -161,7 +379,7 @@ Pescatarian
             <Item>
               <Product>1500010102</Product>
               <Amount>0.0004166</Amount>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <MoneyValue>20</MoneyValue>
               <FullWeightPopulationCount>150</FullWeightPopulationCount>
             </Item>
@@ -277,7 +495,7 @@ Pescatarian
             <Item>
               <Product>1500010106</Product>
               <Amount>0.000277778</Amount>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <MoneyValue>20</MoneyValue>
             </Item>
             <Item>
@@ -293,7 +511,7 @@ Pescatarian
             <Item>
               <Product>1500010127</Product>
               <Amount>0.00035</Amount>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <MoneyValue>60</MoneyValue>
             </Item>
             <Item>
@@ -305,14 +523,14 @@ Pescatarian
             <Item>
               <Product>1500010120</Product>
               <Amount>0.00017094</Amount>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <MoneyValue>20</MoneyValue>
               <FullWeightPopulationCount>250</FullWeightPopulationCount>
             </Item>
             <Item>
               <Product>1010206</Product>
               <Amount>0.00017</Amount>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <MoneyValue>40</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
               <NoWeightPopulationCount>249</NoWeightPopulationCount>
@@ -658,18 +876,6 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
-  <!-- insert after market in city and farmers menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
-    <Item>
-      <Building>1500010142</Building>
-    </Item>
-  </ModOp>
-  <!-- fallback: append to city and farmers menu -->
-  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010343'])]">
-    <Item>
-      <Building>1500010142</Building>
-    </Item>
-  </ModOp>
 
   <!-- # Residence: Worker -->
   <ModOp GUID='1010344' Type="addNextSibling">
@@ -774,7 +980,7 @@ Pescatarian
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
           <PopulationLevel7>601383</PopulationLevel7>
-          <ResidentMax>10</ResidentMax>
+          <ResidentMax>15</ResidentMax>
         </Residence7>
         <UpgradeList>
           <DefaultBuff>1500010147</DefaultBuff>
@@ -793,6 +999,7 @@ Pescatarian
           <GUID>1500010147</GUID>
           <Name>workers_love_to_farm</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -801,16 +1008,6 @@ Pescatarian
             </Item>
           </EffectTargets>
         </ItemEffect>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Workers love to farm</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
         <BuildingUpgrade />
         <Buff />
         <PopulationUpgrade />
@@ -823,7 +1020,7 @@ Pescatarian
           <AddDeltas>
             <Item>
               <Product>1010052</Product>
-              <Amount>7</Amount>
+              <Amount>6</Amount>
             </Item>
           </AddDeltas>
         </DistributionUpgrade>
@@ -894,40 +1091,36 @@ Pescatarian
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate01.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate02.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate03.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate04.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate01.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate02.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate03.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier03/residence_tier03_estate04.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
             </Item>
           </Variations>
           <Skins>
             <DefaultSkinName>23852</DefaultSkinName>
             <DefaultSkinDescription>23853</DefaultSkinDescription>
             <OverrideDefaultIcon>data/jakob/ui/icons/icon_tier03_default.png</OverrideDefaultIcon>
-            <SkinList>
-              <Item>
-                <SkinAssetGuid>1500010182</SkinAssetGuid>
-              </Item>
-            </SkinList>
+            <SkinList />
           </Skins>
         </Object>
         <Residence7>
@@ -954,18 +1147,9 @@ Pescatarian
           <GUID>1500010148</GUID>
           <Name>artisans_love_to_farm</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
         </Standard>
         <ItemEffect />
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Artisans love to farm</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
         <BuildingUpgrade />
         <Buff />
         <PopulationUpgrade />
@@ -978,64 +1162,18 @@ Pescatarian
           <AddDeltas>
             <Item>
               <Product>1010052</Product>
-              <Amount>7</Amount>
+              <Amount>10</Amount>
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>7</Amount>
+              <Amount>4</Amount>
             </Item>
           </AddDeltas>
         </DistributionUpgrade>
         <ItemContainerUpgrade />
       </Values>
     </Asset>
-    <Asset>
-      <Template>Skin</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010182</GUID>
-          <Name>Artisan Skins</Name>
-          <IconFilename>data/jakob/ui/icons/icon_tier03_colorful.png</IconFilename>
-          <ID>pescatarian_t3_skins</ID>
-        </Standard>
-        <Skin>
-          <SkinName>730</SkinName>
-          <SkinDescription>731</SkinDescription>
-          <SkinVariations>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate01b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate02b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate03b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate04b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate01c.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate02c.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate03c.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/buildings/residence/residence_tier03/skin1/residence_tier03_estate04c.cfg</FileName>
-            </Item>
-          </SkinVariations>
-        </Skin>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-          <Scope>Account</Scope>
-          <VisibleWhenLocked>1</VisibleWhenLocked>
-        </Locked>
-        <Text />
-      </Values>
-    </Asset>
+    
   </ModOp>
 
 
@@ -1063,32 +1201,12 @@ Pescatarian
           <GUID>1500010149</GUID>
           <Name>engineers_are_converters</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010169</InfoDescription>
         </Standard>
         <ItemEffect />
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Engineers are converters</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
         <BuildingUpgrade />
         <Buff />
-        <PopulationUpgrade>
-          <InputBenefitModifier>
-            <Item>
-              <Product>1500010120</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>1500010127</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
-            </Item>
-          </InputBenefitModifier>
-        </PopulationUpgrade>
+        <PopulationUpgrade />
         <ResidenceUpgrade>
           <NeedProvideNeedUpgrade>
             <Item>
@@ -1109,35 +1227,48 @@ Pescatarian
         <ItemContainerUpgrade />
       </Values>
     </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010169</GUID>
+          <Name>pesca_engineer_fluff</Name>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
-  <ModOp GUID='15000003' Type="addPrevSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010217']">
+  <ModOp GUID='15000003' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+    <!-- append new needs to the end, so that normal Engineers will never show a (faulty) missing warning -->
     <Item>
       <Product>1500010120</Product>
       <Amount>0.00034188</Amount>
-      <!-- <HappinessValue>1</HappinessValue> -->
       <SupplyWeight>1</SupplyWeight>
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
-      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
-      <FullWeightPopulationCount>10000000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>9999999</NoWeightPopulationCount>
-      <OptionalInputPopulationUnlock>1</OptionalInputPopulationUnlock>
     </Item>
-  </ModOp>
-  <ModOp GUID='15000003' Type="addPrevSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010247']">
     <Item>
       <Product>1500010127</Product>
       <Amount>0.000888889</Amount>
       <SupplyWeight>1</SupplyWeight>
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
-      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
-      <FullWeightPopulationCount>10000000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>9999999</NoWeightPopulationCount>
-      <OptionalInputPopulationUnlock>1</OptionalInputPopulationUnlock>
     </Item>
   </ModOp>
 
-  <!-- # Vanilla residence InfluencedByNeighbors -->
+  <!-- # InfluencedByNeighbors, spawn feedback, ... -->
   <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500010142</Building>
+    </Item>
+    <Item>
+      <Building>1500010143</Building>
+    </Item>
+    <Item>
+      <Building>1500010144</Building>
+    </Item>
+    <Item>
+      <Building>1500010145</Building>
+    </Item>
+  </ModOp>
+  <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500010142</Building>
     </Item>
@@ -1326,16 +1457,51 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # construction menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010186</GUID>
+          <Name>Pescatarians Menu</Name>
+          <IconFilename>data\jakob\ui\icons\icon_pescatarian_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010100</Building>
+            </Item>
+            <Item>
+              <Building>1500010142</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010188</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010188</GUID>
+          <Name>pescatarian_menu_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
   <!-- insert after market in city and farmers menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372']">
+  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
     <Item>
-      <Building>1500010100</Building>
+      <Building>1500010186</Building>
     </Item>
   </ModOp>
   <!-- fallback: append to city and farmers menu -->
-  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010372'])]">
+  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010343'])]">
     <Item>
-      <Building>1500010100</Building>
+      <Building>1500010186</Building>
     </Item>
   </ModOp>
 
@@ -1348,7 +1514,7 @@ Pescatarian
           <GUID>1500010184</GUID>
           <Name>suits_maker_reduced_needs</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <InfoDescription></InfoDescription>
+          <InfoDescription>1500010170</InfoDescription>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -1397,7 +1563,7 @@ Pescatarian
           <GUID>1500010183</GUID>
           <Name>cannery_reduced_needs</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
-          <InfoDescription></InfoDescription>
+          <InfoDescription>1500010170</InfoDescription>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -1441,6 +1607,48 @@ Pescatarian
     </Asset>
   </ModOp>
 
+  <!-- # Buff Targets -->
+  <!-- the below modops are very expensive, but in case of farmers, workers, ... it's impossible to hardcode all targets -->
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343']">
+    <Item>
+      <GUID>1500010142</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010343']">
+    <Item>
+      <GUID>1500010142</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010344']">
+    <Item>
+      <GUID>1500010143</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
+    <Item>
+      <GUID>1500010143</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010144</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010144</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010145</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010145</GUID>
+    </Item>
+  </ModOp>
 
   <!-- # Unlocks, notifications -->
   <!-- <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">
@@ -1533,7 +1741,7 @@ Pescatarian
       <Values>
         <Standard>
           <GUID>1500010180</GUID>
-          <Name>unhide farmer residence, community center</Name>
+          <Name>unhide construction menu</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -1552,10 +1760,13 @@ Pescatarian
                   <ActionUnlockAsset>
                     <UnhideAssets>
                       <Item>
-                        <Asset>1500010142</Asset>
+                        <Asset>1500010186</Asset>
                       </Item>
                       <Item>
                         <Asset>1500010100</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010142</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
@@ -1630,6 +1841,48 @@ Pescatarian
                       </Item>
                       <Item>
                         <Asset>1500010168</Asset> <!-- premium beer asset pool -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- extra unlock because added in a newer version -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010187</GUID>
+          <Name>unlock construction menu</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>1500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010186</Asset> <!-- construction menu -->
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

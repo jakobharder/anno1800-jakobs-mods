@@ -7,17 +7,15 @@ You only need this mod if another mod told you so.
 The goods in this mod are not unlocked by default.
 They are only usable through other mods.
 
-You might want to look at [Pescatarians (Alternative Population)](https://github.com/jakobharder/anno-1800-jakobs-mods) or [Taller Low Tier Residences](https://github.com/jakobharder/anno-1800-jakobs-mods).
+You might want to look at [Pescatarians (Alternative Population)](https://github.com/jakobharder/anno-1800-jakobs-mods) or [Upgradable Workers](https://github.com/jakobharder/anno-1800-jakobs-mods).
 
 ## Notes for Modders
 
 Feel free to depend on this mod for your own creations.
 Do not copy contents of the mod into yours, but point to download links on *GitHub* or *Nexus Mods*.
-Otherwise people will end up with breaking version conflicts.
+Otherwise people will end up with version conflicts.
 
-The goods do not unhide/unlock by default, as the timing depends on what you want to use them for.
-Please add unhide/unlock to every mode based on your needs.
-In case of combinations the earliest unlock wins, so it should be fine.
+All goods unlock with 1500 Artisans. If you require something earlier, you may trigger additional unlocks using the AssetPool GUIDs.
 
 Linen, Suits and Canned Fish depend on Land of Lions.
 Make sure to remind the players if you use those goods.
@@ -26,10 +24,6 @@ Make sure to remind the players if you use those goods.
 *But there won't be any build menu or production building for Canned Fish without Land of Lions.*
 
 The rest has no DLC dependencies.
-
-### Contribute
-
-If you have products and production and want to add them to the collection, feel free to ping me or open an issue/PR.
 
 ## Goods
 
@@ -50,59 +44,3 @@ Use AssetPool GUIDs to unlock the products with their production chains.
 | <img src="./doc/icon_beer_2.png" style="width:24px"/> | Bottled Beer | Old World | 1500010156 | - | 1500010168
 
 New Horizon GUIDs are shared with permission.
-
-### Unlock Trigger Template
-
-I know you want to copy&paste. Here you go. 
-
-⚠ Never ever copy&paste triggers from mods directly. You publish once a trigger with a GUID from another mod and you screw up not only your mod but the other one as well.
-
-```xml
-<Asset>
-  <Template>Trigger</Template>
-  <Values>
-    <Standard>
-      <GUID>your GUID</GUID>
-      <Name>unlock everything</Name>
-    </Standard>
-    <Trigger>
-      <TriggerCondition>
-        <Template>ConditionPlayerCounter</Template>
-        <Values>
-          <Condition />
-          <ConditionPlayerCounter>
-            <PlayerCounter>PopulationByLevel</PlayerCounter>
-            <!-- artisans -->
-            <Context>15000002</Context>
-            <CounterAmount>100</CounterAmount>
-          </ConditionPlayerCounter>
-        </Values>
-      </TriggerCondition>
-      <TriggerActions>
-        <Item>
-          <TriggerAction>
-            <Template>ActionUnlockAsset</Template>
-            <Values>
-              <Action />
-              <ActionUnlockAsset>
-                <UnlockAssets>
-                  <Item>
-                    <!-- wooden accessory asset pool -->
-                    <Asset>1500010162</Asset> 
-                  </Item>
-                  <Item>
-                    <!-- cheese asset pool -->
-                    <Asset>1500010167</Asset>
-                  </Item>
-                  <!-- you get the idea -->
-                </UnlockAssets>
-              </ActionUnlockAsset>
-            </Values>
-          </TriggerAction>
-        </Item>
-      </TriggerActions>
-    </Trigger>
-    <TriggerSetup />
-  </Values>
-</Asset>
-```

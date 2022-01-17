@@ -1,0 +1,10 @@
+variant: 
+  source: worker_scraper_1.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\buildings\residence\worker_scraper\rdm\worker_scraper_1_var1_3f_lod0.rdm
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 2.15017
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.y: 2.29506
