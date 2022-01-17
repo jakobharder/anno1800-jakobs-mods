@@ -31,6 +31,8 @@ Original engineers may complain about missing canned fish need, even though they
 
 ## Translations
 
-Available: English, German
+Available: English, German, Russian
+
+Thanks to redzmey1@nexus for Russian translation!
 
 I appreciate any translation feedback! https://discord.com/invite/KtfWbev
