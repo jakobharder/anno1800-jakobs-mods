@@ -29,6 +29,17 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 ![](./pescatarians/banner.png)
 
-[\[Addon\] Pescatarians](./pescatarians/) - Alternative tiers with same workforce but different needs.
+[\[Addon\] Pescatarians](./pescatarians/) - Alternative population with farmer workforce bonuses.
 
-[\[Shared\] Extra Goods Collection](./extra-goods-collection) - Cheese, Olive Soap, Hemp, Canned Fish, ...
+Needs:
+
+- [\[Shared\] Extra Goods Collection](./extra-goods-collection) - Cheese, Olive Soap, Hemp, Canned Fish, ...
+- [\[Misc\] Colored Roofs, Residences](./residence-skin-pack) - GPU memory optimized roof color skins.
+
+![](./upgradable-low-tier/banner.png)
+
+[\[Addon\] Upgradable Workers](./upgradable-low-tier) - Modern 2 and 3 floor worker residences.
+
+Needs:
+
+- [\[Shared\] Extra Goods Collection](./extra-goods-collection) - Cheese, Olive Soap, Hemp, Canned Fish, ...

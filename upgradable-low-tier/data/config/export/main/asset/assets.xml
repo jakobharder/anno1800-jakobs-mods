@@ -374,6 +374,7 @@ Upgradable Low Tiers
               <!-- crossing -->
             </Item>
           </InfluencedVariationDirection>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
         </Building>
         <Cost>
           <Costs>
@@ -1134,6 +1135,7 @@ Upgradable Low Tiers
       <SupplyWeight>4</SupplyWeight>
       <MoneyValue>20</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
       <FullWeightPopulationCount>0</FullWeightPopulationCount>
       <NoWeightPopulationCount>0</NoWeightPopulationCount>
     </Item>
@@ -1143,25 +1145,56 @@ Upgradable Low Tiers
       <SupplyWeight>4</SupplyWeight>
       <MoneyValue>80</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
       <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1</NoWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1010354</Product> <!-- electricity -->
       <SupplyWeight>2</SupplyWeight>
       <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
       <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1</NoWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
     </Item>
     <!-- high -->
+    <Item>
+      <Product>1500010102</Product> <!-- cheese -->
+      <Amount>0.0004166</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>20</MoneyValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
+      <FullWeightPopulationCount>0</FullWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1500010153</Product> <!-- tools -->
+      <Amount>0.0004166</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>80</MoneyValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1</FullWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010354</Product> <!-- electricity -->
+      <SupplyWeight>2</SupplyWeight>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1</FullWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+    </Item>
     <Item>
       <Product>1500010120</Product> <!-- canned fish -->
       <Amount>0.0004166</Amount>
       <SupplyWeight>5</SupplyWeight>
       <MoneyValue>25</MoneyValue>
       <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
       <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1</NoWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1500010127</Product> <!-- OW suits -->
@@ -1169,8 +1202,9 @@ Upgradable Low Tiers
       <SupplyWeight>5</SupplyWeight>
       <MoneyValue>50</MoneyValue>
       <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
       <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1</NoWeightPopulationCount>
+      <NoWeightPopulationCount>0</NoWeightPopulationCount>
     </Item>
   </ModOp>
   <ModOp GUID='502005' Type="add" Path="/Values/ProductList/List">
