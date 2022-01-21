@@ -4,6 +4,7 @@ Upgradable Low Tiers
 1500010200 worker skyscraper
 1500010215 stone plaza
 1500010216+ unlock notification
+1500010221+ trade contracts
 
 -->
 
@@ -165,11 +166,57 @@ Upgradable Low Tiers
             </Item>
           </ProductionRegions>
         </Product>
-        <ExpeditionAttribute> <!-- TODO make edible --> 
+        <ExpeditionAttribute>
+          <!-- TODO make edible -->
           <BaseMorale>20</BaseMorale>
         </ExpeditionAttribute>
       </Values>
     </Asset>
+  </ModOp>
+  
+  <!-- # trade contracts for shared products -->
+  <!-- 
+    add products to traders based on name and product of the same unlock category
+    unlock condition is not used to get the unlock category as there are mods that change unlock conditions
+  -->
+  <ModOp Type="addNextSibling" GUID="131764">
+    <!-- fallback dump -->
+    <Asset>
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <ignore></ignore>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010102')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <!-- feedl -->
+    <Item>
+      <Level>Uncommon</Level>
+      <Good>1500010102</Good>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010120')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <!-- feedl -->
+    <Item>
+      <Level>Rare</Level>
+      <Good>1500010120</Good>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131765']/TradeLevels/Item[Trades/Item/Good='1010247' and not(Trades/Item/Good='1500010127')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <!-- chanteuse -->
+    <Item>
+      <Level>Rare</Level>
+      <Good>1500010127</Good>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131811']/TradeLevels/Item[Trades/Item/Good='1010196' and not(Trades/Item/Good='1500010153')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <!-- kitea -->
+    <Item>
+      <Level>Rare</Level>
+      <Good>1500010153</Good>
+    </Item>
   </ModOp>
   <!-- # modify vanilla worker upgrade path -->
   <ModOp GUID='1010344' Type="add" Path="Values">
@@ -1328,7 +1375,7 @@ Upgradable Low Tiers
         <Ornament>
           <OrnamentUnit>1</OrnamentUnit>
           <OrnamentIconInfotip>500276</OrnamentIconInfotip>
-          <OrnamentDescription>3049</OrnamentDescription>
+          <OrnamentDescription>0</OrnamentDescription>
         </Ornament>
         <AmbientMoodProvider />
         <Pausable />
@@ -1357,6 +1404,56 @@ Upgradable Low Tiers
       </Locked>
     </Asset> -->
   </ModOp>
+  <ModOp Type="add" GUID="80040,80041,80042,80043,80044,80060,80061,80062,80063" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+    <BuildModeStartVariation>0</BuildModeStartVariation>
+  </ModOp>
+  <ModOp Type="add" GUID="80040" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\market_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80041" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\market_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80042" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\market_03.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80043" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\market_04.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80044" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\market_05.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80060" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\clock_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80061" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\clock_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80062" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\fence_lamp.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80063" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\ornaments\stone_lights_pack\phone_booth.cfg</Filename>
+    </Item>
+  </ModOp>
+
 
   <!-- # construction menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
@@ -1403,8 +1500,9 @@ Upgradable Low Tiers
       </Values>
     </Asset>
   </ModOp>
-  <!-- city menu: insert after pescatarian menu, vanilla farmer, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010186'] | /Values/ConstructionCategory/BuildingList/Item[Building='1010343'] | /Values/ConstructionCategory/BuildingList[not(Item/Building='1010343')]/Item[last()]">
+  <!-- city menu: insert after pescatarian menu, vanilla farmer, fallback append GUID='500944' -->
+  <!-- <ModOp Type="addNextSibling" Path="//Asset[Values/Standard/GUID='500944']/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186'][last()]"> -->
+  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186'))][last()]">
     <Item>
       <Building>1500010212</Building>
     </Item>

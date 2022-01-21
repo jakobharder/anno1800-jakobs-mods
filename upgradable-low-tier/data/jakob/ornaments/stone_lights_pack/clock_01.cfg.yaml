@@ -1,0 +1,7 @@
+variant: 
+  source: ${annoRda}\data/graphics/buildings/ornamental/cdlc03/clocks/clock_01.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data\jakob\ornaments\maps\simple_stone_plaza_diff.psd
+      NORMAL_ENABLED: 0
+      METALLIC_TEX_ENABLED: 0
