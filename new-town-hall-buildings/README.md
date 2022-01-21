@@ -14,7 +14,7 @@
 
   The variation and building versions are completely separate and can be activated/deactivated to your liking.
 
-  ⚠ Please always update both, if you use both. They share models and textures to reduce GPU memory usage.
+  ⚠ Please always update both, if you use both. Otherwise you may get funny results.
 
 - Works with existing save games.
 

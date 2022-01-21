@@ -1,0 +1,16 @@
+variant: 
+  source: ${annoRda}\data\graphics\buildings\ornamental\city_props_system\city_props_system_1x1\city_props_system_1x1_01.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data\jakob\buildings\townhall\maps\townhall_ground_diff.psd
+      cModelNormalTex: data\jakob\buildings\townhall\maps\townhall_ground_norm.psd
+      cHeightMap: data\jakob\buildings\townhall\maps\townhall_ground_height.psd
+      HEIGHT_MAP_ENABLED: 1
+      NORMAL_ENABLED: 1
+      METALLIC_TEX_ENABLED: 0
+      cParallaxScale: 2
+    - xpath: //Config/Decals/Config
+      Extents.x: 1.02800
+      Extents.y: 0.250000
+      Extents.z: 1.02800
+      OnStreets: 1
