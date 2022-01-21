@@ -25,6 +25,11 @@ Make sure to remind the players if you use those goods.
 
 The rest has no DLC dependencies.
 
+## 1.1 Changes
+
+- New dairy model
+- Hot chocolate bar recipe
+
 ## Goods
 
 Use AssetPool GUIDs to unlock the products with their production chains.
