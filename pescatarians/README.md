@@ -5,11 +5,13 @@
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
 
 Alternative Old World population providing extra farmer workforce.
-Only partially playable without DLCs. You need Lands of Lions to provide some of the Pescatarians Artisans basic needs.
+Only partially playable without DLCs.
 
-Needs "[Shared] Extra Goods Collection" to provide needs. The mod is useless without it.
+Pescatarians have new needs. There are two ways to get them:
 
-Residences only change their visuals when played with "[Misc] Colored Roofs, Residences". 
+1. Lands of Lions DLC + "[Shared] Extra Goods Collection" mod for production chains.
+2. Or instead: Docklands DLC
+- Optional: Residences only change their visuals when played with "[Misc] Colored Roofs, Residences". 
 
 ## Population
 
@@ -23,6 +25,10 @@ Engineers (40) are normal engineers, except they accept both canned fish/canned 
 
 Suits and canned fish factories reduce consumption when close to residences.
 
+## 1.1 Changes
+
+- Trade contracts for new basic needs
+
 ## Notes
 
 Known issues
@@ -31,6 +37,8 @@ Original engineers may complain about missing canned fish need, even though they
 
 ## Translations
 
-Available: English, German
+Available: English, German, Russian
+
+Thanks to redzmey1@nexus for Russian translation!
 
 I appreciate any translation feedback! https://discord.com/invite/KtfWbev

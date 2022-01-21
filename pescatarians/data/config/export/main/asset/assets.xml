@@ -3,9 +3,12 @@ Pescatarian
 
 1500010100 church
 
-1500010119 church service
 
-1500010101 - 1500010129 (moved to extra goods)
+1500010101-11
+1500010117 (don't use)
+1500010118 chruch service
+1500010119 market service
+1500010120-29 (extra goods)
 
 601382 (1500010130) farmer # must be unsafe GUIDs between tourist 601379 and farmers 15000000
 601383 (1500010131) worker
@@ -29,6 +32,8 @@ Pescatarian
 1500010150 - 1500010168 (moved to extra goods)
 
 1500010169 engineers are converters desc
+
+1500010172 engineer buff, -2 population fix
 
 1500010180 unhide
 1500010181 (unlock goods, moved to extra goods collection)
@@ -203,7 +208,8 @@ Pescatarian
             </Item>
           </ProductionRegions>
         </Product>
-        <ExpeditionAttribute> <!-- TODO make edible --> 
+        <ExpeditionAttribute>
+          <!-- TODO make edible -->
           <BaseMorale>20</BaseMorale>
         </ExpeditionAttribute>
       </Values>
@@ -252,7 +258,126 @@ Pescatarian
         </ExpeditionAttribute>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010156</GUID>
+          <Name>premium_beer</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_beer_2.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Tools</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11709</ProductCategory>
+          <BasePrice>480</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>20</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>30</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>12859</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010150</GUID>
+          <Name>wooden_accessory</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\museum\icon_wooden_ring.png</IconFilename>
+          <InfoDescription>1500010017</InfoDescription>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Cloth</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11705</ProductCategory>
+          <BasePrice>50</BasePrice>
+          <CivLevel>1</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>0</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Diplomacy</Attribute>
+              <Amount>25</Amount>
+            </Item>
+          </ExpeditionAttributes>
+          <FluffText>12860</FluffText>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
   </ModOp>
+
+  <!-- # trade contracts for shared products -->
+  <!-- 
+    add products to traders based on name and product of the same unlock category
+    unlock condition is not used to get the unlock category as there are mods that change unlock conditions
+  -->
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131819']/TradeLevels/Item[Trades/Item/Good='1010198']/Trades">
+    <!-- tattershire -->
+    <Item>
+      <Level>Uncommon</Level>
+      <Good>1500010106</Good>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213']/Trades">
+    <!-- feedl -->
+    <Item>
+      <Level>Uncommon</Level>
+      <Good>1500010102</Good>
+    </Item>
+    <Item>
+      <Level>Rare</Level>
+      <Good>1500010120</Good>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131765']/TradeLevels/Item[Trades/Item/Good='1010247']/Trades">
+    <!-- chanteuse -->
+    <Item>
+      <Level>Rare</Level>
+      <Good>1500010127</Good>
+    </Item>
+  </ModOp>
+
   <!-- # Population: Farmers to Artisans -->
   <ModOp GUID='15000000' Type="addNextSibling">
     <Asset>
@@ -280,6 +405,10 @@ Pescatarian
               <SupplyWeight>4</SupplyWeight>
             </Item>
             <Item>
+              <Product>1500010118</Product>
+              <HappinessValue>8</HappinessValue>
+            </Item>
+            <Item>
               <Product>1010200</Product>
               <Amount>0.0002083</Amount>
               <SupplyWeight>3</SupplyWeight>
@@ -298,7 +427,7 @@ Pescatarian
             <Item>
               <Product>1500010150</Product>
               <Amount>0.0002083</Amount>
-              <HappinessValue>4</HappinessValue>
+              <HappinessValue>12</HappinessValue>
               <MoneyValue>20</MoneyValue>
               <FullWeightPopulationCount>200</FullWeightPopulationCount>
               <NoWeightPopulationCount>99</NoWeightPopulationCount>
@@ -359,6 +488,10 @@ Pescatarian
               <SupplyWeight>4</SupplyWeight>
             </Item>
             <Item>
+              <Product>1500010118</Product>
+              <HappinessValue>6</HappinessValue>
+            </Item>
+            <Item>
               <Product>1010195</Product>
               <Amount>0.0002083</Amount>
               <SupplyWeight>2</SupplyWeight>
@@ -373,7 +506,7 @@ Pescatarian
             <Item>
               <Product>1500010150</Product>
               <Amount>0.0002083</Amount>
-              <HappinessValue>4</HappinessValue>
+              <HappinessValue>6</HappinessValue>
               <MoneyValue>20</MoneyValue>
             </Item>
             <Item>
@@ -402,8 +535,8 @@ Pescatarian
             <Item>
               <Product>1500010153</Product>
               <Amount>0.0001</Amount>
-              <HappinessValue>3</HappinessValue>
-              <MoneyValue>80</MoneyValue>
+              <HappinessValue>4</HappinessValue>
+              <MoneyValue>180</MoneyValue>
               <FullWeightPopulationCount>750</FullWeightPopulationCount>
               <NoWeightPopulationCount>249</NoWeightPopulationCount>
             </Item>
@@ -411,7 +544,7 @@ Pescatarian
               <Product>1500010156</Product>
               <Amount>0.00007</Amount>
               <HappinessValue>4</HappinessValue>
-              <MoneyValue>20</MoneyValue>
+              <MoneyValue>100</MoneyValue>
               <FullWeightPopulationCount>750</FullWeightPopulationCount>
               <NoWeightPopulationCount>399</NoWeightPopulationCount>
             </Item>
@@ -481,6 +614,10 @@ Pescatarian
               <SupplyWeight>1</SupplyWeight>
             </Item>
             <Item>
+              <Product>1500010118</Product>
+              <HappinessValue>4</HappinessValue>
+            </Item>
+            <Item>
               <Product>1500010102</Product>
               <Amount>0.0003</Amount>
               <SupplyWeight>3</SupplyWeight>
@@ -501,7 +638,7 @@ Pescatarian
             <Item>
               <Product>1500010153</Product>
               <Amount>0.0002</Amount>
-              <HappinessValue>3</HappinessValue>
+              <HappinessValue>6</HappinessValue>
               <MoneyValue>80</MoneyValue>
             </Item>
             <Item>
@@ -518,7 +655,7 @@ Pescatarian
               <Product>1500010156</Product>
               <Amount>0.00014</Amount>
               <HappinessValue>4</HappinessValue>
-              <MoneyValue>100</MoneyValue>
+              <MoneyValue>180</MoneyValue>
             </Item>
             <Item>
               <Product>1500010120</Product>
@@ -538,7 +675,7 @@ Pescatarian
             <Item>
               <Product>1010352</Product>
               <HappinessValue>6</HappinessValue>
-              <MoneyValue>20</MoneyValue>
+              <MoneyValue>26</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
               <NoWeightPopulationCount>249</NoWeightPopulationCount>
             </Item>
@@ -587,7 +724,8 @@ Pescatarian
         <Locked />
       </Values>
     </Asset>
-    <Asset> <!-- population group -->
+    <Asset>
+      <!-- population group -->
       <Template>PopulationGroup7</Template>
       <Values>
         <Standard>
@@ -723,7 +861,7 @@ Pescatarian
     </Item>
   </ModOp>
   <!-- residence UI: append -->
-  <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/HappinessConfigs"> 
+  <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/HappinessConfigs">
     <Item>
       <PopulationLevel>601382</PopulationLevel>
       <AssignedConfig>502287</AssignedConfig>
@@ -738,7 +876,7 @@ Pescatarian
     </Item>
   </ModOp>
   <!-- city population level: insert TODO -->
-  <ModOp Type="addNextSibling" GUID="141576" Path="/Values/HappinessFeature/AttractivenessConfig/Region/Moderate/CitySizes/Item[Population='15000000' and not(Amount)]"> 
+  <ModOp Type="addNextSibling" GUID="141576" Path="/Values/HappinessFeature/AttractivenessConfig/Region/Moderate/CitySizes/Item[Population='15000000' and not(Amount)]">
     <Item>
       <Population>601382</Population>
       <RequiredAttractivenessLevel>Quaint</RequiredAttractivenessLevel>
@@ -754,7 +892,7 @@ Pescatarian
       <Amount>10</Amount>
     </Item>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="141576" Path="/Values/HappinessFeature/AttractivenessConfig/Region/Moderate/CitySizes/Item[Population='15000000' and Amount='150']"> 
+  <ModOp Type="addNextSibling" GUID="141576" Path="/Values/HappinessFeature/AttractivenessConfig/Region/Moderate/CitySizes/Item[Population='15000000' and Amount='150']">
     <Item>
       <Population>601382</Population>
       <RequiredAttractivenessLevel>Quaint</RequiredAttractivenessLevel>
@@ -776,10 +914,10 @@ Pescatarian
 
   <!-- TODO GoodValueBalancing -->
   <!-- TODO EconomyFeature -->
-    
+
   <!-- # Need: Potatoes -->
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010278']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
     <Item>
       <Product>1010195</Product>
     </Item>
@@ -1173,7 +1311,39 @@ Pescatarian
         <ItemContainerUpgrade />
       </Values>
     </Asset>
-    
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010172</GUID>
+          <Name>pesca_engineer_2pop_fix</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade>
+          <InputBenefitModifier>
+            <Item>
+              <Product>1500010120</Product>
+              <AdditionalSupply>-1</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1500010127</Product>
+              <AdditionalSupply>-1</AdditionalSupply>
+            </Item>
+          </InputBenefitModifier>
+        </PopulationUpgrade>
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
   </ModOp>
 
 
@@ -1242,13 +1412,15 @@ Pescatarian
     <Item>
       <Product>1500010120</Product>
       <Amount>0.00034188</Amount>
-      <SupplyWeight>1</SupplyWeight>
+      <HappinessValue>2</HappinessValue>
+      <MoneyValue>20</MoneyValue>
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
     </Item>
     <Item>
       <Product>1500010127</Product>
       <Amount>0.000888889</Amount>
-      <SupplyWeight>1</SupplyWeight>
+      <HappinessValue>2</HappinessValue>
+      <MoneyValue>20</MoneyValue>
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
     </Item>
   </ModOp>
@@ -1392,6 +1564,9 @@ Pescatarian
             <Item>
               <Product>1500010119</Product>
             </Item>
+            <Item>
+              <Product>1500010118</Product>
+            </Item>
           </PublicServiceOutputs>
         </PublicService>
         <AmbientMoodProvider>
@@ -1432,6 +1607,35 @@ Pescatarian
       <Values>
         <Standard>
           <GUID>1500010119</GUID>
+          <Name>pescatarian_market_service</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Church</Text>
+              <Status>Exported</Status>
+              <ExportCount>2</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5328</LineID>
+        </Text>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory>
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+        <ExpeditionAttribute />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010118</GUID>
           <Name>pescatarian_church_service</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
         </Standard>
@@ -1492,14 +1696,8 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
-  <!-- insert after market in city and farmers menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
-    <Item>
-      <Building>1500010186</Building>
-    </Item>
-  </ModOp>
-  <!-- fallback: append to city and farmers menu -->
-  <ModOp Type="add" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1010343'])]">
+  <!-- insert after market in city and farmers menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
     <Item>
       <Building>1500010186</Building>
     </Item>
@@ -1657,7 +1855,8 @@ Pescatarian
     </Item>
   </ModOp> -->
   <!-- milestone banner: prepend -->
-  <ModOp Type="addPrevSibling" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners/Item[1]"> <!-- works -->
+  <ModOp Type="addPrevSibling" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners/Item[1]">
+    <!-- works -->
     <Item>
       <RequiredValue>1500</RequiredValue>
       <PopulationGUID>15000002</PopulationGUID>
@@ -1665,7 +1864,8 @@ Pescatarian
     </Item>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="130249">
-    <Asset> <!-- LockableNotification works -->
+    <Asset>
+      <!-- LockableNotification works -->
       <Template>LockableNotification</Template>
       <Values>
         <Standard>

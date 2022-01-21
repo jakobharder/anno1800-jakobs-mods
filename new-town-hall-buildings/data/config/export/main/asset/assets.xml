@@ -22,7 +22,7 @@ New Town Hall
           <GUID>1500010024</GUID>
           <Name>town_hall_tower</Name>
           <Version>dlc09</Version>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.psd</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.dds</IconFilename>
         </Standard>
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -272,14 +272,8 @@ New Town Hall
       </Values>
     </Asset>
   </ModOp>
-  <!-- insert after townhall in city and artisan menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
-    <Item>
-      <Building>1500010024</Building>
-    </Item>
-  </ModOp>
-  <!-- fallback: append to city menu, skip artisan and rely on investors instead -->
-  <ModOp Type="add" GUID='500944' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1500010024'])]">
+  <!-- insert after townhall in city+artisans menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415'))][last()]">
     <Item>
       <Building>1500010024</Building>
     </Item>
@@ -291,13 +285,7 @@ New Town Hall
     </Item>
   </ModOp>
   <!-- insert after elevator chain in investor menu -->
-  <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602']">
-    <Item>
-      <Building>1500010024</Building>
-    </Item>
-  </ModOp>
-  <!-- fallback: append to investor menu -->
-  <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='137602'])]/Item[last()]">
+  <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602' or (not(../Item/Building='137602'))][last()]">
     <Item>
       <Building>1500010024</Building>
     </Item>
@@ -326,7 +314,7 @@ New Town Hall
           <GUID>1500010021</GUID>
           <Name>new_town_hall</Name>
           <Version>dlc09</Version>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall.psd</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall.dds</IconFilename>
         </Standard>
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -510,13 +498,7 @@ New Town Hall
     </Asset>
   </ModOp>  
   <!-- insert after townhall in city and artisan menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415']">
-    <Item>
-      <Building>1500010021</Building>
-    </Item>
-  </ModOp>
-  <!-- fallback: append to city and artisan menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList[not(Item[Building='1500010021'])]/Item[not(Building='1500010024')][last()]">
+  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415') and not(Building='1500010024'))][last()]">
     <Item>
       <Building>1500010021</Building>
     </Item>

@@ -25,6 +25,11 @@ Make sure to remind the players if you use those goods.
 
 The rest has no DLC dependencies.
 
+## 1.1 Changes
+
+- New dairy model
+- Hot chocolate bar recipe
+
 ## Goods
 
 Use AssetPool GUIDs to unlock the products with their production chains.
@@ -44,3 +49,11 @@ Use AssetPool GUIDs to unlock the products with their production chains.
 | <img src="./doc/icon_beer_2.png" style="width:24px"/> | Bottled Beer | Old World | 1500010156 | - | 1500010168
 
 New Horizon GUIDs are shared with permission.
+
+## Translations
+
+Available: English, German, Russian
+
+Thanks to redzmey1@nexus for Russian translation!
+
+I appreciate any translation feedback! https://discord.com/invite/KtfWbev
