@@ -13,6 +13,12 @@ Jakob's Extra Goods
 1500010110 olive field
 1500010111 cheese chain
 
+150010112 buff: nearby production cheese
+150010113 buff: nearby production tools
+// 150010114 free
+// 150010115 free
+// 150010116 free
+
 1500010120 canned fish
 1500010121 fish cannery
 1500010122 canned fish chain
@@ -58,6 +64,15 @@ Jakob's Extra Goods
 <ModOps>
   <!-- # Goods Lists -->
   <ModOp Type="addNextSibling" GUID="502019">
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010400</GUID>
+          <Name>nearby_buff_desc</Name>
+        </Standard>
+      </Values>
+    </Asset>
     <Asset>
       <Template>ProductList</Template>
       <Values>
@@ -1043,7 +1058,7 @@ Jakob's Extra Goods
             </Item>
           </ProductionBuffs>
           <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>20</ProductionBuffDistance>
+          <ProductionBuffDistance>15</ProductionBuffDistance>
         </BuffFactory>
         <Factory7 />
         <FactoryBase>
@@ -1185,6 +1200,48 @@ Jakob's Extra Goods
             </Item>
           </AssetList>
         </AssetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010183</GUID>
+          <Name>cannery_reduced_needs</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1500010120</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
       </Values>
     </Asset>
   </ModOp>
@@ -1582,6 +1639,14 @@ Jakob's Extra Goods
             </Item>
           </Variations>
         </Object>
+        <BuffFactory>
+          <ProductionBuffs>
+            <Item>
+              <ProductivityBuff>0</ProductivityBuff>
+            </Item>
+          </ProductionBuffs>
+          <ProductionBuffDistance>0</ProductionBuffDistance>
+        </BuffFactory>
         <FactoryBase>
           <FactoryInputs>
             <Item>
@@ -1773,7 +1838,7 @@ Jakob's Extra Goods
             </Item>
           </ProductionBuffs>
           <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>20</ProductionBuffDistance>
+          <ProductionBuffDistance>15</ProductionBuffDistance>
         </BuffFactory>
         <Factory7 />
         <FactoryBase>
@@ -1913,6 +1978,48 @@ Jakob's Extra Goods
             </Item>
           </AssetList>
         </AssetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010184</GUID>
+          <Name>suits_maker_reduced_needs</Name>
+          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1500010127</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
       </Values>
     </Asset>
   </ModOp>
@@ -2082,6 +2189,17 @@ Jakob's Extra Goods
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
+        <BuffFactory>
+          <ProductionBuffs>
+            <Item>
+              <ProductivityBuff>1500010113</ProductivityBuff>
+              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+              <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+            </Item>
+          </ProductionBuffs>
+          <ProductionBuffScope>Radius</ProductionBuffScope>
+          <ProductionBuffDistance>15</ProductionBuffDistance>
+        </BuffFactory>
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -2221,6 +2339,51 @@ Jakob's Extra Goods
             </Item>
           </AssetList>
         </AssetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010113</GUID>
+          <Name>tools_reduced_needs</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1500010153</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
       </Values>
     </Asset>
   </ModOp>
@@ -2950,6 +3113,17 @@ Jakob's Extra Goods
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
+        <BuffFactory>
+          <ProductionBuffs>
+            <Item>
+              <ProductivityBuff>1500010112</ProductivityBuff>
+              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+              <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+            </Item>
+          </ProductionBuffs>
+          <ProductionBuffScope>Radius</ProductionBuffScope>
+          <ProductionBuffDistance>15</ProductionBuffDistance>
+        </BuffFactory>
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -3079,6 +3253,51 @@ Jakob's Extra Goods
             </Item>
           </AssetList>
         </AssetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010112</GUID>
+          <Name>dairy_reduced_needs</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1500010102</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
       </Values>
     </Asset>
   </ModOp>
@@ -3493,7 +3712,7 @@ Jakob's Extra Goods
       <Recipe>1500010250</Recipe>
     </Item>
   </ModOp>
-  
+
 
   <!-- # buff targets -->
   <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->

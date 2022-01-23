@@ -1,0 +1,484 @@
+<!-- 
+Nearby Production Buffs
+
+1500010400+
+-->
+
+<ModOps>
+  <!-- # Nearby Production Buffs -->
+  <ModOp GUID='1010343' Type="addNextSibling">
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010400</GUID>
+          <Name>nearby_buff_desc</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010401</GUID>
+          <Name>nearby_buff_bakery</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010344</GUID> <!-- workers -->
+            </Item>
+            <Item>
+              <GUID>1010345</GUID> <!-- artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010143</GUID> <!-- Pescatarian workers -->
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID> <!-- Pescatarian artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010213</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010402</GUID>
+          <Name>nearby_buff_schnapps</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010343</GUID> <!-- farmers -->
+            </Item>
+            <Item>
+              <GUID>1010344</GUID> <!-- workers -->
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010216</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010403</GUID>
+          <Name>nearby_buff_cloth</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010343</GUID> <!-- farmers -->
+            </Item>
+            <Item>
+              <GUID>1010344</GUID> <!-- workers -->
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010237</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010404</GUID>
+          <Name>nearby_buff_sausages</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010344</GUID> <!-- workers -->
+            </Item>
+            <!-- <Item>
+              <GUID>1010345</GUID> <!- - artisans - ->
+            </Item> -->
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010238</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010405</GUID>
+          <Name>nearby_buff_beer</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_beer.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010344</GUID> <!-- workers -->
+            </Item>
+            <Item>
+              <GUID>1010345</GUID> <!-- artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010214</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010406</GUID>
+          <Name>nearby_buff_canned_food</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_goulash.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010345</GUID> <!-- artisans -->
+            </Item>
+            <Item>
+              <GUID>1010346</GUID> <!-- engineers -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian engineers -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010217</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010407</GUID>
+          <Name>nearby_buff_sewing_machines</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_sewing_machine.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010345</GUID> <!-- artisans -->
+            </Item>
+            <Item>
+              <GUID>1010346</GUID> <!-- engineers -->
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID> <!-- Pescatarian artisans -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian engineers -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010206</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010408</GUID>
+          <Name>nearby_buff_fur_coats</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_fur_coats.png</IconFilename>
+          <InfoDescription>1500010400</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010345</GUID> <!-- artisans -->
+            </Item>
+            <Item>
+              <GUID>1010346</GUID> <!-- engineers -->
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID> <!-- Pescatarian engineers -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade>
+          <GoodConsumptionUpgrade>
+            <Item>
+              <ProvidedNeed>1010247</ProvidedNeed>
+              <AmountInPercent>-30</AmountInPercent>
+            </Item>
+          </GoodConsumptionUpgrade>
+        </ResidenceUpgrade>
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID='1010291' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010401</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010294' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010402</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010315' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010403</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010316' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010404</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010292' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010405</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010295' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010406</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010284' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010407</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+  <ModOp GUID='1010325' Type="add" Path="/Values">
+    <BuffFactory>
+      <ProductionBuffs>
+        <Item>
+          <ProductivityBuff>1500010408</ProductivityBuff>
+          <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+          <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
+        </Item>
+      </ProductionBuffs>
+      <ProductionBuffScope>Radius</ProductionBuffScope>
+      <ProductionBuffDistance>15</ProductionBuffDistance>
+    </BuffFactory>
+  </ModOp>
+</ModOps>
