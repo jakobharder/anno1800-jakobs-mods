@@ -35,44 +35,23 @@ Their Artisans provide +10 farmer workforce per house.
 
 ## Notes
 
-Hint: use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.
-
-Using this mod will force you to activate skyscraper DLC in your savegame if you started without.
+- There is no cross progression from upgraded residences to their next population tier.
+  You have to downgrade to normal residences first - just like the skyscrapers handle it.
+- Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.
+- Using this mod will force you to activate skyscraper DLC in your savegame if you started without.
 
 Known issues:
 
-- The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
+- (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
 - The arrows for skyscraper update doesn't show sometimes. But the building will still upgrade if you click anyway.
 - The game wrongfully shows missing cheese for normal worker residences when all needs are fulfilled but people have not moved in yet. It's just an icon, nothing is missing.
 
+
 ## Changes
 
-### 1.6
+### 2.0
 
-- Chinese translation
-
-### 1.5
-
-- Stone pavement is now always street and has proper green overlay.
-  You need to rebuild existing pavements to update.
-
-### 1.4
-
-- Added music school from Pescatarians as luxury public service
-
-### 1.3
-
-- Stone pavement as street when used with "Plaza Streets"
-
-### 1.2
-
-- Fixed warehouse/docklands goods issues
-- Increased trade price of cheese (45 -> 80)
-
-### 1.1
-
-- Trade contracts for new goods
-- Some City Lights Pack ornaments have now a stone pavement ground 
+- Added Artisans 🥳
 
 ## Translations
 

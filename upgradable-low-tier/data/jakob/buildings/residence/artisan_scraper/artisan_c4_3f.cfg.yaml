@@ -1,0 +1,10 @@
+variant: 
+  source: artisan_c4.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\buildings\residence\artisan_scraper\rdm\artisan_c4_3f_lod0.rdm
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke_c4_1"]/Transformer/Config
+      Position.y: 2.643404
+    - xpath: //Config/Particles/Config[Name="particle_smoke_c4_2"]/Transformer/Config
+      Position.y: 2.668743

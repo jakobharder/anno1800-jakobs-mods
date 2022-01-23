@@ -78,7 +78,6 @@ Upgradable Low Tiers
           <GUID>1500010127</GUID>
           <Name>suits</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
         <Locked />
         <Product>
@@ -129,6 +128,58 @@ Upgradable Low Tiers
         <ExpeditionAttribute>
           <!-- TODO make edible -->
           <BaseMorale>20</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010233</GUID>
+          <Name>secretary</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_secretary.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <BasePrice>2300</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>0</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010234</GUID>
+          <Name>toy trains</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\ships\icon_preorder_train_01.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <BasePrice>2300</BasePrice>
+          <CivLevel>3</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>0</BaseMorale>
         </ExpeditionAttribute>
       </Values>
     </Asset>
@@ -326,7 +377,8 @@ Upgradable Low Tiers
       <Good>1500010153</Good>
     </Item>
   </ModOp>
-  <!-- # modify vanilla worker upgrade path -->
+  
+  <!-- # modify vanilla upgrade paths -->
   <ModOp GUID='1010344' Type="add" Path="Values">
     <!-- TODO this will not work if another mod already adds floors -->
     <FloorStackOwner>
@@ -338,11 +390,39 @@ Upgradable Low Tiers
         </Item>
         <Item>
           <Ingredient>1010196</Ingredient>
-          <Amount>8</Amount>
+          <Amount>3</Amount>
         </Item>
         <Item>
           <Ingredient>1010205</Ingredient>
-          <Amount>6</Amount>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010218</Ingredient>
+          <Amount>1</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010207</Ingredient>
+          <Amount>1</Amount>
+        </Item>
+      </AddFloorCost>
+    </FloorStackOwner>
+  </ModOp>
+  <ModOp GUID='1010345' Type="add" Path="Values">
+    <!-- TODO this will not work if another mod already adds floors -->
+    <FloorStackOwner>
+      <UpgradeTargetGUID>1500010225</UpgradeTargetGUID>
+      <AddFloorCost>
+        <Item>
+          <Ingredient>1010017</Ingredient>
+          <Amount>1000</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>5</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010205</Ingredient>
+          <Amount>4</Amount>
         </Item>
         <Item>
           <Ingredient>1010218</Ingredient>
@@ -350,11 +430,12 @@ Upgradable Low Tiers
         </Item>
         <Item>
           <Ingredient>1010207</Ingredient>
-          <Amount>3</Amount>
+          <Amount>2</Amount>
         </Item>
       </AddFloorCost>
     </FloorStackOwner>
   </ModOp>
+
   <!-- # Residence: Worker -->
   <ModOp GUID='1010346' Type="addNextSibling">
     <Asset>
@@ -363,8 +444,8 @@ Upgradable Low Tiers
       <Values>
         <Standard>
           <GUID>1500010200</GUID>
-          <Name>worker_skyscraper</Name>
-          <IconFilename>data/jakob/ui/icons/icon_worker_scraper.png</IconFilename>
+          <Name>Worker Level 1</Name>
+          <IconFilename>data/jakob/ui/icons/icon_worker_scraper2.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
         <Selection>
@@ -372,6 +453,7 @@ Upgradable Low Tiers
         </Selection>
         <Locked />
         <Building>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
           <!-- overwrite influence direction have front fassades always facing outwards -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingBlockPool>
@@ -530,21 +612,20 @@ Upgradable Low Tiers
               <!-- crossing -->
             </Item>
           </InfluencedVariationDirection>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
         </Building>
         <Cost>
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>100</Amount>
+              <Amount>500</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>14</Amount>
+              <Amount>15</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>6</Amount>
+              <Amount>4</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
@@ -552,13 +633,14 @@ Upgradable Low Tiers
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>3</Amount>
+              <Amount>1</Amount>
             </Item>
           </Costs>
         </Cost>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
+          <UpgradeCost />
         </Upgradable>
         <Object>
           <Variations>
@@ -719,23 +801,23 @@ Upgradable Low Tiers
           <AddFloorCost>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>100</Amount>
+              <Amount>500</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
+              <Amount>3</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>6</Amount>
+              <Amount>2</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
-              <Amount>3</Amount>
+              <Amount>1</Amount>
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>3</Amount>
+              <Amount>1</Amount>
             </Item>
           </AddFloorCost>
         </FloorStackOwner>
@@ -756,8 +838,8 @@ Upgradable Low Tiers
       <Values>
         <Standard>
           <GUID>1500010201</GUID>
-          <Name>worker_skyscraper</Name>
-          <IconFilename>data/jakob/ui/icons/worker_scraper_mixed.png</IconFilename>
+          <Name>Worker Level 2</Name>
+          <IconFilename>data/jakob/ui/icons/icon_worker_scraper.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
         <Locked />
@@ -823,6 +905,30 @@ Upgradable Low Tiers
             </SkinList>
           </Skins>
         </Object>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>28</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <FloorStackOwner>
           <FloorCount>2</FloorCount>
           <Components>
@@ -1299,6 +1405,271 @@ Upgradable Low Tiers
       <Building>1500010201</Building>
     </Item>
   </ModOp>
+  <ignore>
+    <Item>
+      <Product>120020</Product>
+      <SupplyWeight>5</SupplyWeight>
+    </Item>
+    <Item>
+      <Product>1010200</Product>
+      <Amount>0.0008333334</Amount>
+      <SupplyWeight>3</SupplyWeight>
+      <MoneyValue>10</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010216</Product>
+      <Amount>0.001111112</Amount>
+      <HappinessValue>4</HappinessValue>
+      <MoneyValue>30</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010237</Product>
+      <Amount>0.001025642</Amount>
+      <SupplyWeight>2</SupplyWeight>
+      <MoneyValue>30</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010349</Product>
+      <HappinessValue>6</HappinessValue>
+      <MoneyValue>12</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010238</Product>
+      <Amount>0.000333334</Amount>
+      <SupplyWeight>3</SupplyWeight>
+      <MoneyValue>20</MoneyValue>
+      <FullWeightPopulationCount>150</FullWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010213</Product>
+      <Amount>0.00030303</Amount>
+      <SupplyWeight>3</SupplyWeight>
+      <MoneyValue>20</MoneyValue>
+      <FullWeightPopulationCount>300</FullWeightPopulationCount>
+      <NoWeightPopulationCount>149</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010350</Product>
+      <HappinessValue>7</HappinessValue>
+      <FullWeightPopulationCount>300</FullWeightPopulationCount>
+      <NoWeightPopulationCount>149</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010203</Product>
+      <Amount>0.000138889</Amount>
+      <SupplyWeight>2</SupplyWeight>
+      <MoneyValue>20</MoneyValue>
+      <FullWeightPopulationCount>500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>299</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010214</Product>
+      <Amount>0.00025641</Amount>
+      <HappinessValue>3</HappinessValue>
+      <MoneyValue>50</MoneyValue>
+      <FullWeightPopulationCount>750</FullWeightPopulationCount>
+      <NoWeightPopulationCount>499</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010351</Product>
+      <SupplyWeight>2</SupplyWeight>
+      <FullWeightPopulationCount>750</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item>
+
+    <Item>
+      <Product>1010238</Product>
+      <Amount>0.000666667</Amount>
+      <SupplyWeight>6</SupplyWeight>
+      <MoneyValue>40</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010213</Product>
+      <Amount>0.000606061</Amount>
+      <SupplyWeight>6</SupplyWeight>
+      <MoneyValue>40</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010350</Product>
+      <HappinessValue>7</HappinessValue>
+    </Item>
+    <Item>
+      <Product>1010203</Product>
+      <Amount>0.000277778</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>40</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010214</Product>
+      <Amount>0.000512821</Amount>
+      <HappinessValue>3</HappinessValue>
+      <MoneyValue>100</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010351</Product>
+      <SupplyWeight>4</SupplyWeight>
+    </Item>
+    <Item>
+      <Product>1010217</Product>
+      <Amount>0.00017094</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>20</MoneyValue>
+      <FullWeightPopulationCount>250</FullWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010206</Product>
+      <Amount>0.00047619</Amount>
+      <SupplyWeight>2</SupplyWeight>
+      <MoneyValue>40</MoneyValue>
+      <FullWeightPopulationCount>500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>249</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010352</Product>
+      <HappinessValue>6</HappinessValue>
+      <MoneyValue>20</MoneyValue>
+      <FullWeightPopulationCount>500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>249</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010257</Product>
+      <Amount>0.000952381</Amount>
+      <HappinessValue>4</HappinessValue>
+      <MoneyValue>50</MoneyValue>
+      <FullWeightPopulationCount>900</FullWeightPopulationCount>
+      <NoWeightPopulationCount>499</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010247</Product>
+      <Amount>0.000444444</Amount>
+      <SupplyWeight>2</SupplyWeight>
+      <MoneyValue>60</MoneyValue>
+      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>899</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010353</Product>
+      <SupplyWeight>2</SupplyWeight>
+      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+    </Item>
+
+    <Item>
+      <Product>1010217</Product>
+      <Amount>0.00034188</Amount>
+      <SupplyWeight>12</SupplyWeight>
+      <MoneyValue>40</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010206</Product>
+      <Amount>0.000952381</Amount>
+      <SupplyWeight>6</SupplyWeight>
+      <MoneyValue>80</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010352</Product>
+      <HappinessValue>6</HappinessValue>
+      <MoneyValue>20</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010257</Product>
+      <Amount>0.001904762</Amount>
+      <HappinessValue>4</HappinessValue>
+      <MoneyValue>100</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010247</Product>
+      <Amount>0.000888889</Amount>
+      <SupplyWeight>6</SupplyWeight>
+      <MoneyValue>120</MoneyValue>
+    </Item>
+    <Item>
+      <Product>1010353</Product>
+      <SupplyWeight>6</SupplyWeight>
+    </Item>
+    <Item>
+      <Product>120030</Product>
+      <Amount>0.000148148</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>50</MoneyValue>
+      <FullWeightPopulationCount>500</FullWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010245</Product>
+      <Amount>0.000416667</Amount>
+      <HappinessValue>5</HappinessValue>
+      <MoneyValue>70</MoneyValue>
+      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>499</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>120032</Product>
+      <Amount>0.000784314</Amount>
+      <SupplyWeight>2</SupplyWeight>
+      <MoneyValue>40</MoneyValue>
+      <FullWeightPopulationCount>1750</FullWeightPopulationCount>
+      <NoWeightPopulationCount>999</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010246</Product>
+      <Amount>0.000130719</Amount>
+      <HappinessValue>3</HappinessValue>
+      <MoneyValue>90</MoneyValue>
+      <FullWeightPopulationCount>1750</FullWeightPopulationCount>
+      <NoWeightPopulationCount>999</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010354</Product>
+      <SupplyWeight>2</SupplyWeight>
+      <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1749</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010208</Product>
+      <Amount>0.000208333</Amount>
+      <SupplyWeight>2</SupplyWeight>
+      <MoneyValue>70</MoneyValue>
+      <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1749</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010356</Product>
+      <HappinessValue>2</HappinessValue>
+      <MoneyValue>100</MoneyValue>
+      <FullWeightPopulationCount>3000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>2999</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>135108</Product>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+    </Item>
+    <Item>
+      <Product>135186</Product>
+      <Amount>8.66667E-05</Amount>
+      <MoneyValue>43</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+    </Item>
+    <Item>
+      <Product>135107</Product>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+    </Item>
+    <Item>
+      <Product>135230</Product>
+      <Amount>0.000133333</Amount>
+      <MoneyValue>95</MoneyValue>
+      <RequiredFloorLevel>3</RequiredFloorLevel>
+    </Item>
+    <Item>
+      <Product>135109</Product>
+      <RequiredFloorLevel>3</RequiredFloorLevel>
+    </Item>
+    <Item>
+      <Product>135233</Product>
+      <Amount>5E-05</Amount>
+      <MoneyValue>72</MoneyValue>
+      <RequiredFloorLevel>3</RequiredFloorLevel>
+    </Item>
+  </ignore>
   <ModOp GUID='15000001' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
     <!-- low -->
     <Item>
@@ -1392,6 +1763,1179 @@ Upgradable Low Tiers
     <Item>
       <Product>1500010127</Product>
     </Item>
+  </ModOp>
+
+  <!-- # Residence: Artisans -->
+  <ModOp Type="addNextSibling" GUID="102843">
+    <Asset>
+      <!-- inherit from engineers instead of artisans to get InfluencedByNeighbors -->
+      <BaseAssetGUID>1010346</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010225</GUID>
+          <Name>Artisan Level 1</Name>
+          <IconFilename>data/jakob/ui/icons/icon_artisan_scraper2.png</IconFilename>
+          <InfoDescription>1500010214</InfoDescription>
+        </Standard>
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier03</ParticipantMessageArcheType>
+        </Selection>
+        <Locked />
+        <Building>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <!--
+            Artisans are either upgraded from modern workers or vanilla artisans.
+            Vanilla has 4 variants. Those translate to straights.
+            Corners, ends will trigger random variation.
+            Modern workers follow the same pattern, except there are two ends because of the assymetrical nature. 
+          -->
+          <BuildingBlockPool>
+            <Single /> <!-- unused -->
+            <DontCare /> <!-- unused -->
+            <Corner>
+              <Pool>
+                <Item>
+                  <Variation>6</Variation>
+                </Item>
+                <Item>
+                  <Variation>7</Variation>
+                </Item>
+                <Item>
+                  <Variation>8</Variation>
+                </Item>
+                <Item>
+                  <Variation>9</Variation>
+                </Item>
+                <Item>
+                  <Variation>10</Variation>
+                </Item>
+                <Item>
+                  <Variation>11</Variation>
+                </Item>
+              </Pool>
+            </Corner>
+            <Mid> <!-- also used for T -->
+              <Pool>
+                <Item>
+                  <Variation>0</Variation>
+                </Item>
+                <Item>              
+                  <Variation>1</Variation>
+                </Item>
+                <Item>
+                  <Variation>2</Variation>
+                </Item>
+                <Item>
+                  <Variation>3</Variation>
+                </Item>
+              </Pool>
+            </Mid>
+            <End>
+              <Pool>
+                <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                  <Variation>4</Variation>
+                </Item>
+                <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                  <Variation>5</Variation>
+                </Item>
+              </Pool>
+            </End>
+            <TCrossing /> <!-- unused -->
+            <Crossing /> <!-- unused -->
+          </BuildingBlockPool>
+          <InfluencedVariationDirection>
+            <Item>
+              <!-- single -->
+              <Direction>0</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-west -->
+              <Direction>3</Direction>
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- end, south-east -->
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- corner, south -->
+              <Direction>2</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- end, north-east -->
+              <Direction>1</Direction>
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- mid, south-west to north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, east -->
+              <Direction>3</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, north-west -->
+              <Direction>2</Direction>
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- corner, west -->
+              <Direction>1</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- mid, north-west to south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-west  -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, north -->
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- crossing -->
+            </Item>
+          </InfluencedVariationDirection>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>17</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Upgradable>
+          <!-- disable upgrade -->
+          <NextGUID>0</NextGUID>
+          <UpgradeCost />
+        </Upgradable>
+        <Object>
+          <Variations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h24_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h51_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h44_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h12_3f.cfg</Filename>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_end1.cfg</Filename> -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h51_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_end2.cfg</Filename> -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h12_3f.cfg</Filename>
+            </Item>
+            <!-- corners -->
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c1_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c4_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c7_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c7_3f.cfg</Filename>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_corner5.cfg</Filename> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_corner3.cfg</Filename> -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c1_3f.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c8_3f.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <OverrideDefaultIcon>data/jakob/ui/icons/artisan_scraper_red.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010237</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010236</SkinAssetGuid>
+              </Item>
+              <!-- <Item>
+                <SkinAssetGuid>1500010235</SkinAssetGuid>
+              </Item> -->
+            </SkinList>
+          </Skins>
+        </Object>
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>15000002</PopulationLevel7>
+          <ResidentMax>30</ResidentMax> <!-- needs to be the standard max for the population level -->
+        </Residence7>
+        <LogisticNode>
+          <REMOVE_THIS_LATER_FeedbackUnitTier>Level3</REMOVE_THIS_LATER_FeedbackUnitTier>
+        </LogisticNode>
+        <AmbientMoodProvider>
+          <AmbientMood>ResidenceTier3</AmbientMood>
+          <DynamicEnvironmentType>ResidenceT5</DynamicEnvironmentType>
+          <HappinessDependentMurmur>
+            <Angry>
+              <Murmur>ArtisanUnhappy</Murmur>
+            </Angry>
+            <Unhappy>
+              <Murmur>ArtisanContent</Murmur>
+            </Unhappy>
+            <Neutral>
+              <Murmur>ArtisanContent</Murmur>
+            </Neutral>
+            <Happy>
+              <Murmur>ArtisanHappy</Murmur>
+            </Happy>
+            <Euphoric>
+              <Murmur>ArtisanHappy</Murmur>
+            </Euphoric>
+          </HappinessDependentMurmur>
+        </AmbientMoodProvider>
+        <FloorStackOwner>
+          <FloorCount>1</FloorCount>
+          <Components>
+            <BigFloor>
+              <!-- UI icon next to floor level count -->
+              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
+              <!-- empty variations to make sure downgrade arrow is shown at the right position -->
+              <FloorVariations>
+                <!-- 4 straight -->
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <!-- 2 end/corner -->
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <!-- 4 corner -->
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <!-- 2 end/corner -->
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+                <Item>
+                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
+                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
+                </Item>
+              </FloorVariations>
+            </BigFloor>
+          </Components>
+          <UpgradeTargetGUID>1500010226</UpgradeTargetGUID>
+          <AddFloorCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>3</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+          </AddFloorCost>
+        </FloorStackOwner>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>28</Amount>
+              <InactiveAmount>28</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <IncomeCategory>Residences</IncomeCategory>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>1500010225</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010226</GUID>
+          <Name>Artisan Level 2</Name>
+          <IconFilename>data/jakob/ui/icons/icon_artisan_scraper2.png</IconFilename>
+          <InfoDescription>1500010214</InfoDescription>
+        </Standard>
+        <Locked />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>2000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>22</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Upgradable>
+          <!-- disable upgrade -->
+          <NextGUID>0</NextGUID>
+          <UpgradeCost />
+        </Upgradable>
+        <Object>
+          <Variations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h24.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h51.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h44.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h12.cfg</Filename>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_end1.cfg</Filename> -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h51.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_end2.cfg</Filename> -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_h12.cfg</Filename>
+            </Item>
+            <!-- corners -->
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c7.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c7.cfg</Filename>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_corner5.cfg</Filename> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <!-- <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_corner3.cfg</Filename> -->
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/artisan_scraper/artisan_c8.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <OverrideDefaultIcon>data/jakob/ui/icons/artisan_scraper_red.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010230</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010229</SkinAssetGuid>
+              </Item>
+              <!-- <Item>
+                <SkinAssetGuid>1500010228</SkinAssetGuid>
+              </Item> -->
+            </SkinList>
+          </Skins>
+        </Object>
+        <FloorStackOwner>
+          <FloorCount>2</FloorCount>
+          <Components>
+            <!-- only use floor components for icon display -->
+            <BigFloor>
+              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
+            </BigFloor>
+          </Components>
+          <!-- last floor -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+          <AddFloorCost />
+        </FloorStackOwner>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>42</Amount>
+              <InactiveAmount>42</InactiveAmount>
+            </Item>
+          </Maintenances>
+          <IncomeCategory>Residences</IncomeCategory>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010228</GUID>
+          <Name>Mixed skin, 4f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_colored.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010228</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h24.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h51.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h44.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h12.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h51.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h12.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c7.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c7.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c1.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c8.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010229</GUID>
+          <Name>Blue roof skin, 4f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_blue.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010229</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h24.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h51.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h44.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h12.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h51.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h12.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c7.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c7.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c1.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c8.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010230</GUID>
+          <Name>Brick wall skin, 4f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_brick.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010230</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h24.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h51.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h44.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h12.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h51.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h12.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c7.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c7.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c1.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c8.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010235</GUID>
+          <Name>Mixed skin, 3f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_colored.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010235</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h24_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h51_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h44_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h12_3f.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h51_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_h12_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c1_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c4_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c7_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c7_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c1_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin1/artisan_c8_3f.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010236</GUID>
+          <Name>Blue roof skin, 3f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_blue.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010236</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h24_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h51_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h44_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h12_3f.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h51_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_h12_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c1_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c4_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c7_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c7_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c1_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin2/artisan_c8_3f.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010237</GUID>
+          <Name>Brick wall skin, 3f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_brick.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010237</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h24_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h51_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h44_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h12_3f.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h51_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_h12_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c1_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c4_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c7_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c7_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c1_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c8_3f.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add neighbor influences -->
+  <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500010225</Building>
+    </Item>
+    <Item>
+      <Building>1500010226</Building>
+    </Item>
+  </ModOp>
+  <!-- add spawn feeback -->
+  <ModOp GUID="2001090" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010225</Building>
+    </Item>
+    <Item>
+      <Building>1500010226</Building>
+    </Item>
+  </ModOp>
+  <!-- add needs -->
+  <ModOp GUID='15000002' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+    <!-- low -->
+    <Item>
+      <Product>1500010102</Product> <!-- cheese -->
+      <Amount>0.0002083</Amount>
+      <SupplyWeight>7</SupplyWeight>
+      <MoneyValue>25</MoneyValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010225</RequiredToBeBuilding>
+      <FullWeightPopulationCount>800</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010248</Product> <!-- gramophone -->
+      <Amount>0.000027775</Amount>
+      <SupplyWeight>7</SupplyWeight>
+      <MoneyValue>80</MoneyValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010225</RequiredToBeBuilding>
+      <FullWeightPopulationCount>800</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010354</Product> <!-- electricity -->
+      <SupplyWeight>6</SupplyWeight>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010225</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item>
+    <!-- <Item>
+      <Product>1010208</Product> <!- - light bulbs - ->
+      <Amount>0.000138889</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>70</MoneyValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010225</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item> -->
+    <!-- high -->
+    <Item>
+      <Product>1500010102</Product> <!-- cheese -->
+      <Amount>0.0002083</Amount>
+      <SupplyWeight>7</SupplyWeight>
+      <MoneyValue>25</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>600</FullWeightPopulationCount>
+      <NoWeightPopulationCount>449</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010248</Product> <!-- gramophones -->
+      <Amount>0.000027775</Amount>
+      <SupplyWeight>7</SupplyWeight>
+      <MoneyValue>80</MoneyValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>800</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1010354</Product> <!-- electricity -->
+      <SupplyWeight>6</SupplyWeight>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item>
+    <!-- <Item>
+      <Product>1010208</Product> <!- - light bulbs - ->
+      <Amount>0.000138889</Amount>
+      <SupplyWeight>4</SupplyWeight>
+      <MoneyValue>70</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
+    </Item> -->
+    <Item>
+      <Product>120037</Product> <!-- bombins -->
+      <Amount>0.00005555</Amount>
+      <SupplyWeight>6</SupplyWeight>
+      <MoneyValue>60</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1199</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>135230</Product> <!-- typewriter -->
+      <Amount>0.000027775</Amount>
+      <SupplyWeight>7</SupplyWeight>
+      <MoneyValue>80</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1199</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>135233</Product> <!-- violins -->
+      <Amount>0.000027775</Amount>
+      <SupplyWeight>7</SupplyWeight>
+      <MoneyValue>100</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+    </Item>
+    <!-- <Item>
+      <Product>1500010234</Product> <!- - toy trains - ->
+      <Amount>0.000138889</Amount>
+      <SupplyWeight>6</SupplyWeight>
+      <MoneyValue>70</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+      <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+    </Item> -->
+  </ModOp>
+
+  <!-- # Artisan: Buff Targets -->
+  <ModOp Type="addNextSibling" GUID="1500010225">
+    <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010227</GUID>
+          <Name>All Modern Artisans</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <Item>
+              <GUID>1500010225</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010226</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010281</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010225</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010226</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Jump Upgrades -->
+  <ModOp GUID='1010346' Type="addNextSibling">
+    <Asset>
+      <!-- 
+        Every building can have only one downgrade target, which is decided by it's upgrade path.
+        We need to use fake residences to avoid 2 downgrade options.
+
+        This residence building is a temporary jump building.
+        It will be replaced with the target residence as soon as you build it via trigger.
+      -->
+      <BaseAssetGUID>1010346</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010231</GUID>
+          <Name>Artisan 1 to Engineer Jump Building</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <!-- disable upgrades to not break following downgrades -->
+        <Upgradable>
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- 
+        Trigger to convert all jump residences to target residences.
+        Note: the trigger is re-registering itself.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010232</GUID>
+          <Name>Built: Artisan 1 to Engineer Jump Building</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010231</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>1010346</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010231</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010232</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
 
   <!-- # ornaments -->
@@ -1533,20 +3077,23 @@ Upgradable Low Tiers
   </ModOp>
 
 
-  <!-- # construction menu -->
+  <!-- # Build Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
       <Template>ConstructionCategory</Template>
       <Values>
         <Standard>
           <GUID>1500010212</GUID>
-          <Name>workers_rise_menu</Name>
+          <Name>build menu</Name>
           <IconFilename>data\jakob\ui\icons\icon_upgradable_low_tier.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>
             <Item>
               <Building>1500010200</Building>
+            </Item>
+            <Item>
+              <Building>1500010225</Building>
             </Item>
             <Item>
               <Building>1500010800</Building>
@@ -1595,7 +3142,7 @@ Upgradable Low Tiers
     </Item>
   </ModOp>
 
-  <!-- # Buff Targets -->
+  <!-- # Worker Buff Targets -->
   <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010344']">
     <Item>
       <GUID>1500010281</GUID>
@@ -1722,7 +3269,7 @@ Upgradable Low Tiers
       <Values>
         <Standard>
           <GUID>1500010220</GUID>
-          <Name>unlock everything</Name>
+          <Name>unlock workers</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -1817,6 +3364,98 @@ Upgradable Low Tiers
           </TriggerActions>
         </Trigger>
         <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template> <!-- 2.0 unhide -->
+      <Values>
+        <Standard>
+          <GUID>1500010238</GUID>
+          <Name>unhide artisans</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>700</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010225</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010226</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template> <!-- 2.0 unlock -->
+      <Values>
+        <Standard>
+          <GUID>1500010239</GUID>
+          <Name>unlock artisans</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>700</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010225</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010226</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
