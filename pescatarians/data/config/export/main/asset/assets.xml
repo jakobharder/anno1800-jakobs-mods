@@ -33,7 +33,15 @@ Pescatarian
 
 1500010169 engineers are converters desc
 
-1500010172 engineer buff, -2 population fix
+1500010171 (TODO missing, but used as text?)
+
+1500010172 buff: engineer buff, -2 population fix
+1500010173 building: investor jump building
+1500010174 building: engineer skyscraper jump building
+1500010175 event trigger: investor jump
+1500010176 unlock trigger: jump investor unlock
+1500010177 event trigger: skyscraper jump
+1500010178 unlock trigger: skyscraper unlock
 
 1500010180 unhide
 1500010181 (unlock goods, moved to extra goods collection)
@@ -1347,14 +1355,14 @@ Pescatarian
   </ModOp>
 
 
-  <!-- # Residence: Engineers/Converters -->
+  <!-- # Residence: converting engineers and jump investors -->
   <ModOp GUID='1010346' Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>1010346</BaseAssetGUID>
       <Values>
         <Standard>
           <GUID>1500010145</GUID>
-          <Name>pescatarian_engineer</Name>
+          <Name>pesca_engineer</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
@@ -1362,6 +1370,13 @@ Pescatarian
         <UpgradeList>
           <DefaultBuff>1500010149</DefaultBuff>
         </UpgradeList>
+        <!-- reroute upgrades to jump trigger buildings to not impact vanilla downgrade -->
+        <Upgradable>
+          <NextGUID>1500010173</NextGUID>
+        </Upgradable>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>1500010174</UpgradeTargetGUID>
+        </FloorStackOwner>
       </Values>
     </Asset>
     <Asset>
@@ -1369,7 +1384,7 @@ Pescatarian
       <Values>
         <Standard>
           <GUID>1500010149</GUID>
-          <Name>engineers_are_converters</Name>
+          <Name>pesca_engineers_are_converters</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
           <InfoDescription>1500010169</InfoDescription>
         </Standard>
@@ -1424,6 +1439,243 @@ Pescatarian
       <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
     </Item>
   </ModOp>
+  <ModOp GUID='1010347' Type="addNextSibling">
+    <Asset>
+      <!-- 
+        This investor building is a temporary jump building.
+        It will be replaced with the vanilla investors as soon as you build it via trigger.
+        Without it, the game will link Pescatarian engineers as the downgrade for vanilla investors.
+      -->
+      <BaseAssetGUID>1010347</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010173</GUID>
+          <Name>pesca_investor_jump_building</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+        </Standard>
+        <Locked /> <!-- unlock same as investors -->
+        <!-- disable upgrades to not break following downgrades -->
+        <Upgradable>
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- 
+        Trigger to convert all jump investors to vanilla investors.
+        Note: the trigger is re-registering itself.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010175</GUID>
+          <Name>pesca_jump_investor_built</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010173</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>1010347</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010173</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010175</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- trigger to unlock jump investor -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010176</GUID>
+          <Name>unlock_jump_investor</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>1010347</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010173</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID='601888' Type="addNextSibling">
+    <!-- same as investor jump building just for engineer skyscraper -->
+    <Asset>
+      <BaseAssetGUID>601888</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010174</GUID>
+          <Name>pesca_skyscraper_jump_building</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Upgradable>
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010177</GUID>
+          <Name>pesca_jump_skyscraper_built</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010174</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>601888</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010174</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010177</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- trigger to unlock jump investor -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010178</GUID>
+          <Name>unlock_jump_skyscraper</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>601888</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010174</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
 
   <!-- # InfluencedByNeighbors, spawn feedback, ... -->
   <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
@@ -1438,6 +1690,9 @@ Pescatarian
     </Item>
     <Item>
       <Building>1500010145</Building>
+    </Item>
+    <Item>
+      <Building>1500010173</Building>
     </Item>
   </ModOp>
   <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
@@ -1701,108 +1956,6 @@ Pescatarian
     <Item>
       <Building>1500010186</Building>
     </Item>
-  </ModOp>
-
-  <!-- # Close Production Buffs -->
-  <ModOp GUID='1010343' Type="addNextSibling">
-    <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010184</GUID>
-          <Name>suits_maker_reduced_needs</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <InfoDescription>1500010170</InfoDescription>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010144</GUID>
-            </Item>
-            <Item>
-              <GUID>1500010145</GUID>
-            </Item>
-          </EffectTargets>
-          <AllowStacking>0</AllowStacking>
-        </ItemEffect>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Suits maker reduced needs</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade>
-          <GoodConsumptionUpgrade>
-            <Item>
-              <ProvidedNeed>1500010127</ProvidedNeed>
-              <AmountInPercent>-30</AmountInPercent>
-            </Item>
-          </GoodConsumptionUpgrade>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010183</GUID>
-          <Name>cannery_reduced_needs</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
-          <InfoDescription>1500010170</InfoDescription>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010144</GUID>
-            </Item>
-            <Item>
-              <GUID>1500010145</GUID>
-            </Item>
-          </EffectTargets>
-          <AllowStacking>0</AllowStacking>
-        </ItemEffect>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cannery reduced needs</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>31345</LineID>
-        </Text>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade>
-          <GoodConsumptionUpgrade>
-            <Item>
-              <ProvidedNeed>1500010120</ProvidedNeed>
-              <AmountInPercent>-30</AmountInPercent>
-            </Item>
-          </GoodConsumptionUpgrade>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
-      </Values>
-    </Asset>
   </ModOp>
 
   <!-- # Buff Targets -->

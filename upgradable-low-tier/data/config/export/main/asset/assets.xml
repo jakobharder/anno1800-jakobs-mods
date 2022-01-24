@@ -265,6 +265,7 @@ Upgradable Low Tiers
         <Locked />
         <Building>
           <!-- overwrite influence direction have front fassades always facing outwards -->
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingBlockPool>
             <Single>
               <Pool>
@@ -1183,8 +1184,8 @@ Upgradable Low Tiers
       <MoneyValue>20</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
-      <FullWeightPopulationCount>0</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>800</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1500010153</Product> <!-- tools -->
@@ -1193,16 +1194,16 @@ Upgradable Low Tiers
       <MoneyValue>80</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1010354</Product> <!-- electricity -->
       <SupplyWeight>2</SupplyWeight>
       <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
     </Item>
     <!-- high -->
     <Item>
@@ -1212,8 +1213,8 @@ Upgradable Low Tiers
       <MoneyValue>20</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
-      <FullWeightPopulationCount>0</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>800</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1500010153</Product> <!-- tools -->
@@ -1222,26 +1223,16 @@ Upgradable Low Tiers
       <MoneyValue>80</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1010354</Product> <!-- electricity -->
       <SupplyWeight>2</SupplyWeight>
       <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
-    </Item>
-    <Item>
-      <Product>1500010120</Product> <!-- canned fish -->
-      <Amount>0.0004166</Amount>
-      <SupplyWeight>5</SupplyWeight>
-      <MoneyValue>25</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+      <NoWeightPopulationCount>749</NoWeightPopulationCount>
     </Item>
     <Item>
       <Product>1500010127</Product> <!-- OW suits -->
@@ -1250,8 +1241,18 @@ Upgradable Low Tiers
       <MoneyValue>50</MoneyValue>
       <RequiredFloorLevel>2</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1</FullWeightPopulationCount>
-      <NoWeightPopulationCount>0</NoWeightPopulationCount>
+      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>999</NoWeightPopulationCount>
+    </Item>
+    <Item>
+      <Product>1500010120</Product> <!-- canned fish -->
+      <Amount>0.0004166</Amount>
+      <SupplyWeight>5</SupplyWeight>
+      <MoneyValue>25</MoneyValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
+      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+      <NoWeightPopulationCount>999</NoWeightPopulationCount>
     </Item>
   </ModOp>
   <ModOp GUID='502005' Type="add" Path="/Values/ProductList/List">
