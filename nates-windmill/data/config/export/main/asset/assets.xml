@@ -1,7 +1,8 @@
 <!-- 
-Nate's Windmill Mod 
+Nate's Windmill 
 
-GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
+Git: https://github.com/jakobharder/anno-1800-jakobs-mods
+GUIDs: https://github.com/anno-mods/GuidRanges
 
 1500010001 windmill
 1500010002 provided service text
@@ -10,11 +11,6 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
 1500010005 unhide trigger
 1500010006 unlock trigger
 
-TODOs
-- sounds, ambient stuff
-- incidents
-- LineIDs
-
 -->
 
 <ModOps>
@@ -22,7 +18,7 @@ TODOs
   <!-- =========== -->
 
   <!-- Nate's Windmill -->
-  <ModOp Path="//Assets[Asset/Values/Standard/GUID='100780']" Type="add">
+  <ModOp GUID='100780' Type="addNextSibling">
     <Asset>
       <Template>PublicServiceBuilding</Template>
       <Values>
@@ -31,24 +27,13 @@ TODOs
           <Name>nates_windmill</Name>
           <IconFilename>data/jakob/ui/icons/icon_nates_windmill.png</IconFilename>
           <InfoDescription>1500010004</InfoDescription>
-          <Version>dlc01</Version>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Nate's Windmill</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>23382</LineID> <!-- TODO -->
-        </Text>
         <Blocking />
         <Building>
           <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
-          <AllowChangeVariation>1</AllowChangeVariation>
+          <AllowChangeDirection>1</AllowChangeDirection>
           <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
         </Building>
         <Cost>
@@ -65,10 +50,6 @@ TODOs
               <Ingredient>1010210</Ingredient> <!-- Sail Cloth -->
               <Amount>10</Amount>
             </Item>
-            <Item>
-              <Ingredient>1010224</Ingredient> <!-- Steam Machines -->
-              <Amount>5</Amount>
-            </Item>
           </Costs>
         </Cost>
         <Maintenance>
@@ -79,8 +60,8 @@ TODOs
               <Amount>400</Amount>
             </Item>
             <Item>
-              <Product>1010117</Product> <!-- Engineers -->
-              <Amount>50</Amount>
+              <Product>1010115</Product> <!-- Workers -->
+              <Amount>20</Amount>
               <ShutdownThreshold>0.5</ShutdownThreshold>
             </Item>
           </Maintenances>
@@ -111,7 +92,6 @@ TODOs
         </SoundEmitter>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410040</DLCDependency> <!-- Sunken Treasures -->
         </Locked>
         <FeedbackController />
         <AmbientMoodProvider />
@@ -159,6 +139,24 @@ TODOs
         </PublicService>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010002</GUID>
+          <Name>Provides Electricity</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010004</GUID>
+          <Name>production building infocorner</Name>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
 
 
@@ -167,13 +165,12 @@ TODOs
 
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
-  <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+  <ModOp Type="add" GUID='193879,190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
       <GUID>1500010001</GUID>
     </Item>
   </ModOp>
-  <!-- no palace buffs -->
-  <!-- no guild house buffs -->
+  <!-- don't add to powerplants to prevent range increase -->
 
 
   <!-- # Build Menus -->
@@ -197,14 +194,13 @@ TODOs
   <!-- =================== -->
 
   <!-- unhide on first engineer, unlock with motor assembly (500 engineers) -->
-  <ModOp Path="//Assets" Type="add">
+  <ModOp GUID='100780' Type="addNextSibling">
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010005</GUID>
           <Name>Nate's Windmill</Name>
-          <Version>dlc01</Version>
         </Standard>
         <Locked />
         <Trigger>
@@ -236,31 +232,6 @@ TODOs
               </TriggerAction>
             </Item>
           </TriggerActions>
-          <SubTriggers>
-            <Item>
-              <SubTrigger>
-                <Template>AutoCreateTrigger</Template>
-                <Values>
-                  <Trigger>
-                    <TriggerCondition>
-                      <Template>ConditionIsDLCActive</Template>
-                      <Values>
-                        <Condition />
-                        <ConditionIsDLCActive>
-                          <DLCAssetList>
-                            <Item>
-                              <DLCAsset>410040</DLCAsset> <!-- Sunken Treasures -->
-                            </Item>
-                          </DLCAssetList>
-                        </ConditionIsDLCActive>
-                        <ConditionPropsNegatable />
-                      </Values>
-                    </TriggerCondition>
-                  </Trigger>
-                </Values>
-              </SubTrigger>
-            </Item>
-          </SubTriggers>
         </Trigger>
         <TriggerSetup>
           <UsedBySecondParties>0</UsedBySecondParties>
@@ -309,52 +280,6 @@ TODOs
         <TriggerSetup>
           <UsedBySecondParties>0</UsedBySecondParties>
         </TriggerSetup>
-      </Values>
-    </Asset>
-  </ModOp>
-
-
-  <!-- # Texts -->
-  <!-- ======= -->
-
-  <!-- add building description -->
-  <ModOp Path="//Assets" Type="add">
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010002</GUID>
-          <Name>Provides Electricity</Name>
-        </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Provides electricity to your industry and residents.</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>14506</LineID> <!-- TODO -->
-        </Text>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010004</GUID>
-          <Name>production building infocorner</Name>
-        </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Provides electricity to your industry and residents. Cannot be built in the area of guild houses.</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>14451</LineID>
-        </Text>
       </Values>
     </Asset>
   </ModOp>
