@@ -1,0 +1,669 @@
+<!-- 
+Biogas Production
+
+Git: https://github.com/jakobharder/anno-1800-jakobs-mods
+GUIDs: https://github.com/anno-mods/GuidRanges
+
+1500010010-19
+// 17 unused, but wrongfully referred to by other of my mods
+1500010037-38
+
+-->
+
+<ModOps>
+  <!-- # Biogas plant -->
+  <ModOp GUID='100780' Type="addNextSibling">
+    <Asset>
+      <Template>FactoryBuilding7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010010</GUID>
+          <Name>biogas_plant</Name>
+          <IconFilename>data/jakob/ui/icons/icon_biogas_plant.png</IconFilename>
+          <Version>dlc03</Version>
+          <InfoDescription>1500010011</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>100000</BuildingCategoryName> <!-- production -->
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Amount>80000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient> <!-- Timber -->
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient> <!-- Bricks -->
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient> <!-- Beams -->
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Maintenance>
+          <IncomeCategory>AdministrationBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>400</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product> <!-- Workers -->
+              <Amount>300</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Selection>
+          <GUIType>Production</GUIType>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/production/biogas_plant/biogas_plant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable />
+        <Mesh />
+        <SoundEmitter>
+          <ActiveSounds>
+            <!-- from soap factory -->
+            <Item>
+              <Sound>216871</Sound>
+            </Item>
+            <Item>
+              <Sound>202350</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <!-- from soap factory -->
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+        </SoundEmitter>
+        <Locked>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <FeedbackController />
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Attackable>
+          <!-- important for burn damage -->
+          <MaximumHitPoints>1000</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable>
+          <CanPauseManually>1</CanPauseManually>
+        </Pausable>
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+        </IncidentInfectable>
+        <Infolayer />
+        <ItemContainer />
+        <Culture>
+          <Attractiveness>-50</Attractiveness>
+          <CultureType>Military</CultureType> <!-- military? it's same as tallow processing and soap factory though -->
+        </Culture>
+        <Industrializable>
+          <!-- disable electricity -->
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Electrifiable>
+          <ElectricityBoost>0</ElectricityBoost>
+        </Electrifiable>
+        <LogisticNode />
+        <Factory7 />
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1500010014</Product> <!-- bio waste -->
+              <Amount>1</Amount>
+              <StorageAmount>10</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>112706</Product> <!-- gas -->
+              <Amount>1</Amount>
+              <StorageAmount>5</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>45</CycleTime>
+        </FactoryBase>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010011</GUID>
+          <Name>Produces Gas</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Waste production -->
+  <!-- Waste depot -->
+  <ModOp GUID='100780' Type="addNextSibling">
+    <Asset>
+      <Template>PublicServiceBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010015</GUID>
+          <Name>biogas_waste_depot</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+          <Version>dlc03</Version>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingType>PublicService</BuildingType>
+          <BuildingCategoryName>11151</BuildingCategoryName> <!-- infrastructure -->
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Amount>15000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient> <!-- Wood -->
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient> <!-- Bricks -->
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient> <!-- Metal -->
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Maintenance>
+          <IncomeCategory>AdministrationBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Selection>
+          <GUIType>Generic</GUIType>
+        </Selection>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/production/farm_waste_depot/farm_waste_depot.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable />
+        <Mesh />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+        </SoundEmitter>
+        <Locked>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <FeedbackController />
+        <AmbientMoodProvider>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Attackable>
+          <!-- important for burn damage -->
+          <MaximumHitPoints>5000</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <!-- TODO explode when burning -->
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+        </IncidentInfectable>
+        <Infolayer />
+        <Culture>
+          <Attractiveness>-30</Attractiveness>
+          <CultureType>Military</CultureType> <!-- military? it's same as tallow processing and soap factory though -->
+        </Culture>
+        <Industrializable>
+          <!-- disable electricity -->
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Electrifiable>
+          <ElectricityBoost>0</ElectricityBoost>
+        </Electrifiable>
+        <LogisticNode />
+        <Factory7 />
+        <FactoryBase />
+        <BuffFactory>
+          <BaseBuff>1500010012</BaseBuff> <!-- pig farm -->
+          <BaseBuffScope>Radius</BaseBuffScope>
+          <BaseBuffDistance>6</BaseBuffDistance>
+          <ProductionBuffs>
+            <!-- note: multiple buffs won't work. Only last applicable buff is chosen. -->
+            <Item>
+              <ProductivityBuff>1500010018</ProductivityBuff> <!-- cattle farm -->
+            </Item>
+          </ProductionBuffs>
+          <ProductionBuffScope>Radius</ProductionBuffScope>
+          <ProductionBuffDistance>6</ProductionBuffDistance>
+        </BuffFactory>
+        <!-- and now a hack to to highlight at least production buildings when building -->
+        <ItemContainer>
+          <SocketCount>0</SocketCount>
+          <SocketAllocation>RadiusBuilding</SocketAllocation>
+          <SocketScope>Radius</SocketScope>
+          <SocketScopeRadius>6</SocketScopeRadius>
+        </ItemContainer>
+        <UpgradeList>
+          <!-- use forwardbuff on self to get a 3rd buff -->
+          <DefaultBuff>1500010038</DefaultBuff>
+        </UpgradeList>
+        <PublicService>
+          <!-- dummy public service to ensure ProductionBuffs are working -->
+          <FullSatisfactionDistance>6</FullSatisfactionDistance>
+          <NoSatisfactionDistance>6</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1500010019</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- farm waste product -->
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010014</GUID>
+          <Name>farm_waste</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Farm Waste</Text>
+              <Status>Exported</Status>
+              <ExportCount>1</ExportCount>
+            </English>
+          </LocaText>
+          <LineID>5339</LineID>
+        </Text>
+        <Locked>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11702</ProductCategory> <!-- natural products -->
+          <BasePrice>1</BasePrice> <!-- wanna sell some waste? :P -->
+          <CivLevel>5</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+              <RequiredDLCs>
+                <Item>
+                  <RequiredDLC>410042</RequiredDLC> <!-- Arctic -->
+                </Item>
+              </RequiredDLCs>
+            </Item>
+          </ProductionRegions>
+        </Product>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010013</GUID>
+          <Name>farm_waste_depot_desc</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010019</GUID>
+          <Name>farm_waste_service</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+        </Standard>
+        <Locked>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11708</ProductCategory>
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+        <ExpeditionAttribute />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010012</GUID>
+          <Name>biogas_60s_waste</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010269</GUID> <!-- pig farm -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1500010014</Product> <!-- bio waste -->
+              <AdditionalOutputCycle>6</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010018</GUID>
+          <Name>biogas_120s_waste</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010263</GUID> <!-- cattle farm -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1500010014</Product> <!-- bio waste -->
+              <AdditionalOutputCycle>3</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010037</GUID>
+          <Name>biogas_30s_waste</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010104</GUID> <!-- milk farm -->
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1500010014</Product> <!-- bio waste -->
+              <AdditionalOutputCycle>12</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ForwardBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010038</GUID>
+          <Name>biogas_30s_waste_forward</Name>
+          <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
+        <EffectForward>
+          <ForwardEffect>1500010037</ForwardEffect>
+          <ForwardEffectRange>6</ForwardEffectRange>
+        </EffectForward>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add to StandartProductStorageList -->
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
+    <Item>
+      <Product>1500010014</Product>
+    </Item>
+  </ModOp>
+  <!-- add to AgriculturalGoods_Europe to show up in the warehouse, WorkerWorkforceGoods -->
+  <ModOp Type="add" GUID='502037,502005' Path="/Values/ProductList/List">
+    <Item>
+      <Product>1500010014</Product>
+    </Item>
+  </ModOp>
+  <!-- +/-50% boostable factories -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010010</Factory>
+    </Item>
+  </ModOp>
+
+  <!-- # Buff target pools -->
+  <!-- add to maintenance, public -->
+  <ModOp Type="add" GUID='193879,190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010010</GUID> <!-- biogas plant -->
+    </Item>
+    <Item>
+      <GUID>1500010015</GUID> <!-- depot -->
+    </Item>
+  </ModOp>
+  <!-- add to production -->
+  <ModOp Type="add" GUID='6000018' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010010</GUID> <!-- biogas plant -->
+    </Item>
+  </ModOp>
+
+
+  <!-- # Construction menus -->
+  <!-- add to gas powerplant chain as Tier1 -->
+  <ModOp Type="addNextSibling" GUID='117559' Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
+    <Item>
+      <Building>1500010010</Building>
+      <Tier2>
+        <Item>
+          <Building>1500010015</Building> <!-- waste depot -->
+        </Item>
+      </Tier2>
+    </Item>
+  </ModOp>
+
+
+  <!-- # Unlocks -->
+  <ModOp GUID='100780' Type="addNextSibling">
+    <!-- same as gas powerplant -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010016</GUID>
+          <Name>unlock_biogas</Name>
+          <Version>dlc03</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context> <!-- 1 investor -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010010</Asset> <!-- biogas plant -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010015</Asset> <!-- waste depot -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010017</GUID>
+          <Name>unhide_biogas</Name>
+          <Version>dlc03</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context> <!-- 1 engineer -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010010</Asset> <!-- biogas plant -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010015</Asset> <!-- waste depot -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

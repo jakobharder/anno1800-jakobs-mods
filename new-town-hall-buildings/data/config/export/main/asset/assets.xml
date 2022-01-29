@@ -22,7 +22,7 @@ New Town Hall
           <GUID>1500010024</GUID>
           <Name>town_hall_tower</Name>
           <Version>dlc09</Version>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.dds</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.png</IconFilename>
         </Standard>
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -82,9 +82,6 @@ New Town Hall
         </Maintenance>
         <Mesh />
         <Selection />
-        <Text>
-          <LineID>8504</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter />
@@ -114,18 +111,8 @@ New Town Hall
         <Standard>
           <GUID>1500010027</GUID>
           <Name>town_hall_tower_forward</Name>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.psd</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Town Hall Tower Forward Buff</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>36613</LineID>
-        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -133,6 +120,9 @@ New Town Hall
             </Item>
           </EffectTargets>
         </ItemEffect>
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
         <EffectForward>
           <ForwardEffect>1500010028</ForwardEffect>
           <ForwardEffectRange>20</ForwardEffectRange>
@@ -145,18 +135,8 @@ New Town Hall
         <Standard>
           <GUID>1500010028</GUID>
           <Name>town_hall_tower_buff</Name>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.psd</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tall.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Town Hall Tower Buff</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>36613</LineID>
-        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -314,7 +294,7 @@ New Town Hall
           <GUID>1500010021</GUID>
           <Name>new_town_hall</Name>
           <Version>dlc09</Version>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall.dds</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_new_townhall.png</IconFilename>
         </Standard>
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -386,9 +366,6 @@ New Town Hall
         </Upgradable>
         <Mesh />
         <Selection />
-        <Text>
-          <LineID>8504</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter />

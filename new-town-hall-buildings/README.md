@@ -40,6 +40,10 @@ The tower has 3 item slots, but if you like to use 4 instead you can change the 
 - Open `[Misc] New Town Hall, as Buildings/data/config/export/main/asset/assets.xml`
 - You'll find `<SocketCount>3</SocketCount>` at line 93. Change that number into 4.
 
+## 1.2 Changes
+
+- new ground texture fitting better to both plaza and roads
+
 ## Translations
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese

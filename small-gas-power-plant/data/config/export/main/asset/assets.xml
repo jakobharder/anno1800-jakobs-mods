@@ -1,19 +1,20 @@
 <!-- 
 Small Gas Power Plant
 
-GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
+Git: https://github.com/jakobharder/anno-1800-jakobs-mods
+GUIDs: https://github.com/anno-mods/GuidRanges
+
 1500010020 gas power plant
 
 -->
 
 <ModOps>
   <!-- # Buildings -->
-  <!-- =========== -->
 
   <!-- Small Gas Power Plant -->
   <!-- the building is a copy of gas-fired power plant, 
        all differences are commented -->
-  <ModOp Path="//Assets[Asset/Values/Standard/GUID='117547']" Type="add">
+  <ModOp GUID='117547' Type="addNextSibling">
     <Asset>
       <Template>PowerplantBuilding</Template>
       <Values>
@@ -70,20 +71,9 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
         <Selection>
           <ParticipantMessageArcheType>Resident_tier04_atWork</ParticipantMessageArcheType>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Small Gas Power Plant</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>35861</LineID> <!-- TODO -->
-        </Text>
         <Constructable />
         <Locked>
-          <!-- rely on gas-fired power plant menu unlock -->
-          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410042</DLCDependency>
         </Locked>
         <SoundEmitter>
           <ActiveSounds>
@@ -154,8 +144,8 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
         </IncidentInfectable>
         <Powerplant> <!-- reduced to 40% coverage -->
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>27</ElectricityDistance>
-          <IndustrializationDistance>27</IndustrializationDistance>
+          <ElectricityDistance>28</ElectricityDistance>
+          <IndustrializationDistance>28</IndustrializationDistance>
         </Powerplant>
         <FactoryBase>
           <FactoryInputs>
@@ -165,14 +155,325 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
               <StorageAmount>10</StorageAmount>
             </Item>
           </FactoryInputs>
-          <CycleTime>90</CycleTime>
+          <CycleTime>180</CycleTime>
         </FactoryBase>
         <Culture />
         <PublicService> <!-- reduced to 40% coverage -->
           <!-- resident power supply, green/blue road visualization -->
-          <FullSatisfactionDistance>27</FullSatisfactionDistance>
-          <NoSatisfactionDistance>27</NoSatisfactionDistance>
+          <FullSatisfactionDistance>28</FullSatisfactionDistance>
+          <NoSatisfactionDistance>28</NoSatisfactionDistance>
         </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>100780</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010033</GUID>
+          <Name>small_oil_power_plant</Name>
+          <IconFilename>data/jakob/ui/icons/icon_small_oil_power_plant.dds</IconFilename>
+          <InfoDescription>10946</InfoDescription> <!-- from oil power plant -->
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+        </Building>
+        <Cost> <!-- reduced to 2/3 -->
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>16500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/public/small_power_plants/plant_oil.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked />
+        <Maintenance> <!-- reduced to 2/3 -->
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>275</Amount>
+              <InactiveAmount>140</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010117</Product> <!-- Engineers -->
+              <Amount>100</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+          <Explosion> <!-- reduced to half -->
+            <DamageExplosionChance>20</DamageExplosionChance>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>15</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Explosion> <!-- reduced to half -->
+              <BaseChance>2</BaseChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Powerplant> <!-- reduced to 40% coverage -->
+          <!-- industry power supply, visual power lines? -->
+          <ElectricityDistance>28</ElectricityDistance>
+          <IndustrializationDistance>28</IndustrializationDistance>
+        </Powerplant>
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1010566</Product> <!-- oil -->
+              <Amount>1</Amount>
+              <StorageAmount>80</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <CycleTime>5</CycleTime>
+          <ProductivityTimeMultiplier>20</ProductivityTimeMultiplier>
+          <ProductivityPoints>1</ProductivityPoints>
+          <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
+        </FactoryBase>
+        <PublicService> <!-- reduced to 40% coverage -->
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>28</FullSatisfactionDistance>
+          <NoSatisfactionDistance>28</NoSatisfactionDistance>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>PowerplantBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010035</GUID>
+          <Name>small_coal_power_plant</Name>
+          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
+          <InfoDescription>1500010040</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient> <!-- timber -->
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient> <!-- bricks -->
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient> <!-- Steel Beams -->
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient> <!-- windows -->
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient> <!-- concrete -->
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/public/small_power_plants/plant_coal.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier04_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>200832</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <BuffFactory>
+          <BaseBuff>1500010034</BaseBuff>
+          <BaseBuffScope>Radius</BaseBuffScope>
+          <BaseBuffDistance>6</BaseBuffDistance>
+          <ProductionBuffs />
+          <ProductionBuffScope>Radius</ProductionBuffScope>
+          <ProductionBuffDistance>6</ProductionBuffDistance>
+        </BuffFactory>
+        <LogisticNode>
+          <TransporterCountMax>4</TransporterCountMax>
+          <PathLayers>Street</PathLayers>
+        </LogisticNode>
+        <AmbientMoodProvider />
+        <Maintenance> <!-- reduced to half -->
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>300</Amount>
+              <InactiveAmount>150</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product> <!-- Engineers -->
+              <Amount>200</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <!-- important for burn damage -->
+          <MaximumHitPoints>3500</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+          <Explosion> <!-- reduced to half -->
+            <DamageExplosionChance>20</DamageExplosionChance>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>15</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Explosion> <!-- reduced to half -->
+              <BaseChance>3</BaseChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Powerplant> <!-- 30% of harbor life coverage -->
+          <!-- industry power supply, visual power lines? -->
+          <ElectricityDistance>21</ElectricityDistance>
+          <IndustrializationDistance>21</IndustrializationDistance>
+        </Powerplant>
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1010226</Product> <!-- coal -->
+              <Amount>1</Amount>
+              <StorageAmount>40</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <CycleTime>20</CycleTime>
+        </FactoryBase>
+        <Culture>
+          <Attractiveness>-80</Attractiveness>
+          <CultureType>Military</CultureType> <!-- military? it's same as tallow processing and soap factory though -->
+        </Culture>
+        <PublicService> <!-- 30% of harbor life coverage -->
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>21</FullSatisfactionDistance>
+          <NoSatisfactionDistance>21</NoSatisfactionDistance>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010034</GUID>
+          <Name>coal_mine_buff</Name>
+          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
+        </Standard>
+        <Buff />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010304</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <ProductivityUpgrade>
+            <Value>50</Value>
+            <Percental>1</Percental>
+          </ProductivityUpgrade>
+          <!-- <AdditionalOutput>
+            <Item>
+              <Product>1010226</Product>
+              <AdditionalOutputCycle>2</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput> -->
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <CultureUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010040</GUID>
+          <Name>small_coal_power_plant_desc</Name>
+        </Standard>
       </Values>
     </Asset>
   </ModOp>
@@ -181,29 +482,16 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
   <!-- # Buff Target Pools -->
   <!-- =================== -->
 
-  <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
-  <!-- (don't use old 190611) -->
-  <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+  <!-- add to maintenance, production, public, power plants -->
+  <ModOp Type="add" GUID='193879,6000018,190136,193864' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
       <GUID>1500010020</GUID>
     </Item>
-  </ModOp>
-  <!-- all production -->
-  <ModOp Type="add" GUID='6000018' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010020</GUID>
+      <GUID>1500010035</GUID>
     </Item>
-  </ModOp>
-  <!-- all public -->
-  <ModOp Type="add" GUID='190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010020</GUID>
-    </Item>
-  </ModOp>
-  <!-- all power plants -->
-  <ModOp Type="add" GUID='193864' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010020</GUID>
+      <GUID>1500010033</GUID>
     </Item>
   </ModOp>
   <!-- add to palace forward buff social welfare act -->
@@ -211,20 +499,195 @@ GUIDs: (after Serp's Mods, https://github.com/anno-mods/Modinfo)
     <Item>
       <GUID>1500010020</GUID>
     </Item>
+    <Item>
+      <GUID>1500010035</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010033</GUID>
+    </Item>
   </ModOp>
 
-  <!-- # Build Menus -->
-  <!-- ============= -->
-
-  <!-- add to gas powerplant chain as Tier1 -->
+  <!-- # Construction Menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010030</GUID>
+          <Name>small_power_plants_menu</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_power_plant.dds</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010035</Building> <!-- coal -->
+            </Item>
+            <Item>
+              <Building>1500010033</Building> <!-- oil -->
+            </Item>
+            <Item>
+              <Building>1500010020</Building> <!-- gas -->
+            </Item>
+            <Item>
+              <Building>1500010015</Building> <!-- waste depot -->
+            </Item>
+            <Item>
+              <Building>1500010010</Building> <!-- biogas plant -->
+            </Item>
+            <Item>
+              <Building>1500010001</Building> <!-- wind -->
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010031</CategoryDescription>
+        </ConstructionCategory>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010031</GUID>
+          <Name>small_power_plants_menu_desc</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- remove windmill by first adding it and then deleting all occurences to avoid not found warnings -->
+  <ModOp Type="add" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010001</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']">
+    <Item>
+      <Building>1500010001</Building>
+    </Item>
+  </ModOp>
+  <!-- insert all after gas power plant in city menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='117559' or (not(../Item/Building='117559'))][last()]">
+    <Item>
+      <Building>1500010030</Building>
+    </Item>
+  </ModOp>
+  <!-- insert all after oil power plant in engineer menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='25000192' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506' or (not(../Item/Building='500506'))][last()]">
+    <Item>
+      <Building>1500010030</Building>
+    </Item>
+  </ModOp>
+  <!-- add to gas powerplant chain as Tier1 to gas -->
   <ModOp Type="add" GUID='117559' Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010020</Building>
     </Item>
   </ModOp>
+  <!-- add to oil powerplant chain as Tier1 to oil -->
+  <ModOp Type="add" GUID='500506' Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500010033</Building>
+    </Item>
+  </ModOp>
 
-  <!-- # Unlock Conditions -->
-  <!-- ================= -->
-  <!-- just rely on unlock of gas power plant construction menu -->
-
+  <!-- # Unlocks -->
+  <ModOp GUID='100780' Type="addNextSibling">
+    <!-- coal and oil, 1 engineer -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010041</GUID>
+          <Name>unlock_small_power_plants</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context> <!-- 1 engineer -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010035</Asset> <!-- coal -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010033</Asset> <!-- oil -->
+                      </Item>
+                    </UnlockAssets>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010020</Asset> <!-- gas -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <!-- gas, 1 investor -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010042</GUID>
+          <Name>unlock_small_gas_power_plant</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context> <!-- 1 investor -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010020</Asset> <!-- gas -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
 </ModOps>

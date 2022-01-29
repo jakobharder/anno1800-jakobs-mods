@@ -29,3 +29,6 @@
 Press shift+v with a selected town hall to change its visuals.
 Nothing else is changed.
 
+## 1.2 Changes
+
+- new ground texture fitting better to both plaza and roads

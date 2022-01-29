@@ -5,7 +5,7 @@
 The windmill is a service building providing electricity to industry and residents.
 It's intended as an alternative to Nate's electricity items for guild houses - a little cheaper, but not as powerful to keep it balanced.
 
-## How it works
+## Notes
 
 Electricity is provided the same way power plants work via roads.
 
@@ -16,29 +16,16 @@ The reduced ranges and exclusive radius are there to ensure the windmill is not 
 Industry influence buff apply.
 Palace buffs and obviously guild house buffs don't.
 
-### Construction Menu
+Unlocks with 500 engineers.
 
-- Engineers Menu: after oil power plant
-- City Menu: after oil power plant
+## 1.2 Changes
 
-### Stats
-
-- Cost: 90000 credits, 40 steel beams, 10 sail cloths and 5 steam machines
-- Maintenance: 400 credits, 50 engineers
-- Unlock: 500 engineers
-- Guild house radius: 5
-- Electricity range: 6
-
-## Required DLCs & Compatibility
-
-- Installed and activated Sunken Treasures (uses model + texture assets)
-- Works with existing save games
-- GUID range 1500010001 - 1500010006
-- I don't expect any issues as there are only additions
+- Reduced building and maintenance cost
+- Can be played without Cap Trelawney session now
+- Performance optimization (reduced GPU memory usage as Nate's original texture is 60MB huge)
 
 ## Translations
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
-Missing: none
 
 Contact me if you have new or improved translations.

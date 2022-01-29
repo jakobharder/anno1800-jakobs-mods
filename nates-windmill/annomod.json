@@ -17,11 +17,11 @@
     {
       "action": "texture",
       "pattern": "**/*_{diff,norm,height,metal}.png",
-      "lods": 1
+      "lods": 3
     },
     {
       "action": "gltf",
-      "pattern": "**/*.{glb,gltf}"
+      "pattern": "**/*.gltf"
     },
     {
       "action": "modinfo",
@@ -29,12 +29,12 @@
     }
   ],
   "modinfo": {
-    "Version": "1.1.0",
+    "Version": "1.2",
     "ModID": "jakob_Nates_Windmill",
     "IncompatibleIds": [],
     "ModDependencies": null,
     "Category": {
-      "English": "Addon"
+      "English": "Gameplay"
     },
     "ModName": {
       "Chinese": "老奈特的风车",
@@ -54,12 +54,7 @@
       "German": "README_german.md"
     },
     "KnownIssues": null,
-    "DLCDependencies": [
-      {
-        "DLC": "SunkenTreasures",
-        "Dependant": "required"
-      }
-    ],
+    "DLCDependencies": [ ],
     "CreatorName": "Jakob",
     "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null

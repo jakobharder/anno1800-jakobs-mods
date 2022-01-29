@@ -2,42 +2,19 @@
 
 ![](./banner.png)
 
-The small gas power plant consumes less gas for reduced range.
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
 
-## How it works
+Small power plant have less coverage than normal plants and consume coal, oil or gas.
 
-The building behaves exactly the same as the normal gas-fired power plant.
+You need to play with Arctic session to use the small gas power plant.
 
-Cost and maintenance are reduced to half.
-Coverage is reduced to 40%.
-That makes the small version less cost effective, except when combined with buffs or in restricted build situations.
+# 2.0 Changes
 
-Influence, palace and guild house buffs apply.
-
-### Construction Menu
-
-- Investors Menu: in gas power plant tree
-- City Menu: in gas power plant tree
-
-### Stats
-
-- Cost: 40000 credits, 20 timber, 30 bricks, 30 steel beams, 10 windows and 20 concrete
-- Maintenance: 600 credits, 125 engineers
-- Unlock: same as gas power plant (1 investor)
-- Electricity range: 27
-
-## Required DLCs & Compatibility
-
-- Installed and activated The Passage DLC (gas production)
-- Works with existing save games
-- GUID range: 1500010020
-- Renamed mod from `[Addon]` to `[Gameplay]`. Please delete the old one, otherwise you see it twice in construction.
-- I don't expect any other issues as there are only additions
-- Models and textures are performance optimized with LODs
+- added coal and oil power plants
+- savegame compatible
 
 ## Translations
 
-Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
-Missing: none
+Available: English, German (others only for gas power plant so far)
 
 Contact me if you have new or improved translations.

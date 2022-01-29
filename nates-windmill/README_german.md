@@ -14,22 +14,10 @@ Die verringerte Reichweite und der exklusive Radius stellen sicher, dass das Win
 Kann durch Industrieeinfluss-Buffs verbessert werden.
 Durch Palast-Buffs und Handelskammer-Buffs nicht.
 
-### Baumenü
+Schaltet mit 500 Ingenieuren frei.
 
-- Ingenieursmenü: nach dem Ölkraftwerk
-- Stadtmenü: nach dem Ölkraftwerk
+## 1.2 Changes
 
-### Stats
-
-- Baukosten: 90000 Münzen, 40 Stahlträger, 10 Segel und 5 Dampfmaschinen
-- Unterhaltskosten: 400 Münzen, 50 Ingenieure
-- Freischaltung: 500 Ingenieure
-- Handelskammerradius: 5
-- Reichweite Elektrizität: 6
-
-## Benötigte DLCs & Kompatibilität
-
-- Installiertes und aktiviertes Versunkene Schätze (verwendet Model + Texturen)
-- Funktioniert mit vorhanden Spielständen
-- GUID range 1500010001 - 1500010006
-- Ich erwarte keine weiteren Problem, da es nur Erweiterungen und keine Veränderungen sind
+- Reduced building and maintenance cost
+- Can be played without Cap Trelawney session now
+- Performance optimization (reduced GPU memory usage as Nate's original texture is 60MB huge)
