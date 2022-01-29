@@ -355,10 +355,16 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Infolayer />
         <UpgradeList />
         <BuffFactory>
-          <BaseBuff>1500010034</BaseBuff>
+          <BaseBuff>0</BaseBuff>
           <BaseBuffScope>Radius</BaseBuffScope>
           <BaseBuffDistance>6</BaseBuffDistance>
-          <ProductionBuffs />
+          <ProductionBuffs>
+            <Item>
+              <ProductivityBuff>1500010034</ProductivityBuff>
+              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
+              <ProductivityThresholdDown>0.3</ProductivityThresholdDown>
+            </Item>
+          </ProductionBuffs>
           <ProductionBuffScope>Radius</ProductionBuffScope>
           <ProductionBuffDistance>6</ProductionBuffDistance>
         </BuffFactory>
