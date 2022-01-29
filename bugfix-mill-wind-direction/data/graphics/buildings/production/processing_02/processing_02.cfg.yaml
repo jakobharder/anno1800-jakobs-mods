@@ -1,0 +1,16 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\production\processing_02\processing_02.cfg
+  modifications:
+    - xpath-add: //Config/Models/Config[FileName='data\graphics\buildings\production\processing_02\rdm\processing_02_top_rotors_lod0.rdm']/Transformer
+      Config:
+        ConfigType: ORIENTATION_TRANSFORM
+        Conditions: 0
+        Position.x: 0
+        Position.y: 0
+        Position.z: 0
+        Rotation.x: 0
+        Rotation.y: 1
+        Rotation.z: 0
+        Rotation.w: 0
+        Scale: 1
