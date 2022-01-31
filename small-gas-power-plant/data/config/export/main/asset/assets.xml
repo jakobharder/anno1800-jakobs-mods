@@ -22,7 +22,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <GUID>1500010020</GUID>
           <Name>small_gas_power_plant</Name>
           <IconFilename>data/jakob/ui/icons/icon_small_gas_power_plant.dds</IconFilename>
-          <InfoDescription>117550</InfoDescription> <!-- from gas power plant -->
+          <InfoDescription>1500010036</InfoDescription>
           <Version>dlc03</Version> <!-- arctic -->
         </Standard>
         <Building>
@@ -172,7 +172,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <GUID>1500010033</GUID>
           <Name>small_oil_power_plant</Name>
           <IconFilename>data/jakob/ui/icons/icon_small_oil_power_plant.dds</IconFilename>
-          <InfoDescription>10946</InfoDescription> <!-- from oil power plant -->
+          <InfoDescription>1500010032</InfoDescription> <!-- from oil power plant -->
         </Standard>
         <Building>
           <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
@@ -263,8 +263,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <StorageAmount>80</StorageAmount>
             </Item>
           </FactoryInputs>
-          <CycleTime>5</CycleTime>
-          <ProductivityTimeMultiplier>20</ProductivityTimeMultiplier>
+          <CycleTime>8</CycleTime>
+          <ProductivityTimeMultiplier>30</ProductivityTimeMultiplier>
           <ProductivityPoints>1</ProductivityPoints>
           <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
         </FactoryBase>
@@ -471,6 +471,24 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </FactoryUpgrade>
         <BuildingUpgrade />
         <CultureUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010032</GUID>
+          <Name>small_oil_power_plant_desc</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010036</GUID>
+          <Name>small_gas_power_plant_desc</Name>
+        </Standard>
       </Values>
     </Asset>
     <Asset>
