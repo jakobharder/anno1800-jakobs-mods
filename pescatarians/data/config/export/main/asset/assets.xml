@@ -1957,6 +1957,15 @@ Pescatarian
       <Building>1500010186</Building>
     </Item>
   </ModOp>
+  <!-- insert canned fish, suits into artisan menu after coats (extra goods will add it to worker) -->
+  <ModOp Type="addNextSibling" GUID='500945,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
+    <Item>
+      <Building>1500010122</Building>
+    </Item>
+    <Item>
+      <Building>1500010129</Building>
+    </Item>
+  </ModOp>
 
   <!-- # Buff Targets -->
   <!-- the below modops are very expensive, but in case of farmers, workers, ... it's impossible to hardcode all targets -->
