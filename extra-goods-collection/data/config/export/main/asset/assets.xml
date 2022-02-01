@@ -3340,7 +3340,7 @@ Jakob's Extra Goods
   </ModOp>
 
   <!-- # Restaurant recipes: hot chocolate -->
-  <ModOp Type="addNextSibling" GUID="133371">
+  <ModOp Type="addNextSibling" GUID="132753">
     <Asset>
       <Template>Recipe</Template>
       <Values>
@@ -3388,112 +3388,13 @@ Jakob's Extra Goods
       </Values>
     </Asset>
     <Asset>
-      <Template>Restaurant</Template>
+      <BaseAssetGUID>132753</BaseAssetGUID>
       <Values>
         <Standard>
           <GUID>1500010252</GUID>
           <Name>cafe_hot_chocolate</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_coffe_cup.png</IconFilename>
-          <InfoDescription>132784</InfoDescription>
         </Standard>
-        <Building>
-          <BuildingCategoryName>134142</BuildingCategoryName>
-          <SkipUnlockMessage>1</SkipUnlockMessage>
-        </Building>
-        <Blocking />
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data/dlc08/graphics/buildings/public/restaurant/restaurant_01.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Cost>
-          <Costs>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>Restaurant</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-              <Amount>1000</Amount>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>Restaurant</TemplateName>
-                    <Index>1</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-              <Amount>40</Amount>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>Restaurant</TemplateName>
-                    <Index>2</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-              <Amount>35</Amount>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>3</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>Restaurant</TemplateName>
-                    <Index>3</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>4</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>Restaurant</TemplateName>
-                    <Index>4</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>5</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>Restaurant</TemplateName>
-                    <Index>5</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-          </Costs>
-        </Cost>
-        <Mesh />
-        <Selection />
-        <Constructable />
-        <Locked>
-          <DLCDependency>410084</DLCDependency>
-        </Locked>
-        <SoundEmitter>
-          <ActiveSounds>
-            <Item>
-              <Sound>279503</Sound>
-            </Item>
-          </ActiveSounds>
-        </SoundEmitter>
         <FactoryBase>
           <FactoryInputs>
             <Item>
@@ -3516,34 +3417,6 @@ Jakob's Extra Goods
           <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
           <ClampedMaxTransporterLogisticCost>60</ClampedMaxTransporterLogisticCost>
         </FactoryBase>
-        <LogisticNode />
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>500</Amount>
-            </Item>
-            <Item>
-              <Product>132723</Product>
-              <Amount>120</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <Industrializable>
-          <BoostedByIndustrialization>0</BoostedByIndustrialization>
-        </Industrializable>
-        <IncidentInfectable />
-        <Electrifiable />
-        <AmbientMoodProvider>
-          <Murmur>Tourist_Bar</Murmur>
-        </AmbientMoodProvider>
-        <Attackable />
-        <UpgradeList />
-        <Pausable />
-        <FeedbackController>
-          <NightBehavior>HideNone</NightBehavior>
-        </FeedbackController>
-        <Infolayer />
         <BuffFactory>
           <ProductionBuffs>
             <Item>
@@ -3565,14 +3438,6 @@ Jakob's Extra Goods
           <ProductionBuffScope>Radius</ProductionBuffScope>
           <ProductionBuffDistance>45</ProductionBuffDistance>
         </BuffFactory>
-        <RecipeBuilding>
-          <RecipeList>133557</RecipeList>
-        </RecipeBuilding>
-        <BusActivation>
-          <BusNeed>132754</BusNeed>
-        </BusActivation>
-        <Culture />
-        <Nameable />
       </Values>
     </Asset>
     <Asset>
