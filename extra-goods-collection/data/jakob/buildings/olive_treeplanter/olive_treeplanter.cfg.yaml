@@ -12,6 +12,9 @@ variant:
     # replace first cherry tree
     - xpath: //Config/PropContainers/Config/Props/Config[Name="PROP_18_cherry_tree_01"]
       FileName: data\dlc08\graphics\props\terrain_props\trees\comfort_tree_01.prp
+      Scale.x: 0.700000
+      Scale.y: 0.700000
+      Scale.z: 0.700000
     # remove second cherry tree
     - xpath: //Config/PropContainers/Config/Props/Config[Name="PROP_19_cherry_tree_02"]
       FileName: '' # there's a bug in xpath-remove
