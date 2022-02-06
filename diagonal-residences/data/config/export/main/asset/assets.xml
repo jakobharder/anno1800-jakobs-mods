@@ -1,0 +1,433 @@
+<!-- 
+
+1500010401+
+
+-->
+
+<ModOps>
+  <!-- # building assets -->
+  <ModOp GUID='1010346' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010346</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010401</GUID>
+          <Name>diagonal</Name>
+          <IconFilename>data/jakob/ui/icons/icon_diagonal.png</IconFilename>
+          <InfoDescription>1500010405</InfoDescription>
+        </Standard>
+        <Locked />
+        <Blocking>
+          <DeletePropsRadius>1</DeletePropsRadius>
+          <HidePropsRadius>1</HidePropsRadius>
+          <RemovePropsRadius>1</RemovePropsRadius>
+        </Blocking>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <!-- change picking asset to this one to ease building -->
+          <PickingAsset>1500010401</PickingAsset>
+          <!-- disable auto rotation / variation by neighbors -->
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>0</Building>
+            </Item>
+          </InfluencedByNeighbors>
+        </Building>
+        <Upgradable>
+          <!-- disable upgrade -->
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/diagonal_wide.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/diagonal_wide2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/diagonal_narrow.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/diagonal_narrow2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/diagonal_diagonal.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/diagonalx2.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010407</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010408</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010409</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010410</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Selection>
+          <StaticHelpEntryPoint>HighLifeSkyscrapers</StaticHelpEntryPoint>
+        </Selection>
+        <FloorStackOwner>
+          <!-- disable skyscrapers -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010402</GUID>
+          <Name>diagonal_endpiece</Name>
+          <IconFilename>data/jakob/ui/icons/icon_diagonal_endpiece.png</IconFilename>
+          <InfoDescription>1500010406</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>11149</BuildingCategoryName>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Selection />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/residence_tier04/endpiece.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable />
+        <Mesh />
+        <SoundEmitter />
+        <Locked />
+        <FeedbackController />
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentDescription>1500010406</OrnamentDescription>
+        </Ornament>
+        <AmbientMoodProvider />
+        <Pausable />
+        <Infolayer />
+        <Culture />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010405</GUID>
+          <Name>diagonal_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010406</GUID>
+          <Name>diagonal_endpiece_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # feedbacks, influence, ... -->
+  <!-- add neighbor influences -->
+  <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500010401</Building>
+    </Item>
+  </ModOp>
+  <!-- add spawn feeback -->
+  <ModOp GUID="2001091" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010401</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Vanilla engineers skins -->
+  <ModOp GUID='1010346' Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010407</GUID>
+          <Name>Engineers, tourist red roofs</Name>
+          <IconFilename>data/jakob/ui/icons/icon_tier04_tourist_red.png</IconFilename>
+          <ID>t4_skin_red</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010318</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin1/diagonal_wide.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin1/diagonal_wide2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin1/diagonal_narrow.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin1/diagonal_narrow2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin1/diagonal_diagonal.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin1/diagonalx2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010408</GUID>
+          <Name>Engineers, dark roofs</Name>
+          <IconFilename>data/jakob/ui/icons/icon_tier04_pescatarian_dark.png</IconFilename>
+          <ID>t4_skin_dark</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010310</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin2/diagonal_wide.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin2/diagonal_wide2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin2/diagonal_narrow.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin2/diagonal_narrow2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin2/diagonal_diagonal.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin2/diagonalx2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010409</GUID>
+          <Name>Engineers, bordeaux roofs</Name>
+          <IconFilename>data/jakob/ui/icons/icon_tier04_bordeaux.png</IconFilename>
+          <ID>t4_skin_bordeaux</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010319</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin3/diagonal_wide.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin3/diagonal_wide2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin3/diagonal_narrow.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin3/diagonal_narrow2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin3/diagonal_diagonal.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin3/diagonalx2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010410</GUID>
+          <Name>Engineers, investor green roofs</Name>
+          <IconFilename>data/jakob/ui/icons/icon_tier04_investor_green.png</IconFilename>
+          <ID>t4_skin_green</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010311</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin4/diagonal_wide.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin4/diagonal_wide2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin4/diagonal_narrow.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin4/diagonal_narrow2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin4/diagonal_diagonal.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier04/skin4/diagonalx2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # construction menu -->
+  <ModOp GUID='1010346' Type="addNextSibling">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010403</GUID>
+          <Name>diagonal_menu</Name>
+          <IconFilename>data/jakob/ui/icons/icon_diagonal.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010401</Building>
+            </Item>
+            <Item>
+              <Building>1500010402</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010404</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010404</GUID>
+          <Name>diagonal_menu_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- engineers menu: insert before first -->
+  <ModOp Type="addPrevSibling" GUID='25000192' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500010403</Building>
+    </Item>
+  </ModOp>
+  <!-- city menu: insert after farmers, fallback append -->
+  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
+    <Item>
+      <Building>1500010403</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Unlock -->
+  <ModOp GUID='100780' Type="addNextSibling">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010411</GUID>
+          <Name>unlock_diagonal</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context> <!-- engineers -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010401</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010402</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010403</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

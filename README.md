@@ -42,10 +42,15 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 - Wind, coal, oil and gas power plants with reduced cost and coverage.
 - Process waste from cattle and pig farms into gas.
 
-![](./residence-skin-pack/banner.png)
+![](./diagonal-residences/banner.png)
+
+[\[Misc\] Diagonal Residences](./diagonal-residences/README.md)
 
 [\[Misc\] Colored Roofs](./residence-skin-pack/README.md) (GPU memory friendly)
 
+- Diagonal residences.
+  Engineers only currently.
+  You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
 - Various roof colors as paintbrush skin for Artisans and Engineers.
   Other tiers may follow at some point in time.
 - The roofs are colored in real time.
