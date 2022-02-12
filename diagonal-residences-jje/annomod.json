@@ -1,0 +1,57 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.png,README.md}"
+    },
+    {
+      "action": "static",
+      "pattern": "data/jakob/ui/icons/*.png"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1",
+    "ModID": "jakob_diagonal_residences_jje",
+    "IncompatibleIds": [],
+    "ModDependencies": [],
+    "Category": {
+      "English": "Misc"
+    },
+    "ModName": {
+      "Chinese": null,
+      "English": "Diagonal Residences, jje1000's Red Tile Roofs",
+      "French": null,
+      "German": "Diagonal Residences, jje1000's Red Tile Roofs",
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    },
+    "Description": {
+      "English": "README.md",
+      "German": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}
