@@ -300,7 +300,7 @@
     </Asset>
   </ModOp>
 
-  <!-- # feedbacks, influence, ... -->
+  <!-- # feedbacks, influence, targets, ... -->
   <!-- add neighbor influences -->
   <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
     <Item>
@@ -319,8 +319,25 @@
       <Building>1500010415</Building>
     </Item>
   </ModOp>
+  <!-- residence buff targets -->
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010401</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010415</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010401</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010415</GUID>
+    </Item>
+  </ModOp>
 
-  <!-- # buff -->
+  <!-- # self buffs -->
   <ModOp GUID='1010346' Type="addNextSibling">
     <Asset>
       <Template>TownhallBuff</Template>
