@@ -1,0 +1,7 @@
+variant: 
+  source: ../diagonal_wide2.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cDiffuseColor.r: 1.390000
+      cDiffuseColor.g: 0.740000
+      cDiffuseColor.b: 0.500000

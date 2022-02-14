@@ -25,7 +25,13 @@ Engineers (40) are normal engineers, except they accept both canned fish/canned 
 
 Suits and canned fish factories reduce consumption when close to residences.
 
-## 1.1 Changes
+## Changes
+
+### 1.2
+
+- Remove doubled canned fish, suits in consumable construction menu
+
+### 1.1
 
 - Trade contracts for new basic needs
 
