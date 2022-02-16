@@ -56,15 +56,14 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 - The roofs are colored in real time.
   That leads to better performance due to less used texture memory.
 
-Extra Goods Collection
+![](./small-hotels/banner.png)
 
-Production chains: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
-Cafe recipe: hot chocolate
-See details in readme﻿.
+[\[Gameplay\] Small Hotels](./small-hotels/README.md)
 
-Nearby Production Buffs
-Residents get a 30% consumption reduction of a need when living next to the factory providing that need (e.g. bakery).
-See details in readme﻿. 
+[\[Shared\] Extra Goods Collection](./extra-goods-collection/README.md)
+
+- Production chains: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
+- Cafe recipe: hot chocolate
 
 ## Standalone Mods
 

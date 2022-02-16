@@ -1,0 +1,9 @@
+variant: 
+  source: ../../../../vanilla.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="wall"]
+      cModelDiffTex: data\jakob\buildings\hotels\maps\hotel_wall2_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cDiffuseColor.r: 1.041667
+      cDiffuseColor.g: 0.66
+      cDiffuseColor.b: 0.53

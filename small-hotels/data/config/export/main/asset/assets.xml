@@ -1,0 +1,651 @@
+<!-- 
+Tourist District
+
+1500010500 small hotel
+1500010501 pop decrease buff
+1500010502+ skins
+
+-->
+
+<ModOps>
+  <!-- # Small hotels -->
+  <ModOp GUID='601445' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>601445</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010500</GUID>
+          <Name>small_hotel</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+          <Version>dlc08</Version>
+        </Standard>
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <AllowChangeDirection>1</AllowChangeDirection>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>12000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\hotels\small-hotel.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\hotels\small-hotel2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\hotels\small-hotel3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\hotels\small-hotel4.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>1500010310</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <OverrideDefaultIcon>data\jakob\ui\icons\icon_small_hotel_skin0.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010504</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010502</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010503</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <UpgradeList>
+          <DefaultBuff>1500010511</DefaultBuff>
+        </UpgradeList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010501</GUID>
+          <Name>hotel_pop_250</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010500</GUID>
+            </Item>
+            <Item>
+              <GUID>850113</GUID> <!-- from Train Stations & Hotels -->
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <Text />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade>
+          <InputBenefitModifier>
+            <Item>
+              <Product>133891</Product>
+              <AdditionalSupply>-23</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+              <AdditionalSupply>-27</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>850044</Product> <!-- train station -->
+              <AdditionalSupply>-27</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>133573</Product>
+              <AdditionalSupply>-13</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132751</Product>
+              <AdditionalSupply>-13</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>133183</Product>
+              <AdditionalSupply>-17</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132755</Product>
+              <AdditionalSupply>-27</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>133181</Product>
+              <AdditionalSupply>-53</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132754</Product>
+              <AdditionalSupply>-37</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132761</Product>
+              <AdditionalSupply>-40</AdditionalSupply>
+            </Item>
+          </InputBenefitModifier>
+        </PopulationUpgrade>
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010511</GUID>
+          <Name>hotel_pop_200</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010500</GUID>
+            </Item>
+            <Item>
+              <GUID>850113</GUID> <!-- from Train Stations & Hotels -->
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <Text />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade>
+          <InputBenefitModifier>
+            <Item>
+              <Product>133891</Product>
+              <AdditionalSupply>-25</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+              <AdditionalSupply>-35</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>850044</Product> <!-- train station -->
+              <AdditionalSupply>-35</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>133573</Product>
+              <AdditionalSupply>-15</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132751</Product>
+              <AdditionalSupply>-15</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>133183</Product>
+              <AdditionalSupply>-15</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132755</Product>
+              <AdditionalSupply>-35</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>133181</Product>
+              <AdditionalSupply>-65</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132754</Product>
+              <AdditionalSupply>-45</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>132761</Product>
+              <AdditionalSupply>-50</AdditionalSupply>
+            </Item>
+          </InputBenefitModifier>
+        </PopulationUpgrade>
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010502</GUID>
+          <Name>skin_small_hotel_dark</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin1.png</IconFilename>
+          <ID>skin_small_hotel_dark</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010310</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin1\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin1\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin1\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin1\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010504</GUID>
+          <Name>skin_small_hotel_darkred</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+          <ID>skin_small_hotel_darkred</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010319</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin4\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin4\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin4\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin4\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010503</GUID>
+          <Name>skin_small_hotel_bluegreen</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin3.png</IconFilename>
+          <ID>skin_small_hotel_bluegreen</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010505</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin3\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin2\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin2\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels\skin3\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010516</GUID>
+          <Name>unlock everything</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>601445</UnlockNeeded> <!-- tourist building -->
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010500</Asset> <!-- small hotel -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010318</GUID>
+          <Name>skin_name_red</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010319</GUID>
+          <Name>skin_name_darkred</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010310</GUID>
+          <Name>skin_name_dark</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010505</GUID>
+          <Name>skin_name_bluegreen</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010512</GUID>
+          <Name>skin_desc_small_hotel</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add spawn feeback -->
+  <ModOp GUID="142976" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010500</Building>
+    </Item>
+  </ModOp>
+  <!-- add to target pool -->
+  <ModOp Type="add" GUID="194016" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010500</GUID>
+    </Item>
+  </ModOp>
+  <!-- change hotel items to target pool, fallback pool to pool to avoid warnings -->
+  <ModOp Type="replace" GUID="136668,136697,136699" Path="/Values/ItemEffect/EffectTargets/Item[GUID='601445' or GUID='194016']">
+    <Item>
+      <GUID>194016</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Vanilla skins -->
+  <!-- First add empty SkinList, then skins. That makes sure skins work even if somebody else already added some. -->
+  <ModOp GUID='601445' Type="add" Path="Values/Object">
+    <Skins>
+      <DefaultSkinName>23852</DefaultSkinName>
+      <DefaultSkinDescription>23853</DefaultSkinDescription>
+      <OverrideDefaultIcon>data\jakob\ui\icons\icon_small_hotel_skin0.png</OverrideDefaultIcon>
+      <SkinList />
+    </Skins>
+  </ModOp>
+  <ModOp GUID='601445' Type="add" Path="Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500010507</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010508</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010509</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010510</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010515</SkinAssetGuid>
+    </Item>
+  </ModOp>
+  <ModOp GUID='601445' Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010507</GUID>
+          <Name>skin_hotel_red</Name>
+          <IconFilename>data\jakob\ui\icons\icon_hotel_skin1.png</IconFilename>
+          <ID>tourist_skin_red</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010318</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin1.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010508</GUID>
+          <Name>skin_hotel_darkred</Name>
+          <IconFilename>data\jakob\ui\icons\icon_hotel_skin2.png</IconFilename>
+          <ID>tourist_skin_darkred</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010319</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010509</GUID>
+          <Name>skin_hotel_darkred2</Name>
+          <IconFilename>data\jakob\ui\icons\icon_hotel_skin3.png</IconFilename>
+          <ID>tourist_skin_darkred2</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010319</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin3.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010510</GUID>
+          <Name>skin_hotel_dark</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin1.png</IconFilename>
+          <ID>tourist_skin_dark</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010310</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010515</GUID>
+          <Name>skin_hotel_green</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin3.png</IconFilename>
+          <ID>tourist_skin_green</ID>
+        </Standard>
+        <Skin>
+          <SkinName>1500010311</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin9.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Construction menu -->
+  <!-- Old World Menu Engineers, insert after oil power plant -->
+  <ModOp Type="addNextSibling" GUID='132779,500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
+    <Item>
+      <Building>1500010500</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Mod compatibility -->
+  <!-- TODO: add to NW Tourism menu -->
+  <!-- NW Tourism compatibility: limit theater, iron tower to vanilla hotel -->
+  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[(Product='133573' or Product='132761') and not(RequiredToBeBuilding)]">
+    <RequiredToBeBuilding>601445</RequiredToBeBuilding>
+  </ModOp>
+  <!-- NW Tourism compatibility: add theater limited to self -->
+  <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='133573'][last()]">
+    <Item>
+      <Product>133573</Product>
+      <SupplyWeight>25</SupplyWeight>
+      <MoneyValue>45</MoneyValue>
+      <FullWeightPopulationCount>50</FullWeightPopulationCount>
+      <NoWeightPopulationCount>49</NoWeightPopulationCount>
+      <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
+    </Item>
+  </ModOp>
+  <!-- NW Tourism compatibility: add iron tower limited to self -->
+  <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='132761'][last()]">
+    <Item>
+      <Product>132761</Product>
+      <SupplyWeight>80</SupplyWeight>
+      <MoneyValue>135</MoneyValue>
+      <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+      <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
+    </Item>
+  </ModOp>
+  <!-- Train Stations: add train stations need to self -->
+  <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='101213'][last()]">
+    <Item>
+      <Product>850044</Product>
+      <Amount>0.008333333</Amount>
+      <SupplyWeight>55</SupplyWeight>
+      <MoneyValue>55</MoneyValue>
+      <FullWeightPopulationCount>30</FullWeightPopulationCount>
+      <NoWeightPopulationCount>29</NoWeightPopulationCount>
+      <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
+    </Item>
+  </ModOp>
+</ModOps>
