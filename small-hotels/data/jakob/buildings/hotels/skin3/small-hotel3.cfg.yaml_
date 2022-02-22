@@ -1,0 +1,9 @@
+variant:
+  source: ../small-hotel3.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="wall"]
+      cModelDiffTex: data\jakob\buildings\hotels\maps\hotel_wall3_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cDiffuseColor.r: 0.639600000
+      cDiffuseColor.g: 0.987951807
+      cDiffuseColor.b: 0.953488372
