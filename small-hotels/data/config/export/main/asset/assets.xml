@@ -4,6 +4,8 @@ Tourist District
 1500010500 small hotel
 1500010501 pop decrease buff
 1500010502+ skins
+1500010516 unlock small hotels
+1500010517
 
 -->
 
@@ -601,7 +603,7 @@ Tourist District
   </ModOp>
 
   <!-- # Construction menu -->
-  <!-- Old World Menu Engineers, insert after oil power plant -->
+  <!-- OW city, tourists, insert after hotel -->
   <ModOp Type="addNextSibling" GUID='132779,500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
     <Item>
       <Building>1500010500</Building>

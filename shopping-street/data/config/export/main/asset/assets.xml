@@ -1930,6 +1930,494 @@ Minimall
     </Asset>
   </ModOp>
   
+
+  <!-- # Courtyard restaurants -->
+  <ModOp GUID='133557' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>132780</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010517</GUID>
+          <Name>courtyard_restaurant</Name>
+        </Standard>
+        <Building>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1010346</Building>
+            </Item>
+            <Item>
+              <Building>1010347</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\courtyard-restaurant\restaurant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <RecipeBuilding>
+          <RecipeList>1500010523</RecipeList>
+          <IsBlank>1</IsBlank>
+        </RecipeBuilding>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>132747</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010518</GUID>
+          <Name>courtyard_schnitzel</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\courtyard-restaurant\restaurant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <RecipeBuilding>
+          <RecipeList>1500010523</RecipeList>
+        </RecipeBuilding>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>132750</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010519</GUID>
+          <Name>courtyard_goulash</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\courtyard-restaurant\restaurant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <RecipeBuilding>
+          <RecipeList>1500010523</RecipeList>
+        </RecipeBuilding>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>133339</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010520</GUID>
+          <Name>courtyard_fishnchips</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\courtyard-restaurant\restaurant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <RecipeBuilding>
+          <RecipeList>1500010523</RecipeList>
+        </RecipeBuilding>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>133340</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010521</GUID>
+          <Name>courtyard_venisonragout</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\courtyard-restaurant\restaurant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <RecipeBuilding>
+          <RecipeList>1500010523</RecipeList>
+        </RecipeBuilding>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>133341</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010522</GUID>
+          <Name>courtyard_lobsterfume</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\courtyard-restaurant\restaurant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <RecipeBuilding>
+          <RecipeList>1500010523</RecipeList>
+        </RecipeBuilding>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>RecipeList</Template>
+      <Values>
+        <RecipeList>
+          <Recipes>
+            <Item>
+              <Recipe>1500010524</Recipe>
+            </Item>
+            <Item>
+              <Recipe>1500010525</Recipe>
+            </Item>
+            <Item>
+              <Recipe>1500010526</Recipe>
+            </Item>
+            <Item>
+              <Recipe>1500010527</Recipe>
+            </Item>
+            <Item>
+              <Recipe>1500010528</Recipe>
+            </Item>
+          </Recipes>
+          <RecipeListType>Diner</RecipeListType>
+          <RecipeListMoodImage>data/ui/2kimages/main/assets/recipebook/mood_images/recipebook_moodimages_restaurant.png</RecipeListMoodImage>
+          <RecipeListDescription>134012</RecipeListDescription>
+        </RecipeList>
+        <Standard>
+          <GUID>1500010523</GUID>
+          <Name>restaurant_recipes</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_restaurant.png</IconFilename>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>132744</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010524</GUID>
+          <Name>schnitzel_recipe</Name>
+        </Standard>
+        <Recipe>
+          <RecipeBuilding>1500010518</RecipeBuilding>
+        </Recipe>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>132748</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010525</GUID>
+          <Name>goulash_recipe</Name>
+        </Standard>
+        <Recipe>
+          <RecipeBuilding>1500010519</RecipeBuilding>
+        </Recipe>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>133373</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010526</GUID>
+          <Name>fishnchips_recipe</Name>
+        </Standard>
+        <Recipe>
+          <RecipeBuilding>1500010520</RecipeBuilding>
+        </Recipe>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>133374</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010527</GUID>
+          <Name>venisonragout_recipe</Name>
+        </Standard>
+        <Recipe>
+          <RecipeBuilding>1500010521</RecipeBuilding>
+        </Recipe>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>133375</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010528</GUID>
+          <Name>lobsterfume_recipe</Name>
+        </Standard>
+        <Recipe>
+          <RecipeBuilding>1500010522</RecipeBuilding>
+        </Recipe>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010904</GUID>
+          <Name>restaurant_unlock</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>132780</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010517</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010518</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010524</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010523</Asset>
+                      </Item>
+                    </UnlockAssets>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010525</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010526</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010527</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010528</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010905</GUID>
+          <Name>goulash_unlock</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>132748</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010519</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010525</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010906</GUID>
+          <Name>fishnchips_unlock</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>133339</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010520</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010526</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010907</GUID>
+          <Name>venison_unlock</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>133374</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010521</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010527</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010908</GUID>
+          <Name>lobster_unlock</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>133375</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010522</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010528</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add neighbor influences -->
+  <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500010517</Building>
+    </Item>
+  </ModOp>
+
   <!-- # neighbors, target pools, ... -->
   <!-- add neighbor influences -->
   <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
@@ -2142,10 +2630,13 @@ Minimall
         <Standard>
           <GUID>1500010868</GUID>
           <Name>minimalls_menu</Name>
-          <IconFilename>data\jakob\ui\icons\icon_minimall.png</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_commercial.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>
+            <Item>
+              <Building>1500010517</Building>
+            </Item>
             <Item>
               <Building>1500010888</Building>
             </Item>
@@ -2165,7 +2656,12 @@ Minimall
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID='500447,500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='134629']">
+  <ModOp Type="addNextSibling" GUID='132779,500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='132781']">
+    <Item>
+      <Building>1500010868</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='25000192,500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='134629']">
     <Item>
       <Building>1500010868</Building>
     </Item>

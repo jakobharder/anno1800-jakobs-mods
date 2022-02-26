@@ -27,7 +27,7 @@
     },
     {
       "action": "gltf",
-      "pattern": "data/**/hotel*.gltf",
+      "pattern": "data/**/{hotel,restaurant}*.gltf",
       "lods": 5,
       "changePath": "rdm/",
       "animPath": "anim/"
