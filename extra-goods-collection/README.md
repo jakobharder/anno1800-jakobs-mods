@@ -31,6 +31,8 @@ The rest has no DLC dependencies.
 
 - Fixed warehouse/docklands issues
 - Increased trade price of cheese (45 -> 80)
+- Decreased hemp farm modules (168 -> 128)
+  Increased running costs instead (20 -> 50 coins, 20 -> 30 farmers)
 
 ### 1.2
 
