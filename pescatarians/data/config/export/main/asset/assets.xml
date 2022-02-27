@@ -990,6 +990,31 @@ Pescatarian
       </Values>
     </Asset>
     <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010282</GUID>
+          <Name>all_pescatarian_residences</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <Item>
+              <GUID>1500010142</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010145</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+    <Asset>
       <Template>Text</Template>
       <Values>
         <Standard>
@@ -1956,9 +1981,9 @@ Pescatarian
 
   <!-- # Buff Targets -->
   <!-- the below modops are very expensive, but in case of farmers, workers, ... it's impossible to hardcode all targets -->
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343']">
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
     <Item>
-      <GUID>1500010142</GUID>
+      <GUID>1500010282</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010343']">
@@ -1966,19 +1991,9 @@ Pescatarian
       <GUID>1500010142</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010344']">
-    <Item>
-      <GUID>1500010143</GUID>
-    </Item>
-  </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
     <Item>
       <GUID>1500010143</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010345']">
-    <Item>
-      <GUID>1500010144</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">

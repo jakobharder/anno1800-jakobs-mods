@@ -847,6 +847,25 @@ Upgradable Low Tiers
       </Values>
     </Asset>
     <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010281</GUID>
+          <Name>all_modern_workers</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <Item>
+              <GUID>1500010200</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+    <Asset>
       <Template>Skin</Template>
       <Values>
         <Standard>
@@ -1623,10 +1642,7 @@ Upgradable Low Tiers
   <!-- # Buff Targets -->
   <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010344']">
     <Item>
-      <GUID>1500010200</GUID>
-    </Item>
-    <Item>
-      <GUID>1500010201</GUID>
+      <GUID>1500010281</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
