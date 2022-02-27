@@ -63,6 +63,41 @@ Jakob's Extra Goods
 
 <ModOps>
   <!-- # Goods Lists -->
+  <!-- add to StandartProductStorageList -->
+  <ModOp Type="addNextSibling" GUID='120055'>
+    <Asset>
+      <!-- fallback dump -->
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <ignore></ignore>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <Item>
+      <Product>1500010153</Product>
+    </Item>
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+    <Item>
+      <Product>1500010106</Product>
+    </Item>
+    <Item>
+      <Product>1500010156</Product>
+    </Item>
+    <Item>
+      <Product>1500010150</Product>
+    </Item>
+  </ModOp>
   <ModOp Type="addNextSibling" GUID="502019">
     <Asset>
       <Template>Text</Template>
@@ -634,14 +669,8 @@ Jakob's Extra Goods
       </Values>
     </Asset>
   </ModOp>
-  <!-- add to StandartProductStorageList -->
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010156</Product>
-    </Item>
-  </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214' and not(../Item/Product='1500010156')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010156</Product>
     </Item>
@@ -910,14 +939,8 @@ Jakob's Extra Goods
       </Values>
     </Asset>
   </ModOp>
-  <!-- add to StandartProductStorageList -->
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010150</Product>
-    </Item>
-  </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010216']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010216' and not(../Item/Product='1500010150')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010150</Product>
     </Item>
@@ -1245,14 +1268,8 @@ Jakob's Extra Goods
       </Values>
     </Asset>
   </ModOp>
-  <!-- add to StandartProductStorageList -->
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
-  </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010120</Product>
     </Item>
@@ -1454,7 +1471,7 @@ Jakob's Extra Goods
         <ModuleOwner>
           <ModuleLimits>
             <Main>
-              <Limit>168</Limit>
+              <Limit>128</Limit>
             </Main>
           </ModuleLimits>
           <ConstructionOptions>
@@ -1475,12 +1492,12 @@ Jakob's Extra Goods
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>20</Amount>
-              <InactiveAmount>10</InactiveAmount>
+              <Amount>50</Amount>
+              <InactiveAmount>25</InactiveAmount>
             </Item>
             <Item>
               <Product>1010052</Product>
-              <Amount>20</Amount>
+              <Amount>30</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -2024,26 +2041,21 @@ Jakob's Extra Goods
     </Asset>
   </ModOp>
   <!-- add to StandartProductStorageList -->
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product=1440224)]">
-    <!-- New Horizon may already add this, results in loader warning in that case -->
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product=1440224)] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <!-- New Horizon may already add this, fallback to ignore list -->
     <Item>
       <Product>1440224</Product>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-  </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010127')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010127</Product>
     </Item>
   </ModOp>
   <!-- add to AgriculturalGoods_Europe to show up in the warehouse -->
-  <ModOp Type="addNextSibling" GUID='502037' Path="/Values/ProductList/List[not(Item/Product=1440224)]/Item[Product='120014']">
-    <!-- New Horizon may already add this, results in loader warning in that case -->
+  <ModOp Type="addNextSibling" GUID='502037' Path="/Values/ProductList/List[not(Item/Product=1440224)]/Item[Product='120014'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <!-- New Horizon may already add this, fallback to ignore list -->
     <Item>
       <Product>1440224</Product>
     </Item>
@@ -2387,14 +2399,8 @@ Jakob's Extra Goods
       </Values>
     </Asset>
   </ModOp>
-  <!-- add to StandartProductStorageList -->
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-  </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214' and not(../Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010153</Product>
     </Item>
@@ -2860,12 +2866,9 @@ Jakob's Extra Goods
     <Item>
       <Product>1500010105</Product>
     </Item>
-    <Item>
-      <Product>1500010106</Product>
-    </Item>
   </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010203']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010203' and not(../Item/Product='1500010106')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010106</Product>
     </Item>
@@ -2952,7 +2955,7 @@ Jakob's Extra Goods
         <Product>
           <StorageLevel>Building</StorageLevel>
           <ProductCategory>11704</ProductCategory> <!-- supply good -->
-          <BasePrice>45</BasePrice>
+          <BasePrice>80</BasePrice>
           <CivLevel>2</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
           <ProductionRegions>
@@ -3302,25 +3305,20 @@ Jakob's Extra Goods
     </Asset>
   </ModOp>
   <!-- StandartProductStorageList: append -->
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product=1440005)]">
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product=1440005)] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
     <!-- New Horizon may already add this, results in loader warning in that case -->
     <Item>
       <Product>1440005</Product>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
-  </ModOp>
   <!-- StandardMarketplaceModerateStorageList: insert after sausages -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238']">
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238' and not(../Item/Product='1500010102')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <Item>
       <Product>1500010102</Product>
     </Item>
   </ModOp>
   <!-- AgriculturalGoods_Europe (warehouse): insert after grapes -->
-  <ModOp Type="addNextSibling" GUID='502037' Path="/Values/ProductList/List[not(Item/Product=1440005)]/Item[Product='120014']">
+  <ModOp Type="addNextSibling" GUID='502037' Path="/Values/ProductList/List[not(Item/Product=1440005)]/Item[Product='120014'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
     <!-- New Horizon may already add this, results in loader warning in that case -->
     <Item>
       <Product>1440005</Product>
@@ -3799,4 +3797,7 @@ Jakob's Extra Goods
       <Factory>1500010103</Factory>
     </Item>
   </ModOp>
+
+  <!-- # cleanup -->
+  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>

@@ -60,6 +60,9 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 [\[Gameplay\] Small Hotels](./small-hotels/README.md)
 
+- Buildings: small hotel with 4 variations and skins.
+- Skins: vanilla hotel
+
 [\[Shared\] Extra Goods Collection](./extra-goods-collection/README.md)
 
 - Production chains: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...

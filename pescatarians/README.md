@@ -27,9 +27,15 @@ Suits and canned fish factories reduce consumption when close to residences.
 
 ## Changes
 
+### 1.3
+
+- Fixed warehouse/docklands goods issues
+- Increased trade price of cheese (45 -> 80)
+- Added music school as public service / luxury need for Pescatarian Workers and Artisans.
+
 ### 1.2
 
-- Remove doubled canned fish, suits in consumable construction menu
+- Removed doubled canned fish, suits in consumable construction menu
 
 ### 1.1
 

@@ -25,12 +25,21 @@ Make sure to remind the players if you use those goods.
 
 The rest has no DLC dependencies.
 
-## 1.2 Changes
+## Changes
+
+## 1.5
+
+- Fixed warehouse/docklands issues
+- Increased trade price of cheese (45 -> 80)
+- Decreased hemp farm modules (168 -> 128)
+  Increased running costs instead (20 -> 50 coins, 20 -> 30 farmers)
+
+### 1.2
 
 - Accessories, Olive Soap and Bottled Beer now unlocks with 1st built Pescatarian Community Center
 - Canned Fish and Suits moved to workers construction menu
 
-## 1.1 Changes
+### 1.1
 
 - New dairy model
 - Hot chocolate bar recipe

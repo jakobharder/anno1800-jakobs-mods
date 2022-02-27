@@ -55,6 +55,8 @@ Pescatarian
 1500010187 unlock construction menu
 1500010188 menu description text
 
+1500010800 music school
+
 -->
 
 <ModOps>
@@ -66,63 +68,10 @@ Pescatarian
       <Template>Product</Template>
       <Values>
         <Standard>
-          <GUID>1500010153</GUID>
-          <Name>tools</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-        </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Tools</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11705</ProductCategory>
-          <BasePrice>240</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Crafting</Attribute>
-              <Amount>50</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>19796</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
           <GUID>1500010120</GUID>
           <Name>canned_fish</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Canned Fish</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -148,18 +97,7 @@ Pescatarian
           <GUID>1500010127</GUID>
           <Name>suits</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Suits</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -193,21 +131,11 @@ Pescatarian
           <Name>cheese</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cheese</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
           <ProductCategory>11704</ProductCategory> <!-- supply good -->
-          <BasePrice>45</BasePrice>
+          <BasePrice>80</BasePrice>
           <CivLevel>2</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
           <ProductionRegions>
@@ -231,16 +159,6 @@ Pescatarian
           <IconFilename>data/jakob/ui/icons/icon_olive_soap.png</IconFilename>
           <InfoDescription>1500010017</InfoDescription>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Olive Soap</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -266,96 +184,167 @@ Pescatarian
         </ExpeditionAttribute>
       </Values>
     </Asset>
+  </ModOp>
+  <!-- add to StandartProductStorageList -->
+  <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
-      <Template>Product</Template>
+      <!-- fallback dump -->
       <Values>
         <Standard>
-          <GUID>1500010156</GUID>
-          <Name>premium_beer</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_beer_2.png</IconFilename>
+          <GUID>1500010221</GUID>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Tools</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11709</ProductCategory>
-          <BasePrice>480</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>20</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>30</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>12859</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010150</GUID>
-          <Name>wooden_accessory</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\museum\icon_wooden_ring.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cloth</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11705</ProductCategory>
-          <BasePrice>50</BasePrice>
-          <CivLevel>1</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>0</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>25</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>12860</FluffText>
-        </ExpeditionAttribute>
+        <ignore></ignore>
       </Values>
     </Asset>
   </ModOp>
-
-  <!-- # trade contracts for shared products -->
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <Item>
+      <Product>1500010153</Product>
+    </Item>
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+    <Item>
+      <Product>1500010106</Product>
+    </Item>
+    <Item>
+      <Product>1500010156</Product>
+    </Item>
+    <Item>
+      <Product>1500010150</Product>
+    </Item>
+  </ModOp>
+  <!-- add to StandardMarketplaceModerateStorageList -->
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010203' and not(../Item/Product='1500010106')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010106</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238' and not(../Item/Product='1500010102')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore[last()]">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+  <!-- filter lists -->
+  <ModOp Type="addNextSibling" GUID="502019">
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010159</GUID>
+          <Name>farmer_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1010200</Product>
+            </Item>
+            <Item>
+              <Product>1010195</Product>
+            </Item>
+            <Item>
+              <Product>1500010150</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010160</GUID>
+          <Name>worker_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1440005</Product>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+            </Item>
+            <Item>
+              <Product>1500010105</Product>
+            </Item>
+            <Item>
+              <Product>1500010106</Product>
+            </Item>
+            <Item>
+              <Product>1500010153</Product>
+            </Item>
+            <Item>
+              <Product>1440224</Product>
+            </Item>
+            <Item>
+              <Product>1500010127</Product>
+            </Item>
+            <Item>
+              <Product>1500010120</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010161</GUID>
+          <Name>artisan_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1500010156</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- stats/warehouse all list: insert after artisan -->
+  <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp>
+  <!-- session goods: insert after artisan -->
+  <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp>
+  <!-- trade contracts for shared products -->
   <!-- 
     add products to traders based on name and product of the same unlock category
     unlock condition is not used to get the unlock category as there are mods that change unlock conditions
@@ -497,7 +486,7 @@ Pescatarian
             </Item>
             <Item>
               <Product>1500010118</Product>
-              <HappinessValue>6</HappinessValue>
+              <HappinessValue>2</HappinessValue>
             </Item>
             <Item>
               <Product>1010195</Product>
@@ -514,7 +503,7 @@ Pescatarian
             <Item>
               <Product>1500010150</Product>
               <Amount>0.0002083</Amount>
-              <HappinessValue>6</HappinessValue>
+              <HappinessValue>5</HappinessValue>
               <MoneyValue>20</MoneyValue>
             </Item>
             <Item>
@@ -539,6 +528,13 @@ Pescatarian
               <MoneyValue>20</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
               <NoWeightPopulationCount>249</NoWeightPopulationCount>
+            </Item>
+            <Item>
+              <Product>1500010801</Product>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>20</MoneyValue>
+              <FullWeightPopulationCount>500</FullWeightPopulationCount>
+              <NoWeightPopulationCount>399</NoWeightPopulationCount>
             </Item>
             <Item>
               <Product>1500010153</Product>
@@ -623,7 +619,7 @@ Pescatarian
             </Item>
             <Item>
               <Product>1500010118</Product>
-              <HappinessValue>4</HappinessValue>
+              <HappinessValue>2</HappinessValue>
             </Item>
             <Item>
               <Product>1500010102</Product>
@@ -646,7 +642,7 @@ Pescatarian
             <Item>
               <Product>1500010153</Product>
               <Amount>0.0002</Amount>
-              <HappinessValue>6</HappinessValue>
+              <HappinessValue>4</HappinessValue>
               <MoneyValue>80</MoneyValue>
             </Item>
             <Item>
@@ -681,8 +677,13 @@ Pescatarian
               <NoWeightPopulationCount>249</NoWeightPopulationCount>
             </Item>
             <Item>
+              <Product>1500010801</Product>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>20</MoneyValue>
+            </Item>
+            <Item>
               <Product>1010352</Product>
-              <HappinessValue>6</HappinessValue>
+              <HappinessValue>5</HappinessValue>
               <MoneyValue>26</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
               <NoWeightPopulationCount>249</NoWeightPopulationCount>
@@ -939,7 +940,7 @@ Pescatarian
         <Standard>
           <GUID>1500010142</GUID>
           <Name>pescatarian_farmer</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
         <Building>
@@ -1003,6 +1004,28 @@ Pescatarian
       </Values>
     </Asset>
     <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010282</GUID>
+          <Name>all_pescatarian_residences</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <Item>
+              <GUID>1500010142</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+    <Asset>
       <Template>Text</Template>
       <Values>
         <Standard>
@@ -1031,7 +1054,7 @@ Pescatarian
         <Standard>
           <GUID>1500010143</GUID>
           <Name>pescatarian_worker</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
         <Building>
@@ -1184,7 +1207,7 @@ Pescatarian
         <Standard>
           <GUID>1500010144</GUID>
           <Name>pescatarian_artisan</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
         <Building>
@@ -1917,6 +1940,176 @@ Pescatarian
     </Asset>
   </ModOp>
 
+  <!-- # Service: Music School -->
+  <ModOp GUID='1010372' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010360</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010800</GUID>
+          <Name>pescatarian_music_scool</Name>
+          <IconFilename>data/jakob/ui/icons/icon_music_school.png</IconFilename>
+        </Standard>
+        <Blocking />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/music_school/music_school.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>PublicServiceBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+                <Sound>214786</Sound>
+              </Item>
+            </BuildSuccessful>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController>
+          <NightBehavior>HideAll</NightBehavior>
+        </FeedbackController>
+        <Infolayer />
+        <AmbientMoodProvider>
+          <AmbientMood>ResidenceTier3</AmbientMood>
+          <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+              <InactiveAmount>25</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <MaximumHitPoints>4750</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+            </Fire>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <PublicService>
+          <FullSatisfactionDistance>35</FullSatisfactionDistance>
+          <NoSatisfactionDistance>50</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1500010801</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010801</GUID>
+          <Name>service_music_school</Name>
+          <IconFilename>data/jakob/ui/icons/icon_music_school.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory>
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+        <ExpeditionAttribute />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010283</GUID>
+          <Name>unlock_music_school</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>1500010143</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010800</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010801</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="190136,191501,193879" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010800</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191705,191706,191707,191726,191727,191728,191729,191730,191731" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010800</GUID>
+    </Item>
+  </ModOp>
+
   <!-- # construction menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
@@ -1934,6 +2127,9 @@ Pescatarian
             </Item>
             <Item>
               <Building>1500010142</Building>
+            </Item>
+            <Item>
+              <Building>1500010800</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>1500010188</CategoryDescription>
@@ -1969,9 +2165,9 @@ Pescatarian
 
   <!-- # Buff Targets -->
   <!-- the below modops are very expensive, but in case of farmers, workers, ... it's impossible to hardcode all targets -->
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343']">
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
     <Item>
-      <GUID>1500010142</GUID>
+      <GUID>1500010282</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010343']">
@@ -1979,19 +2175,9 @@ Pescatarian
       <GUID>1500010142</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010344']">
-    <Item>
-      <GUID>1500010143</GUID>
-    </Item>
-  </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
     <Item>
       <GUID>1500010143</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010345']">
-    <Item>
-      <GUID>1500010144</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
@@ -1999,9 +2185,11 @@ Pescatarian
       <GUID>1500010144</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010346']">
+  <!-- Replace "Engineers" with "All Engineers" in items and specialists.
+       Can be done multiple times and mods properly adding themselves to 193861 should be fine. -->
+  <ModOp Type="replace" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets/Item[GUID='1010346'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[GUID='1010346']">
     <Item>
-      <GUID>1500010145</GUID>
+      <GUID>193861</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
@@ -2123,12 +2311,6 @@ Pescatarian
                     <UnhideAssets>
                       <Item>
                         <Asset>1500010186</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010100</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010142</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
@@ -2257,4 +2439,7 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # cleanup -->
+  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>

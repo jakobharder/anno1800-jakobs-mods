@@ -15,6 +15,13 @@ Known issues:
   There is an ornament included to place on diagonal endings to prevent such glitches.
 - Horses, bicycle riders will be a bit drunk on diagonal roads ;-)
 
+## Changes
+
+### 1.2
+
+- Fixed narrow building consumption and costs
+- Improved buff target names (i.e. "Affects x Residences")
+
 ## Translations (skin names only)
 
 Available: English, German

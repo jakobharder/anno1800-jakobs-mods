@@ -637,7 +637,8 @@ Tourist District
     </Item>
   </ModOp>
   <!-- Train Stations: add train stations need to self -->
-  <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='101213'][last()]">
+  <!-- disabled because it adds to the residence count even if not available -->
+  <!-- <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010213'][last()]">
     <Item>
       <Product>850044</Product>
       <Amount>0.008333333</Amount>
@@ -647,5 +648,5 @@ Tourist District
       <NoWeightPopulationCount>29</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
     </Item>
-  </ModOp>
+  </ModOp> -->
 </ModOps>
