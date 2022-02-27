@@ -40,7 +40,7 @@ Known issues:
 
 ## Changes
 
-### Unreleased
+### 1.2
 
 - Fixed warehouse/docklands goods issues
 - Increased trade price of cheese (45 -> 80)

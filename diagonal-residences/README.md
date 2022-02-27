@@ -17,7 +17,7 @@ Known issues:
 
 ## Changes
 
-### Unreleased
+### 1.2
 
 - Fixed narrow building consumption and costs
 - Improved buff target names (i.e. "Affects x Residences")

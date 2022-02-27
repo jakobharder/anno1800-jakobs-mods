@@ -27,7 +27,7 @@ The rest has no DLC dependencies.
 
 ## Changes
 
-## Unreleased
+## 1.5
 
 - Fixed warehouse/docklands issues
 - Increased trade price of cheese (45 -> 80)
