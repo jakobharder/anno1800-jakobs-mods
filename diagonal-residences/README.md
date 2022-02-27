@@ -15,6 +15,12 @@ Known issues:
   There is an ornament included to place on diagonal endings to prevent such glitches.
 - Horses, bicycle riders will be a bit drunk on diagonal roads ;-)
 
+## Changes
+
+### Unreleased
+
+- Fixed narrow building consumption and costs
+
 ## Translations (skin names only)
 
 Available: English, German

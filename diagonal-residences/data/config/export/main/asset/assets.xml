@@ -256,6 +256,26 @@
             </Item>
           </InfluencedVariationDirection>
         </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
@@ -390,34 +410,6 @@
             </Item>
           </InputBenefitModifier>
         </PopulationUpgrade>
-        <ResidenceUpgrade>
-          <GoodConsumptionUpgrade>
-            <Item>
-              <ProvidedNeed>1010217</ProvidedNeed>
-              <AmountInPercent>-66</AmountInPercent>
-            </Item>
-            <Item>
-              <ProvidedNeed>1010206</ProvidedNeed>
-              <AmountInPercent>-66</AmountInPercent>
-            </Item>
-            <Item>
-              <ProvidedNeed>1010247</ProvidedNeed>
-              <AmountInPercent>-66</AmountInPercent>
-            </Item>
-            <Item>
-              <ProvidedNeed>120030</ProvidedNeed>
-              <AmountInPercent>-66</AmountInPercent>
-            </Item>
-            <Item>
-              <ProvidedNeed>120032</ProvidedNeed>
-              <AmountInPercent>-66</AmountInPercent>
-            </Item>
-            <Item>
-              <ProvidedNeed>1010208</ProvidedNeed>
-              <AmountInPercent>-66</AmountInPercent>
-            </Item>
-          </GoodConsumptionUpgrade>
-        </ResidenceUpgrade>
         <IncidentInfectableUpgrade />
         <CultureUpgrade>
           <HideBuff>1</HideBuff>
