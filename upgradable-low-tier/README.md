@@ -35,7 +35,13 @@ Known issues:
 - The arrows for skyscraper update doesn't show sometimes. But the building will still upgrade if you click anyway.
 - The game wrongfully shows missing cheese for normal worker residences when all needs are fulfilled but people have not moved in yet. It's just an icon, nothing is missing.
 
-## 1.1 Changes
+## Changes
+
+### Unreleased
+
+- Fixed warehouse/docklands goods issues
+
+### 1.1
 
 - Trade contracts for new goods
 - Some City Lights Pack ornaments have now a stone pavement ground 

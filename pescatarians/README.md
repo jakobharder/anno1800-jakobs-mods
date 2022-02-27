@@ -27,6 +27,10 @@ Suits and canned fish factories reduce consumption when close to residences.
 
 ## Changes
 
+### Unreleased
+
+- Fixed warehouse/docklands goods issues
+
 ### 1.2
 
 - Remove doubled canned fish, suits in consumable construction menu

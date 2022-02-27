@@ -66,63 +66,10 @@ Pescatarian
       <Template>Product</Template>
       <Values>
         <Standard>
-          <GUID>1500010153</GUID>
-          <Name>tools</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-        </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Tools</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11705</ProductCategory>
-          <BasePrice>240</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Crafting</Attribute>
-              <Amount>50</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>19796</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
           <GUID>1500010120</GUID>
           <Name>canned_fish</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Canned Fish</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -148,18 +95,7 @@ Pescatarian
           <GUID>1500010127</GUID>
           <Name>suits</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Suits</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -193,16 +129,6 @@ Pescatarian
           <Name>cheese</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cheese</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -231,16 +157,6 @@ Pescatarian
           <IconFilename>data/jakob/ui/icons/icon_olive_soap.png</IconFilename>
           <InfoDescription>1500010017</InfoDescription>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Olive Soap</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -266,96 +182,167 @@ Pescatarian
         </ExpeditionAttribute>
       </Values>
     </Asset>
+  </ModOp>
+  <!-- add to StandartProductStorageList -->
+  <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
-      <Template>Product</Template>
+      <!-- fallback dump -->
       <Values>
         <Standard>
-          <GUID>1500010156</GUID>
-          <Name>premium_beer</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_beer_2.png</IconFilename>
+          <GUID>1500010221</GUID>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Tools</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11709</ProductCategory>
-          <BasePrice>480</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>20</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>30</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>12859</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010150</GUID>
-          <Name>wooden_accessory</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\museum\icon_wooden_ring.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cloth</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11705</ProductCategory>
-          <BasePrice>50</BasePrice>
-          <CivLevel>1</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>0</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>25</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>12860</FluffText>
-        </ExpeditionAttribute>
+        <ignore></ignore>
       </Values>
     </Asset>
   </ModOp>
-
-  <!-- # trade contracts for shared products -->
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <Item>
+      <Product>1500010153</Product>
+    </Item>
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+    <Item>
+      <Product>1500010106</Product>
+    </Item>
+    <Item>
+      <Product>1500010156</Product>
+    </Item>
+    <Item>
+      <Product>1500010150</Product>
+    </Item>
+  </ModOp>
+  <!-- add to StandardMarketplaceModerateStorageList -->
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010203' and not(../Item/Product='1500010106')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010106</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238' and not(../Item/Product='1500010102')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore[last()]">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+  <!-- filter lists -->
+  <ModOp Type="addNextSibling" GUID="502019">
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010159</GUID>
+          <Name>farmer_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1010200</Product>
+            </Item>
+            <Item>
+              <Product>1010195</Product>
+            </Item>
+            <Item>
+              <Product>1500010150</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010160</GUID>
+          <Name>worker_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1440005</Product>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+            </Item>
+            <Item>
+              <Product>1500010105</Product>
+            </Item>
+            <Item>
+              <Product>1500010106</Product>
+            </Item>
+            <Item>
+              <Product>1500010153</Product>
+            </Item>
+            <Item>
+              <Product>1440224</Product>
+            </Item>
+            <Item>
+              <Product>1500010127</Product>
+            </Item>
+            <Item>
+              <Product>1500010120</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010161</GUID>
+          <Name>artisan_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1500010156</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- stats/warehouse all list: insert after artisan -->
+  <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp>
+  <!-- session goods: insert after artisan -->
+  <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp>
+  <!-- trade contracts for shared products -->
   <!-- 
     add products to traders based on name and product of the same unlock category
     unlock condition is not used to get the unlock category as there are mods that change unlock conditions
@@ -2257,4 +2244,7 @@ Pescatarian
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # cleanup -->
+  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>

@@ -25,12 +25,18 @@ Make sure to remind the players if you use those goods.
 
 The rest has no DLC dependencies.
 
-## 1.2 Changes
+## Changes
+
+## Unreleased
+
+- Fixed warehouse/docklands issues
+
+### 1.2
 
 - Accessories, Olive Soap and Bottled Beer now unlocks with 1st built Pescatarian Community Center
 - Canned Fish and Suits moved to workers construction menu
 
-## 1.1 Changes
+### 1.1
 
 - New dairy model
 - Hot chocolate bar recipe

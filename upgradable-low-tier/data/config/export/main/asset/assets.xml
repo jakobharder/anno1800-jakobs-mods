@@ -20,16 +20,6 @@ Upgradable Low Tiers
           <Name>tools</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Tools</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -63,16 +53,6 @@ Upgradable Low Tiers
           <Name>canned_fish</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Canned Fish</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -100,16 +80,6 @@ Upgradable Low Tiers
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
           <Version>dlc06</Version>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Suits</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -143,16 +113,6 @@ Upgradable Low Tiers
           <Name>cheese</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cheese</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
@@ -173,15 +133,10 @@ Upgradable Low Tiers
       </Values>
     </Asset>
   </ModOp>
-  
-  <!-- # trade contracts for shared products -->
-  <!-- 
-    add products to traders based on name and product of the same unlock category
-    unlock condition is not used to get the unlock category as there are mods that change unlock conditions
-  -->
-  <ModOp Type="addNextSibling" GUID="131764">
-    <!-- fallback dump -->
+  <!-- add to StandartProductStorageList -->
+  <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
+      <!-- fallback dump -->
       <Values>
         <Standard>
           <GUID>1500010221</GUID>
@@ -190,6 +145,158 @@ Upgradable Low Tiers
       </Values>
     </Asset>
   </ModOp>
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+    <Item>
+      <Product>1500010153</Product>
+    </Item>
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+    <Item>
+      <Product>1500010106</Product>
+    </Item>
+    <Item>
+      <Product>1500010156</Product>
+    </Item>
+    <Item>
+      <Product>1500010150</Product>
+    </Item>
+  </ModOp>
+  <!-- add to StandardMarketplaceModerateStorageList -->
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214' and not(../Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010153</Product>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238' and not(../Item/Product='1500010102')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
+    <Item>
+      <Product>1500010102</Product>
+    </Item>
+  </ModOp>
+  <!-- filter lists -->
+  <ModOp Type="addNextSibling" GUID="502019">
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010159</GUID>
+          <Name>farmer_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1010200</Product>
+            </Item>
+            <Item>
+              <Product>1010195</Product>
+            </Item>
+            <Item>
+              <Product>1500010150</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010160</GUID>
+          <Name>worker_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1440005</Product>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+            </Item>
+            <Item>
+              <Product>1500010105</Product>
+            </Item>
+            <Item>
+              <Product>1500010106</Product>
+            </Item>
+            <Item>
+              <Product>1500010153</Product>
+            </Item>
+            <Item>
+              <Product>1440224</Product>
+            </Item>
+            <Item>
+              <Product>1500010127</Product>
+            </Item>
+            <Item>
+              <Product>1500010120</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010161</GUID>
+          <Name>artisan_unlock_goods</Name>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1500010156</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- stats/warehouse all list: insert after artisan -->
+  <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp>
+  <!-- session goods: insert after artisan -->
+  <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp>
+  <!-- trade contracts for shared products -->
+  <!-- 
+    add products to traders based on name and product of the same unlock category
+    unlock condition is not used to get the unlock category as there are mods that change unlock conditions
+  -->
   <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010102')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
     <!-- feedl -->
     <Item>
@@ -1687,6 +1794,60 @@ Upgradable Low Tiers
         <TriggerSetup />
       </Values>
     </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010280</GUID>
+          <Name>unlock level 1 goods</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>1500010200</UnlockNeeded> <!-- level 1 building -->
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010102</Asset> <!-- cheese -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010153</Asset> <!-- tools -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010127</Asset> <!-- suits -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010120</Asset> <!-- canned fish -->
+                      </Item>
+                      <Item>
+                        <Asset>1010354</Asset> <!-- electricity, unlock is otherwise only when engineers need it -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
   </ModOp>
-
+  
+  <!-- # cleanup -->
+  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>
