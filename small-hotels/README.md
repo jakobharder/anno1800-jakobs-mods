@@ -8,8 +8,8 @@ Includes a small hotel with 4 variations and paintbrush skins for both small and
 
 ## Notes
 
-- Works with New World Tourism
-- Works with Trains Stations & Hotels when 'Train-Stations, Make compatible with NW Tourism' is used.
+- Compatible with New World Tourism
+- Compatible with Trains Stations & Hotels when 'Train-Stations, Make compatible with NW Tourism' is used.
 
 ## Translations
 
