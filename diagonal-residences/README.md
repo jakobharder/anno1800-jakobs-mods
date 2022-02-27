@@ -20,6 +20,7 @@ Known issues:
 ### Unreleased
 
 - Fixed narrow building consumption and costs
+- Improved buff target names (i.e. "Affects x Residences")
 
 ## Translations (skin names only)
 
