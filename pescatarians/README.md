@@ -30,6 +30,7 @@ Suits and canned fish factories reduce consumption when close to residences.
 ### Unreleased
 
 - Fixed warehouse/docklands goods issues
+- Increased trade price of cheese (45 -> 80)
 
 ### 1.2
 
