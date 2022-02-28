@@ -26,6 +26,7 @@ You find the biogas production embedded in the gas and small power plants constr
 ### 1.1
 
 - Fixed farm waste missing from warehouse category 'all'
+- Reduced pollution penalty
 
 ## Translations
 
