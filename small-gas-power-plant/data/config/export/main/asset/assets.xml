@@ -354,20 +354,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
-        <BuffFactory>
-          <BaseBuff>0</BaseBuff>
-          <BaseBuffScope>Radius</BaseBuffScope>
-          <BaseBuffDistance>6</BaseBuffDistance>
-          <ProductionBuffs>
-            <Item>
-              <ProductivityBuff>1500010034</ProductivityBuff>
-              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
-              <ProductivityThresholdDown>0.3</ProductivityThresholdDown>
-            </Item>
-          </ProductionBuffs>
-          <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>6</ProductionBuffDistance>
-        </BuffFactory>
         <LogisticNode>
           <TransporterCountMax>4</TransporterCountMax>
           <PathLayers>Street</PathLayers>
@@ -429,7 +415,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <CycleTime>20</CycleTime>
         </FactoryBase>
         <Culture>
-          <Attractiveness>-80</Attractiveness>
+          <Attractiveness>-30</Attractiveness>
           <CultureType>Military</CultureType> <!-- military? it's same as tallow processing and soap factory though -->
         </Culture>
         <PublicService> <!-- 30% of harbor life coverage -->
@@ -437,6 +423,18 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <FullSatisfactionDistance>21</FullSatisfactionDistance>
           <NoSatisfactionDistance>21</NoSatisfactionDistance>
         </PublicService>
+        <ItemContainer>
+          <SocketCount>2</SocketCount>
+          <SocketAllocation>RadiusBuilding;GuildHouse</SocketAllocation>
+          <SocketScope>Radius</SocketScope>
+          <SocketScopeRadius>6</SocketScopeRadius>
+            <InitSocketItems>
+              <Item>
+                <Item>1500010034</Item>
+                <StackSize>1</StackSize>
+              </Item>
+            </InitSocketItems>
+        </ItemContainer>
       </Values>
     </Asset>
     <Asset>
@@ -447,6 +445,14 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <Name>coal_mine_buff</Name>
           <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
         </Standard>
+        <Item>
+          <MaxStackSize>1</MaxStackSize>
+          <Rarity>Uncommon</Rarity>
+          <TradePrice>1</TradePrice>
+        </Item>
+        <ExpeditionAttribute>
+          <ItemDifficulties>Easy</ItemDifficulties>
+        </ExpeditionAttribute>
         <Buff />
         <ItemEffect>
           <EffectTargets>
@@ -456,21 +462,66 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           </EffectTargets>
           <AllowStacking>0</AllowStacking>
         </ItemEffect>
+        <FactoryUpgrade />
+        <BuildingUpgrade />
+        <CultureUpgrade />
+        <EffectForward>
+          <ForwardEffect>1500010043</ForwardEffect>
+          <ForwardEffectRange>6</ForwardEffectRange>
+        </EffectForward>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010043</GUID>
+          <Name>coal_mine_buff</Name>
+          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
+          <InfoDescription>1500010044</InfoDescription>
+        </Standard>
+        <Buff />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010035</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
         <FactoryUpgrade>
-          <ProductivityUpgrade>
-            <Value>50</Value>
-            <Percental>1</Percental>
-          </ProductivityUpgrade>
-          <!-- <AdditionalOutput>
+          <AdditionalOutput>
             <Item>
               <Product>1010226</Product>
-              <AdditionalOutputCycle>2</AdditionalOutputCycle>
+              <AdditionalOutputCycle>1</AdditionalOutputCycle>
               <Amount>1</Amount>
             </Item>
-          </AdditionalOutput> -->
+          </AdditionalOutput>
         </FactoryUpgrade>
         <BuildingUpgrade />
         <CultureUpgrade />
+        <PowerplantUpgrade>
+          <IndustrializationRangeUpgrade>
+            <Value>14</Value>
+          </IndustrializationRangeUpgrade>
+        </PowerplantUpgrade>
+        <BuildingUpgrade>
+          <PublicServiceFullSatisfactionDistance>
+            <Value>14</Value>
+          </PublicServiceFullSatisfactionDistance>
+          <PublicServiceNoSatisfactionDistance>
+            <Value>14</Value>
+          </PublicServiceNoSatisfactionDistance>
+        </BuildingUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010044</GUID>
+          <Name>coal_combo_desc</Name>
+        </Standard>
       </Values>
     </Asset>
     <Asset>
