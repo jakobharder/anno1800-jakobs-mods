@@ -30,6 +30,7 @@ Suits and canned fish factories reduce consumption when close to residences.
 ### 1.4
 
 - Added Enbesa musician's court items to music school
+- Renamed Community Center public services to avoid confusion (there are two ;-)
 
 ### 1.3
 
