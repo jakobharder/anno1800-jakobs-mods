@@ -17,6 +17,10 @@ Known issues:
 
 ## Changes
 
+### Unreleased
+
+- (internal changes)
+
 ### 1.2
 
 - Fixed narrow building consumption and costs
