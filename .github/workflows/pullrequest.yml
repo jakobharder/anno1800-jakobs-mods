@@ -20,7 +20,6 @@ jobs:
       - name: build mods
         run: |
           npm run build-changed
-          mv './out/[] Train-Stations, Make compatible with NW Tourism' './out/Train-Stations, Make compatible with NW Tourism'
       - name: upload mods
         uses: actions/upload-artifact@v2
         with:

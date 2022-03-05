@@ -8,10 +8,16 @@ Small power plant have less coverage than normal plants and consume coal, oil or
 
 You need to play with Arctic session to use the small gas power plant.
 
-# 2.0 Changes
+## Changes
 
-- added coal and oil power plants
-- savegame compatible
+### 2.2
+
+- Coal mines have increased range when built next to coal mines.
+
+### 2.0
+
+- Added coal and oil power plants
+- Savegame compatible
 
 ## Translations
 

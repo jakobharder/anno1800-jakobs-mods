@@ -75,7 +75,7 @@ Pescatarian
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
+          <ProductCategory>11704</ProductCategory> <!-- basic needs -->
           <BasePrice>563</BasePrice>
           <CivLevel>3</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
@@ -101,7 +101,7 @@ Pescatarian
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
+          <ProductCategory>11704</ProductCategory> <!-- basic needs -->
           <BasePrice>480</BasePrice>
           <CivLevel>3</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
@@ -134,7 +134,7 @@ Pescatarian
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <ProductCategory>11704</ProductCategory> <!-- basic needs -->
           <BasePrice>80</BasePrice>
           <CivLevel>2</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
@@ -162,7 +162,7 @@ Pescatarian
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- supply good -->
+          <ProductCategory>11704</ProductCategory> <!-- basic needs -->
           <BasePrice>120</BasePrice>
           <CivLevel>2</CivLevel>
           <AssociatedRegion>Moderate</AssociatedRegion>
@@ -1888,21 +1888,11 @@ Pescatarian
           <Name>pescatarian_market_service</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Church</Text>
-              <Status>Exported</Status>
-              <ExportCount>2</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5328</LineID>
-        </Text>
         <Locked />
         <Product>
           <ProductColor>-11415604</ProductColor>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory>
+          <ProductCategory>11704</ProductCategory> <!-- basic need -->
           <IsAbstract>1</IsAbstract>
           <AssociatedRegion>Moderate</AssociatedRegion>
         </Product>
@@ -1917,21 +1907,11 @@ Pescatarian
           <Name>pescatarian_church_service</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Church</Text>
-              <Status>Exported</Status>
-              <ExportCount>2</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5328</LineID>
-        </Text>
         <Locked />
         <Product>
           <ProductColor>-11415604</ProductColor>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory>
+          <ProductCategory>11709</ProductCategory> <!-- luxury need -->
           <IsAbstract>1</IsAbstract>
           <AssociatedRegion>Moderate</AssociatedRegion>
         </Product>
@@ -2048,7 +2028,7 @@ Pescatarian
         <Product>
           <ProductColor>-11415604</ProductColor>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory>
+          <ProductCategory>11709</ProductCategory> <!-- luxury need -->
           <IsAbstract>1</IsAbstract>
           <AssociatedRegion>Moderate</AssociatedRegion>
         </Product>
@@ -2104,7 +2084,7 @@ Pescatarian
       <GUID>1500010800</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="191705,191706,191707,191726,191727,191728,191729,191730,191731" Path="/Values/ItemEffect/EffectTargets">
+  <ModOp Type="add" GUID="191705,191706,191707,191726,191727,191728,191729,191730,191731,125065,125063" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010800</GUID>
     </Item>

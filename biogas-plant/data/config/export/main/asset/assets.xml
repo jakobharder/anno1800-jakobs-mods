@@ -129,7 +129,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Infolayer />
         <ItemContainer />
         <Culture>
-          <Attractiveness>-50</Attractiveness>
+          <Attractiveness>-20</Attractiveness>
           <CultureType>Military</CultureType> <!-- military? it's same as tallow processing and soap factory though -->
         </Culture>
         <Industrializable>
@@ -263,7 +263,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </IncidentInfectable>
         <Infolayer />
         <Culture>
-          <Attractiveness>-30</Attractiveness>
+          <Attractiveness>-20</Attractiveness>
           <CultureType>Military</CultureType> <!-- military? it's same as tallow processing and soap factory though -->
         </Culture>
         <Industrializable>
@@ -322,16 +322,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data/jakob/ui/icons/icon_bio_waste.png</IconFilename>
           <InfoDescription>1500010013</InfoDescription>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Farm Waste</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Locked>
           <DLCDependency>410042</DLCDependency>
         </Locked>
@@ -523,8 +513,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Product>1500010014</Product>
     </Item>
   </ModOp>
-  <!-- add to AgriculturalGoods_Europe to show up in the warehouse, WorkerWorkforceGoods -->
-  <ModOp Type="add" GUID='502037,502005' Path="/Values/ProductList/List">
+  <!-- warehouse lists -->
+  <ModOp Type="add" GUID='502037,502005,502018' Path="/Values/ProductList/List">
     <Item>
       <Product>1500010014</Product>
     </Item>

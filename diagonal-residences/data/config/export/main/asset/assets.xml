@@ -83,11 +83,6 @@
           <!-- disable skyscrapers -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
         </FloorStackOwner>
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -133,11 +128,6 @@
         <Pausable />
         <Infolayer />
         <Culture />
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -147,11 +137,6 @@
           <GUID>1500010405</GUID>
           <Name>diagonal_description</Name>
         </Standard>
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -161,11 +146,6 @@
           <GUID>1500010406</GUID>
           <Name>diagonal_endpiece_description</Name>
         </Standard>
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -497,11 +477,6 @@
           <VisibleWhenLocked>1</VisibleWhenLocked>
         </Locked>
         <Text />
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -543,11 +518,6 @@
           <VisibleWhenLocked>1</VisibleWhenLocked>
         </Locked>
         <Text />
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -763,11 +733,6 @@
           <CategoryDescription>1500010404</CategoryDescription>
         </ConstructionCategory>
         <Locked />
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -777,11 +742,6 @@
           <GUID>1500010404</GUID>
           <Name>diagonal_menu_description</Name>
         </Standard>
-        <CultureUpgrade>
-          <!-- I accidentally used this GUID for a buff previously.
-               This makes sure it's at least not shown in the UI. -->
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
   </ModOp>
@@ -851,6 +811,13 @@
   </ModOp>
 
 
-  <!-- # cleanup -->
+  <!-- # cleanup & post-fixes -->
   <ModOp Type="remove" GUID='1500010221' />
+  <ModOp Type="add" GUID="1500010400,1500010401,1500010402,1500010403,1500010404,1500010405,1500010406,1500010407,1500010408" Path="/Values">
+    <CultureUpgrade>
+      <!-- I accidentally used this GUID for a buff previously.
+           This makes sure it's at least not shown in the UI. -->
+      <HideBuff>1</HideBuff>
+    </CultureUpgrade>
+  </ModOp>
 </ModOps>

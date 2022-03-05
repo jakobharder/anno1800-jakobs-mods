@@ -21,6 +21,13 @@ You need 10 pig farms (or 5 with silos) to fully power a normal gas power plant.
 
 You find the biogas production embedded in the gas and small power plants construction menus.
 
+## Changes
+
+### 1.1
+
+- Fixed farm waste missing from warehouse category 'all'
+- Reduced pollution penalty
+
 ## Translations
 
 Available: English, German

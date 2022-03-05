@@ -17,6 +17,10 @@ Known issues:
 
 ## Changes
 
+### 1.3
+
+- (internal clean-up)
+
 ### 1.2
 
 - Fixed narrow building consumption and costs
