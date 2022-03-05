@@ -43,7 +43,7 @@ Known issues:
 
 ## Changes
 
-### Unreleased
+### 1.3
 
 - Stone pavement as street when used with "Plaza Streets"
 

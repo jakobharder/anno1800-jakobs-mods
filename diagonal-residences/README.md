@@ -17,9 +17,9 @@ Known issues:
 
 ## Changes
 
-### Unreleased
+### 1.3
 
-- (internal changes)
+- (internal clean-up)
 
 ### 1.2
 

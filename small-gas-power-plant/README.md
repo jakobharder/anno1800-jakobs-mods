@@ -10,7 +10,7 @@ You need to play with Arctic session to use the small gas power plant.
 
 ## Changes
 
-### 2.1
+### 2.2
 
 - Coal mines have increased range when built next to coal mines.
 
