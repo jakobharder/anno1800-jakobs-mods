@@ -252,24 +252,6 @@ New Town Hall
       </Values>
     </Asset>
   </ModOp>
-  <!-- insert after townhall in city+artisans menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415'))][last()]">
-    <Item>
-      <Building>1500010024</Building>
-    </Item>
-  </ModOp>
-  <!-- foreign mods: append to every menu that has the town hall, but doesn't have the new one yet -->
-  <ModOp Type="add" Path="//ConstructionCategory/BuildingList[Item/Building='100415' and not(Item[Building='1500010024'])]">
-    <Item>
-      <Building>1500010024</Building>
-    </Item>
-  </ModOp>
-  <!-- insert after elevator chain in investor menu -->
-  <ModOp Type="addNextSibling" GUID='500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602' or (not(../Item/Building='137602'))][last()]">
-    <Item>
-      <Building>1500010024</Building>
-    </Item>
-  </ModOp>
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
   <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -474,18 +456,6 @@ New Town Hall
       </Values>
     </Asset>
   </ModOp>  
-  <!-- insert after townhall in city and artisan menu -->
-  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415') and not(Building='1500010024'))][last()]">
-    <Item>
-      <Building>1500010021</Building>
-    </Item>
-  </ModOp>
-  <!-- foreign mods: append to every menu that has the town hall, but doesn't have the new one yet -->
-  <ModOp Type="addNextSibling" Path="//ConstructionCategory/BuildingList[Item/Building='100415' and not(Item[Building='1500010021'])]/Item[not(Building='1500010024')][last()]">
-    <Item>
-      <Building>1500010021</Building>
-    </Item>
-  </ModOp>
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
   <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -497,6 +467,196 @@ New Town Hall
   <ModOp Type="add" GUID='190781' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
       <GUID>1500010021</GUID>
+    </Item>
+  </ModOp>
+
+
+  
+  <!-- # Red Town Hall -->
+  <!-- =============== -->
+  <ModOp GUID='1500010021' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1500010021</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010051</GUID>
+          <Name>scholar_townhall</Name>
+          <Version>dlc06</Version>
+          <IconFilename>data\jakob\ui\icons\icon_scholar_townhall.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/scholarhall.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/scholarhall2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/townhall/scholarhall3.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Upgradable>
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410071</DLCDependency>
+          <Scope>Account</Scope>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010052</GUID>
+          <Name>unhide_red_town_hall</Name>
+          <Version>dlc06</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010051</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010053</GUID>
+          <Name>unlock_red_town_hall</Name>
+          <Version>dlc06</Version>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010051</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>  
+
+
+  <!-- # Buff Targets -->
+  <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
+  <ModOp Type="add" GUID='193879' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010021</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010024</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010051</GUID>
+    </Item>
+  </ModOp>
+  <!-- add to all town halls -->
+  <ModOp Type="add" GUID='190781' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010021</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010024</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010051</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Construction Menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010050</GUID>
+          <Name>townhall_menu</Name>
+          <IconFilename>data\jakob\ui\icons\icon_townhall_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010051</Building>
+            </Item>
+            <Item>
+              <Building>1500010021</Building>
+            </Item>
+            <Item>
+              <Building>1500010024</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>13108</CategoryDescription>
+        </ConstructionCategory>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID='500944,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415'))][last()]">
+    <Item>
+      <Building>1500010050</Building>
     </Item>
   </ModOp>
 </ModOps>

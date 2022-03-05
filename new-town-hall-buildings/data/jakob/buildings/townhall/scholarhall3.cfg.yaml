@@ -1,0 +1,99 @@
+variant: 
+  source: scholarhall.cfg
+  modifications:
+    # model changes
+    - xpath: //Config/Models/Config[Name="top"]
+      FileName: data/jakob/buildings/townhall/rdm/scholarhall3_lod0.rdm
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.x: -1.21918
+      Position.y: 2.98688
+      Position.z: 0.288689
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.x: 1.22388
+      Position.y: 2.98688
+      Position.z: 0.288689
+    # move/disable flags
+    - xpath: //Config/Files/Config[Name="file_flag1"]/Transformer/Config
+      Position.x: 0.00543
+      Position.y: 5.64999
+      Position.z: 0.313427
+    - xpath-remove: //Config/Files/Config[Name="file_flag2"]
+    # clocks
+    - xpath: //Config/Files/Config[Name="file_clockpointers1"]/Transformer/Config
+      Position.x: 0.000051
+      Position.y: 4.07917
+      Position.z: -0.228307
+    - xpath: //Config/Files/Config[Name="file_clockpointers2"]/Transformer/Config
+      Position.x: -0.002534
+      Position.y: 4.07875
+      Position.z: 0.851752
+    - xpath-add: //Config/Files
+      Config:
+        ConfigType: FILE
+        Transformer:
+          Config:
+            ConfigType: ORIENTATION_TRANSFORM
+            Conditions: 0
+            Position.x: -0.471766
+            Position.y: 4.08016
+            Position.z: 0.310083
+            Rotation.x: 0.000000
+            Rotation.y: 0.707107
+            Rotation.z: 0.000000
+            Rotation.w: 0.707107
+            Scale: 1.92
+        Name: file_clockpointers3
+        FileName: data\graphics\props\decoration\clock_pointers.cfg
+        AdaptTerrainHeight: 0
+    - xpath-add: //Config/Files
+      Config:
+        ConfigType: FILE
+        Transformer:
+          Config:
+            ConfigType: ORIENTATION_TRANSFORM
+            Conditions: 0
+            Position.x: 0.474491
+            Position.y: 4.0809
+            Position.z: 0.31235
+            Rotation.x: 0.000000
+            Rotation.y: 0.707107
+            Rotation.z: 0.000000
+            Rotation.w: -0.707107
+            Scale: 1.92
+        Name: file_clockpointers4
+        FileName: data\graphics\props\decoration\clock_pointers.cfg
+        AdaptTerrainHeight: 0
+  ifo:
+    - xpath-add: //Info
+      IntersectBox:
+        Name: hitbox2
+        Position:
+          xf: -0.001325
+          yf: 1.256229
+          zf: 0.300595
+        Rotation:
+          xf: 0.000000
+          yf: 0.000000
+          zf: 0.000000
+          wf: 1.000000
+        Extents:
+          xf: 1.695670
+          yf: 1.263839
+          zf: 0.648970
+    - xpath-add: //Info
+      IntersectBox:
+        Name: hitbox3
+        Position:
+          xf: -0.006022
+          yf: 3.608587
+          zf: 0.331126
+        Rotation:
+          xf: 0.000000
+          yf: 0.000000
+          zf: 0.000000
+          wf: 1.000000
+        Extents:
+          xf: 0.394856
+          yf: 1.166921
+          zf: 0.439412
