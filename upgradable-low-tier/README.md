@@ -18,13 +18,16 @@ Level 2:
 
 You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
 
-Btw, City Lights Pack ornaments get a second variation with a fitting ground texture.
-
 ## Farmers & Artisans
 
 You need more dense farmer buildings? Have a look at "[Addon] Pescatarians". Their Artisans provide +10 farmer workforce per house.
 
 I may do upgradable Artisans in the future.
+
+## Stone Pavement
+
+- Variations of City Lights Pack ornaments with a fitting ground texture are included.
+- Counts as street when used together with [Spice it Up](https://www.nexusmods.com/anno1800/mods/5) "[Ornamental] Plaza Streets"
 
 ## Notes
 
@@ -39,6 +42,10 @@ Known issues:
 - The game wrongfully shows missing cheese for normal worker residences when all needs are fulfilled but people have not moved in yet. It's just an icon, nothing is missing.
 
 ## Changes
+
+### Unreleased
+
+- Stone pavement as street when used with "Plaza Streets"
 
 ### 1.2
 
