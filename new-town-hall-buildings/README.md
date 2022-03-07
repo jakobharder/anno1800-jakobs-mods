@@ -24,10 +24,15 @@ You can upgrade from the new town hall to the city hall tower by pressing "U" or
 - Unlock: 500 artisans
 - Menu: after original town hall in artisan and city menu.
 
+The New Town Hall has paintbrush roof colors.
+The Red Town Hall has Shift+V building variations.
+
 ### City Hall Tower
 
 - Unlock: 3000 investors
 - Menu: after original town hall in artisan and city menu. Also after elevators in investor menu.
+
+The City Hall Tower has Shift+V building variations.
 
 The tower has 3 item slots, but if you like to use 4 instead you can change the mod as follows:
 - Open `[Misc] New Town Hall, as Buildings/data/config/export/main/asset/assets.xml`
@@ -35,9 +40,10 @@ The tower has 3 item slots, but if you like to use 4 instead you can change the 
 
 ## Changes
 
-### Unreleased
+### 1.3
 
 - Added Red Town Hall
+- Changed New Town Hall variations into paintbrush skins
 
 ### 1.2
 

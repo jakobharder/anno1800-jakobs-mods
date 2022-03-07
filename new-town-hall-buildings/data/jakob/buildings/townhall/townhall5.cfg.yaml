@@ -1,0 +1,8 @@
+variant: 
+  source: townhall.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cModelDiffTex: data\dlc09\graphics\buildings\public\mall\maps\mall_diff_04.psd
+      cDiffuseColor.r: 1.0
+      cDiffuseColor.g: 1.0
+      cDiffuseColor.b: 1.0

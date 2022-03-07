@@ -281,7 +281,12 @@ New Town Hall
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <AllowChangeVariation>1</AllowChangeVariation>
+          <!-- 
+            Disable variations, set 0 to default and keep the variations in the list.
+            That way old variations don't break and only paintbrush is supported from now on.
+          -->
+          <AllowChangeVariation>0</AllowChangeVariation>
+          <BuildModeStartVariation>0</BuildModeStartVariation>
         </Building>
         <Blocking />
         <Cost>
@@ -320,6 +325,22 @@ New Town Hall
               <Filename>data/jakob/buildings/townhall/townhall2.cfg</Filename>
             </Item>
           </Variations>
+          <Skins>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010054</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010055</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010056</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010057</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
         </Object>
         <Upgradable>
           <NextGUID>1500010024</NextGUID>
@@ -455,6 +476,106 @@ New Town Hall
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010054</GUID>
+          <Name>townhall_darkred</Name>
+          <ID>townhall_darkred</ID>
+        </Standard>
+        <Skin>
+          <SkinName>0</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/townhall6.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010055</GUID>
+          <Name>townhall_dark</Name>
+          <ID>townhall_dark</ID>
+        </Standard>
+        <Skin>
+          <SkinName>0</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/townhall5.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010056</GUID>
+          <Name>townhall_blue</Name>
+          <ID>townhall_blue</ID>
+        </Standard>
+        <Skin>
+          <SkinName>0</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/townhall1.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010057</GUID>
+          <Name>townhall_bluish</Name>
+          <ID>townhall_bluish</ID>
+        </Standard>
+        <Skin>
+          <SkinName>0</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/townhall2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
   </ModOp>  
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
@@ -484,6 +605,10 @@ New Town Hall
           <Version>dlc06</Version>
           <IconFilename>data\jakob\ui\icons\icon_scholar_townhall.png</IconFilename>
         </Standard>
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <BuildModeStartVariation>-1</BuildModeStartVariation>
+        </Building>
         <Object>
           <Variations>
             <Item>
@@ -496,6 +621,11 @@ New Town Hall
               <Filename>data/jakob/buildings/townhall/scholarhall3.cfg</Filename>
             </Item>
           </Variations>
+          <Skins>
+            <SkinList>
+              <Item />
+            </SkinList>
+          </Skins>
         </Object>
         <Upgradable>
           <NextGUID>0</NextGUID>
