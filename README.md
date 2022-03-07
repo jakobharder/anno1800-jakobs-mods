@@ -21,6 +21,11 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 - Optional: Basic needs to advance to level 2 from "[Shared] Extra Goods Collection" (already part of download) or "Docklands" DLC.
 - Optional: "Lands of Lions" DLC or "Docklands" DLC to achieve 40 workers (and max out level 2).
 
+[\[Shared\] Extra Goods Collection](./extra-goods-collection/README.md)
+
+- Production chains: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
+- Cafe recipe: hot chocolate
+
 ![](./pescatarians/banner.png)
 
 [\[Addon\] Pescatarians](./pescatarians/README.md) (increased farmer workforce)
@@ -63,18 +68,11 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 - Buildings: small hotel with 4 variations and skins.
 - Skins: vanilla hotel
 
-[\[Shared\] Extra Goods Collection](./extra-goods-collection/README.md)
-
-- Production chains: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
-- Cafe recipe: hot chocolate
-
-## Standalone Mods
-
 ![](./new-town-hall-buildings/banner.png)
 
-[\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/README.md) - New town hall and city hall tower buildings.
+[\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/README.md)
 
-[\[Misc\] New Town Hall, as Variations](./new-town-hall-variations/README.md) - New town hall as shift+v variations.
+- Buildings: townhall variations - red brick town hall with 3 variations, new town hall with roof skins, city hall tower.
 
 ## Translations
 
