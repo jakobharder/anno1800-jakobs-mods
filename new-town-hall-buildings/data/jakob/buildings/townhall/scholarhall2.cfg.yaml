@@ -1,0 +1,16 @@
+variant: 
+  source: scholarhall.cfg
+  modifications:
+    # model changes
+    - xpath: //Config/Models/Config[Name="top"]
+      FileName: data/jakob/buildings/townhall/rdm/scholarhall2_lod0.rdm
+    # move smoke
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.x: -1.21918
+      Position.y: 2.98688
+      Position.z: 0.288689
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.x: 1.22388
+      Position.y: 2.98688
+      Position.z: 0.288689
+
