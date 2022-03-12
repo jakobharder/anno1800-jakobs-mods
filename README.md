@@ -72,7 +72,9 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 [\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/README.md)
 
-- Buildings: townhall variations - red brick town hall with 3 variations, new town hall with roof skins, city hall tower.
+- Building: Red Town Hall with 3 Shift+V variations (needs "Lands of Lions" DLC)
+- Building: New Town Hall with roof skins (needs "High Life" DLC)
+- Building: City Hall Tower with 2 Shift+V variations (needs "High Life" DLC)
 
 [\[Misc\] Docklands Gate](./docklands/README.md)
 
