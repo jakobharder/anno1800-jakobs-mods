@@ -2045,13 +2045,14 @@ Pescatarian
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
+            <Template>ConditionPlayerCounter</Template>
             <Values>
               <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1500010143</UnlockNeeded>
-              </ConditionUnlocked>
-              <ConditionPropsNegatable />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context> <!-- artisans -->
+                <CounterAmount>1500</CounterAmount>
+              </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -2409,6 +2410,50 @@ Pescatarian
                         <Asset>1500010186</Asset> <!-- construction menu -->
                       </Item>
                     </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- bugfix: unhide buildings -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010802</GUID>
+          <Name>unhide_residence_community_center</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010142</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010100</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010800</Asset>
+                      </Item>
+                    </UnhideAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>
