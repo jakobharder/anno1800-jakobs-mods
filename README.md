@@ -74,6 +74,10 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 - Buildings: townhall variations - red brick town hall with 3 variations, new town hall with roof skins, city hall tower.
 
+[\[Misc\] Docklands Gate](./docklands/README.md)
+
+- Docklands module: A gate that connects modules across streets to keep atractiveness bonus.
+
 ## Translations
 
 Available: English, German, Russian.

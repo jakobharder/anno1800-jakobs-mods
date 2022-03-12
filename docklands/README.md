@@ -4,6 +4,10 @@
 
 The docklands gate connects modules across streets to keep atractiveness bonus.
 
+The building is available in the docklands module construction.
+
+Note: the menu has no scroll option. It may not show if you already have too many modules.
+
 ## Translations
 
 Available: English, German
