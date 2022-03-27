@@ -27,6 +27,11 @@ Suits and canned fish factories reduce consumption when close to residences.
 
 ## Changes
 
+### 1.5
+
+- Fixed issue with unlock conditions not shown at game start
+- Added music school as public service to upgradable workers
+
 ### 1.4
 
 - Added Enbesa musician's court items to music school

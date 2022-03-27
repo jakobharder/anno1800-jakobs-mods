@@ -8,6 +8,12 @@ The building is available in the docklands module construction.
 
 Note: the menu has no scroll option. It may not show if you already have too many modules.
 
+## Changes
+
+### 1.1
+
+- Fixed lights
+
 ## Translations
 
 Available: English, German

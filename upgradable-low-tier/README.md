@@ -43,6 +43,10 @@ Known issues:
 
 ## Changes
 
+### 1.4
+
+- Added music school from Pescatarians as luxury public service
+
 ### 1.3
 
 - Stone pavement as street when used with "Plaza Streets"
