@@ -1,6 +1,9 @@
 <!-- 
 
 1500010401+
+1500010411 unlock diagonal
+1500010415 narrow building
+1500010422 unlock narrow
 
 -->
 
@@ -156,10 +159,8 @@
           <Name>diagonal</Name>
           <IconFilename>data/jakob/ui/icons/icon_3x1.png</IconFilename>
         </Standard>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-        <Blocking/>
+        <Locked />
+        <Blocking />
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -761,7 +762,7 @@
   <!-- # Unlock -->
   <ModOp GUID='100780' Type="addNextSibling">
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010411</GUID>
@@ -798,6 +799,107 @@
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010422</GUID>
+          <Name>unlock_narrow</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010415</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <!--
+      There are savegames where narrow is unlocked too early.
+      Lock it when there are no engineers and re-register unlock.
+      Will happen only once.
+    -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010423</GUID>
+          <Name>relock_narrow</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <ComparisonOp>Equals</ComparisonOp>
+                <CounterAmount>0</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionLockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionLockAsset>
+                    <LockAssets>
+                      <Item>
+                        <Asset>1500010415</Asset>
+                      </Item>
+                    </LockAssets>
+                  </ActionLockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010422</TriggerAsset>
+                  </ActionRegisterTrigger>
                 </Values>
               </TriggerAction>
             </Item>
