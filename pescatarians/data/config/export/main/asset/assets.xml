@@ -2090,6 +2090,30 @@ Pescatarian
       <GUID>1500010800</GUID>
     </Item>
   </ModOp>
+  <ModOp GUID='15000001' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+    <!-- low -->
+    <Item>
+      <Product>1500010801</Product>
+      <HappinessValue>2</HappinessValue>
+      <MoneyValue>20</MoneyValue>
+      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010200</RequiredToBeBuilding>
+      <NoWeightPopulationCount>1200</NoWeightPopulationCount>
+      <OptionalInputPopulationUnlock>749</OptionalInputPopulationUnlock>
+    </Item>
+    <!-- high -->
+    <Item>
+      <Product>1500010801</Product>
+      <HappinessValue>2</HappinessValue>
+      <MoneyValue>20</MoneyValue>
+      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
+      <NoWeightPopulationCount>1200</NoWeightPopulationCount>
+      <OptionalInputPopulationUnlock>749</OptionalInputPopulationUnlock>
+    </Item>
+  </ModOp>
 
   <!-- # construction menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
