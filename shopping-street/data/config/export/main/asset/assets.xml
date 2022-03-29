@@ -78,6 +78,7 @@ Minimall
         <Standard>
           <GUID>1500010851</GUID>
           <Name>department_toaster</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_toaster.png</IconFilename>
         </Standard>
         <LogisticNode>
           <TransporterCountMax>1</TransporterCountMax>
@@ -152,6 +153,7 @@ Minimall
         <Standard>
           <GUID>1500010852</GUID>
           <Name>department_vacuumcleaner</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_vacuumcleaner.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -199,6 +201,7 @@ Minimall
         <Standard>
           <GUID>1500010853</GUID>
           <Name>department_tableware</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_dishes.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -246,6 +249,7 @@ Minimall
         <Standard>
           <GUID>1500010854</GUID>
           <Name>department_fridge</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_refrigerator.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -295,6 +299,7 @@ Minimall
         <Standard>
           <GUID>1500010855</GUID>
           <Name>department_bags</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_suitcase.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -716,6 +721,7 @@ Minimall
         <Standard>
           <GUID>1500010857</GUID>
           <Name>furniture_lamp</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_bankerlamp.png</IconFilename>
         </Standard>
         <LogisticNode>
           <TransporterCountMax>1</TransporterCountMax>
@@ -792,6 +798,7 @@ Minimall
         <Standard>
           <GUID>1500010858</GUID>
           <Name>furniture_screen</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_paravent.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -839,6 +846,7 @@ Minimall
         <Standard>
           <GUID>1500010859</GUID>
           <Name>furniture_desk</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_secretary.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -886,6 +894,7 @@ Minimall
         <Standard>
           <GUID>1500010860</GUID>
           <Name>furniture_bed</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_canopy.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -933,6 +942,7 @@ Minimall
         <Standard>
           <GUID>1500010861</GUID>
           <Name>furniture_chair</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_chesterfield.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -1343,6 +1353,7 @@ Minimall
         <Standard>
           <GUID>1500010863</GUID>
           <Name>drug_toothpaste</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_toothpaste.png</IconFilename>
         </Standard>
         <LogisticNode>
           <TransporterCountMax>1</TransporterCountMax>
@@ -1418,6 +1429,7 @@ Minimall
         <Standard>
           <GUID>1500010864</GUID>
           <Name>drug_cleaner</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_detergent.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -1465,6 +1477,7 @@ Minimall
         <Standard>
           <GUID>1500010865</GUID>
           <Name>drug_lipstick</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_lipstick.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -1512,6 +1525,7 @@ Minimall
         <Standard>
           <GUID>1500010866</GUID>
           <Name>drug_facecream</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_facecreme.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -1559,6 +1573,7 @@ Minimall
         <Standard>
           <GUID>1500010867</GUID>
           <Name>drug_pomade</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_highlife/icon_pomade.png</IconFilename>
         </Standard>
         <FactoryBase>
           <FactoryInputs>
@@ -2610,6 +2625,12 @@ Minimall
         <Attackable>
           <HasRuinState>1</HasRuinState>
         </Attackable>
+        <Electrifiable>
+          <ElectricityBoost>0</ElectricityBoost>
+        </Electrifiable>
+        <Industrializable>
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
       </Values>
     </Asset>
   </ModOp>
