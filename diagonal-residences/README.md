@@ -17,6 +17,10 @@ Known issues:
 
 ## Changes
 
+### 1.4
+
+- Fixed narrow building unlock
+
 ### 1.3
 
 - (internal clean-up)

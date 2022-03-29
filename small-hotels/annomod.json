@@ -17,7 +17,7 @@
     {
       "action": "texture",
       "pattern": "data/**/icons/*.png",
-      "lods": 3
+      "lods": 1
     },
     {
       "action": "texture",
@@ -27,7 +27,7 @@
     },
     {
       "action": "gltf",
-      "pattern": "data/**/hotel*.gltf",
+      "pattern": "data/**/{hotel,restaurant}*.gltf",
       "lods": 5,
       "changePath": "rdm/",
       "animPath": "anim/"
@@ -45,7 +45,7 @@
     "Version": "1.1",
     "ModID": "jakob_small_hotels",
     "IncompatibleIds": [],
-    "ModDependencies": null,
+    "ModDependencies": [],
     "Category": {
       "English": "Gameplay"
     },
@@ -58,7 +58,11 @@
       "German": "README.md"
     },
     "KnownIssues": null,
-    "DLCDependencies": [],
+    "DLCDependencies": [
+      {
+      "DLC": "Tourism",
+      "Dependant": "required"
+    }],
     "CreatorName": "Jakob",
     "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null

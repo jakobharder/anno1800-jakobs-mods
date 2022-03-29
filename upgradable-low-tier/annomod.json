@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.3",
+    "Version": "1.4",
     "ModID": "jakob_upgradable_low_tier",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods" ],
@@ -69,7 +69,11 @@
     "DLCDependencies": [
       {
         "DLC": "LandOfLions",
-        "Dependant": "partially"
+        "Dependant": "atLeastOneRequired"
+      },
+      {
+        "DLC": "Docklands",
+        "Dependant": "atLeastOneRequired"
       }
     ],
     "CreatorName": "Jakob",

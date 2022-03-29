@@ -4,6 +4,8 @@ Tourist District
 1500010500 small hotel
 1500010501 pop decrease buff
 1500010502+ skins
+1500010516 unlock small hotels
+1500010517
 
 -->
 
@@ -16,7 +18,7 @@ Tourist District
         <Standard>
           <GUID>1500010500</GUID>
           <Name>small_hotel</Name>
-          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotelb.png</IconFilename>
           <Version>dlc08</Version>
         </Standard>
         <Building>
@@ -96,7 +98,7 @@ Tourist District
         <Standard>
           <GUID>1500010501</GUID>
           <Name>hotel_pop_250</Name>
-          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotelb.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -166,7 +168,7 @@ Tourist District
         <Standard>
           <GUID>1500010511</GUID>
           <Name>hotel_pop_200</Name>
-          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotelb.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -341,7 +343,7 @@ Tourist District
         <Standard>
           <GUID>1500010516</GUID>
           <Name>unlock everything</Name>
-          <IconFilename>data\jakob\ui\icons\icon_small_hotel.png</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotelb.png</IconFilename>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -601,7 +603,7 @@ Tourist District
   </ModOp>
 
   <!-- # Construction menu -->
-  <!-- Old World Menu Engineers, insert after oil power plant -->
+  <!-- OW city, tourists, insert after hotel -->
   <ModOp Type="addNextSibling" GUID='132779,500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
     <Item>
       <Building>1500010500</Building>

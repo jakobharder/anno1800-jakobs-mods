@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.4",
+    "Version": "1.5",
     "ModID": "jakob_pescatarians",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods" ],
@@ -69,7 +69,11 @@
     "DLCDependencies": [
       {
         "DLC": "LandOfLions",
-        "Dependant": "required"
+        "Dependant": "atLeastOneRequired"
+      },
+      {
+        "DLC": "Docklands",
+        "Dependant": "atLeastOneRequired"
       }
     ],
     "CreatorName": "Jakob",

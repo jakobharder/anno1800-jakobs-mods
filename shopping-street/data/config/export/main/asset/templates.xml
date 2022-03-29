@@ -1,0 +1,383 @@
+<ModOps>
+  <ModOp Type="addNextSibling" Path="//Template[Name='Mall']">
+    <Template>
+      <Name>JakobsMall</Name>
+      <Properties>
+        <Standard />
+        <Building>
+          <BuildingCategoryName>136515</BuildingCategoryName>
+          <PickingAsset>1500010850</PickingAsset>
+          <InfluencedByNeighbors>
+            <!-- vanilla buildings -->
+            <Item>
+              <Building>1010345</Building>
+            </Item>
+            <Item>
+              <Building>1010346</Building>
+            </Item>
+            <Item>
+              <Building>1010347</Building>
+            </Item>
+            <Item>
+              <Building>1010344</Building>
+            </Item>
+            <Item>
+              <Building>1010343</Building>
+            </Item>
+            <Item>
+              <Building>601888</Building>
+            </Item>
+            <Item>
+              <Building>601889</Building>
+            </Item>
+            <Item>
+              <Building>601890</Building>
+            </Item>
+            <Item>
+              <Building>601882</Building>
+            </Item>
+            <Item>
+              <Building>601883</Building>
+            </Item>
+            <Item>
+              <Building>601884</Building>
+            </Item>
+            <Item>
+              <Building>601886</Building>
+            </Item>
+            <Item>
+              <Building>601891</Building>
+            </Item>
+            <!-- workers, diagonal, ... -->
+            <Item>
+              <Building>1500010142</Building> <!-- pescatarian farmer -->
+            </Item>
+            <Item>
+              <Building>1500010143</Building> <!-- pescatarian worker -->
+            </Item>
+            <Item>
+              <Building>1500010144</Building> <!-- pescatarian artisan -->
+            </Item>
+            <Item>
+              <Building>1500010145</Building> <!-- pescatarian engineer -->
+            </Item>
+            <Item>
+              <Building>1500010200</Building> <!-- worker scraper 1 -->
+            </Item>
+            <Item>
+              <Building>1500010201</Building> <!-- worker scraper 2 -->
+            </Item>
+            <Item>
+              <Building>1500010401</Building> <!-- diagonals -->
+            </Item>
+            <Item>
+              <Building>1500010415</Building> <!-- narrow -->
+            </Item>
+            <!-- minimalls -->
+            <Item>
+              <Building>1500010850</Building> <!-- departmant store -->
+            </Item>
+            <Item>
+              <Building>1500010851</Building> <!-- departmant store -->
+            </Item>
+            <Item>
+              <Building>1500010852</Building> <!-- departmant store -->
+            </Item>
+            <Item>
+              <Building>1500010853</Building> <!-- departmant store -->
+            </Item>
+            <Item>
+              <Building>1500010854</Building> <!-- departmant store -->
+            </Item>
+            <Item>
+              <Building>1500010855</Building> <!-- department store -->
+            </Item>
+            <Item>
+              <Building>1500010856</Building> <!-- furniture store -->
+            </Item>
+            <Item>
+              <Building>1500010857</Building> <!-- furniture store -->
+            </Item>
+            <Item>
+              <Building>1500010858</Building> <!-- furniture store -->
+            </Item>
+            <Item>
+              <Building>1500010859</Building> <!-- furniture store -->
+            </Item>
+            <Item>
+              <Building>1500010860</Building> <!-- furniture store -->
+            </Item>
+            <Item>
+              <Building>1500010861</Building> <!-- furniture store -->
+            </Item>
+            <Item>
+              <Building>1500010862</Building> <!-- drug store -->
+            </Item>
+            <Item>
+              <Building>1500010863</Building> <!-- drug store -->
+            </Item>
+            <Item>
+              <Building>1500010864</Building> <!-- drug store -->
+            </Item>
+            <Item>
+              <Building>1500010865</Building> <!-- drug store -->
+            </Item>
+            <Item>
+              <Building>1500010866</Building> <!-- drug store -->
+            </Item>
+            <Item>
+              <Building>1500010867</Building> <!-- drug store -->
+            </Item>
+            <Item>
+              <Building>1500010888</Building> <!-- booster building -->
+            </Item>
+            <!-- restaurants -->
+            <Item>
+              <Building>1500010517</Building>
+            </Item>
+            <Item>
+              <Building>1500010518</Building>
+            </Item>
+            <Item>
+              <Building>1500010519</Building>
+            </Item>
+            <Item>
+              <Building>1500010520</Building>
+            </Item>
+            <Item>
+              <Building>1500010521</Building>
+            </Item>
+            <Item>
+              <Building>1500010522</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <BuildingBlockPool>
+            <DontCare />
+            <Single>
+              <Pool>
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+              </Pool>
+            </Single>
+            <Mid>
+              <Pool>
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+              </Pool>
+            </Mid>
+            <Corner>
+              <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item>
+              </Pool>
+            </Corner>
+          </BuildingBlockPool>
+          <InfluencedVariationDirection>
+            <Item />
+            <Item>
+              <!-- end, south-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, south -->
+              <Direction>2</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- end, north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- mid, south-west to north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, east -->
+              <Direction>3</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, north-west -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, west -->
+              <Direction>1</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- mid, north-west to south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-west  -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, north -->
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- crossing -->
+            </Item>
+          </InfluencedVariationDirection>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <AllowChangeDirection>1</AllowChangeDirection>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+        </Building>
+        <Blocking />
+        <Object />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>5000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Mesh />
+        <Selection>
+          <GUIType>Production</GUIType>
+          <StaticHelpEntryPoint>HighLifeShoppingArcades</StaticHelpEntryPoint>
+          <ParticipantMessageTrigger>ClickRecipeBuffFactory</ParticipantMessageTrigger>
+          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Text />
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203995</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <FactoryBase />
+        <LogisticNode>
+          <ResetOnGUIDChange>1</ResetOnGUIDChange>
+        </LogisticNode>
+        <Maintenance>
+          <ConsumerPriority>1</ConsumerPriority>
+          <IncomeCategory>Malls</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>100</Amount>
+              <InactiveAmount>50</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Industrializable />
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+            <Illness>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Illness>
+          </Infectable>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Electrifiable />
+        <AmbientMoodProvider />
+        <Attackable>
+          <MaximumHitPoints>2000</MaximumHitPoints>
+          <HasRuinState>1</HasRuinState>
+        </Attackable>
+        <UpgradeList />
+        <Pausable>
+          <CanPauseManually>1</CanPauseManually>
+        </Pausable>
+        <FeedbackController />
+        <Infolayer />
+        <BuffFactory />
+        <RecipeBuilding />
+        <Culture />
+      </Properties>
+    </Template>
+  </ModOp>
+</ModOps>
