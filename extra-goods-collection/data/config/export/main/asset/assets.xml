@@ -485,16 +485,6 @@ Jakob's Extra Goods
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Brewery</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>3722</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter>
@@ -780,16 +770,6 @@ Jakob's Extra Goods
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Accessory Workshop</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>3720</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter>
@@ -1465,7 +1445,7 @@ Jakob's Extra Goods
             </Item>
           </FactoryOutputs>
           <CycleTime>60</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
         <ModuleOwner>
@@ -1614,16 +1594,6 @@ Jakob's Extra Goods
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
         </Building>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Suits</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5339</LineID>
-        </Text>
         <Cost>
           <Costs>
             <Item>
@@ -1656,14 +1626,6 @@ Jakob's Extra Goods
             </Item>
           </Variations>
         </Object>
-        <!-- <BuffFactory>
-          <ProductionBuffs>
-            <Item>
-              <ProductivityBuff>0</ProductivityBuff>
-            </Item>
-          </ProductionBuffs>
-          <ProductionBuffDistance>0</ProductionBuffDistance>
-        </BuffFactory> -->
         <FactoryBase>
           <FactoryInputs>
             <Item>
@@ -1679,7 +1641,7 @@ Jakob's Extra Goods
               <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <IsMainFactory>1</IsMainFactory>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <Maintenance>
           <Maintenances>
@@ -2201,17 +2163,6 @@ Jakob's Extra Goods
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
-        <!-- <BuffFactory>
-          <ProductionBuffs>
-            <Item>
-              <ProductivityBuff>1500010113</ProductivityBuff>
-              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
-              <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
-            </Item>
-          </ProductionBuffs>
-          <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>15</ProductionBuffDistance>
-        </BuffFactory> -->
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -2597,6 +2548,7 @@ Jakob's Extra Goods
             </Item>
           </FactoryOutputs>
           <CycleTime>60</CycleTime>
+          <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
         <ModuleOwner>
@@ -2764,16 +2716,6 @@ Jakob's Extra Goods
             </Item>
           </Variations>
         </Object>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Olive Soap Factory</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>5252</LineID>
-        </Text>
         <Locked />
         <UpgradeList />
         <FactoryBase>
@@ -2816,16 +2758,6 @@ Jakob's Extra Goods
           </Tier1>
         </ProductionChain>
         <Locked />
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Olive Soap</Text>
-              <Status>Exported</Status>
-              <ExportCount>2</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>14889</LineID>
-        </Text>
       </Values>
     </Asset>
     <Asset>
@@ -3011,16 +2943,6 @@ Jakob's Extra Goods
             </Item>
           </Variations>
         </Object>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Cattle Farm Milk</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>3717</LineID>
-        </Text>
         <Locked />
         <UpgradeList />
         <FactoryBase>
@@ -3032,7 +2954,7 @@ Jakob's Extra Goods
             </Item>
           </FactoryOutputs>
           <CycleTime>30</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
       </Values>
     </Asset>
@@ -3116,17 +3038,6 @@ Jakob's Extra Goods
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
-        <!-- <BuffFactory>
-          <ProductionBuffs>
-            <Item>
-              <ProductivityBuff>1500010112</ProductivityBuff>
-              <ProductivityThresholdUp>0.7</ProductivityThresholdUp>
-              <ProductivityThresholdDown>0.31</ProductivityThresholdDown>
-            </Item>
-          </ProductionBuffs>
-          <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>15</ProductionBuffDistance>
-        </BuffFactory> -->
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -3414,6 +3325,7 @@ Jakob's Extra Goods
           <CycleTime>60</CycleTime>
           <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
           <ClampedMaxTransporterLogisticCost>60</ClampedMaxTransporterLogisticCost>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <BuffFactory>
           <ProductionBuffs>
