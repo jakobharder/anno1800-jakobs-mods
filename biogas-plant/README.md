@@ -23,6 +23,10 @@ You find the biogas production embedded in the gas and small power plants constr
 
 ## Changes
 
+### 1.2
+
+- GU14 support
+
 ### 1.1
 
 - Fixed farm waste missing from warehouse category 'all'

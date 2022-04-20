@@ -11,6 +11,12 @@ Buildings:
 - Drug Store
 - Store Warehouse as an alternative warehouse
 
+## Changes
+
+### 1.1
+
+- Increased warehouse range
+
 ## Translations
 
 Available: English, German

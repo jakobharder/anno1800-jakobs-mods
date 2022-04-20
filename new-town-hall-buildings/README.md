@@ -40,6 +40,10 @@ The tower has 3 item slots, but if you like to use 4 instead you can change the 
 
 ## Changes
 
+### 1.5
+
+- GU14 support
+
 ### 1.4
 
 - Fixed some visual issues

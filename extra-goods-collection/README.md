@@ -27,6 +27,10 @@ The rest has no DLC dependencies.
 
 ## Changes
 
+## 1.6
+
+- GU14 support
+
 ## 1.5
 
 - Fixed warehouse/docklands issues
