@@ -2,26 +2,31 @@
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
 
-The biogas plant converts waste from pig and cattle farms into gas for use in power plants.
+The biogas plant converts dung from animal farms into gas for use in power plants.
 
-Needs "The Passage" DLC activated.
+Needs "The Passage" DLC activated. "Seeds of Change" DLC is not required.
 
 ## Notes
 
 The mod comes with two buildings.
 
-The farm waste depot provides a buff to nearby pig and cattle farms to produce extra farm waste.
+The dung depot provides a buff to nearby animal farms in the OW and NW to produce extra dung.
 
-The biogas plant processes farm waste into gas.
+The biogas plant processes dung into gas.
 
-Biogas: 1,33/min using 4x waste
-Waste per farm: 0,16/min or 0,33/min with silo
+Biogas: 1,33/min using 3 dung per cycle
+Dung per any farm (OW): 0,5/min or 1/min with silo
+Dung production NW is same as with the Fertilizer building and will not stack.
 
-You need 10 pig farms (or 5 with silos) to fully power a normal gas power plant.
-
-You find the biogas production embedded in the gas and small power plants construction menus.
+You find the biogas production in materials and embedded in the gas and small power plants construction menus.
 
 ## Changes
+
+### 1.3
+
+- Switched from farm waste to dung with some rebalancing
+  (please rebuild to update ranges)
+- Added NW variants and OW sheep farm
 
 ### 1.2
 
