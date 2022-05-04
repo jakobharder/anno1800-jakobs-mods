@@ -10,6 +10,14 @@ You need to play with Arctic session to use the small gas power plant.
 
 ## Changes
 
+### 2.4
+
+- Fixed GU14 maintenance buff
+
+### 2.3
+
+- Fixed coal power plant pollution category
+
 ### 2.2
 
 - Coal mines have increased range when built next to coal mines.

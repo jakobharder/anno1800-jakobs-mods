@@ -27,6 +27,15 @@ Suits and canned fish factories reduce consumption when close to residences.
 
 ## Changes
 
+### 1.7
+
+- Fixed GU14 maintenance buff
+
+### 1.6
+
+- GU14 support
+- Korean translation
+
 ### 1.5
 
 - Fixed issue with unlock conditions not shown at game start

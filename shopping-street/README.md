@@ -11,6 +11,16 @@ Buildings:
 - Drug Store
 - Store Warehouse as an alternative warehouse
 
+## Changes
+
+### 1.2
+
+- Fixed GU14 maintenance buff
+
+### 1.1
+
+- Increased warehouse range
+
 ## Translations
 
 Available: English, German

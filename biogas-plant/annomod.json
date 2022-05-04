@@ -23,12 +23,16 @@
       "pattern": "**/*.{glb,gltf}"
     },
     {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
       "action": "modinfo",
       "content_en": true
     }
   ],
   "modinfo": {
-    "Version": "1.1",
+    "Version": "1.3",
     "ModID": "jakob_Biogas_Plant",
     "IncompatibleIds": [],
     "ModDependencies": null,
