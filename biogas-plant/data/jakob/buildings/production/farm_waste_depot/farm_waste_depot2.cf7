@@ -143,6 +143,8 @@
       <FeedbackLoops>
         <k>0</k>
         <v>0</v>
+        <k>1</k>
+        <v>0</v>
       </FeedbackLoops>
       <SequenceDefinitions>
         <i>
@@ -152,7 +154,7 @@
             <DefaultState>
               <DummyName></DummyName>
               <DummyId>0</DummyId>
-              <SequenceID>1000</SequenceID>
+              <SequenceID>-1</SequenceID>
               <ForceSequenceRestart>0</ForceSequenceRestart>
               <Visible>1</Visible>
               <FadeVisibility>1</FadeVisibility>
@@ -175,11 +177,11 @@
             <DefaultState>
               <DummyName></DummyName>
               <DummyId>0</DummyId>
-              <SequenceID>1000</SequenceID>
+              <SequenceID>-1</SequenceID>
               <ForceSequenceRestart>0</ForceSequenceRestart>
               <Visible>1</Visible>
-              <FadeVisibility>0</FadeVisibility>
-              <ResetToDefaultEveryLoop>0</ResetToDefaultEveryLoop>
+              <FadeVisibility>1</FadeVisibility>
+              <ResetToDefaultEveryLoop>1</ResetToDefaultEveryLoop>
               <StartDummyGroup>shovelers</StartDummyGroup>
             </DefaultState>
             <ElementContainer>
@@ -196,40 +198,6 @@
               </Elements>
             </ElementContainer>
           </Loop1>
-          <Loop2>
-            <hasValue>1</hasValue>
-            <DefaultState>
-              <DummyName></DummyName>
-              <DummyId>0</DummyId>
-              <SequenceID>1000</SequenceID>
-              <ForceSequenceRestart>0</ForceSequenceRestart>
-              <Visible>1</Visible>
-              <FadeVisibility>1</FadeVisibility>
-              <ResetToDefaultEveryLoop>0</ResetToDefaultEveryLoop>
-              <StartDummyGroup>shovelers</StartDummyGroup>
-            </DefaultState>
-            <ElementContainer>
-              <Elements>
-                <i>
-                  <hasValue>1</hasValue>
-                  <elementType>1</elementType>
-                  <m_IdleSequenceID>1000</m_IdleSequenceID>
-                  <MinPlayCount>1</MinPlayCount>
-                  <MinPlayTime>0</MinPlayTime>
-                  <MaxPlayCount>0</MaxPlayCount>
-                  <MaxPlayTime>0</MaxPlayTime>
-                  <ResetStartTime>0</ResetStartTime>
-                </i>
-                <i>
-                  <hasValue>1</hasValue>
-                  <elementType>6</elementType>
-                  <ShowObject>0</ShowObject>
-                  <FadingMode>2</FadingMode>
-                  <TimeOffset>30</TimeOffset>
-                </i>
-              </Elements>
-            </ElementContainer>
-          </Loop2>
         </i>
       </SequenceDefinitions>
       <IgnoreRootObjectXZRotation>1</IgnoreRootObjectXZRotation>
