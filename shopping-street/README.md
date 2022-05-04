@@ -13,6 +13,10 @@ Buildings:
 
 ## Changes
 
+### 1.2
+
+- Fixed GU14 maintenance buff
+
 ### 1.1
 
 - Increased warehouse range

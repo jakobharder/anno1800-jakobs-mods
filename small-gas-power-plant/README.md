@@ -10,7 +10,11 @@ You need to play with Arctic session to use the small gas power plant.
 
 ## Changes
 
-## 2.3
+### 2.4
+
+- Fixed GU14 maintenance buff
+
+### 2.3
 
 - Fixed coal power plant pollution category
 
