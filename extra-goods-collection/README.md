@@ -27,6 +27,10 @@ The rest has no DLC dependencies.
 
 ## Changes
 
+## 1.7
+
+- Add fertilizer module to hemp farms
+
 ## 1.6
 
 - GU14 support
