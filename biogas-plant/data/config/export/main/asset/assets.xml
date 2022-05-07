@@ -7,9 +7,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 1500010010-19
 // 1500010014 obsolete farm waste
 // 1500010017 (conflicts with InfoDescription in other mods)
-// 1500010019 obsolete service
-1500010037
-// 1500010038 obsolete forward buff
+1500010037-38
 
 -->
 
@@ -28,10 +26,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Building>
           <BuildingCategoryName>100000</BuildingCategoryName> <!-- production -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <TerrainType>Coast</TerrainType>
           <AssociatedRegions>Moderate</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
           <AllowChangeVariation>1</AllowChangeVariation>
           <AllowChangeDirection>1</AllowChangeDirection>
+          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
           <!-- <BuildModeStartVariation>1</BuildModeStartVariation> -->
         </Building>
         <Cost>
@@ -141,19 +140,24 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             <Item>
               <Product>24807</Product> <!-- bio waste -->
               <Amount>3</Amount>
-              <StorageAmount>10</StorageAmount>
+              <StorageAmount>12</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
               <Product>112706</Product> <!-- gas -->
               <Amount>1</Amount>
-              <StorageAmount>5</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
           <CycleTime>45</CycleTime>
           <IsMainFactory>0</IsMainFactory>
+          <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
+          <ClampedMaxTransporterLogisticCost>80</ClampedMaxTransporterLogisticCost>
         </FactoryBase>
+        <LogisticNode>
+          <TransporterCountMax>2</TransporterCountMax>
+        </LogisticNode>
       </Values>
     </Asset>
     <Asset>
@@ -529,7 +533,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/buildings/production/farm_waste_depot/farm_waste_depot2.cfg</Filename>
+              <Filename>data/jakob/buildings/production/farm_waste_depot/dung_collector_nw.cfg</Filename>
             </Item>
           </Variations>
         </Object>
