@@ -137,6 +137,7 @@ Upgradable Low Tiers
   <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
       <!-- fallback dump -->
+      <Template>none</Template>
       <Values>
         <Standard>
           <GUID>1500010221</GUID>
@@ -1405,8 +1406,9 @@ Upgradable Low Tiers
           <InfoDescription>1500010222</InfoDescription>
         </Standard>
         <Blocking>
-          <GroundDecalAsset>9898765</GroundDecalAsset>
-          <GroundDecalInvisible>9898765</GroundDecalInvisible>
+          <HidePropsRadius>0</HidePropsRadius>
+          <DeletePropsRadius>0</DeletePropsRadius>
+          <GroundDecalAsset>24774</GroundDecalAsset>
           <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
         </Blocking>
         <Building>
@@ -1451,17 +1453,6 @@ Upgradable Low Tiers
           <ConstructionSounds>
             <BuildSuccessful>
               <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>OrnamentalBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
-              </Item>
-              <Item>
                 <Sound>9818759</Sound>
               </Item>
             </BuildSuccessful>
@@ -1469,32 +1460,10 @@ Upgradable Low Tiers
               <Item>
                 <Sound>9818387</Sound>
               </Item>
-              <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>OrnamentalBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
-              </Item>
             </BuildFailed>
             <BuildMoveStart>
               <Item>
                 <Sound>9818755</Sound>
-              </Item>
-              <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>OrnamentalBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
               </Item>
             </BuildMoveStart>
           </ConstructionSounds>
@@ -1512,26 +1481,6 @@ Upgradable Low Tiers
         <Culture />
       </Values>
     </Asset>
-    <!-- <Asset>
-      <BaseAssetGUID>102159</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010215</GUID>
-          <Name>simple_stone_plaza_1x1</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/ornament_placeholders/cultural_1x1_01.png</IconFilename>
-        </Standard>
-      </Values>
-      <Object>
-        <Variations>
-          <Item>
-            <Filename>data\jakob\ornaments\simple_stone_plaza_1x1.cfg</Filename>
-          </Item>
-        </Variations>
-      </Object>
-      <Locked>
-        <DefaultLockedState>0</DefaultLockedState>
-      </Locked>
-    </Asset> -->
   </ModOp>
   <ModOp Type="add" GUID="80040,80041,80042,80043,80044,80060,80061,80062,80063" Path="/Values/Building">
     <AllowChangeVariation>1</AllowChangeVariation>

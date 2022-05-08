@@ -1,0 +1,69 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.png,README.md,**/effects/*.png}"
+    },
+    {
+      "action": "cf7",
+      "pattern": "**/*.cf7"
+    },
+    {
+      "action": "rdpxml",
+      "pattern": "**/*.rdp.xml"
+    },
+    {
+      "action": "texture",
+      "pattern": "**/icons/*.png",
+      "lods": 0
+    },
+    {
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,height,metal}.png",
+      "lods": 3,
+      "changePath": "maps/"
+    },
+    {
+      "action": "gltf",
+      "pattern": "**/*.{glb,gltf}",
+      "lods": 4,
+      "changePath": "rdm/",
+      "animPath": "anim/"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0",
+    "ModID": "jakob_power_nw",
+    "IncompatibleIds": [],
+    "ModDependencies": null,
+    "Category": {
+      "English": "Gameplay"
+    },
+    "ModName": {
+      "English": "Small Power Plants, New World",
+      "German": "Kleine Kraftwerke, Neue Welt"
+    },
+    "Description": {
+      "English": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}

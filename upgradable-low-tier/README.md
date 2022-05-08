@@ -43,6 +43,11 @@ Known issues:
 
 ## Changes
 
+### 1.5
+
+- Stone pavement is now always street and has proper green overlay.
+  You need to rebuild existing pavements to update.
+
 ### 1.4
 
 - Added music school from Pescatarians as luxury public service

@@ -15,4 +15,4 @@ Includes a small hotel with 4 variations and paintbrush skins for both small and
 
 Available: English, German, Japanese, the rest partially with English placeholders
 
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+I appreciate any translation feedback! Via Anno Modding Discord (Jakob) or Nexus (superjuern).

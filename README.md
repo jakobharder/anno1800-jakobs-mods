@@ -37,6 +37,7 @@ The mods in this repository are made with the [Modding Tools for Anno](https://m
 
 ![](./nates-windmill/banner.png)
 ![](./small-gas-power-plant/banner.png)
+![](./biogas-plant/banner.png)
 
 [\[Gameplay\] Nate's Windmill](./nates-windmill/README.md)
 

@@ -1,5 +1,7 @@
 # Biogas Plant
 
+![](./banner.png)
+
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
 
 The biogas plant converts dung from animal farms into gas for use in power plants.
@@ -21,6 +23,10 @@ Dung production NW is same as with the Fertilizer building and will not stack.
 You find the biogas production in materials and embedded in the gas and small power plants construction menus.
 
 ## Changes
+
+### 1.4
+
+- Minor fixes and optimizations
 
 ### 1.3
 

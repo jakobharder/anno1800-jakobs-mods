@@ -1,0 +1,45 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,**/icons/*.png,banner.png,README.md}"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1",
+    "ModID": "jakob_bugfix_celluloid",
+    "IncompatibleIds": [],
+    "ModDependencies": null,
+    "Category": {
+      "English": "Bugfix"
+    },
+    "ModName": {
+      "English": "Floating Celluloid",
+      "German": "Fliegende Celluloid"
+    },
+    "Description": {
+      "English": "README.md",
+      "German": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [ ],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+  
+}
