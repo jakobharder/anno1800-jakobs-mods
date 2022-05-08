@@ -26,12 +26,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Building>
           <BuildingCategoryName>100000</BuildingCategoryName> <!-- production -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <TerrainType>Coast</TerrainType>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <AllowChangeVariation>1</AllowChangeVariation>
           <AllowChangeDirection>1</AllowChangeDirection>
           <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
-          <!-- <BuildModeStartVariation>1</BuildModeStartVariation> -->
+          <BuildModeStartVariation>1</BuildModeStartVariation>
         </Building>
         <Cost>
           <Costs>
@@ -596,6 +595,18 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   
 
   <!-- # Construction menus -->
+  <ModOp Type="addNextSibling" GUID='120055'>
+    <Asset>
+      <!-- fallback dump -->
+      <Template>none</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <ignore></ignore>
+      </Values>
+    </Asset>
+  </ModOp>
   <ModOp Type="addNextSibling" GUID='117559' Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
     <Item>
       <Building>1500010010</Building>
@@ -611,7 +622,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Building>1500010451</Building>
     </Item>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916']">
+  <ModOp Type="addNextSibling" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList/Item[not(../Item/Building='1500010456')][Building='500916' or (not(../Item/Building='500916'))][last()] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
     <Item>
       <Building>1500010452</Building>
     </Item>
@@ -723,7 +734,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Values>
         <Standard>
           <GUID>1500010454</GUID>
-          <Name>unlock_biogas</Name>
+          <Name>unlock_biogas_menu</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -733,7 +744,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000004</Context> <!-- 1 investor -->
+                <Context>15000004</Context>
                 <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
@@ -746,18 +757,18 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                   <Action />
                   <ActionUnlockAsset>
                     <UnlockAssets>
+                      <!-- <Item>
+                        <Asset>1500010450</Asset>
+                      </Item> -->
                       <Item>
-                        <Asset>1500010450</Asset> <!-- biogas plant -->
+                        <Asset>1500010451</Asset>
+                      </Item>
+                      <!-- <Item>
+                        <Asset>1500010452</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010451</Asset> <!-- biogas menu OW -->
-                      </Item>
-                      <Item>
-                        <Asset>1500010452</Asset> <!-- biogas menu NW -->
-                      </Item>
-                      <Item>
-                        <Asset>1500010453</Asset> <!-- waste depot -->
-                      </Item>
+                        <Asset>1500010453</Asset>
+                      </Item> -->
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -775,7 +786,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Values>
         <Standard>
           <GUID>1500010455</GUID>
-          <Name>unhide_biogas</Name>
+          <Name>unhide_biogas_menu</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -785,7 +796,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context> <!-- 1 engineer -->
+                <Context>15000003</Context>
                 <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
@@ -798,17 +809,118 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                   <Action />
                   <ActionUnlockAsset>
                     <UnhideAssets>
+                      <!-- <Item>
+                        <Asset>1500010450</Asset>
+                      </Item> -->
                       <Item>
-                        <Asset>1500010450</Asset> <!-- biogas plant -->
+                        <Asset>1500010451</Asset>
+                      </Item>
+                      <!-- <Item>
+                        <Asset>1500010452</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010451</Asset> <!-- biogas menu OW -->
+                        <Asset>1500010453</Asset>
+                      </Item> -->
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010465</GUID>
+          <Name>unlock_biogas_nw</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>2000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010450</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010452</Asset> <!-- biogas menu NW -->
+                        <Asset>1500010452</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010453</Asset> <!-- waste depot -->
+                        <Asset>1500010453</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010466</GUID>
+          <Name>unhide_biogas_nw</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>600</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010450</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010451</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010452</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010453</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>

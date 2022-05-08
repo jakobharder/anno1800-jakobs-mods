@@ -1,0 +1,10 @@
+variant: 
+  source: plant_oil.cfg
+  modifications:
+  cf7:
+    - xpath: //FeedbackDefinition/FeedbackConfigs/i[MultiplyActorByDummyCount="talking"]/AssetVariationList
+      GuidVariationList: CDATA[40 101624 -1 101625 -1 101626 -1 101627 -1 101628 -1]
+    - xpath: //FeedbackDefinition/FeedbackConfigs/i[MultiplyActorByDummyCount="static_inspector"]/AssetVariationList
+      GuidVariationList: CDATA[40 101624 -1 101625 -1 101626 -1 101627 -1 101628 -1]
+    - xpath: //FeedbackDefinition/FeedbackConfigs/i[Description="foreman"]/AssetVariationList
+      GuidVariationList: CDATA[8 103075 -1]

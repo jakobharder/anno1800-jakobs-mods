@@ -5,6 +5,8 @@
 The windmill is a service building providing electricity to industry and residents.
 It's intended as an alternative to Nate's electricity items for guild houses - a little cheaper, but not as powerful to keep it balanced.
 
+You need to use "Small Power Plants, New World" to use the windmill in the New World.
+
 ## Notes
 
 Electricity is provided the same way power plants work via roads.
@@ -16,9 +18,16 @@ The reduced ranges and exclusive radius are there to ensure the windmill is not 
 Industry influence buff apply.
 Palace buffs and obviously guild house buffs don't.
 
-Unlocks with 500 engineers.
+OW windmill unlocks with 500 engineers and NW windmill with 1500 obreros.
 
-## 1.2 Changes
+## Changes
+
+### 1.3
+
+- NW Windmill (when enabled via separate mod)
+- Removed Windmill from Palace range increase buff
+
+### 1.2
 
 - Reduced building and maintenance cost
 - Can be played without Cap Trelawney session now

@@ -90,9 +90,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </DestroySounds>
         </SoundEmitter>
-        <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
-        </Locked>
+        <Locked />
         <FeedbackController />
         <AmbientMoodProvider />
         <Attackable>
@@ -157,6 +155,33 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Standard>
       </Values>
     </Asset>
+    <Asset>
+      <BaseAssetGUID>1500010001</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010458</GUID>
+          <Name>nates_windmill_nw</Name>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Maintenance>
+          <IncomeCategory>InfrastructureBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>400</Amount>
+            </Item>
+            <Item>
+              <Product>1010367</Product>
+              <Amount>20</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Locked />
+      </Values>
+    </Asset>
   </ModOp>
 
 
@@ -165,9 +190,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
-  <ModOp Type="add" GUID='193879,190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+  <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
       <GUID>1500010001</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010458</GUID>
     </Item>
   </ModOp>
   <!-- don't add to powerplants to prevent range increase -->
@@ -175,6 +203,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 
   <!-- # Build Menus -->
   <!-- ============= -->
+  <!-- NW variant is only available via small power plants -->
 
   <!-- Old World Menu Engineers, insert after oil power plant -->
   <ModOp Type="addNextSibling" GUID='25000192' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
@@ -202,12 +231,10 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <GUID>1500010005</GUID>
           <Name>Nate's Windmill</Name>
         </Standard>
-        <Locked />
         <Trigger>
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>
             <Values>
-              <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000003</Context> <!-- engineers -->
@@ -220,7 +247,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <TriggerAction>
                 <Template>ActionUnlockAsset</Template>
                 <Values>
-                  <Action />
                   <ActionUnlockAsset>
                     <UnhideAssets>
                       <Item>
@@ -244,9 +270,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010006</GUID>
           <Name>Nate's Windmill</Name>
-          <Version>dlc01</Version>
         </Standard>
-        <Locked />
         <Trigger>
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>
@@ -269,6 +293,91 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010001</Asset> <!-- windmill -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <!-- NW unlocks -->
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010460</GUID>
+          <Name>windmill_nw_hide</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition></Condition>
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context> <!-- obrero -->
+                <CounterAmount>600</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010458</Asset> <!-- windmill -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010461</GUID>
+          <Name>windmill_nw_unlock</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context> <!-- obrero -->
+                <CounterAmount>6000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010458</Asset> <!-- windmill -->
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

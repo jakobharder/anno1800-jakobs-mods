@@ -9,7 +9,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 -->
 
 <ModOps>
-  <!-- # Buildings -->
+  <!-- # OW Power Plants -->
 
   <!-- Small Gas Power Plant -->
   <!-- the building is a copy of gas-fired power plant, 
@@ -29,6 +29,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
+          <AllowChangeDirection>1</AllowChangeDirection>
           <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
         </Building>
         <Blocking />
@@ -155,7 +156,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <StorageAmount>10</StorageAmount>
             </Item>
           </FactoryInputs>
-          <CycleTime>180</CycleTime>
+          <CycleTime>45</CycleTime>
         </FactoryBase>
         <Culture />
         <PublicService> <!-- reduced to 40% coverage -->
@@ -554,6 +555,111 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
 
 
+  <!-- # NW Power Plants -->
+  <ModOp GUID='1500010035' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1500010020</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010457</GUID>
+          <Name>gas_power_plant_nw</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_gas.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/public/small_gas_power_plant/small_gas_power_plant_nw.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>600</Amount>
+              <InactiveAmount>300</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010367</Product>
+              <Amount>200</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Powerplant>
+          <!-- industry power supply, visual power lines? -->
+          <ElectricityDistance>32</ElectricityDistance>
+          <IndustrializationDistance>32</IndustrializationDistance>
+        </Powerplant>
+        <PublicService>
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>32</FullSatisfactionDistance>
+          <NoSatisfactionDistance>32</NoSatisfactionDistance>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>1500010033</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010459</GUID>
+          <Name>oil_power_plant_nw</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_oil.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/public/small_power_plants/plant_oil_nw.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Selection>
+          <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Locked />
+        <Maintenance> <!-- reduced to 2/3 -->
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>275</Amount>
+              <InactiveAmount>140</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010367</Product> <!-- Engineers -->
+              <Amount>100</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Powerplant>
+          <!-- industry power supply, visual power lines? -->
+          <ElectricityDistance>28</ElectricityDistance>
+          <IndustrializationDistance>28</IndustrializationDistance>
+        </Powerplant>
+        <PublicService>
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>28</FullSatisfactionDistance>
+          <NoSatisfactionDistance>28</NoSatisfactionDistance>
+        </PublicService>
+      </Values>
+    </Asset>
+  </ModOp>
+
   <!-- # Buff Target Pools -->
   <!-- =================== -->
 
@@ -568,6 +674,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     <Item>
       <GUID>1500010033</GUID>
     </Item>
+    <Item>
+      <GUID>1500010457</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010459</GUID>
+    </Item>
   </ModOp>
   <!-- add to palace forward buff social welfare act -->
   <ModOp Type="add" GUID='269460' Path="/Values/ItemEffect/EffectTargets">
@@ -579,6 +691,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     </Item>
     <Item>
       <GUID>1500010033</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010457</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010459</GUID>
     </Item>
   </ModOp>
 
@@ -601,13 +719,13 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <Building>1500010033</Building> <!-- oil -->
             </Item>
             <Item>
-              <Building>1500010020</Building> <!-- gas -->
-            </Item>
-            <Item>
               <Building>1500010015</Building> <!-- waste depot -->
             </Item>
             <Item>
               <Building>1500010010</Building> <!-- biogas plant -->
+            </Item>
+            <Item>
+              <Building>1500010020</Building> <!-- gas -->
             </Item>
             <Item>
               <Building>1500010001</Building> <!-- wind -->
@@ -629,6 +747,39 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Standard>
       </Values>
     </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010456</GUID>
+          <Name>power_plants_menu_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_nw_power_plant.dds</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010458</Building> <!-- wind -->
+            </Item>
+            <Item>
+              <Building>1500010459</Building> <!-- oil -->
+            </Item>
+            <Item>
+              <Building>1500010453</Building> <!-- waste depot -->
+            </Item>
+            <Item>
+              <Building>1500010450</Building> <!-- biogas plant -->
+            </Item>
+            <Item>
+              <Building>1500010457</Building> <!-- gas -->
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010031</CategoryDescription>
+        </ConstructionCategory>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- remove windmill by first adding it and then deleting all occurences to avoid not found warnings -->
   <ModOp Type="add" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList">
@@ -636,11 +787,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Building>1500010001</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']">
-    <Item>
-      <Building>1500010001</Building>
-    </Item>
-  </ModOp>
+  <ModOp Type="remove" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']" />
   <!-- insert all after gas power plant in city menu, fallback append -->
   <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='117559' or (not(../Item/Building='117559'))][last()]">
     <Item>
@@ -751,6 +898,135 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010020</Asset> <!-- gas -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010462</GUID>
+          <Name>unhide_power_plants_nw</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>600</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010459</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010463</GUID>
+          <Name>unlock_oil_nw</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>4000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010459</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010464</GUID>
+          <Name>unlock_gas_nw</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>8000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

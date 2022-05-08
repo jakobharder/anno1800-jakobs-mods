@@ -1,4 +1,4 @@
-# Small Gas Power Plant
+# Small Power Plants
 
 ![](./banner.png)
 
@@ -9,6 +9,10 @@ Small power plant have less coverage than normal plants and consume coal, oil or
 You need to play with Arctic session to use the small gas power plant.
 
 ## Changes
+
+### 2.5
+
+- NW Oil and Gas Power Plants (when enabled via separate mod)
 
 ### 2.4
 
