@@ -1,0 +1,21 @@
+variant:
+  source: ../../hotels/small-hotel4.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="main"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low4_lod0.rdm
+    - xpath: //Config/Models/Config[Name="leftwing"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low3_wing_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config[Name="wall"]
+      cModelDiffTex: data\jakob\buildings\hotels\maps\hotel_wall5_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cModelDiffTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_diff.psd
+      cModelMetallicTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_metal.psd
+      cModelNormalTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_norm.psd
+      cDiffuseColor.r: 0.65
+      cDiffuseColor.g: 0.68
+      cDiffuseColor.b: 0.78
+    # move props
+    - xpath: //Config/Files/Config[Name="file_flag"]/Transformer/Config
+      Position.y: 4.389909
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 3.235471

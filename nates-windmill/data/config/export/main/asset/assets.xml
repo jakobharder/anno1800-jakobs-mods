@@ -111,7 +111,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <ItemContainer>
           <!-- prevent overlapping with guild houses and other wind power plants -->
           <SocketCount>0</SocketCount>
-          <SocketScopeRadiusOverlapCategory>GuildHouse</SocketScopeRadiusOverlapCategory>
+          <SocketScopeRadiusOverlapCategory>Guildhouse</SocketScopeRadiusOverlapCategory>
           <SocketScope>Radius</SocketScope>
           <SocketScopeRadius>5</SocketScopeRadius>
         </ItemContainer>
@@ -121,7 +121,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <FactoryBase />
         <Powerplant>
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>6</ElectricityDistance>
           <IndustrializationDistance>6</IndustrializationDistance>
         </Powerplant>
         <PublicService>
@@ -235,6 +234,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>
             <Values>
+              <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000003</Context> <!-- engineers -->
@@ -247,6 +247,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <TriggerAction>
                 <Template>ActionUnlockAsset</Template>
                 <Values>
+                  <Action />
                   <ActionUnlockAsset>
                     <UnhideAssets>
                       <Item>
@@ -318,7 +319,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>
             <Values>
-              <Condition></Condition>
+              <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000006</Context> <!-- obrero -->
