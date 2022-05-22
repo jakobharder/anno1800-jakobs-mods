@@ -38,6 +38,15 @@ Minimall
             <Item>
               <Filename>data/jakob/buildings/mini_mall/department2.cfg</Filename>
             </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department5.cfg</Filename>
+            </Item>
           </Variations>
         </Object>
         <Locked>
@@ -702,6 +711,15 @@ Minimall
             <Item>
               <Filename>data/jakob/buildings/mini_mall/furniture2.cfg</Filename>
             </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/furniture3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/furniture4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/furniture5.cfg</Filename>
+            </Item>
           </Variations>
         </Object>
         <Locked>
@@ -1333,6 +1351,15 @@ Minimall
             </Item>
             <Item>
               <Filename>data/jakob/buildings/mini_mall/drug2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/drug3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/drug4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/drug5.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -2493,6 +2520,9 @@ Minimall
     <Item>
       <Building>1500010888</Building>
     </Item>
+    <Item>
+      <Building>1500010909</Building>
+    </Item>
   </ModOp>
   <!-- add to buff target pools -->
   <ModOp Type="add" GUID="194025" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -2557,7 +2587,7 @@ Minimall
     </Item>
   </ModOp>
 
-  <!-- # Minimall: Warehouse -->
+  <!-- # Minimall: Warehouse, Ornamental -->
   <ModOp GUID='135210' Type="addNextSibling">
     <Asset>
       <Template>JakobsMall</Template>
@@ -2566,6 +2596,7 @@ Minimall
           <GUID>1500010888</GUID>
           <Name>mall_warehouse</Name>
           <IconFilename>data\jakob\ui\icons\icon_mallstorage.png</IconFilename>
+          <InfoDescription>137243</InfoDescription>
         </Standard>
         <Building>
           <BuildingType>Logistic</BuildingType>
@@ -2580,8 +2611,6 @@ Minimall
         </Selection>
         <Object>
           <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
-        </Object>
-        <Object>
           <Variations>
             <Item>
               <Filename>data/jakob/buildings/mini_mall/department.cfg</Filename>
@@ -2589,7 +2618,28 @@ Minimall
             <Item>
               <Filename>data/jakob/buildings/mini_mall/department2.cfg</Filename>
             </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department5.cfg</Filename>
+            </Item>
           </Variations>
+          <Skins>
+            <DefaultSkinName>1500010912</DefaultSkinName>
+            <OverrideDefaultIcon>data/jakob/ui/icons/icon_mall_skin0.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010910</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010911</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
         </Object>
         <Locked>
           <DLCDependency>410085</DLCDependency>
@@ -2633,6 +2683,243 @@ Minimall
         </Industrializable>
       </Values>
     </Asset>
+    <Asset>
+      <Template>JakobsMall</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010909</GUID>
+          <Name>mall_ornamental</Name>
+          <IconFilename>data/jakob/ui/icons/icon_mall_skin0.png</IconFilename>
+          <InfoDescription>137243</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingType>Other</BuildingType>
+          <PickingAsset>1500010909</PickingAsset>
+          <VariationIcons>
+            <Item>
+              <IconFilename>data\jakob\ui\icons\icon_mall_var1.png</IconFilename>
+            </Item>
+            <Item>
+              <IconFilename>data\jakob\ui\icons\icon_mall_var2.png</IconFilename>
+            </Item>
+            <Item>
+              <IconFilename>data\jakob\ui\icons\icon_mall_var3.png</IconFilename>
+            </Item>
+            <Item>
+              <IconFilename>data\jakob\ui\icons\icon_mall_var4.png</IconFilename>
+            </Item>
+            <Item>
+              <IconFilename>data\jakob\ui\icons\icon_mall_var5.png</IconFilename>
+            </Item>
+          </VariationIcons>
+        </Building>
+        <Selection>
+          <GUIType>Generic</GUIType>
+          <ParticipantMessageTrigger>None</ParticipantMessageTrigger>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Object>
+          <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/mini_mall/department5.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>1500010912</DefaultSkinName>
+            <OverrideDefaultIcon>data/jakob/ui/icons/icon_mall_skin0.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010910</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010911</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Locked>
+          <DLCDependency>410085</DLCDependency>
+        </Locked>
+        <FeedbackController>
+          <NightBehavior>HideNone</NightBehavior>
+        </FeedbackController>
+        <Maintenance>
+          <IncomeCategory>CultureBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>0</Amount>
+              <InactiveAmount>0</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <LogisticNode>
+          <TransporterCountMax>0</TransporterCountMax>
+        </LogisticNode>
+        <Attackable>
+          <HasRuinState>1</HasRuinState>
+        </Attackable>
+        <Electrifiable>
+          <ElectricityBoost>0</ElectricityBoost>
+        </Electrifiable>
+        <Industrializable>
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Ornament>
+          <OrnamentUnit>4</OrnamentUnit>
+        </Ornament>
+        <Culture>
+          <CultureType>Monument</CultureType>
+        </Culture>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010910</GUID>
+          <Name>furniture_skin</Name>
+          <IconFilename>data/jakob/ui/icons/icon_mall_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010910</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/furniture.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/furniture2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/furniture3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/furniture4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/furniture5.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010911</GUID>
+          <Name>drug_skin</Name>
+          <IconFilename>data/jakob/ui/icons/icon_mall_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010910</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/drug.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/drug2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/drug3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/drug4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/drug5.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010912</GUID>
+          <Name>department_skin</Name>
+          <IconFilename>data/jakob/ui/icons/icon_mall_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010910</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/department.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/mini_mall/department2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010913</GUID>
+          <Name>unlock_ornamental</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>1500010888</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010909</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
   </ModOp>
 
 
@@ -2669,6 +2956,9 @@ Minimall
             </Item>
             <Item>
               <Building>1500010862</Building>
+            </Item>
+            <Item>
+              <Building>1500010909</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>13108</CategoryDescription>
