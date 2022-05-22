@@ -1,0 +1,34 @@
+variant: 
+  source: ../../../../vanilla.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="main"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low_main_lod0.rdm
+    - xpath: //Config/Models/Config[Name="leftwing"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low_leftwing_lod0.rdm
+    - xpath: //Config/Models/Config[Name="rightwing"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low_rightwing_lod0.rdm
+    - xpath: //Config/Models/Config[Name="extra"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low_extra_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config[Name="wall"]
+      cModelDiffTex: data\jakob\buildings\hotels\maps\hotel_wall0_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cModelDiffTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_diff.psd
+      cModelMetallicTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_metal.psd
+      cModelNormalTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_norm.psd
+      cDiffuseColor.r: 1.25
+      cDiffuseColor.g: 1.18
+      cDiffuseColor.b: 1.00
+  # move props
+    - xpath: //Config/Files/Config[Name="FILE_27_flag_anim_horizontal_white_01"]/Transformer/Config
+      Position.y: 5.414957
+    - xpath: //Config/Particles/Config/Transformer/Config[Position.y="4.647175"]
+      Position.y: 4.163175
+    - xpath: //Config/Particles/Config/Transformer/Config[Position.y="4.851999"]
+      Position.y: 4.367999
+    - xpath: //Config/PropContainers/Config/Props/Config[FileName="data\graphics\props\decoration\flower_pot_02.prp" and Position.y="3.154862"]
+      Position.y: 2.670862
+  cf7:
+    - xpath: //DummyRoot/Groups/i[Name="balcony_guest"]/Dummies/i/Position[y="3.168786"]
+      y: 2.684786
+    - xpath: //DummyRoot/Groups/i[Name="balcony_guest"]/Dummies/i/Position[y="2.641441"]
+      y: 2.157441

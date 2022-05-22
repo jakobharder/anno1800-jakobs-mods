@@ -10,8 +10,20 @@ Buildings:
 - Furniture Store
 - Drug Store
 - Store Warehouse as an alternative warehouse
+- Ornamental versions of the stores
+
+Skins:
+- Warehouse and ornamental store have skins for all 3 mall types
+
+Note: The buildings do not count as quest objectives.
 
 ## Changes
+
+### 1.3
+
+- Added end, crossing, T-crossing variants
+- Added skins to warehouse store
+- Added ornamental store with
 
 ### 1.2
 

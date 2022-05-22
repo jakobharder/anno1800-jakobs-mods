@@ -4,6 +4,8 @@ Tourist District
 1500010500 small hotel
 1500010501 pop decrease buff
 1500010502+ skins
+// 1500010505 obsolete skin name
+1500010505 fake asset
 1500010516 unlock small hotels
 1500010517
 
@@ -11,7 +13,7 @@ Tourist District
 
 <ModOps>
   <!-- # Small hotels -->
-  <ModOp GUID='601445' Type="addNextSibling">
+  <ModOp GUID="601445" Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>601445</BaseAssetGUID>
       <Values>
@@ -19,12 +21,12 @@ Tourist District
           <GUID>1500010500</GUID>
           <Name>small_hotel</Name>
           <IconFilename>data\jakob\ui\icons\icon_small_hotelb.png</IconFilename>
-          <Version>dlc08</Version>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
           <AllowChangeDirection>1</AllowChangeDirection>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
         </Building>
         <Cost>
           <Costs>
@@ -79,6 +81,18 @@ Tourist District
               <Item>
                 <SkinAssetGuid>1500010503</SkinAssetGuid>
               </Item>
+              <Item>
+                <SkinAssetGuid>1500010542</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010543</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010544</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010545</SkinAssetGuid>
+              </Item>
             </SkinList>
           </Skins>
         </Object>
@@ -132,6 +146,10 @@ Tourist District
               <AdditionalSupply>-13</AdditionalSupply>
             </Item>
             <Item>
+              <Product>1440134405</Product> <!-- Boxing -->
+              <AdditionalSupply>-15</AdditionalSupply>
+            </Item>
+            <Item>
               <Product>132751</Product>
               <AdditionalSupply>-13</AdditionalSupply>
             </Item>
@@ -155,6 +173,10 @@ Tourist District
               <Product>132761</Product>
               <AdditionalSupply>-40</AdditionalSupply>
             </Item>
+            <Item>
+              <Product>1440134406</Product> <!-- NW Christo -->
+              <AdditionalSupply>-40</AdditionalSupply>
+            </Item>
           </InputBenefitModifier>
         </PopulationUpgrade>
         <CultureUpgrade>
@@ -174,6 +196,9 @@ Tourist District
           <EffectTargets>
             <Item>
               <GUID>1500010500</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010529</GUID>
             </Item>
             <Item>
               <GUID>850113</GUID> <!-- from Train Stations & Hotels -->
@@ -202,6 +227,10 @@ Tourist District
               <AdditionalSupply>-15</AdditionalSupply>
             </Item>
             <Item>
+              <Product>1440134405</Product> <!-- Boxing -->
+              <AdditionalSupply>-15</AdditionalSupply>
+            </Item>
+            <Item>
               <Product>132751</Product>
               <AdditionalSupply>-15</AdditionalSupply>
             </Item>
@@ -225,6 +254,10 @@ Tourist District
               <Product>132761</Product>
               <AdditionalSupply>-50</AdditionalSupply>
             </Item>
+            <Item>
+              <Product>1440134406</Product> <!-- NW Christo -->
+              <AdditionalSupply>-50</AdditionalSupply>
+            </Item>
           </InputBenefitModifier>
         </PopulationUpgrade>
         <CultureUpgrade>
@@ -242,7 +275,7 @@ Tourist District
           <ID>skin_small_hotel_dark</ID>
         </Standard>
         <Skin>
-          <SkinName>1500010310</SkinName>
+          <SkinName>1500010502</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -277,7 +310,7 @@ Tourist District
           <ID>skin_small_hotel_darkred</ID>
         </Standard>
         <Skin>
-          <SkinName>1500010319</SkinName>
+          <SkinName>1500010504</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -312,7 +345,7 @@ Tourist District
           <ID>skin_small_hotel_bluegreen</ID>
         </Standard>
         <Skin>
-          <SkinName>1500010505</SkinName>
+          <SkinName>1500010503</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -381,45 +414,137 @@ Tourist District
       <Template>Text</Template>
       <Values>
         <Standard>
-          <GUID>1500010318</GUID>
-          <Name>skin_name_red</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010319</GUID>
-          <Name>skin_name_darkred</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010310</GUID>
-          <Name>skin_name_dark</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010505</GUID>
-          <Name>skin_name_bluegreen</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
           <GUID>1500010512</GUID>
           <Name>skin_desc_small_hotel</Name>
         </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010542</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010532</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin5\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin5\ssmall-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin5\ssmall-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin5\ssmall-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010543</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010533</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin6\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin6\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin6\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin6\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010544</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010534</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin7\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin7\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin7\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin7\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010545</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010535</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin8\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin8\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin8\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\ow-skin8\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
       </Values>
     </Asset>
   </ModOp>
@@ -444,7 +569,7 @@ Tourist District
 
   <!-- # Vanilla skins -->
   <!-- First add empty SkinList, then skins. That makes sure skins work even if somebody else already added some. -->
-  <ModOp GUID='601445' Type="add" Path="Values/Object">
+  <ModOp GUID="601445" Type="add" Path="Values/Object">
     <Skins>
       <DefaultSkinName>23852</DefaultSkinName>
       <DefaultSkinDescription>23853</DefaultSkinDescription>
@@ -452,7 +577,7 @@ Tourist District
       <SkinList />
     </Skins>
   </ModOp>
-  <ModOp GUID='601445' Type="add" Path="Values/Object/Skins/SkinList">
+  <ModOp GUID="601445" Type="add" Path="Values/Object/Skins/SkinList">
     <Item>
       <SkinAssetGuid>1500010507</SkinAssetGuid>
     </Item>
@@ -468,19 +593,31 @@ Tourist District
     <Item>
       <SkinAssetGuid>1500010515</SkinAssetGuid>
     </Item>
+    <Item>
+      <SkinAssetGuid>1500010531</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010536</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010537</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010538</SkinAssetGuid>
+    </Item>
   </ModOp>
-  <ModOp GUID='601445' Type="addNextSibling">
+  <ModOp GUID="601445" Type="addNextSibling">
     <Asset>
       <Template>Skin</Template>
       <Values>
         <Standard>
           <GUID>1500010507</GUID>
           <Name>skin_hotel_red</Name>
-          <IconFilename>data\jakob\ui\icons\icon_hotel_skin1.png</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
           <ID>tourist_skin_red</ID>
         </Standard>
         <Skin>
-          <SkinName>1500010318</SkinName>
+          <SkinName>1500010507</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -502,11 +639,10 @@ Tourist District
         <Standard>
           <GUID>1500010508</GUID>
           <Name>skin_hotel_darkred</Name>
-          <IconFilename>data\jakob\ui\icons\icon_hotel_skin2.png</IconFilename>
-          <ID>tourist_skin_darkred</ID>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
         </Standard>
         <Skin>
-          <SkinName>1500010319</SkinName>
+          <SkinName>1500010508</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -528,11 +664,10 @@ Tourist District
         <Standard>
           <GUID>1500010509</GUID>
           <Name>skin_hotel_darkred2</Name>
-          <IconFilename>data\jakob\ui\icons\icon_hotel_skin3.png</IconFilename>
-          <ID>tourist_skin_darkred2</ID>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
         </Standard>
         <Skin>
-          <SkinName>1500010319</SkinName>
+          <SkinName>1500010509</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -555,10 +690,9 @@ Tourist District
           <GUID>1500010510</GUID>
           <Name>skin_hotel_dark</Name>
           <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin1.png</IconFilename>
-          <ID>tourist_skin_dark</ID>
         </Standard>
         <Skin>
-          <SkinName>1500010310</SkinName>
+          <SkinName>1500010510</SkinName>
           <SkinDescription>1500010512</SkinDescription>
           <SkinVariations>
             <Item>
@@ -581,7 +715,6 @@ Tourist District
           <GUID>1500010515</GUID>
           <Name>skin_hotel_green</Name>
           <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin3.png</IconFilename>
-          <ID>tourist_skin_green</ID>
         </Standard>
         <Skin>
           <SkinName>1500010311</SkinName>
@@ -600,23 +733,409 @@ Tourist District
         <Text />
       </Values>
     </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010531</GUID>
+          <Name>skin_hotel_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010531</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin1_nw.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010536</GUID>
+          <Name>skin_hotel_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010536</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin2_nw.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010537</GUID>
+          <Name>skin_hotel_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010537</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin3_nw.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010538</GUID>
+          <Name>skin_hotel_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010538</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\vanilla-hotel-skins\skin4_nw.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
   </ModOp>
 
   <!-- # Construction menu -->
   <!-- OW city, tourists, insert after hotel -->
-  <ModOp Type="addNextSibling" GUID='132779,500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
+  <ModOp Type="addNextSibling" GUID="132779,500944" Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
     <Item>
       <Building>1500010500</Building>
     </Item>
   </ModOp>
+  <ModOp Type="addNextSibling" GUID="132779">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010505</GUID>
+          <Name>fallback to ignore</Name>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1440134300</Building>
+            </Item>
+          </BuildingList>
+        </ConstructionCategory>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="1440134380,1500010505" Path="/Values/ConstructionCategory/BuildingList[not(Item/Building='1500010529')]/Item[Building='1440134300']">
+    <Item>
+      <Building>1500010529</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="1500010505" />
 
-  <!-- # Mod compatibility -->
-  <!-- TODO: add to NW Tourism menu -->
+
+  <!-- # NW Tourism Compatibility -->
+  <ModOp Type="addNextSibling" GUID="1500010500">
+    <Asset>
+      <BaseAssetGUID>1500010500</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010529</GUID>
+          <Name>small_hotel_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotelb.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\hotels-nw\small-hotel.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\hotels-nw\small-hotel2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\hotels-nw\small-hotel3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\hotels-nw\small-hotel4.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>1500010310</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <OverrideDefaultIcon>data\jakob\ui\icons\icon_small_hotel_skin0.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010533</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010534</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010535</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Locked>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+        <UpgradeList>
+          <DefaultBuff>1500010511</DefaultBuff>
+        </UpgradeList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010539</GUID>
+          <Name>unlock_hotel_nw</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010529</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010541</GUID>
+          <Name>unlock_hotel_nw</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>601379</Context>
+                <CounterAmount>4000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010529</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010532</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010532</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010533</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin0.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010533</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin4\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin4\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin4\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin4\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010534</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010534</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin23\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin23\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin23\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin23\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010535</GUID>
+          <Name>skin_small_nw</Name>
+          <IconFilename>data\jakob\ui\icons\icon_small_hotel_skin4.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010535</SkinName>
+          <SkinDescription>1500010512</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin1\small-hotel.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin1\small-hotel2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin1\small-hotel3.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\hotels-nw\skin1\small-hotel4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add spawn feeback -->
+  <ModOp GUID="142976" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010529</Building>
+    </Item>
+  </ModOp>
+  <!-- add to target pool -->
+  <ModOp Type="add" GUID="194016" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010529</GUID>
+    </Item>
+  </ModOp>
   <!-- NW Tourism compatibility: limit theater, iron tower to vanilla hotel -->
-  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[(Product='133573' or Product='132761') and not(RequiredToBeBuilding)]">
+  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[(Product='133573' or Product='132761') and (not(RequiredToBeBuilding) or RequiredToBeBuilding='601445')]">
     <RequiredToBeBuilding>601445</RequiredToBeBuilding>
   </ModOp>
-  <!-- NW Tourism compatibility: add theater limited to self -->
+  <!-- NW Tourism compatibility: add theater to OW, boxing for NW -->
   <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='133573'][last()]">
     <Item>
       <Product>133573</Product>
@@ -626,8 +1145,16 @@ Tourist District
       <NoWeightPopulationCount>49</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
     </Item>
+    <Item>
+      <Product>1440134405</Product> <!-- Boxing -->
+      <SupplyWeight>25</SupplyWeight>
+      <MoneyValue>45</MoneyValue>
+      <FullWeightPopulationCount>50</FullWeightPopulationCount>
+      <NoWeightPopulationCount>49</NoWeightPopulationCount>
+      <RequiredToBeBuilding>1500010529</RequiredToBeBuilding>
+    </Item>
   </ModOp>
-  <!-- NW Tourism compatibility: add iron tower limited to self -->
+  <!-- NW Tourism compatibility: add iron tower to OW, Christo & Hacienda to NW -->
   <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='132761'][last()]">
     <Item>
       <Product>132761</Product>
@@ -637,7 +1164,169 @@ Tourist District
       <NoWeightPopulationCount>3999</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
     </Item>
+    <Item>
+      <Product>1440134406</Product> <!-- Christo -->
+      <SupplyWeight>80</SupplyWeight>
+      <MoneyValue>135</MoneyValue>
+      <FullWeightPopulationCount>4000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>2499</NoWeightPopulationCount>
+      <RequiredToBeBuilding>1500010529</RequiredToBeBuilding>
+    </Item>
+    <Item>
+      <Product>1440134407</Product> <!-- Hacienda -->
+      <HappinessValue>3</HappinessValue>
+      <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+      <MoneyValue>75</MoneyValue>
+      <RequiredToBeBuilding>1500010529</RequiredToBeBuilding>
+    </Item>
   </ModOp>
+
+  <!-- # NW Tourism: change unlocks -->
+  <!-- add fake trigger first to avoid missing node warning -->
+  <ModOp Type="addNextSibling" GUID="601445">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1440134441</GUID>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1440134393</GUID>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Fake</Template>
+      <Values>
+        <Standard>
+          <Name>Fallback to ignore</Name>
+          <GUID>1500010505</GUID>
+        </Standard>
+        <PopulationLevel7>
+          <PopulationInputs>
+            <Item>
+              <Product>1440134406</Product>
+              <NoWeightPopulationCount>3999</NoWeightPopulationCount>
+            </Item>
+          </PopulationInputs>
+        </PopulationLevel7>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010540</GUID>
+          <Name>unlock_nw_tourism</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>601379</Context>
+                <CounterScope>Session</CounterScope>
+                <CounterScopeContext>180025</CounterScopeContext>
+                <CounterAmount>1</CounterAmount>
+                <ComparisonOp>AtLeast</ComparisonOp>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1440134340</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440134341</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440134342</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010530</GUID>
+          <Name>unlock_monument</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>601379</Context>
+                <CounterScope>Session</CounterScope>
+                <CounterScopeContext>180025</CounterScopeContext>
+                <CounterAmount>1500</CounterAmount>
+                <ComparisonOp>AtLeast</ComparisonOp>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1440134430</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440134431</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440134432</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1440134400</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="remove" GUID="1440134441,1440134393" />
+  <!-- reduce Christo need, fallback to fake object if not there -->
+  <ModOp Type="replace" GUID="601379,1500010505" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1440134406']/NoWeightPopulationCount">
+    <NoWeightPopulationCount>2499</NoWeightPopulationCount>
+  </ModOp>
+  <ModOp Type="remove" GUID="1500010505" />
+
+  <!-- # Mod compatibility -->
   <!-- Train Stations: add train stations need to self -->
   <!-- disabled because it adds to the residence count even if not available -->
   <!-- <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010213'][last()]">

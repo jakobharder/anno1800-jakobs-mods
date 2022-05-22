@@ -131,6 +131,9 @@
             <Item>
               <Building>1500010888</Building> <!-- booster building -->
             </Item>
+            <Item>
+              <Building>1500010909</Building> <!-- ornamental -->
+            </Item>
             <!-- restaurants -->
             <Item>
               <Building>1500010517</Building>
@@ -175,17 +178,38 @@
                 </Item>
               </Pool>
             </Corner>
+            <End>
+              <Pool>
+                <Item>
+                  <Variation>2</Variation>
+                </Item>
+              </Pool>
+            </End>
+            <Crossing>
+              <Pool>
+                <Item>
+                  <Variation>3</Variation>
+                </Item>
+              </Pool>
+            </Crossing>
+            <TCrossing>
+              <Pool>
+                <Item>
+                  <Variation>4</Variation>
+                </Item>
+              </Pool>
+            </TCrossing>
           </BuildingBlockPool>
           <InfluencedVariationDirection>
             <Item />
             <Item>
               <!-- end, south-west -->
-              <Direction>1</Direction>
-              <Type>Mid</Type>
+              <Direction>3</Direction>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- end, south-east -->
-              <Type>Mid</Type>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- corner, south -->
@@ -195,7 +219,7 @@
             <Item>
               <!-- end, north-east -->
               <Direction>1</Direction>
-              <Type>Mid</Type>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- mid, south-west to north-east -->
@@ -210,11 +234,12 @@
             <Item>
               <!-- T, front facing south-east -->
               <Direction>3</Direction>
-              <Type>Mid</Type>
+              <Type>TCrossing</Type>
             </Item>
             <Item>
               <!-- end, north-west -->
-              <Type>Mid</Type>
+              <Direction>2</Direction>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- corner, west -->
@@ -228,7 +253,7 @@
             <Item>
               <!-- T, front facing south-west  -->
               <Direction>2</Direction>
-              <Type>Mid</Type>
+              <Type>TCrossing</Type>
             </Item>
             <Item>
               <!-- corner, north -->
@@ -237,14 +262,15 @@
             <Item>
               <!-- T, front facing north-west -->
               <Direction>1</Direction>
-              <Type>Mid</Type>
+              <Type>TCrossing</Type>
             </Item>
             <Item>
               <!-- T, front facing north-east -->
-              <Type>Mid</Type>
+              <Type>TCrossing</Type>
             </Item>
             <Item>
               <!-- crossing -->
+              <Type>Crossing</Type>
             </Item>
           </InfluencedVariationDirection>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -375,7 +401,6 @@
         <FeedbackController />
         <Infolayer />
         <BuffFactory />
-        <RecipeBuilding />
         <Culture />
       </Properties>
     </Template>

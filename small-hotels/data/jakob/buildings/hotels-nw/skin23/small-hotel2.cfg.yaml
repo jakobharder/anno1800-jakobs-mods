@@ -1,0 +1,34 @@
+variant:
+  source: ../../hotels/small-hotel2.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="main"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low2_lod0.rdm
+    - xpath: //Config/Models/Config[Name="leftwing"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low_leftwing_lod0.rdm
+    - xpath: //Config/Models/Config[Name="rightwing"]
+      FileName: data\jakob\buildings\hotels-nw\rdm\hotel_low_rightwing_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config[Name="wall"]
+      cModelDiffTex: data\jakob\buildings\hotels\maps\hotel_wall5_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="roof"]
+      cModelDiffTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_diff.psd
+      cModelMetallicTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_metal.psd
+      cModelNormalTex: data\jakob\buildings\hotels-nw\maps\hotel_roof_nw_norm.psd
+      cDiffuseColor.r: 0.65
+      cDiffuseColor.g: 0.68
+      cDiffuseColor.b: 0.78
+    # trees
+    - xpath: //Config/PropContainers/Config/Props/Config[Name="prop_tree"]
+      FileName: data/graphics/props/terrain_props/vegetation/trees/jungle/tree_jungle_palm_01.prp
+      Scale.x: 0.8
+      Scale.y: 0.8
+      Scale.z: 0.8
+    - xpath: //Config/PropContainers/Config/Props/Config[Name="prop_tree2"]
+      FileName: data/graphics/props/terrain_props/vegetation/trees/jungle/tree_jungle_palm_01_03.prp
+      Scale.x: 0.8
+      Scale.y: 0.8
+      Scale.z: 0.8
+    # move props
+    - xpath: //Config/Particles/Config[Name="particle_smoke1"]/Transformer/Config
+      Position.y: 4.026113
+    - xpath: //Config/Particles/Config[Name="particle_smoke2"]/Transformer/Config
+      Position.y: 4.026113
