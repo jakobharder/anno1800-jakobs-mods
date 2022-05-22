@@ -20,6 +20,13 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 - Compatible with New World Tourism
 - Compatible with Trains Stations & Hotels when 'Train-Stations, Make compatible with NW Tourism' is used.
 
+## Changes
+
+### 1.2
+
+- Added reduced floor skins to small and vanilla hotels
+- Added NW hotels
+
 ## Translations
 
 Available: English, German, Japanese, the rest partially with English placeholders
