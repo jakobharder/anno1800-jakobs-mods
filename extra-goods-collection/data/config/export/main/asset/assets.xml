@@ -67,6 +67,7 @@ Jakob's Extra Goods
   <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
       <!-- fallback dump -->
+      <Template>fake</Template>
       <Values>
         <Standard>
           <GUID>1500010221</GUID>
@@ -978,7 +979,6 @@ Jakob's Extra Goods
           <GUID>1500010121</GUID>
           <Name>fish_cannery</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_food.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -1142,7 +1142,6 @@ Jakob's Extra Goods
           <GUID>1500010122</GUID>
           <Name>canned_fish_chain</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_food.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
         <ProductionChain>
           <Building>1500010121</Building>
@@ -1319,7 +1318,6 @@ Jakob's Extra Goods
           <Name>suits</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
           <InfoDescription>1500010017</InfoDescription>
-          <Version>dlc06</Version>
         </Standard>
         <Text>
           <LocaText>
@@ -1592,7 +1590,6 @@ Jakob's Extra Goods
           <GUID>1500010126</GUID>
           <Name>cloth_maker</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_linen_fabric.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -1672,7 +1669,6 @@ Jakob's Extra Goods
           <GUID>1500010128</GUID>
           <Name>suits_maker</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -1894,7 +1890,6 @@ Jakob's Extra Goods
           <GUID>1500010129</GUID>
           <Name>suits_chain</Name>
           <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <Version>dlc06</Version>
         </Standard>
         <ProductionChain>
           <Building>1500010128</Building>
@@ -2086,7 +2081,7 @@ Jakob's Extra Goods
       </Values>
     </Asset>
     <Asset>
-      <Template>FactoryBuilding7</Template>
+      <Template>FactoryBuilding7Variable</Template>
       <Values>
         <Standard>
           <GUID>1500010154</GUID>
@@ -2094,11 +2089,98 @@ Jakob's Extra Goods
           <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
         </Standard>
         <Building>
+          <AllowChangeDirection>1</AllowChangeDirection>
+          <AllowChangeVariation>1</AllowChangeVariation>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <!-- <AllowChangeVariation>1</AllowChangeVariation>
-          <BuildModeStartVariation>1</BuildModeStartVariation> -->
+          <BuildModeStartVariation>0</BuildModeStartVariation>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1500010154</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <DontCare>
+              <Pool>
+                <Item></Item>
+              </Pool>
+            </DontCare>
+            <Single>
+              <Pool>
+                <Item>
+                  <Variation>0</Variation>
+                </Item>
+              </Pool>
+            </Single>
+            <Mid>
+              <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>5</Variation>
+                </Item>
+                <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                  <Variation>6</Variation>
+                </Item>
+              </Pool>
+            </Mid>
+            <Corner>
+              <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>4</Variation>
+                </Item>
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>7</Variation>
+                </Item>
+              </Pool>
+            </Corner>
+            <End>
+              <Pool>
+                <!-- left side -->
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>2</Variation>
+                </Item>
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>4</Variation>
+                </Item>
+              </Pool>
+            </End>
+            <TCrossing>
+              <Pool>
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>1</Variation>
+                </Item>
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>6</Variation>
+                </Item>
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>3</Variation>
+                </Item>
+              </Pool>
+            </TCrossing>
+            <Crossing>
+              <Pool>
+                <!-- right side -->
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+                <Item>
+                  <Variation>6</Variation>
+                </Item>
+                <Item>
+                  <Variation>3</Variation>
+                </Item>
+              </Pool>
+            </Crossing>
+          </BuildingBlockPool>
         </Building>
         <Blocking />
         <Cost>
@@ -2129,11 +2211,35 @@ Jakob's Extra Goods
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/buildings/worker_multifactory/worker_multifactory_tools.cfg</Filename>
+              <Filename>data\jakob\buildings\tools_workshop\building0.cfg</Filename>
             </Item>
-            <!-- <Item>
-              <Filename>data\eoy21\graphics\buildings\production\workshop_07\workshop_07.cfg</Filename>
-            </Item> -->
+            <Item>
+              <Filename>data\jakob\buildings\tools_workshop\building2.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- repeat to ensure selection for end is retriggered -->
+              <Filename>data\jakob\buildings\tools_workshop\building0.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- 3 -->
+              <Filename>data\jakob\buildings\tools_workshop\building15.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- 4 -->
+              <Filename>data\jakob\buildings\tools_workshop\building8.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- 5 -->
+              <Filename>data\jakob\buildings\tools_workshop\building10.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- 6 -->
+              <Filename>data\jakob\buildings\tools_workshop\building13.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- 7 -->
+              <Filename>data\jakob\buildings\tools_workshop\building12.cfg</Filename>
+            </Item>
           </Variations>
         </Object>
         <Mesh />
@@ -2172,7 +2278,7 @@ Jakob's Extra Goods
             <Item>
               <Product>120008</Product>
               <Amount>1</Amount>
-              <StorageAmount>8</StorageAmount>
+              <StorageAmount>6</StorageAmount>
             </Item>
             <Item>
               <Product>1010219</Product>
@@ -2190,7 +2296,9 @@ Jakob's Extra Goods
           <CycleTime>60</CycleTime>
           <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
-        <LogisticNode />
+        <LogisticNode>
+          <TransporterCountMax>1</TransporterCountMax>
+        </LogisticNode>
         <AmbientMoodProvider>
           <Murmur>Factory</Murmur>
           <DynamicEnvironmentType>None</DynamicEnvironmentType>
@@ -2241,7 +2349,6 @@ Jakob's Extra Goods
         <Culture>
           <CultureType>Culture</CultureType>
         </Culture>
-        <QuestObject />
         <Electrifiable />
       </Values>
     </Asset>
@@ -2312,7 +2419,7 @@ Jakob's Extra Goods
       <Values>
         <Standard>
           <GUID>1500010113</GUID>
-          <Name>tools_reduced_needs</Name>
+          <Name>obsolete_tools_reduced_needs</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
           <InfoDescription>1500010400</InfoDescription>
         </Standard>
@@ -3491,6 +3598,39 @@ Jakob's Extra Goods
     </Item>
   </ModOp>
 
+
+  <!-- # Feedback -->
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010154</Building>
+    </Item>
+    <Item>
+      <Building>1500010121</Building>
+    </Item>
+    <Item>
+      <Building>1500010128</Building>
+    </Item>
+    <Item>
+      <Building>1500010156</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010103</Building>
+    </Item>
+    <Item>
+      <Building>1500010104</Building>
+    </Item>
+    <Item>
+      <Building>1500010107</Building>
+    </Item>
+    <Item>
+      <Building>1500010124</Building>
+    </Item>
+    <Item>
+      <Building>1500010151</Building>
+    </Item>
+  </ModOp>
 
   <!-- # buff targets -->
   <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
