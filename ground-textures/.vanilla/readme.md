@@ -1,0 +1,1 @@
+This folder stores unmodified files included with ${annoRda} to be able to build the mod without them.
