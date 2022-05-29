@@ -10,7 +10,7 @@ Skyscraper-like upgrades for worker residences. Playable without DLCs, but best 
 
 Level 1:
 - 30 workers
-- you need "[Shared] Extra Goods Collection" or DLC Docklands to fill the building.
+- you need "[Shared] Extra Goods Collection" + "[Shared] Ground Textures" or DLC Docklands to fill the building.
 
 Level 2:
 - 40 workers

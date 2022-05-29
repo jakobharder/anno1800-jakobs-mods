@@ -1,0 +1,7 @@
+variant: 
+  source: ${annoRda}\data\graphics\buildings\ornamental\city_props_system\city_props_system_1x1\city_props_system_1x1_01.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data\jakob\decals\maps\simple_stone_plaza_diff.psd
+      NORMAL_ENABLED: 0
+      METALLIC_TEX_ENABLED: 0

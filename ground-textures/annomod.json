@@ -4,36 +4,21 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,dds,prp}"
     },
     {
       "action": "static",
       "pattern": "{data/config/**/*,banner.png,README.md}"
     },
     {
-      "action": "cf7",
-      "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
-    },
-    {
-      "action": "gltf",
-      "pattern": "**/!(propsonly)*.gltf",
-      "lods": 4,
-      "changePath": "rdm/",
-      "animPath": "anim/"
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,rga,height,metal,mask}.png",
+      "lods": 3,
+      "changePath": "maps/"
     },
     {
       "action": "cfgyaml",
       "pattern": "**/*.cfg.yaml"
-    },
-    {
-      "action": "texture",
-      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
-      "lods": 3,
-      "changePath": "maps/"
     },
     {
       "action": "modinfo",
@@ -41,18 +26,18 @@
     }
   ],
   "modinfo": {
-    "Version": "1.8",
-    "ModID": "jakob_extra_goods",
+    "Version": "1.0",
+    "ModID": "jakob_ground_textures",
     "IncompatibleIds": [],
-    "ModDependencies": null,
+    "ModDependencies": [],
     "Category": {
       "English": "Shared"
     },
     "ModName": {
       "Chinese": null,
-      "English": "Extra Goods Collection",
+      "English": "Ground Textures",
       "French": null,
-      "German": "Extra Goods Collection",
+      "German": "Bodentexturen",
       "Italian": null,
       "Japanese": null,
       "Korean": null,
@@ -66,16 +51,7 @@
       "German": "README.md"
     },
     "KnownIssues": null,
-    "DLCDependencies": [
-      {
-        "DLC": "LandOfLions",
-        "Dependant": "atLeastOneRequired"
-      },
-      {
-        "DLC": "Docklands",
-        "Dependant": "atLeastOneRequired"
-      }
-    ],
+    "DLCDependencies": [],
     "CreatorName": "Jakob",
     "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null
