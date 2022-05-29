@@ -1,5 +1,9 @@
 # Extra Goods Collection
 
+Adds production chains like tools and cheese.
+
+You need "[Shared] Ground Textures" as well to play this mod.
+
 ## Notes for Players
 
 You only need this mod if another mod told you so.
@@ -27,9 +31,13 @@ The rest has no DLC dependencies.
 
 ## Changes
 
+## 1.8
+
+- Added modular tools workshop/factory
+
 ## 1.7
 
-- Add fertilizer module to hemp farms
+- Added fertilizer module to hemp farms
 
 ## 1.6
 
