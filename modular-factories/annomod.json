@@ -1,0 +1,74 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.png,README.md}"
+    },
+    {
+      "action": "cf7",
+      "pattern": "**/*.cf7"
+    },
+    {
+      "action": "static",
+      "pattern": "**/icon*.png"
+    },
+    {
+      "action": "gltf",
+      "pattern": "**/!(propsonly)*.gltf",
+      "lods": 4,
+      "changePath": "rdm/",
+      "animPath": "anim/"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
+      "lods": 3,
+      "changePath": "maps/"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0",
+    "ModID": "jakob_modular_factories",
+    "IncompatibleIds": [],
+    "ModDependencies": [ "jakob_ground_textures" ],
+    "Category": {
+      "English": "Gameplay"
+    },
+    "ModName": {
+      "Chinese": null,
+      "English": "Modular Factories",
+      "French": null,
+      "German": "Modular Factories",
+      "Italian": null,
+      "Japanese": null,
+      "Korean": null,
+      "Polish": null,
+      "Russian": null,
+      "Spanish": null,
+      "Taiwanese": null
+    },
+    "Description": {
+      "English": "README.md",
+      "German": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}
