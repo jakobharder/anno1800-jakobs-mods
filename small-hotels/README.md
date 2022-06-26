@@ -22,6 +22,10 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Changes
 
+### 1.3
+
+- Fixed no matching node warning 
+
 ### 1.2
 
 - Added reduced floor skins to small and vanilla hotels
