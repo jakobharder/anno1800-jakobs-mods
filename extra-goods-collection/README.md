@@ -35,6 +35,7 @@ The rest has no DLC dependencies.
 
 - Added modular sewing machine factory as neighbor
 - Fixed infolayer position
+- Chinese translation
 
 ## 1.8
 

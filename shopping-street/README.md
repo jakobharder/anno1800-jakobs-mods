@@ -22,6 +22,7 @@ Note: The buildings do not count as quest objectives.
 ### 1.4
 
 - Polish translation
+- Chinese translation
 
 ### 1.3
 
@@ -39,6 +40,9 @@ Note: The buildings do not count as quest objectives.
 
 ## Translations
 
-Available: English, German, Korean, Polish
+Available: English, German, Korean, Polish, Chinese
 
-Thanks to Aveneger432 for Polish and MSHS for Korean translations!
+Thanks to
+- MSHS for Korean translation
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

@@ -27,6 +27,10 @@ Suits and canned fish factories reduce consumption when close to residences.
 
 ## Changes
 
+### 1.8
+
+- Chinese translation
+
 ### 1.7
 
 - Fixed GU14 maintenance buff
@@ -68,8 +72,11 @@ Original engineers may complain about missing canned fish need, even though they
 
 ## Translations
 
-Available: English, German, Russian
+Available: English, German, Russian, Korean, French, Polish, Chinese
 
-Thanks to redzmey1@nexus for Russian translation!
-
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+Thanks to
+- redzmey1 for Russian translation
+- MSHS for Korean translation
+- @Petritant for French translation
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

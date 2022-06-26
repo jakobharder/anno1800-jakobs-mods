@@ -10,6 +10,10 @@ You need to play with Arctic session to use the small gas power plant.
 
 ## Changes
 
+### 2.6
+
+- Chinese translation
+
 ### 2.5
 
 - NW Oil and Gas Power Plants (when enabled via separate mod)
@@ -33,6 +37,9 @@ You need to play with Arctic session to use the small gas power plant.
 
 ## Translations
 
-Available: English, German (others only for gas power plant so far)
+Available: English, German, Korean, Polish, Chinese
 
-Contact me if you have new or improved translations.
+Thanks to
+- MSHS for Korean translation
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

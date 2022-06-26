@@ -98,3 +98,4 @@ Contact me if you have new or improved translations.
 - MSHS for Korean translation
 - @Petritant for French translation
 - Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

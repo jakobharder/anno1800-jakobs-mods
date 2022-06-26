@@ -10,8 +10,16 @@ You can safely add or remove the mod in existing games.
 
 Needs at least GU 13, no DLC dependencies.
 
-## Translations (skin names only)
+## Changes
+
+### 1.2
+
+- Chinese translation
+
+## Translations
 
 Available: English, German
 
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+Thanks to
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

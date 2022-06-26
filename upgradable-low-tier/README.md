@@ -43,6 +43,10 @@ Known issues:
 
 ## Changes
 
+### 1.6
+
+- Chinese translation
+
 ### 1.5
 
 - Stone pavement is now always street and has proper green overlay.
@@ -70,4 +74,9 @@ Known issues:
 
 Available: all (some of the production from Extra Goods Collection is not translated though)
 
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+Thanks to
+- redzmey1 for Russian translation
+- MSHS for Korean translation
+- @Petritant for French translation
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation
