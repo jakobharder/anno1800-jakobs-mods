@@ -31,6 +31,11 @@ The rest has no DLC dependencies.
 
 ## Changes
 
+## 1.9
+
+- Added modular sewing machine factory as neighbor
+- Fixed infolayer position
+
 ## 1.8
 
 - Added modular tools workshop/factory
