@@ -1,17 +1,19 @@
 # Jakob's Collection - Anno 1800 Mods
 
+The full collection contains more than 300 new visual assets (custom models, variations, skins, ...) and many new gameplay buildings and products.
+
 ## How to use
 
 - Be sure how to use either the [Anno Mod Manager](https://www.nexusmods.com/anno1800/mods/35) or the [Anno Mod Loader](https://github.com/xforce/anno1800-mod-loader) directly.
 - Make sure you always have the latest version of the Anno Mod Loader installed. Mods won't show up after game updates otherwise.
-- Download collection from from [Nexus Mods](https://www.nexusmods.com/anno1800/mods/281)
-- Or download individual mods from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases)
+- Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases) page.
 
 ## Build and Modify Yourself
 
 The mods in this repository are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
+Install the plugin, press `F1` and choose `Build Anno Mod`.
 
-## Jakob's Collection
+## Inidividual Mod Overview
 
 ![](./upgradable-low-tier/banner.png)
 
@@ -90,4 +92,10 @@ Contact me if you have new or improved translations.
 
 ## Special Thanks
 
-@taubenangriff for sharing some assets, @taludas for playtest feedback and redzmey1 for Russian translation!
+- @taubenangriff for sharing some assets
+- @taludas for playtest feedback
+- redzmey1 for Russian translation
+- MSHS for Korean translation
+- @Petritant for French translation
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

@@ -19,6 +19,11 @@ Note: The buildings do not count as quest objectives.
 
 ## Changes
 
+### 1.4
+
+- Polish translation
+- Chinese translation
+
 ### 1.3
 
 - Added end, crossing, T-crossing variants
@@ -35,6 +40,9 @@ Note: The buildings do not count as quest objectives.
 
 ## Translations
 
-Available: English, German
+Available: English, German, Korean, Polish, Chinese
 
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+Thanks to
+- MSHS for Korean translation
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation

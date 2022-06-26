@@ -1,0 +1,24 @@
+<!--
+Production Variations
+-->
+<ModOps>
+  <!-- # Shift+V fix -->
+  <ModOp Type="remove" GUID="1010325" Path="/Values/QuestObject" />
+  
+  <!-- # Fur Dealer Variations -->
+  <ModOp Type="add" GUID="1010325" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+    <AllowChangeDirection>1</AllowChangeDirection>
+  </ModOp>
+  <ModOp Type="add" GUID="1010325" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\variations\fur\fur_b1.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data\jakob\variations\fur\fur_b3.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data\jakob\variations\fur\fur_b5.cfg</Filename>
+    </Item>
+  </ModOp>
+</ModOps>

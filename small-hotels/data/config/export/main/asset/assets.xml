@@ -834,31 +834,6 @@ Tourist District
       <Building>1500010500</Building>
     </Item>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="132779">
-    <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010505</GUID>
-          <Name>fallback to ignore</Name>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1440134300</Building>
-            </Item>
-          </BuildingList>
-        </ConstructionCategory>
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="1440134380,1500010505" Path="/Values/ConstructionCategory/BuildingList[not(Item/Building='1500010529')]/Item[Building='1440134300']">
-    <Item>
-      <Building>1500010529</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" GUID="1500010505" />
-
 
   <!-- # NW Tourism Compatibility -->
   <ModOp Type="addNextSibling" GUID="1500010500">

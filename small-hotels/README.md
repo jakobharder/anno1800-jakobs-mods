@@ -22,6 +22,11 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Changes
 
+### 1.3
+
+- Fixed no matching node warning 
+- Chinese translation
+
 ### 1.2
 
 - Added reduced floor skins to small and vanilla hotels
@@ -29,6 +34,8 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Translations
 
-Available: English, German, Japanese, the rest partially with English placeholders
+Available: English, German, Japanese, Polish, Chinese
 
-I appreciate any translation feedback! Via Anno Modding Discord (Jakob) or Nexus (superjuern).
+Thanks to
+- Aveneger432 for Polish translation
+- darknesswei for Chinese tranlsation
