@@ -12,3 +12,9 @@ Buildings:
 - Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
 - (Tools are part of the "Extra Goods Collection" mod)
 - more will follow ...
+
+## Changes
+
+### 1.1
+
+- Fixed missing models
