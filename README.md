@@ -1,6 +1,6 @@
 # Jakob's Collection - Anno 1800 Mods
 
-The full collection contains more than 300 new visual assets (custom models, variations, skins, ...) and many new gameplay buildings and products.
+New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
 
 ## How to use
 
@@ -10,85 +10,117 @@ The full collection contains more than 300 new visual assets (custom models, var
 
 ## Build and Modify Yourself
 
-The mods in this repository are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
-Install the plugin, press `F1` and choose `Build Anno Mod`.
+Download the [mod sources as zip file](https://github.com/jakobharder/anno-1800-jakobs-mods/archive/refs/heads/main.zip).
 
-## Inidividual Mod Overview
+The mods are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
+Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod`.
 
-![](./upgradable-low-tier/banner.png)
+## Population Tier Mods
 
-[\[Addon\] Upgradable Workers](./upgradable-low-tier/README.md) (increased worker workforce)
+![](./doc/population-tiers.jpg)
 
-- Skyscraper-like upgrades for worker residences.
-- Optional: Basic needs to advance to level 2 from "[Shared] Extra Goods Collection" (already part of download) or "Docklands" DLC.
-- Optional: "Lands of Lions" DLC or "Docklands" DLC to achieve 40 workers (and max out level 2).
+- [\[Addon\] Upgradable Workers](./upgradable-low-tier/README.md)
+  
+  Adds two skyscraper levels to worker with 30 and 40 workers and new needs.
 
-[\[Shared\] Extra Goods Collection](./extra-goods-collection/README.md)
+- [\[Addon\] Pescatarians](./pescatarians/README.md)
 
-- Production chains: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
-- Cafe recipe: hot chocolate
+  Adds Old World population with 3 tiers and new needs. They provide additional farmer workforce also in worker and artisan houses.
 
-![](./pescatarians/banner.png)
+- [\[Shared\] Extra Goods Collection](./extra-goods-collection/README.md)
 
-[\[Addon\] Pescatarians](./pescatarians/README.md) (increased farmer workforce)
+  Adds production chains for Upgradable Workers and Pescatarians: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
 
-- Alternative Old World population providing extra farmer workforce.
-- Needs "[Shared] Extra Goods Collection" (already part of download) or Docklands DLC to provide needs.
-- Needs "Lands of Lions" DLC (or just "Docklands" DLC) to provide some of the Pescatarians Artisans basic needs.
-- Optional: residences only change their visuals when played with "[Misc] Colored Roofs, Residences".
+## Public Building Variation Mods
 
-![](./nates-windmill/banner.png)
-![](./small-gas-power-plant/banner.png)
-![](./biogas-plant/banner.png)
+![](./doc/public-variations.jpg)
 
-[\[Gameplay\] Nate's Windmill](./nates-windmill/README.md)
+- [\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/README.md)
+  (separate build icon)
 
-[\[Gameplay\] Small Power Plants](./small-gas-power-plant/README.md) 
+  Adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
 
-[\[Gameplay\] Small Power Plants, Biogas](./biogas-plant/README.md)
+- [\[Gameplay\] Commercial Street](./shopping-street/README.md)
+  (seprate build icon)
 
-- Wind, coal, oil and gas power plants with reduced cost and coverage.
-- Process waste from cattle and pig farms into gas.
+  Adds small malls and restaurants fitting nicely into engineer and investor blocks. 
 
-![](./diagonal-residences/banner.png)
+## Industrial Variation Mods
 
-[\[Misc\] Diagonal Residences](./diagonal-residences/README.md)
+![](./doc/industrial-variations.jpg)
 
-[\[Misc\] Colored Roofs](./residence-skin-pack/README.md) (GPU memory friendly)
+- [\[Misc\] Production Variations](./production-variations/README.md)
+  (Shift+V variations)
 
-- Diagonal residences.
-  Engineers only currently.
+  Adds variations to vanilla production buildings.
+
+- [\[Gameplay\] Modular Factories](./modular-factories/README.md)
+  (separate build icon)
+
+  Adds factory variants of vanilla productions adjusting their visuals when built in blocks.
+
+  Tools factory from `Extra Goods` is already modular.
+
+- [\[Misc\] Docklands Gate](./docklands/README.md)
+  (Docklands module)
+
+  Adds a gate that connects modules across streets to keep atractiveness bonus.
+
+  Available in the New World when played with [New World Docklands](https://www.nexusmods.com/anno1800/mods/215).
+
+## Electricity Mods
+
+![](./doc/electricity.jpg)
+
+- [\[Gameplay\] Nate's Windmill](./nates-windmill/README.md)
+
+  Adds a windmill with small range but infinite power.
+
+- [\[Gameplay\] Small Power Plants](./small-gas-power-plant/README.md) 
+
+  Adds coal, oil and gas power plants with reduced cost and coverage.
+
+  Coal power is free when built next to a coal mine.
+
+- [\[Gameplay\] Small Power Plants, Biogas](./biogas-plant/README.md)
+
+  Adds production to process dung from animal farms into gas.
+
+- [\[Gameplay\] Small Power Plants, New World](./small-power-new-world/README.md)
+
+  Enables `Windmill` and `Small Power Plants` mods in the New World.
+
+## Residential Variation Mods
+
+![](./doc/residential-variations.jpg)
+
+- [\[Misc\] Diagonal Residences](./diagonal-residences/README.md)
+  (separate build icon)
+
+  Adds diagonal residences (engineers only currently).
+
   You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
-- Various roof colors as paintbrush skin for Artisans and Engineers.
-  Other tiers may follow at some point in time.
-- The roofs are colored in real time.
-  That leads to better performance due to less used texture memory.
 
-![](./small-hotels/banner.png)
+- [\[Gameplay\] Small Hotels](./small-hotels/README.md)
+  (separate build icon)
 
-[\[Gameplay\] Small Hotels](./small-hotels/README.md)
+  Adds a small hotel with 4 variations and many skins, as well as skins for the original hotel.
 
-- Buildings: small hotel with 4 variations and skins.
-- Skins: vanilla hotel
+  Available in the New World when played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
 
-![](./new-town-hall-buildings/banner.png)
+- [\[Misc\] Colored Roofs](./residence-skin-pack/README.md)
+  (paintbrush skins)
 
-[\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/README.md)
+  Adds paintbrush skins for Artisans and Engineers (also diagonal).
 
-- Building: Red Town Hall with 3 Shift+V variations (needs "Lands of Lions" DLC)
-- Building: New Town Hall with roof skins (needs "High Life" DLC)
-- Building: City Hall Tower with 2 Shift+V variations (needs "High Life" DLC)
-
-[\[Misc\] Docklands Gate](./docklands/README.md)
-
-- Docklands module: A gate that connects modules across streets to keep atractiveness bonus.
+  Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
 
 ## Translations
 
-Available: English, German, Russian.
-Other translations are mostly there but incomplete.
+I appreciate feedback if you encounter wrong or missing translations.
+Easiest way to contact is @jakob in the modding discord (or Annoverse).
 
-Contact me if you have new or improved translations.
+Available: English, German, (Russian, Korean, French, Polish, Chinese).
 
 ## Special Thanks
 
