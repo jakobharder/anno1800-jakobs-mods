@@ -7,7 +7,7 @@ AI will also build these variations.
 Buildings:
 
 - Fur Dealer: 3 new variations
-- Bakery: 2 new variations
+- Bakery: 2 new variations (+ paintbrush skin with stone pavement)
 - more will follow ...
 
 ## Notes

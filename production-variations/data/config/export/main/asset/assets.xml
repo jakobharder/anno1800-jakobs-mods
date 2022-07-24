@@ -36,4 +36,45 @@ Production Variations
       <Filename>data\jakob\variations\bakery\bakery_b2.cfg</Filename>
     </Item>
   </ModOp>
+  <!-- add ground skin -->
+  <ModOp GUID="1010291" Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010320</GUID>
+          <Name>bakery ground skind</Name>
+          <IconFilename>data/jakob/ui/icons/icon_tier03_colorful.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010320</SkinName>
+          <SkinDescription>1500010320</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\variations\bakery\bakery_b0_altg.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\variations\bakery\bakery_b1_altg.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\variations\bakery\bakery_b2_altg.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID="1010291" Type="add" Path="/Values/Object">
+    <Skins>
+      <SkinList>
+        <Item>
+          <SkinAssetGuid>1500010320</SkinAssetGuid>
+        </Item>
+      </SkinList>
+    </Skins>
+  </ModOp>
 </ModOps>
