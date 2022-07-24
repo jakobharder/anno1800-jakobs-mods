@@ -4,6 +4,8 @@ Production Variations
 <ModOps>
   <!-- # Shift+V fix -->
   <ModOp Type="remove" GUID="1010325" Path="/Values/QuestObject" />
+  <ModOp Type="remove" GUID="1010291" Path="/Values/QuestObject" />
+  <ModOp Type="remove" GUID="1010295" Path="/Values/QuestObject" />
   
   <!-- # Fur Dealer Variations -->
   <ModOp Type="add" GUID="1010325" Path="/Values/Building">
@@ -19,6 +21,75 @@ Production Variations
     </Item>
     <Item>
       <Filename>data\jakob\variations\fur\fur_b5.cfg</Filename>
+    </Item>
+  </ModOp>
+
+  <!-- # Bakery Variations -->
+  <ModOp Type="add" GUID="1010291" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+    <AllowChangeDirection>1</AllowChangeDirection>
+  </ModOp>
+  <ModOp Type="add" GUID="1010291" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\variations\bakery\bakery_b1.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data\jakob\variations\bakery\bakery_b2.cfg</Filename>
+    </Item>
+  </ModOp>
+  <!-- add ground skin -->
+  <ModOp GUID="1010291" Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010320</GUID>
+          <Name>bakery ground skind</Name>
+          <IconFilename>data/jakob/ui/icons/icon_tier03_colorful.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010320</SkinName>
+          <SkinDescription>1500010320</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\variations\bakery\bakery_b0_altg.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\variations\bakery\bakery_b1_altg.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\variations\bakery\bakery_b2_altg.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID="1010291" Type="add" Path="/Values/Object">
+    <Skins>
+      <SkinList>
+        <Item>
+          <SkinAssetGuid>1500010320</SkinAssetGuid>
+        </Item>
+      </SkinList>
+    </Skins>
+  </ModOp>
+
+  <!-- # Cannery Variations -->
+  <ModOp Type="add" GUID="1010295" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+    <AllowChangeDirection>1</AllowChangeDirection>
+  </ModOp>
+  <ModOp Type="add" GUID="1010295" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\variations\cannery\cannery_b1.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data\jakob\variations\cannery\cannery_b2.cfg</Filename>
     </Item>
   </ModOp>
 </ModOps>
