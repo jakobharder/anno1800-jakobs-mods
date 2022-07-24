@@ -5,6 +5,7 @@ Production Variations
   <!-- # Shift+V fix -->
   <ModOp Type="remove" GUID="1010325" Path="/Values/QuestObject" />
   <ModOp Type="remove" GUID="1010291" Path="/Values/QuestObject" />
+  <ModOp Type="remove" GUID="1010295" Path="/Values/QuestObject" />
   
   <!-- # Fur Dealer Variations -->
   <ModOp Type="add" GUID="1010325" Path="/Values/Building">
@@ -76,5 +77,19 @@ Production Variations
         </Item>
       </SkinList>
     </Skins>
+  </ModOp>
+
+  <!-- # Cannery Variations -->
+  <ModOp Type="add" GUID="1010295" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+    <AllowChangeDirection>1</AllowChangeDirection>
+  </ModOp>
+  <ModOp Type="add" GUID="1010295" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\variations\cannery\cannery_b1.cfg</Filename>
+    </Item>
+    <Item>
+      <Filename>data\jakob\variations\cannery\cannery_b2.cfg</Filename>
+    </Item>
   </ModOp>
 </ModOps>

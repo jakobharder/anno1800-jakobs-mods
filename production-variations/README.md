@@ -8,6 +8,7 @@ Buildings:
 
 - Fur Dealer: 3 new variations
 - Bakery: 2 new variations (+ paintbrush skin with stone pavement)
+- Cannery: 2 new variations
 - more will follow ...
 
 ## Notes
