@@ -130,4 +130,4 @@ Available: English, German, (Russian, Korean, French, Polish, Chinese).
 - MSHS for Korean translation
 - @Petritant for French translation
 - Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+- darknesswei for Chinese translation
