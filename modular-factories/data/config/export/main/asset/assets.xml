@@ -1,10 +1,14 @@
 <!--
-Production Variations
+Modular Factories
 -->
 <ModOps>
-  <!-- # Shift+V fix -->
-  <ModOp Type="remove" GUID="1010325" Path="/Values/QuestObject" />
-  
+  <!-- # boostable buildings -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010600</Factory>
+    </Item>
+  </ModOp>
+
   <!-- # Sewing Machines Variations -->
   <ModOp Type="addNextSibling" GUID="1010284">
     <Asset>
