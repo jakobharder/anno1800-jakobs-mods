@@ -9,7 +9,7 @@ AI will also build these variations.
 Buildings:
 
 - Fur Dealer: 3 new variations
-- Bakery: 2 new variations (+ paintbrush skin with stone pavement)
+- Bakery: 2 new variations (+ Shift+G for stone pavement)
 - Cannery: 2 new variations
 - more will follow ...
 
@@ -25,6 +25,7 @@ None have been observed so far.
 ### 1.2
 
 - Fixed mirrored bakery sign
+- Changed stone pavement from skin to Shift+G due to annoying paintbrush button position
 
 ### 1.1
 
