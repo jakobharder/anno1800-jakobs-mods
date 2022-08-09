@@ -1,6 +1,7 @@
 out/**
 node_modules/**
 **.modcache/
-# Only original textures exported via Blender include the lod ending _0
+# Only original textures exported via Blender include the lod ending _0.png, _0-1.png...
 # Custom textures never include that ending. There's no need to save them.
 **/*_0.png
+**/*_0-?.png
