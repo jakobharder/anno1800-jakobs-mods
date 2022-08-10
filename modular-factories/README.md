@@ -15,6 +15,11 @@ Buildings:
 
 ## Changes
 
+### 1.2
+
+- Added Sewing Machines to boostable factories menu
+- Added LODs
+
 ### 1.1
 
 - Fixed missing models

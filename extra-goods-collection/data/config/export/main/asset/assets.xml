@@ -1030,7 +1030,6 @@ Jakob's Extra Goods
         <Constructable />
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410071</DLCDependency>
         </Locked>
         <SoundEmitter>
           <ActiveSounds>
@@ -1052,7 +1051,8 @@ Jakob's Extra Goods
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
-        <BuffFactory>
+        <!-- disable BuffFactory due to double factory side effect -->
+        <!-- <BuffFactory>
           <ProductionBuffs>
             <Item>
               <ProductivityBuff>1500010183</ProductivityBuff>
@@ -1062,7 +1062,7 @@ Jakob's Extra Goods
           </ProductionBuffs>
           <ProductionBuffScope>Radius</ProductionBuffScope>
           <ProductionBuffDistance>15</ProductionBuffDistance>
-        </BuffFactory>
+        </BuffFactory> -->
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -1089,7 +1089,7 @@ Jakob's Extra Goods
               <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>120</CycleTime>
+          <CycleTime>60</CycleTime>
           <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
@@ -1159,7 +1159,6 @@ Jakob's Extra Goods
         </ProductionChain>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410071</DLCDependency>
         </Locked>
         <Text>
           <LocaText>
@@ -1658,7 +1657,6 @@ Jakob's Extra Goods
         </Maintenance>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410071</DLCDependency>
         </Locked>
       </Values>
     </Asset>
@@ -1792,7 +1790,6 @@ Jakob's Extra Goods
         <Constructable />
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410071</DLCDependency>
         </Locked>
         <SoundEmitter>
           <ActiveSounds>
@@ -1807,7 +1804,8 @@ Jakob's Extra Goods
         <FeedbackController />
         <Infolayer />
         <UpgradeList />
-        <BuffFactory>
+        <!-- disable BuffFactory due to doubled factory side effect -->
+        <!-- <BuffFactory>
           <ProductionBuffs>
             <Item>
               <ProductivityBuff>1500010184</ProductivityBuff>
@@ -1817,7 +1815,7 @@ Jakob's Extra Goods
           </ProductionBuffs>
           <ProductionBuffScope>Radius</ProductionBuffScope>
           <ProductionBuffDistance>15</ProductionBuffDistance>
-        </BuffFactory>
+        </BuffFactory> -->
         <Factory7 />
         <FactoryBase>
           <FactoryInputs>
@@ -1839,7 +1837,7 @@ Jakob's Extra Goods
               <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>60</CycleTime>
+          <CycleTime>30</CycleTime>
           <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
@@ -1909,7 +1907,6 @@ Jakob's Extra Goods
         </ProductionChain>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410071</DLCDependency>
         </Locked>
         <Text>
           <LocaText>

@@ -8,7 +8,10 @@ You need to relocate if you want to change an existing building.
 Skins need at least GU 13.
 No DLC dependencies.
 
-You might be interested in [Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
+You might be interested in the following mods as well: 
+- [Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164)
+- `[Ornamental] Plaza street` from [Spice it Up](https://www.nexusmods.com/anno1800/mods/5)
+
 
 Known issues:
 - People can go into a corners of the buildings in some situations.
@@ -32,6 +35,8 @@ Known issues:
 
 ## Translations (skin names only)
 
-Available: English, German
+Available: English, German, Polish, Chinese
 
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+Thanks go to:
+- Aveneger432 for Polish translation
+- darknesswei for Chinese translation

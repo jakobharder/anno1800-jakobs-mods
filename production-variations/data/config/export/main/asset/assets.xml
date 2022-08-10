@@ -28,7 +28,16 @@ Production Variations
   <ModOp Type="add" GUID="1010291" Path="/Values/Building">
     <AllowChangeVariation>1</AllowChangeVariation>
     <AllowChangeDirection>1</AllowChangeDirection>
+    <!-- enable asphalt -->
+    <AlternativeGrassColorAvailable>1</AlternativeGrassColorAvailable>
   </ModOp>
+  <!-- enable Shift+G on original without replacing other mods -->
+  <ModOp Type="replace" GUID="1010291" Path="/Values/Object/Variations/Item[Filename='data/graphics/buildings/production/food_01/food_01.cfg']">
+    <Item>
+      <Filename>data\jakob\variations\bakery\bakery_b0.cfg</Filename>
+    </Item>
+  </ModOp>
+  <!-- add new variations -->
   <ModOp Type="add" GUID="1010291" Path="/Values/Object/Variations">
     <Item>
       <Filename>data\jakob\variations\bakery\bakery_b1.cfg</Filename>
@@ -38,7 +47,7 @@ Production Variations
     </Item>
   </ModOp>
   <!-- add ground skin -->
-  <ModOp GUID="1010291" Type="addNextSibling">
+  <!-- <ModOp GUID="1010291" Type="addNextSibling">
     <Asset>
       <Template>Skin</Template>
       <Values>
@@ -68,8 +77,8 @@ Production Variations
         <Text />
       </Values>
     </Asset>
-  </ModOp>
-  <ModOp GUID="1010291" Type="add" Path="/Values/Object">
+  </ModOp> -->
+  <!-- <ModOp GUID="1010291" Type="add" Path="/Values/Object">
     <Skins>
       <SkinList>
         <Item>
@@ -77,7 +86,7 @@ Production Variations
         </Item>
       </SkinList>
     </Skins>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # Cannery Variations -->
   <ModOp Type="add" GUID="1010295" Path="/Values/Building">

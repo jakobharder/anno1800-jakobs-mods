@@ -4,30 +4,34 @@
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
 
-Skyscraper-like upgrades for worker residences. Playable without DLCs, but best with Lands of Lions.
+Skyscraper-like upgrades for worker residences.
+
+## Requirements
+
+You need DLC `High Life` activated to play this mod.
+You also need the mod `[Shared] Extra Goods Collection` or DLC `Docklands`
 
 ## Workers
 
-Level 1:
-- 30 workers
-- you need "[Shared] Extra Goods Collection" + "[Shared] Ground Textures" or DLC Docklands to fill the building.
-
-Level 2:
-- 40 workers
-- you need DLC Lands of Lion or DLC Docklands to fill the building.
+- Level 1: 30 workers
+- Level 2: 40 workers
+- Level 3: coming soon
 
 You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
 
+## Artisans
+
+Coming soon.
+
 ## Farmers & Artisans
 
-You need more dense farmer buildings? Have a look at "[Addon] Pescatarians". Their Artisans provide +10 farmer workforce per house.
-
-I may do upgradable Artisans in the future.
+You need more dense farmer buildings? Have a look at `[Addon] Pescatarians`.
+Their Artisans provide +10 farmer workforce per house.
 
 ## Stone Pavement
 
+- Counts as street
 - Variations of City Lights Pack ornaments with a fitting ground texture are included.
-- Counts as street when used together with [Spice it Up](https://www.nexusmods.com/anno1800/mods/5) "[Ornamental] Plaza Streets"
 
 ## Notes
 

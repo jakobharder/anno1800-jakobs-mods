@@ -2,7 +2,7 @@
 
 Adds production chains like tools and cheese.
 
-You need "[Shared] Ground Textures" as well to play this mod.
+You need `[Shared] Ground Textures` as well to play this mod.
 
 ## Notes for Players
 
@@ -30,6 +30,11 @@ Make sure to remind the players if you use those goods.
 The rest has no DLC dependencies.
 
 ## Changes
+
+## 1.10
+
+- Added people to dairy
+- Removed nearby production buff from suits and canned fish production
 
 ## 1.9
 
