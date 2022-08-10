@@ -8,13 +8,6 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 - Make sure you always have the latest version of the Anno Mod Loader installed. Mods won't show up after game updates otherwise.
 - Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases) page.
 
-## Build and Modify Yourself
-
-Download the [mod sources as zip file](https://github.com/jakobharder/anno-1800-jakobs-mods/archive/refs/heads/main.zip).
-
-The mods are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
-Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod`.
-
 ## Changes
 
 Versions are always kept compatible, except when game updates force me to do differently.
@@ -122,6 +115,13 @@ See full [changelog](./CHANGELOG.md).
   Adds paintbrush skins for Artisans and Engineers (also diagonal).
 
   Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
+
+## Build and Modify Yourself
+
+Download the [mod sources as zip file](https://github.com/jakobharder/anno-1800-jakobs-mods/archive/refs/heads/main.zip).
+
+The mods are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
+Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod`.
 
 ## Translations
 
