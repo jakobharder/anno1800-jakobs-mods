@@ -15,6 +15,14 @@ Download the [mod sources as zip file](https://github.com/jakobharder/anno-1800-
 The mods are made with the [Modding Tools for Anno](https://marketplace.visualstudio.com/items?itemName=JakobHarder.anno-modding-tools) extension for [VS Code](https://code.visualstudio.com/).
 Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod`.
 
+## Changes
+
+Versions are always kept compatible, except when game updates force me to do differently.
+
+Rebalancing of productions may only happen when the first version number changes, but they are still save to update in existing savegames.
+
+See full [changelog](./CHANGELOG.md).
+
 ## Population Tier Mods
 
 ![](./doc/population-tiers.jpg)
