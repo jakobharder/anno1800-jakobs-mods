@@ -1,0 +1,14 @@
+variant: 
+  source: ../artisan_c4.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="left"]/Materials/Config[Name="artisan_wall"]
+      cModelDiffTex: data\jakob\buildings\residence\artisan_scraper\maps\artisan_wall_green_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="restaurant"]
+      cModelDiffTex: data\jakob\buildings\residence\artisan_scraper\maps\artisan_restaurant2_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="artisan_roof"]
+      cDiffuseColor.r: 1.0
+      cDiffuseColor.g: 1.0
+      cDiffuseColor.b: 1.0
+      cModelDiffTex: data\jakob\buildings\residence\artisan_scraper\maps\artisan_roof2_diff.psd
+      cNormalDiffTex: data\jakob\buildings\residence\artisan_scraper\maps\artisan_roof2_norm.psd
+      cMetalDiffTex: data\jakob\buildings\residence\artisan_scraper\maps\artisan_roof2_metal.psd

@@ -20,7 +20,7 @@
     },
     {
       "action": "texture",
-      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
+      "pattern": "**/*_{diff,norm,height,metal,mask,rga,r_a,r_a+b}.png",
       "lods": 3,
       "changePath": "maps/"
     },
@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.6",
+    "Version": "2.0",
     "ModID": "jakob_upgradable_low_tier",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods" ],
