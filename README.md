@@ -22,7 +22,8 @@ See full [changelog](./CHANGELOG.md).
 
 - [\[Addon\] Upgradable Workers](./upgradable-low-tier/README.md)
   
-  Adds two skyscraper levels to worker with 30 and 40 workers and new needs.
+  Adds "skyscraper" levels to workers and artisans with more residents and new needs.
+
 
 - [\[Addon\] Pescatarians](./pescatarians/README.md)
 
