@@ -753,21 +753,18 @@ New Town Hall
     </Item>
   </ModOp>
 
-  <!-- # Construction Menu -->
+  <!-- # Build Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
       <Template>ConstructionCategory</Template>
       <Values>
         <Standard>
           <GUID>1500010050</GUID>
-          <Name>townhall_menu</Name>
+          <Name>Build menu: Administration</Name>
           <IconFilename>data\jakob\ui\icons\icon_townhall_menub.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>
-            <Item>
-              <Building>1500010215</Building>
-            </Item>
             <Item>
               <Building>1500010051</Building>
             </Item>
