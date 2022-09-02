@@ -1,51 +1,57 @@
-# Upgradable Workers
+# Upgradable Workers (and Artisans)
 
 ![](./banner.png)
 
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
-
-Skyscraper-like upgrades for worker residences.
+Skyscraper-like upgrades for worker and artisan residences.
 
 ## Requirements
 
-You need DLC `High Life` activated to play this mod.
-You also need the mod `[Shared] Extra Goods Collection` or DLC `Docklands`
+- Activated DLC `High Life` (the game requires you to activate latest when you load a savegame)
+- `[Shared] Ground Textures`
+- Either `[Shared] Extra Goods Collection` or DLC `Docklands`
 
-## Workers
+## Buildings
+
+You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
+
+Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.
+
+There is no cross progression from upgraded residences to their next population tier.
+You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
+
+### Workers
 
 - Level 1: 30 workers
 - Level 2: 40 workers
 - Level 3: coming soon
 
-You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
+### Artisans
 
-## Artisans
+- Level 1: 50 artisans
+- Level 2: 70 artisans
 
-Coming soon.
+### Farmers
 
-## Farmers & Artisans
+- `[Addon] Pescatarians` workers and artisans provide extra farmer workforce.
 
-You need more dense farmer buildings? Have a look at `[Addon] Pescatarians`.
-Their Artisans provide +10 farmer workforce per house.
+### Stone Pavement
 
-## Stone Pavement
+- Also function as street.
+- Adds Shift+V variations with this ground to some of the City Lights Pack ornaments.
 
-- Counts as street
-- Variations of City Lights Pack ornaments with a fitting ground texture are included.
+## Products
 
-## Notes
+All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods Collection`.
 
-- There is no cross progression from upgraded residences to their next population tier.
-  You have to downgrade to normal residences first - just like the skyscrapers handle it.
-- Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.
-- Using this mod will force you to activate skyscraper DLC in your savegame if you started without.
+- Canned Fish
+- Cheese
+- Suits
+- Tools
 
-Known issues:
+## Known Issues
 
 - (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
 - The arrows for skyscraper update doesn't show sometimes. But the building will still upgrade if you click anyway.
-- The game wrongfully shows missing cheese for normal worker residences when all needs are fulfilled but people have not moved in yet. It's just an icon, nothing is missing.
-
 
 ## Changes
 
@@ -55,11 +61,11 @@ Known issues:
 
 ## Translations
 
-Available: all (some of the production from Extra Goods Collection is not translated though)
-
 Thanks to
 - redzmey1 for Russian translation
 - MSHS for Korean translation
 - @Petritant for French translation
 - Aveneger432 for Polish translation
 - darknesswei for Chinese tranlsation
+
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
