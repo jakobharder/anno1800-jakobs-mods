@@ -1,23 +1,37 @@
-# Shopping Street
+# Commercial Street
 
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
+![](./banner.png)
 
-Small mall buildings that fit well into residential areas.
-They function and unlock the same as the normal mall buildings.
+Malls and restaurants fitting into the 3x3 residential areas.
 
-Buildings:
-- Department Store
-- Furniture Store
-- Drug Store
-- Store Warehouse as an alternative warehouse
-- Ornamental versions of the stores
+## Requirements
 
-Skins:
-- Warehouse and ornamental store have skins for all 3 mall types
+- DLC `The High Life` (optional: to get malls)
+- DLC `Tourist Season` (optional: to get restaurants)
+
+## Buildings
+
+Buildings function and unlock the same as their normal counterparts, but with decreased range.
 
 Note: The buildings do not count as quest objectives.
 
+### Malls
+
+- Department, Furniture and Drug Store
+- Store Warehouse (+ skins for all mall types)
+- Ornamental mall (+ skins for all mall types)
+
+### Restaurants
+
+- Courtyard Restaurant
+- Cafe and Bar are TBD
+
 ## Changes
+
+### 1.5
+
+- Fixed restaurant townhall buffs
+- Visual improvements
 
 ### 1.4
 
@@ -46,3 +60,5 @@ Thanks to
 - MSHS for Korean translation
 - Aveneger432 for Polish translation
 - darknesswei for Chinese tranlsation
+
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

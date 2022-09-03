@@ -2465,6 +2465,18 @@ Minimall
       <Building>1500010517</Building>
     </Item>
   </ModOp>
+  <!-- buff target pools -->
+  <ModOp Type="add" GUID="194022" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010517</GUID>
+    </Item>
+  </ModOp>
+  <!-- feedback pool -->
+  <ModOp Type="add" GUID="142998" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010517</Building>
+    </Item>
+  </ModOp>
 
   <!-- # neighbors, target pools, ... -->
   <!-- add neighbor influences -->
