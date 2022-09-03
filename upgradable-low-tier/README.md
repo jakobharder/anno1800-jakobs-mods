@@ -6,9 +6,9 @@ Skyscraper-like upgrades for worker and artisan residences.
 
 ## Requirements
 
-- Activated DLC `High Life` (the game requires you to activate latest when you load a savegame)
-- `[Shared] Ground Textures`
-- Either `[Shared] Extra Goods Collection` or DLC `Docklands`
+- Activated DLC `The High Life` (the game requires you to activate latest when you load a savegame)
+- Mod `[Shared] Ground Textures`
+- Either Mod `[Shared] Extra Goods Collection` or DLC `Docklands`
 
 ## Buildings
 
@@ -23,7 +23,6 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 
 - Level 1: 30 workers
 - Level 2: 40 workers
-- Level 3: coming soon
 
 ### Artisans
 
@@ -51,7 +50,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 ## Known Issues
 
 - (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
-- The arrows for skyscraper update doesn't show sometimes. But the building will still upgrade if you click anyway.
+- The arrows for skyscraper upgrade don't show sometimes. The buildings will upgrade if you click anyway.
 
 ## Changes
 
@@ -60,6 +59,8 @@ All products are available as Dockland imports, or can be produced with `[Shared
 - Added Artisans 🥳
 
 ## Translations
+
+Available: all
 
 Thanks to
 - redzmey1 for Russian translation
