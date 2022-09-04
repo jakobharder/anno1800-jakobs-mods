@@ -4,7 +4,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Population Tier Mods
 
-![](./doc/population-tiers.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/population-tiers.jpg)
 
 - [\[Addon\] Upgradable Workers](./upgradable-low-tier/README.md)
   
@@ -21,7 +21,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Public Building Variation Mods
 
-![](./doc/public-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/public-variations.jpg)
 
 - [\[Misc\] New Town Hall, as Buidings](./new-town-hall-buildings/README.md)
   (separate build icon)
@@ -35,7 +35,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Industrial Variation Mods
 
-![](./doc/industrial-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/industrial-variations.jpg)
 
 - [\[Misc\] Production Variations](./production-variations/README.md)
   (Shift+V variations)
@@ -58,7 +58,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Electricity Mods
 
-![](./doc/electricity.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/electricity.jpg)
 
 - [\[Gameplay\] Nate's Windmill](./nates-windmill/README.md)
 
@@ -80,7 +80,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Residential Variation Mods
 
-![](./doc/residential-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/residential-variations.jpg)
 
 - [\[Misc\] Diagonal Residences](./diagonal-residences/README.md)
   (separate build icon)
