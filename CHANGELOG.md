@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.14 - Quality improvements
+
+### Changed
+
+- Upgradable Workers: fixed buff issues
+- Upgradable Workers: visual + performance improvements
+- Commercial Street: visual improvements
+
 ## 4.13 - Upgradable Artisans
 
 ### Changed

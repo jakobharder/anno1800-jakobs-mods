@@ -54,6 +54,11 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.1
+
+- Fixed buff issues
+- Visual + performance improvement
+
 ### 2.0
 
 - Added Artisans 🥳

@@ -103,7 +103,15 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
   Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
 
-## Changes
+## Changelog
+
+### 4.14 - Quality improvements
+
+#### Changed
+
+- Upgradable Workers: fixed buff issues
+- Upgradable Workers: visual + performance improvements
+- Commercial Street: visual improvements
 
 ### 4.13 - Upgradable Artisans
 
