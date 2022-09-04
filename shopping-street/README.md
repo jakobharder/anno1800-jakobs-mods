@@ -6,6 +6,7 @@ Malls and restaurants fitting into the 3x3 residential areas.
 
 ## Requirements
 
+- Mod `[Shared] Ground Textures`
 - DLC `The High Life` (optional: to get malls)
 - DLC `Tourist Season` (optional: to get restaurants)
 
