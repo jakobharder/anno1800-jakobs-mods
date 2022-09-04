@@ -2,6 +2,8 @@
 
 ## 4.13 - Upgradable Artisans
 
+### Changed
+
 - Upgradable Workers: added Artisans
 - Extra Goods: Dairy got Shift+G alternate ground texture
 
