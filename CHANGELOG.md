@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.14.1 - Bugfix
+
+- Small Power Plants: fixed error from modloader logs (electrical sparks)
+
 ## 4.14 - Quality improvements
 
 ### Changed
