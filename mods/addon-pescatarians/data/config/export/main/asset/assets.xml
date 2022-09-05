@@ -1,7 +1,7 @@
 <!-- 
   Pescatarian
 
-  Don't use GUIDs: 1500010117
+  Don't use GUIDs: 1500010117, 1500010149
 -->
 
 <ModOps>
@@ -125,284 +125,215 @@
     </Item>
   </ModOp>
 
-  <!-- # Population: Farmers to Artisans -->
-  <ModOp GUID='15000000' Type="addNextSibling">
+  <!-- # Population: Pescatarians -->
+  <ModOp GUID="15000004" Type="addNextSibling">
     <Asset>
       <Template>PopulationLevel7</Template>
       <Values>
         <Standard>
-          <GUID>601382</GUID> <!-- 1500010130 -->
-          <Name>Pescatarian Farmer</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_farmer_204.png</IconFilename>
-        </Standard>
-        <PopulationLevel7>
-          <PopulationInputs>
-            <Item>
-              <Product>1500010119</Product>
-              <SupplyWeight>4</SupplyWeight>
-            </Item>
-            <Item>
-              <Product>1500010118</Product>
-              <HappinessValue>8</HappinessValue>
-            </Item>
-            <Item>
-              <Product>1010200</Product>
-              <Amount>0.0002083</Amount>
-              <SupplyWeight>3</SupplyWeight>
-              <MoneyValue>10</MoneyValue>
-              <FullWeightPopulationCount>100</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>49</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1010195</Product>
-              <Amount>0.0004166</Amount>
-              <SupplyWeight>3</SupplyWeight>
-              <MoneyValue>10</MoneyValue>
-              <FullWeightPopulationCount>150</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>99</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1500010150</Product>
-              <Amount>0.0002083</Amount>
-              <HappinessValue>12</HappinessValue>
-              <MoneyValue>20</MoneyValue>
-              <FullWeightPopulationCount>200</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>99</NoWeightPopulationCount> -->
-            </Item>
-          </PopulationInputs>
-          <DefaultResidence>1500010142</DefaultResidence>
-          <PopulationOutputs>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>100</Amount>
-            </Item>
-          </PopulationOutputs>
-          <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
-          <PopulationParticipant>Resident_tier01</PopulationParticipant>
-          <PopulationAtWorkParticipant>Resident_tier01_atWork</PopulationAtWorkParticipant>
-          <MoodText>
-            <Angry>
-              <Text>19748</Text>
-            </Angry>
-            <Unhappy>
-              <Text>19749</Text>
-            </Unhappy>
-            <Neutral>
-              <Text>19750</Text>
-            </Neutral>
-            <Happy>
-              <Text>19751</Text>
-            </Happy>
-            <Euphoric>
-              <Text>19752</Text>
-            </Euphoric>
-          </MoodText>
-        </PopulationLevel7>
-        <Locked />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>PopulationLevel7</Template>
-      <Values>
-        <Standard>
-          <GUID>601383</GUID> <!-- 1500010131 -->
-          <Name>Pescatarian Worker</Name>
+          <GUID>601382</GUID> <!-- 1500010806 -->
+          <!-- 
+            Use GUID before any vanila population for the following reasons:
+            - GUID is used for island population order, marketplace order
+            - the last population providing a workforce is used for working conditions menu
+          -->
+          <Name>Pescatarian Artisan</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_anarchist_403.png</IconFilename>
         </Standard>
         <PopulationLevel7>
           <PopulationInputs>
             <Item>
               <Product>1500010119</Product>
-              <SupplyWeight>4</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
             </Item>
             <Item>
               <Product>1500010118</Product>
               <HappinessValue>2</HappinessValue>
             </Item>
             <Item>
-              <Product>1010195</Product>
-              <Amount>0.0002083</Amount>
-              <SupplyWeight>2</SupplyWeight>
-              <MoneyValue>10</MoneyValue>
-            </Item>
-            <Item>
               <Product>1010200</Product>
               <Amount>0.0004166</Amount>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <MoneyValue>10</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010142</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- <Item>
+              <Product>1440005</Product>
+              <Amount>0.0004166</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <MoneyValue>10</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010142</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item> -->
+            <Item>
+              <Product>1010195</Product>
+              <Amount>0.0004166</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <MoneyValue>10</MoneyValue>
+              <FullWeightPopulationCount>150</FullWeightPopulationCount>
+              <!-- <NoWeightPopulationCount>99</NoWeightPopulationCount> -->
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010142</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010150</Product>
               <Amount>0.0002083</Amount>
               <HappinessValue>5</HappinessValue>
               <MoneyValue>20</MoneyValue>
-            </Item>
-            <Item>
-              <Product>1500010102</Product>
-              <Amount>0.0004166</Amount>
-              <SupplyWeight>3</SupplyWeight>
-              <MoneyValue>20</MoneyValue>
-              <FullWeightPopulationCount>150</FullWeightPopulationCount>
-            </Item>
-            <Item>
-              <Product>1010213</Product>
-              <Amount>0.0001515</Amount>
-              <SupplyWeight>2</SupplyWeight>
-              <MoneyValue>20</MoneyValue>
-              <FullWeightPopulationCount>300</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>149</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1500010106</Product>
-              <Amount>0.000138889</Amount>
-              <SupplyWeight>2</SupplyWeight>
-              <MoneyValue>20</MoneyValue>
-              <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>249</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1500010801</Product>
-              <HappinessValue>5</HappinessValue>
-              <MoneyValue>20</MoneyValue>
-              <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>399</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1500010153</Product>
-              <Amount>0.0001</Amount>
-              <HappinessValue>4</HappinessValue>
-              <MoneyValue>100</MoneyValue>
-              <FullWeightPopulationCount>750</FullWeightPopulationCount>
-              <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
-              <!-- <NoWeightPopulationCount>249</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1500010156</Product>
-              <Amount>0.00007</Amount>
-              <HappinessValue>4</HappinessValue>
-              <MoneyValue>100</MoneyValue>
-              <FullWeightPopulationCount>750</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>399</NoWeightPopulationCount> -->
-            </Item>
-            <Item>
-              <Product>1010351</Product>
-              <SupplyWeight>1</SupplyWeight>
-              <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>399</NoWeightPopulationCount> -->
-            </Item>
-          </PopulationInputs>
-          <DefaultResidence>1500010143</DefaultResidence>
-          <PopulationOutputs>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>47</Amount>
-            </Item>
-            <Item>
-              <Product>1010115</Product>
-              <Amount>100</Amount>
-            </Item>
-          </PopulationOutputs>
-          <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
-          <PopulationParticipant>Resident_tier02</PopulationParticipant>
-          <PopulationAtWorkParticipant>Resident_tier02_atWork</PopulationAtWorkParticipant>
-          <MoodText>
-            <Angry>
-              <Text>19763</Text>
-            </Angry>
-            <Unhappy>
-              <Text>19764</Text>
-            </Unhappy>
-            <Neutral>
-              <Text>19765</Text>
-            </Neutral>
-            <Happy>
-              <Text>19766</Text>
-            </Happy>
-            <Euphoric>
-              <Text>19767</Text>
-            </Euphoric>
-          </MoodText>
-        </PopulationLevel7>
-        <Locked />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>PopulationLevel7</Template>
-      <Values>
-        <Standard>
-          <GUID>601384</GUID> <!-- 1500010132 -->
-          <Name>Pescatarian Artisan</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_anarchist_bekoin.png</IconFilename>
-        </Standard>
-        <PopulationLevel7>
-          <PopulationInputs>
-            <Item>
-              <Product>1500010119</Product>
-              <SupplyWeight>1</SupplyWeight>
-            </Item>
-            <Item>
-              <Product>1500010118</Product>
-              <HappinessValue>2</HappinessValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010142</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010102</Product>
               <Amount>0.0003</Amount>
               <SupplyWeight>3</SupplyWeight>
               <MoneyValue>40</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1010213</Product>
               <Amount>0.0003030</Amount>
               <SupplyWeight>3</SupplyWeight>
               <MoneyValue>40</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010106</Product>
               <Amount>0.000277778</Amount>
               <SupplyWeight>3</SupplyWeight>
               <MoneyValue>20</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010153</Product>
               <Amount>0.0002</Amount>
-              <HappinessValue>4</HappinessValue>
+              <HappinessValue>3</HappinessValue>
               <MoneyValue>80</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1010351</Product>
               <SupplyWeight>3</SupplyWeight>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010127</Product>
               <Amount>0.00035</Amount>
-              <SupplyWeight>3</SupplyWeight>
+              <SupplyWeight>7</SupplyWeight>
               <MoneyValue>60</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
-            <Item>
+            <!-- <Item>
               <Product>1500010156</Product>
               <Amount>0.00014</Amount>
-              <HappinessValue>4</HappinessValue>
+              <HappinessValue>6</HappinessValue>
               <MoneyValue>180</MoneyValue>
-            </Item>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item> -->
             <Item>
               <Product>1500010120</Product>
               <Amount>0.00017094</Amount>
-              <SupplyWeight>3</SupplyWeight>
+              <SupplyWeight>7</SupplyWeight>
               <MoneyValue>20</MoneyValue>
               <FullWeightPopulationCount>250</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
-            <Item>
+            <!-- <Item>
               <Product>1010206</Product>
               <Amount>0.00017</Amount>
-              <SupplyWeight>3</SupplyWeight>
+              <SupplyWeight>6</SupplyWeight>
               <MoneyValue>40</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>249</NoWeightPopulationCount> -->
-            </Item>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item> -->
             <Item>
               <Product>1500010801</Product>
               <HappinessValue>5</HappinessValue>
               <MoneyValue>20</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1010352</Product>
@@ -410,26 +341,39 @@
               <MoneyValue>26</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
               <!-- <NoWeightPopulationCount>249</NoWeightPopulationCount> -->
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1010353</Product>
-              <SupplyWeight>2</SupplyWeight>
+              <SupplyWeight>7</SupplyWeight>
               <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>899</NoWeightPopulationCount> -->
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
           </PopulationInputs>
           <DefaultResidence>1500010144</DefaultResidence>
           <PopulationOutputs>
             <Item>
               <Product>1010052</Product>
-              <Amount>35</Amount>
+              <Amount>34</Amount>
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>35</Amount>
+              <Amount>34</Amount>
             </Item>
             <Item>
               <Product>1010116</Product>
+              <Amount>34</Amount>
+            </Item>
+            <Item>
+              <Product>1500010804</Product>
               <Amount>100</Amount>
             </Item>
           </PopulationOutputs>
@@ -438,19 +382,19 @@
           <PopulationAtWorkParticipant>Resident_tier03_atWork</PopulationAtWorkParticipant>
           <MoodText>
             <Angry>
-              <Text>19768</Text>
+              <Text>1500010810</Text>
             </Angry>
             <Unhappy>
-              <Text>19769</Text>
+              <Text>1500010811</Text>
             </Unhappy>
             <Neutral>
-              <Text>19770</Text>
+              <Text>1500010812</Text>
             </Neutral>
             <Happy>
-              <Text>19771</Text>
+              <Text>1500010813</Text>
             </Happy>
             <Euphoric>
-              <Text>19772</Text>
+              <Text>1500010814</Text>
             </Euphoric>
           </MoodText>
         </PopulationLevel7>
@@ -467,7 +411,7 @@
         </Standard>
         <PopulationGroup7>
           <PopulationLevels>
-            <Item>
+            <!-- <Item>
               <Level>601382</Level>
             </Item>
             <Item>
@@ -475,10 +419,63 @@
             </Item>
             <Item>
               <Level>601384</Level>
+            </Item> -->
+            <Item>
+              <Level>601382</Level>
             </Item>
           </PopulationLevels>
           <Regional>Moderate</Regional>
         </PopulationGroup7>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010810</GUID>
+          <Name>Satisfaction Artisans None</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010811</GUID>
+          <Name>Satisfaction Artisans Unhappy</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010812</GUID>
+          <Name>Satisfaction Artisans Content</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010813</GUID>
+          <Name>Satisfaction Artisans Happy</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010814</GUID>
+          <Name>Satisfaction Artisans Perfect</Name>
+        </Standard>
+        <Text />
       </Values>
     </Asset>
     <!-- consumer product lists -->
@@ -547,17 +544,33 @@
             <Item>
               <Product>1500010120</Product>
             </Item>
-            <Item>
-              <Product>1500010156</Product>
-            </Item>
           </List>
         </ProductList>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010804</GUID>
+          <Name>Pescatarian Workforce</Name>
+          <IconFilename>data\jakob\ui\icons\icon_pescatarian_workforce.png</IconFilename>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Product>
+          <StorageLevel>Area</StorageLevel>
+          <DeltaOnly>1</DeltaOnly>
+          <IsWorkforce>1</IsWorkforce>
+          <CanUseWorkforceTransfer>0</CanUseWorkforceTransfer>
+        </Product>
+      </Values>
+    </Asset>
   </ModOp>
-  <!-- global population: insert after artisans -->
-  <ModOp Type="addNextSibling" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList/Item[PopulationLevel='15000002']">
-    <Item>
+  <!-- global population -->
+  <ModOp Type="add" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList">
+    <!-- <Item>
       <PopulationLevel>601382</PopulationLevel>
     </Item>
     <Item>
@@ -565,27 +578,38 @@
     </Item>
     <Item>
       <PopulationLevel>601384</PopulationLevel>
+    </Item> -->
+    <Item>
+      <PopulationLevel>601382</PopulationLevel>
     </Item>
   </ModOp>
   <!-- <WorkforceOrder> -->
   <!-- ??: append -->
   <ModOp Type="add" GUID="501962" Path="/Values/KeywordFilter/Keywords">
-    <Item>
-      <Keyword>601382</Keyword> <!-- pop level -->
+    <!-- <Item>
+      <Keyword>601382</Keyword>
       <ProductList>1500010138</ProductList>
     </Item>
     <Item>
-      <Keyword>601383</Keyword> <!-- pop level -->
+      <Keyword>601383</Keyword>
       <ProductList>1500010139</ProductList>
     </Item>
     <Item>
-      <Keyword>601384</Keyword> <!-- pop level -->
+      <Keyword>601384</Keyword>
+      <ProductList>1500010140</ProductList>
+    </Item> -->
+    <Item>
+      <Keyword>1500010804</Keyword>
+      <ProductList>1500010140</ProductList>
+    </Item>
+    <Item>
+      <Keyword>601382</Keyword>
       <ProductList>1500010140</ProductList>
     </Item>
   </ModOp>
   <!-- residence UI: append -->
   <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/HappinessConfigs">
-    <Item>
+    <!-- <Item>
       <PopulationLevel>601382</PopulationLevel>
       <AssignedConfig>502287</AssignedConfig>
     </Item>
@@ -595,6 +619,10 @@
     </Item>
     <Item>
       <PopulationLevel>601384</PopulationLevel>
+      <AssignedConfig>502287</AssignedConfig>
+    </Item> -->
+    <Item>
+      <PopulationLevel>601382</PopulationLevel>
       <AssignedConfig>502287</AssignedConfig>
     </Item>
   </ModOp>
@@ -634,8 +662,24 @@
       <Product>1500010140</Product>
     </Item>
   </ModOp>
+  <!-- <ModOp Type="add" GUID="501065" Path="/Values/ObjectmenuCommuterHarbourScene/WorkforceToRegion/Moderate/WorkforceList">
+    <Item>
+      <Workforce>1500010804</Workforce>
+    </Item>
+  </ModOp> -->
+  <!-- <ModOp Type="add" GUID="25000121" Path="/Values/IslandBarScene/WorkforceOrder">
+    <Item>
+      <WorkforceEntry>1500010804</WorkforceEntry>
+    </Item>
+  </ModOp> -->
 
-  <!-- TODO GoodValueBalancing -->
+  <ModOp Type="add" GUID="142977" Path="/Values/GoodValueBalancing/WorkforceData/Moderate/Tiers">
+    <Item>
+      <WorkforceValue>2.462564</WorkforceValue>
+      <WorkforceGUID>1500010804</WorkforceGUID>
+    </Item>
+  </ModOp>
+
   <!-- TODO EconomyFeature -->
 
   <!-- # Need: Potatoes -->
@@ -646,7 +690,7 @@
     </Item>
   </ModOp>
 
-  <!-- # Residence: Farmer -->
+  <!-- # Deprecate farmers -->
   <ModOp GUID='1010343' Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>1010343</BaseAssetGUID>
@@ -662,7 +706,7 @@
         </Building>
         <Locked />
         <Upgradable>
-          <NextGUID>1500010143</NextGUID>
+          <NextGUID>0</NextGUID>
           <UpgradeCost>
             <Item>
               <Amount>2</Amount>
@@ -712,6 +756,9 @@
           <ResidentsRequiredForUpgrade>10</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010194</DefaultBuff>
+        </UpgradeList> -->
         <FloorStackOwner>
           <!-- disable floor upgrades -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
@@ -721,34 +768,104 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>ItemEffectTargetPool</Template>
+      <Template>TownhallBuff</Template>
       <Values>
         <Standard>
-          <GUID>1500010282</GUID>
-          <Name>all_pescatarian_residences</Name>
+          <GUID>1500010194</GUID>
+          <Name>farmers_love_to_farm</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
         </Standard>
-        <ItemEffectTargetPool>
-          <EffectTargetGUIDs>
+        <ItemEffect>
+          <EffectTargets>
             <Item>
               <GUID>1500010142</GUID>
             </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade>
+          <AddDeltas>
             <Item>
-              <GUID>1500010143</GUID>
+              <Product>1010052</Product>
+              <Amount>4</Amount>
             </Item>
             <Item>
-              <GUID>1500010144</GUID>
+              <Product>1010115</Product>
+              <Amount>4</Amount>
             </Item>
-          </EffectTargetGUIDs>
-        </ItemEffectTargetPool>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>4</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+        <ItemContainerUpgrade />
       </Values>
     </Asset>
     <Asset>
-      <Template>Text</Template>
+      <!-- 
+        Deprecate farmers.
+        Convert all existing farmers to workers.
+      -->
+      <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010146</GUID>
-          <Name>Residence Hint</Name>
+          <GUID>1500010809</GUID>
+          <Name>Convert Farmers to Workers</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
         </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010142</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>1500010143</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010142</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <!-- register because players could have farmers in their quick build slots -->
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010809</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
@@ -756,7 +873,8 @@
   <!-- # Residence: Worker -->
   <ModOp GUID='1010344' Type="addNextSibling">
     <Asset>
-      <BaseAssetGUID>1010344</BaseAssetGUID>
+      <!-- <BaseAssetGUID>1010344</BaseAssetGUID> -->
+      <Template>ResidenceBuilding</Template>
       <Values>
         <Standard>
           <GUID>1500010143</GUID>
@@ -764,24 +882,16 @@
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
+        <Blocking />
         <Building>
-          <PickingAsset>1500010142</PickingAsset>
+          <BuildingType>Residence</BuildingType>
+          <PickingAsset>1500010143</PickingAsset>
+          <AssociatedRegions>Moderate</AssociatedRegions>
         </Building>
         <Locked />
         <Upgradable>
           <NextGUID>1500010144</NextGUID>
           <UpgradeCost>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
             <Item>
               <Amount>6</Amount>
               <Ingredient>1010196</Ingredient>
@@ -793,28 +903,6 @@
             <Item>
               <Amount>2</Amount>
               <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>4</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding</TemplateName>
-                    <Index>4</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>5</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding</TemplateName>
-                    <Index>5</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
             </Item>
           </UpgradeCost>
         </Upgradable>
@@ -855,14 +943,14 @@
           <ResidenceStorage>
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
-          <PopulationLevel7>601383</PopulationLevel7>
+          <PopulationLevel7>601382</PopulationLevel7>
           <ResidentMax>20</ResidentMax>  <!-- consumption calculation base -->
-          <ResidentsRequiredForUpgrade>16</ResidentsRequiredForUpgrade>
+          <ResidentsRequiredForUpgrade>20</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
-        <UpgradeList>
+        <!-- <UpgradeList>
           <DefaultBuff>1500010147</DefaultBuff>
-        </UpgradeList>
+        </UpgradeList> -->
         <FloorStackOwner>
           <!-- disable floor upgrades -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
@@ -887,23 +975,56 @@
             </Item>
           </EffectTargets>
         </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade />
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
         <DistributionUpgrade>
           <AddDeltas>
             <Item>
               <Product>1010052</Product>
-              <Amount>6</Amount>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>8</Amount>
             </Item>
           </AddDeltas>
         </DistributionUpgrade>
-        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010282</GUID>
+          <Name>all_pescatarian_residences</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <!-- <Item>
+              <GUID>1500010142</GUID>
+            </Item> -->
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010146</GUID>
+          <Name>Residence Hint</Name>
+        </Standard>
       </Values>
     </Asset>
   </ModOp>
@@ -921,23 +1042,12 @@
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
         <Building>
-          <PickingAsset>1500010142</PickingAsset>
+          <PickingAsset>1500010143</PickingAsset>
         </Building>
         <Locked />
         <Upgradable>
           <NextGUID>1500010145</NextGUID>
           <UpgradeCost>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
             <Item>
               <Amount>8</Amount>
               <Ingredient>1010196</Ingredient>
@@ -953,17 +1063,6 @@
             <Item>
               <Amount>2</Amount>
               <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>5</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding</TemplateName>
-                    <Index>5</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
             </Item>
           </UpgradeCost>
         </Upgradable>
@@ -1006,14 +1105,14 @@
           <ResidenceStorage>
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
-          <PopulationLevel7>601384</PopulationLevel7>
+          <PopulationLevel7>601382</PopulationLevel7>
           <ResidentMax>30</ResidentMax>  <!-- consumption calculation base -->
-          <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
+          <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
-        <UpgradeList>
+        <!-- <UpgradeList>
           <DefaultBuff>1500010148</DefaultBuff>
-        </UpgradeList>
+        </UpgradeList> -->
         <FloorStackOwner>
           <!-- disable floor upgrades -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
@@ -1044,11 +1143,15 @@
           <AddDeltas>
             <Item>
               <Product>1010052</Product>
-              <Amount>10</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>4</Amount>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>12</Amount>
             </Item>
           </AddDeltas>
         </DistributionUpgrade>
@@ -1091,27 +1194,27 @@
   </ModOp>
 
 
-  <!-- # Residence: converting engineers and jump investors -->
+  <!-- # Progression to Vanilla Engineers -->
   <ModOp GUID='1010346' Type="addNextSibling">
     <Asset>
+      <!-- Deprecated and used as jump building instead -->
       <BaseAssetGUID>1010346</BaseAssetGUID>
       <Values>
         <Standard>
           <GUID>1500010145</GUID>
-          <Name>pesca_engineer</Name>
+          <Name>Engineer Jump Building</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
-        <Locked />
-        <UpgradeList>
-          <DefaultBuff>1500010149</DefaultBuff>
-        </UpgradeList>
-        <!-- reroute upgrades to jump trigger buildings to not impact vanilla downgrade -->
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <!-- disable upgrades -->
         <Upgradable>
-          <NextGUID>1500010173</NextGUID>
+          <NextGUID>0</NextGUID>
         </Upgradable>
         <FloorStackOwner>
-          <UpgradeTargetGUID>1500010174</UpgradeTargetGUID>
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
         </FloorStackOwner>
         <Audio />
       </Values>
@@ -1120,64 +1223,12 @@
       <Template>TownhallBuff</Template>
       <Values>
         <Standard>
+          <!-- Don't remove this GUID/buff. It will break existing games otherwise-->
           <GUID>1500010149</GUID>
-          <Name>pesca_engineers_are_converters</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
-          <InfoDescription>1500010169</InfoDescription>
         </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1010344</GUID>
-            </Item>
-            <Item>
-              <GUID>1010345</GUID>
-            </Item>
-            <Item>
-              <GUID>1010346</GUID>
-            </Item>
-            <Item>
-              <GUID>1500010200</GUID>
-            </Item>
-            <Item>
-              <GUID>1500010201</GUID>
-            </Item>
-            <Item>
-              <GUID>1500010225</GUID>
-            </Item>
-            <Item>
-              <GUID>1500010226</GUID>
-            </Item>
-          </EffectTargets>
-        </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade>
-          <NeedProvideNeedUpgrade>
-            <Item>
-              <ProvidedNeed>1010238</ProvidedNeed>
-              <SubstituteNeed>1500010102</SubstituteNeed>
-            </Item>
-            <Item>
-              <ProvidedNeed>1010217</ProvidedNeed>
-              <SubstituteNeed>1500010120</SubstituteNeed>
-            </Item>
-            <Item>
-              <ProvidedNeed>1010247</ProvidedNeed>
-              <SubstituteNeed>1500010127</SubstituteNeed>
-            </Item>
-          </NeedProvideNeedUpgrade>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>Text</Template>
       <Values>
         <Standard>
@@ -1185,34 +1236,64 @@
           <Name>pesca_engineer_fluff</Name>
         </Standard>
       </Values>
+    </Asset> -->
+    <Asset>
+      <!-- 
+        Trigger to convert all jump engineers to vanilla engineers.
+        Note: the trigger is re-registering itself.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010807</GUID>
+          <Name>Jump Building: Engineers</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010145</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>1010346</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010145</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010807</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
     </Asset>
-  </ModOp>
-  <ModOp GUID='15000003' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
-    <!-- append new needs to the end, so that normal Engineers will never show a (faulty) missing warning -->
-    <Item>
-      <Product>1500010120</Product>
-      <Amount>0.00034188</Amount>
-      <HappinessValue>2</HappinessValue>
-      <MoneyValue>20</MoneyValue>
-      <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010145</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>1500010127</Product>
-      <Amount>0.000888889</Amount>
-      <HappinessValue>2</HappinessValue>
-      <MoneyValue>20</MoneyValue>
-      <RequiredToBeBuilding>1500010145</RequiredToBeBuilding>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010145</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
   </ModOp>
   <ModOp GUID='1010347' Type="addNextSibling">
     <Asset>
@@ -1572,9 +1653,9 @@
           <NightBehavior>HideAll</NightBehavior>
         </FeedbackController>
         <Infolayer />
-        <UpgradeList>
-          <DefaultBuff>1500011100</DefaultBuff>
-        </UpgradeList>
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010805</DefaultBuff>
+        </UpgradeList> -->
         <Market>
           <FullSupplyDistance>40</FullSupplyDistance>
           <NoSupplyDistance>80</NoSupplyDistance>
@@ -1597,6 +1678,23 @@
             </Item>
           </PublicServiceOutputs>
         </PublicService>
+        <!-- <ItemContainer>
+          <SocketCount>1</SocketCount>
+          <SocketAllocation>RadiusBuilding;GuildHouse</SocketAllocation>
+          <SocketScope>Local</SocketScope>
+          <SocketScopeRadius>80</SocketScopeRadius>
+          <InitSocketItems>
+            <Item>
+              <Item>1500010808</Item>
+              <StackSize>1</StackSize>
+            </Item>
+          </InitSocketItems>
+        </ItemContainer> -->
+        <!-- <BuffFactory>
+          <BaseBuff>1500010808</BaseBuff>
+          <BaseBuffDistance>80</BaseBuffDistance>
+          <BaseBuffScope>Local</BaseBuffScope>
+        </BuffFactory> -->
         <AmbientMoodProvider>
           <AmbientMood>ResidenceTier1</AmbientMood>
           <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
@@ -1860,10 +1958,125 @@
     </Item>
   </ModOp>
 
+  <!-- # Service: Food Corner -->
+  <!-- <ModOp GUID="1010358" Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010358</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010816</GUID>
+          <Name>Food Corner</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_canteen.png</IconFilename>
+        </Standard>
+        <Blocking />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/public/service_01/service_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Constructable />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <SoundEmitter>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>PublicServiceBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+                <Sound>214786</Sound>
+              </Item>
+            </BuildSuccessful>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController>
+          <NightBehavior>HideAll</NightBehavior>
+        </FeedbackController>
+        <Infolayer />
+        <AmbientMoodProvider>
+          <AmbientMood>ResidenceTier3</AmbientMood>
+          <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+              <InactiveAmount>25</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <MaximumHitPoints>4750</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+            </Fire>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <BuffFactory>
+          <BaseBuff>1500010808</BaseBuff>
+          <BaseBuffScope>Radius</BaseBuffScope>
+          <BaseBuffDistance>30</BaseBuffDistance>
+        </BuffFactory>
+        <PublicService>
+          <FullSatisfactionDistance>35</FullSatisfactionDistance>
+          <NoSatisfactionDistance>50</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1500010801</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010810</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191705,191706,191707,191726,191727,191728,191729,191730,191731,125065,125063" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010810</GUID>
+    </Item>
+  </ModOp> -->
+
   <!-- # Lifestyle Needs for Vanilla Population -->
   <!-- workers -->
   <ModOp Type="add" GUID="15000001" Path="/Values/PopulationLevel7/PopulationInputs">
-    <Item>
+    <!-- <Item>
       <Product>1500010102</Product>
       <Amount>0.000333334</Amount>
       <SupplyWeight>0</SupplyWeight>
@@ -1871,7 +2084,7 @@
       <NoWeightPopulationCount>0</NoWeightPopulationCount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
-    </Item>
+    </Item> -->
     <Item>
       <Product>1500010106</Product>
       <Amount>0.000138889</Amount>
@@ -1881,7 +2094,7 @@
   </ModOp>
   <!-- artisans -->
   <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
-    <Item>
+    <!-- <Item>
       <Product>1500010102</Product>
       <Amount>0.000666667</Amount>
       <SupplyWeight>0</SupplyWeight>
@@ -1889,7 +2102,7 @@
       <NoWeightPopulationCount>0</NoWeightPopulationCount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
-    </Item>
+    </Item> -->
     <Item>
       <Product>1500010106</Product>
       <Amount>0.000277778</Amount>
@@ -1899,6 +2112,12 @@
     <Item>
       <Product>1500010120</Product>
       <Amount>0.00017094</Amount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+      <IsBonusNeed>1</IsBonusNeed>
+    </Item>
+    <Item>
+      <Product>1500010127</Product>
+      <Amount>0.000444444</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
     </Item>
@@ -1938,30 +2157,132 @@
       </Needs>
     </Item>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="1500010149">
-    <Asset>
+  <ModOp Type="addNextSibling" GUID="1010343">
+    <!-- <Asset>
       <Template>ForwardBuff</Template>
       <Values>
         <Standard>
-          <GUID>1500011100</GUID>
+          <GUID>1500010805</GUID>
           <Name>Pescatarian Lifestyle</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
           <InfoDescription>1500010169</InfoDescription>
         </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010100</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
         <CultureUpgrade>
           <HideBuff>1</HideBuff>
         </CultureUpgrade>
         <EffectForward>
-          <ForwardEffect>1500010149</ForwardEffect>
-          <ForwardEffectRange>40</ForwardEffectRange>
-          <!-- <ForwardEffectDistanceSource>PublicServiceDistance</ForwardEffectDistanceSource> -->
+          <ForwardEffect>1500010808</ForwardEffect>
+          <ForwardEffectRange>80</ForwardEffectRange>
           <ForwardEffectScope>StreetDistance</ForwardEffectScope>
         </EffectForward>
+      </Values>
+    </Asset> -->
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010808</GUID>
+          <Name>Lifestyle Alternatives</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010169</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010344</GUID>
+            </Item>
+            <Item>
+              <GUID>1010345</GUID>
+            </Item>
+            <Item>
+              <GUID>1010346</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010200</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010201</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010225</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010226</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
+        <ResidenceUpgrade>
+          <NeedProvideNeedUpgrade>
+            <!-- <Item>
+              <ProvidedNeed>1010238</ProvidedNeed>
+              <SubstituteNeed>1500010102</SubstituteNeed>
+            </Item> -->
+            <Item>
+              <ProvidedNeed>1010203</ProvidedNeed>
+              <SubstituteNeed>1500010106</SubstituteNeed>
+            </Item>
+            <Item>
+              <ProvidedNeed>1010217</ProvidedNeed>
+              <SubstituteNeed>1500010120</SubstituteNeed>
+            </Item>
+            <Item>
+              <ProvidedNeed>1010247</ProvidedNeed>
+              <SubstituteNeed>1500010127</SubstituteNeed>
+            </Item>
+          </NeedProvideNeedUpgrade>
+        </ResidenceUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010815</GUID>
+          <Name>Add Lifestyle Buff to all Residences</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500010808</BuffAsset>
+                    <AddBuff>1</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <AutoRegisterTrigger>1</AutoRegisterTrigger>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
 
-  <!-- # construction menu -->
+  <!-- # Build Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
       <Template>ConstructionCategory</Template>
@@ -1976,11 +2297,20 @@
             <Item>
               <Building>1500010100</Building>
             </Item>
-            <Item>
+            <!-- <Item>
               <Building>1500010142</Building>
+            </Item> -->
+            <Item>
+              <Building>1500010143</Building>
             </Item>
+            <!-- <Item>
+              <Building>1500010144</Building>
+            </Item> -->
             <Item>
               <Building>1500010800</Building>
+            </Item>
+            <Item>
+              <Building>1500010816</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>1500010188</CategoryDescription>
