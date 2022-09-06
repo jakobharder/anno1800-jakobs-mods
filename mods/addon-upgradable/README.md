@@ -2,7 +2,9 @@
 
 ![](./banner.png)
 
-Skyscraper-like upgrades for worker and artisan residences.
+Skyscraper-like upgrades for vanilla worker and artisan residences.
+
+Note: Pescatarian workers, artisans do not upgrade.
 
 ## Requirements
 

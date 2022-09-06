@@ -1,13 +1,6 @@
 <!-- 
-Upgradable Low Tiers
-
-1500010200 worker skyscraper
-1500010215 stone plaza
-1500010216+ unlock notification
-1500010221+ trade contracts
-
+  Upgradable Low Tiers
 -->
-
 <ModOps>
   <!-- # shared products -->
   <!-- copy in case somebody forgot to include the extra goods collection -->
@@ -2819,7 +2812,7 @@ Upgradable Low Tiers
       <Values>
         <Standard>
           <GUID>1500010212</GUID>
-          <Name>build menu</Name>
+          <Name>Upgradable Residences</Name>
           <IconFilename>data\jakob\ui\icons\icon_upgradable_low_tier.png</IconFilename>
         </Standard>
         <ConstructionCategory>
@@ -2872,6 +2865,12 @@ Upgradable Low Tiers
   </ModOp>
   <!-- workers menu: insert before bricks production chain, no fall back -->
   <ModOp Type="addPrevSibling" GUID='25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500024']">
+    <Item>
+      <Building>1500010212</Building>
+    </Item>
+  </ModOp>
+  <!-- artisans menu: insert before anything, no fall back -->
+  <ModOp Type="addPrevSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
     <Item>
       <Building>1500010212</Building>
     </Item>
