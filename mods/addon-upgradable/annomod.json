@@ -26,7 +26,7 @@
     },
     {
       "action": "gltf",
-      "pattern": "**/*.gltf",
+      "pattern": "**/!(propsonly)*.gltf",
       "lods": 5,
       "changePath": "rdm/",
       "animPath": "anim/"
@@ -49,21 +49,11 @@
       "English": "Addon"
     },
     "ModName": {
-      "Chinese": null,
       "English": "Upgradable Workers",
-      "French": null,
-      "German": "Upgradefähige Arbeiter",
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
+      "German": "Upgradefähige Arbeiter"
     },
     "Description": {
-      "English": "README.md",
-      "German": "README.md"
+      "English": "README.md"
     },
     "KnownIssues": null,
     "DLCDependencies": [

@@ -56,6 +56,11 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.2
+
+- Improved Russian translation (thanks to @m_belonosov)
+- Moved stone pavement to separate menu with City Decoration (new) and City Lights Pack (more) ornaments.
+
 ### 2.1
 
 - Fixed buff issues
