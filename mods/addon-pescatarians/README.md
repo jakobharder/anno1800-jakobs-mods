@@ -2,71 +2,85 @@
 
 ![](./banner.png)
 
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
+Alternative Old World population providing with new needs, productions and workforce twists.
 
-Alternative Old World population providing extra farmer workforce.
-Only partially playable without DLCs.
+## Requirements
 
-Pescatarians have new needs. There are two ways to get them:
-
-1. Lands of Lions DLC + "[Shared] Extra Goods Collection" mod for production chains.
-2. Or instead: Docklands DLC
-- Optional: Residences only change their visuals when played with "[Misc] Colored Roofs, Residences". 
+- DLC `Lands of Lions DLC` + Mod `[Shared] Extra Goods Collection` mod for production chains.
+- Or alternatively DLC `Docklands`
+- Optional: Artisan skins are included in Mod `[Misc] Colored Roofs, Residences`.
 
 ## Population
 
-Farmers (10) need community center and potatoes instead of marketplace and working cloth.
+### Farmers
 
-Workers (16 + 6 extra farmers) need cheese and olive soap instead of sausages and normal soap.
+- Need community center and potatoes instead of marketplace and working cloth.
 
-Artisans (24 + 4 extra workers, 10 farmers) need canned fish and suits instead of canned food and fur coats.
+### Workers
 
-Engineers (40) are normal engineers, except they accept both canned fish/canned food and suits/fur coats. They can be upgraded to normal skyscapers or investors.
+- Need cheese and olive soap instead of sausages and normal soap.
+- Provide extra farmer workforce in the same building.
 
-Suits and canned fish factories reduce consumption when close to residences.
+### Artisans
+
+- Need canned fish and suits instead of canned food and fur coats.
+- Provide extra farmer and worker workforce in the same building.
+
+### Engineers
+
+- Accept both canned fish/canned food and suits/fur coats.
+- Can be upgraded to normal skyscapers or investors.
+
+## Buildings
+
+### Community Center
+
+- Functions as both marketplace and church replacement for Pescatarians.
+
+### Music School
+
+- Provides music school public service to Pescatarians and workers from `[Addon] Upgradable Workers`.
+
+## Products
+
+All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods Collection`.
+
+### Importable or Extra Goods Collection
+
+- Canned Fish
+- Cheese
+- Olive Soap
+- Suits
+
+### Only with Extra Goods Collection
+
+- Bottled Beer
+- Tools
+- Wooden Accessories
 
 ## Changes
 
-### 1.8
+### 1.9
 
-- Chinese translation
+- Improved Russion translation (thanks to @m_belonosov)
 
-### 1.7
+### Older
 
-- Fixed GU14 maintenance buff
+- 1.8: Chinese translation
+- 1.7: Fixed GU14 maintenance buff
+- 1.6: GU14 support
+- 1.6: Korean translation
+- 1.5: Fixed issue with unlock conditions not shown at game start
+- 1.5: Added music school as public service to upgradable workers
+- 1.4: Added Enbesa musician's court items to music school
+- 1.4: Renamed Community Center public services to avoid confusion (there are two ;-)
+- 1.3: Fixed warehouse/docklands goods issues
+- 1.3: Increased trade price of cheese (45 -> 80)
+- 1.3: Added music school as public service / luxury need for Pescatarian Workers and Artisans.
+- 1.2: Removed doubled canned fish, suits in consumable construction menu
+- 1.1: Trade contracts for new basic needs
 
-### 1.6
-
-- GU14 support
-- Korean translation
-
-### 1.5
-
-- Fixed issue with unlock conditions not shown at game start
-- Added music school as public service to upgradable workers
-
-### 1.4
-
-- Added Enbesa musician's court items to music school
-- Renamed Community Center public services to avoid confusion (there are two ;-)
-
-### 1.3
-
-- Fixed warehouse/docklands goods issues
-- Increased trade price of cheese (45 -> 80)
-- Added music school as public service / luxury need for Pescatarian Workers and Artisans.
-
-### 1.2
-
-- Removed doubled canned fish, suits in consumable construction menu
-
-### 1.1
-
-- Trade contracts for new basic needs
-
-## Notes
-
-Known issues
+## Known Issues
 
 Original engineers may complain about missing canned fish need, even though they do not need it.
 
@@ -75,8 +89,10 @@ Original engineers may complain about missing canned fish need, even though they
 Available: English, German, Russian, Korean, French, Polish, Chinese
 
 Thanks to
-- redzmey1 for Russian translation
+- @m_belonosov, redzmey1 for Russian translation
 - MSHS for Korean translation
 - @Petritant for French translation
 - Aveneger432 for Polish translation
 - darknesswei for Chinese tranlsation
+
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
