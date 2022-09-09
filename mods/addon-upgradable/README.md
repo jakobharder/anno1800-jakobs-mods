@@ -2,7 +2,9 @@
 
 ![](./banner.png)
 
-Skyscraper-like upgrades for worker and artisan residences.
+Skyscraper-like upgrades for vanilla worker and artisan residences.
+
+Note: Pescatarian workers, artisans do not upgrade.
 
 ## Requirements
 
@@ -36,7 +38,7 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 ### Stone Pavement
 
 - Also function as street.
-- Adds Shift+V variations with this ground to some of the City Lights Pack ornaments.
+- Adds Shift+V variations with this ground to various City Decoration and City Lights Pack ornaments.
 
 ## Products
 
@@ -54,6 +56,11 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.2
+
+- Improved Russian translation (thanks to @m_belonosov)
+- Moved stone pavement to separate menu with City Decoration (new) and City Lights Pack (more) ornaments.
+
 ### 2.1
 
 - Fixed buff issues
@@ -68,7 +75,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 Available: all
 
 Thanks to
-- redzmey1 for Russian translation
+- @m_belonosov, redzmey1 for Russian translation
 - MSHS for Korean translation
 - @Petritant for French translation
 - Aveneger432 for Polish translation
