@@ -1,0 +1,6 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\eoy21\graphics\buildings\production\heavy_02\heavy_02.cfg
+  modifications:
+    - xpath: //Config/PropContainers/Config/Props/Config[FileName="data\graphics\props\fences\gate_02.prp"]
+      Flags: 1
