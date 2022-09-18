@@ -1107,8 +1107,13 @@ Tourist District
     </Item>
   </ModOp>
   <!-- NW Tourism compatibility: limit theater, iron tower to vanilla hotel -->
-  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[(Product='133573' or Product='132761') and (not(RequiredToBeBuilding) or RequiredToBeBuilding='601445')]">
+  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[(Product='133573' or Product='132761') and (not(RequiredToBeBuilding) or not(RequiredBuildings) or RequiredToBeBuilding='601445' or RequiredBuildings/Item/RequiredBuilding='601445')]">
     <RequiredToBeBuilding>601445</RequiredToBeBuilding>
+    <RequiredBuildings>
+      <Item>
+        <RequiredBuilding>601445</RequiredBuilding>
+      </Item>
+    </RequiredBuildings>
   </ModOp>
   <!-- NW Tourism compatibility: add theater to OW, boxing for NW -->
   <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='133573'][last()]">
@@ -1119,6 +1124,11 @@ Tourist District
       <FullWeightPopulationCount>50</FullWeightPopulationCount>
       <NoWeightPopulationCount>49</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500010500</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
     </Item>
     <Item>
       <Product>1440134405</Product> <!-- Boxing -->
@@ -1127,6 +1137,11 @@ Tourist District
       <FullWeightPopulationCount>50</FullWeightPopulationCount>
       <NoWeightPopulationCount>49</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010529</RequiredToBeBuilding>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500010529</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
     </Item>
   </ModOp>
   <!-- NW Tourism compatibility: add iron tower to OW, Christo & Hacienda to NW -->
@@ -1138,6 +1153,11 @@ Tourist District
       <FullWeightPopulationCount>4000</FullWeightPopulationCount>
       <NoWeightPopulationCount>3999</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500010500</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
     </Item>
     <Item>
       <Product>1440134406</Product> <!-- Christo -->
@@ -1146,6 +1166,11 @@ Tourist District
       <FullWeightPopulationCount>4000</FullWeightPopulationCount>
       <NoWeightPopulationCount>2499</NoWeightPopulationCount>
       <RequiredToBeBuilding>1500010529</RequiredToBeBuilding>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500010529</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
     </Item>
     <Item>
       <Product>1440134407</Product> <!-- Hacienda -->
@@ -1153,6 +1178,11 @@ Tourist District
       <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
       <MoneyValue>75</MoneyValue>
       <RequiredToBeBuilding>1500010529</RequiredToBeBuilding>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500010529</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
     </Item>
   </ModOp>
 
