@@ -1,0 +1,82 @@
+<ModOps>
+  <!-- # Vanilla Target Pools -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010714</GUID>
+      <Text>[AssetData(1010560) Text]</Text> <!-- pool: Sand Mine -->
+    </Text>
+    <Text>
+      <GUID>1500010715</GUID>
+      <Text>[AssetData(1010305) Text]</Text> <!-- pool: Iron Mine -->
+    </Text>
+    <Text>
+      <GUID>1500010716</GUID>
+      <Text>[AssetData(1010309) Text]</Text> <!-- pool: Cement Mine -->
+    </Text>
+  </ModOp>
+  <!-- # Steel Beams -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010703</GUID>
+      <Text>[AssetData(500005) Text]</Text> <!-- menu: Steel Beams -->
+    </Text>
+    <Text>
+      <GUID>1500010700</GUID> <!-- cannot use AssetData text -->
+      <Text>Сталелитейный завод</Text> <!-- building: Steelworks -->
+    </Text>
+    <Text>
+      <GUID>1500010706</GUID> <!-- cannot use AssetData text -->
+      <Text>Плавильня</Text> <!-- building: Furnace -->
+    </Text>
+    <Text>
+      <GUID>1345</GUID> <!-- cannot use AssetData text -->
+      <Text>Угольная печь</Text> <!-- building: Charcoal Kiln -->
+    </Text>
+    <Text>
+      <GUID>1500010710</GUID> <!-- cannot use AssetData text -->
+      <Text>Железный рудник</Text> <!-- building: Iron Mine -->
+    </Text>
+  </ModOp>
+  <!-- # Windows -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010704</GUID>
+      <Text>[AssetData(500010) Text]</Text> <!-- menu: Windows -->
+    </Text>
+    <Text>
+      <GUID>1500010701</GUID> <!-- cannot use AssetData text -->
+      <Text>Оконная фабрика</Text> <!-- building: Window Makers -->
+    </Text>
+    <Text>
+      <GUID>1500010707</GUID> <!-- cannot use AssetData text -->
+      <Text>Стекольная фабрика</Text> <!-- building: Glassmakers -->
+    </Text>
+    <Text>
+      <GUID>1500010708</GUID> <!-- cannot use AssetData text -->
+      <Text>Песчаный карьер</Text> <!-- building: Sand Mine -->
+    </Text>
+  </ModOp>
+  <!-- # Concrete -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010705</GUID>
+      <Text>[AssetData(500016) Text]</Text> <!-- menu: Reinforced Concrete -->
+    </Text>
+    <Text>
+      <GUID>1500010702</GUID> <!-- cannot use AssetData text -->
+      <Text>Бетоносмесительный завод</Text> <!-- building: Concrete Factory -->
+    </Text>
+    <Text>
+      <GUID>1500010711</GUID> <!-- cannot use AssetData text -->
+      <Text>Известняковый карьер</Text> <!-- building: Limestone Quarry -->
+    </Text>
+    <Text>
+      <GUID>1500010712</GUID>
+      <Text>Buildable on &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; [AssetData(1010507) Text].</Text> <!-- note: buildable on gold deposits -->
+    </Text>
+    <Text>
+      <GUID>1500010713</GUID>
+      <Text>Buildable on &lt;img height='24' width='24' src="[AssetData(101061) Icon]"/&gt; [AssetData(101061) Text].</Text> <!-- note: buildable on clay deposits -->
+    </Text>
+  </ModOp>
+</ModOps>

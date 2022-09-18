@@ -1,0 +1,8 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\production\factory_colony_01_04\factory_colony_01_04.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="hole"]
+      cModelDiffTex: data\jakob\buildings\nw-sand\maps\factory_11_hole_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="building"]
+      cModelDiffTex: data\jakob\buildings\nw-sand\maps\factory_11_work_area_diff.psd
