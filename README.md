@@ -14,7 +14,7 @@ Versions are always kept compatible, except when game updates force me to do dif
 
 Rebalancing of productions may only happen when the first version number changes, but they are still save to update in existing savegames.
 
-See full [changelog](./CHANGELOG.md).
+See full [changelog](./doc/CHANGELOG.md).
 
 ## Population Tier Mods
 
