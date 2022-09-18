@@ -47,6 +47,10 @@ See full [changelog](./CHANGELOG.md).
 
   Adds small malls and restaurants fitting nicely into engineer and investor blocks. 
 
+- [\[Gameplay\] New World Tourism, Small Monument Base](./foreign-additions/nw-tourism/README.md)
+
+  10x10 instead of 14x14 base for Christo Redentor from [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
+
 - [\[Misc\] Docklands Gate](./mods/service-docklands/README.md)
   (Docklands module)
 

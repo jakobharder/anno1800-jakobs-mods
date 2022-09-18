@@ -1,10 +1,11 @@
 # Changelog
 
-## Unreleased
+## 5.15
 
 ### Added
 
-- New World Construction mod
+- Mod: New World Construction
+- Mod: New World Tourism, Small Monument Base (also available from NW Tourism repository)
 - Upgradable Workers: more ornaments with stone pavement, now in own build menu
 
 ### Changed
