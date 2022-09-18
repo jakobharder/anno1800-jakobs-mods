@@ -143,7 +143,7 @@ Available: English, German, (Russian, Korean, French, Polish, Chinese).
 
 - @taubenangriff for sharing some assets
 - @taludas for playtest feedback
-- redzmey1 for Russian translation
+- @m_belonosov, redzmey1 for Russian translation
 - MSHS for Korean translation
 - @Petritant for French translation
 - Aveneger432 for Polish translation
