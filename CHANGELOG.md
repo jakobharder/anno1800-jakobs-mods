@@ -1,5 +1,18 @@
 # Changelog
 
+## Unreleased
+
+### Added
+
+- New World Construction mod
+- Upgradable Workers: more ornaments with stone pavement, now in own build menu
+
+### Changed
+
+- GU15 preparation fixes
+- Docklands: gate has new icon
+- Pescatarians, Upgradable Workers: improved Russian translation
+
 ## 4.14.1 - Bugfix
 
 - Small Power Plants: fixed error from modloader logs (electrical sparks)

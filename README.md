@@ -70,6 +70,10 @@ See full [changelog](./CHANGELOG.md).
 
   Tools factory from `Extra Goods` is already modular.
 
+- [\[Gameplay\] New World Construction](./mods/production-nw-construction/README.md)
+
+  Adds steel beams, windows and concrete factories to the New World.
+
 ## Electricity Mods
 
 ![](./doc/electricity.jpg)
