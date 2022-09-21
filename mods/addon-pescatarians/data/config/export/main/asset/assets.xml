@@ -189,6 +189,7 @@ Pescatarian
   <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
       <!-- fallback dump -->
+      <Template>dump</Template>
       <Values>
         <Standard>
           <GUID>1500010221</GUID>
@@ -714,16 +715,6 @@ Pescatarian
           <GUID>1500010134</GUID>
           <Name>Pescatarian Population</Name>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Population: Pescatarian</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>25911</LineID>
-        </Text>
         <PopulationGroup7>
           <PopulationLevels>
             <Item>
@@ -968,6 +959,8 @@ Pescatarian
           </ResidenceStorage>
           <PopulationLevel7>601382</PopulationLevel7>
           <ResidentMax>10</ResidentMax>
+          <ResidentsRequiredForUpgrade>10</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
         <FloorStackOwner>
           <!-- disable floor upgrades -->
@@ -1006,16 +999,6 @@ Pescatarian
           <GUID>1500010146</GUID>
           <Name>Residence Hint</Name>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Pescatarian residents live here. They provide the same workface as normal residents but have different needs.</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>14506</LineID> <!-- TODO -->
-        </Text>
       </Values>
     </Asset>
   </ModOp>
@@ -1124,6 +1107,8 @@ Pescatarian
           </ResidenceStorage>
           <PopulationLevel7>601383</PopulationLevel7>
           <ResidentMax>15</ResidentMax>
+          <ResidentsRequiredForUpgrade>16</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
         <UpgradeList>
           <DefaultBuff>1500010147</DefaultBuff>
@@ -1273,6 +1258,8 @@ Pescatarian
           </ResidenceStorage>
           <PopulationLevel7>601384</PopulationLevel7>
           <ResidentMax>10</ResidentMax>
+          <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
         <UpgradeList>
           <DefaultBuff>1500010148</DefaultBuff>
@@ -1763,16 +1750,6 @@ Pescatarian
         <Selection>
           <GUIType>Market</GUIType>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Church</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>3732</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter>
@@ -2259,16 +2236,6 @@ Pescatarian
           <GUID>1500010136</GUID>
           <Name>pescatarian_notification_title</Name>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>AGE OF</Text>
-              <Status>Exported</Status>
-              <ExportCount>2</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>28378</LineID>
-        </Text>
       </Values>
     </Asset>
     <Asset>
@@ -2278,16 +2245,6 @@ Pescatarian
           <GUID>1500010137</GUID>
           <Name>pescatarian_notification_text</Name>
         </Standard>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>AGRICULTURE</Text>
-              <Status>Exported</Status>
-              <ExportCount>1</ExportCount>
-            </English>
-          </LocaText>
-          <LineID>15713</LineID>
-        </Text>
       </Values>
     </Asset>
     <Asset>

@@ -4,7 +4,7 @@
   },
   "scripts": {
     "build-changed": "powershell node node_modules/anno-modding-tools/out/buildmod.js $(node .github/getChanged.js)",
-    "build": "node node_modules/anno-modding-tools/out/buildmod.js mods/**/annomod.json",
+    "build": "node node_modules/anno-modding-tools/out/buildmod.js foreign-additions/**/annomod.json && node node_modules/anno-modding-tools/out/buildmod.js mods/**/annomod.json",
     "package": "node .github/package.js"
   }
 }

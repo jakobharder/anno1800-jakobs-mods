@@ -4,10 +4,6 @@
 
 Makes typical Old World construction materials production buildings available in the New World.
 
-## Requirements
-
-- Optional: the charcoal kiln is only available with DLC `Empire of the Skies`
-
 ## Buildings
 
 Some buildings are a bit slower than their Old World counterpart.
