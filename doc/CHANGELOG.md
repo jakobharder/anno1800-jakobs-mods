@@ -1,6 +1,12 @@
 # Changelog
 
-## 4.15
+## 4.15.1 - GU15 fixes
+
+### Changed
+
+- Upgradable Workers, Pescatarians: Fixed required residents to upgrade
+
+## 4.15 - New World Construction
 
 ### Added
 
