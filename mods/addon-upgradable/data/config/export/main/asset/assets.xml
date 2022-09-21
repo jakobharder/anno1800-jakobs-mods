@@ -703,6 +703,8 @@
           </ResidenceStorage>
           <PopulationLevel7>15000001</PopulationLevel7>
           <ResidentMax>20</ResidentMax> <!-- needs to be the standard max for the population level -->
+          <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>0</IsBaseResidence>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -1451,7 +1453,7 @@
       <Amount>0.0004166</Amount>
       <SupplyWeight>4</SupplyWeight>
       <MoneyValue>20</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
       <FullWeightPopulationCount>800</FullWeightPopulationCount>
       <NoWeightPopulationCount>749</NoWeightPopulationCount>
@@ -1466,7 +1468,7 @@
       <Amount>0.0004166</Amount>
       <SupplyWeight>4</SupplyWeight>
       <MoneyValue>80</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
       <FullWeightPopulationCount>1000</FullWeightPopulationCount>
       <NoWeightPopulationCount>749</NoWeightPopulationCount>
@@ -1479,7 +1481,7 @@
     <Item>
       <Product>1010354</Product> <!-- electricity -->
       <SupplyWeight>2</SupplyWeight>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
+      <RequiredFloorLevel>1</RequiredFloorLevel>
       <RequiredToBeBuilding>1500010201</RequiredToBeBuilding>
       <FullWeightPopulationCount>1200</FullWeightPopulationCount>
       <NoWeightPopulationCount>749</NoWeightPopulationCount>
@@ -1794,6 +1796,8 @@
           </ResidenceStorage>
           <PopulationLevel7>15000002</PopulationLevel7>
           <ResidentMax>30</ResidentMax> <!-- needs to be the standard max for the population level -->
+          <ResidentsRequiredForUpgrade>50</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>0</IsBaseResidence>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level3</REMOVE_THIS_LATER_FeedbackUnitTier>
