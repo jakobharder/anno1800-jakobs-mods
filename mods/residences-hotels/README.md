@@ -22,6 +22,10 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Changes
 
+### 1.4
+
+- Fixed missing skin
+
 ### 1.3
 
 - Fixed no matching node warning 

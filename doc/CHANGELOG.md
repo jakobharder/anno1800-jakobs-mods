@@ -1,10 +1,12 @@
 # Changelog
 
-## 4.15.1 - GU15 fixes
+## 4.15.2 - GU15 fixes
 
 ### Changed
 
-- Upgradable Workers, Pescatarians: Fixed required residents to upgrade
+- Upgradable Workers, Pescatarians: fixed some needs resetting to zero after game load
+- Upgradable Workers, Pescatarians: fixed required residents to upgrade
+- Hotels: fixed broken NW skin in the OW
 
 ## 4.15 - New World Construction
 
