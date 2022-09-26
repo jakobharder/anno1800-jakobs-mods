@@ -836,7 +836,7 @@ Tourist District
     </Item>
   </ModOp>
 
-  <!-- # NW Tourism Compatibility -->
+  <!-- # NW Tourism -->
   <ModOp Type="addNextSibling" GUID="1500010500">
     <Asset>
       <BaseAssetGUID>1500010500</BaseAssetGUID>
@@ -1108,17 +1108,8 @@ Tourist District
       <GUID>1500010529</GUID>
     </Item>
   </ModOp>
-  <!-- NW Tourism compatibility: limit theater, iron tower to vanilla hotel -->
-  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[(Product='133573' or Product='132761') and (not(RequiredToBeBuilding) or not(RequiredBuildings) or RequiredToBeBuilding='601445' or RequiredBuildings/Item/RequiredBuilding='601445')]">
-    <RequiredToBeBuilding>601445</RequiredToBeBuilding>
-    <RequiredBuildings>
-      <Item>
-        <RequiredBuilding>601445</RequiredBuilding>
-      </Item>
-    </RequiredBuildings>
-  </ModOp>
   <!-- NW Tourism compatibility: add theater to OW, boxing for NW -->
-  <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='133573'][last()]">
+  <!-- <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='133573'][last()]">
     <Item>
       <Product>133573</Product>
       <SupplyWeight>25</SupplyWeight>
@@ -1133,7 +1124,7 @@ Tourist District
       </RequiredBuildings>
     </Item>
     <Item>
-      <Product>1440134405</Product> <!-- Boxing -->
+      <Product>1440134405</Product>
       <SupplyWeight>25</SupplyWeight>
       <MoneyValue>45</MoneyValue>
       <FullWeightPopulationCount>50</FullWeightPopulationCount>
@@ -1145,9 +1136,9 @@ Tourist District
         </Item>
       </RequiredBuildings>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- NW Tourism compatibility: add iron tower to OW, Christo & Hacienda to NW -->
-  <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='132761'][last()]">
+  <!-- <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='132761'][last()]">
     <Item>
       <Product>132761</Product>
       <SupplyWeight>80</SupplyWeight>
@@ -1162,7 +1153,7 @@ Tourist District
       </RequiredBuildings>
     </Item>
     <Item>
-      <Product>1440134406</Product> <!-- Christo -->
+      <Product>1440134406</Product>
       <SupplyWeight>80</SupplyWeight>
       <MoneyValue>135</MoneyValue>
       <FullWeightPopulationCount>4000</FullWeightPopulationCount>
@@ -1175,7 +1166,7 @@ Tourist District
       </RequiredBuildings>
     </Item>
     <Item>
-      <Product>1440134407</Product> <!-- Hacienda -->
+      <Product>1440134407</Product>
       <HappinessValue>3</HappinessValue>
       <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
       <MoneyValue>75</MoneyValue>
@@ -1186,9 +1177,9 @@ Tourist District
         </Item>
       </RequiredBuildings>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
-  <!-- # NW Tourism: change unlocks -->
+  <!-- # NW Tourism: custom unlocks -->
   <!-- add fake trigger first to avoid missing node warning -->
   <ModOp Type="addNextSibling" GUID="601445">
     <Asset>
@@ -1333,18 +1324,28 @@ Tourist District
   </ModOp>
   <ModOp Type="remove" GUID="1500010505" />
 
-  <!-- # Mod compatibility -->
-  <!-- Train Stations: add train stations need to self -->
-  <!-- disabled because it adds to the residence count even if not available -->
-  <!-- <ModOp Type="addNextSibling" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010213'][last()]">
+  <!-- # Hotel Needs -->
+  <Include File="./assets-hotel-needs.include.xml" />
+  <!-- copy needs from vanilla/NW Tourism hotel -->
+  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item/RequiredBuildings[Item/Region='Moderate']">
     <Item>
-      <Product>850044</Product>
-      <Amount>0.008333333</Amount>
-      <SupplyWeight>55</SupplyWeight>
-      <MoneyValue>55</MoneyValue>
-      <FullWeightPopulationCount>30</FullWeightPopulationCount>
-      <NoWeightPopulationCount>29</NoWeightPopulationCount>
-      <RequiredToBeBuilding>1500010500</RequiredToBeBuilding>
+      <RequiredBuilding>1500010500</RequiredBuilding>
+      <Region>Moderate</Region>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item/RequiredBuildings[Item/Region='Colony01']">
+    <Item>
+      <RequiredBuilding>1500010529</RequiredBuilding>
+      <Region>Colony01</Region>
+    </Item>
+  </ModOp>
+  <!-- swap theater, iron tower with boxing, christo and hacienda -->
+  <!-- <Include File="./assets-hotel-needs-nw.include.xml" />
+  <ModOp Type="remove" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='133573' or Product='132761' or Product='137757']/RequiredBuildings/Item[RequiredBuilding='1500010529']" />
+  <ModOp Type="add" GUID="601379" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1440134405' or Product='1440134406' or Product='1440134407']/RequiredBuildings">
+    <Item>
+      <RequiredBuilding>1500010529</RequiredBuilding>
+      <Region>Colony01</Region>
     </Item>
   </ModOp> -->
 </ModOps>
