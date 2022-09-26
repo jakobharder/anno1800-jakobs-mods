@@ -1,68 +1,17 @@
 <!-- 
-Jakob's Extra Goods
+  Jakob's Extra Goods
 
-1440005 milk // 1500010101 New Horizon GUID/product; bundled with permission
-1500010102 cheese
-1500010103 dairy
-1500010104 milk farm
-1500010105 olives
-1500010106 soap
-1500010107 orchard olives
-1500010108 olive soap factory
-1500010109 olive soap chain
-1500010110 olive field
-1500010111 cheese chain
-
-150010112 buff: nearby production cheese
-150010113 buff: nearby production tools
-// 150010114 free
-// 150010115 free
-// 150010116 free
-
-1500010120 canned fish
-1500010121 fish cannery
-1500010122 canned fish chain
-1440224 hemp product // 1500010123 New Horizon GUID/product; bundled with permission
-1500010124 hemp farm
-1500010125 hemp field
-1500010126 linen cloth maker
-1500010127 suits product
-1500010128 suits maker
-1500010129 suits chain
-
-1500010150 wooden accessories
-1500010151 accessory shop
-1500010152 accessory chain
-1500010153 tools
-1500010154 tools shop
-1500010155 tools chain
-1500010156 premium beer
-1500010157 premium brewery
-1500010158 premium beer chain
-
-1500010159 farmer unlock goods
-1500010160 worker unlock goods
-1500010161 artisan unlock goods
-
-1500010162 wooden accessory asset pool
-1500010163 tools asset pool
-1500010164 canned fish asset pool
-1500010165 OW suits asset pool
-1500010166 olive soap asset pool
-1500010167 cheese asset pool
-1500010168 premium beer asset pool
-
-1500010179 unlock all goods at 1 engineer (for late game addition)
-1500010181 unlock all goods at 1500 artisans
-1500010189 relock accessories, soap and bottled beer if no artisans available
-
-
-1500010250+ recipes
-
+  1440005 milk // 1500010101 New Horizon GUID/product; bundled with permission
+  1440224 hemp product // 1500010123 New Horizon GUID/product; bundled with permission
 -->
-
 <ModOps>
   <!-- # Goods Lists -->
+  <Include File="./products/canned-fish/assets.include.xml" />
+  <Include File="./products/cheese/assets.include.xml" />
+  <Include File="./products/tools/assets.include.xml" />
+  <Include File="./products/suits/assets.include.xml" />
+  <Include File="./products/olive-soap/assets.include.xml" />
+  
   <!-- add to StandartProductStorageList -->
   <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
@@ -76,19 +25,7 @@ Jakob's Extra Goods
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
+  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010106')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
     <Item>
       <Product>1500010106</Product>
     </Item>
@@ -144,9 +81,6 @@ Jakob's Extra Goods
               <Product>1440005</Product>
             </Item>
             <Item>
-              <Product>1500010102</Product>
-            </Item>
-            <Item>
               <Product>1010213</Product>
             </Item>
             <Item>
@@ -156,16 +90,7 @@ Jakob's Extra Goods
               <Product>1500010106</Product>
             </Item>
             <Item>
-              <Product>1500010153</Product>
-            </Item>
-            <Item>
               <Product>1440224</Product>
-            </Item>
-            <Item>
-              <Product>1500010127</Product>
-            </Item>
-            <Item>
-              <Product>1500010120</Product>
             </Item>
           </List>
         </ProductList>
@@ -896,33 +821,6 @@ Jakob's Extra Goods
   <!-- # Need: Canned Fish -->
   <ModOp GUID='1010200' Type="addNextSibling">
     <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010120</GUID>
-          <Name>canned_fish</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- basic need -->
-          <BasePrice>563</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>40</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
       <Template>FactoryBuilding7</Template>
       <Values>
         <Standard>
@@ -1240,40 +1138,6 @@ Jakob's Extra Goods
       </Values>
     </Asset>
     <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010127</GUID>
-          <Name>suits</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
-          <BasePrice>480</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>6</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>15</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>129492</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
       <Template>FarmBuilding</Template>
       <Values>
         <Standard>
@@ -1576,7 +1440,7 @@ Jakob's Extra Goods
         <Standard>
           <GUID>1500010128</GUID>
           <Name>suits_maker</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
+          <IconFilename>data\config\export\main\asset\products\suits\icon_suits.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -1797,7 +1661,7 @@ Jakob's Extra Goods
         <Standard>
           <GUID>1500010129</GUID>
           <Name>suits_chain</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
+          <IconFilename>data\config\export\main\asset\products\suits\icon_suits.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500010128</Building>
@@ -1860,7 +1724,7 @@ Jakob's Extra Goods
         <Standard>
           <GUID>1500010184</GUID>
           <Name>suits_maker_reduced_needs</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
+          <IconFilename>data\config\export\main\asset\products\suits\icon_suits.png</IconFilename>
           <InfoDescription>1500010400</InfoDescription>
         </Standard>
         <ItemEffect>
@@ -1933,40 +1797,6 @@ Jakob's Extra Goods
 
   <!-- # Need / Luxury: Tools -->
   <ModOp GUID='1010200' Type="addNextSibling">
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010153</GUID>
-          <Name>tools</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- basic need -->
-          <BasePrice>240</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Crafting</Attribute>
-              <Amount>50</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>19796</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
     <Asset>
       <Template>FactoryBuilding7Variable</Template>
       <Values>
@@ -2384,40 +2214,6 @@ Jakob's Extra Goods
       </Values>
     </Asset>
     <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010106</GUID>
-          <Name>olive_soap</Name>
-          <IconFilename>data/jakob/ui/icons/icon_olive_soap.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- supply good -->
-          <BasePrice>120</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>0</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Medicine</Attribute>
-              <Amount>15</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>12834</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
       <Template>FarmBuilding</Template>
       <Values>
         <Standard>
@@ -2759,32 +2555,16 @@ Jakob's Extra Goods
       <Product>1500010105</Product>
     </Item>
   </ModOp>
-  <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010203' and not(../Item/Product='1500010106')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010106</Product>
-    </Item>
-  </ModOp>
-  
   <!-- add to AgriculturalGoods_Europe to show up in the warehouse -->
   <ModOp Type="addNextSibling" GUID='502037' Path="/Values/ProductList/List/Item[Product='120014']">
     <Item>
       <Product>1500010105</Product>
     </Item>
   </ModOp>
-  <!-- add to BasicNeedsGoods to show up in the warehouse -->
-  <ModOp Type="addNextSibling" GUID='501993' Path="/Values/ProductList/List/Item[Product='1010203']">
-    <Item>
-      <Product>1500010106</Product>
-    </Item>
-  </ModOp>
   <!-- add to WorkerWorkforceGoods, TODO not sure what those are good for though, production ratio perhaps? -->
   <ModOp Type="add" GUID='502005' Path="/Values/ProductList/List">
     <Item>
       <Product>1500010105</Product>
-    </Item>
-    <Item>
-      <Product>1500010106</Product>
     </Item>
   </ModOp>
   <!-- OW consumables, workers menu: insert after beer -->
@@ -2822,32 +2602,6 @@ Jakob's Extra Goods
         </Product>
         <ExpeditionAttribute> <!-- TODO make edible --> 
           <BaseMorale>5</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010102</GUID>
-          <Name>cheese</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- supply good -->
-          <BasePrice>80</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute> <!-- TODO make edible --> 
-          <BaseMorale>20</BaseMorale>
         </ExpeditionAttribute>
       </Values>
     </Asset>

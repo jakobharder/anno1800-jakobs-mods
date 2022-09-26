@@ -1,22 +1,9 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../export/main/asset/products/texts/texts_chinese.include.xml" />
+  
+  <!-- # Workers -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>奶酪</Text> <!-- product -->
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>西装</Text> <!-- product -->
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>工具</Text> <!-- product -->
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>罐装鱼肉</Text> <!-- product -->
-    </Text>
     <!-- main text -->
     <Text>
       <GUID>1500010200</GUID>
@@ -82,7 +69,9 @@
       <GUID>1500010281</GUID>
       <Text>新式工人住宅</Text> <!-- target pool -->
     </Text>
-    <!-- Artisan text -->
+  </ModOp>
+  <!-- # Artisans -->  
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010225</GUID>
       <Text>1级新式工匠住所</Text> <!-- residence UI -->

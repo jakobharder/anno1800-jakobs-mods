@@ -1,23 +1,9 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../export/main/asset/products/texts/texts_english.include.xml" />
+  
+  <!-- # Workers -->  
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Cheese</Text> <!-- product -->
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>Suits</Text> <!-- product -->
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>Tools</Text> <!-- product -->
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Canned Fish</Text> <!-- product -->
-    </Text>
-    <!-- main text -->
     <Text>
       <GUID>1500010200</GUID>
       <Text>Modern Worker Residence: Level 1</Text> <!-- construction menu, residence UI -->
@@ -82,7 +68,9 @@
       <GUID>1500010281</GUID>
       <Text>Modern Worker Residences</Text> <!-- target pool -->
     </Text>
-    <!-- Artisan text -->
+  </ModOp>
+  <!-- # Artisans -->  
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010225</GUID>
       <Text>Modern Artisan Residence: Level 1</Text> <!-- residence UI -->

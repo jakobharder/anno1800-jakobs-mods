@@ -2,128 +2,14 @@
   Upgradable Low Tiers
 -->
 <ModOps>
-  <!-- # shared products -->
+  <!-- # Shared Products -->
+  <Include File="./products/canned-fish/assets.include.xml" />
+  <Include File="./products/cheese/assets.include.xml" />
+  <Include File="./products/tools/assets.include.xml" />
+  <Include File="./products/suits/assets.include.xml" />
+
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010153</GUID>
-          <Name>tools</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11705</ProductCategory>
-          <BasePrice>240</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Crafting</Attribute>
-              <Amount>50</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>19796</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010120</GUID>
-          <Name>canned_fish</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
-          <BasePrice>563</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>40</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010127</GUID>
-          <Name>suits</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
-          <BasePrice>480</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>6</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>15</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>129492</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010102</GUID>
-          <Name>cheese</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- supply good -->
-          <BasePrice>80</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <!-- TODO make edible -->
-          <BaseMorale>20</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
     <Asset>
       <Template>Product</Template>
       <Values>
@@ -190,19 +76,7 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
+  <!-- <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
     <Item>
       <Product>1500010106</Product>
     </Item>
@@ -212,28 +86,9 @@
     <Item>
       <Product>1500010150</Product>
     </Item>
-  </ModOp>
-  <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214' and not(../Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238' and not(../Item/Product='1500010102')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- filter lists -->
-  <ModOp Type="addNextSibling" GUID="502019">
+  <!-- <ModOp Type="addNextSibling" GUID="502019">
     <Asset>
       <Template>ProductList</Template>
       <Values>
@@ -269,9 +124,6 @@
               <Product>1440005</Product>
             </Item>
             <Item>
-              <Product>1500010102</Product>
-            </Item>
-            <Item>
               <Product>1010213</Product>
             </Item>
             <Item>
@@ -281,16 +133,7 @@
               <Product>1500010106</Product>
             </Item>
             <Item>
-              <Product>1500010153</Product>
-            </Item>
-            <Item>
               <Product>1440224</Product>
-            </Item>
-            <Item>
-              <Product>1500010127</Product>
-            </Item>
-            <Item>
-              <Product>1500010120</Product>
             </Item>
           </List>
         </ProductList>
@@ -312,9 +155,9 @@
         </ProductList>
       </Values>
     </Asset>
-  </ModOp>
+  </ModOp> -->
   <!-- stats/warehouse all list: insert after artisan -->
-  <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
+  <!-- <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
     <Item>
       <Product>1500010159</Product>
     </Item>
@@ -324,9 +167,9 @@
     <Item>
       <Product>1500010161</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- session goods: insert after artisan -->
-  <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
+  <!-- <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
     <Item>
       <Product>1500010159</Product>
     </Item>
@@ -336,40 +179,12 @@
     <Item>
       <Product>1500010161</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- trade contracts for shared products -->
   <!-- 
     add products to traders based on name and product of the same unlock category
     unlock condition is not used to get the unlock category as there are mods that change unlock conditions
   -->
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010102')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- feedl -->
-    <Item>
-      <Level>Uncommon</Level>
-      <Good>1500010102</Good>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010120')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- feedl -->
-    <Item>
-      <Level>Rare</Level>
-      <Good>1500010120</Good>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131765']/TradeLevels/Item[Trades/Item/Good='1010247' and not(Trades/Item/Good='1500010127')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- chanteuse -->
-    <Item>
-      <Level>Rare</Level>
-      <Good>1500010127</Good>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131811']/TradeLevels/Item[Trades/Item/Good='1010196' and not(Trades/Item/Good='1500010153')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- kitea -->
-    <Item>
-      <Level>Rare</Level>
-      <Good>1500010153</Good>
-    </Item>
-  </ModOp>
   
   <!-- # modify vanilla upgrade paths -->
   <ModOp GUID='1010344' Type="add" Path="Values">
@@ -1484,15 +1299,6 @@
     </Item>
   </ModOp>
   <ModOp GUID='502005' Type="add" Path="/Values/ProductList/List">
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
     <Item>
       <Product>1500010127</Product>
     </Item>

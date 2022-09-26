@@ -1,4 +1,7 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../export/main/asset/products/texts/texts_french.include.xml" />
+  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -7,10 +10,6 @@
     <Text>
       <GUID>1440224</GUID> <!-- hemp: product -->
       <Text>Chanvre</Text>
-    </Text>
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Fromage</Text> <!-- cheese: product -->
     </Text>
     <Text>
       <GUID>1500010103</GUID> <!-- dairy: product -->
@@ -49,14 +48,6 @@
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
-      <GUID>1500010117</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Conserve de poisson</Text> <!-- canned fish: product -->
-    </Text>
-    <Text>
       <GUID>1500010121</GUID>
       <Text>Conserverie de poisson</Text> <!-- fish cannery: building -->
     </Text>
@@ -77,10 +68,6 @@
       <Text>Fillature de chanvre</Text> <!-- linen cloth maker: building -->
     </Text>
     <Text>
-      <GUID>1500010127</GUID>
-      <Text>Costumes</Text> <!-- suits: product -->
-    </Text>
-    <Text>
       <GUID>1500010128</GUID>
       <Text>Usine de costumes</Text> <!-- suits factory: building -->
     </Text>
@@ -99,10 +86,6 @@
     <Text>
       <GUID>1500010152</GUID>
       <Text>[AssetData(1500010150) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>[AssetData(984) Text]</Text> <!-- tools: product -->
     </Text>
     <Text>
       <GUID>1500010154</GUID>
