@@ -6,29 +6,6 @@
   <!-- add target pools for sand/iron mines -->
   <ModOp Type="addNextSibling" GUID="190886">
     <Asset>
-      <!-- fallback dump -->
-      <Template>fake</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ignore></ignore>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1010560</GUID>
-            </Item>
-            <Item>
-              <GUID>1010305</GUID>
-            </Item>
-            <Item>
-              <GUID>1010309</GUID>
-            </Item>
-          </EffectTargets>
-        </ItemEffect>
-      </Values>
-    </Asset>
-    <Asset>
       <Template>ItemEffectTargetPool</Template>
       <Values>
         <Standard>
@@ -93,63 +70,22 @@
       <GUID>1500010716</GUID>
     </Item>
   </ModOp>
-  <!-- add charcoal kiln for all -->
-  <ModOp Type="replace" GUID="1345" Path="/Values/Standard/Name">
-    <Name>heavy_03 (Coal Heavy Industry) Colony01</Name>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="1010299,1010299">
+  <!-- # Unlock Charcoal Kiln for all -->
+  <ModOp Type="addNextSibling" GUID="1345">
     <Asset>
-      <BaseAssetGUID>1010298</BaseAssetGUID>
+      <!-- fallback dump -->
+      <Template>fake</Template>
       <Values>
         <Standard>
-          <GUID>1345</GUID>
-          <Name>Charcoal Kiln (new)</Name>
+          <GUID>1500010221</GUID>
         </Standard>
-        <Building>
-          <AssociatedRegions>Colony01</AssociatedRegions>
-        </Building>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data/eoy21/graphics/buildings/production/heavy_03/heavy_03.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Selection>
-          <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
-        </Selection>
         <Locked>
-          <DLCDependency>24962</DLCDependency>
+          <DLCDependency>0</DLCDependency>
         </Locked>
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>1010226</Product>
-              <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <IsMainFactory>0</IsMainFactory>
-        </FactoryBase>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>20</Amount>
-              <InactiveAmount>10</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010366</Product>
-              <Amount>15</Amount>
-              <ShutdownThreshold>0.2</ShutdownThreshold>
-            </Item>
-          </Maintenances>
-        </Maintenance>
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1345' or (Values/Standard/GUID='1345' and Values/Standard/Name='heavy_03 (Coal Heavy Industry) Colony01')][position() < last()]" />
-  <ModOp Type="remove" GUID="1345" Path="/Values/Locked/DLCDependency" />
+  <ModOp Type="remove" GUID="1345" Path="/Values/Locked/DLCDependency | //Values[Standard/GUID='1500010221']/Locked/DLCDependency" />
   <!-- cleanup -->
   <ModOp Type="remove" GUID="1500010221" />
 
