@@ -60,6 +60,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 1.10
+
+- Added Pescatarians goods as alternative needs to vanilla population
+
 ### 1.9
 
 - Improved Russion translation (thanks to @m_belonosov)
