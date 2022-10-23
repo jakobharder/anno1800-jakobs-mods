@@ -60,16 +60,14 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
-### 1.10
+### 2.0
 
 - Added Pescatarians goods as alternative needs to vanilla population
-
-### 1.9
-
-- Improved Russion translation (thanks to @m_belonosov)
+- Rebalance needs income/consumption
 
 ### Older
 
+- 1.9: Improved Russion translation (thanks to @m_belonosov)
 - 1.8: Chinese translation
 - 1.7: Fixed GU14 maintenance buff
 - 1.6: GU14 support

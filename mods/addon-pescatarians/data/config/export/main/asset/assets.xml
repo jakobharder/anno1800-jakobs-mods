@@ -271,8 +271,9 @@
               <Product>1500010153</Product>
               <Amount>0.0001</Amount>
               <HappinessValue>4</HappinessValue>
-              <MoneyValue>180</MoneyValue>
+              <MoneyValue>100</MoneyValue>
               <FullWeightPopulationCount>750</FullWeightPopulationCount>
+              <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
               <!-- <NoWeightPopulationCount>249</NoWeightPopulationCount> -->
             </Item>
             <Item>
@@ -855,7 +856,7 @@
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
           <PopulationLevel7>601383</PopulationLevel7>
-          <ResidentMax>15</ResidentMax>
+          <ResidentMax>20</ResidentMax>  <!-- consumption calculation base -->
           <ResidentsRequiredForUpgrade>16</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
@@ -1006,7 +1007,7 @@
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
           <PopulationLevel7>601384</PopulationLevel7>
-          <ResidentMax>10</ResidentMax>
+          <ResidentMax>30</ResidentMax>  <!-- consumption calculation base -->
           <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
@@ -2014,7 +2015,6 @@
   </ModOp>
 
   <!-- # Buff Targets -->
-  <!-- the below modops are very expensive, but in case of farmers, workers, ... it's impossible to hardcode all targets -->
   <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
     <Item>
       <GUID>1500010282</GUID>
@@ -2045,6 +2045,12 @@
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
     <Item>
       <GUID>1500010145</GUID>
+    </Item>
+  </ModOp>
+  <!-- add community center everywhere where marketplace is -->
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
+    <Item>
+      <GUID>1500010100</GUID>
     </Item>
   </ModOp>
 
