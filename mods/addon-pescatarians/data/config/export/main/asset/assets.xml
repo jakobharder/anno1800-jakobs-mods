@@ -142,13 +142,10 @@
         </Standard>
         <PopulationLevel7>
           <PopulationInputs>
+            <!-- Basic Needs -->
             <Item>
               <Product>1500010119</Product>
               <SupplyWeight>3</SupplyWeight>
-            </Item>
-            <Item>
-              <Product>1500010118</Product>
-              <HappinessValue>2</HappinessValue>
             </Item>
             <Item>
               <Product>1010200</Product>
@@ -184,21 +181,6 @@
               <SupplyWeight>3</SupplyWeight>
               <MoneyValue>10</MoneyValue>
               <FullWeightPopulationCount>150</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>99</NoWeightPopulationCount> -->
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010142</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item>
-            <Item>
-              <Product>1500010150</Product>
-              <Amount>0.0002083</Amount>
-              <HappinessValue>5</HappinessValue>
-              <MoneyValue>20</MoneyValue>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010142</RequiredBuilding>
@@ -251,20 +233,6 @@
               </RequiredBuildings>
             </Item>
             <Item>
-              <Product>1500010153</Product>
-              <Amount>0.0002</Amount>
-              <HappinessValue>3</HappinessValue>
-              <MoneyValue>80</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item>
-            <Item>
               <Product>1010351</Product>
               <SupplyWeight>3</SupplyWeight>
               <RequiredBuildings>
@@ -287,60 +255,12 @@
                 </Item>
               </RequiredBuildings>
             </Item>
-            <!-- <Item>
-              <Product>1500010156</Product>
-              <Amount>0.00014</Amount>
-              <HappinessValue>6</HappinessValue>
-              <MoneyValue>180</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item> -->
             <Item>
               <Product>1500010120</Product>
               <Amount>0.0004</Amount>
               <SupplyWeight>6</SupplyWeight>
               <MoneyValue>20</MoneyValue>
               <FullWeightPopulationCount>250</FullWeightPopulationCount>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item>
-            <!-- <Item>
-              <Product>1010206</Product>
-              <Amount>0.00017</Amount>
-              <SupplyWeight>6</SupplyWeight>
-              <MoneyValue>40</MoneyValue>
-              <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item> -->
-            <Item>
-              <Product>1500010801</Product>
-              <HappinessValue>5</HappinessValue>
-              <MoneyValue>20</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item>
-            <Item>
-              <Product>1010352</Product>
-              <HappinessValue>5</HappinessValue>
-              <MoneyValue>26</MoneyValue>
-              <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              <!-- <NoWeightPopulationCount>249</NoWeightPopulationCount> -->
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010144</RequiredBuilding>
@@ -356,6 +276,188 @@
                   <RequiredBuilding>1500010144</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
+            </Item>
+            <!-- Luxury Needs -->
+            <Item>
+              <Product>1500010118</Product>
+              <HappinessValue>2</HappinessValue>
+            </Item>
+            <Item>
+              <Product>1500010150</Product>
+              <Amount>0.0002083</Amount>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>20</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010142</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010153</Product>
+              <Amount>0.0002</Amount>
+              <HappinessValue>3</HappinessValue>
+              <MoneyValue>80</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010801</Product>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>20</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1010352</Product>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>26</MoneyValue>
+              <FullWeightPopulationCount>500</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Luxury Needs to prepare upgrade to Engineers -->
+            <Item>
+              <Product>1010206</Product>
+              <Amount>0.0003</Amount>
+              <HappinessValue>1</HappinessValue>
+              <MoneyValue>40</MoneyValue>
+              <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Lifestyle Needs: worker houses -->
+            <Item>
+              <Product>1010197</Product>
+              <Amount>0.001</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1010201</Product>
+              <Amount>0.0005</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>133183</Product>
+              <Amount>0.0004</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Lifestyle Needs: artisan houses -->
+            <Item>
+              <Product>117702</Product>
+              <Amount>0.0006</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>114330</Population>
+                <MinPopulationAmount>600</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>120037</Product>
+              <Amount>0.0002</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>135233</Product>
+              <Amount>0.00003</Amount>
+              <SupplyWeight>9</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Lifestyle Needs: Mail -->
+            <Item>
+              <Product>535</Product>
+              <Amount>0.00075</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <MoneyValue>20</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000002</Population>
+                <MinPopulationAmount>500</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>536</Product>
+              <Amount>0.00025</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <MoneyValue>40</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000006</Population>
+                <MinPopulationAmount>1</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>2524</Product>
+              <Amount>0.00017094</Amount>
+              <SupplyWeight>13</SupplyWeight>
+              <MoneyValue>60</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000006</Population>
+                <MinPopulationAmount>1000</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
             </Item>
           </PopulationInputs>
           <DefaultResidence>1500010144</DefaultResidence>
