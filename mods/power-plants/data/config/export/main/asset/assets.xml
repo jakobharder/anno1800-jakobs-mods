@@ -657,7 +657,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <ModOp GUID='118571' Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>118571</BaseAssetGUID>
-      <!-- <Template>FactoryBuilding7</Template> -->
       <Values>
         <Standard>
           <GUID>1500010467</GUID>
@@ -798,6 +797,49 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </ModuleOwner>
       </Values>
     </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010469</GUID>
+          <Name>unlock fuel pump station</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>269840</UnlockNeeded>
+              </ConditionUnlocked>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010467</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010468</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
   <ModOp Type="add" GUID="269756" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -879,9 +921,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
             <Item>
               <Building>1500010001</Building> <!-- wind -->
-            </Item>
-            <Item>
-              <Building>1500010467</Building> <!-- fuel pump station -->
             </Item>
           </BuildingList>
           <CategoryDescription>1500010031</CategoryDescription>
