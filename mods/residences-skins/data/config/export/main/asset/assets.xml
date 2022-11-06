@@ -12,29 +12,29 @@ Colored Roofs, Residences
   <ModOp GUID='1500010144' Type="replace" Path="/Values/Object/Variations">
     <Variations>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate01.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</Filename>
       </Item>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate02.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</Filename>
       </Item>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate03.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</Filename>
       </Item>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate04.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</Filename>
       </Item>
       <!-- repeat same variations again to double the color variations in non-default skins -->
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate01.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</Filename>
       </Item>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate02.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</Filename>
       </Item>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate03.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</Filename>
       </Item>
       <Item>
-        <Filename>data/jakob/buildings/residence_tier03/residence_tier03_estate04.cfg</Filename>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</Filename>
       </Item>
     </Variations>
   </ModOp>
@@ -143,6 +143,9 @@ Colored Roofs, Residences
     <Item>
       <SkinAssetGuid>1500010306</SkinAssetGuid>
     </Item>
+    <Item>
+      <SkinAssetGuid>1500010321</SkinAssetGuid>
+    </Item>
   </ModOp>
 
   <!-- # Pescatarian engineers skins -->
@@ -218,6 +221,19 @@ Colored Roofs, Residences
             <Item>
               <FileName>data/jakob/buildings/residence_tier03/skin5/residence_tier03_estate04.cfg</FileName>
             </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins for Pescatarians -->
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin5/residence_tier03_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin5/residence_tier03_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin5/residence_tier03_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin5/residence_tier03_estate04.cfg</FileName>
+            </Item>
           </SkinVariations>
         </Skin>
         <Locked>
@@ -233,14 +249,26 @@ Colored Roofs, Residences
       <Values>
         <Standard>
           <GUID>1500010304</GUID>
-          <Name>Artisans blue roofs</Name>
-          <IconFilename>data/jakob/ui/icons/icon_tier03_default.png</IconFilename>
-          <ID>t3_skin_blue</ID>
+          <Name>Blue Artisan Skin</Name>
+          <IconFilename>data\jakob\buildings\residence_tier03\skin1\icon_artisan_blue.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010308</SkinName>
           <SkinDescription>1500010307</SkinDescription>
           <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/residence_tier03_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/residence_tier03_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/residence_tier03_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/residence_tier03_estate04.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins for Pescatarians -->
             <Item>
               <FileName>data/jakob/buildings/residence_tier03/residence_tier03_estate01.cfg</FileName>
             </Item>
@@ -288,6 +316,19 @@ Colored Roofs, Residences
             <Item>
               <FileName>data/jakob/buildings/residence_tier03/skin2/residence_tier03_estate04.cfg</FileName>
             </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins for Pescatarians -->
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin2/residence_tier03_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin2/residence_tier03_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin2/residence_tier03_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin2/residence_tier03_estate04.cfg</FileName>
+            </Item>
           </SkinVariations>
         </Skin>
         <Locked>
@@ -311,6 +352,19 @@ Colored Roofs, Residences
           <SkinName>1500010311</SkinName>
           <SkinDescription>1500010307</SkinDescription>
           <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin3/residence_tier03_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin3/residence_tier03_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin3/residence_tier03_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence_tier03/skin3/residence_tier03_estate04.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins for Pescatarians -->
             <Item>
               <FileName>data/jakob/buildings/residence_tier03/skin3/residence_tier03_estate01.cfg</FileName>
             </Item>
@@ -358,6 +412,12 @@ Colored Roofs, Residences
     </Item>
     <Item>
       <SkinAssetGuid>1500010306</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010834</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010321</SkinAssetGuid>
     </Item>
   </ModOp>
 

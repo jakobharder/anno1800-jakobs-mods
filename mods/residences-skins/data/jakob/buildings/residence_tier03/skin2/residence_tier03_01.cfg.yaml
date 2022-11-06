@@ -5,6 +5,7 @@ variant:
     # replace with model split into walls and roof
     - xpath: //Config/Models/Config[FileName="data\graphics\buildings\residence\residence_tier03_01\rdm\residence_tier03_01_lod0.rdm"]
       FileName: data\jakob\buildings\residence_tier03\rdm\tier03_01_lod0.rdm
+    - xpath-remove: //Config/Models/Config/MaterialLODInfos
     - xpath: //Config/Models/Config/Materials/Config[Name="01_building"]
       cModelDiffTex: data/graphics/buildings/residence/residence_tier03_01/maps/residence_tier03_01_diff.psd
     # replace ground with roof texture

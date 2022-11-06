@@ -28,15 +28,7 @@
     <!-- main -->
     <Text>
       <GUID>601382</GUID>
-      <Text>Bauern (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>601383</GUID>
-      <Text>Arbeiter (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>601384</GUID>
-      <Text>Handwerker (Pescetarier)</Text>
+      <Text>Pescetarier</Text>
     </Text>
     <Text>
       <GUID>1500010100</GUID>
@@ -49,18 +41,6 @@
     <Text>
       <GUID>1500010119</GUID>
       <Text>Gemeindemarkt</Text> <!-- public service: basic -->
-    </Text>
-    <Text>
-      <GUID>1500010130</GUID>
-      <Text>Bauern (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>1500010131</GUID>
-      <Text>Arbeiter (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>1500010132</GUID>
-      <Text>Handwerker (Pescetarier)</Text>
     </Text>
     <Text>
       <GUID>1500010134</GUID>
@@ -130,5 +110,71 @@
       <GUID>1500010159</GUID>
       <Text>Pescetarier-Alternativen</Text>
     </Text>
+  </ModOp>
+
+  <!-- # Services -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010816</GUID>
+      <Text>Bücherei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010817</GUID>
+      <Text>Kleine Post</Text>
+    </Text>
+    <Text>
+      <GUID>1500010819</GUID>
+      <Text>Lokale</Text>
+    </Text>
+  </ModOp> 
+
+  <!-- # Productions -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010822</GUID>
+      <Text>Seilerei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010824</GUID>
+      <Text>Seile</Text>
+    </Text>
+    <Text>
+      <GUID>1500010825</GUID>
+      <Text>Seile</Text>
+    </Text>
+    <Text>
+      <GUID>1500010827</GUID>
+      <Text>Fischernetze</Text>
+    </Text>
+    <Text>
+      <GUID>1500010828</GUID>
+      <Text>Fischernetzwerk</Text>
+    </Text>
+    <Text>
+      <GUID>1500010829</GUID>
+      <Text>Fishernetze</Text>
+    </Text>
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Gemüsehof</Text>
+    </Text>
+    <Text>
+      <GUID>1500010831</GUID>
+      <Text>Eingelegtes Gemüse</Text>
+    </Text>
+    <Text>
+      <GUID>1500010835</GUID>
+      <Text>Küche</Text>
+    </Text>
+    <Text>
+      <GUID>1500010836</GUID>
+      <Text>Gemüse</Text>
+    </Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Nahrung</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Konserven</Text>
   </ModOp>
 </ModOps>

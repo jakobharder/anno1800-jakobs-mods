@@ -8,7 +8,7 @@
   You can request changes there as well.
 -->
 <ModOps>
-  <!-- # Product: Tools -->
+  <!-- # Product: Suits -->
   <ModOp GUID="1010206" Type="addNextSibling">
     <Asset>
       <Template>Product</Template>
@@ -62,14 +62,14 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- StandardProductList,StandardMarketplaceModerateStorageList: after canned food -->
-  <ModOp Type="addNextSibling" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010127')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
+  <ModOp Type="addNextSibling" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList/Item[Product='1010247' and not(../Item/Product='1500010127')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010127</Product>
     </Item>
   </ModOp>
-  <!-- BasicNeed,All,Session Goods (warehouse): after canned food -->
-  <ModOp Type="addNextSibling" GUID="501993,502019,502005" Path="/Values/ProductList/List/Item[Product='1010217' and not(../Item/Product='1500010127')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- product lists: after fur coats / artisan -->
+  <ModOp Type="addNextSibling" GUID="501997,501992,502019,502005,502016,502220,502065,502031" Path="/Values/ProductList/List/Item[(Product='1010247' or Product='501997' or Product='502019') and not(../Item/Product='1500010127')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010127</Product>
     </Item>

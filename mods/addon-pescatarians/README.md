@@ -12,24 +12,22 @@ Alternative Old World population providing with new needs, productions and workf
 
 ## Population
 
-### Farmers
+### Pescatarians
 
-- Need community center and potatoes instead of marketplace and working cloth.
+- Pescatarians provide Farmer/Worker/Artisan workforce in equal shares.
+  For example 3 Pescatarian residents provide a workforce of 1 Farmer, 1 Worker and 1 Artisan.
+- All Pescatarians residences have the same population, but different number of residents and consumed products.
 
-### Workers
+### Upgrade to Engineers
 
-- Need cheese and olive soap instead of sausages and normal soap.
-- Provide extra farmer workforce in the same building.
+- You can upgrade Pescatarians to Engineers, but Engineers are vanilla population.
+  Once upgraded, a downgrade will lead to vanilla Artisans.
 
-### Artisans
+### Pescatarian Lifestyle for Vanilla Population
 
-- Need canned fish and suits instead of canned food and fur coats.
-- Provide extra farmer and worker workforce in the same building.
+- Vegetables, Soap, Canned Fish and Suits can be provided to vanilla population as alternative needs via Lifestyle needs.
 
-### Engineers
-
-- Accept both canned fish/canned food and suits/fur coats.
-- Can be upgraded to normal skyscapers or investors.
+- The lifestyle needs basically turn everyone into Pescatarian without the workforce bonus real Pescatarians have.
 
 ## Buildings
 
@@ -37,9 +35,18 @@ Alternative Old World population providing with new needs, productions and workf
 
 - Functions as both marketplace and church replacement for Pescatarians.
 
-### Music School
+### Restaurants, Library, Music School
 
-- Provides music school public service to Pescatarians and workers from `[Addon] Upgradable Workers`.
+- Provide public services to Pescatarians
+- The music school is also available to modern residences from `[Addon] Upgradable Workers`.
+
+### Fishernet Maker
+
+- Turns ropes into +100% productivity boost for fisheries.
+
+### Small Post Office
+
+- Visually more fitting version of the `Empires of the Skies` post office.
 
 ## Products
 
@@ -54,15 +61,15 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### Only with Extra Goods Collection
 
-- Bottled Beer
 - Tools
-- Wooden Accessories
 
 ## Changes
 
 ### 2.0
 
 - Added Pescatarians goods as alternative needs to vanilla population
+- Added Ropes
+- Removed Wooden Accessories, Bottled Beer
 - Rebalance needs income/consumption
 
 ### Older

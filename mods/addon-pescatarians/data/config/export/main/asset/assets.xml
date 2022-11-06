@@ -5,12 +5,16 @@
 -->
 
 <ModOps>
-  <!-- # Shared Basic Needs -->
+  <!-- # Shared Needs -->
   <!-- luxury goods are not needed, so let's not copy them unnecessarily -->
+  <Include File="./products/ropes/assets.include.xml" />
   <Include File="./products/canned-fish/assets.include.xml" />
   <Include File="./products/cheese/assets.include.xml" />
   <Include File="./products/suits/assets.include.xml" />
   <Include File="./products/olive-soap/assets.include.xml" />
+  <Include File="./products/vegetables/assets.include.xml" />
+
+  <Include File="./assets-productions.include.xml" />
 
   <!-- add to StandartProductStorageList -->
   <ModOp Type="addNextSibling" GUID='120055'>
@@ -25,62 +29,15 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <Item>
-      <Product>1500010156</Product>
-    </Item>
-    <Item>
-      <Product>1500010150</Product>
-    </Item>
-  </ModOp>
   <!-- filter lists -->
   <ModOp Type="addNextSibling" GUID="502019">
-    <Asset>
-      <Template>ProductList</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010159</GUID>
-          <Name>farmer_unlock_goods</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
-        </Standard>
-        <ProductList>
-          <List>
-            <Item>
-              <Product>1010200</Product>
-            </Item>
-            <Item>
-              <Product>1010195</Product>
-            </Item>
-            <Item>
-              <Product>1500010150</Product>
-            </Item>
-          </List>
-        </ProductList>
-      </Values>
-    </Asset>
-    <Asset>
+  <!--  <Asset>
       <Template>ProductList</Template>
       <Values>
         <Standard>
           <GUID>1500010160</GUID>
           <Name>worker_unlock_goods</Name>
         </Standard>
-        <ProductList>
-          <List>
-            <Item>
-              <Product>1440005</Product>
-            </Item>
-            <Item>
-              <Product>1010213</Product>
-            </Item>
-            <Item>
-              <Product>1500010105</Product>
-            </Item>
-            <Item>
-              <Product>1440224</Product>
-            </Item>
-          </List>
-        </ProductList>
       </Values>
     </Asset>
     <Asset>
@@ -90,30 +47,11 @@
           <GUID>1500010161</GUID>
           <Name>artisan_unlock_goods</Name>
         </Standard>
-        <ProductList>
-          <List>
-            <Item>
-              <Product>1500010156</Product>
-            </Item>
-          </List>
-        </ProductList>
       </Values>
-    </Asset>
-  </ModOp>
-  <!-- stats/warehouse all list: insert after artisan -->
-  <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
-    <Item>
-      <Product>1500010159</Product>
-    </Item>
-    <Item>
-      <Product>1500010160</Product>
-    </Item>
-    <Item>
-      <Product>1500010161</Product>
-    </Item>
+    </Asset> -->
   </ModOp>
   <!-- session goods: insert after artisan -->
-  <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
+  <!-- <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
     <Item>
       <Product>1500010159</Product>
     </Item>
@@ -123,7 +61,7 @@
     <Item>
       <Product>1500010161</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # Population: Pescatarians -->
   <ModOp GUID="15000004" Type="addNextSibling">
@@ -154,9 +92,6 @@
               <MoneyValue>10</MoneyValue>
               <RequiredBuildings>
                 <Item>
-                  <RequiredBuilding>1500010142</RequiredBuilding>
-                </Item>
-                <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
@@ -176,65 +111,38 @@
               </RequiredBuildings>
             </Item> -->
             <Item>
-              <Product>1010195</Product>
+              <Product>1500010831</Product>
               <Amount>0.0004166</Amount>
               <SupplyWeight>3</SupplyWeight>
               <MoneyValue>10</MoneyValue>
               <FullWeightPopulationCount>150</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
-                  <RequiredBuilding>1500010142</RequiredBuilding>
-                </Item>
-                <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010818</Product>
+              <SupplyWeight>3</SupplyWeight>
             </Item>
             <Item>
               <Product>1500010102</Product>
               <Amount>0.00044</Amount>
               <SupplyWeight>4</SupplyWeight>
               <MoneyValue>40</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1010213</Product>
               <Amount>0.00044</Amount>
               <SupplyWeight>4</SupplyWeight>
               <MoneyValue>40</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010106</Product>
               <Amount>0.0003</Amount>
               <SupplyWeight>4</SupplyWeight>
               <MoneyValue>20</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item>
-            <Item>
-              <Product>1010351</Product>
-              <SupplyWeight>3</SupplyWeight>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
@@ -268,7 +176,7 @@
               </RequiredBuildings>
             </Item>
             <Item>
-              <Product>1010353</Product>
+              <Product>1500010801</Product>
               <SupplyWeight>6</SupplyWeight>
               <FullWeightPopulationCount>1500</FullWeightPopulationCount>
               <RequiredBuildings>
@@ -283,18 +191,31 @@
               <HappinessValue>2</HappinessValue>
             </Item>
             <Item>
-              <Product>1500010150</Product>
+              <Product>1500010825</Product>
               <Amount>0.0002083</Amount>
-              <HappinessValue>5</HappinessValue>
+              <HappinessValue>3</HappinessValue>
               <MoneyValue>20</MoneyValue>
               <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010142</RequiredBuilding>
-                </Item>
                 <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>114410</Product>
+              <Amount>0.0004</Amount>
+              <HappinessValue>3</HappinessValue>
+              <MoneyValue>80</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010820</Product>
+              <HappinessValue>2</HappinessValue>
+              <MoneyValue>10</MoneyValue>
             </Item>
             <Item>
               <Product>1500010153</Product>
@@ -304,19 +225,6 @@
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
-                </Item>
-              </RequiredBuildings>
-            </Item>
-            <Item>
-              <Product>1500010801</Product>
-              <HappinessValue>5</HappinessValue>
-              <MoneyValue>20</MoneyValue>
-              <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010144</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
             </Item>
@@ -332,6 +240,17 @@
               </RequiredBuildings>
             </Item>
             <!-- Luxury Needs to prepare upgrade to Engineers -->
+            <Item>
+              <Product>1010353</Product>
+              <HappinessValue>1</HappinessValue>
+              <MoneyValue>20</MoneyValue>
+              <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
             <Item>
               <Product>1010206</Product>
               <Amount>0.0003</Amount>
@@ -581,7 +500,7 @@
       </Values>
     </Asset>
     <!-- consumer product lists -->
-    <Asset>
+    <!-- <Asset>
       <Template>ProductList</Template>
       <Values>
         <Standard>
@@ -649,7 +568,7 @@
           </List>
         </ProductList>
       </Values>
-    </Asset>
+    </Asset> -->
     <Asset>
       <Template>Product</Template>
       <Values>
@@ -753,7 +672,7 @@
     </Item>
   </ModOp>
   <!-- stats/warehouse consumer goods: insert after artisan  -->
-  <ModOp Type="addNextSibling" GUID="502031" Path="/Values/ProductList/List/Item[Product='501997']">
+  <!-- <ModOp Type="addNextSibling" GUID="502031" Path="/Values/ProductList/List/Item[Product='501997']">
     <Item>
       <Product>1500010138</Product>
     </Item>
@@ -763,7 +682,7 @@
     <Item>
       <Product>1500010140</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- <ModOp Type="add" GUID="501065" Path="/Values/ObjectmenuCommuterHarbourScene/WorkforceToRegion/Moderate/WorkforceList">
     <Item>
       <Workforce>1500010804</Workforce>
@@ -786,11 +705,11 @@
 
   <!-- # Need: Potatoes -->
   <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
+  <!-- <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
     <Item>
       <Product>1010195</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # Deprecate farmers -->
   <ModOp GUID='1010343' Type="addNextSibling">
@@ -995,7 +914,7 @@
           <NextGUID>1500010144</NextGUID>
           <UpgradeCost>
             <Item>
-              <Amount>6</Amount>
+              <Amount>5</Amount>
               <Ingredient>1010196</Ingredient>
             </Item>
             <Item>
@@ -1003,42 +922,48 @@
               <Ingredient>1010205</Ingredient>
             </Item>
             <Item>
-              <Amount>2</Amount>
-              <Ingredient>1010218</Ingredient>
+              <Amount>3</Amount>
+              <Ingredient>1500010825</Ingredient>
             </Item>
           </UpgradeCost>
         </Upgradable>
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate01.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate02.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate03.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03.cfg</Filename>
             </Item>
             <Item>
               <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate04.cfg</Filename>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate01.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate01b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate02.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate02b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate03.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03b.cfg</Filename>
             </Item>
             <Item>
               <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate04.cfg</Filename>
             </Item>
           </Variations>
           <Skins>
-            <!-- disable skins -->
-            <SkinList />
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010833</SkinAssetGuid>
+              </Item>
+            </SkinList>
           </Skins>
         </Object>
         <Residence7>
@@ -1129,6 +1054,53 @@
         </Standard>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010833</GUID>
+          <Name>Dark Roof Worker Skin</Name>
+          <IconFilename>data\jakob\buildings\residence\worker-artisan\dark\icon_worker_dark.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010833</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
   </ModOp>
 
 
@@ -1171,19 +1143,31 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04b.cfg</Filename>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</Filename>
+            </Item>
+            <!-- <Item>
               <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
             </Item>
             <Item>
@@ -1194,12 +1178,26 @@
             </Item>
             <Item>
               <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
+            </Item> -->
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <!-- <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
             </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
+            </Item> -->
           </Variations>
           <Skins>
-            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinName>1500010834</DefaultSkinName>
             <DefaultSkinDescription>23853</DefaultSkinDescription>
-            <OverrideDefaultIcon>data/jakob/ui/icons/icon_tier03_default.png</OverrideDefaultIcon>
+            <!-- is only visible in combination with skin mod -->
+            <OverrideDefaultIcon>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</OverrideDefaultIcon>
             <SkinList />
           </Skins>
         </Object>
@@ -1291,6 +1289,100 @@
         <WarehouseUpgrade />
         <DistributionUpgrade />
         <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010834</GUID>
+          <Name>Tall Blue Artisan Skin</Name>
+          <IconFilename>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010834</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010321</GUID>
+          <Name>Red Tall Artisan</Name>
+          <IconFilename>data\jakob\buildings\residence\high-artisan\red\icon_tall_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010321</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
       </Values>
     </Asset>
   </ModOp>
@@ -1639,9 +1731,9 @@
 
   <!-- # InfluencedByNeighbors, spawn feedback, ... -->
   <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
-    <Item>
+    <!-- <Item>
       <Building>1500010142</Building>
-    </Item>
+    </Item> -->
     <Item>
       <Building>1500010143</Building>
     </Item>
@@ -1651,23 +1743,23 @@
     <Item>
       <Building>1500010145</Building>
     </Item>
-    <Item>
+    <!-- <Item>
       <Building>1500010173</Building>
-    </Item>
+    </Item> -->
   </ModOp>
   <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
+    <!-- <Item>
       <Building>1500010142</Building>
-    </Item>
+    </Item> -->
     <Item>
       <Building>1500010143</Building>
     </Item>
     <Item>
       <Building>1500010144</Building>
     </Item>
-    <Item>
+    <!-- <Item>
       <Building>1500010145</Building>
-    </Item>
+    </Item> -->
   </ModOp>
 
   <!-- # Service: Community Center -->
@@ -1878,9 +1970,25 @@
         <Standard>
           <GUID>1500010800</GUID>
           <Name>pescatarian_music_scool</Name>
-          <IconFilename>data/jakob/ui/icons/icon_music_school.png</IconFilename>
+          <IconFilename>data/jakob/buildings/music_school/icon_music_school.png</IconFilename>
         </Standard>
         <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>5000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>35</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Object>
           <Variations>
             <Item>
@@ -1972,7 +2080,7 @@
         <Standard>
           <GUID>1500010801</GUID>
           <Name>service_music_school</Name>
-          <IconFilename>data/jakob/ui/icons/icon_music_school.png</IconFilename>
+          <IconFilename>data/jakob/buildings/music_school/icon_music_school.png</IconFilename>
         </Standard>
         <Locked />
         <Product>
@@ -2060,21 +2168,37 @@
     </Item>
   </ModOp>
 
-  <!-- # Service: Food Corner -->
-  <!-- <ModOp GUID="1010358" Type="addNextSibling">
+  <!-- # Service: Library -->
+  <ModOp GUID="1010358" Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>1010358</BaseAssetGUID>
       <Values>
         <Standard>
           <GUID>1500010816</GUID>
-          <Name>Food Corner</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_canteen.png</IconFilename>
+          <Name>Library</Name>
+          <IconFilename>data/jakob/buildings/library/icon_library.png</IconFilename>
         </Standard>
         <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Object>
           <Variations>
             <Item>
-              <Filename>data/graphics/buildings/public/service_01/service_01.cfg</Filename>
+              <Filename>data\jakob\buildings\library\library.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -2147,46 +2271,221 @@
             </Fire>
           </IncidentInfectionChanceFactors>
         </IncidentInfectable>
-        <BuffFactory>
-          <BaseBuff>1500010808</BaseBuff>
-          <BaseBuffScope>Radius</BaseBuffScope>
-          <BaseBuffDistance>30</BaseBuffDistance>
-        </BuffFactory>
         <PublicService>
-          <FullSatisfactionDistance>35</FullSatisfactionDistance>
-          <NoSatisfactionDistance>50</NoSatisfactionDistance>
+          <FullSatisfactionDistance>25</FullSatisfactionDistance>
+          <NoSatisfactionDistance>35</NoSatisfactionDistance>
           <PublicServiceOutputs>
             <Item>
-              <Product>1500010801</Product>
+              <Product>1500010818</Product>
             </Item>
           </PublicServiceOutputs>
         </PublicService>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010818</GUID>
+          <Name>Service: Library</Name>
+          <IconFilename>data/jakob/buildings/library/icon_library.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11708</ProductCategory>
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+      </Values>
+    </Asset>
   </ModOp>
   <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010810</GUID>
+      <GUID>1500010816</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="191705,191706,191707,191726,191727,191728,191729,191730,191731,125065,125063" Path="/Values/ItemEffect/EffectTargets">
+
+  <!-- TODO FeedbackBuildingGroup 2549 -->
+  <!-- # Service: Post Office -->
+  <ModOp GUID="3741" Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>3741</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010817</GUID>
+          <Name>Post Office</Name>
+          <IconFilename>data/jakob/buildings/post/icon_post.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\post\post.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>535</Product>
+              <Amount>1</Amount>
+              <StorageAmount>3</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>45</CycleTime>
+          <WarehouseTransporterAsset>829</WarehouseTransporterAsset>
+          <MissingConnectionInfolayer>0</MissingConnectionInfolayer>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1500010825</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <ItemContainer>
+          <SocketScopeRadius>20</SocketScopeRadius>
+          <SocketScopeRadiusOverlapCategory>Postbox</SocketScopeRadiusOverlapCategory>
+        </ItemContainer>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>400</Amount>
+              <InactiveAmount>200</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>40</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010810</GUID>
+      <GUID>1500010817</GUID>
     </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="2015" Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741'] | //Values[Standard=GUID='2015']/ConstructionCategory/BuildingList/Item[last()]">
+    <Item>
+      <Building>1500010817</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Service: Canteen -->
+  <ModOp GUID="1010358" Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010358</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010819</GUID>
+          <Name>Restaurants</Name>
+          <IconFilename>data/jakob/buildings/canteen/icon_canteen.png</IconFilename>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>2000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1500010825</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <PublicService>
+          <FullSatisfactionDistance>25</FullSatisfactionDistance>
+          <NoSatisfactionDistance>35</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1500010820</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010820</GUID>
+          <Name>Service: Canteen</Name>
+          <IconFilename>data/jakob/buildings/canteen/icon_canteen.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11709</ProductCategory>
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010819</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- Variations: Townhall -->
+  <!-- <ModOp Type="add" GUID="100415" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\buildings\school-townhall\townhall.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="100415" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+  </ModOp>
+  <ModOp Type="replace" GUID="100415" Path="/Values/Building/AllowChangeVariation">
+    <AllowChangeVariation>1</AllowChangeVariation>
   </ModOp> -->
 
   <!-- # Lifestyle Needs for Vanilla Population -->
   <!-- workers -->
   <ModOp Type="add" GUID="15000001" Path="/Values/PopulationLevel7/PopulationInputs">
-    <!-- <Item>
-      <Product>1500010102</Product>
-      <Amount>0.000333334</Amount>
+    <Item>
+      <Product>1500010831</Product>
+      <Amount>0.0006667</Amount>
       <SupplyWeight>0</SupplyWeight>
       <MoneyValue>0</MoneyValue>
       <NoWeightPopulationCount>0</NoWeightPopulationCount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
-    </Item> -->
+    </Item>
     <Item>
       <Product>1500010106</Product>
       <Amount>0.000138889</Amount>
@@ -2196,15 +2495,15 @@
   </ModOp>
   <!-- artisans -->
   <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
-    <!-- <Item>
-      <Product>1500010102</Product>
-      <Amount>0.000666667</Amount>
+    <Item>
+      <Product>1500010831</Product>
+      <Amount>0.001333334</Amount>
       <SupplyWeight>0</SupplyWeight>
       <MoneyValue>0</MoneyValue>
       <NoWeightPopulationCount>0</NoWeightPopulationCount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
-    </Item> -->
+    </Item>
     <Item>
       <Product>1500010106</Product>
       <Amount>0.000277778</Amount>
@@ -2245,7 +2544,7 @@
       <Category>1500010159</Category>
       <Needs>
         <Item>
-          <BonusNeed>1500010102</BonusNeed>
+          <BonusNeed>1500010831</BonusNeed>
         </Item>
         <Item>
           <BonusNeed>1500010106</BonusNeed>
@@ -2292,7 +2591,7 @@
         <Standard>
           <GUID>1500010808</GUID>
           <Name>Lifestyle Alternatives</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_workforce.png</IconFilename>
           <InfoDescription>1500010169</InfoDescription>
         </Standard>
         <ItemEffect>
@@ -2326,10 +2625,10 @@
         </CultureUpgrade>
         <ResidenceUpgrade>
           <NeedProvideNeedUpgrade>
-            <!-- <Item>
+            <Item>
               <ProvidedNeed>1010238</ProvidedNeed>
-              <SubstituteNeed>1500010102</SubstituteNeed>
-            </Item> -->
+              <SubstituteNeed>1500010831</SubstituteNeed>
+            </Item>
             <Item>
               <ProvidedNeed>1010203</ProvidedNeed>
               <SubstituteNeed>1500010106</SubstituteNeed>
@@ -2344,6 +2643,16 @@
             </Item>
           </NeedProvideNeedUpgrade>
         </ResidenceUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010159</GUID>
+          <Name>Pescatarian Lifestyle Category</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_workforce.png</IconFilename>
+        </Standard>
       </Values>
     </Asset>
     <Asset>
@@ -2384,6 +2693,9 @@
     </Asset>
   </ModOp>
 
+  <!-- # Ships -->
+  <Include File="./assets-ships.include.xml" />
+
   <!-- # Build Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
@@ -2399,20 +2711,20 @@
             <Item>
               <Building>1500010100</Building>
             </Item>
-            <!-- <Item>
-              <Building>1500010142</Building>
-            </Item> -->
             <Item>
               <Building>1500010143</Building>
             </Item>
-            <!-- <Item>
-              <Building>1500010144</Building>
-            </Item> -->
+            <Item>
+              <Building>1500010816</Building>
+            </Item>
+            <Item>
+              <Building>1500010819</Building>
+            </Item>
             <Item>
               <Building>1500010800</Building>
             </Item>
             <Item>
-              <Building>1500010816</Building>
+              <Building>1500010817</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>1500010188</CategoryDescription>
@@ -2437,14 +2749,14 @@
     </Item>
   </ModOp>
   <!-- insert canned fish, suits into artisan menu after coats (extra goods will add it to worker) -->
-  <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
+  <!-- <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
     <Item>
       <Building>1500010122</Building>
     </Item>
     <Item>
       <Building>1500010129</Building>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # Buff Targets -->
   <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
@@ -2452,11 +2764,9 @@
       <GUID>1500010282</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010343']">
-    <Item>
-      <GUID>1500010142</GUID>
-    </Item>
-  </ModOp>
+  <!-- remove some special cases with unfitting benefits -->
+  <ModOp Type="remove" GUID="111161,111162,111176,111163,116182,111180" Path="/Values/ItemEffect/EffectTargets/Item[GUID='1500010282']" />
+
   <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
     <Item>
       <GUID>1500010143</GUID>
@@ -2474,11 +2784,11 @@
       <GUID>193861</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
+  <!-- <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
     <Item>
       <GUID>1500010145</GUID>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- add community center everywhere where marketplace is -->
   <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
     <Item>
