@@ -4,11 +4,11 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,**/icons/*.png,banner.png,README.md}"
+      "pattern": "{data/config/**/*,**/icon_*.png,banner.png,README.md}"
     },
     {
       "action": "cf7",
@@ -22,6 +22,10 @@
     {
       "action": "gltf",
       "pattern": "**/*.gltf"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
     },
     {
       "action": "modinfo",
