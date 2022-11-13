@@ -2,7 +2,13 @@
 
 Adds production chains like tools and cheese.
 
-You need `[Shared] Ground Textures` as well to play this mod.
+## Requirements
+
+You need Mod `[Shared] Ground Textures` to play this mod.
+
+## Disable Features
+
+You can disable some productions if you go to `features.include.xml` and remove or comment out what you don't want.
 
 ## Notes for Players
 
@@ -70,26 +76,6 @@ The rest has no DLC dependencies.
 
 - New dairy model
 - Hot chocolate bar recipe
-
-## Goods
-
-Use AssetPool GUIDs to unlock the products with their production chains.
-
-| Icon | Name | Region | GUID | Unlock | AssetPool | Comment
-| --- | --- | --- | --- | --- | --- | ---
-| <img src="./doc/icon_wooden_ring.png" style="width:24px"/> | Wooden<br/>Accessories | Old World |1500010150 | - | 1500010162
-| <img src="./doc/icon_sheep_milk.png" style="width:24px"/> | Milk | Old World | 1440005 | - | 1500010167 | New Horizon GUID
-| <img src="./doc/icon_sheep_cheese.png" style="width:24px"/> | Cheese | Old World | 1500010102 | - | 1500010167
-| <img src="./data/jakob/ui/icons/icon_olives.png" style="width:24px"/> | Olives | Old World | 1500010105 | - | 1500010166
-| <img src="./data/jakob/ui/icons/icon_olive_soap.png" style="width:24px"/> | Olive Soap | Old World | 1500010106 | - | 1500010166
-| <img src="./doc/icon_tools.png" style="width:24px"/> | Tools | Old World | 1500010153 | - | 1500010163
-| <img src="./doc/icon_canned_food.png" style="width:24px"/> | Canned Fish | Old World | 1500010120 | - | 1500010164
-| <img src="./data/jakob/ui/icons/icon_hemp.png" style="width:24px"/> | Hemp | Old World | 1440224 | - | 1500010165 | New Horizon GUID
-| <img src="./doc/icon_linen_fabric.png" style="width:24px"/> | Linen | Old World | vanilla | - | 1500010165
-| <img src="./data/jakob/ui/icons/icon_suits.png" style="width:24px"/> | Suits | Old World | 1500010127 | - | 1500010165
-| <img src="./doc/icon_beer_2.png" style="width:24px"/> | Bottled Beer | Old World | 1500010156 | - | 1500010168
-
-New Horizon GUIDs are shared with permission.
 
 ## Translations
 

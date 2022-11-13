@@ -7,7 +7,7 @@ variant:
   modifications:
     # replace building model with custom version without the "pit"
     - xpath: //Config/Models/Config[FileName="data\graphics\buildings\production\agriculture_02\rdm\agriculture_02_lod0.rdm"]
-      FileName: data\jakob\buildings\cattle_farm\rdm\cattle_farm_lod0.rdm
+      FileName: data\jakob\cheese\cattle_farm\rdm\cattle_farm_lod0.rdm
     - xpath-remove: //Config/Models/Config[FileName="data\graphics\buildings\production\agriculture_02\rdm\agriculture_02_lod0_cutout.rdm"]
     # add milk tank
     - xpath-add: //Config/Models
@@ -58,5 +58,5 @@ variant:
             cEmissiveColor.b: 1.000000
             NIGHT_GLOW_ENABLED: 0 
         Name: tank
-        FileName: data\jakob\buildings\cattle_farm\rdm\cattle_farm_tank_lod0.rdm
+        FileName: data\jakob\cheese\cattle_farm\rdm\cattle_farm_tank_lod0.rdm
         IgnoreRuinState: 0
