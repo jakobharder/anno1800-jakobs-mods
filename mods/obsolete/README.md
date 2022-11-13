@@ -1,0 +1,1 @@
+assets.xml of obsolete mods to keep track GUIDs not to use.

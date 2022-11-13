@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "{data/config/**/*,**/icon_*.png,banner.png,README.md}"
     },
     {
       "action": "modinfo",
@@ -12,32 +12,23 @@
     }
   ],
   "modinfo": {
-    "Version": "1.0.0",
-    "ModID": "jakob_nearby_production_buffs",
+    "Version": "1.0",
+    "ModID": "jakob_compact_menus",
     "IncompatibleIds": [],
     "ModDependencies": [],
     "Category": {
-      "English": "Gameplay"
+      "English": "UI"
     },
     "ModName": {
-      "Chinese": null,
-      "English": "Nearby Production Buffs",
-      "French": null,
-      "German": "Buffs durch nahe Produktion",
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
+      "English": "Compact Build Menus (Jakob)",
+      "German": "Kompatke Baumenüs (Jakob)"
     },
     "Description": {
       "English": "README.md",
       "German": "README.md"
     },
     "KnownIssues": null,
-    "DLCDependencies": [ ],
+    "DLCDependencies": [],
     "CreatorName": "Jakob",
     "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null
