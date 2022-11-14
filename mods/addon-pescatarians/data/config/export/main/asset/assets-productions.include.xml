@@ -512,11 +512,11 @@
             <Item>
               <Product>1500010836</Product>
               <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
+              <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>90</CycleTime>
-          <IsMainFactory>0</IsMainFactory>
+          <CycleTime>60</CycleTime>
+          <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
         <Maintenance>
           <Maintenances>
@@ -531,6 +531,7 @@
             </Item>
           </Maintenances>
         </Maintenance>
+        <LogisticNode />
       </Values>
     </Asset>
     <Asset>
@@ -728,7 +729,7 @@
     </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
-  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1010247')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
+  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
     <Item>
       <Product>1500010836</Product>
     </Item>
