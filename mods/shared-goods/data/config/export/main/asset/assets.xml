@@ -940,7 +940,7 @@
         <Standard>
           <GUID>1500010108</GUID>
           <Name>olive_soap_factory</Name>
-          <IconFilename>data\jakob\buildings\olive_soap_factory\icon_soap_alt.png</IconFilename>
+          <IconFilename>data\jakob\soap\olive_soap_factory\icon_soap_alt.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -964,7 +964,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\olive_soap_factory\olive_soap_factory.cfg</Filename>
+              <Filename>data\jakob\soap\olive_soap_factory\olive_soap_factory.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -999,7 +999,7 @@
         <Standard>
           <GUID>1500010191</GUID>
           <Name>olive_soap_chain</Name>
-          <IconFilename>data/jakob/ui/icons/icon_olive_soap.png</IconFilename>
+          <IconFilename>products\olive-soap\icon_olive_soap.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1500010108</Building>
@@ -1069,7 +1069,7 @@
     </Item>
   </ModOp> -->
   <ModOp Type="replace" GUID="25000220" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\buildings\olive_soap_factory\icon_soap_menu.png</IconFilename>
+    <IconFilename>data\jakob\soap\olive_soap_factory\icon_soap_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="25000220" Path="/Values/ProductionChain/Tier1">
     <Item>
