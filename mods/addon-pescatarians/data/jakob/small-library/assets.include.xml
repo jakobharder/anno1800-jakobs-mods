@@ -1,0 +1,242 @@
+<!-- 
+  Small Library as replacement for School.
+-->
+<ModOps>
+    <!-- # Service: Small Library -->
+    <ModOp GUID="1010358" Type="addNextSibling">
+      <Asset>
+        <BaseAssetGUID>1010358</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500010816</GUID>
+            <Name>Library</Name>
+            <IconFilename>data/jakob/small-library/icon_library.png</IconFilename>
+          </Standard>
+          <Blocking />
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>4000</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>30</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>25</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data\jakob\small-library\library.cfg</Filename>
+              </Item>
+            </Variations>
+            <Skins>
+              <SkinList>
+                <Item>
+                  <SkinAssetGuid>1500010841</SkinAssetGuid>
+                </Item>
+                <Item>
+                  <SkinAssetGuid>1500010842</SkinAssetGuid>
+                </Item>
+              </SkinList>
+            </Skins>
+          </Object>
+          <Mesh />
+          <Constructable />
+          <Locked />
+          <SoundEmitter>
+            <ConstructionSounds>
+              <BuildSuccessful>
+                <Item>
+                  <VectorElement>
+                    <InheritedIndex>0</InheritedIndex>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>PublicServiceBuilding</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
+                  <Sound>214786</Sound>
+                </Item>
+              </BuildSuccessful>
+            </ConstructionSounds>
+            <IncidentSounds>
+              <InfectedFire>
+                <Item>
+                  <Sound>214659</Sound>
+                </Item>
+              </InfectedFire>
+            </IncidentSounds>
+            <BuildingRepaired>
+              <Item>
+                <Sound>203866</Sound>
+              </Item>
+            </BuildingRepaired>
+          </SoundEmitter>
+          <FeedbackController>
+            <NightBehavior>HideAll</NightBehavior>
+          </FeedbackController>
+          <Infolayer />
+          <AmbientMoodProvider>
+            <AmbientMood>ResidenceTier3</AmbientMood>
+            <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
+          </AmbientMoodProvider>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>50</Amount>
+                <InactiveAmount>25</InactiveAmount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+          <Attackable>
+            <MaximumHitPoints>4750</MaximumHitPoints>
+            <SelfHealPerHealTick>4</SelfHealPerHealTick>
+          </Attackable>
+          <Pausable />
+          <IncidentInfectable>
+            <Infectable>
+              <Fire>
+                <Base>1</Base>
+              </Fire>
+            </Infectable>
+            <IncidentInfectionChanceFactors>
+              <Fire>
+                <DensityDistance>20</DensityDistance>
+              </Fire>
+            </IncidentInfectionChanceFactors>
+          </IncidentInfectable>
+          <PublicService>
+            <FullSatisfactionDistance>25</FullSatisfactionDistance>
+            <NoSatisfactionDistance>35</NoSatisfactionDistance>
+            <PublicServiceOutputs>
+              <Item>
+                <Product>1500010818</Product>
+              </Item>
+            </PublicServiceOutputs>
+          </PublicService>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Product</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010818</GUID>
+            <Name>Service: Library</Name>
+            <IconFilename>data/jakob/small-library/icon_library.png</IconFilename>
+          </Standard>
+          <Locked />
+          <Product>
+            <ProductColor>-11415604</ProductColor>
+            <StorageLevel>Building</StorageLevel>
+            <ProductCategory>11708</ProductCategory>
+            <IsAbstract>1</IsAbstract>
+            <AssociatedRegion>Moderate</AssociatedRegion>
+          </Product>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010840</GUID>
+            <Name>Unlock @ 400 Workers</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000001</Context>
+                  <CounterAmount>400</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500010816</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Skin</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010841</GUID>
+            <Name>Dark Skin</Name>
+            <IconFilename>data/jakob/ui/icons/icon_tier04_tourist_red.png</IconFilename>
+          </Standard>
+          <Skin>
+            <SkinName>1500010841</SkinName>
+            <SkinVariations>
+              <Item>
+                <FileName>data\jakob\small-library\skin-dark.cfg</FileName>
+              </Item>
+            </SkinVariations>
+          </Skin>
+          <Locked>
+            <DefaultLockedState>0</DefaultLockedState>
+            <Scope>Account</Scope>
+            <VisibleWhenLocked>1</VisibleWhenLocked>
+          </Locked>
+          <Text />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Skin</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010842</GUID>
+            <Name>Red Skin</Name>
+            <IconFilename>data/jakob/ui/icons/icon_tier04_tourist_red.png</IconFilename>
+          </Standard>
+          <Skin>
+            <SkinName>1500010841</SkinName>
+            <SkinVariations>
+              <Item>
+                <FileName>data\jakob\small-library\skin-red.cfg</FileName>
+              </Item>
+            </SkinVariations>
+          </Skin>
+          <Locked>
+            <DefaultLockedState>0</DefaultLockedState>
+            <Scope>Account</Scope>
+            <VisibleWhenLocked>1</VisibleWhenLocked>
+          </Locked>
+          <Text />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010816</GUID>
+      </Item>
+    </ModOp>
+</ModOps>

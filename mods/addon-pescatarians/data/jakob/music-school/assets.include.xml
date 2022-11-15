@@ -1,0 +1,250 @@
+<!-- 
+  Music School service for Pescatarians and Upgradable Workers.
+-->
+<ModOps>
+    <!-- # Service: Music School -->
+    <ModOp GUID='1010372' Type="addNextSibling">
+      <Asset>
+        <BaseAssetGUID>1010360</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500010800</GUID>
+            <Name>Music School</Name>
+            <IconFilename>data/jakob/music-school/icon_music_school.png</IconFilename>
+          </Standard>
+          <Blocking />
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>5000</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>25</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>35</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data/jakob/music-school/music_school.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Mesh />
+          <Constructable />
+          <Locked />
+          <SoundEmitter>
+            <ConstructionSounds>
+              <BuildSuccessful>
+                <Item>
+                  <VectorElement>
+                    <InheritedIndex>0</InheritedIndex>
+                    <InheritanceMapV2>
+                      <Entry>
+                        <TemplateName>PublicServiceBuilding</TemplateName>
+                        <Index>0</Index>
+                      </Entry>
+                    </InheritanceMapV2>
+                  </VectorElement>
+                  <Sound>214786</Sound>
+                </Item>
+              </BuildSuccessful>
+            </ConstructionSounds>
+            <IncidentSounds>
+              <InfectedFire>
+                <Item>
+                  <Sound>214659</Sound>
+                </Item>
+              </InfectedFire>
+            </IncidentSounds>
+            <BuildingRepaired>
+              <Item>
+                <Sound>203866</Sound>
+              </Item>
+            </BuildingRepaired>
+          </SoundEmitter>
+          <FeedbackController>
+            <NightBehavior>HideAll</NightBehavior>
+          </FeedbackController>
+          <Infolayer />
+          <AmbientMoodProvider>
+            <AmbientMood>ResidenceTier3</AmbientMood>
+            <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
+          </AmbientMoodProvider>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>50</Amount>
+                <InactiveAmount>25</InactiveAmount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+          <Attackable>
+            <MaximumHitPoints>4750</MaximumHitPoints>
+            <SelfHealPerHealTick>4</SelfHealPerHealTick>
+          </Attackable>
+          <Pausable />
+          <IncidentInfectable>
+            <Infectable>
+              <Fire>
+                <Base>1</Base>
+              </Fire>
+            </Infectable>
+            <IncidentInfectionChanceFactors>
+              <Fire>
+                <DensityDistance>20</DensityDistance>
+              </Fire>
+            </IncidentInfectionChanceFactors>
+          </IncidentInfectable>
+          <PublicService>
+            <FullSatisfactionDistance>35</FullSatisfactionDistance>
+            <NoSatisfactionDistance>50</NoSatisfactionDistance>
+            <PublicServiceOutputs>
+              <Item>
+                <Product>1500010801</Product>
+              </Item>
+            </PublicServiceOutputs>
+          </PublicService>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Product</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010801</GUID>
+            <Name>Music School Service</Name>
+            <IconFilename>data/jakob/music-school/icon_music_school.png</IconFilename>
+          </Standard>
+          <Locked />
+          <Product>
+            <ProductColor>-11415604</ProductColor>
+            <StorageLevel>Building</StorageLevel>
+            <ProductCategory>11708</ProductCategory>
+            <IsAbstract>1</IsAbstract>
+            <AssociatedRegion>Moderate</AssociatedRegion>
+          </Product>
+          <ExpeditionAttribute />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Trigger</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010283</GUID>
+            <Name>Unlock @ 900 Artisans</Name>
+            <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000002</Context>
+                  <CounterAmount>900</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500010800</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010801</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Trigger</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010803</GUID>
+            <Name>Unhide immediately</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionAlwaysTrue</Template>
+              <Values>
+                <Condition />
+                <ConditionAlwaysTrue />
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnhideAssets>
+                        <Item>
+                          <Asset>1500010800</Asset>
+                        </Item>
+                      </UnhideAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010800</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="191705,191706,191707,191726,191727,191728,191729,191730,191731,125065,125063" Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500010800</GUID>
+      </Item>
+    </ModOp>
+    <ModOp GUID='15000001' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+      <Item>
+        <Product>1500010801</Product>
+        <HappinessValue>2</HappinessValue>
+        <MoneyValue>20</MoneyValue>
+        <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <NoWeightPopulationCount>1200</NoWeightPopulationCount>
+        <OptionalInputPopulationUnlock>749</OptionalInputPopulationUnlock>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010200</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010201</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+    </ModOp>
+</ModOps>

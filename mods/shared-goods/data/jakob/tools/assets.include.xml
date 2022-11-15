@@ -353,43 +353,51 @@
         <Standard>
           <GUID>1500010113</GUID>
           <Name>obsolete_tools_reduced_needs</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-          <InfoDescription>1500010400</InfoDescription>
         </Standard>
-        <ItemEffect>
-          <EffectTargets>
+      </Values>
+    </Asset>
+    <!-- Unlock at 1 Engineer. -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010195</GUID>
+          <Name>Unlock @ 1 Engineer</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
             <Item>
-              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010163</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
             </Item>
-            <Item>
-              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
-            </Item>
-            <Item>
-              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
-            </Item>
-            <Item>
-              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
-            </Item>
-          </EffectTargets>
-          <AllowStacking>0</AllowStacking>
-        </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade>
-          <GoodConsumptionUpgrade>
-            <Item>
-              <ProvidedNeed>1500010153</ProvidedNeed>
-              <AmountInPercent>-30</AmountInPercent>
-            </Item>
-          </GoodConsumptionUpgrade>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
