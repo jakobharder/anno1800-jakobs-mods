@@ -1,11 +1,15 @@
+<!-- 
+  Stronger Schooner with 3 cargo slots.
+-->
 <ModOps>
+  <!-- # Ship: 3 Mast Schooner -->
   <ModOp Type="addNextSibling" GUID="100438">
     <Asset>
       <BaseAssetGUID>100438</BaseAssetGUID>
       <Values>
         <Standard>
           <GUID>1500010821</GUID>
-          <IconFilename>data\jakob\ships\schooner\icon_schooner.png</IconFilename>
+          <IconFilename>data\jakob\3mast-schooner\icon_schooner.png</IconFilename>
         </Standard>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -38,7 +42,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\ships\schooner\schooner.cfg</Filename>
+              <Filename>data\jakob\3mast-schooner\schooner.cfg</Filename>
             </Item>
           </Variations>
           <Skins>
@@ -92,6 +96,50 @@
           <SocketCount>3</SocketCount>
           <SlotCount>2</SlotCount>
         </ItemContainer>
+      </Values>
+    </Asset>
+    <!-- Unlock when Ropes are in stock. That ensures unlock is not getting invalided in games without Ropes. -->
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010837</GUID>
+          <Name>Unlock 3-mast Schooner</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>GoodsInStock</PlayerCounter>
+                <Context>1500010825</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010821</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>

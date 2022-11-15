@@ -16,6 +16,10 @@
 
   <Include File="./assets-productions.include.xml" />
 
+  <!-- <Include File="../../../../jakob/seafood-restaurant/assets.include.xml" />
+  <Include File="../../../../jakob/small-post/assets.include.xml" />
+  <Include File="../../../../jakob/3mast-schooner/assets.include.xml" /> -->
+
   <!-- add to StandartProductStorageList -->
   <ModOp Type="addNextSibling" GUID='120055'>
     <Asset>
@@ -2316,160 +2320,6 @@
     </Item>
   </ModOp>
 
-  <!-- TODO FeedbackBuildingGroup 2549 -->
-  <!-- # Service: Post Office -->
-  <ModOp GUID="3741" Type="addNextSibling">
-    <Asset>
-      <BaseAssetGUID>3741</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010817</GUID>
-          <Name>Post Office</Name>
-          <IconFilename>data/jakob/buildings/post/icon_post.png</IconFilename>
-        </Standard>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\buildings\post\post.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>535</Product>
-              <Amount>1</Amount>
-              <StorageAmount>3</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>45</CycleTime>
-          <WarehouseTransporterAsset>829</WarehouseTransporterAsset>
-          <MissingConnectionInfolayer>0</MissingConnectionInfolayer>
-          <IsMainFactory>0</IsMainFactory>
-        </FactoryBase>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>10000</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>25</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>25</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1500010825</Ingredient>
-              <Amount>15</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <ItemContainer>
-          <SocketScopeRadius>20</SocketScopeRadius>
-          <SocketScopeRadiusOverlapCategory>Postbox</SocketScopeRadiusOverlapCategory>
-        </ItemContainer>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>400</Amount>
-              <InactiveAmount>200</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010116</Product>
-              <Amount>40</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010817</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="2015" Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741'] | //Values[Standard=GUID='2015']/ConstructionCategory/BuildingList/Item[last()]">
-    <Item>
-      <Building>1500010817</Building>
-    </Item>
-  </ModOp>
-
-  <!-- # Service: Canteen -->
-  <ModOp GUID="1010358" Type="addNextSibling">
-    <Asset>
-      <BaseAssetGUID>1010358</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010819</GUID>
-          <Name>Restaurants</Name>
-          <IconFilename>data/jakob/buildings/canteen/icon_canteen.png</IconFilename>
-        </Standard>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>2000</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>20</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>15</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1500010825</Ingredient>
-              <Amount>5</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <PublicService>
-          <FullSatisfactionDistance>25</FullSatisfactionDistance>
-          <NoSatisfactionDistance>35</NoSatisfactionDistance>
-          <PublicServiceOutputs>
-            <Item>
-              <Product>1500010820</Product>
-            </Item>
-          </PublicServiceOutputs>
-        </PublicService>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010820</GUID>
-          <Name>Service: Canteen</Name>
-          <IconFilename>data/jakob/buildings/canteen/icon_canteen.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <ProductColor>-11415604</ProductColor>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11709</ProductCategory>
-          <IsAbstract>1</IsAbstract>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-        </Product>
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010819</GUID>
-    </Item>
-  </ModOp>
-
   <!-- Variations: Townhall -->
   <!-- <ModOp Type="add" GUID="100415" Path="/Values/Object/Variations">
     <Item>
@@ -2701,9 +2551,6 @@
       </Values>
     </Asset>
   </ModOp>
-
-  <!-- # Ships -->
-  <Include File="./assets-ships.include.xml" />
 
   <!-- # Build Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">

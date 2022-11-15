@@ -1,0 +1,117 @@
+<!-- 
+  Restaurant is a non-drinking alternative to the pub as the Pescatarians don't have alcohol in their luxury.
+-->
+<ModOps>
+    <!-- # Service: Restaurant -->
+    <ModOp GUID="1010358" Type="addNextSibling">
+      <Asset>
+        <BaseAssetGUID>1010358</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500010819</GUID>
+            <Name>Restaurant</Name>
+            <IconFilename>data/jakob/seafood-restaurant/icon_seafood_restaurant.png</IconFilename>
+          </Standard>
+          <Locked>
+            <DefaultLockedState>0</DefaultLockedState>
+          </Locked>
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>2000</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>20</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>15</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1500010825</Ingredient>
+                <Amount>5</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <PublicService>
+            <FullSatisfactionDistance>25</FullSatisfactionDistance>
+            <NoSatisfactionDistance>35</NoSatisfactionDistance>
+            <PublicServiceOutputs>
+              <Item>
+                <Product>1500010820</Product>
+              </Item>
+            </PublicServiceOutputs>
+          </PublicService>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Product</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010820</GUID>
+            <Name>Service: Seafood Restaurant</Name>
+            <IconFilename>data/jakob/seafood-restaurant/icon_seafood_restaurant.png</IconFilename>
+          </Standard>
+          <Locked />
+          <Product>
+            <ProductColor>-11415604</ProductColor>
+            <StorageLevel>Building</StorageLevel>
+            <ProductCategory>11709</ProductCategory>
+            <IsAbstract>1</IsAbstract>
+            <AssociatedRegion>Moderate</AssociatedRegion>
+          </Product>
+        </Values>
+      </Asset>
+      <!-- Unlock with 1500 Artisans. -->
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010839</GUID>
+            <Name>Unlock Restaurant</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000002</Context>
+                  <CounterAmount>1500</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500010819</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010819</GUID>
+      </Item>
+    </ModOp>
+</ModOps>
