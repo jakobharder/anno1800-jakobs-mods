@@ -8,10 +8,10 @@
   <Include File="../../../../../features.include.xml" />
 
   <!-- # Goods Lists -->
-  <Include File="./products/canned-fish/assets.include.xml" />
-  <Include File="./products/tools/assets.include.xml" />
-  <Include File="./products/suits/assets.include.xml" />
-  <Include File="./products/olive-soap/assets.include.xml" />
+  <Include File="../../../../../products/canned-fish/assets.include.xml" />
+  <Include File="../../../../../products/tools/assets.include.xml" />
+  <Include File="../../../../../products/suits/assets.include.xml" />
+  <Include File="../../../../../products/olive-soap/assets.include.xml" />
   
   <!-- add to StandartProductStorageList -->
   <ModOp Type="addNextSibling" GUID='120055'>
@@ -1740,274 +1740,6 @@
   <!-- # Need: Olive Soap -->
   <ModOp GUID='1010281' Type="addNextSibling">
     <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010105</GUID>
-          <Name>olives</Name>
-          <IconFilename>data/jakob/ui/icons/icon_olives.png</IconFilename>
-          <InfoDescription>1500010017</InfoDescription>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11702</ProductCategory> <!-- natural products -->
-          <BasePrice>40</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FarmBuilding</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010107</GUID>
-          <Name>olive_tree_farm</Name>
-          <IconFilename>data/jakob/ui/icons/icon_olives.png</IconFilename>
-        </Standard>
-        <Building>
-          <BuildModeRandomRotation>180</BuildModeRandomRotation>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Blocking />
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>500</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>4</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_treeplanter.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Mesh />
-        <Selection>
-          <ParticipantMessageArcheType>Resident_tier01_atWork</ParticipantMessageArcheType>
-          <Colors>
-            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-          </Colors>
-        </Selection>
-        <Constructable />
-        <Locked />
-        <SoundEmitter>
-          <ActiveSounds>
-            <Item>
-              <Sound>214800</Sound>
-            </Item>
-            <Item>
-              <Sound>206376</Sound>
-            </Item>
-          </ActiveSounds>
-          <ConstructionSounds>
-            <BuildMoveSuccess>
-              <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>FarmBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
-                <Sound>214783</Sound>
-              </Item>
-            </BuildMoveSuccess>
-          </ConstructionSounds>
-          <IncidentSounds>
-            <InfectedFire>
-              <Item>
-                <Sound>214659</Sound>
-              </Item>
-            </InfectedFire>
-          </IncidentSounds>
-          <MaterialType>Wood</MaterialType>
-        </SoundEmitter>
-        <FeedbackController />
-        <Infolayer />
-        <UpgradeList />
-        <Factory7 />
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>1500010105</Product>
-              <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>60</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
-        </FactoryBase>
-        <LogisticNode />
-        <ModuleOwner>
-          <ModuleLimits>
-            <Main>
-              <Limit>75</Limit>
-            </Main>
-          </ModuleLimits>
-          <ConstructionOptions>
-            <Item>
-              <ModuleGUID>1500010110</ModuleGUID>
-            </Item>
-          </ConstructionOptions>
-          <ModuleBuildRadius>0</ModuleBuildRadius>
-          <AdditionalModule>269837</AdditionalModule> <!-- same as non-grain farms -->
-        </ModuleOwner>
-        <AmbientMoodProvider>
-          <AmbientMood>AgricultureBuildingsEurope</AmbientMood>
-        </AmbientMoodProvider>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>20</Amount>
-              <InactiveAmount>10</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>20</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <Attackable>
-          <MaximumHitPoints>1500</MaximumHitPoints>
-          <SelfHealPerHealTick>4</SelfHealPerHealTick>
-        </Attackable>
-        <IncidentInfectable>
-          <Infectable>
-            <Illness>
-              <Escalated>0</Escalated>
-            </Illness>
-            <Explosion>
-              <Base>0</Base>
-              <Escalated>0</Escalated>
-            </Explosion>
-          </Infectable>
-          <Explosion>
-            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
-          </Explosion>
-          <IncidentInfectionChanceFactors>
-            <Fire>
-              <DensityFactor>0.025</DensityFactor>
-              <DensityDistance>20</DensityDistance>
-              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
-              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
-            </Fire>
-            <Riot>
-              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
-              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
-              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
-              <HappinessThreshold>20</HappinessThreshold>
-            </Riot>
-          </IncidentInfectionChanceFactors>
-        </IncidentInfectable>
-        <Pausable />
-        <Culture>
-          <CultureType>Landscaping</CultureType>
-        </Culture>
-        <QuestObject />
-        <Industrializable />
-        <Motorizable>
-          <MotorizableType>Tractor</MotorizableType>
-        </Motorizable>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Farmfield</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010110</GUID>
-          <Name>olive_tree_field</Name>
-          <IconFilename>data/jakob/ui/icons/icon_olive_tree.png</IconFilename>
-        </Standard>
-        <Building>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-        </Building>
-        <Blocking>
-          <GroundDecalAsset>102510</GroundDecalAsset>
-          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
-        </Blocking>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>5</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_field_01.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_field_02.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_field_03.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Mesh />
-        <Selection />
-        <Constructable />
-        <Locked />
-        <SoundEmitter />
-        <FeedbackController />
-        <Infolayer />
-        <BuildingModule />
-        <AmbientMoodProvider />
-        <ModuleIrrigation />
-      </Values>
-    </Asset>
-    <Asset>
       <BaseAssetGUID>1010281</BaseAssetGUID>
       <Values>
         <Standard>
@@ -2183,31 +1915,13 @@
   <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
   <ModOp Type="add" GUID="194006,191471,190865" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-    <Item>
       <GUID>1500010124</GUID>
-    </Item>
-  </ModOp>
-  <!-- orchards -->
-  <ModOp Type="add" GUID="194008" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010107</GUID>
     </Item>
   </ModOp>
   <!-- all farms, including cattle farm -->
   <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-    <Item>
       <GUID>1500010124</GUID>
-    </Item>
-  </ModOp>
-  <!-- all food productions -->
-  <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010121</GUID>
     </Item>
   </ModOp>
   <!-- all cloth productions -->
@@ -2226,28 +1940,7 @@
   <!-- specific items -->
   <ModOp Type="add" GUID="190745,190747,190749,190751" Path="/Values/ItemEffect/EffectTargets">
     <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-    <Item>
       <GUID>1500010124</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="191398" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010121</GUID>
-    </Item>
-    <Item>
-      <GUID>1010278</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="136823,190751,190749" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010107</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="190841,190840" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010121</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" GUID="125067,191328,125138,191347,191329,191327" Path="/Values/ItemEffect/EffectTargets">
@@ -2258,11 +1951,6 @@
   <ModOp Type="add" GUID="190910,191431,191429" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500010151</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="191405,191407,191404" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010121</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" GUID="191319,191317" Path="/Values/ItemEffect/EffectTargets">
@@ -2278,9 +1966,6 @@
   <!-- general production targets -->
   <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010121</GUID>
-    </Item>
-    <Item>
       <GUID>1500010126</GUID>
     </Item>
     <Item>
@@ -2288,9 +1973,6 @@
     </Item>
     <Item>
       <GUID>1500010128</GUID>
-    </Item>
-    <Item>
-      <GUID>1500010107</GUID>
     </Item>
     <Item>
       <GUID>1500010108</GUID>
@@ -2303,9 +1985,6 @@
     </Item>
     <Item>
       <GUID>1500010151</GUID>
-    </Item>
-    <Item>
-      <GUID>1500010121</GUID>
     </Item>
     <Item>
       <GUID>1500010126</GUID>
@@ -2326,9 +2005,6 @@
       <Factory>1500010151</Factory>
     </Item>
     <Item>
-      <Factory>1500010121</Factory>
-    </Item>
-    <Item>
       <Factory>1500010126</Factory>
     </Item>
     <Item>
@@ -2336,9 +2012,6 @@
     </Item>
     <Item>
       <Factory>1500010128</Factory>
-    </Item>
-    <Item>
-      <Factory>1500010107</Factory>
     </Item>
     <Item>
       <Factory>1500010108</Factory>
