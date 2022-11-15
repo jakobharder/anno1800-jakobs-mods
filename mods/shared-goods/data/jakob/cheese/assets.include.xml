@@ -355,50 +355,49 @@
         <ItemContainerUpgrade />
       </Values>
     </Asset>
-        <!-- Unlock at 1 Engineer. -->
-        <Asset>
-          <Template>Trigger</Template>
-          <Values>
-            <Standard>
-              <GUID>1500010196</GUID>
-              <Name>Unlock @ 1 Engineer</Name>
-              <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-            </Standard>
-            <Trigger>
-              <TriggerCondition>
-                <Template>ConditionPlayerCounter</Template>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010196</GUID>
+          <Name>Unlock @ 1 Engineer</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
                 <Values>
-                  <Condition />
-                  <ConditionPlayerCounter>
-                    <PlayerCounter>PopulationByLevel</PlayerCounter>
-                    <Context>15000003</Context>
-                    <CounterAmount>1</CounterAmount>
-                  </ConditionPlayerCounter>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010167</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
                 </Values>
-              </TriggerCondition>
-              <TriggerActions>
-                <Item>
-                  <TriggerAction>
-                    <Template>ActionUnlockAsset</Template>
-                    <Values>
-                      <Action />
-                      <ActionUnlockAsset>
-                        <UnlockAssets>
-                          <Item>
-                            <Asset>1500010167</Asset>
-                          </Item>
-                        </UnlockAssets>
-                      </ActionUnlockAsset>
-                    </Values>
-                  </TriggerAction>
-                </Item>
-              </TriggerActions>
-            </Trigger>
-            <TriggerSetup>
-              <UsedBySecondParties>0</UsedBySecondParties>
-            </TriggerSetup>
-          </Values>
-        </Asset>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: end -->
   <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">

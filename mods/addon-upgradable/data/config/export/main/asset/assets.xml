@@ -2883,13 +2883,13 @@
   <!-- workers menu: insert before bricks production chain, no fall back -->
   <ModOp Type="addPrevSibling" GUID='25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500024']">
     <Item>
-      <Building>1500010212</Building>
+      <Building>1500010200</Building>
     </Item>
   </ModOp>
   <!-- artisans menu: insert before anything, no fall back -->
   <ModOp Type="addPrevSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
     <Item>
-      <Building>1500010212</Building>
+      <Building>1500010225</Building>
     </Item>
   </ModOp>
 
@@ -3003,9 +3003,6 @@
                         <Asset>1500010200</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010225</Asset>
-                      </Item>
-                      <Item>
                         <Asset>1500010215</Asset>
                       </Item>
                     </UnhideAssets>
@@ -3054,9 +3051,6 @@
                       </Item>
                       <Item>
                         <Asset>1500010201</Asset> <!-- level 2 -->
-                      </Item>
-                      <Item>
-                        <Asset>1500010215</Asset> <!-- stone pavement -->
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -3227,8 +3221,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context>
-                <CounterAmount>700</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -3242,6 +3236,9 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010224</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010215</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

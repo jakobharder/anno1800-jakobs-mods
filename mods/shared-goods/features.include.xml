@@ -13,7 +13,9 @@
   <!-- Canned Fish Production: Olive Farm, Fish Cannery -->
   <Include File="./data/jakob/canned-fish/assets.include.xml" />
 
-  <!-- Olive Soap Production: Soap Factory -->
+  <!-- Olive Soap Production: Soap Factory (needs Canned Fish Production) -->
   <Include File="./data/jakob/soap/assets.include.xml" />
 
+  <!-- Alternative Needs: all applicable productions -->
+  <Include File="./data/jakob/alternative-needs/assets.include.xml" />
 </ModOps>
