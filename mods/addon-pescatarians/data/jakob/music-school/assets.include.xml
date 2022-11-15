@@ -184,14 +184,16 @@
         <Values>
           <Standard>
             <GUID>1500010803</GUID>
-            <Name>Unhide immediately</Name>
+            <Name>Unhide @ Community Center</Name>
           </Standard>
           <Trigger>
             <TriggerCondition>
-              <Template>ConditionAlwaysTrue</Template>
+              <Template>ConditionUnlocked</Template>
               <Values>
                 <Condition />
-                <ConditionAlwaysTrue />
+                <ConditionUnlocked>
+                  <UnlockNeeded>1500010100</UnlockNeeded>
+                </ConditionUnlocked>
               </Values>
             </TriggerCondition>
             <TriggerActions>

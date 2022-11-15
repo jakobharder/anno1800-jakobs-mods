@@ -7,12 +7,12 @@
 <ModOps>
   <!-- # Shared Needs -->
   <!-- luxury goods are not needed, so let's not copy them unnecessarily -->
-  <Include File="./products/ropes/assets.include.xml" />
-  <Include File="./products/canned-fish/assets.include.xml" />
-  <Include File="./products/cheese/assets.include.xml" />
-  <Include File="./products/suits/assets.include.xml" />
-  <Include File="./products/olive-soap/assets.include.xml" />
-  <Include File="./products/vegetables/assets.include.xml" />
+  <Include File="../../../../../products/ropes/assets.include.xml" />
+  <Include File="../../../../../products/canned-fish/assets.include.xml" />
+  <Include File="../../../../../products/cheese/assets.include.xml" />
+  <Include File="../../../../../products/suits/assets.include.xml" />
+  <Include File="../../../../../products/olive-soap/assets.include.xml" />
+  <Include File="../../../../../products/vegetables/assets.include.xml" />
 
   <Include File="./assets-productions.include.xml" />
 
@@ -863,7 +863,7 @@
             </Values>
           </TriggerCondition>
           <TriggerActions>
-            <Item>
+            <!-- <Item>
               <TriggerAction>
                 <Template>ActionSetObjectGUID</Template>
                 <Values>
@@ -876,7 +876,7 @@
                   </ObjectFilter>
                 </Values>
               </TriggerAction>
-            </Item>
+            </Item> -->
             <Item>
               <!-- register because players could have farmers in their quick build slots -->
               <TriggerAction>
@@ -916,7 +916,9 @@
           <PickingAsset>1500010143</PickingAsset>
           <AssociatedRegions>Moderate</AssociatedRegions>
         </Building>
-        <Locked />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+        </Locked>
         <Upgradable>
           <NextGUID>1500010144</NextGUID>
           <UpgradeCost>
@@ -2378,12 +2380,12 @@
         </Standard>
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010180</GUID>
-          <Name>unhide construction menu</Name>
+          <Name>obsolete: unhide construction menu</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -2413,7 +2415,7 @@
         </Trigger>
         <TriggerSetup />
       </Values>
-    </Asset>
+    </Asset> -->
     <Asset>
       <Template>Trigger</Template>
       <Values>
@@ -2429,8 +2431,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context> <!-- artisans -->
-                <CounterAmount>1500</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>400</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2457,27 +2459,27 @@
                       <Item>
                         <Asset>1500010145</Asset> <!-- engineers -->
                       </Item>
-                      <Item>
-                        <Asset>1500010162</Asset> <!-- wooden accessory asset pool -->
+                      <!-- <Item>
+                        <Asset>1500010162</Asset> <!- - wooden accessory asset pool - ->
                       </Item>
                       <Item>
-                        <Asset>1500010163</Asset> <!-- tools asset pool -->
+                        <Asset>1500010163</Asset> <!- - tools asset pool - ->
                       </Item>
                       <Item>
-                        <Asset>1500010164</Asset> <!-- canned fish asset pool -->
+                        <Asset>1500010164</Asset> <!- - canned fish asset pool - ->
                       </Item>
                       <Item>
-                        <Asset>1500010165</Asset> <!-- OW suits asset pool -->
+                        <Asset>1500010165</Asset> <!- - OW suits asset pool - ->
                       </Item>
                       <Item>
-                        <Asset>1500010166</Asset> <!-- olive soap asset pool -->
+                        <Asset>1500010166</Asset> <!- - olive soap asset pool - ->
                       </Item>
                       <Item>
-                        <Asset>1500010167</Asset> <!-- cheese asset pool -->
+                        <Asset>1500010167</Asset> <!- - cheese asset pool - ->
                       </Item>
                       <Item>
-                        <Asset>1500010168</Asset> <!-- premium beer asset pool -->
-                      </Item>
+                        <Asset>1500010168</Asset> <!- - premium beer asset pool - ->
+                      </Item> -->
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -2489,47 +2491,16 @@
       </Values>
     </Asset>
     <!-- extra unlock because added in a newer version -->
-    <Asset>
+    <!-- <Asset>
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010187</GUID>
-          <Name>unlock construction menu</Name>
+          <Name>obsolete: unlock construction menu</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context> <!-- artisans -->
-                <CounterAmount>1500</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010186</Asset> <!-- construction menu -->
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
       </Values>
-    </Asset>
+    </Asset> -->
     <!-- bugfix: unhide buildings -->
     <Asset>
       <Template>Trigger</Template>
@@ -2557,6 +2528,9 @@
                     <UnhideAssets>
                       <Item>
                         <Asset>1500010142</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010143</Asset>
                       </Item>
                       <Item>
                         <Asset>1500010100</Asset>

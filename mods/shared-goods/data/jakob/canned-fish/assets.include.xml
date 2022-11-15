@@ -93,7 +93,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_treeplanter.cfg</Filename>
+              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_treeplanter.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -271,13 +271,13 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_field_01.cfg</Filename>
+              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_field_02.cfg</Filename>
+              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\olive_treeplanter\olive_field_03.cfg</Filename>
+              <Filename>data\jakob\canned-fish\olive_treeplanter\olive_field_03.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -321,7 +321,7 @@
         <Standard>
           <GUID>1500010121</GUID>
           <Name>fish_cannery</Name>
-          <IconFilename>data\jakob\buildings\fish_cannery\icon_canned_alt.png</IconFilename>
+          <IconFilename>data\jakob\canned-fish\fish_cannery\icon_canned_alt.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -359,7 +359,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\fish_cannery\fish_cannery.cfg</Filename>
+              <Filename>data\jakob\canned-fish\fish_cannery\fish_cannery.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -539,7 +539,7 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010195</GUID>
+          <GUID>1500010197</GUID>
           <Name>Unlock @ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
@@ -592,7 +592,7 @@
     </Item>
   </ModOp> -->
   <ModOp Type="replace" GUID="500008" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\buildings\fish_cannery\icon_canned_menu.png</IconFilename>
+    <IconFilename>data\jakob\canned-fish\fish_cannery\icon_canned_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="500008" Path="/Values/ProductionChain/Tier1">
     <Item>
