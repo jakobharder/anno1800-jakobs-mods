@@ -1,0 +1,53 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\residence\residence_tier03_04\residence_tier03_04.cfg
+  modifications:
+    # replace with model split into walls and roof
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\artisan-skins\rdm\tier03_04_lod0.rdm
+    - xpath-remove: //Config/Models/Config/MaterialLODInfos
+    # add roof texture
+    - xpath-add: //Config/Models/Config/Materials
+      Config:
+        ConfigType: MATERIAL
+        Name: roof
+        ShaderID: 8
+        VertexFormat: P4h_N4b_G4b_B4b_T2h
+        NumBonesPerVertex: 0
+        METALLIC_TEX_ENABLED: 1
+        cModelMetallicTex: data/graphics/buildings/residence/residence_tier03_04/maps/residence_tier_03_buildingb_metal.psd
+        cUseTerrainTinting: 0
+        SEPARATE_AO_TEXTURE: 0
+        cSeparateAOTex: data/graphics/effects/default_model_mask.png
+        Common: Common
+        DIFFUSE_ENABLED: 1
+        cModelDiffTex: data\jakob\artisan-skins\maps\residence_tier3_4b_diff.psd
+        NORMAL_ENABLED: 1
+        cModelNormalTex: data/graphics/buildings/residence/residence_tier03_04/maps/residence_tier_03_buildingb_norm.psd
+        cDiffuseColor.r: 0.5052
+        cDiffuseColor.g: 0.8526
+        cDiffuseColor.b: 0.6421
+        ALPHA_BLEND_ENABLED: 0
+        cTexScrollSpeed: 0.000000
+        DYE_MASK_ENABLED: 0
+        HEIGHT_MAP_ENABLED: 0
+        cParallaxScale: 1.000000
+        PARALLAX_MAPPING_ENABLED: 1
+        SELF_SHADOWING_ENABLED: 0
+        WATER_CUTOUT_ENABLED: 0
+        TerrainAdaption: TerrainAdaption
+        ADJUST_TO_TERRAIN_HEIGHT: 0
+        VERTEX_COLORED_TERRAIN_ADAPTION: 0
+        ABSOLUTE_TERRAIN_ADAPTION: 0
+        Environment: Environment
+        cUseLocalEnvironmentBox: 1
+        cEnvironmentBoundingBox.x: 0.000000
+        cEnvironmentBoundingBox.y: 0.000000
+        cEnvironmentBoundingBox.z: 0.444000
+        cEnvironmentBoundingBox.w: 2.676000
+        Glow: Glow
+        GLOW_ENABLED: 1
+        cEmissiveColor.r: 2.000000
+        cEmissiveColor.g: 2.000000
+        cEmissiveColor.b: 2.000000
+        NIGHT_GLOW_ENABLED: 0

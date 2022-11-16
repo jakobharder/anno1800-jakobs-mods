@@ -949,7 +949,7 @@
               <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate04.cfg</Filename>
+              <Filename>data/jakob/worker-skins/yellow/residence_tier02_estate04.cfg</Filename>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
@@ -962,7 +962,7 @@
               <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier02/residence_tier02_estate04.cfg</Filename>
+              <Filename>data/jakob/worker-skins/yellow/residence_tier02_estate04.cfg</Filename>
             </Item>
           </Variations>
           <Skins>
@@ -1315,7 +1315,7 @@
       <Values>
         <Standard>
           <GUID>1500010834</GUID>
-          <Name>Tall Blue Artisan Skin</Name>
+          <Name>Mixed Artisan Skin</Name>
           <IconFilename>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</IconFilename>
         </Standard>
         <Skin>
@@ -1393,6 +1393,53 @@
             </Item>
             <Item>
               <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010311</GUID>
+          <Name>Tall Blue Artisan Skin</Name>
+          <IconFilename>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010311</SkinName>
+          <SkinDescription>1500010307</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
         </Skin>
