@@ -1,46 +1,13 @@
 <ModOps>
   <!-- # Shared Goods -->
-  <Include File="../export/main/asset/products/texts/texts_korean.include.xml" />
+  <Include File="../../../products/texts/texts_korean.include.xml" />
 
   <!-- # Pescatarians -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>치즈</Text>
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>정장</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>도구</Text>
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>생선 통조림</Text>
-    </Text>
-    <Text>
-      <GUID>1500010106</GUID>
-      <Text>올리브 비누</Text>
-    </Text>
-    <Text>
-      <GUID>1500010150</GUID>
-      <Text>목재 장신구</Text> <!-- wooden accessories: product -->
-    </Text>
     <!-- main -->
     <Text>
       <GUID>601382</GUID>
-      <Text>페스카테리언 농부</Text>
-    </Text>
-    <Text>
-      <GUID>601383</GUID>
-      <Text>페스카테리언 노동자</Text>
-    </Text>
-    <Text>
-      <GUID>601384</GUID>
-      <Text>페스카테리언 직공</Text>
+      <Text>페스카테리언</Text>
     </Text>
     <Text>
       <GUID>1500010100</GUID>
@@ -53,18 +20,6 @@
     <Text>
       <GUID>1500010119</GUID>
       <Text>공동체 회관</Text> <!-- public service: basic -->
-    </Text>
-    <Text>
-      <GUID>1500010130</GUID>
-      <Text>페스카테리언 농부</Text>
-    </Text>
-    <Text>
-      <GUID>1500010131</GUID>
-      <Text>페스카테리언 노동자</Text>
-    </Text>
-    <Text>
-      <GUID>1500010132</GUID>
-      <Text>페스카테리언 직공</Text>
     </Text>
     <Text>
       <GUID>1500010134</GUID>
@@ -138,13 +93,123 @@
       <GUID>1500010801</GUID>
       <Text>[AssetData(1500010800) Text]</Text> <!-- service: music school -->
     </Text>
+    <Text>
+      <GUID>1500010804</GUID>
+      <Text>Mixed Workforce</Text>
+    </Text>
+    <Text>
+      <GUID>1500010806</GUID> <!-- can't be AssetData -->
+      <Text>Pescatarians</Text>
+    </Text>
+    <Text>
+      <GUID>1500010810</GUID>
+      <Text>Angry Pescatarian</Text>
+    </Text>
+    <Text>
+      <GUID>1500010811</GUID>
+      <Text>Unhappy Pescatarian</Text>
+    </Text>
+    <Text>
+      <GUID>1500010812</GUID>
+      <Text>Content Pescatarian</Text>
+    </Text>
+    <Text>
+      <GUID>1500010813</GUID>
+      <Text>Happy Pescatarian</Text>
+    </Text>
+    <Text>
+      <GUID>1500010814</GUID>
+      <Text>Euphoric Pescatarian</Text>
+    </Text>
+    <Text>
+      <GUID>1500010321</GUID>
+      <Text>Tall Red Skin</Text>
+    </Text>
+    <Text>
+      <GUID>1500010833</GUID>
+      <Text>Dark Skin</Text>
+    </Text>
+    <Text>
+      <GUID>1500010834</GUID>
+      <Text>Tall Blue Skin</Text>
+    </Text>
   </ModOp>
-  
-  <!-- # Pescatarian Lifestyle Goods -->
+
+  <!-- # Services -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010159</GUID>
-      <Text>Pescatarian Alternatives</Text>
+      <GUID>1500010816</GUID>
+      <Text>Library</Text>
     </Text>
+    <Text>
+      <GUID>1500010818</GUID>
+      <Text>Library</Text>
+    </Text>
+    <Text>
+      <GUID>1500010817</GUID>
+      <Text>Small Post Office</Text>
+    </Text>
+    <Text>
+      <GUID>1500010819</GUID>
+      <Text>Seafood Restaurant</Text>
+    </Text>
+    <Text>
+      <GUID>1500010820</GUID>
+      <Text>Seafood Restaurant</Text>
+    </Text>
+  </ModOp> 
+  
+  <!-- # Ships -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010821</GUID>
+      <Text>3 Mast Schooner</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Productions -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010822</GUID>
+      <Text>Rope Maker</Text>
+    </Text>
+    <Text>
+      <GUID>1500010824</GUID>
+      <Text>Ropes</Text>
+    </Text>
+    <Text>
+      <GUID>1500010825</GUID>
+      <Text>Ropes</Text>
+    </Text>
+    <Text>
+      <GUID>1500010827</GUID>
+      <Text>Fishernets</Text>
+    </Text>
+    <Text>
+      <GUID>1500010828</GUID>
+      <Text>Fishernet Maker</Text>
+    </Text>
+    <Text>
+      <GUID>1500010829</GUID>
+      <Text>Fishernets</Text>
+    </Text>
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Vegetable Farm</Text>
+    </Text>
+    <Text>
+      <GUID>1500010835</GUID>
+      <Text>Kitchen</Text>
+    </Text>
+    <Text>
+      <GUID>1500010836</GUID>
+      <Text>Vegetables</Text>
+    </Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Food</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Canned Food</Text>
   </ModOp>
 </ModOps>
