@@ -297,7 +297,10 @@
           </Colors>
         </Selection>
         <Constructable />
-        <Locked />
+        <Locked>
+          <!-- unlock by default. makes life easier and is hidden by menus anyways -->
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
         <SoundEmitter>
           <ActiveSounds>
             <Item>

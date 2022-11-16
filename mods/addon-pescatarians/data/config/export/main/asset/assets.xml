@@ -7,15 +7,13 @@
 <ModOps>
   <!-- # Shared Needs -->
   <!-- luxury goods are not needed, so let's not copy them unnecessarily -->
-  <Include File="../../../../../products/ropes/assets.include.xml" />
   <Include File="../../../../../products/canned-fish/assets.include.xml" />
   <Include File="../../../../../products/cheese/assets.include.xml" />
   <Include File="../../../../../products/suits/assets.include.xml" />
   <Include File="../../../../../products/olive-soap/assets.include.xml" />
-  <Include File="../../../../../products/vegetables/assets.include.xml" />
 
-  <Include File="./assets-productions.include.xml" />
-
+  <Include File="../../../../jakob/pickled-vegetables/assets.include.xml" />
+  <Include File="../../../../jakob/ropes/assets.include.xml" />
   <Include File="../../../../jakob/music-school/assets.include.xml" />
   <Include File="../../../../jakob/small-library/assets.include.xml" />
 
@@ -912,6 +910,9 @@
         </Standard>
         <Blocking />
         <Building>
+          <AllowChangeDirection>1</AllowChangeDirection>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingType>Residence</BuildingType>
           <PickingAsset>1500010143</PickingAsset>
           <AssociatedRegions>Moderate</AssociatedRegions>

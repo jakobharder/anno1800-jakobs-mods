@@ -1,0 +1,351 @@
+<ModOps>
+  <Include File="../../../products/vegetables/assets.include.xml" />
+
+  <!-- # Vegetables -->
+  <ModOp GUID="1010265" Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010265</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010830</GUID>
+          <Name>Cabbage Farm</Name>
+          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_cabbage.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\pickled-vegetables\vegetable_farm\cabbage.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked />
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>1500010836</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>60</CycleTime>
+          <IsMainFactory>1</IsMainFactory>
+        </FactoryBase>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+              <InactiveAmount>25</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>40</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <LogisticNode />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FactoryBuilding7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010835</GUID>
+          <Name>Sauerkraut Kitchen</Name>
+          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables_alt.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\pickled-vegetables\vegetable_farm\kitchen.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Text>
+          <LocaText>
+            <English>
+              <Text>Brick Factory</Text>
+              <Status>Exported</Status>
+            </English>
+          </LocaText>
+          <LineID>5253</LineID>
+        </Text>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>216871</Sound>
+            </Item>
+            <Item>
+              <Sound>206327</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <MaterialType>Soil</MaterialType>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1500010836</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1500010831</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>60</CycleTime>
+          <IsMainFactory>1</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode />
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>60</Amount>
+              <InactiveAmount>30</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>30</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+          <SelfHealPerHealTick>6</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture>
+          <CultureType>Culture</CultureType>
+        </Culture>
+        <QuestObject />
+        <Electrifiable />
+        <EcoSystemProvider />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010836</GUID>
+          <Name>Cabbage</Name>
+          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_cabbage.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory>
+          <BasePrice>30</BasePrice>
+          <CivLevel>1</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>10</BaseMorale>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010844</GUID>
+          <Name>Unlock @ 400 Workers</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>400</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010830</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010835</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
+  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+  <!-- product lists: after fur coats / artisan -->
+  <ModOp Type="addNextSibling" GUID="502019,502006,502016,502220,502065" Path="/Values/ProductList/List/Item[(Product='1010247' or Product='501997' or Product='502019') and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+  <!-- product lists: after furs -->
+  <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+    <Item>
+      <Product>1500010836</Product>
+    </Item>
+  </ModOp>
+  <!-- build menu -->
+  <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
+    <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables_menu.png</IconFilename>
+  </ModOp>
+  <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500010835</Building>
+      <Tier2>
+        <Item>
+          <Building>1500010830</Building>
+        </Item>
+      </Tier2>
+    </Item>
+  </ModOp>
+
+  <!-- # General -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010830</Factory>
+    </Item>
+    <Item>
+      <Building>1500010835</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010830</Building>
+    </Item>
+    <Item>
+      <Building>1500010835</Building>
+    </Item>
+  </ModOp>
+  <!-- general production targets -->
+  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010830</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010835</GUID>
+    </Item>
+  </ModOp>
+</ModOps>
