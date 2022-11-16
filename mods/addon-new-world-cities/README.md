@@ -1,4 +1,4 @@
-# New World Construction
+# New World Cities
 
 ![](./banner.png)
 
@@ -24,6 +24,10 @@ Some buildings are a bit slower than their Old World counterpart.
 
 - Concrete Factory
 - Limestone Quarry: buildable on clay deposits
+
+## Other
+
+- Fixes the floating celluloid.
 
 ## Translations
 
