@@ -1,0 +1,26 @@
+<!-- 
+  New World Cities
+
+  You can disable productions you don't like by removing lines in this file.
+  Be sure to delete the mods/.cache folder after changes.
+-->
+<ModOps>
+  
+  <!-- Add electrity support to the New World -->
+  <Include Skip="0" File="./data/jakob/nw-electricity/assets.include.xml" ModOpID="PowerPlants" />
+
+  <!-- Power Plants: Oil, Gas, Coal and Wind (if the respective mods for OW are available) -->
+  <Include Skip="0" File="./data/jakob/nw-power-plants/assets.include.xml" ModOpID="PowerPlants" />
+
+  <!-- Power Plants: Oil, Gas, Coal and Wind (if the respective mods for OW are available) -->
+  <Include Skip="0" File="./data/jakob/nw-construction/assets.include.xml" ModOpID="Construction" />
+
+  <!-- Toggle features via iModYourAnno -->
+  <ImyaTweaks Title="Features" />
+  <ImyaExpose Path="self" ModOpID="Construction" Kind="SkipToggle" ExposeID="Construction"
+    Description="Add construction material production to the New World." />
+  <ImyaExpose Path="self" ModOpID="PowerPlants" Kind="SkipToggle" ExposeID="Power Plants"
+    Description="Enable power plants from `Small Power Plants` and `Nate's Windmill` in the New World." />
+  <!-- <ImyaExpose Path="self" ModOpID="Electricity" Kind="SkipToggle" ExposeID="Electricity"
+    Description="Add electricity to New World production buildings." /> -->
+</ModOps>

@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
@@ -43,7 +43,7 @@
   "modinfo": {
     "Version": "1.0.2",
     "ModID": "jakob_new_world_cities",
-    "DeprecateIds": [ "jakob_nw_construction" ],
+    "DeprecateIds": [ "jakob_nw_construction", "jakob_bugfix_celluloid", "jakob_power_nw" ],
     "IncompatibleIds": [],
     "ModDependencies": [ ],
     "Category": {

@@ -1,30 +1,8 @@
 <!-- 
-Small Power Plants, New World
-
-Git: https://github.com/jakobharder/anno-1800-jakobs-mods
-GUIDs: https://github.com/anno-mods/GuidRanges
-
-Only inserting build menus.
-Unlocks happen completely in the respective mods.
-
+  Only inserting build menus.
+  Unlocks happen completely in the respective mods.
 -->
-
 <ModOps>
-  <!-- # NW Electricity -->
-  <!--
-    + all colony factories (with input)
-    + baseasset users with disabled industrialization
-    - fuel production 
-    - NW Tourism Christo Redentor
-  -->
-  <ModOp Type='replace' Path='//Values/Industrializable/BoostedByIndustrialization["0" and ../../Building/AssociatedRegions="Colony01" and (../../FactoryBase/FactoryInputs or ../../../BaseAssetGUID) and not(../../FactoryBase/FactoryOutputs/Item/Product="270042") and not(../../BuffFactory/ProductionBuffs) and not(../../Standard/GUID="1440134400")]'>
-    <BoostedByIndustrialization>1</BoostedByIndustrialization>
-  </ModOp>
-  <!-- mines -->
-  <ModOp Type='add' Path='//Asset[Template="SlotFactoryBuilding7"]/Values/Industrializable'>
-    <BoostedByIndustrialization>1</BoostedByIndustrialization>
-  </ModOp>
-
   <!-- # NW Construction Menus -->
   <!-- remove biogas by first adding it and then deleting all occurences to avoid not found warnings -->
   <ModOp Type="add" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList">

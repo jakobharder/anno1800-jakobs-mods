@@ -7,15 +7,22 @@
 <ModOps>
   
   <!-- Cheese Production: Diary Farm, Cheese Dairy -->
-  <Include File="./data/jakob/cheese/assets.include.xml" />
+  <Include Skip="0" File="./data/jakob/cheese/assets.include.xml" />
   <!-- Tools Production: Tools Workshop -->
-  <Include File="./data/jakob/tools/assets.include.xml" />
+  <Include Skip="0" File="./data/jakob/tools/assets.include.xml" />
   <!-- Canned Fish Production: Olive Farm, Fish Cannery -->
-  <Include File="./data/jakob/canned-fish/assets.include.xml" />
+  <Include Skip="0" File="./data/jakob/canned-fish/assets.include.xml" />
 
   <!-- Olive Soap Production: Soap Factory (needs Canned Fish Production) -->
-  <Include File="./data/jakob/soap/assets.include.xml" />
+  <Include Skip="0" File="./data/jakob/soap/assets.include.xml" ModOpID="Soap" />
 
   <!-- Alternative Needs: all applicable productions -->
-  <Include File="./data/jakob/alternative-needs/assets.include.xml" />
+  <Include Skip="0" File="./data/jakob/alternative-needs/assets.include.xml" ModOpID="AlternativeNeeds" />
+
+  <!-- Toggle features via iModYourAnno -->
+  <ImyaTweaks Title="Features" />
+  <ImyaExpose Path="self" ModOpID="AlternativeNeeds" Kind="SkipToggle" ExposeID="Alternative Needs"
+    Description="Vanilla population can consume Pescatarian goods as alternatives via Lifestyle." />
+  <ImyaExpose Path="self" ModOpID="Soap" Kind="SkipToggle" ExposeID="Olive Soap"
+    Description="Olive Soap is only used by Pescatarians and Alternative Needs." />
 </ModOps>

@@ -25,9 +25,14 @@ Some buildings are a bit slower than their Old World counterpart.
 - Concrete Factory
 - Limestone Quarry: buildable on clay deposits
 
+## Electricity
+
+- Enable "Nate's Windmill", "Small Power Plants" and electricity in the New World.
+
 ## Other
 
 - Fixes the floating celluloid.
+
 
 ## Translations
 
