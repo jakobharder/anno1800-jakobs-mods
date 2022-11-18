@@ -39,38 +39,36 @@
       <Template>Skin</Template>
       <Values>
         <Standard>
-          <GUID>1500010182</GUID>
-          <Name>pescatarian colorful</Name>
-          <IconFilename>data/jakob/artisan-skins/icon_tier03_colorful.png</IconFilename>
-          <ID>pescatarian_t3_skin_colorful</ID>
+          <GUID>1500010199</GUID>
+          <Name>Yellow Workers</Name>
+          <IconFilename>data\jakob\worker-skins\yellow\icon_yellow_skin.png</IconFilename>
         </Standard>
         <Skin>
-          <SkinName>1500010309</SkinName>
-          <SkinDescription>1500010307</SkinDescription>
+          <SkinName>1500010199</SkinName>
           <SkinVariations>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate01.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate01.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate02.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate02.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate03.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate03.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate04.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate04.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate01.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate01.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate02.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate02.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate03.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate03.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data/jakob/artisan-skins/skin1/residence_tier03_estate04.cfg</FileName>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
         </Skin>
@@ -82,61 +80,10 @@
         <Text />
       </Values>
     </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010307</GUID>
-          <Name>artisan_skin_description</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010308</GUID>
-          <Name>default_skin_name</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010309</GUID>
-          <Name>colorful_skin_name</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010310</GUID>
-          <Name>black_skin_name</Name>
-        </Standard>
-      </Values>
-    </Asset>
   </ModOp>
-  <ModOp GUID='1500010144' Type="add" Path="/Values/Object/Skins/SkinList">
+  <ModOp GUID="1010344,1500010143" Type="add" Path="/Values/Object/Skins/SkinList">
     <Item>
-      <SkinAssetGuid>1500010182</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010305</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010306</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010304</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010311</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010321</SkinAssetGuid>
+      <SkinAssetGuid>1500010199</SkinAssetGuid>
     </Item>
   </ModOp>
 </ModOps>

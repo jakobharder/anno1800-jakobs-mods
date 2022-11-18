@@ -4,7 +4,7 @@
 <ModOps>
   <!-- # Pescatarian artisans skins -->
   <!-- replace default skin, noone should add variations to my buildings so it's safe to 'replace' -->
-  <ModOp GUID='1500010144' Type="replace" Path="/Values/Object/Variations">
+  <!-- <ModOp GUID='1500010144' Type="replace" Path="/Values/Object/Variations">
     <Variations>
       <Item>
         <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</Filename>
@@ -17,9 +17,9 @@
       </Item>
       <Item>
         <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</Filename>
-      </Item>
+      </Item> -->
       <!-- repeat same variations again to double the color variations in non-default skins -->
-      <Item>
+      <!-- <Item>
         <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</Filename>
       </Item>
       <Item>
@@ -32,7 +32,7 @@
         <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</Filename>
       </Item>
     </Variations>
-  </ModOp>
+  </ModOp> -->
   <!-- add skins -->
   <ModOp GUID='1010345' Type="addNextSibling">
     <Asset>
@@ -121,6 +121,9 @@
   </ModOp>
   <ModOp GUID='1500010144' Type="add" Path="/Values/Object/Skins/SkinList">
     <Item>
+      <SkinAssetGuid>1500010304</SkinAssetGuid>
+    </Item>
+    <Item>
       <SkinAssetGuid>1500010182</SkinAssetGuid>
     </Item>
     <Item>
@@ -128,15 +131,6 @@
     </Item>
     <Item>
       <SkinAssetGuid>1500010306</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010304</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010311</SkinAssetGuid>
-    </Item>
-    <Item>
-      <SkinAssetGuid>1500010321</SkinAssetGuid>
     </Item>
   </ModOp>
 </ModOps>

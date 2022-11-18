@@ -743,29 +743,29 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate01.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate02.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate03.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate04.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate04.cfg</Filename>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate01.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate02.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate03.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/buildings/residence/residence_tier01/residence_tier01_estate04.cfg</Filename>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate04.cfg</Filename>
             </Item>
           </Variations>
           <Skins>
@@ -861,7 +861,7 @@
             </Values>
           </TriggerCondition>
           <TriggerActions>
-            <!-- <Item>
+            <Item>
               <TriggerAction>
                 <Template>ActionSetObjectGUID</Template>
                 <Values>
@@ -874,7 +874,7 @@
                   </ObjectFilter>
                 </Values>
               </TriggerAction>
-            </Item> -->
+            </Item>
             <Item>
               <!-- register because players could have farmers in their quick build slots -->
               <TriggerAction>
@@ -1162,62 +1162,44 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01b.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02b.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03b.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04b.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</Filename>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</Filename>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</Filename>
             </Item>
-            <!-- <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
-            </Item> -->
-            <!-- repeat same variations again to double the color variations in non-default skins -->
-            <!-- <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate01/residence_tier03_estate01.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate02/residence_tier03_estate02.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate03/residence_tier03_estate03.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier03_estate04/residence_tier03_estate04.cfg</Filename>
-            </Item> -->
           </Variations>
           <Skins>
             <DefaultSkinName>1500010834</DefaultSkinName>
             <DefaultSkinDescription>23853</DefaultSkinDescription>
             <!-- is only visible in combination with skin mod -->
             <OverrideDefaultIcon>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</OverrideDefaultIcon>
-            <SkinList />
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010311</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010321</SkinAssetGuid>
+              </Item>
+            </SkinList>
           </Skins>
         </Object>
         <Residence7>
@@ -1417,29 +1399,29 @@
           <SkinDescription>1500010307</SkinDescription>
           <SkinVariations>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01b.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate02b.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate03b.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04b.cfg</FileName>
             </Item>
             <!-- repeat same variations again to double the color variations in non-default skins -->
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate02.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate03.cfg</FileName>
             </Item>
             <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</FileName>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
         </Skin>
