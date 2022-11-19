@@ -6,6 +6,13 @@ variant:
     - xpath: //Config/Models/Config
       FileName: data\jakob\buildings\residence\high-artisan\rdm\artisan_estate04b_lod0.rdm
     - xpath-remove: //Config/Models/Config/MaterialLODInfos
+    # move smoke
+    - xpath: //Config/Particles/Config/Transformer/Config[Position.y='1.866345']
+      Position.y: 2.18009
+    - xpath: //Config/Particles/Config/Transformer/Config[Position.y='2.138548']
+      Position.y: 2.63225
+    - xpath: //Config/Particles/Config/Transformer/Config[Position.y='2.052350']
+      Position.y: 2.51532
     # replace ground with 1st roof texture
     - xpath: //Config/Models/Config/Materials/Config[Name="03_ground_vertex"]
       Name: roof1

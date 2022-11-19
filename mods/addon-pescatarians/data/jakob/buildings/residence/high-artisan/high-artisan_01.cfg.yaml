@@ -5,7 +5,10 @@ variant:
     # replace with model split into walls and roof
     - xpath: //Config/Models/Config[FileName="data\graphics\buildings\residence\residence_tier03_01\rdm\residence_tier03_01_lod0.rdm"]
       FileName: data\jakob\buildings\residence\high-artisan\rdm\artisan_01_lod0.rdm
-    - xpath-remove: //Config/Models/Config/MaterialLODInfos
+    # - xpath-remove: //Config/Models/Config/MaterialLODInfos
+    # move smoke
+    - xpath: //Config/Particles/Config/Transformer/Config
+      Position.y: 3.34734
     # replace ground with roof texture
     - xpath: //Config/Models/Config/Materials/Config[Name="02_ground"]
       Name: roof

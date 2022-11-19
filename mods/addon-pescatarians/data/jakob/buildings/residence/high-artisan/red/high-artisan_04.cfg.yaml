@@ -6,6 +6,9 @@ variant:
     - xpath: //Config/Models/Config
       FileName: data\jakob\buildings\residence\high-artisan\rdm\artisan_04_lod0.rdm
     - xpath-remove: //Config/Models/Config/MaterialLODInfos
+    # move smoke
+    - xpath: //Config/Particles/Config/Transformer/Config
+      Position.y: 2.724326
     # add roof texture
     - xpath-add: //Config/Models/Config/Materials
       Config:
