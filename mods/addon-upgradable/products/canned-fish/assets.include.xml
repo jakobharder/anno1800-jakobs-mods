@@ -52,6 +52,11 @@
             <Item />
           </ProductList>
         </ProductStorageList>
+        <ExpeditionFeature>
+          <FeedOption>
+            <FeedOptions />
+          </FeedOption>
+        </ExpeditionFeature>
       </Values>
     </Asset>
   </ModOp>
@@ -70,6 +75,14 @@
   <!-- product lists: after fur coats / artisan -->
   <ModOp Type="addNextSibling" GUID="501997,501992,502019,502005,502016,502220,502065,502031" Path="/Values/ProductList/List/Item[(Product='1010247' or Product='501997' or Product='502019') and not(../Item/Product='1500010120')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- Expedition -->
+  <ModOp Type="add" GUID="800111" Path="/Values/ExpeditionFeature/FeedOption/FeedOptions[not(Item/Product='1500010120')] | //Values[Standard/GUID='1500010221']/ExpeditionFeature/FeedOption/FeedOptions">
+    <Item>
+      <MoraleFactor>0.1</MoraleFactor>
       <Product>1500010120</Product>
     </Item>
   </ModOp>

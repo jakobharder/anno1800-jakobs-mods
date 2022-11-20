@@ -74,6 +74,14 @@
     </Item>
   </ModOp>
 
+  <!-- Expedition -->
+  <ModOp Type="add" GUID="800111" Path="/Values/ExpeditionFeature/FeedOption/FeedOptions[not(Item/Product='1500010831')] | //Values[Standard/GUID='1500010221']/ExpeditionFeature/FeedOption/FeedOptions">
+    <Item>
+      <MoraleFactor>0.3</MoraleFactor>
+      <Product>1500010831</Product>
+    </Item>
+  </ModOp>
+
   <!-- # Docklands (ordered, unique) -->
   <!-- <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item/Trades[Item/Good='1010213' and not(Item/Good='1500010120')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList"> -->
     <!-- feedl -->
