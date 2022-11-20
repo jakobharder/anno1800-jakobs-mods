@@ -9,7 +9,7 @@
         <Standard>
           <GUID>1500010830</GUID>
           <Name>Cabbage Farm</Name>
-          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_cabbage.png</IconFilename>
+          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables2_alt.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
@@ -24,15 +24,18 @@
           </Variations>
         </Object>
         <Locked />
+        <Factory7>
+          <NeededFertility>0</NeededFertility>
+        </Factory7>
         <FactoryBase>
           <FactoryOutputs>
             <Item>
               <Product>1500010836</Product>
               <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>60</CycleTime>
+          <CycleTime>30</CycleTime>
           <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
         <Maintenance>
@@ -288,6 +291,47 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010846</GUID>
+          <Name>Fishery Menu</Name>
+          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>1010278</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010830</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+    <!-- <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010846</GUID>
+          <Name>Fishery Menu</Name>
+          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010830</Building>
+            </Item>
+            <Item>
+              <Building>1010278</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>100000</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset> -->
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
   <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
@@ -302,7 +346,7 @@
     </Item>
   </ModOp>
   <!-- product lists: after furs -->
-  <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <ModOp Type="addNextSibling" GUID="502031,502037" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010836</Product>
     </Item>
@@ -319,6 +363,11 @@
           <Building>1500010830</Building>
         </Item>
       </Tier2>
+    </Item>
+  </ModOp>
+  <ModOp Type="replace" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010278']">
+    <Item>
+      <Building>1500010846</Building>
     </Item>
   </ModOp>
 

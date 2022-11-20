@@ -26,7 +26,7 @@
         <Standard>
           <GUID>1500010154</GUID>
           <Name>tools_workshop</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
+          <IconFilename>data\jakob\tools\tools_workshop\icon_tools_alt.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeDirection>1</AllowChangeDirection>
@@ -408,9 +408,33 @@
     </Item>
   </ModOp>
   <!-- OW consumables, workers menu: insert after beer -->
-  <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>
       <Building>1500010155</Building>
+    </Item>
+  </ModOp> -->
+  <ModOp Type="replace" GUID="500003" Path="/Values/Standard/IconFilename">
+    <IconFilename>data\jakob\tools\tools_workshop\icon_tools_menu.png</IconFilename>
+  </ModOp>
+  <ModOp Type="add" GUID="500003" Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500010154</Building>
+      <Tier2>
+        <Item>
+          <Building>1010266</Building>
+        </Item>
+        <Item>
+          <Building>1010297</Building>
+          <Tier3>
+            <Item>
+              <Building>1010305</Building>
+            </Item>
+            <Item>
+              <Building>1010304</Building>
+            </Item>
+          </Tier3>
+        </Item>
+      </Tier2>
     </Item>
   </ModOp>
 

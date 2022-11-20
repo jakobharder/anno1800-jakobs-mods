@@ -113,7 +113,7 @@
         <Standard>
           <GUID>1500010103</GUID>
           <Name>cheese_dairy</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_cheese.png</IconFilename>
+          <IconFilename>data\jakob\cheese\dairy\icon_cheese_alt.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -419,12 +419,12 @@
   </ModOp>
 
   <!-- OW consumables, workers menu: insert after beer -->
-  <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>
       <Building>1500010111</Building>
     </Item>
-  </ModOp>
-  <!-- <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
+  </ModOp> -->
+  <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
     <IconFilename>data\jakob\cheese\dairy\icon_cheese_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
@@ -436,7 +436,7 @@
         </Item>
       </Tier2>
     </Item>
-  </ModOp> -->
+  </ModOp>
 
   <!-- # Restaurant recipes: hot chocolate -->
   <ModOp Type="addNextSibling" GUID="132753">
