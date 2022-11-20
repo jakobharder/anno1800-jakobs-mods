@@ -8,7 +8,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md,**/effects/*.png}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/effects/*.png,**/icon_*.png}"
     },
     {
       "action": "cf7",
@@ -17,11 +17,6 @@
     {
       "action": "rdpxml",
       "pattern": "**/*.rdp.xml"
-    },
-    {
-      "action": "texture",
-      "pattern": "{**/icons/*.png,**/icon_*.png}",
-      "lods": 0
     },
     {
       "action": "texture",

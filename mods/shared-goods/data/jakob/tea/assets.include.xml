@@ -1,5 +1,5 @@
 <ModOps>
-  <Include File="../../../products/vegetables/assets.include.xml" />
+  <Include File="../../../products/tea/assets.include.xml" />
 
   <!-- # Vegetables -->
   <ModOp GUID="1010265" Type="addNextSibling">
@@ -7,9 +7,9 @@
       <BaseAssetGUID>1010265</BaseAssetGUID>
       <Values>
         <Standard>
-          <GUID>1500010830</GUID>
-          <Name>Cabbage Farm</Name>
-          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables2_alt.png</IconFilename>
+          <GUID>1500010848</GUID>
+          <Name>Herb Farm</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\goods_africa\icon_hibiscus_farm.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
@@ -19,7 +19,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\pickled-vegetables\vegetable_farm\cabbage.cfg</Filename>
+              <Filename>data\jakob\tea\herb_farm\herb_farm.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -30,7 +30,7 @@
         <FactoryBase>
           <FactoryOutputs>
             <Item>
-              <Product>1500010836</Product>
+              <Product>1500010849</Product>
               <Amount>1</Amount>
               <StorageAmount>4</StorageAmount>
             </Item>
@@ -58,9 +58,9 @@
       <Template>FactoryBuilding7</Template>
       <Values>
         <Standard>
-          <GUID>1500010835</GUID>
-          <Name>Sauerkraut Kitchen</Name>
-          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables_alt.png</IconFilename>
+          <GUID>1500010940</GUID>
+          <Name>Tea Maker</Name>
+          <IconFilename>data\jakob\tea\tea_maker\icon_tea_alt.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
@@ -94,7 +94,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\pickled-vegetables\vegetable_farm\kitchen.cfg</Filename>
+              <Filename>data\jakob\tea\tea_maker\tea_maker.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -111,15 +111,6 @@
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
         </Selection>
-        <Text>
-          <LocaText>
-            <English>
-              <Text>Brick Factory</Text>
-              <Status>Exported</Status>
-            </English>
-          </LocaText>
-          <LineID>5253</LineID>
-        </Text>
         <Constructable />
         <Locked />
         <SoundEmitter>
@@ -147,20 +138,20 @@
         <FactoryBase>
           <FactoryInputs>
             <Item>
-              <Product>1500010836</Product>
+              <Product>1500010849</Product>
               <Amount>1</Amount>
               <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
-              <Product>1500010831</Product>
+              <Product>1500010847</Product>
               <Amount>1</Amount>
               <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>60</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <!-- <CycleTime>60</CycleTime> -->
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
         <AmbientMoodProvider>
@@ -171,12 +162,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>60</Amount>
-              <InactiveAmount>30</InactiveAmount>
+              <Amount>2000</Amount>
+              <InactiveAmount>1000</InactiveAmount>
             </Item>
             <Item>
-              <Product>1010115</Product>
-              <Amount>30</Amount>
+              <Product>1010117</Product>
+              <Amount>150</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -220,12 +211,65 @@
       </Values>
     </Asset>
     <Asset>
+      <Template>FactoryBuilding7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010942</GUID>
+          <Name>Fake Tea Maker for Docklands</Name>
+          <IconFilename>data\jakob\tea\tea_maker\icon_tea_alt.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>15000</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\tea\tea_maker\tea_maker.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>1500010847</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>90</CycleTime>
+          <IsMainFactory>1</IsMainFactory>
+        </FactoryBase>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>14000</Amount>
+              <InactiveAmount>7000</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010117</Product>
+              <Amount>300</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
       <Template>Product</Template>
       <Values>
         <Standard>
-          <GUID>1500010836</GUID>
-          <Name>Cabbage</Name>
-          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_cabbage.png</IconFilename>
+          <GUID>1500010849</GUID>
+          <Name>Herbs</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\goods_africa\icon_linen_farm.png</IconFilename>
         </Standard>
         <Locked />
         <Product>
@@ -249,8 +293,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010844</GUID>
-          <Name>Unlock @ 400 Workers</Name>
+          <GUID>1500010941</GUID>
+          <Name>Unlock @ 400 Engineers</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -260,7 +304,7 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context>
+                <Context>15000003</Context>
                 <CounterAmount>400</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
@@ -274,10 +318,10 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010830</Asset>
+                        <Asset>1500010848</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010835</Asset>
+                        <Asset>1500010940</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -291,47 +335,6 @@
         </TriggerSetup>
       </Values>
     </Asset>
-    <Asset>
-      <Template>ProductionChain</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010846</GUID>
-          <Name>Fishery Menu</Name>
-          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
-        </Standard>
-        <ProductionChain>
-          <Building>1010278</Building>
-          <Tier1>
-            <Item>
-              <Building>1500010830</Building>
-            </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked />
-      </Values>
-    </Asset>
-    <!-- <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010846</GUID>
-          <Name>Fishery Menu</Name>
-          <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1500010830</Building>
-            </Item>
-            <Item>
-              <Building>1010278</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>100000</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
-      </Values>
-    </Asset> -->
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
   <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
@@ -346,55 +349,50 @@
     </Item>
   </ModOp>
   <!-- product lists: after furs -->
-  <ModOp Type="addNextSibling" GUID="502031" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <ModOp Type="addNextSibling" GUID="502031,502037" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010836</Product>
     </Item>
   </ModOp>
   <!-- build menu -->
-  <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\pickled-vegetables\vegetable_farm\icon_vegetables_menu.png</IconFilename>
+  <ModOp Type="replace" GUID="500902" Path="/Values/Standard/IconFilename">
+    <IconFilename>data\jakob\tea\tea_maker\icon_tea_menu.png</IconFilename>
   </ModOp>
-  <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
+  <ModOp Type="add" GUID="500902" Path="/Values/ProductionChain/Tier1">
     <Item>
-      <Building>1500010835</Building>
+      <Building>1500010940</Building>
       <Tier2>
         <Item>
-          <Building>1500010830</Building>
+          <Building>1500010848</Building>
         </Item>
       </Tier2>
-    </Item>
-  </ModOp>
-  <ModOp Type="replace" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010278']">
-    <Item>
-      <Building>1500010846</Building>
     </Item>
   </ModOp>
 
   <!-- # General -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
     <Item>
-      <Factory>1500010830</Factory>
+      <Factory>1500010848</Factory>
     </Item>
     <Item>
-      <Factory>1500010835</Factory>
+      <Factory>1500010940</Factory>
     </Item>
   </ModOp>
   <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
-      <Building>1500010830</Building>
+      <Building>1500010848</Building>
     </Item>
     <Item>
-      <Building>1500010835</Building>
+      <Building>1500010940</Building>
     </Item>
   </ModOp>
   <!-- general production targets -->
   <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
-      <GUID>1500010830</GUID>
+      <GUID>1500010848</GUID>
     </Item>
     <Item>
-      <GUID>1500010835</GUID>
+      <GUID>1500010940</GUID>
     </Item>
   </ModOp>
 </ModOps>
