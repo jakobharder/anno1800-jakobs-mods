@@ -840,7 +840,7 @@
         </AssetPool>
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>TownhallBuff</Template>
       <Values>
         <Standard>
@@ -852,13 +852,13 @@
         <ItemEffect>
           <EffectTargets>
             <Item>
-              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
+              <GUID>1500010144</GUID> <!- - Pescatarian workers - ->
             </Item>
             <Item>
-              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
+              <GUID>1500010145</GUID> <!- - Pescatarian artisans - ->
             </Item>
             <Item>
-              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
+              <GUID>1500010201</GUID> <!- - upgraded worker level 2 - ->
             </Item>
           </EffectTargets>
           <AllowStacking>0</AllowStacking>
@@ -880,6 +880,45 @@
         <WarehouseUpgrade />
         <DistributionUpgrade />
         <ItemContainerUpgrade />
+      </Values>
+    </Asset> -->
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010184</GUID>
+          <Name>Productivity - Decree 1 Buff_01</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
+          <InfoDescription>269415</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010124</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1440224</Product>
+              <AdditionalOutputCycle>2</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+        <EcoSystemProviderUpgrade />
+        <ResourceUpgrade />
       </Values>
     </Asset>
   </ModOp>
@@ -955,6 +994,27 @@
       <Building>1500010151</Building>
     </Item>
   </ModOp>
+  <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
+    <Item>
+      <Building>1500010124</Building>
+      <PersonSpawners>
+        <Item>
+          <UnitClass>141674</UnitClass>
+        </Item>
+      </PersonSpawners>
+      <VehicleSpawners>
+        <Item>
+          <UnitClass>269771</UnitClass>
+          <ShrinksFieldsOnTouch>1</ShrinksFieldsOnTouch>
+          <VehicleType>Harvester</VehicleType>
+        </Item>
+        <Item>
+          <UnitClass>25272</UnitClass>
+          <VehicleType>Fertilizer</VehicleType>
+        </Item>
+      </VehicleSpawners>
+    </Item>
+  </ModOp>
 
   <!-- # buff targets -->
   <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
@@ -979,6 +1039,12 @@
     </Item>
     <Item>
       <GUID>1500010126</GUID>
+    </Item>
+  </ModOp>
+  <!-- land reform act -->
+  <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
+    <Item>
+      <Effect>1500010184</Effect>
     </Item>
   </ModOp>
   

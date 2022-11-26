@@ -38,6 +38,28 @@
           <CycleTime>30</CycleTime>
           <IsMainFactory>1</IsMainFactory>
         </FactoryBase>
+        <ModuleOwner>
+          <ModuleLimits>
+            <Main>
+              <Limit>72</Limit>
+            </Main>
+          </ModuleLimits>
+          <ConstructionOptions>
+            <Item>
+              <ModuleGUID>1500010943</ModuleGUID>
+            </Item>
+            <Item>
+              <ModuleGUID>1010273</ModuleGUID>
+            </Item>
+          </ConstructionOptions>
+          <AdditionalModule>269837</AdditionalModule>
+          <AdjustModuleOrientationOnceSpecialModuleWasPlaced>1</AdjustModuleOrientationOnceSpecialModuleWasPlaced>
+          <FertilizerModuleData>
+            <Module>25240</Module>
+          </FertilizerModuleData>
+          <ModuleBuildRadius>0</ModuleBuildRadius>
+          <FarmType>PlantFarm</FarmType>
+        </ModuleOwner>
         <Maintenance>
           <Maintenances>
             <Item>
@@ -335,6 +357,105 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Farmfield</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010943</GUID>
+          <Name>Herb Field</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_farmfield_module.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <GroundDecalAsset>102507</GroundDecalAsset>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\tea\herb_farm\herb_field_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\tea\herb_farm\herb_field_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\tea\herb_farm\herb_field_3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\tea\herb_farm\herb_field_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\tea\herb_farm\herb_field_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\tea\herb_farm\herb_field_3.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection />
+        <Constructable />
+        <Locked />
+        <SoundEmitter />
+        <FeedbackController />
+        <Infolayer />
+        <BuildingModule />
+        <AmbientMoodProvider>
+          <AmbientMood>PotatoField</AmbientMood>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <ModuleIrrigation />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010945</GUID>
+          <Name>Productivity - Decree 1 Buff_01</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
+          <InfoDescription>269415</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010848</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1500010849</Product>
+              <AdditionalOutputCycle>2</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+        <BuildingUpgrade />
+        <Buff />
+        <CultureUpgrade />
+        <ModuleOwnerUpgrade />
+        <IncidentInfectableUpgrade />
+        <PowerplantUpgrade />
+        <IndustrializableUpgrade />
+        <ItemContainerUpgrade />
+        <IncidentInfluencerUpgrade />
+        <IrrigationUpgrade />
+        <EcoSystemProviderUpgrade />
+        <ResourceUpgrade />
+      </Values>
+    </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
   <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
@@ -393,6 +514,12 @@
     </Item>
     <Item>
       <GUID>1500010940</GUID>
+    </Item>
+  </ModOp>
+  <!-- land reform act -->
+  <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
+    <Item>
+      <Effect>1500010945</Effect>
     </Item>
   </ModOp>
 </ModOps>
