@@ -7,6 +7,7 @@
           <GUID>1500010079</GUID>
           <Name>dockland_arch</Name>
           <IconFilename>data\jakob\buildings\docklands\icon_gate.png</IconFilename>
+          <InfoDescription>1500010081</InfoDescription>
         </Standard>
         <Building>
           <BuildingBlockPool>
@@ -66,6 +67,7 @@
           <GUID>1500010080</GUID>
           <Name>dockland_arch</Name>
           <IconFilename>data\jakob\buildings\docklands\icon_gate.png</IconFilename>
+          <InfoDescription>1500010081</InfoDescription>
         </Standard>
         <Building>
           <AssociatedRegions>Colony01</AssociatedRegions>
@@ -117,6 +119,16 @@
             <StorageMax>75</StorageMax>
           </WarehouseStorage>
         </Warehouse>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010081</GUID>
+          <Name>Gate Description</Name>
+        </Standard>
+        <Text />
       </Values>
     </Asset>
   </ModOp>
