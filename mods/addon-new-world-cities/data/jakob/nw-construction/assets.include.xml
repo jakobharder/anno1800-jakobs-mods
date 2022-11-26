@@ -1211,7 +1211,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010713</GUID>
+          <!-- <GUID>1500010713</GUID> old -->
+          <GUID>1500010717</GUID>
           <Name>Unlock All</Name>
         </Standard>
         <Locked />
@@ -1223,7 +1224,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000006</Context>
-                <CounterAmount>4000</CounterAmount>
+                <CounterAmount>2000</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
