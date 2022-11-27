@@ -675,6 +675,26 @@
       <Building>1500010107</Building>
     </Item>
   </ModOp>
+  <!-- tractor feedback -->
+  <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
+    <Item>
+      <Building>1500010107</Building>
+      <PersonSpawners>
+        <Item>
+          <UnitClass>141674</UnitClass>
+        </Item>
+      </PersonSpawners>
+      <VehicleSpawners>
+        <Item>
+          <UnitClass>269770</UnitClass>
+        </Item>
+        <Item>
+          <UnitClass>25272</UnitClass>
+          <VehicleType>Fertilizer</VehicleType>
+        </Item>
+      </VehicleSpawners>
+    </Item>
+  </ModOp>
 
   <!-- # buff targets -->
   <!-- all kinds of crop stuff (I'll include the orchard even though that's not commonplace) -->
