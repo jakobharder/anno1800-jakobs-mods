@@ -61,19 +61,13 @@
     </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: add -->
-  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
+  <ModOp Type="addNextSibling" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList/Item[Product='1010200' and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010836</Product>
     </Item>
   </ModOp>
-  <!-- product lists: after fur coats / artisan -->
+  <!-- consumer: after fish -->
   <ModOp Type="addNextSibling" GUID="502017,502004,501995" Path="/Values/ProductList/List/Item[Product='1010200' and not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
-    <Item>
-      <Product>1500010836</Product>
-    </Item>
-  </ModOp>
-  <!-- product lists: prepend -->
-  <ModOp Type="addPrevSibling" GUID="502037" Path="/Values/ProductList/List/Item[not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010836</Product>
     </Item>
