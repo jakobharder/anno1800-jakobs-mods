@@ -6,20 +6,20 @@
 
 <ModOps>
   <!-- # Shared Needs -->
-  <!-- luxury goods are not needed, so let's not copy them unnecessarily -->
-  <Include File="../../../../../products/canned-fish/assets.include.xml" />
-  <Include File="../../../../../products/cheese/assets.include.xml" />
   <Include File="../../../../../products/suits/assets.include.xml" />
+  <Include File="../../../../../products/canned-fish/assets.include.xml" />
   <Include File="../../../../../products/olive-soap/assets.include.xml" />
-
-  <Include File="../../../../jakob/pickled-vegetables/assets.include.xml" />
+  <Include File="../../../../../products/cheese/assets.include.xml" />
+  <Include File="../../../../../products/pickled-vegetables/assets.include.xml" />
+  <Include File="../../../../../products/vegetables/assets.include.xml" />
+  
   <Include File="../../../../jakob/ropes/assets.include.xml" />
   <Include File="../../../../jakob/music-school/assets.include.xml" />
   <Include File="../../../../jakob/small-library/assets.include.xml" />
-
   <Include File="../../../../jakob/seafood-restaurant/assets.include.xml" />
   <Include File="../../../../jakob/small-post/assets.include.xml" />
-  <!-- <Include File="../../../../jakob/3mast-schooner/assets.include.xml" /> -->
+
+  <Include File="../../../../jakob/3mast-schooner/assets.include.xml" />
 
   <!-- add to StandartProductStorageList -->
   <ModOp Type="addNextSibling" GUID='120055'>
@@ -116,7 +116,7 @@
               </RequiredBuildings>
             </Item> -->
             <Item>
-              <Product>1500010831</Product>
+              <Product>1500010836</Product>
               <Amount>0.0004166</Amount>
               <SupplyWeight>3</SupplyWeight>
               <MoneyValue>10</MoneyValue>

@@ -6,12 +6,14 @@
 -->
 <ModOps>
   
+  <!-- Vegetables Production: Vegetable Farm -->
+  <Include File="./data/jakob/vegetables/assets.include.xml" />
   <!-- Cheese Production: Diary Farm, Cheese Dairy -->
   <Include Skip="0" File="./data/jakob/cheese/assets.include.xml" />
-  <!-- Tools Production: Tools Workshop -->
-  <Include Skip="0" File="./data/jakob/tools/assets.include.xml" />
   <!-- Canned Fish Production: Olive Farm, Fish Cannery -->
   <Include Skip="0" File="./data/jakob/canned-fish/assets.include.xml" />
+  <!-- Tools Production: Tools Workshop -->
+  <Include Skip="0" File="./data/jakob/tools/assets.include.xml" />
   <!-- Suits Production: Hemp Farm, Cloth Maker, Suits Factory -->
   <Include Skip="0" File="./data/jakob/suits/assets.include.xml" />
   <!-- Tea Production: Herb Farm, Tea Maker -->
@@ -19,6 +21,8 @@
 
   <!-- Olive Soap Production: Soap Factory (needs Canned Fish Production) -->
   <Include Skip="0" File="./data/jakob/soap/assets.include.xml" ModOpID="Soap" />
+  <!-- Pickled Vegetables Production: Kitchen (needs Vegetable Production) -->
+  <Include Skip="0" File="./data/jakob/pickled-vegetables/assets.include.xml" />
 
   <!-- Alternative Needs: all applicable productions -->
   <Include Skip="0" File="./data/jakob/alternative-needs/assets.include.xml" ModOpID="AlternativeNeeds" />

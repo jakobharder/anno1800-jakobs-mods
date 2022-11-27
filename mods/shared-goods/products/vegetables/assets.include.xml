@@ -72,12 +72,6 @@
       <Product>1500010836</Product>
     </Item>
   </ModOp>
-  <!-- product lists: prepend -->
-  <ModOp Type="addPrevSibling" GUID="502037" Path="/Values/ProductList/List/Item[not(../Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
-    <Item>
-      <Product>1500010836</Product>
-    </Item>
-  </ModOp>
 
   <!-- Expedition -->
   <ModOp Type="add" GUID="800111" Path="/Values/ExpeditionFeature/FeedOption/FeedOptions[not(Item/Product='1500010836')] | //Values[Standard/GUID='1500010221']/ExpeditionFeature/FeedOption/FeedOptions">
