@@ -40,26 +40,18 @@ The tower has 3 item slots, but if you like to use 4 instead you can change the 
 
 ## Changes
 
-### 1.6
+### 1.7
 
-- Fixed GU14 maintenance buff
+- Added skin icon / name for GU16
 
-### 1.5
+### Older
 
-- GU14 support
-
-### 1.4
-
-- Fixed some visual issues
-
-### 1.3
-
-- Added Red Town Hall
-- Changed New Town Hall variations into paintbrush skins
-
-### 1.2
-
-- new ground texture fitting better to both plaza and roads
+- 1.6: Fixed GU14 maintenance buff
+- 1.5: GU14 support
+- 1.4: Fixed some visual issues
+- 1.3: Added Red Town Hall
+- 1.3: Changed New Town Hall variations into paintbrush skins
+- 1.2: new ground texture fitting better to both plaza and roads
 
 ## Translations
 
