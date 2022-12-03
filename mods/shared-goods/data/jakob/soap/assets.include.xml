@@ -187,24 +187,6 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- StandardProductList,StandardMarketplaceModerateStorageList: end -->
-  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010105')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
-    <Item>
-      <Product>1500010105</Product>
-    </Item>
-  </ModOp>
-  <!-- product lists: after fur coats / artisan -->
-  <ModOp Type="addNextSibling" GUID="502019,502006,502016,502220,502065" Path="/Values/ProductList/List/Item[(Product='1010247' or Product='501997' or Product='502019') and not(../Item/Product='1500010105')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
-    <Item>
-      <Product>1500010105</Product>
-    </Item>
-  </ModOp>
-    <!-- product lists: after furs -->
-    <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010105')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
-      <Item>
-        <Product>1500010105</Product>
-      </Item>
-    </ModOp>
   <!-- OW consumables, workers menu: insert after beer -->
   <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
     <Item>

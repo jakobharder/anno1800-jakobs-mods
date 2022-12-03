@@ -482,14 +482,14 @@
       <Product>1500010849</Product>
     </Item>
   </ModOp>
-  <!-- product lists: after fur coats / artisan -->
-  <ModOp Type="addNextSibling" GUID="502019,502006,502016,502220,502065" Path="/Values/ProductList/List/Item[(Product='1010247' or Product='501997' or Product='502019') and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- product lists: after coffee -->
+  <ModOp Type="addNextSibling" GUID="502020,502066,502007" Path="/Values/ProductList/List/Item[Product='120032' and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010849</Product>
     </Item>
   </ModOp>
   <!-- product lists: after furs -->
-  <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[(Product='1010209' or Product='501997' or Product='502019') and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[Product='120031' and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010849</Product>
     </Item>
@@ -561,4 +561,7 @@
       </VehicleSpawners>
     </Item>
   </ModOp>
+  
+  <!-- # Remove fallbacks -->
+  <ModOp Type="remove" GUID="1500010221" />
 </ModOps>

@@ -124,14 +124,6 @@
       <Text>[AssetData(1500010106) Text]</Text> <!-- production chain -->
     </Text>
     <Text>
-      <GUID>1500010192</GUID>
-      <Text>[AssetData(1500010156) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
-      <GUID>1500010193</GUID>
-      <Text>[AssetData(1500010150) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
       <GUID>1500010250</GUID>
       <Text>Hot Chocolate</Text>
     </Text>
@@ -204,11 +196,18 @@
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
     <Text>Food</Text>
   </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+    <Text>Food</Text>
+  </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
     <Text>Canned Food</Text>
   </ModOp>
 
   <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010848</GUID>
+      <Text>Basic Food</Text>
+    </Text>
     <Text>
       <GUID>1500010808</GUID>
       <Text>Alternative Needs</Text>

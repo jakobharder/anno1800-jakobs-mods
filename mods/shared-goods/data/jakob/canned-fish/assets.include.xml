@@ -17,11 +17,6 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010106')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <Item>
-      <Product>1500010106</Product>
-    </Item>
-  </ModOp>
 
   <!-- # Intermediate Production: Olives -->
   <ModOp GUID='1010281' Type="addNextSibling">
