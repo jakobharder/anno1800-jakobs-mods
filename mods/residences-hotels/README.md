@@ -22,6 +22,10 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Changes
 
+### 1.4.1
+
+- Fixed compatibility issues with `Train-Stations and Hotels`.
+
 ### 1.4
 
 - Fixed missing skin

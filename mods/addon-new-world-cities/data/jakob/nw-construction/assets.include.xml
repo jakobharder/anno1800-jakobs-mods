@@ -442,7 +442,7 @@
     </Item>
   </ModOp>
   <!-- after botanical garden -->
-  <ModOp Type="addNextSibling" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='114141' or (not(../Item/Building='114141'))][last()]">
+  <ModOp Type="addNextSibling" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='114141'][last()]">
     <Item>
       <Building>1500010703</Building>
     </Item>
@@ -763,7 +763,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500949,25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010703' or (not(../Item/Building='114141'))][last()]">
+  <ModOp Type="addNextSibling" GUID="500949" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500145']">
+    <Item>
+      <Building>1500010704</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010703']">
     <Item>
       <Building>1500010704</Building>
     </Item>
@@ -1031,7 +1036,7 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500949,25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010704' or (not(../Item/Building='1500010704'))][last()]">
+  <ModOp Type="addNextSibling" GUID="500949,25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010704']">
     <Item>
       <Building>1500010705</Building>
     </Item>
