@@ -27,6 +27,12 @@
       <IsBonusNeed>1</IsBonusNeed>
     </Item>
     <Item>
+      <Product>1500010831</Product>
+      <Amount>0.00030303</Amount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+      <IsBonusNeed>1</IsBonusNeed>
+    </Item>
+    <Item>
       <Product>1500010106</Product>
       <Amount>0.000138889</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
@@ -38,6 +44,12 @@
     <Item>
       <Product>1500010102</Product>
       <Amount>0.000666667</Amount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+      <IsBonusNeed>1</IsBonusNeed>
+    </Item>
+    <Item>
+      <Product>1500010831</Product>
+      <Amount>0.000606061</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
     </Item>
@@ -92,6 +104,12 @@
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
     </Item>
+    <Item>
+      <Product>1010213</Product>
+      <Amount>0.000784314</Amount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+      <IsBonusNeed>1</IsBonusNeed>
+    </Item>
   </ModOp>
   <!-- investors -->
   <ModOp Type="add" GUID="15000004" Path="/Values/PopulationLevel7/PopulationInputs">
@@ -112,6 +130,9 @@
         </Item>
         <Item>
           <BonusNeed>1500010102</BonusNeed>
+        </Item>
+        <Item>
+          <BonusNeed>1500010831</BonusNeed>
         </Item>
         <Item>
           <BonusNeed>1500010106</BonusNeed>
@@ -169,6 +190,9 @@
         <ItemEffect>
           <EffectTargets>
             <Item>
+              <GUID>1010343</GUID>
+            </Item>
+            <Item>
               <GUID>1010344</GUID>
             </Item>
             <Item>
@@ -204,8 +228,16 @@
         <ResidenceUpgrade>
           <NeedProvideNeedUpgrade>
             <Item>
+              <ProvidedNeed>1010200</ProvidedNeed>
+              <SubstituteNeed>1500010836</SubstituteNeed>
+            </Item>
+            <Item>
               <ProvidedNeed>1010238</ProvidedNeed>
               <SubstituteNeed>1500010102</SubstituteNeed>
+            </Item>
+            <Item>
+              <ProvidedNeed>1010213</ProvidedNeed>
+              <SubstituteNeed>1500010831</SubstituteNeed>
             </Item>
             <Item>
               <ProvidedNeed>1010203</ProvidedNeed>
@@ -216,16 +248,12 @@
               <SubstituteNeed>1500010120</SubstituteNeed>
             </Item>
             <Item>
-              <ProvidedNeed>1010247</ProvidedNeed>
-              <SubstituteNeed>1500010127</SubstituteNeed>
-            </Item>
-            <Item>
               <ProvidedNeed>1010206</ProvidedNeed>
               <SubstituteNeed>1500010153</SubstituteNeed>
             </Item>
             <Item>
-              <ProvidedNeed>1010200</ProvidedNeed>
-              <SubstituteNeed>1500010836</SubstituteNeed>
+              <ProvidedNeed>1010247</ProvidedNeed>
+              <SubstituteNeed>1500010127</SubstituteNeed>
             </Item>
             <Item>
               <ProvidedNeed>120032</ProvidedNeed>

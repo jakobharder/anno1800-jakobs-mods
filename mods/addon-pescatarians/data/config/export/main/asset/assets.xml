@@ -13,13 +13,13 @@
   <Include File="../../../../../products/pickled-vegetables/assets.include.xml" />
   <Include File="../../../../../products/vegetables/assets.include.xml" />
   
-  <Include File="../../../../jakob/ropes/assets.include.xml" />
+  <!-- <Include File="../../../../jakob/ropes/assets.include.xml" /> -->
   <Include File="../../../../jakob/music-school/assets.include.xml" />
   <Include File="../../../../jakob/small-library/assets.include.xml" />
-  <Include File="../../../../jakob/seafood-restaurant/assets.include.xml" />
+  <!-- <Include File="../../../../jakob/seafood-restaurant/assets.include.xml" /> -->
   <Include File="../../../../jakob/small-post/assets.include.xml" />
 
-  <Include File="../../../../jakob/3mast-schooner/assets.include.xml" />
+  <!-- <Include File="../../../../jakob/3mast-schooner/assets.include.xml" /> -->
 
   <!-- add to StandartProductStorageList -->
   <ModOp Type="addNextSibling" GUID='120055'>
@@ -93,7 +93,7 @@
             <Item>
               <Product>1010200</Product>
               <Amount>0.0006</Amount>
-              <SupplyWeight>3</SupplyWeight>
+              <SupplyWeight>4</SupplyWeight>
               <MoneyValue>10</MoneyValue>
               <RequiredBuildings>
                 <Item>
@@ -117,8 +117,8 @@
             </Item> -->
             <Item>
               <Product>1500010836</Product>
-              <Amount>0.0004166</Amount>
-              <SupplyWeight>3</SupplyWeight>
+              <Amount>0.0006</Amount>
+              <SupplyWeight>6</SupplyWeight>
               <MoneyValue>10</MoneyValue>
               <FullWeightPopulationCount>150</FullWeightPopulationCount>
               <RequiredBuildings>
@@ -129,39 +129,37 @@
             </Item>
             <Item>
               <Product>1500010818</Product>
-              <SupplyWeight>3</SupplyWeight>
+              <SupplyWeight>4</SupplyWeight>
             </Item>
             <Item>
               <Product>1500010102</Product>
               <Amount>0.00044</Amount>
-              <SupplyWeight>4</SupplyWeight>
+              <SupplyWeight>7</SupplyWeight>
               <MoneyValue>40</MoneyValue>
             </Item>
             <Item>
               <Product>1010213</Product>
-              <Amount>0.00044</Amount>
-              <SupplyWeight>4</SupplyWeight>
+              <Amount>0.0003</Amount>
+              <SupplyWeight>6</SupplyWeight>
               <MoneyValue>40</MoneyValue>
             </Item>
             <Item>
-              <Product>1500010106</Product>
-              <Amount>0.0003</Amount>
-              <SupplyWeight>4</SupplyWeight>
-              <MoneyValue>20</MoneyValue>
+              <Product>1500010127</Product>
+              <Amount>0.0008</Amount>
+              <SupplyWeight>7</SupplyWeight>
+              <MoneyValue>60</MoneyValue>
               <RequiredBuildings>
-                <Item>
-                  <RequiredBuilding>1500010143</RequiredBuilding>
-                </Item>
                 <Item>
                   <RequiredBuilding>1500010144</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
             </Item>
             <Item>
-              <Product>1500010127</Product>
-              <Amount>0.0008</Amount>
+              <Product>1500010831</Product>
+              <Amount>0.0004</Amount>
               <SupplyWeight>6</SupplyWeight>
-              <MoneyValue>60</MoneyValue>
+              <MoneyValue>20</MoneyValue>
+              <FullWeightPopulationCount>1000</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010144</RequiredBuilding>
@@ -171,9 +169,9 @@
             <Item>
               <Product>1500010120</Product>
               <Amount>0.0004</Amount>
-              <SupplyWeight>6</SupplyWeight>
+              <SupplyWeight>7</SupplyWeight>
               <MoneyValue>20</MoneyValue>
-              <FullWeightPopulationCount>250</FullWeightPopulationCount>
+              <FullWeightPopulationCount>1000</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010144</RequiredBuilding>
@@ -182,7 +180,7 @@
             </Item>
             <Item>
               <Product>1500010801</Product>
-              <SupplyWeight>6</SupplyWeight>
+              <SupplyWeight>5</SupplyWeight>
               <FullWeightPopulationCount>1500</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
@@ -193,12 +191,27 @@
             <!-- Luxury Needs -->
             <Item>
               <Product>1500010118</Product>
-              <HappinessValue>2</HappinessValue>
+              <HappinessValue>5</HappinessValue>
+            </Item>
+            <Item>
+              <Product>1500010106</Product>
+              <Amount>0.0003</Amount>
+              <HappinessValue>5</HappinessValue>
+              <!-- <SupplyWeight>7</SupplyWeight> -->
+              <MoneyValue>20</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
             </Item>
             <Item>
               <Product>1500010825</Product>
               <Amount>0.0002083</Amount>
-              <HappinessValue>3</HappinessValue>
+              <HappinessValue>5</HappinessValue>
               <MoneyValue>20</MoneyValue>
               <RequiredBuildings>
                 <Item>
@@ -206,7 +219,7 @@
                 </Item>
               </RequiredBuildings>
             </Item>
-            <Item>
+            <!-- <Item>
               <Product>114410</Product>
               <Amount>0.0004</Amount>
               <HappinessValue>3</HappinessValue>
@@ -216,7 +229,7 @@
                   <RequiredBuilding>1500010144</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
-            </Item>
+            </Item> -->
             <Item>
               <Product>1500010820</Product>
               <HappinessValue>2</HappinessValue>
@@ -225,7 +238,7 @@
             <Item>
               <Product>1500010153</Product>
               <Amount>0.0002</Amount>
-              <HappinessValue>3</HappinessValue>
+              <HappinessValue>5</HappinessValue>
               <MoneyValue>80</MoneyValue>
               <RequiredBuildings>
                 <Item>
@@ -272,7 +285,7 @@
             <Item>
               <Product>1010197</Product>
               <Amount>0.001</Amount>
-              <SupplyWeight>3</SupplyWeight>
+              <SupplyWeight>4</SupplyWeight>
               <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
               <IsBonusNeed>1</IsBonusNeed>
               <RequiredBuildings>
@@ -284,7 +297,7 @@
             <Item>
               <Product>1010201</Product>
               <Amount>0.0005</Amount>
-              <SupplyWeight>4</SupplyWeight>
+              <SupplyWeight>3</SupplyWeight>
               <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
               <IsBonusNeed>1</IsBonusNeed>
               <RequiredBuildings>
@@ -296,7 +309,7 @@
             <Item>
               <Product>133183</Product>
               <Amount>0.0004</Amount>
-              <SupplyWeight>6</SupplyWeight>
+              <SupplyWeight>5</SupplyWeight>
               <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
               <IsBonusNeed>1</IsBonusNeed>
               <RequiredBuildings>
@@ -337,7 +350,7 @@
             <Item>
               <Product>135233</Product>
               <Amount>0.00003</Amount>
-              <SupplyWeight>9</SupplyWeight>
+              <SupplyWeight>10</SupplyWeight>
               <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
               <IsBonusNeed>1</IsBonusNeed>
               <RequiredBuildings>
@@ -928,13 +941,13 @@
               <Ingredient>1010196</Ingredient>
             </Item>
             <Item>
-              <Amount>2</Amount>
+              <Amount>4</Amount>
               <Ingredient>1010205</Ingredient>
             </Item>
-            <Item>
+            <!-- <Item>
               <Amount>3</Amount>
               <Ingredient>1500010825</Ingredient>
-            </Item>
+            </Item> -->
           </UpgradeCost>
         </Upgradable>
         <Object>
@@ -985,15 +998,7 @@
           <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
-        <Selection>
-          <OnSelection>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-            <Values>
-              <ActionList />
-            </Values>
-          </OnSelection>
-          <ParticipantMessageArcheType>GGJ_Yaosca</ParticipantMessageArcheType>
-        </Selection>
+        <Selection />
         <!-- <UpgradeList>
           <DefaultBuff>1500010147</DefaultBuff>
         </UpgradeList> -->

@@ -148,12 +148,58 @@
       <Text>[AssetData(1500010250) Text]</Text>
     </Text>
   </ModOp>
-  
+        
+  <!-- # Kitchen (Pickled Vegetables) -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010830</GUID>
+      <Text>Gemüsehof</Text>
+    </Text>
+    <Text>
+      <GUID>1500010835</GUID>
+      <Text>Küche</Text>
+    </Text>
+    <Text>
+      <GUID>1500010946</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
+    </Text>  
+  </ModOp>
+
+  <!-- # Tea Maker -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010940</GUID>
+      <Text>Teefabrik</Text> <!-- Building: Tea Maker -->
+    </Text>
+    <Text>
+      <GUID>1500010848</GUID>
+      <Text>Kräuterhof</Text> <!-- Building: Herb Farm -->
+    </Text>
+    <Text>
+      <GUID>1500010849</GUID>
+      <Text>Kräuter</Text> <!-- Product: Herbs -->
+    </Text>
+    <Text>
+      <GUID>1500010943</GUID>
+      <Text>Kräuterfeld</Text> <!-- Module: Herbs Field -->
+    </Text>
+    <Text>
+      <GUID>1500010945</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Herbs -->
+    </Text>
+  </ModOp>
+
+  <!-- # Alternative Needs -->
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
     <Text>Kleidung</Text>
   </ModOp>
-    
-  <!-- # Pescatarian Lifestyle Goods -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Nahrung</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Konserven</Text>
+  </ModOp>
+
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010808</GUID>

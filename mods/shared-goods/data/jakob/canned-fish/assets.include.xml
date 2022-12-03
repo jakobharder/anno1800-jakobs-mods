@@ -70,14 +70,15 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>500</Amount>
+              <Amount>4000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>4</Amount>
+              <Amount>6</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
@@ -177,12 +178,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>20</Amount>
-              <InactiveAmount>10</InactiveAmount>
+              <Amount>150</Amount>
+              <InactiveAmount>75</InactiveAmount>
             </Item>
             <Item>
               <Product>1010052</Product>
-              <Amount>20</Amount>
+              <Amount>30</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -354,8 +355,8 @@
       <Product>1500010105</Product>
     </Item>
   </ModOp>
-  <!-- goods: after bread -->
-  <ModOp Type="addNextSibling" GUID="502018,502005" Path="/Values/ProductList/List/Item[Product='1010213' and not(../Item/Product='1500010105')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- goods: after soap -->
+  <ModOp Type="addNextSibling" GUID="502018,502005" Path="/Values/ProductList/List/Item[Product='1010203' and not(../Item/Product='1500010105')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010105</Product>
     </Item>
@@ -387,7 +388,7 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>15000</Amount>
+              <Amount>25000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
@@ -486,12 +487,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>100</Amount>
-              <InactiveAmount>50</InactiveAmount>
+              <Amount>200</Amount>
+              <InactiveAmount>10</InactiveAmount>
             </Item>
             <Item>
               <Product>1010116</Product>
-              <Amount>75</Amount>
+              <Amount>150</Amount>
             </Item>
           </Maintenances>
         </Maintenance>

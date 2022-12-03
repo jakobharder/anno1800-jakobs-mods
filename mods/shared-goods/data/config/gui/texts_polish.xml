@@ -171,11 +171,17 @@
     </Text>
   </ModOp>
   
+  <!-- # Alternative Needs -->
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
     <Text>Fine Clothes</Text>
   </ModOp>
-    
-  <!-- # Pescatarian Lifestyle Goods -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Food</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Canned Food</Text>
+  </ModOp>
+
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010808</GUID>
