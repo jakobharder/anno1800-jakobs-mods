@@ -1,5 +1,29 @@
 # Changelog
 
+## 5 - Pescatarians v2 and Alternative Needs
+
+Please delete all previous mods from this collection, or use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) to install.
+
+This version has some major changes. While they are savegame compatible, you'll need to check your islands because of changed needs.
+
+### Added
+
+- Mod: New World Cities. Merged from NW Construction and Small Power Plants, New World
+- Mod: Compact Build Menus. Combine several buildings in OW city construction menu into sub-menus
+- Extra Goods: Tea, Vegetables, Pickled Vegetables
+- Alternative Needs: all goods are available as Lifestyle alternatives for basic needs
+- Small Power Plants: added a Fuel Pump Station that provides fuel directly from an oil field
+
+### Changed
+
+- Renamed all mod folders to include collection name
+- Pescatarians: completely reworked with new models, needs and public services
+- Extra Goods: renamed to "Alternative Needs"
+- Extra Goods: improved visuals of olive and hemp fields
+- Upgradable Workers: replaced Cheese with Tea. Cheese is now an alternative to Sausages
+- Hotels: fixed compatibility issues with Train-Stations and Hotels
+- Merged Celluloid bugfix into New World Cities and Mill bugfix into Nate's Windmill
+
 ## 4.15.2 - GU15 fixes
 
 ### Changed

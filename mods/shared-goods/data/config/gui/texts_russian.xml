@@ -1,4 +1,7 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_russian.include.xml" />
+  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -7,10 +10,6 @@
     <Text>
       <GUID>1440224</GUID>
       <Text>Конопля</Text>
-    </Text>
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Сыр</Text>
     </Text>
     <Text>
       <GUID>1500010103</GUID>
@@ -23,10 +22,6 @@
     <Text>
       <GUID>1500010105</GUID>
       <Text>Оливки</Text>
-    </Text>
-    <Text>
-      <GUID>1500010106</GUID>
-      <Text>Оливковое мыло</Text>
     </Text>
     <Text>
       <GUID>1500010107</GUID>
@@ -49,14 +44,6 @@
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
-      <GUID>1500010117</GUID>
-      <Text>Сыр</Text>
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Консервированная рыба</Text>
-    </Text>
-    <Text>
       <GUID>1500010121</GUID>
       <Text>Рыбный консервный завод</Text>
     </Text>
@@ -77,10 +64,6 @@
       <Text>Производство льняной ткани</Text>
     </Text>
     <Text>
-      <GUID>1500010127</GUID>
-      <Text>Костюмы</Text>
-    </Text>
-    <Text>
       <GUID>1500010128</GUID>
       <Text>Фабрика костюмов</Text>
     </Text>
@@ -99,10 +82,6 @@
     <Text>
       <GUID>1500010152</GUID>
       <Text>[AssetData(1500010150) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>Инструменты</Text>
     </Text>
     <Text>
       <GUID>1500010154</GUID>
@@ -137,14 +116,6 @@
       <Text>[AssetData(1500010106) Text]</Text> <!-- production chain -->
     </Text>
     <Text>
-      <GUID>1500010192</GUID>
-      <Text>[AssetData(1500010156) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
-      <GUID>1500010193</GUID>
-      <Text>[AssetData(1500010150) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
       <GUID>1500010250</GUID>
       <Text>Hot Chocolate</Text>
     </Text>
@@ -168,9 +139,27 @@
       <GUID>1500010255</GUID>
       <Text>[AssetData(1500010250) Text]</Text>
     </Text>
+  </ModOp>
+  
+  <!-- # Alternative Needs -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+    <Text>Fine Clothes</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Food</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Canned Food</Text>
+  </ModOp>
+
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010400</GUID>
-      <Text>Residents get a discount at nearby productions.</Text>
+      <GUID>1500010808</GUID>
+      <Text>Alternative Needs</Text>
+    </Text>
+    <Text>
+      <GUID>1500010159</GUID>
+      <Text>Alternative Needs</Text>
     </Text>
   </ModOp>
 </ModOps>

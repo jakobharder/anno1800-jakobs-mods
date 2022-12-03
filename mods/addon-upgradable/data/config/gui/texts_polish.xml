@@ -1,28 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_polish.include.xml" />
+  
+  <!-- # Workers -->  
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Ser</Text>
-      <!-- cheese: product -->
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>Garnitury</Text>
-      <!-- suits: product -->
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>[AssetData(984) Text]</Text>
-      <!-- tools: product -->
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Konserwy rybne</Text>
-      <!-- canned fish: product -->
-    </Text>
-    <!-- main text -->
     <Text>
       <GUID>1500010200</GUID>
       <Text>Nowoczesny dom robotniczy: Poziom 1</Text>
@@ -101,22 +82,24 @@
       <Text>Nowoczesne domy robotników</Text>
       <!-- target pool -->
     </Text>
-    <!-- Artisan text -->
+  </ModOp>
+  <!-- # Artisans -->  
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010225</GUID>
-      <Text>Modern dom rzemieślników: Level 1</Text> <!-- residence UI -->
+      <Text>Nowoczesny dom rzemieślników: Poziom 1</Text> <!-- residence UI -->
     </Text>
     <Text>
       <GUID>1500010226</GUID>
-      <Text>Modern dom rzemieślników: Level 2</Text> <!-- residence UI -->
+      <Text>Nowoczesny dom rzemieślników: Poziom 2</Text> <!-- residence UI -->
     </Text>
     <Text>
       <GUID>1500010227</GUID>
-      <Text>Modern Artisan Residences</Text> <!-- target pool -->
+      <Text>Nowoczesne domy rzemieślników</Text> <!-- target pool -->
     </Text>
     <Text>
       <GUID>1500010228</GUID>
-      <Text>Mixed Skin</Text> <!-- mixed skin -->
+      <Text>Mieszana skórka</Text> <!-- mixed skin -->
     </Text>
     <Text>
       <GUID>1500010229</GUID>

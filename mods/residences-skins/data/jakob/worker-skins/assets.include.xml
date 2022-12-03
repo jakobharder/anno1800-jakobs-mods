@@ -1,0 +1,89 @@
+<!-- 
+  Worker Skins
+-->
+<ModOps>
+  <!-- # Pescatarian artisans skins -->
+  <!-- replace default skin, noone should add variations to my buildings so it's safe to 'replace' -->
+  <ModOp GUID='1500010144' Type="replace" Path="/Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</Filename>
+      </Item>
+      <!-- repeat same variations again to double the color variations in non-default skins -->
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <!-- add skins -->
+  <ModOp GUID='1010345' Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010199</GUID>
+          <Name>Yellow Workers</Name>
+          <IconFilename>data\jakob\worker-skins\yellow\icon_yellow_skin.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010199</SkinName>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate04.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\worker-skins\yellow\residence_tier02_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID="1010344,1500010143" Type="add" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500010199</SkinAssetGuid>
+    </Item>
+  </ModOp>
+</ModOps>

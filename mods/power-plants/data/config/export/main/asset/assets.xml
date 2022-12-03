@@ -21,9 +21,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010020</GUID>
           <Name>small_gas_power_plant</Name>
-          <IconFilename>data/jakob/ui/icons/icon_small_gas_power_plant.dds</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_small_gas_power_plant.png</IconFilename>
           <InfoDescription>1500010036</InfoDescription>
-          <Version>dlc03</Version> <!-- arctic -->
         </Standard>
         <Building>
           <BuildingCategoryName>11169</BuildingCategoryName> <!-- power plant -->
@@ -145,7 +144,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </IncidentInfectable>
         <Powerplant> <!-- reduced to 40% coverage -->
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>28</ElectricityDistance>
           <IndustrializationDistance>28</IndustrializationDistance>
         </Powerplant>
         <FactoryBase>
@@ -172,7 +170,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010033</GUID>
           <Name>small_oil_power_plant</Name>
-          <IconFilename>data/jakob/ui/icons/icon_small_oil_power_plant.dds</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_small_oil_power_plant.png</IconFilename>
           <InfoDescription>1500010032</InfoDescription> <!-- from oil power plant -->
         </Standard>
         <Building>
@@ -253,7 +251,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </IncidentInfectable>
         <Powerplant> <!-- reduced to 40% coverage -->
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>28</ElectricityDistance>
           <IndustrializationDistance>28</IndustrializationDistance>
         </Powerplant>
         <FactoryBase>
@@ -282,7 +279,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010035</GUID>
           <Name>small_coal_power_plant</Name>
-          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.png</IconFilename>
           <InfoDescription>1500010040</InfoDescription>
         </Standard>
         <Building>
@@ -402,7 +399,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </IncidentInfectable>
         <Powerplant> <!-- 30% of harbor life coverage -->
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>21</ElectricityDistance>
           <IndustrializationDistance>21</IndustrializationDistance>
         </Powerplant>
         <FactoryBase>
@@ -444,7 +440,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010034</GUID>
           <Name>coal_mine_buff</Name>
-          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.png</IconFilename>
         </Standard>
         <Item>
           <MaxStackSize>1</MaxStackSize>
@@ -478,7 +474,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010043</GUID>
           <Name>coal_mine_buff</Name>
-          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.dds</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_small_coal_power_plant.png</IconFilename>
           <InfoDescription>1500010044</InfoDescription>
         </Standard>
         <Buff />
@@ -499,7 +495,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </AdditionalOutput>
         </FactoryUpgrade>
-        <BuildingUpgrade />
         <CultureUpgrade />
         <PowerplantUpgrade>
           <IndustrializationRangeUpgrade>
@@ -600,7 +595,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Maintenance>
         <Powerplant>
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>32</ElectricityDistance>
           <IndustrializationDistance>32</IndustrializationDistance>
         </Powerplant>
         <PublicService>
@@ -648,7 +642,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Maintenance>
         <Powerplant>
           <!-- industry power supply, visual power lines? -->
-          <ElectricityDistance>28</ElectricityDistance>
           <IndustrializationDistance>28</IndustrializationDistance>
         </Powerplant>
         <PublicService>
@@ -658,6 +651,205 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </PublicService>
       </Values>
     </Asset>
+  </ModOp>
+
+  <!-- # Fuel Pump Station -->
+  <ModOp GUID='118571' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>118571</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010467</GUID>
+          <Name>Fuel Pump Station</Name>
+          <IconFilename>data\jakob\buildings\production\fuel_pump\icon_fuel_pump_station.png</IconFilename>
+          <InfoDescription>269752</InfoDescription>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\production\fuel_pump\fuel_station.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <FactoryBase>
+          <FactoryInputs />
+          <FactoryOutputs>
+            <Item>
+              <Product>270042</Product>
+              <Amount>1</Amount>
+              <StorageAmount>20</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>15</CycleTime>
+          <ProductivityTimeMultiplier>30</ProductivityTimeMultiplier>
+          <ProductivityPoints>1</ProductivityPoints>
+          <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode>
+          <TransporterCountMax>5</TransporterCountMax>
+          <TransporterAsset>120062</TransporterAsset>
+          <PathLayers>Street</PathLayers>
+          <NeedsTransporterQueue>0</NeedsTransporterQueue>
+        </LogisticNode>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>500</Amount>
+              <InactiveAmount>250</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>100</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <ModuleOwner>
+          <ModuleLimits>
+            <Main>
+              <Limit>1</Limit>
+            </Main>
+          </ModuleLimits>
+          <ModulesRequiredForFullProductivity>1</ModulesRequiredForFullProductivity>
+          <ConstructionOptions>
+            <Item>
+              <ModuleGUID>101332</ModuleGUID>
+            </Item>
+          </ConstructionOptions>
+          <ModuleBuildRadius>8</ModuleBuildRadius>
+        </ModuleOwner>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID='269840' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>269840</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010468</GUID>
+          <Name>Fuel Pump Station Colony</Name>
+          <IconFilename>data\jakob\buildings\production\fuel_pump\icon_fuel_pump_station.png</IconFilename>
+          <InfoDescription>269752</InfoDescription>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\production\fuel_pump\fuel_station_colony.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <FactoryBase>
+          <FactoryInputs />
+          <FactoryOutputs>
+            <Item>
+              <Product>270042</Product>
+              <Amount>1</Amount>
+              <StorageAmount>20</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>15</CycleTime>
+          <ProductivityTimeMultiplier>30</ProductivityTimeMultiplier>
+          <ProductivityPoints>1</ProductivityPoints>
+          <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode>
+          <TransporterCountMax>5</TransporterCountMax>
+          <TransporterAsset>120062</TransporterAsset>
+          <PathLayers>Street</PathLayers>
+          <NeedsTransporterQueue>0</NeedsTransporterQueue>
+        </LogisticNode>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>500</Amount>
+              <InactiveAmount>250</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010367</Product>
+              <Amount>100</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <ModuleOwner>
+          <ModuleLimits>
+            <Main>
+              <Limit>1</Limit>
+            </Main>
+          </ModuleLimits>
+          <ModulesRequiredForFullProductivity>1</ModulesRequiredForFullProductivity>
+          <ConstructionOptions>
+            <Item>
+              <ModuleGUID>100524</ModuleGUID>
+            </Item>
+          </ConstructionOptions>
+          <ModuleBuildRadius>8</ModuleBuildRadius>
+        </ModuleOwner>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010469</GUID>
+          <Name>unlock fuel pump station</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>269840</UnlockNeeded>
+              </ConditionUnlocked>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010467</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010468</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="269756" Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500010467</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="269835" Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500010468</Building>
+    </Item>
   </ModOp>
 
   <!-- # Buff Target Pools -->
@@ -708,7 +900,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010030</GUID>
           <Name>small_power_plants_menu</Name>
-          <IconFilename>data\jakob\ui\icons\icon_small_power_plant.dds</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_small_power_plant.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>
@@ -753,7 +945,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010456</GUID>
           <Name>power_plants_menu_nw</Name>
-          <IconFilename>data\jakob\ui\icons\icon_nw_power_plant.dds</IconFilename>
+          <IconFilename>data\jakob\ui\icons\icon_nw_power_plant.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>

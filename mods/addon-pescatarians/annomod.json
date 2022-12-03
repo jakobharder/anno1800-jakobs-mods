@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
@@ -16,7 +16,7 @@
     },
     {
       "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
+      "pattern": "**/icon_*.png"
     },
     {
       "action": "texture",
@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.9.2",
+    "Version": "2.0",
     "ModID": "jakob_pescatarians",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods" ],
@@ -49,17 +49,8 @@
       "English": "Addon"
     },
     "ModName": {
-      "Chinese": null,
-      "English": "Pescatarians",
-      "French": null,
-      "German": "Pescatarianer",
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
+      "English": "Pescatarians (Jakob)",
+      "German": "Pescetarier (Jakob)"
     },
     "Description": {
       "English": "README.md",

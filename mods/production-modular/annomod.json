@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
@@ -41,25 +41,15 @@
     }
   ],
   "modinfo": {
-    "Version": "1.2",
+    "Version": "1.2.1",
     "ModID": "jakob_modular_factories",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_ground_textures" ],
     "Category": {
-      "English": "Gameplay"
+      "English": "Building"
     },
     "ModName": {
-      "Chinese": null,
-      "English": "Modular Factories",
-      "French": null,
-      "German": "Modular Factories",
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
+      "English": "Modular Factories (Jakob)"
     },
     "Description": {
       "English": "README.md",

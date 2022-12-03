@@ -1,0 +1,26 @@
+<!-- 
+  Only inserting build menus.
+  Unlocks happen completely in the respective mods.
+-->
+<ModOps>
+  <!-- # NW Construction Menus -->
+  <!-- remove biogas by first adding it and then deleting all occurences to avoid not found warnings -->
+  <ModOp Type="add" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010452</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010452']" />
+  <!-- insert all after oil power plant in obrero menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
+    <Item>
+      <Building>1500010456</Building>
+    </Item>
+  </ModOp>
+  <!-- insert all after boxing area in city menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='500946' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101259' or (not(../Item/Building='101259'))][last()]">
+    <Item>
+      <Building>1500010456</Building>
+    </Item>
+  </ModOp>
+</ModOps>

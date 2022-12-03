@@ -8,7 +8,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md,**/effects/*.png}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/effects/*.png,**/icon_*.png}"
     },
     {
       "action": "cf7",
@@ -20,18 +20,13 @@
     },
     {
       "action": "texture",
-      "pattern": "**/icons/*.png",
-      "lods": 0
-    },
-    {
-      "action": "texture",
       "pattern": "**/*_{diff,norm,height,metal}.png",
       "lods": 3,
       "changePath": "maps/"
     },
     {
       "action": "gltf",
-      "pattern": "**/*.{glb,gltf}",
+      "pattern": "**/*.gltf",
       "lods": 4,
       "changePath": "rdm/",
       "animPath": "anim/"
@@ -46,16 +41,15 @@
     }
   ],
   "modinfo": {
-    "Version": "2.6",
+    "Version": "2.7.1",
     "ModID": "jakob_Small_Gas_Power_Plant",
     "IncompatibleIds": [],
     "ModDependencies": null,
     "Category": {
-      "English": "Gameplay"
+      "English": "Building"
     },
     "ModName": {
-      "English": "Small Power Plants",
-      "German": "Kleine Kraftwerke, Neue Welt"
+      "English": "Small Power Plants (Jakob)"
     },
     "Description": {
       "English": "README.md"

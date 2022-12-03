@@ -1,23 +1,9 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_taiwanese.include.xml" />
+  
+  <!-- # Workers -->  
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>乳酪</Text> <!-- cheese: product -->
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>西裝</Text> <!-- suits: product -->
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>[AssetData(984) Text]</Text> <!-- tools: product -->
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>魚罐頭</Text> <!-- canned fish: product -->
-    </Text>
-    <!-- main text -->
     <Text>
       <GUID>1500010200</GUID>
       <Text>新工人住所：级别 1</Text> <!-- modern worker residences level 1: construction menu, residence UI -->
@@ -82,7 +68,9 @@
       <GUID>1500010281</GUID>
       <Text>新工人住所</Text> <!-- target pool -->
     </Text>
-    <!-- Artisan text -->
+  </ModOp>
+  <!-- # Artisans -->  
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010225</GUID>
       <Text>新工匠住所：级别 1</Text> <!-- residence UI -->

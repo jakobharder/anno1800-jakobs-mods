@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "2.2.2",
+    "Version": "2.3",
     "ModID": "jakob_upgradable_low_tier",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods", "jakob_ground_textures" ],
@@ -49,8 +49,7 @@
       "English": "Addon"
     },
     "ModName": {
-      "English": "Upgradable Workers",
-      "German": "Upgradefähige Arbeiter"
+      "English": "Upgradable Workers (Jakob)"
     },
     "Description": {
       "English": "README.md"

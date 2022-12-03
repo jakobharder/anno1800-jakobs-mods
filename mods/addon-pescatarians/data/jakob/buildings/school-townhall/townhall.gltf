@@ -1,0 +1,313 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.3.27",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "file_decal1",
+            "translation" : [
+                1.024999976158142,
+                0,
+                1.024999976158142
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "file_decal2",
+            "rotation" : [
+                0,
+                0.7071068286895752,
+                0,
+                0.7071068286895752
+            ],
+            "translation" : [
+                1.024999976158142,
+                0,
+                -1.024999976158142
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "file_decal3",
+            "rotation" : [
+                0,
+                -1,
+                0,
+                1.6292068494294654e-07
+            ],
+            "translation" : [
+                -1.024999976158142,
+                0,
+                -1.024999976158142
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "file_decal4",
+            "rotation" : [
+                0,
+                -0.7071065902709961,
+                0,
+                0.7071069478988647
+            ],
+            "translation" : [
+                -1.024999976158142,
+                0,
+                1.024999976158142
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "_townhall_lod0",
+            "translation" : [
+                -0.09725116193294525,
+                0.9327384233474731,
+                -1.0193843841552734
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "mat_ground",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                }
+            }
+        },
+        {
+            "name" : "school",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "Mesh_0.051",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 5,
+                        "NORMAL" : 6,
+                        "TANGENT" : 7,
+                        "TEXCOORD_0" : 8
+                    },
+                    "indices" : 9,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "townhall_ground_diff",
+            "uri" : "townhall_ground_diff.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "service_02_diff_0",
+            "uri" : "service_02_diff_0.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                1.027999997138977,
+                0,
+                1.027999997138977
+            ],
+            "min" : [
+                -1.027999997138977,
+                0,
+                -1.027999997138977
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 6,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 18832,
+            "max" : [
+                2.157069206237793,
+                2.0560085773468018,
+                3.0195794105529785
+            ],
+            "min" : [
+                -1.7541552782058716,
+                -1.7036139965057373,
+                -1.2165679931640625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 18832,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5126,
+            "count" : 18832,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 18832,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5123,
+            "count" : 38247,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 48,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64,
+            "byteOffset" : 96,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 160,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 12,
+            "byteOffset" : 192,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 225984,
+            "byteOffset" : 204,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 225984,
+            "byteOffset" : 226188,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 301312,
+            "byteOffset" : 452172,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 150656,
+            "byteOffset" : 753484,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 76494,
+            "byteOffset" : 904140,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 980636,
+            "uri" : "townhall.bin"
+        }
+    ]
+}

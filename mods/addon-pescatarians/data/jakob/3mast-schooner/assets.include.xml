@@ -1,0 +1,152 @@
+<!-- 
+  Stronger Schooner with 3 cargo slots.
+-->
+<ModOps>
+  <!-- # Ship: 3 Mast Schooner -->
+  <ModOp Type="addNextSibling" GUID="100438">
+    <Asset>
+      <BaseAssetGUID>100438</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010821</GUID>
+          <IconFilename>data\jakob\3mast-schooner\icon_schooner.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Attackable>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+          <AlertRange>150</AlertRange>
+          <HPBarOffset>4.5</HPBarOffset>
+          <SelfHealPerHealTick>1.5</SelfHealPerHealTick>
+          <SelfHealPausedTimeIfAttacked>30000</SelfHealPausedTimeIfAttacked>
+        </Attackable>
+        <UpgradeList>
+          <DefaultBuff>721</DefaultBuff>
+        </UpgradeList>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1500010825</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010210</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+          <InfluenceCostType>TradeShip</InfluenceCostType>
+          <InfluenceCostPoints>2</InfluenceCostPoints>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\3mast-schooner\schooner.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList />
+          </Skins>
+        </Object>
+        <ShipMaintenance>
+          <Maintenance>45</Maintenance>
+        </ShipMaintenance>
+        <Walking>
+          <ReservationLength>9</ReservationLength>
+          <ReservationWidth>5</ReservationWidth>
+          <PathPlannerLayer>Water</PathPlannerLayer>
+          <ExpensiveDirSmoothing>1</ExpensiveDirSmoothing>
+          <TurnAroundRadius>5</TurnAroundRadius>
+          <Acceleration>2</Acceleration>
+          <Deceleration>4</Deceleration>
+          <TurnRadius>5</TurnRadius>
+          <TurnSpeed>65</TurnSpeed>
+          <TurnDeceleration>0</TurnDeceleration>
+          <TurnMovement>0</TurnMovement>
+          <LeaningMaxAngle>-30</LeaningMaxAngle>
+          <ForwardSpeed>4.9</ForwardSpeed>
+          <WindMinSlowdownFactor>0.5</WindMinSlowdownFactor>
+          <WindSlowdownEffectOnTurningSpeed>0.35</WindSlowdownEffectOnTurningSpeed>
+          <WindMaxSpeedupFactor>1.8</WindMaxSpeedupFactor>
+          <WindSpeedupEffectOnTurningSpeed>0.85</WindSpeedupEffectOnTurningSpeed>
+          <CurveSegmentDensity>High</CurveSegmentDensity>
+        </Walking>
+        <ExpeditionAttribute>
+          <BaseMorale>30</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Might</Attribute>
+            </Item>
+            <Item>
+              <Attribute>Navigation</Attribute>
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkTradeShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Attribute>PerkSailingShip</Attribute>
+              <Amount>1</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+        <ItemContainer>
+          <SocketCount>3</SocketCount>
+          <SlotCount>2</SlotCount>
+        </ItemContainer>
+      </Values>
+    </Asset>
+    <!-- Unlock when Ropes are in stock. That ensures unlock is not getting invalided in games without Ropes. -->
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010837</GUID>
+          <Name>Unlock 3-mast Schooner</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>GoodsInStock</PlayerCounter>
+                <Context>1500010825</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010821</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="1010520" Path="/Values/Shipyard/AssemblyOptions/Item[Vehicle='100438']">
+    <Item>
+      <Vehicle>1500010821</Vehicle>
+    </Item>
+  </ModOp>
+</ModOps>

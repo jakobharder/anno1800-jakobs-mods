@@ -5,9 +5,13 @@
 The windmill is a service building providing electricity to industry and residents.
 It's intended as an alternative to Nate's electricity items for guild houses - a little cheaper, but not as powerful to keep it balanced.
 
-You need to use "Small Power Plants, New World" to use the windmill in the New World.
+## Requirements
 
-## Notes
+You need to use Mod `[Gameplay] Small Power Plants, New World` to use the windmill in the New World.
+
+## Buildings
+
+### Nate's Windmill
 
 Electricity is provided the same way power plants work via roads.
 
@@ -20,7 +24,17 @@ Palace buffs and obviously guild house buffs don't.
 
 OW windmill unlocks with 500 engineers and NW windmill with 1500 obreros.
 
+## Other
+
+### Grain Mill Bugfix
+
+Includes a fix to correct the fan direction of grain mills.
+
 ## Changes
+
+### 1.4
+
+- Include grain mill fix.
 
 ### 1.3
 

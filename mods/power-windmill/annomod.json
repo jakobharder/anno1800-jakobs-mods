@@ -4,11 +4,11 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,**/icons/*.png,banner.png,README.md}"
+      "pattern": "{data/config/**/*,**/icon_*.png,banner.png,README.md}"
     },
     {
       "action": "cf7",
@@ -24,30 +24,25 @@
       "pattern": "**/*.gltf"
     },
     {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
       "action": "modinfo",
       "content_en": true
     }
   ],
   "modinfo": {
-    "Version": "1.3.1",
+    "Version": "1.3.2",
     "ModID": "jakob_Nates_Windmill",
     "IncompatibleIds": [],
+    "DeprecateIds": [ "jakob_bugfix_mill_wind_direction" ],
     "ModDependencies": null,
     "Category": {
-      "English": "Gameplay"
+      "English": "Building"
     },
     "ModName": {
-      "Chinese": "老奈特的风车",
-      "English": "Nate's Windmill",
-      "French": "Éolienne du Vieux Nate",
-      "German": "Nates Windrad",
-      "Italian": "Mulino a vento del vecchio Nate",
-      "Japanese": "オールド・ネイトの風車",
-      "Korean": "올드 네이트의 풍차",
-      "Polish": "Wiatrak starego Nate'a",
-      "Russian": "ветряная мельница старины Нейта",
-      "Spanish": "Molino de viento del viejo Nate",
-      "Taiwanese": "老奈特的風車"
+      "English": "Nate's Windmill (Jakob)"
     },
     "Description": {
       "English": "README.md",

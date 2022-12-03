@@ -1,0 +1,62 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\production\agriculture_02\agriculture_02.cfg
+  fc:
+    - xpath: //FeedbackDefinition/FeedbackConfigs/i/SequenceDefinitions/i/Loop1/ElementContainer/Elements/i[m_IdleSequenceID="3002"]
+      m_IdleSequenceID: 1000
+  modifications:
+    # replace building model with custom version without the "pit"
+    - xpath: //Config/Models/Config[FileName="data\graphics\buildings\production\agriculture_02\rdm\agriculture_02_lod0.rdm"]
+      FileName: data\jakob\cheese\cattle_farm\rdm\cattle_farm_lod0.rdm
+    - xpath-remove: //Config/Models/Config[FileName="data\graphics\buildings\production\agriculture_02\rdm\agriculture_02_lod0_cutout.rdm"]
+    # add milk tank
+    - xpath-add: //Config/Models
+      Config: 
+        ConfigType: MODEL
+        Materials: 
+          Config: 
+            ConfigType: MATERIAL
+            Name: 01_building
+            ShaderID: 8
+            VertexFormat: P4h_N4b_G4b_B4b_T2h_I4b
+            NumBonesPerVertex: 0
+            METALLIC_TEX_ENABLED: 1
+            cModelMetallicTex: data/graphics/buildings/production/coastal_02/maps/coastal_02_metal.psd
+            cUseTerrainTinting: 0
+            SEPARATE_AO_TEXTURE: 0
+            cSeparateAOTex: data/graphics/effects/default_model_mask.png
+            Common: Common
+            DIFFUSE_ENABLED: 1
+            cModelDiffTex: data/graphics/buildings/production/coastal_02/maps/coastal_02_diff.psd
+            NORMAL_ENABLED: 1
+            cModelNormalTex: data/graphics/buildings/production/coastal_02/maps/coastal_02_norm.psd
+            cDiffuseColor.r: 1.000000
+            cDiffuseColor.g: 1.000000
+            cDiffuseColor.b: 1.000000
+            ALPHA_BLEND_ENABLED: 0
+            cTexScrollSpeed: 0.000000
+            DYE_MASK_ENABLED: 0
+            HEIGHT_MAP_ENABLED: 0
+            cParallaxScale: 1.000000
+            PARALLAX_MAPPING_ENABLED: 1
+            SELF_SHADOWING_ENABLED: 0
+            WATER_CUTOUT_ENABLED: 0
+            TerrainAdaption: TerrainAdaption
+            ADJUST_TO_TERRAIN_HEIGHT: 1
+            VERTEX_COLORED_TERRAIN_ADAPTION: 0
+            ABSOLUTE_TERRAIN_ADAPTION: 0
+            Environment: Environment
+            cUseLocalEnvironmentBox: 0
+            cEnvironmentBoundingBox.x: 3.556000
+            cEnvironmentBoundingBox.y: 0.900000
+            cEnvironmentBoundingBox.z: 0.000000
+            cEnvironmentBoundingBox.w: 5.787000
+            Glow: Glow
+            GLOW_ENABLED: 0
+            cEmissiveColor.r: 1.000000
+            cEmissiveColor.g: 1.000000
+            cEmissiveColor.b: 1.000000
+            NIGHT_GLOW_ENABLED: 0 
+        Name: tank
+        FileName: data\jakob\cheese\cattle_farm\rdm\cattle_farm_tank_lod0.rdm
+        IgnoreRuinState: 0

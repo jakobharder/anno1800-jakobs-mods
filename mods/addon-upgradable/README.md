@@ -10,7 +10,7 @@ Note: Pescatarian workers, artisans do not upgrade.
 
 - Activated DLC `The High Life` (the game requires you to activate latest when you load a savegame)
 - Mod `[Shared] Ground Textures`
-- Either Mod `[Shared] Extra Goods Collection` or DLC `Docklands`
+- Either Mod `[Shared] Alternative Needs` or DLC `Docklands`
 
 ## Buildings
 
@@ -33,7 +33,7 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 
 ### Farmers
 
-- `[Addon] Pescatarians` workers and artisans provide extra farmer workforce.
+- `[Addon] Pescatarians (Jakob)` workers and artisans provide extra farmer workforce.
 
 ### Stone Pavement
 
@@ -42,7 +42,7 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 
 ## Products
 
-All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods Collection`.
+All products are available as Dockland imports, or can be produced with `[Shared] Alternative Needs (Jakob)`.
 
 - Canned Fish
 - Cheese
@@ -55,6 +55,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 - The arrows for skyscraper upgrade don't show sometimes. The buildings will upgrade if you click anyway.
 
 ## Changes
+
+### 2.3
+
+- Replaced Cheese with Tea. Cheese is now an alternative lifestyle need for Sausages.
 
 ### 2.2
 

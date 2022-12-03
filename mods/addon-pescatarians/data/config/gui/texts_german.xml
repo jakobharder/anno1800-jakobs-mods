@@ -1,38 +1,13 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_german.include.xml" />
+
+  <!-- # Pescatarians -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Käse</Text>
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>Anzüge</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>Werkzeug</Text>
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Dosenfisch</Text>
-    </Text>
-    <Text>
-      <GUID>1500010106</GUID>
-      <Text>Olivenseife</Text>
-    </Text>
     <!-- main -->
     <Text>
       <GUID>601382</GUID>
-      <Text>Bauern (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>601383</GUID>
-      <Text>Arbeiter (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>601384</GUID>
-      <Text>Handwerker (Pescetarier)</Text>
+      <Text>Pescetarier</Text>
     </Text>
     <Text>
       <GUID>1500010100</GUID>
@@ -45,18 +20,6 @@
     <Text>
       <GUID>1500010119</GUID>
       <Text>Gemeindemarkt</Text> <!-- public service: basic -->
-    </Text>
-    <Text>
-      <GUID>1500010130</GUID>
-      <Text>Bauern (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>1500010131</GUID>
-      <Text>Arbeiter (Pescetarier)</Text>
-    </Text>
-    <Text>
-      <GUID>1500010132</GUID>
-      <Text>Handwerker (Pescetarier)</Text>
     </Text>
     <Text>
       <GUID>1500010134</GUID>
@@ -117,6 +80,106 @@
     <Text>
       <GUID>1500010801</GUID>
       <Text>[AssetData(1500010800) Text]</Text> <!-- service: music school -->
+    </Text>
+    <Text>
+      <GUID>1500010804</GUID>
+      <Text>Gemischte Arbeitskräfte</Text>
+    </Text>
+    <Text>
+      <GUID>1500010806</GUID> <!-- can't be AssetData -->
+      <Text>Pescetarier</Text>
+    </Text>
+    <Text>
+      <GUID>1500010810</GUID>
+      <Text>Verärgerter Pescetarier</Text>
+    </Text>
+    <Text>
+      <GUID>1500010811</GUID>
+      <Text>Unzufriedener Pescetarier</Text>
+    </Text>
+    <Text>
+      <GUID>1500010812</GUID>
+      <Text>Zufriedener Pescetarier</Text>
+    </Text>
+    <Text>
+      <GUID>1500010813</GUID>
+      <Text>Zufriedener Pescetarier</Text>
+    </Text>
+    <Text>
+      <GUID>1500010814</GUID>
+      <Text>Euphorischer Pescetarier</Text>
+    </Text>
+    <Text>
+      <GUID>1500010321</GUID>
+      <Text>Hoher, roter Skin</Text>
+    </Text>
+    <Text>
+      <GUID>1500010833</GUID>
+      <Text>Dunkler Skin</Text>
+    </Text>
+    <Text>
+      <GUID>1500010834</GUID>
+      <Text>Hoher, blauer Skin</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Services -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010816</GUID>
+      <Text>Bücherei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010818</GUID>
+      <Text>Bücherei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010817</GUID>
+      <Text>Kleine Post</Text>
+    </Text>
+    <Text>
+      <GUID>1500010819</GUID>
+      <Text>Fischlokal</Text>
+    </Text>
+    <Text>
+      <GUID>1500010820</GUID>
+      <Text>Fischlokal</Text>
+    </Text>
+  </ModOp> 
+    
+  <!-- # Ships -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010821</GUID>
+      <Text>Dreimaster</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Productions -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010822</GUID>
+      <Text>Seilerei</Text>
+    </Text>
+    <Text>
+      <GUID>1500010824</GUID>
+      <Text>Seile</Text>
+    </Text>
+    <Text>
+      <GUID>1500010825</GUID>
+      <Text>Seile</Text>
+    </Text>
+    <Text>
+      <GUID>1500010827</GUID>
+      <Text>Fischernetze</Text>
+    </Text>
+    <Text>
+      <GUID>1500010828</GUID>
+      <Text>Fischernetzwerk</Text>
+    </Text>
+    <Text>
+      <GUID>1500010829</GUID>
+      <Text>Fishernetze</Text>
     </Text>
   </ModOp>
 </ModOps>

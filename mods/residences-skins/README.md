@@ -1,20 +1,13 @@
-# Colored Roofs, Residences
+# Residence Skins
 
 ![](./banner.png)
 
-Various roof colors as paintbrush skin for Artisans and Engineers. Other tiers will follow at some time.
+Paintbrush skins for Artisans and Engineers.
 
-The roofs are colored in realtime. That leads to better performance due to less used texture memory.
+The roofs are colored in realtime leading to better performance.
 
-You can safely add or remove the mod in existing games.
-
-Needs at least GU 13, no DLC dependencies.
-
-## Changes
-
-### 1.2
-
-- Chinese translation
+Hint: the mod `[Gameplay] Small Hotels` includes
+skins for hotels.
 
 ## Translations
 
@@ -22,4 +15,4 @@ Available: English, German
 
 Thanks to
 - Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+- darknesswei for Chinese translation

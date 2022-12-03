@@ -1,4 +1,7 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_english.include.xml" />
+  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -9,24 +12,16 @@
       <Text>Hemp</Text>
     </Text>
     <Text>
-      <GUID>1500010102</GUID>
-      <Text>Cheese</Text> <!-- cheese: product -->
-    </Text>
-    <Text>
       <GUID>1500010103</GUID> <!-- dairy: product -->
       <Text>Cheese Dairy</Text>
     </Text>
     <Text>
       <GUID>1500010104</GUID> <!-- milk farm: building -->
-      <Text>Milk Farm</Text>
+      <Text>Dairy Farm</Text>
     </Text>
     <Text>
       <GUID>1500010105</GUID> <!-- olives: product -->
       <Text>Olives</Text>
-    </Text>
-    <Text>
-      <GUID>1500010106</GUID>
-      <Text>Olive Soap</Text> <!-- olive soap: product -->
     </Text>
     <Text>
       <GUID>1500010107</GUID>
@@ -49,12 +44,8 @@
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
-      <GUID>1500010117</GUID>
-      <Text>Cheese</Text> <!-- cheese: product -->
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Canned Fish</Text> <!-- canned fish: product -->
+      <GUID>1500010123</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Olives-->
     </Text>
     <Text>
       <GUID>1500010121</GUID>
@@ -77,16 +68,16 @@
       <Text>Linen Cloth Maker</Text> <!-- linen cloth maker: building -->
     </Text>
     <Text>
-      <GUID>1500010127</GUID>
-      <Text>Suits</Text> <!-- suits: product -->
-    </Text>
-    <Text>
       <GUID>1500010128</GUID>
       <Text>Suits Factory</Text> <!-- suits factory: building -->
     </Text>
     <Text>
       <GUID>1500010129</GUID>
       <Text>[AssetData(1500010127) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010184</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Hemp -->
     </Text>
     <Text>
       <GUID>1500010150</GUID>
@@ -99,10 +90,6 @@
     <Text>
       <GUID>1500010152</GUID>
       <Text>[AssetData(1500010150) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>[AssetData(984) Text]</Text> <!-- tools: product -->
     </Text>
     <Text>
       <GUID>1500010154</GUID>
@@ -137,14 +124,6 @@
       <Text>[AssetData(1500010106) Text]</Text> <!-- production chain -->
     </Text>
     <Text>
-      <GUID>1500010192</GUID>
-      <Text>[AssetData(1500010156) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
-      <GUID>1500010193</GUID>
-      <Text>[AssetData(1500010150) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
       <GUID>1500010250</GUID>
       <Text>Hot Chocolate</Text>
     </Text>
@@ -168,9 +147,74 @@
       <GUID>1500010255</GUID>
       <Text>[AssetData(1500010250) Text]</Text>
     </Text>
+  </ModOp>
+
+  <!-- # Kitchen (Pickled Vegetables) -->
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010400</GUID>
-      <Text>Residents get a discount at nearby productions.</Text>
+      <GUID>1500010830</GUID>
+      <Text>Vegetable Farm</Text>
+    </Text>
+    <Text>
+      <GUID>1500010835</GUID>
+      <Text>Kitchen</Text>
+    </Text>
+    <Text>
+      <GUID>1500010946</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
+    </Text>  
+  </ModOp>
+
+  <!-- # Tea Maker -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010940</GUID>
+      <Text>Tea Maker</Text> <!-- Building: Tea Maker -->
+    </Text>
+    <Text>
+      <GUID>1500010848</GUID>
+      <Text>Herb Farm</Text> <!-- Building: Herb Farm -->
+    </Text>
+    <Text>
+      <GUID>1500010849</GUID>
+      <Text>Herbs</Text> <!-- Product: Herbs -->
+    </Text>
+    <Text>
+      <GUID>1500010943</GUID>
+      <Text>Herbs Field</Text> <!-- Module: Herbs Field -->
+    </Text>
+    <Text>
+      <GUID>1500010945</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Herbs -->
+    </Text>
+  </ModOp>
+
+  <!-- # Alternative Needs -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+    <Text>Fine Clothes</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Food</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+    <Text>Food</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Canned Food</Text>
+  </ModOp>
+
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010846</GUID>
+      <Text>Basic Food</Text>
+    </Text>
+    <Text>
+      <GUID>1500010808</GUID>
+      <Text>Alternative Needs</Text>
+    </Text>
+    <Text>
+      <GUID>1500010159</GUID>
+      <Text>Alternative Needs</Text>
     </Text>
   </ModOp>
 </ModOps>

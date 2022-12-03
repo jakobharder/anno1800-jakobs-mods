@@ -1,4 +1,7 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_german.include.xml" />
+  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -7,10 +10,6 @@
     <Text>
       <GUID>1440224</GUID>
       <Text>Hanf</Text>
-    </Text>
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Käse</Text>
     </Text>
     <Text>
       <GUID>1500010103</GUID>
@@ -23,10 +22,6 @@
     <Text>
       <GUID>1500010105</GUID>
       <Text>Oliven</Text>
-    </Text>
-    <Text>
-      <GUID>1500010106</GUID>
-      <Text>Olivenseife</Text>
     </Text>
     <Text>
       <GUID>1500010107</GUID>
@@ -49,14 +44,6 @@
       <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
-      <GUID>1500010117</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Dosenfisch</Text>
-    </Text>
-    <Text>
       <GUID>1500010121</GUID>
       <Text>Fischdosenfabrik</Text>
     </Text>
@@ -77,10 +64,6 @@
       <Text>Leinenweberei</Text>
     </Text>
     <Text>
-      <GUID>1500010127</GUID>
-      <Text>Anzüge</Text>
-    </Text>
-    <Text>
       <GUID>1500010128</GUID>
       <Text>Anzugfabrik</Text>
     </Text>
@@ -99,10 +82,6 @@
     <Text>
       <GUID>1500010152</GUID>
       <Text>[AssetData(1500010150) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>[AssetData(984) Text]</Text> <!-- tools: product -->
     </Text>
     <Text>
       <GUID>1500010154</GUID>
@@ -137,14 +116,6 @@
       <Text>[AssetData(1500010106) Text]</Text> <!-- production chain -->
     </Text>
     <Text>
-      <GUID>1500010192</GUID>
-      <Text>[AssetData(1500010156) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
-      <GUID>1500010193</GUID>
-      <Text>[AssetData(1500010150) Text]</Text> <!-- production chain -->
-    </Text>
-    <Text>
       <GUID>1500010250</GUID>
       <Text>Heiße Schokolade</Text>
     </Text>
@@ -168,9 +139,74 @@
       <GUID>1500010255</GUID>
       <Text>[AssetData(1500010250) Text]</Text>
     </Text>
+  </ModOp>
+        
+  <!-- # Kitchen (Pickled Vegetables) -->
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010400</GUID>
-      <Text>Einwohner bekommen bei nahen Produktionen einen Rabatt.</Text>
+      <GUID>1500010830</GUID>
+      <Text>Gemüsehof</Text>
+    </Text>
+    <Text>
+      <GUID>1500010835</GUID>
+      <Text>Küche</Text>
+    </Text>
+    <Text>
+      <GUID>1500010946</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
+    </Text>  
+  </ModOp>
+
+  <!-- # Tea Maker -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010940</GUID>
+      <Text>Teefabrik</Text> <!-- Building: Tea Maker -->
+    </Text>
+    <Text>
+      <GUID>1500010848</GUID>
+      <Text>Kräuterhof</Text> <!-- Building: Herb Farm -->
+    </Text>
+    <Text>
+      <GUID>1500010849</GUID>
+      <Text>Kräuter</Text> <!-- Product: Herbs -->
+    </Text>
+    <Text>
+      <GUID>1500010943</GUID>
+      <Text>Kräuterfeld</Text> <!-- Module: Herbs Field -->
+    </Text>
+    <Text>
+      <GUID>1500010945</GUID>
+      <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Herbs -->
+    </Text>
+  </ModOp>
+
+  <!-- # Alternative Needs -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+    <Text>Kleidung</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+    <Text>Nahrung</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+    <Text>Nahrung</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+    <Text>Konserven</Text>
+  </ModOp>
+
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010846</GUID>
+      <Text>Einfache Nahrung</Text>
+    </Text>
+    <Text>
+      <GUID>1500010808</GUID>
+      <Text>Alternative Bedürfnisse</Text>
+    </Text>
+    <Text>
+      <GUID>1500010159</GUID>
+      <Text>Alternative Bedürfnisse</Text>
     </Text>
   </ModOp>
 </ModOps>

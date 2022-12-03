@@ -6,30 +6,21 @@ Alternative Old World population providing with new needs, productions and workf
 
 ## Requirements
 
-- DLC `Lands of Lions DLC` + Mod `[Shared] Extra Goods Collection` mod for production chains.
-- Or alternatively DLC `Docklands`
-- Optional: Artisan skins are included in Mod `[Misc] Colored Roofs, Residences`.
+- Mod `[Shared] Alternative Needs (Jakob)` for production chains - or alternatively DLC `Docklands`
+- Mod `[Skin] Residence Skins (Jakob)` (optional for correct skins, but highly recommended)
 
 ## Population
 
-### Farmers
+### Pescatarians
 
-- Need community center and potatoes instead of marketplace and working cloth.
+- Pescatarians provide Farmer/Worker/Artisan workforce in equal shares.
+  For example 3 Pescatarian residents provide a workforce of 1 Farmer, 1 Worker and 1 Artisan.
+- All Pescatarians residences have the same population, but different number of residents and consumed products.
 
-### Workers
+### Upgrade to normal Engineers
 
-- Need cheese and olive soap instead of sausages and normal soap.
-- Provide extra farmer workforce in the same building.
-
-### Artisans
-
-- Need canned fish and suits instead of canned food and fur coats.
-- Provide extra farmer and worker workforce in the same building.
-
-### Engineers
-
-- Accept both canned fish/canned food and suits/fur coats.
-- Can be upgraded to normal skyscapers or investors.
+- You can upgrade Pescatarians to Engineers, but Engineers are vanilla population.
+  Once upgraded, a downgrade will lead to vanilla Artisans.
 
 ## Buildings
 
@@ -37,52 +28,44 @@ Alternative Old World population providing with new needs, productions and workf
 
 - Functions as both marketplace and church replacement for Pescatarians.
 
-### Music School
+### Library, Music School
 
-- Provides music school public service to Pescatarians and workers from `[Addon] Upgradable Workers`.
+- Provide public services to Pescatarians
+- The music school is also available to modern residences from `[Addon] Upgradable Workers (Jakob)`.
+
+### Small Post Office
+
+- Visually more fitting version of the `Empires of the Skies` post office.
 
 ## Products
 
-All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods Collection`.
+All products are available as Dockland imports, or can be produced with `[Shared] Alternative Needs (Jakob)`.
 
-### Importable or Extra Goods Collection
+### Importable or Alternative Needs
 
-- Canned Fish
+- Vegetables
 - Cheese
+- Pickled Vegetables
 - Olive Soap
+- Canned Fish
 - Suits
-
-### Only with Extra Goods Collection
-
-- Bottled Beer
-- Tools
-- Wooden Accessories
 
 ## Changes
 
-### 1.9
+### 2.0
 
-- Improved Russion translation (thanks to @m_belonosov)
-
-### Older
-
-- 1.8: Chinese translation
-- 1.7: Fixed GU14 maintenance buff
-- 1.6: GU14 support
-- 1.6: Korean translation
-- 1.5: Fixed issue with unlock conditions not shown at game start
-- 1.5: Added music school as public service to upgradable workers
-- 1.4: Added Enbesa musician's court items to music school
-- 1.4: Renamed Community Center public services to avoid confusion (there are two ;-)
-- 1.3: Fixed warehouse/docklands goods issues
-- 1.3: Increased trade price of cheese (45 -> 80)
-- 1.3: Added music school as public service / luxury need for Pescatarian Workers and Artisans.
-- 1.2: Removed doubled canned fish, suits in consumable construction menu
-- 1.1: Trade contracts for new basic needs
+- Complete rework of all aspects
+- Added new models for worker and artisan ter
+- Added Lifestyle needs
+- Added Vegetables, Pickled Vegetables
+- Added Library building / service as replacement for schools
+- Added Post Office to work with DLC11
+- Removed farmer tier (buildings will be automatically upgraded)
+- Removed Wooden Accessories, Bottled Beer
 
 ## Known Issues
 
-Original engineers may complain about missing canned fish need, even though they do not need it.
+- Pescatarians are not listed in the global balance overview.
 
 ## Translations
 

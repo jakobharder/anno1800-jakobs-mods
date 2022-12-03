@@ -1,23 +1,9 @@
 <ModOps>
+  <!-- # Shared Goods -->
+  <Include File="../../../products/texts/texts_german.include.xml" />
+  
+  <!-- # Workers -->  
   <ModOp Type="add" Path="/TextExport/Texts">
-    <!-- shared products -->
-    <Text>
-      <GUID>1500010102</GUID>
-      <Text>Käse</Text>
-    </Text>
-    <Text>
-      <GUID>1500010127</GUID>
-      <Text>Anzüge</Text>
-    </Text>
-    <Text>
-      <GUID>1500010153</GUID>
-      <Text>Werkzeug</Text>
-    </Text>
-    <Text>
-      <GUID>1500010120</GUID>
-      <Text>Dosenfisch</Text>
-    </Text>
-    <!-- main text -->
     <Text>
       <GUID>1500010200</GUID>
       <Text>Modernes Arbeiterhaus: Stufe 1</Text>
@@ -82,7 +68,9 @@
       <GUID>1500010281</GUID>
       <Text>Moderne Arbeiterhäuser</Text> <!-- target pool -->
     </Text>
-    <!-- Artisan text -->
+  </ModOp>
+  <!-- # Artisans -->  
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010225</GUID>
       <Text>Modernes Handwerkerhaus: Stufe 1</Text> <!-- residence UI -->

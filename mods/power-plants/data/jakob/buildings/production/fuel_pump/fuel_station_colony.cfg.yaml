@@ -1,0 +1,17 @@
+variant: 
+  source: ${annoRda}/data\dlc05\graphics\buildings\special\fuel_station_colony\fuel_station_colony.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      HEIGHT_MAP_ENABLED: 0
+      cModelDiffTex: data\graphics\buildings\production\factory_09\maps\factory_09_ground_diff.psd
+      cModelMetallicTex: data\graphics\buildings\production\factory_09\maps\factory_09_ground_metal.psd
+      cModelNormalTex: data\graphics\buildings\production\factory_09\maps\factory_09_ground_norm.psd
+    - xpath: //Config/Decals/Config/Transformer/Config
+      Rotation.x: 0.000000
+      Rotation.y: 0.707107
+      Rotation.z: 0
+      Rotation.w: 0.707107
+  ifo:
+    - xpath-remove: //Info/Dummy[Name='railroad01']
+    - xpath-remove: //Info/Dummy[Name='railroad02']
+    - xpath-remove: //Info/Dummy[Name='railroadbase01']

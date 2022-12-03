@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
@@ -16,14 +16,15 @@
     },
     {
       "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
+      "pattern": "**/icon_*.png"
     },
     {
       "action": "gltf",
       "pattern": "**/!(propsonly)*.gltf",
       "lods": 4,
       "changePath": "rdm/",
-      "animPath": "anim/"
+      "animPath": "anim/",
+      "plantPattern": "(hemp_field|olive_tree|cabbage_field).gltf"
     },
     {
       "action": "cfgyaml",
@@ -41,7 +42,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.10.1",
+    "Version": "2.0",
     "ModID": "jakob_extra_goods",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_ground_textures" ],
@@ -49,17 +50,7 @@
       "English": "Shared"
     },
     "ModName": {
-      "Chinese": null,
-      "English": "Extra Goods Collection",
-      "French": null,
-      "German": "Extra Goods Collection",
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
+      "English": "Alternative Needs (Jakob)"
     },
     "Description": {
       "English": "README.md",

@@ -1,0 +1,36 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,**/icon_*.png,banner.png,README.md}"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0",
+    "ModID": "jakob_compact_menus",
+    "IncompatibleIds": [],
+    "ModDependencies": [],
+    "Category": {
+      "English": "UI"
+    },
+    "ModName": {
+      "English": "Compact Build Menus (Jakob)",
+      "German": "Kompatke Baumenüs (Jakob)"
+    },
+    "Description": {
+      "English": "README.md",
+      "German": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}

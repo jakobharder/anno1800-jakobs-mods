@@ -2,128 +2,14 @@
   Upgradable Low Tiers
 -->
 <ModOps>
-  <!-- # shared products -->
+  <!-- # Shared Products -->
+  <Include File="../../../../../products/canned-fish/assets.include.xml" />
+  <Include File="../../../../../products/tools/assets.include.xml" />
+  <Include File="../../../../../products/suits/assets.include.xml" />
+  <Include File="../../../../../products/tea/assets.include.xml" />
+
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010153</GUID>
-          <Name>tools</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11705</ProductCategory>
-          <BasePrice>240</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>10</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Crafting</Attribute>
-              <Amount>50</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>19796</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010120</GUID>
-          <Name>canned_fish</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
-          <BasePrice>563</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>40</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010127</GUID>
-          <Name>suits</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- natural products -->
-          <BasePrice>480</BasePrice>
-          <CivLevel>3</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>6</BaseMorale>
-          <ExpeditionAttributes>
-            <Item>
-              <Attribute>Diplomacy</Attribute>
-              <Amount>15</Amount>
-            </Item>
-          </ExpeditionAttributes>
-          <FluffText>129492</FluffText>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010102</GUID>
-          <Name>cheese</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11704</ProductCategory> <!-- supply good -->
-          <BasePrice>80</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <!-- TODO make edible -->
-          <BaseMorale>20</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset>
     <Asset>
       <Template>Product</Template>
       <Values>
@@ -190,186 +76,11 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID='120055' Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
-    <Item>
-      <Product>1500010106</Product>
-    </Item>
-    <Item>
-      <Product>1500010156</Product>
-    </Item>
-    <Item>
-      <Product>1500010150</Product>
-    </Item>
-  </ModOp>
-  <!-- add to StandardMarketplaceModerateStorageList -->
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010214' and not(../Item/Product='1500010153')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010238' and not(../Item/Product='1500010102')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
-  </ModOp>
-  <!-- filter lists -->
-  <ModOp Type="addNextSibling" GUID="502019">
-    <Asset>
-      <Template>ProductList</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010159</GUID>
-          <Name>farmer_unlock_goods</Name>
-        </Standard>
-        <ProductList>
-          <List>
-            <Item>
-              <Product>1010200</Product>
-            </Item>
-            <Item>
-              <Product>1010195</Product>
-            </Item>
-            <Item>
-              <Product>1500010150</Product>
-            </Item>
-          </List>
-        </ProductList>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>ProductList</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010160</GUID>
-          <Name>worker_unlock_goods</Name>
-        </Standard>
-        <ProductList>
-          <List>
-            <Item>
-              <Product>1440005</Product>
-            </Item>
-            <Item>
-              <Product>1500010102</Product>
-            </Item>
-            <Item>
-              <Product>1010213</Product>
-            </Item>
-            <Item>
-              <Product>1500010105</Product>
-            </Item>
-            <Item>
-              <Product>1500010106</Product>
-            </Item>
-            <Item>
-              <Product>1500010153</Product>
-            </Item>
-            <Item>
-              <Product>1440224</Product>
-            </Item>
-            <Item>
-              <Product>1500010127</Product>
-            </Item>
-            <Item>
-              <Product>1500010120</Product>
-            </Item>
-          </List>
-        </ProductList>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>ProductList</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010161</GUID>
-          <Name>artisan_unlock_goods</Name>
-        </Standard>
-        <ProductList>
-          <List>
-            <Item>
-              <Product>1500010156</Product>
-            </Item>
-          </List>
-        </ProductList>
-      </Values>
-    </Asset>
-  </ModOp>
-  <!-- stats/warehouse all list: insert after artisan -->
-  <ModOp Type="addNextSibling" GUID="502016,502220,502065" Path="/Values/ProductList/List/Item[Product='502019']">
-    <Item>
-      <Product>1500010159</Product>
-    </Item>
-    <Item>
-      <Product>1500010160</Product>
-    </Item>
-    <Item>
-      <Product>1500010161</Product>
-    </Item>
-  </ModOp>
-  <!-- session goods: insert after artisan -->
-  <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
-    <Item>
-      <Product>1500010159</Product>
-    </Item>
-    <Item>
-      <Product>1500010160</Product>
-    </Item>
-    <Item>
-      <Product>1500010161</Product>
-    </Item>
-  </ModOp>
   <!-- trade contracts for shared products -->
   <!-- 
     add products to traders based on name and product of the same unlock category
     unlock condition is not used to get the unlock category as there are mods that change unlock conditions
   -->
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010102')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- feedl -->
-    <Item>
-      <Level>Uncommon</Level>
-      <Good>1500010102</Good>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item[Trades/Item/Good='1010213' and not(Trades/Item/Good='1500010120')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- feedl -->
-    <Item>
-      <Level>Rare</Level>
-      <Good>1500010120</Good>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131765']/TradeLevels/Item[Trades/Item/Good='1010247' and not(Trades/Item/Good='1500010127')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- chanteuse -->
-    <Item>
-      <Level>Rare</Level>
-      <Good>1500010127</Good>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131811']/TradeLevels/Item[Trades/Item/Good='1010196' and not(Trades/Item/Good='1500010153')]/Trades | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <!-- kitea -->
-    <Item>
-      <Level>Rare</Level>
-      <Good>1500010153</Good>
-    </Item>
-  </ModOp>
   
   <!-- # modify vanilla upgrade paths -->
   <ModOp GUID='1010344' Type="add" Path="Values">
@@ -824,7 +535,7 @@
               <InactiveAmount>14</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Residences</IncomeCategory>
+          <IncomeCategory>Skyscrapers</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -835,7 +546,7 @@
         <Standard>
           <GUID>1500010201</GUID>
           <Name>Worker Level 2</Name>
-          <IconFilename>data/jakob/ui/icons/icon_worker_scraper.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_worker_scraper2.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
         <Locked />
@@ -945,7 +656,7 @@
               <InactiveAmount>28</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Residences</IncomeCategory>
+          <IncomeCategory>Skyscrapers</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -1405,8 +1116,8 @@
   <ModOp GUID='15000001' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
     <!-- low -->
     <Item>
-      <Product>1500010102</Product> <!-- cheese -->
-      <Amount>0.0004166</Amount>
+      <Product>1500010847</Product> <!-- tea -->
+      <Amount>0.0002083</Amount>
       <SupplyWeight>4</SupplyWeight>
       <MoneyValue>20</MoneyValue>
       <RequiredFloorLevel>1</RequiredFloorLevel>
@@ -1484,15 +1195,6 @@
     </Item>
   </ModOp>
   <ModOp GUID='502005' Type="add" Path="/Values/ProductList/List">
-    <Item>
-      <Product>1500010102</Product>
-    </Item>
-    <Item>
-      <Product>1500010153</Product>
-    </Item>
-    <Item>
-      <Product>1500010120</Product>
-    </Item>
     <Item>
       <Product>1500010127</Product>
     </Item>
@@ -1879,7 +1581,7 @@
               <InactiveAmount>28</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Residences</IncomeCategory>
+          <IncomeCategory>Skyscrapers</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -2009,7 +1711,7 @@
               <InactiveAmount>42</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Residences</IncomeCategory>
+          <IncomeCategory>Skyscrapers</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -2433,7 +2135,7 @@
   <ModOp GUID='15000002' Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
     <!-- low -->
     <Item>
-      <Product>1500010102</Product> <!-- cheese -->
+      <Product>1500010847</Product> <!-- Tea -->
       <Amount>0.0002083</Amount>
       <SupplyWeight>7</SupplyWeight>
       <MoneyValue>25</MoneyValue>
@@ -2868,78 +2570,103 @@
               <Building>1500010224</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>134722</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>101497</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>102482</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>114776</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>134730</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>134731</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>134732</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>134733</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>134735</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80040</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80041</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80042</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80043</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80044</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80045</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80046</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80047</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80048</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80049</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80050</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80051</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80060</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80061</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80062</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>80063</Building>
             </Item>
           </BuildingList>
@@ -3116,6 +2843,7 @@
               <Building>1500010225</Building>
             </Item>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>1500010800</Building>
             </Item>
           </BuildingList>
@@ -3155,13 +2883,13 @@
   <!-- workers menu: insert before bricks production chain, no fall back -->
   <ModOp Type="addPrevSibling" GUID='25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500024']">
     <Item>
-      <Building>1500010212</Building>
+      <Building>1500010200</Building>
     </Item>
   </ModOp>
   <!-- artisans menu: insert before anything, no fall back -->
   <ModOp Type="addPrevSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
     <Item>
-      <Building>1500010212</Building>
+      <Building>1500010225</Building>
     </Item>
   </ModOp>
 
@@ -3323,9 +3051,6 @@
                       </Item>
                       <Item>
                         <Asset>1500010201</Asset> <!-- level 2 -->
-                      </Item>
-                      <Item>
-                        <Asset>1500010215</Asset> <!-- stone pavement -->
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -3496,8 +3221,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context>
-                <CounterAmount>700</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -3511,6 +3236,9 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010224</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010215</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

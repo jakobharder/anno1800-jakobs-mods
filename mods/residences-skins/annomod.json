@@ -4,7 +4,7 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
@@ -16,7 +16,7 @@
     },
     {
       "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
+      "pattern": "**/icon_*.png"
     },
     {
       "action": "texture",
@@ -41,25 +41,15 @@
     }
   ],
   "modinfo": {
-    "Version": "1.2",
+    "Version": "1.2.1",
     "ModID": "jakob_skin_pack",
     "IncompatibleIds": [],
     "ModDependencies": [],
     "Category": {
-      "English": "Misc"
+      "English": "Skin"
     },
     "ModName": {
-      "Chinese": null,
-      "English": "Colored Roofs, Residences",
-      "French": null,
-      "German": "Colored Roofs, Residences",
-      "Italian": null,
-      "Japanese": null,
-      "Korean": null,
-      "Polish": null,
-      "Russian": null,
-      "Spanish": null,
-      "Taiwanese": null
+      "English": "Residence Skins (Jakob)"
     },
     "Description": {
       "English": "README.md",
