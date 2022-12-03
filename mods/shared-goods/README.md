@@ -1,4 +1,4 @@
-# Extra Goods
+# Alternative Needs (aka Extra Goods Collection)
 
 Productions like cheese and tools.
 Every end product can be as an alternative to normal Basic Needs.
@@ -24,6 +24,11 @@ Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counter
 
 - Dairy Farm: Milk
 - Cheese Dairy: Cheese
+
+### Pickled Vegetables (→ Bread)
+
+- Vegetable Farm: Vegetables
+- Kitchen: Pickled Vegetables
 
 ### Olive Soap (→ Soap)
 
@@ -57,9 +62,13 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## 2.0
 
-- Added Tea, Vegetables
-- Added Alternative Needs
-- Improved Olive Farm visuals
+- Added Tea, Vegetables, Pickled Vegetables
+- Added Alternative (Lifestyle) Needs
+- Improved Olive and Hemp farm field visuals
+
+## Known Issues
+
+- Land Reform Act: Farms are not listed, but get the +1/2 goods buff anyway.
 
 ## Translations
 
