@@ -48,7 +48,7 @@ In-game changes, that need your attention:
 
   Adds Old World population with 3 tiers and new needs. They provide additional farmer workforce also in worker and artisan houses.
 
-- [\[Shared\] Alternative Needs](./mods/shared-goods/README.md)
+- [\[Shared\] Extra Goods](./mods/shared-goods/README.md)
 
   Adds production chains for Upgradable Workers and Pescatarians: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
 
@@ -99,7 +99,7 @@ In-game changes, that need your attention:
 
   Adds factory variants of vanilla productions adjusting their visuals when built in blocks.
 
-  Tools factory from `[Shared] Alternative Needs (Jakob)` is already modular.
+  Tools factory from `[Shared] Extra Goods (Jakob)` is already modular.
 
 ## Electricity Mods
 

@@ -1,7 +1,7 @@
-# Alternative Needs (aka Extra Goods Collection)
+# Extra Goods (Alternative Needs)
 
 Productions like cheese and tools.
-Every end product can be as an alternative to normal Basic Needs.
+Every end product is available as an alternative Lifestyle need to normal Basic Needs.
 
 ## Requirements
 

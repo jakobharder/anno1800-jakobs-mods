@@ -6,7 +6,7 @@ Alternative Old World population providing with new needs, productions and workf
 
 ## Requirements
 
-- Mod `[Shared] Alternative Needs (Jakob)` for production chains - or alternatively DLC `Docklands`
+- Mod `[Shared] Extra Goods (Jakob)` for production chains - or alternatively DLC `Docklands`
 - Mod `[Skin] Residence Skins (Jakob)` (optional for correct skins, but highly recommended)
 
 ## Population
@@ -39,9 +39,9 @@ Alternative Old World population providing with new needs, productions and workf
 
 ## Products
 
-All products are available as Dockland imports, or can be produced with `[Shared] Alternative Needs (Jakob)`.
+All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods (Jakob)`.
 
-### Importable or Alternative Needs
+### Importable or from Extra Goods
 
 - Vegetables
 - Cheese
