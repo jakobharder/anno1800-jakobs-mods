@@ -27,6 +27,9 @@ const packages = [... new Set(modNames.map(e => {
 }))];
 
 for (let package of packages) {
+  if (package.startsWith('-')) {
+    continue;
+  }
   child_process.execFileSync('tar', [
     '-c', '-a',
     '-f', `out/${package.replace(/\s/g, '.').replace(',*', '')}.zip`,
