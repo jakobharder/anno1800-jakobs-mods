@@ -6,7 +6,7 @@ Alternative Old World population providing with new needs, productions and workf
 
 ## Requirements
 
-- Mod `[Shared] Extra Goods (Jakob)` for production chains - or alternatively DLC `Docklands`
+- Mod `[Shared] Extra Goods (Jakob)` for production chains
 - Mod `[Skin] Residence Skins (Jakob)` (optional for correct skins, but highly recommended)
 
 ## Population
