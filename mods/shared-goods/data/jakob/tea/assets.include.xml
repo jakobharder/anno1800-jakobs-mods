@@ -51,16 +51,16 @@
             <Item>
               <Product>1500010849</Product>
               <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
+              <StorageAmount>1</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>30</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <CycleTime>90</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <ModuleOwner>
           <ModuleLimits>
             <Main>
-              <Limit>72</Limit>
+              <Limit>96</Limit>
             </Main>
           </ModuleLimits>
           <ConstructionOptions>
@@ -83,8 +83,8 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>50</Amount>
-              <InactiveAmount>25</InactiveAmount>
+              <Amount>200</Amount>
+              <InactiveAmount>100</InactiveAmount>
             </Item>
             <Item>
               <Product>1010052</Product>
@@ -181,17 +181,17 @@
             <Item>
               <Product>1500010849</Product>
               <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
+              <StorageAmount>2</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
               <Product>1500010847</Product>
               <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
+              <StorageAmount>1</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <!-- <CycleTime>60</CycleTime> -->
+          <CycleTime>90</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
@@ -207,7 +207,7 @@
               <InactiveAmount>1000</InactiveAmount>
             </Item>
             <Item>
-              <Product>1010117</Product>
+              <Product>1010116</Product>
               <Amount>150</Amount>
             </Item>
           </Maintenances>
@@ -249,59 +249,6 @@
         <QuestObject />
         <Electrifiable />
         <EcoSystemProvider />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FactoryBuilding7</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010942</GUID>
-          <Name>Fake Tea Maker for Docklands</Name>
-          <IconFilename>data\jakob\tea\tea_maker\icon_tea_alt.png</IconFilename>
-        </Standard>
-        <Building>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-        </Building>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>15000</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\tea\tea_maker\tea_maker.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>1500010847</Product>
-              <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>90</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
-        </FactoryBase>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>14000</Amount>
-              <InactiveAmount>7000</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010117</Product>
-              <Amount>300</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
       </Values>
     </Asset>
     <Asset>

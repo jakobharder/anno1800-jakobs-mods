@@ -241,7 +241,7 @@
             </Item>
           </FactoryOutputs>
           <CycleTime>60</CycleTime>
-          <IsMainFactory>1</IsMainFactory>
+          <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode>
           <TransporterCountMax>1</TransporterCountMax>
@@ -360,13 +360,12 @@
         </Standard>
       </Values>
     </Asset>
-    <!-- Unlock at 1 Engineer. -->
     <Asset>
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010195</GUID>
-          <Name>Unlock @ 1 Engineer</Name>
+          <Name>Unlock @ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -376,8 +375,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context>
-                <CounterAmount>1</CounterAmount>
+                <Context>15000002</Context>
+                <CounterAmount>900</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>

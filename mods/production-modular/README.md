@@ -10,7 +10,7 @@ Their cost and cycles are adjusted to their changed footprint.
 Buildings:
 
 - Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
-- (Tools are part of the `[Shared] Alternative Needs` mod)
+- (Tools are part of the `[Shared] Extra Goods (Jakob)` mod)
 - more will follow ...
 
 ## Changes

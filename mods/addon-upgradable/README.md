@@ -42,7 +42,7 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 
 ## Products
 
-All products are available as Dockland imports, or can be produced with `[Shared] Alternative Needs (Jakob)`.
+All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods (Jakob)`.
 
 - Canned Fish
 - Cheese
