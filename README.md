@@ -4,7 +4,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## How to use
 
-- Be sure how to use either the [Anno Mod Manager](https://www.nexusmods.com/anno1800/mods/35) or the [Anno Mod Loader](https://github.com/xforce/anno1800-mod-loader) directly.
+- Be sure how to use either the [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) mod manager or the [Anno Mod Loader](https://github.com/xforce/anno1800-mod-loader) directly.
 - Make sure you always have the latest version of the Anno Mod Loader installed. Mods won't show up after game updates otherwise.
 - Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases) page.
 
@@ -15,6 +15,25 @@ Versions are always kept compatible, except when game updates force me to do dif
 Rebalancing of productions may only happen when the first version number changes, but they are still save to use in existing savegames.
 
 See full [changelog](./doc/CHANGELOG.md).
+
+## v5 Update Guide
+
+### Install
+
+Mod names have changed, most notably they got `(Jakob)` at the end to help you manage bigger collections.
+
+That unfortunately means you need to take extra care updating this time.
+
+- Easy way: Install via [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases).
+
+- Manual way: Delete all v4 mods before you install v5, mostly because folder names have changed.
+
+### In-game Changes
+
+In-game changes, that need your attention:
+
+- Upgradable Workers now have Tea as mandatory need with Cheese moving to alternative needs.
+- Pescatarians have changed and rebalanced needs. Check your islands if you need to adjust your productions.
 
 ## Population Tier Mods
 
