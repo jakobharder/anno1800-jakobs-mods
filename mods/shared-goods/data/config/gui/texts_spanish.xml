@@ -148,11 +148,24 @@
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
     <Text>Food</Text>
   </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+    <Text>Food</Text>
+  </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
     <Text>Canned Food</Text>
   </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+    <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
+    <Text>Hot Beverages</Text>
+  </ModOp>
 
   <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010846</GUID>
+      <Text>Basic Food</Text>
+    </Text>
     <Text>
       <GUID>1500010808</GUID>
       <Text>Alternative Needs</Text>
