@@ -2679,7 +2679,7 @@
     </Asset>
   </ModOp>
   <!-- Build Menu -->
-  <ModOp Type="addPrevSibling" GUID="25000197" Path="/Values/ConstructionCategory/BuildingList/Item[Building='501823']">
+  <ModOp Type="addPrevSibling" GUID="500116" Path="/Values/ConstructionCategory/BuildingList/Item[Building='501823']">
     <Item>
       <Building>1500010223</Building>
     </Item>
@@ -2873,9 +2873,9 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- city menu: insert after pescatarian menu, vanilla farmer, fallback append GUID='500944' -->
-  <!-- <ModOp Type="addNextSibling" Path="//Asset[Values/Standard/GUID='500944']/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186'][last()]"> -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186'))][last()]">
+  <!-- city menu: insert after pescatarian menu, vanilla farmer, fallback append GUID='500092' -->
+  <!-- <ModOp Type="addNextSibling" Path="//Asset[Values/Standard/GUID='500092']/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186'][last()]"> -->
+  <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186'))][last()]">
     <Item>
       <Building>1500010212</Building>
     </Item>

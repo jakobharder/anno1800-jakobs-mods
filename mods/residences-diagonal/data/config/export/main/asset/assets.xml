@@ -755,7 +755,7 @@
     </Item>
   </ModOp>
   <!-- city menu: insert after upgradable workers, fallbacks: pescatarians, farmers, append -->
-    <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or Building='1500010212' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186') and not(../Item/Building='1500010212'))][last()]">
+    <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or Building='1500010212' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186') and not(../Item/Building='1500010212'))][last()]">
     <Item>
       <Building>1500010403</Building>
     </Item>
