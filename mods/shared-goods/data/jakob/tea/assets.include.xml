@@ -49,7 +49,7 @@
         <FactoryBase>
           <FactoryOutputs>
             <Item>
-              <Product>1500010849</Product>
+              <Product>5383</Product>
               <Amount>1</Amount>
               <StorageAmount>1</StorageAmount>
             </Item>
@@ -141,13 +141,7 @@
         </Object>
         <Mesh />
         <Selection>
-          <OnSelection>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-            <Values>
-              <ActionList />
-            </Values>
-          </OnSelection>
-          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
           <Colors>
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
@@ -179,7 +173,7 @@
         <FactoryBase>
           <FactoryInputs>
             <Item>
-              <Product>1500010849</Product>
+              <Product>5383</Product>
               <Amount>1</Amount>
               <StorageAmount>2</StorageAmount>
             </Item>
@@ -251,7 +245,7 @@
         <EcoSystemProvider />
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>Product</Template>
       <Values>
         <Standard>
@@ -276,7 +270,7 @@
           <BaseMorale>10</BaseMorale>
         </ExpeditionAttribute>
       </Values>
-    </Asset>
+    </Asset> -->
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
@@ -402,7 +396,7 @@
         <FactoryUpgrade>
           <AdditionalOutput>
             <Item>
-              <Product>1500010849</Product>
+              <Product>5383</Product>
               <AdditionalOutputCycle>2</AdditionalOutputCycle>
               <Amount>1</Amount>
             </Item>
@@ -424,23 +418,23 @@
     </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
-  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
+  <!-- <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
     <Item>
       <Product>1500010849</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- product lists: after coffee -->
-  <ModOp Type="addNextSibling" GUID="502020,502066,502007" Path="/Values/ProductList/List/Item[Product='120032' and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- <ModOp Type="addNextSibling" GUID="502020,502066,502007" Path="/Values/ProductList/List/Item[Product='120032' and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010849</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- product lists: after furs -->
-  <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[Product='120031' and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[Product='120031' and not(../Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1500010849</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- build menu -->
   <ModOp Type="replace" GUID="500902" Path="/Values/Standard/IconFilename">
     <IconFilename>data\jakob\tea\tea_maker\icon_tea_menu.png</IconFilename>

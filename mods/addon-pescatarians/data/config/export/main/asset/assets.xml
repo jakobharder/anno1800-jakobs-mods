@@ -719,6 +719,12 @@
     </Item>
   </ModOp>
 
+  <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='6364']/Needs">
+    <Item>
+      <BonusNeed>135233</BonusNeed>
+    </Item>
+  </ModOp>
+
   <!-- TODO EconomyFeature -->
 
   <!-- # Need: Potatoes -->
@@ -1818,7 +1824,7 @@
   <!-- # Service: Community Center -->
   <ModOp GUID='1010372' Type="addNextSibling">
     <Asset>
-      <Template>PublicServiceBuilding</Template>
+      <Template>JakobPublicServiceWithMarket</Template>
       <Values>
         <Standard>
           <GUID>1500010100</GUID>
@@ -2075,7 +2081,7 @@
     </Asset>
   </ModOp>
   <!-- insert after market in city and farmers menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500944,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
+  <ModOp Type="addNextSibling" GUID='500092,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
     <Item>
       <Building>1500010186</Building>
     </Item>

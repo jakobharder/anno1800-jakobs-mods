@@ -169,7 +169,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       </Values>
     </Asset>
     <Asset>
-      <Template>PublicServiceBuilding</Template>
+      <Template>JakobBuffFactory</Template>
       <Values>
         <Standard>
           <GUID>1500010015</GUID>
@@ -252,15 +252,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Fire>
           </Infectable>
         </IncidentInfectable>
-        <Industrializable>
-          <!-- disable electricity -->
-          <BoostedByIndustrialization>0</BoostedByIndustrialization>
-        </Industrializable>
-        <Electrifiable>
-          <ElectricityBoost>0</ElectricityBoost>
-        </Electrifiable>
         <LogisticNode />
-        <Factory7 />
         <FactoryBase />
         <BuffFactory>
           <BaseBuff>1500010012</BaseBuff> <!-- pig farm -->
@@ -276,12 +268,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <ProductionBuffDistance>10</ProductionBuffDistance>
         </BuffFactory>
         <!-- and now a hack to to highlight at least production buildings when building -->
-        <ItemContainer>
+        <!-- <ItemContainer>
           <SocketCount>0</SocketCount>
           <SocketAllocation>RadiusBuilding</SocketAllocation>
           <SocketScope>Radius</SocketScope>
           <SocketScopeRadius>10</SocketScopeRadius>
-        </ItemContainer>
+        </ItemContainer> -->
         <UpgradeList>
           <!-- use forwardbuff on self to get a 3rd buff -->
           <DefaultBuff>1500010038</DefaultBuff>

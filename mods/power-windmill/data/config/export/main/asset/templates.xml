@@ -1,0 +1,116 @@
+<ModOps>
+  <ModOp Type="addNextSibling" Path="//Template[Name='PowerplantBuilding']">
+    <Template>
+      <Name>JakobPowerplantWithRadius</Name>
+      <Properties>
+        <Standard />
+        <Building>
+          <BuildingType>Factory</BuildingType>
+          <BuildingCategoryName>100003</BuildingCategoryName>
+        </Building>
+        <Blocking />
+        <Cost />
+        <Object>
+          <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        </Object>
+        <Mesh />
+        <Selection>
+          <GUIType>Production</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text />
+        <Constructable>
+          <DestructionCategory>Production</DestructionCategory>
+        </Constructable>
+        <Locked />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203995</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <LogisticNode>
+          <TransporterCountMax>0</TransporterCountMax>
+          <PathLayers>Street;Railway</PathLayers>
+        </LogisticNode>
+        <AmbientMoodProvider />
+        <Maintenance>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Attackable>
+          <HasRuinState>1</HasRuinState>
+        </Attackable>
+        <Pausable>
+          <CanPauseManually>1</CanPauseManually>
+        </Pausable>
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>0</Base>
+              <Communication>FireIndustry</Communication>
+            </Fire>
+            <Riot>
+              <Communication>RiotIndustry</Communication>
+              <InitiallySpreadToSameGUID>1</InitiallySpreadToSameGUID>
+            </Riot>
+            <Illness>
+              <Base>0</Base>
+              <Communication>IllnessIndustry</Communication>
+            </Illness>
+            <Explosion>
+              <Communication>ExplosionIndustry</Communication>
+            </Explosion>
+          </Infectable>
+        </IncidentInfectable>
+        <Powerplant />
+        <FactoryBase />
+        <Culture>
+          <CultureType>Factory</CultureType>
+        </Culture>
+        <PublicService>
+          <FullSatisfactionDistance>35</FullSatisfactionDistance>
+          <NoSatisfactionDistance>35</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1010354</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+        <ItemContainer>
+          <SocketScope>Radius</SocketScope>
+        </ItemContainer>
+      </Properties>
+    </Template>
+  </ModOp>
+</ModOps>

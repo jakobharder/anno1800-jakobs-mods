@@ -274,7 +274,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       </Values>
     </Asset>
     <Asset>
-      <Template>PowerplantBuilding</Template>
+      <Template>JakobCoalPowerplant</Template>
       <Values>
         <Standard>
           <GUID>1500010035</GUID>
@@ -656,7 +656,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <!-- # Fuel Pump Station -->
   <ModOp GUID='118571' Type="addNextSibling">
     <Asset>
-      <BaseAssetGUID>118571</BaseAssetGUID>
+      <Template>JakobFactoryWithModules</Template>
       <Values>
         <Standard>
           <GUID>1500010467</GUID>
@@ -664,16 +664,80 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data\jakob\buildings\production\fuel_pump\icon_fuel_pump_station.png</IconFilename>
           <InfoDescription>269752</InfoDescription>
         </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\production\fuel_pump\fuel_station.cfg</Filename>
+              <Filename>data\jakob\buildings\production\fuel_pump\fuel_station_colony.cfg</Filename>
             </Item>
           </Variations>
         </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
         </Locked>
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>270111</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
         <FactoryBase>
           <FactoryInputs />
           <FactoryOutputs>
@@ -695,6 +759,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <PathLayers>Street</PathLayers>
           <NeedsTransporterQueue>0</NeedsTransporterQueue>
         </LogisticNode>
+        <AmbientMoodProvider />
         <Maintenance>
           <Maintenances>
             <Item>
@@ -709,6 +774,34 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>3500</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Explosion>
+            <DamageExplosionChance>10</DamageExplosionChance>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>15</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Explosion>
+              <BaseChance>4</BaseChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable>
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Culture />
+        <QuestObject />
+        <Electrifiable />
+        <EcoSystemProvider />
         <ModuleOwner>
           <ModuleLimits>
             <Main>
@@ -728,7 +821,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
   <ModOp GUID='269840' Type="addNextSibling">
     <Asset>
-      <BaseAssetGUID>269840</BaseAssetGUID>
+      <Template>JakobFactoryWithModules</Template>
       <Values>
         <Standard>
           <GUID>1500010468</GUID>
@@ -736,6 +829,41 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data\jakob\buildings\production\fuel_pump\icon_fuel_pump_station.png</IconFilename>
           <InfoDescription>269752</InfoDescription>
         </Standard>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Blocking>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>50</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>40</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Object>
           <Variations>
             <Item>
@@ -743,9 +871,38 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Variations>
         </Object>
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+          <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
         </Locked>
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>270111</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
         <FactoryBase>
           <FactoryInputs />
           <FactoryOutputs>
@@ -767,6 +924,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <PathLayers>Street</PathLayers>
           <NeedsTransporterQueue>0</NeedsTransporterQueue>
         </LogisticNode>
+        <AmbientMoodProvider />
         <Maintenance>
           <Maintenances>
             <Item>
@@ -781,6 +939,34 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>3500</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Explosion>
+            <DamageExplosionChance>10</DamageExplosionChance>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>15</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Explosion>
+              <BaseChance>4</BaseChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable>
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Culture />
+        <QuestObject />
+        <Electrifiable />
+        <EcoSystemProvider />
         <ModuleOwner>
           <ModuleLimits>
             <Main>
@@ -974,14 +1160,14 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     </Asset>
   </ModOp>
   <!-- remove windmill by first adding it and then deleting all occurences to avoid not found warnings -->
-  <ModOp Type="add" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList">
+  <ModOp Type="add" GUID="500092,25000192" Path="/Values/ConstructionCategory/BuildingList">
     <Item>
       <Building>1500010001</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500944,25000192" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']" />
+  <ModOp Type="remove" GUID="500092,25000192" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']" />
   <!-- insert all after gas power plant in city menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='117559' or (not(../Item/Building='117559'))][last()]">
+  <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='117559' or (not(../Item/Building='117559'))][last()]">
     <Item>
       <Building>1500010030</Building>
     </Item>
