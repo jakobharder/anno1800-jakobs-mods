@@ -1,0 +1,243 @@
+<ModOps>
+  <ModOp Type="addNextSibling" Path="//Template[Name='PowerplantBuilding']">
+    <Template>
+      <Name>JakobCoalPowerplant</Name>
+      <Properties>
+        <Standard />
+        <Building>
+          <BuildingType>Factory</BuildingType>
+          <BuildingCategoryName>100003</BuildingCategoryName>
+        </Building>
+        <Blocking />
+        <Cost />
+        <Object>
+          <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        </Object>
+        <Mesh />
+        <Selection>
+          <GUIType>Production</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text />
+        <Constructable>
+          <DestructionCategory>Production</DestructionCategory>
+        </Constructable>
+        <Locked />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203995</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <LogisticNode>
+          <TransporterCountMax>0</TransporterCountMax>
+          <PathLayers>Street;Railway</PathLayers>
+        </LogisticNode>
+        <AmbientMoodProvider />
+        <Maintenance>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Attackable>
+          <HasRuinState>1</HasRuinState>
+        </Attackable>
+        <Pausable>
+          <CanPauseManually>1</CanPauseManually>
+        </Pausable>
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>0</Base>
+              <Communication>FireIndustry</Communication>
+            </Fire>
+            <Riot>
+              <Communication>RiotIndustry</Communication>
+              <InitiallySpreadToSameGUID>1</InitiallySpreadToSameGUID>
+            </Riot>
+            <Illness>
+              <Base>0</Base>
+              <Communication>IllnessIndustry</Communication>
+            </Illness>
+            <Explosion>
+              <Communication>ExplosionIndustry</Communication>
+            </Explosion>
+          </Infectable>
+        </IncidentInfectable>
+        <Powerplant />
+        <FactoryBase />
+        <Culture>
+          <CultureType>Factory</CultureType>
+        </Culture>
+        <PublicService>
+          <FullSatisfactionDistance>35</FullSatisfactionDistance>
+          <NoSatisfactionDistance>35</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1010354</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+        <ItemContainer>
+          <SocketScope>Radius</SocketScope>
+        </ItemContainer>
+      </Properties>
+    </Template>
+    <Template>
+      <Name>JakobFactoryWithModules</Name>
+      <Properties>
+        <Standard>
+          <InfoDescription>11143</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingType>Factory</BuildingType>
+          <BuildingCategoryName>100000</BuildingCategoryName>
+        </Building>
+        <Blocking />
+        <Cost />
+        <Object>
+          <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        </Object>
+        <Mesh />
+        <Selection>
+          <GUIType>Production</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text />
+        <Constructable>
+          <DestructionCategory>Production</DestructionCategory>
+        </Constructable>
+        <Locked />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>202368</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203995</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <ExplosionOneShots>
+              <Item>
+                <Sound>203849</Sound>
+              </Item>
+            </ExplosionOneShots>
+          </IncidentSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
+        <FactoryBase />
+        <LogisticNode />
+        <AmbientMoodProvider>
+          <DynamicEnvironmentType>Building_Industry</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <ConsumerPriority>1</ConsumerPriority>
+        </Maintenance>
+        <Attackable>
+          <HasRuinState>1</HasRuinState>
+          <SelfHealPerHealTick>300</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable>
+          <CanPauseManually>1</CanPauseManually>
+        </Pausable>
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Communication>FireIndustry</Communication>
+            </Fire>
+            <Riot>
+              <Communication>RiotIndustry</Communication>
+              <InitiallySpreadToSameGUID>1</InitiallySpreadToSameGUID>
+            </Riot>
+            <Illness>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+              <Communication>IllnessIndustry</Communication>
+            </Illness>
+            <Explosion>
+              <Communication>ExplosionIndustry</Communication>
+            </Explosion>
+          </Infectable>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture>
+          <CultureType>Factory</CultureType>
+        </Culture>
+        <QuestObject />
+        <Electrifiable />
+        <EcoSystemProvider />
+        <ModuleOwner>
+          <ModuleBuildRadius>10</ModuleBuildRadius>
+          <ImplicitProductivityModules>0</ImplicitProductivityModules>
+        </ModuleOwner>
+      </Properties>
+    </Template>
+  </ModOp>
+</ModOps>
