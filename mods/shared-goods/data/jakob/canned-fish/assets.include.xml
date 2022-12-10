@@ -371,7 +371,7 @@
         <Standard>
           <GUID>1500010121</GUID>
           <Name>fish_cannery</Name>
-          <IconFilename>data\jakob\canned-fish\fish_cannery\icon_canned_alt.png</IconFilename>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -627,6 +627,16 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010951</GUID>
+          <Name>Canned Fish Alt Icon</Name>
+          <IconFilename>data\jakob\canned-fish\fish_cannery\icon_canned_alt.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- add to StandardMarketplaceModerateStorageList -->
   <!-- <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010217' and not(../Item/Product='1500010120')] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[last()]">
@@ -646,6 +656,7 @@
   <ModOp Type="add" GUID="500008" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010121</Building>
+      <ForceIcon>1500010951</ForceIcon>
       <Tier2>
         <Item>
           <Building>1010305</Building>

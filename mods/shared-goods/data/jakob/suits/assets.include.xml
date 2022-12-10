@@ -552,7 +552,7 @@
         <Standard>
           <GUID>1500010128</GUID>
           <Name>suits_maker</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits_alt.png</IconFilename>
+          <IconFilename>products\suits\icon_suits.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -896,18 +896,16 @@
             </Item>
           </AdditionalOutput>
         </FactoryUpgrade>
-        <BuildingUpgrade />
-        <Buff />
-        <CultureUpgrade />
-        <ModuleOwnerUpgrade />
-        <IncidentInfectableUpgrade />
-        <PowerplantUpgrade />
-        <IndustrializableUpgrade />
-        <ItemContainerUpgrade />
-        <IncidentInfluencerUpgrade />
-        <IrrigationUpgrade />
-        <EcoSystemProviderUpgrade />
-        <ResourceUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010955</GUID>
+          <Name>Suits Alt Icon</Name>
+          <IconFilename>data\jakob\ui\icons\icon_suits_alt.png</IconFilename>
+        </Standard>
       </Values>
     </Asset>
   </ModOp>
@@ -947,6 +945,7 @@
   <ModOp Type="add" GUID="500019" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010128</Building>
+      <ForceIcon>1500010955</ForceIcon>
       <Tier2>
         <Item>
           <Building>1500010126</Building>

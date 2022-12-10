@@ -9,7 +9,7 @@
         <Standard>
           <GUID>1500010835</GUID>
           <Name>Sauerkraut Kitchen</Name>
-          <IconFilename>data\jakob\pickled-vegetables\kitchen\icon_vegetables_alt.png</IconFilename>
+          <IconFilename>products\pickled-vegetables\icon_vegetables.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -189,6 +189,16 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010953</GUID>
+          <Name>Pickled Vegetables Alt Icon</Name>
+          <IconFilename>data\jakob\pickled-vegetables\kitchen\icon_vegetables_alt.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- build menu -->
   <ModOp Type="replace" GUID="500004" Path="/Values/Standard/IconFilename">
@@ -197,6 +207,7 @@
   <ModOp Type="add" GUID="500004" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010835</Building>
+      <ForceIcon>1500010953</ForceIcon>
       <Tier2>
         <Item>
           <Building>1500010830</Building>

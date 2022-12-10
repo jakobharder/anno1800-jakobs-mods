@@ -126,7 +126,7 @@
         <Standard>
           <GUID>1500010103</GUID>
           <Name>cheese_dairy</Name>
-          <IconFilename>data\jakob\cheese\dairy\icon_cheese_alt.png</IconFilename>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -410,6 +410,16 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010952</GUID>
+          <Name>Cheese Alt Icon</Name>
+          <IconFilename>data\jakob\cheese\dairy\icon_cheese_alt.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: end -->
   <!-- <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
@@ -442,6 +452,7 @@
   <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010103</Building>
+      <ForceIcon>1500010952</ForceIcon>
       <Tier2>
         <Item>
           <Building>1500010104</Building>

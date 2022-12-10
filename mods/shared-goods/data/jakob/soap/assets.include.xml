@@ -27,7 +27,7 @@
         <Standard>
           <GUID>1500010108</GUID>
           <Name>olive_soap_factory</Name>
-          <IconFilename>data\jakob\soap\olive_soap_factory\icon_soap_alt.png</IconFilename>
+          <IconFilename>products\olive-soap\icon_olive_soap.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -189,6 +189,16 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010954</GUID>
+          <Name>Olive Soap Alt Icon</Name>
+          <IconFilename>data\jakob\soap\olive_soap_factory\icon_soap_alt.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- OW consumables, workers menu: insert after beer -->
   <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
@@ -202,6 +212,7 @@
   <ModOp Type="add" GUID="25000220" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010108</Building>
+      <ForceIcon>1500010954</ForceIcon>
       <Tier2>
         <Item>
           <Building>1500010107</Building>
