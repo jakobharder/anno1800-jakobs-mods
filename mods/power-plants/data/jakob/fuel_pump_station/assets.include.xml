@@ -8,7 +8,7 @@
         <Standard>
           <GUID>1500010467</GUID>
           <Name>Fuel Pump Station</Name>
-          <IconFilename>data\jakob\buildings\fuel_pump_station\icon_fuel_pump_station.png</IconFilename>
+          <IconFilename>data\jakob\fuel_pump_station\icon_fuel_pump_station.png</IconFilename>
           <InfoDescription>269752</InfoDescription>
         </Standard>
         <Building>
@@ -49,18 +49,12 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\fuel_pump_station\fuel_station_colony.cfg</Filename>
+              <Filename>data\jakob\fuel_pump_station\fuel_station_colony.cfg</Filename>
             </Item>
           </Variations>
         </Object>
         <Mesh />
         <Selection>
-          <OnSelection>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-            <Values>
-              <ActionList />
-            </Values>
-          </OnSelection>
           <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
         </Selection>
         <Constructable />
@@ -99,6 +93,7 @@
           <ProductivityPoints>1</ProductivityPoints>
           <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
           <IsMainFactory>0</IsMainFactory>
+          <MissingConnectionInfolayer>0</MissingConnectionInfolayer>
         </FactoryBase>
         <LogisticNode>
           <TransporterCountMax>5</TransporterCountMax>
@@ -173,7 +168,7 @@
         <Standard>
           <GUID>1500010468</GUID>
           <Name>Fuel Pump Station Colony</Name>
-          <IconFilename>data\jakob\buildings\fuel_pump_station\icon_fuel_pump_station.png</IconFilename>
+          <IconFilename>data\jakob\fuel_pump_station\icon_fuel_pump_station.png</IconFilename>
           <InfoDescription>269752</InfoDescription>
         </Standard>
         <Building>
@@ -214,7 +209,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\fuel_pump_station\fuel_station_colony.cfg</Filename>
+              <Filename>data\jakob\fuel_pump_station\fuel_station_colony.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -384,4 +379,14 @@
       <Building>1500010468</Building>
     </Item>
   </ModOp>
+
+  <!-- add to maintenance, production, public -->
+  <ModOp Type="add" GUID='368,6000018,190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010467</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010468</GUID>
+    </Item>
+</ModOp>
 </ModOps>
