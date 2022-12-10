@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.0.2
+
+- Fixed AI not progression past farmers when playing Pescatarians
+- Fixed crash when selecting Commercial Street Warehouse
+- Fixed Modular Sewing Machines unlocked too early
+
 ## 5 - Pescatarians v2 and Alternative Needs
 
 Please delete all previous mods from this collection, or use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) to install.
