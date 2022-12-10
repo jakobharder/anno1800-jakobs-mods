@@ -309,8 +309,33 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010949</GUID>
+          <Name>Alternative &amp; Luxury Need</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010950</GUID>
+          <Name>Alternative &amp; Basic Need</Name>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <ModOp Type="add" GUID="1500010154,1500010108,1500010830,1500010835,1500010103,1500010121,1500010128" Path="/Values/Building">
     <BuildingCategoryName>1500010159</BuildingCategoryName>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="1500010106" Path="/Values/Product/ProductCategory">
+    <ProductCategory>1500010949</ProductCategory>
+  </ModOp>
+  <ModOp Type="replace" GUID="1500010120,1500010102,1500010831,1500010127,1500010847,1500010153,1500010836" Path="/Values/Product/ProductCategory">
+    <ProductCategory>1500010950</ProductCategory>
   </ModOp>
 </ModOps>

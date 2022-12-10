@@ -1,0 +1,109 @@
+<ModOps>
+  <ModOp Type="addNextSibling" Path="//Template[Name='PublicServiceBuilding']">
+    <Template>
+      <Name>JakobBuffFactory</Name>
+      <Properties>
+        <Standard>
+          <InfoDescription>11144</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingType>Factory</BuildingType>
+          <BuildingCategoryName>100003</BuildingCategoryName>
+        </Building>
+        <Blocking />
+        <Cost />
+        <Object>
+          <IgnoreForMinimapGeneration>1</IgnoreForMinimapGeneration>
+        </Object>
+        <Mesh />
+        <Selection>
+          <GUIType>Production</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Text />
+        <Constructable>
+          <DestructionCategory>Production</DestructionCategory>
+        </Constructable>
+        <Locked />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203994</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <ExplosionOneShots>
+              <Item>
+                <Sound>203849</Sound>
+              </Item>
+            </ExplosionOneShots>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <LogisticNode>
+          <TransporterCountMax>0</TransporterCountMax>
+          <NeedsTransporterQueue>0</NeedsTransporterQueue>
+        </LogisticNode>
+        <PublicService>
+          <FunctionDescription>100364</FunctionDescription>
+        </PublicService>
+        <AmbientMoodProvider />
+        <Maintenance>
+          <IncomeCategory>PublicServiceBuildings</IncomeCategory>
+        </Maintenance>
+        <Attackable>
+          <HasRuinState>1</HasRuinState>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>0</Base>
+            </Fire>
+            <Riot>
+              <Base>0</Base>
+            </Riot>
+            <Illness>
+              <Base>0</Base>
+            </Illness>
+          </Infectable>
+        </IncidentInfectable>
+        <Culture />
+        <FactoryBase />
+        <BuffFactory>
+          <BaseBuffScope>Radius</BaseBuffScope>
+          <ProvidesPublicServiceNeed>1</ProvidesPublicServiceNeed>
+        </BuffFactory>
+      </Properties>
+    </Template>
+  </ModOp>
+</ModOps>

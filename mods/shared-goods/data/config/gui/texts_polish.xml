@@ -156,6 +156,10 @@
       <Text>Farma warzyw</Text>
     </Text>
     <Text>
+      <GUID>1500010944</GUID>
+      <Text>Pole warzyw</Text>
+    </Text>
+    <Text>
       <GUID>1500010835</GUID>
       <Text>Kuchnia</Text>
     </Text>
@@ -199,8 +203,17 @@
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
     <Text>Żywność</Text>
   </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+    <Text>Food</Text>
+  </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
     <Text>Żywność konserwowa</Text>
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+    <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
+    <Text>Hot Beverages</Text>
   </ModOp>
 
   <ModOp Type="add" Path="/TextExport/Texts">
@@ -215,6 +228,14 @@
     <Text>
       <GUID>1500010159</GUID>
       <Text>Alternatywne potrzeby</Text>
+    </Text>
+    <Text>
+      <GUID>1500010949</GUID>
+      <Text>Alternatywna &amp; Potrzeba luksusowa</Text>
+    </Text>
+    <Text>
+      <GUID>1500010950</GUID>
+      <Text>Alternatywna &amp; Potrzeba podstawowa</Text>
     </Text>
   </ModOp>
 </ModOps>

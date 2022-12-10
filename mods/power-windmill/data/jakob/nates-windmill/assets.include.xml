@@ -7,7 +7,7 @@
   <!-- Nate's Windmill -->
   <ModOp GUID='100780' Type="addNextSibling">
     <Asset>
-      <Template>PublicServiceBuilding</Template>
+      <Template>JakobPowerplantWithRadius</Template>
       <Values>
         <Standard>
           <GUID>1500010001</GUID>
@@ -95,6 +95,10 @@
           </Infectable>
         </IncidentInfectable>
         <Infolayer />
+        <LogisticNode>
+          <TransporterCountMax>1</TransporterCountMax>
+          <PathLayers>Street</PathLayers>
+        </LogisticNode>
         <ItemContainer>
           <!-- prevent overlapping with guild houses and other wind power plants -->
           <SocketCount>0</SocketCount>
@@ -102,12 +106,10 @@
           <SocketScope>Radius</SocketScope>
           <SocketScopeRadius>5</SocketScopeRadius>
         </ItemContainer>
-        <Culture />
 
         <!-- provide electricity, the power plant way -->
         <FactoryBase />
         <Powerplant>
-          <!-- industry power supply, visual power lines? -->
           <IndustrializationDistance>6</IndustrializationDistance>
         </Powerplant>
         <PublicService>
@@ -198,7 +200,7 @@
     </Item>
   </ModOp>
   <!-- Old World Menu Sorting City, insert after oil power plant -->
-  <ModOp Type="addNextSibling" GUID='500944' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
+  <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
     <Item>
       <Building>1500010001</Building>
     </Item>

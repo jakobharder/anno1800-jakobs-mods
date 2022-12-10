@@ -21,18 +21,18 @@
 
   <!-- # Need: Cheese -->
   <ModOp GUID='1010263' Type="addNextSibling">
-    <Asset>
+    <!-- <Asset>
       <Template>Product</Template>
       <Values>
         <Standard>
-          <GUID>1440005</GUID> <!-- New Horizon GUID/product; bundled with permission -->
+          <GUID>1440005</GUID>
           <Name>milk</Name>
           <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_milk.png</IconFilename>
         </Standard>
         <Locked />
         <Product>
           <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11702</ProductCategory> <!-- natural products -->
+          <ProductCategory>11702</ProductCategory>
           <BasePrice>20</BasePrice>
           <CivLevel>2</CivLevel>
           <AssociatedRegion>Moderate;Meta</AssociatedRegion>
@@ -41,15 +41,15 @@
               <RegionType>Moderate</RegionType>
             </Item>
             <Item>
-              <RegionType>Meta</RegionType> <!-- New Horizon: Asia -->
+              <RegionType>Meta</RegionType>
             </Item>
           </ProductionRegions>
         </Product>
-        <ExpeditionAttribute> <!-- TODO make edible --> 
+        <ExpeditionAttribute>
           <BaseMorale>5</BaseMorale>
         </ExpeditionAttribute>
       </Values>
-    </Asset>
+    </Asset> -->
     <Asset>
       <BaseAssetGUID>1010263</BaseAssetGUID>
       <Values>
@@ -97,7 +97,7 @@
         <FactoryBase>
           <FactoryOutputs>
             <Item>
-              <Product>1440005</Product>
+              <Product>5385</Product>
               <Amount>1</Amount>
               <StorageAmount>4</StorageAmount>
             </Item>
@@ -175,7 +175,7 @@
         </Object>
         <Mesh />
         <Selection>
-          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
           <Colors>
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
@@ -206,7 +206,7 @@
         <FactoryBase>
           <FactoryInputs>
             <Item>
-              <Product>1440005</Product>
+              <Product>5385</Product>
               <Amount>1</Amount>
               <StorageAmount>4</StorageAmount>
             </Item>
@@ -305,7 +305,7 @@
         <AssetPool>
           <AssetList>
             <Item>
-              <Asset>1440005</Asset>
+              <Asset>5385</Asset>
             </Item>
             <Item>
               <Asset>1500010102</Asset>
@@ -412,23 +412,23 @@
     </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: end -->
-  <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
+  <!-- <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
     <Item>
       <Product>1440005</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- product lists: after sausages -->
-  <ModOp Type="addNextSibling" GUID="502018,502005" Path="/Values/ProductList/List/Item[Product='1010238' and not(../Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- <ModOp Type="addNextSibling" GUID="502018,502005" Path="/Values/ProductList/List/Item[Product='1010238' and not(../Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1440005</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- product lists: after pigs -->
-  <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[Product='1010199' and not(../Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
+  <!-- <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[Product='1010199' and not(../Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
     <Item>
       <Product>1440005</Product>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- OW consumables, workers menu: insert after beer -->
   <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
@@ -509,7 +509,7 @@
         <FactoryBase>
           <FactoryInputs>
             <Item>
-              <Product>1440005</Product>
+              <Product>5385</Product>
               <Amount>1</Amount>
               <StorageAmount>10</StorageAmount>
             </Item>

@@ -18,7 +18,7 @@
     </Item>
   </ModOp>
   <!-- insert all after boxing area in city menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500946' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101259' or (not(../Item/Building='101259'))][last()]">
+  <ModOp Type="addNextSibling" GUID='500137' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101259' or (not(../Item/Building='101259'))][last()]">
     <Item>
       <Building>1500010456</Building>
     </Item>

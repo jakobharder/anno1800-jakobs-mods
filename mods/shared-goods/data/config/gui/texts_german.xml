@@ -148,6 +148,10 @@
       <Text>Gemüsehof</Text>
     </Text>
     <Text>
+      <GUID>1500010944</GUID>
+      <Text>Gemüsefeld</Text>
+    </Text>
+    <Text>
       <GUID>1500010835</GUID>
       <Text>Küche</Text>
     </Text>
@@ -194,6 +198,12 @@
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
     <Text>Konserven</Text>
   </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+    <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+  </ModOp>
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
+    <Text>Heiße Getränke</Text>
+  </ModOp>
 
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
@@ -207,6 +217,14 @@
     <Text>
       <GUID>1500010159</GUID>
       <Text>Alternative Bedürfnisse</Text>
+    </Text>
+    <Text>
+      <GUID>1500010949</GUID>
+      <Text>Alternativ- &amp; Luxusbedürfnis</Text>
+    </Text>
+    <Text>
+      <GUID>1500010950</GUID>
+      <Text>Alternativ- &amp; Grundbedürfnis</Text>
     </Text>
   </ModOp>
 </ModOps>
