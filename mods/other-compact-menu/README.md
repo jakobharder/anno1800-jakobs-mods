@@ -2,6 +2,12 @@
 
 Combines city construction menu icons into categories: tourists, public services, institutions, malls and administration.
 
+## Changes
+
+### 1.1
+
+- Included NW administration and institutions
+
 ## Notes
 
 Buildings from Muggenstuermer and Xan are included.

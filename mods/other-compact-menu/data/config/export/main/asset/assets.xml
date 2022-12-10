@@ -106,6 +106,46 @@
     </Item>
   </ModOp>
   <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='100415' or Building='1010516' or Building='100586' or Building='1500010050']" />
+  
+  <!-- # Administration NW -->
+  <ModOp Type="addNextSibling" GUID="100415">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010934</GUID>
+          <Name>NW Administration Menu</Name>
+          <IconFilename>data\jakob\icon_administrations_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>101285</Building>
+            </Item>
+            <Item>
+              <Building>101284</Building>
+            </Item>
+            <Item>
+              <Building>101286</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>13108</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='101285' or position()=last()][1]">
+    <Item>
+      <Building>1500010934</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="500137" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>0</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101285' or Building='101284' or Building='101286']" />
 
   <!-- # Institutions -->
   <ModOp Type="addNextSibling" GUID="1010463">
@@ -171,26 +211,26 @@
   </ModOp>
   <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010463' or Building='1010462' or Building='1010464' or Building='2000150010' or Building='1337500011' or Building='1337500012' or Building='1337500001' or Building='1337500002' or Building='1337500018' or Building='1337500019' or Building='2000150036']" />
 
-  <!-- # Malls -->
-  <!-- <ModOp Type="addNextSibling" GUID="135100">
+  <!-- # Institutions NW -->
+  <ModOp Type="addNextSibling" GUID="1010463">
     <Asset>
       <Template>ConstructionCategory</Template>
       <Values>
         <Standard>
           <GUID>1500010933</GUID>
-          <Name>OW Malls Menu</Name>
-          <IconFilename>data\jakob\icon_malls_menu.png</IconFilename>
+          <Name>NW Institutions Menu</Name>
+          <IconFilename>data\jakob\icon_institutions_menu.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>
             <Item>
-              <Building>135100</Building>
+              <Building>101275</Building>
             </Item>
             <Item>
-              <Building>135099</Building>
+              <Building>101274</Building>
             </Item>
             <Item>
-              <Building>134629</Building>
+              <Building>101276</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>13108</CategoryDescription>
@@ -199,74 +239,15 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='135100' or position()=last()][1]">
+  <ModOp Type="addNextSibling" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='101275' or position()=last()][1]">
     <Item>
       <Building>1500010933</Building>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="500092" Path="/Values/ConstructionCategory/BuildingList">
+  <ModOp Type="add" GUID="500137" Path="/Values/ConstructionCategory/BuildingList">
     <Item>
       <Building>0</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='135100' or Building='135099' or Building='134629']" /> -->
-
-
-  <!-- # Services -->
-  <!-- <ModOp Type="addNextSibling" GUID="1010372">
-    <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010934</GUID>
-          <Name>OW Services Menu</Name>
-          <IconFilename>data\jakob\icon_services_menu.png</IconFilename>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1010372</Building>
-            </Item>
-            <Item>
-              <Building>1010358</Building>
-            </Item>
-            <Item>
-              <Building>1010359</Building>
-            </Item>
-            <Item>
-              <Building>1010360</Building>
-            </Item>
-            <Item>
-              <Building>1010361</Building>
-            </Item>
-            <Item>
-              <Building>1010362</Building>
-            </Item>
-            <Item>
-              <Building>1010363</Building>
-            </Item>
-            <Item>
-              <Building>1010365</Building>
-            </Item>
-            <Item>
-              <Building>1010364</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>13108</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or position()=last()][1]">
-    <Item>
-      <Building>1500010934</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="500092" Path="/Values/ConstructionCategory/BuildingList">
-    <Item>
-      <Building>0</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010372' or Building='1010358' or Building='1010359' or Building='1010360' or Building='1010361' or Building='1010362' or Building='1010365' or Building='1010364']" /> -->
+  <ModOp Type="remove" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101275' or Building='101274' or Building='101276']" />
 </ModOps>
