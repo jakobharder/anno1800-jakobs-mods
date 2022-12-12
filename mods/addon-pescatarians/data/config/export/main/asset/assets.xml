@@ -929,13 +929,20 @@
         </Standard>
         <Blocking />
         <Building>
-          <AllowChangeDirection>1</AllowChangeDirection>
           <AllowChangeVariation>1</AllowChangeVariation>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingType>Residence</BuildingType>
           <PickingAsset>1500010143</PickingAsset>
           <AssociatedRegions>Moderate</AssociatedRegions>
         </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
         </Locked>
