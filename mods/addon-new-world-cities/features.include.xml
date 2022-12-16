@@ -7,11 +7,14 @@
 <ModOps>
   
   <!-- Add electrity support to the New World -->
-  <Include File="./data/jakob/nw-electricity/assets.include.xml" ModOpID="PowerPlants" />
+  <Include File="./data/jakob/nw-electricity/assets.include.xml" />
 
   <!-- Power Plants: Oil, Gas, Coal and Wind (if the respective mods for OW are available) -->
-  <Include File="./data/jakob/nw-power-plants/assets.include.xml" ModOpID="PowerPlants" />
+  <Include File="./data/jakob/nw-power-plants/assets.include.xml" />
 
   <!-- NW Construction: Steel, Windows, Concrete -->
-  <Include File="./data/jakob/nw-construction/assets.include.xml" ModOpID="Construction" />
+  <Include File="./data/jakob/nw-construction/assets.include.xml" />
+
+  <!-- Stone/Dirt Pavement Ornaments -->
+  <Include File="./data/jakob/nw-stone-pavement/assets.include.xml" />
 </ModOps>

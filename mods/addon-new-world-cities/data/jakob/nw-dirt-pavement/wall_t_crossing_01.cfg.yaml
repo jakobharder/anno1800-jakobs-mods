@@ -1,0 +1,15 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\dlc10\graphics\buildings\ornaments\hacienda\hacienda_ornaments_wall_t_crossing_01.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data\jakob\nw-dirt-pavement\maps\empty_ground_diff.psd
+      cModelMetallicTex: data\dlc11\graphics\buildings\ornaments\airport\maps\dlc11_airport_ornaments_1x1_empty_colony_ground_metal.psd
+      cModelNormalTex:  data\dlc11\graphics\buildings\ornaments\airport\maps\dlc11_airport_ornaments_1x1_empty_colony_ground_norm.psd
+      # NORMAL_ENABLED: 0
+      # METALLIC_TEX_ENABLED: 0
+      HEIGHT_MAP_ENABLED: 0
+    - xpath: //Config/Decals/Config
+      Extents.x: 0.600000
+      Extents.y: 0.290000
+      Extents.z: 0.600000

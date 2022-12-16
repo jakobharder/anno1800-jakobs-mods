@@ -1,0 +1,273 @@
+<ModOps>
+  
+  <!-- # Ornaments: walls, plaza, ... -->
+  <ModOp Type="addNextSibling" GUID="101255">
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011049</GUID>
+          <Name>NW Stone Pavement</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\icon_empty.png</IconFilename>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>11149</BuildingCategoryName>
+          <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Selection />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/nw-stone-pavement/empty.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable />
+        <Mesh />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>OrnamentalBuilding</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>OrnamentalBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+              </Item>
+              <Item>
+                <Sound>9818759</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>OrnamentalBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>OrnamentalBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+              </Item>
+            </BuildMoveStart>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <FeedbackController />
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentIconInfotip>500276</OrnamentIconInfotip>
+          <OrnamentDescription>3049</OrnamentDescription>
+        </Ornament>
+        <AmbientMoodProvider />
+        <Pausable />
+        <Infolayer />
+        <Culture />
+      </Values>
+    </Asset>
+    <!-- <Asset>
+      <BaseAssetGUID>1500011049</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011048</GUID>
+          <Name>Colorful Plaza</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/ornamental/nw_plaza/cultural_props_1x1_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset> -->
+    <Asset>
+      <BaseAssetGUID>1500011049</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011052</GUID>
+          <Name>Airport Empty</Name>
+          <IconFilename>data\jakob\nw-dirt-pavement\icon_empty.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\empty.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011051</GUID>
+          <Name>Ornaments</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\icon_menu.png</IconFilename>
+          <InfoDescription>611</InfoDescription>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500011052</Building>
+            </Item>
+            <Item>
+              <Building>1500011050</Building>
+            </Item>
+            <Item>
+              <Building>1500011049</Building>
+            </Item>
+            <Item>
+              <Building>1500011048</Building>
+            </Item>
+          </BuildingList>
+        </ConstructionCategory>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25194">
+    <Asset>
+      <BaseAssetGUID>25194</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011050</GUID>
+          <Name>Hacienda wall with airport ground</Name>
+          <IconFilename>data\jakob\nw-dirt-pavement\icon_wall.png</IconFilename>
+        </Standard>
+        <Building>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>25194</Building>
+            </Item>
+            <Item>
+              <Building>25168</Building>
+            </Item>
+            <Item>
+              <Building>25169</Building>
+            </Item>
+            <Item>
+              <Building>1500011050</Building>
+            </Item>
+          </InfluencedByNeighbors>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_straight_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_end_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_corner_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_crossing_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_t_crossing_01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_straight_02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-dirt-pavement\wall_straight_03.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24961</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- New World, Classic Ornaments -->
+  <ModOp Type="add" GUID='500055,500079' Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011051</Building>
+    </Item>
+  </ModOp>
+
+  <!-- New World, Empire of Skies Ornaments -->
+  <ModOp Type="addPrevSibling" GUID='7229' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011052</Building>
+    </Item>
+  </ModOp>
+</ModOps>

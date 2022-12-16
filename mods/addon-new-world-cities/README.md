@@ -29,10 +29,16 @@ Some buildings are a bit slower than their Old World counterpart.
 
 - Enable "Nate's Windmill", "Small Power Plants" and electricity in the New World.
 
-## Other
+## Ornaments
 
-- Fixes the floating celluloid.
+- Dirt pavement ornaments: empty, Hacienda walls
+- Stone pavement ornaments: empty
 
+## Changes
+
+### 1.1
+
+- Added dirt/stone pavement ornaments
 
 ## Translations
 
