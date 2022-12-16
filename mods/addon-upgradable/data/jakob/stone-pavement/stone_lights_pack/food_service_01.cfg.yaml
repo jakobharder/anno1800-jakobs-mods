@@ -1,5 +1,5 @@
 variant: 
-  source: ${annoRda}\data/graphics/buildings/ornamental/cdlc03/food_service_02/food_service_02.cfg
+  source: ${annoRda}\data/graphics/buildings/ornamental/cdlc03/food_service_01/food_service_01.cfg
   modifications:
     - xpath-remove: //Config/Decals
     - xpath-add: //Config
@@ -19,7 +19,7 @@ variant:
             Rotation.z: 0
             Rotation.w: 1
             Scale: 1
-        FileName: data\jakob\ornaments\simple_stone_plaza_1x1.cfg
+        FileName: data\jakob\stone-pavement\empty.cfg
         AdaptTerrainHeight: 1
     - xpath-add: //Config/Files
       Config:
@@ -36,7 +36,7 @@ variant:
             Rotation.z: 0
             Rotation.w: 1
             Scale: 1
-        FileName: data\jakob\ornaments\simple_stone_plaza_1x1.cfg
+        FileName: data\jakob\stone-pavement\empty.cfg
         AdaptTerrainHeight: 1
     - xpath-add: //Config/Files
       Config:
@@ -53,7 +53,7 @@ variant:
             Rotation.z: 0
             Rotation.w: 1
             Scale: 1
-        FileName: data\jakob\ornaments\simple_stone_plaza_1x1.cfg
+        FileName: data\jakob\stone-pavement\empty.cfg
         AdaptTerrainHeight: 1
     - xpath-add: //Config/Files
       Config:
@@ -70,5 +70,5 @@ variant:
             Rotation.z: 0
             Rotation.w: 1
             Scale: 1
-        FileName: data\jakob\ornaments\simple_stone_plaza_1x1.cfg
+        FileName: data\jakob\stone-pavement\empty.cfg
         AdaptTerrainHeight: 1
