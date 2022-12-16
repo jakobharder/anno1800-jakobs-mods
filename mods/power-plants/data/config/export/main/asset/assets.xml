@@ -611,7 +611,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500010459</GUID>
           <Name>oil_power_plant_nw</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_oil.png</IconFilename>
+          <!-- <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_oil.png</IconFilename> -->
         </Standard>
         <Building>
           <AssociatedRegions>Colony01</AssociatedRegions>
@@ -742,36 +742,28 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       </Values>
     </Asset>
     <Asset>
-      <Template>ConstructionCategory</Template>
+      <Template>ProductionChain</Template>
       <Values>
         <Standard>
           <GUID>1500010456</GUID>
-          <Name>power_plants_menu_nw</Name>
-          <IconFilename>data\jakob\ui\icons\icon_nw_power_plant.png</IconFilename>
+          <Name>Gas Power Plant NW</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_gas.png</IconFilename>
         </Standard>
-        <ConstructionCategory>
-          <BuildingList>
+        <ProductionChain>
+          <Building>1500010457</Building>
+          <Tier1>
             <Item>
-              <Building>1500010458</Building> <!-- wind -->
+              <Building>1500010450</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500010453</Building>
+                </Item>
+              </Tier2>
             </Item>
-            <Item>
-              <Building>1500010459</Building> <!-- oil -->
-            </Item>
-            <Item>
-              <Building>1500010453</Building> <!-- waste depot -->
-            </Item>
-            <Item>
-              <Building>1500010450</Building> <!-- biogas plant -->
-            </Item>
-            <Item>
-              <Building>1500010457</Building> <!-- gas -->
-            </Item>
-          </BuildingList>
-          <CategoryDescription>1500010031</CategoryDescription>
-        </ConstructionCategory>
-        <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
-        </Locked>
+          </Tier1>
+          <InfoTipHeight>550</InfoTipHeight>
+        </ProductionChain>
+        <Locked />
       </Values>
     </Asset>
   </ModOp>
@@ -804,6 +796,16 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <ModOp Type="add" GUID='500506' Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010033</Building>
+    </Item>
+  </ModOp>
+  <!-- replace NW oil powerplant -->
+  <ModOp Type="replace" GUID='500916' Path="/Values/ProductionChain/Building">
+    <Building>1500010459</Building>
+  </ModOp>
+  <!-- add to Artista oil chain as Tier1 -->
+  <ModOp Type="add" GUID='7305' Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500010459</Building>
     </Item>
   </ModOp>
 
@@ -936,6 +938,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                         <Asset>1500010457</Asset>
                       </Item>
                       <Item>
+                        <Asset>1500010456</Asset>
+                      </Item>
+                      <Item>
                         <Asset>1500010459</Asset>
                       </Item>
                     </UnhideAssets>
@@ -955,7 +960,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Values>
         <Standard>
           <GUID>1500010463</GUID>
-          <Name>unlock_oil_nw</Name>
+          <Name>Unlock Oil @ 3000 Obreros</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -965,7 +970,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000006</Context>
-                <CounterAmount>4000</CounterAmount>
+                <CounterAmount>3000</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -992,12 +997,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </TriggerSetup>
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010464</GUID>
-          <Name>unlock_gas_nw</Name>
+          <Name>Obsolete: Unlock Gas @ 5000 Obreros</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -1007,7 +1012,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000006</Context>
-                <CounterAmount>8000</CounterAmount>
+                <CounterAmount>5000</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -1021,6 +1026,99 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010457</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset> -->
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010471</GUID>
+          <Name>Unlock Gas @ 5000 Obreros</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>5000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010456</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010470</GUID>
+          <Name>Unlock Oil/Gas @ 900 Artista</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>5403</Context>
+                <CounterAmount>900</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010456</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010459</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
