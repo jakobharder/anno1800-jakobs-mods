@@ -73,7 +73,6 @@
   <!-- # Unlock Charcoal Kiln for all -->
   <ModOp Type="addNextSibling" GUID="1345">
     <Asset>
-      <!-- fallback dump -->
       <Template>fake</Template>
       <Values>
         <Standard>
@@ -86,7 +85,22 @@
     </Asset>
   </ModOp>
   <ModOp Type="remove" GUID="1345" Path="/Values/Locked/DLCDependency | //Values[Standard/GUID='1500010221']/Locked/DLCDependency" />
-  <!-- cleanup -->
+  <ModOp Type="remove" GUID="1500010221" />
+  <!-- # Unlock Steelworks for all -->
+  <ModOp Type="addNextSibling" GUID="6080">
+    <Asset>
+      <Template>fake</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <Locked>
+          <DLCDependency>0</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="remove" GUID="6080" Path="/Values/Locked/DLCDependency | //Values[Standard/GUID='1500010221']/Locked/DLCDependency" />
   <ModOp Type="remove" GUID="1500010221" />
 
   <!-- # Steel Beams -->
@@ -159,10 +173,16 @@
           <Building>1500010700</Building>
           <Tier1>
             <Item>
-              <Building>1500010706</Building> <!-- smelter -->
+              <Building>6080</Building> <!-- smelter -->
               <Tier2>
                 <Item>
-                  <Building>1500010710</Building> <!-- ore -->
+                  <Building>1388</Building> <!-- ore -->
+                  <Tier3>
+                    <Item>
+                      <Building>1500010710</Building> <!-- ore -->
+                      <ForceIcon>1500010719</ForceIcon>
+                    </Item>
+                  </Tier3>
                 </Item>
                 <Item>
                   <Building>1345</Building> <!-- coal -->
@@ -187,7 +207,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\buildings\nw-steel\steel.cfg</Filename>
+              <Filename>data\eoy21\graphics\buildings\production\heavy_02\heavy_02.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -435,6 +455,43 @@
         <Electrifiable></Electrifiable>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010718</GUID>
+          <Name>To Vanilla: Steelworks</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionAlwaysTrue</Template>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>6080</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010706</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="500949" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500005']">
     <Item>
@@ -452,12 +509,12 @@
     <Item>
       <Factory>1500010710</Factory>
     </Item>
-    <Item>
+    <!-- <Item>
       <Factory>1500010709</Factory>
-    </Item>
-    <Item>
+    </Item> -->
+    <!-- <Item>
       <Factory>1500010706</Factory>
-    </Item>
+    </Item> -->
     <Item>
       <Factory>1500010700</Factory>
     </Item>
@@ -861,10 +918,16 @@
               <Building>1500010711</Building> <!-- cement mine -->
             </Item>
             <Item>
-              <Building>1500010706</Building> <!-- smelter -->
+              <Building>6080</Building> <!-- smelter -->
               <Tier2>
                 <Item>
-                  <Building>1500010710</Building> <!-- ore -->
+                  <Building>1388</Building> <!-- ore -->
+                  <Tier3>
+                    <Item>
+                      <Building>1500010710</Building> <!-- ore -->
+                      <ForceIcon>1500010719</ForceIcon>
+                    </Item>
+                  </Tier3>
                 </Item>
                 <Item>
                   <Building>1345</Building> <!-- coal -->
@@ -874,6 +937,16 @@
           </Tier1>
         </ProductionChain>
         <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010719</GUID>
+          <Name>Gold Ore Icon</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_gold_ore.png</IconFilename>
+        </Standard>
       </Values>
     </Asset>
     <Asset>
@@ -1060,9 +1133,9 @@
     <Item>
       <Building>1500010700</Building>
     </Item>
-    <Item>
+    <!-- <Item>
       <Building>1500010706</Building>
-    </Item>
+    </Item> -->
     <Item>
       <Building>1500010709</Building>
     </Item>
@@ -1095,9 +1168,9 @@
     <Item>
       <GUID>1500010700</GUID>
     </Item>
-    <Item>
+    <!-- <Item>
       <GUID>1500010706</GUID>
-    </Item>
+    </Item> -->
     <Item>
       <GUID>1500010709</GUID>
     </Item>
@@ -1175,7 +1248,7 @@
                         <Asset>1500010700</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010706</Asset>
+                        <Asset>6080</Asset>
                       </Item>
                       <Item>
                         <Asset>1345</Asset>
@@ -1216,8 +1289,9 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500010713</GUID> old -->
-          <GUID>1500010717</GUID>
+          <!-- <GUID>1500010713</GUID> < 1.0 -->
+          <!-- <GUID>1500010717</GUID> < 1.1 -->
+          <GUID>1500010720</GUID>
           <Name>Unlock All</Name>
         </Standard>
         <Locked />
@@ -1256,7 +1330,7 @@
                         <Asset>1500010700</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010706</Asset>
+                        <Asset>6080</Asset>
                       </Item>
                       <Item>
                         <Asset>1345</Asset>

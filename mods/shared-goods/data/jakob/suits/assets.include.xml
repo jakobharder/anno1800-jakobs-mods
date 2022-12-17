@@ -142,11 +142,11 @@
         <TriggerSetup />
       </Values>
     </Asset>
-    <Asset>
-      <!--
+    <!-- <Asset>
+      <!- -
         Unlock Pescatarian only goods with community center.
         TODO move this to Pescatarians.
-      -->
+      - ->
       <Template>Trigger</Template>
       <Values>
         <Standard>
@@ -161,7 +161,7 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>ObjectBuilt</PlayerCounter>
-                <Context>1500010100</Context> <!-- community center -->
+                <Context>1500010100</Context>
                 <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
@@ -174,15 +174,6 @@
                   <Action />
                   <ActionUnlockAsset>
                     <UnlockAssets>
-                      <!-- <Item>
-                        <Asset>1500010162</Asset> <!- - wooden accessory asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010166</Asset> <!- - olive soap asset pool - ->
-                      </Item> -->
-                      <!-- <Item>
-                        <Asset>1500010168</Asset> <!- - premium beer asset pool - ->
-                      </Item> -->
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -192,7 +183,7 @@
         </Trigger>
         <TriggerSetup />
       </Values>
-    </Asset>
+    </Asset> -->
   </ModOp>
 
   <!-- # Need: OW Suits -->
