@@ -273,4 +273,29 @@
     </Item>
   </ModOp>
   <ModOp Type="remove" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='7305']" />
+
+  <!-- # Orchards -->
+  <!-- keep in mind others like Taludas do the same, so use guards -->
+  <ModOp Type="addNextSibling" GUID="120055">
+    <Asset>
+      <Template>fallback</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item />
+          </BuildingList>
+        </ConstructionCategory>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='134614'] | //Values[Standard/GUID='1500010221']/ConstructionCategory/BuildingList/Item[last()]">
+    <Item>
+      <Building>7425</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='133004' or Building='133030' or Building='133031' or Building='134614'] | //Values[Standard/GUID='1500010221']/ConstructionCategory/BuildingList/Item[last()]" />
+  <ModOp Type="remove" GUID="1500010221" />
 </ModOps>
