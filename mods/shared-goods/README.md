@@ -14,6 +14,9 @@ No DLCs required.
 Every end product of the production chains can be used as an alternative input for Basic Needs.
 Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counterpart.
 
+If both needs are provided, the alternative is consumed first.
+There is no double consumption.
+
 ## Productions
 
 ### Vegetables (→ Fish)
