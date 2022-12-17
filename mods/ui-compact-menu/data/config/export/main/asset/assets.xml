@@ -298,4 +298,15 @@
   </ModOp>
   <ModOp Type="remove" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='133004' or Building='133030' or Building='133031' or Building='134614'] | //Values[Standard/GUID='1500010221']/ConstructionCategory/BuildingList/Item[last()]" />
   <ModOp Type="remove" GUID="1500010221" />
+  
+  <!-- # Sewing Machines -->
+  <!-- 
+    Move aluminium sewing machines to base sewing machines and replace them.
+  -->
+  <ModOp Type="remove" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='6623']" />
+  <ModOp Type="replace" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='501254']">
+    <Item>
+      <Building>6623</Building>
+    </Item>
+  </ModOp>
 </ModOps>

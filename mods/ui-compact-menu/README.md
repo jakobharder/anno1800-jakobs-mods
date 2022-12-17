@@ -7,7 +7,9 @@ Combines city construction menu icons into categories: tourists, public services
 ### 1.1
 
 - Included NW administration and institutions
-- Merged OW and NW electricity chain in the New World
+- Merged NW Consumable Orchards
+- Removed duplicate NW electricity chain
+- Removed duplicate NW Sewing Machines
 
 ## Notes
 
