@@ -7,6 +7,7 @@ Combines city construction menu icons into categories: tourists, public services
 ### 1.1
 
 - Included NW administration and institutions
+- Merged OW and NW electricity chain in the New World
 
 ## Notes
 
