@@ -12,6 +12,7 @@
 
 ### Added
 
+- Improved Streets: more fitting texture for NW
 - New World Cities: Added stone paving and wall ornaments
 - Compact UI: Added electricity, sewing machines and others in the NW
 - Nate's Windmill: Added iMYA tweak support
