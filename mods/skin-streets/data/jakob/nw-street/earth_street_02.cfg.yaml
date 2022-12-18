@@ -1,0 +1,10 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data/graphics/effects/street/earth/earth_street_02/earth_street_02.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data\jakob\nw-street\maps\earth_street_02_diff.psd
+      # cModelNormalTex:  data/jakob/nw-stone-pavement/maps/empty_ground_norm.psd
+      # NORMAL_ENABLED: 1
+      # METALLIC_TEX_ENABLED: 0
+      # HEIGHT_MAP_ENABLED: 0
