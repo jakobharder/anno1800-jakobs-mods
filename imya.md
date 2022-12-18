@@ -4,7 +4,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Population Tier Mods
 
-![](./doc/population-tiers.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/population-tiers.jpg)
 
 - **[Addon] Upgradable Workers**
 
@@ -29,7 +29,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Service Building Variation Mods
 
-![](./doc/public-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/public-variations.jpg)
 
 - **[Building] New Town Halls**
   (separate build icon)
@@ -54,7 +54,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
   
 ## Industrial Variation Mods
 
-![](./doc/industrial-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/industrial-variations.jpg)
 
 - **[Skin] Factory Variants**
   (Shift+V variations)
@@ -70,7 +70,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Electricity Mods
 
-![](./doc/electricity.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/electricity.jpg)
 
 - **[Building] Nate's Windmill**
 
@@ -88,7 +88,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 ## Residential Variation Mods
 
-![](./doc/residential-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/residential-variations.jpg)
 
 - **[Building\] Diagonal Residences**
   (separate build icon)
