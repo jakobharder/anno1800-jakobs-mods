@@ -1,0 +1,40 @@
+variant: 
+  source: ${annoRda}\data/graphics/buildings/ornamental/cdlc03/food_service_04/food_service_04.cfg
+  modifications:
+    - xpath-remove: //Config/Decals
+    - xpath-add: //Config
+      Files: ""
+    - xpath-add: //Config/Files
+      Config:
+        ConfigType: FILE
+        Transformer:
+          Config:
+            ConfigType: ORIENTATION_TRANSFORM
+            Conditions: 0
+            Position.x: -0.5
+            Position.y: 0
+            Position.z: 0
+            Rotation.x: 0
+            Rotation.y: 0
+            Rotation.z: 0
+            Rotation.w: 1
+            Scale: 1
+        FileName: data\jakob\stone-pavement\empty.cfg
+        AdaptTerrainHeight: 1
+    - xpath-add: //Config/Files
+      Config:
+        ConfigType: FILE
+        Transformer:
+          Config:
+            ConfigType: ORIENTATION_TRANSFORM
+            Conditions: 0
+            Position.x: 0.5
+            Position.y: 0
+            Position.z: 0
+            Rotation.x: 0
+            Rotation.y: 0
+            Rotation.z: 0
+            Rotation.w: 1
+            Scale: 1
+        FileName: data\jakob\stone-pavement\empty.cfg
+        AdaptTerrainHeight: 1

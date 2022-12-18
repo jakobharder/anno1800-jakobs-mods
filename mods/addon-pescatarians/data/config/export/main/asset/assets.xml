@@ -119,7 +119,7 @@
               <Product>1500010836</Product>
               <Amount>0.0006</Amount>
               <SupplyWeight>6</SupplyWeight>
-              <MoneyValue>10</MoneyValue>
+              <MoneyValue>5</MoneyValue>
               <FullWeightPopulationCount>150</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
@@ -135,19 +135,19 @@
               <Product>1500010102</Product>
               <Amount>0.00044</Amount>
               <SupplyWeight>7</SupplyWeight>
-              <MoneyValue>40</MoneyValue>
+              <MoneyValue>20</MoneyValue>
             </Item>
             <Item>
               <Product>1010213</Product>
               <Amount>0.0003</Amount>
               <SupplyWeight>6</SupplyWeight>
-              <MoneyValue>40</MoneyValue>
+              <MoneyValue>20</MoneyValue>
             </Item>
             <Item>
               <Product>1500010127</Product>
               <Amount>0.0008</Amount>
               <SupplyWeight>7</SupplyWeight>
-              <MoneyValue>60</MoneyValue>
+              <MoneyValue>30</MoneyValue>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010144</RequiredBuilding>
@@ -170,7 +170,7 @@
               <Product>1500010120</Product>
               <Amount>0.0004</Amount>
               <SupplyWeight>7</SupplyWeight>
-              <MoneyValue>20</MoneyValue>
+              <MoneyValue>30</MoneyValue>
               <FullWeightPopulationCount>1000</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
@@ -198,7 +198,7 @@
               <Amount>0.0003</Amount>
               <HappinessValue>5</HappinessValue>
               <!-- <SupplyWeight>7</SupplyWeight> -->
-              <MoneyValue>20</MoneyValue>
+              <MoneyValue>40</MoneyValue>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
@@ -208,7 +208,7 @@
                 </Item>
               </RequiredBuildings>
             </Item>
-            <Item>
+            <!-- <Item>
               <Product>1500010825</Product>
               <Amount>0.0002083</Amount>
               <HappinessValue>5</HappinessValue>
@@ -218,7 +218,7 @@
                   <RequiredBuilding>1500010143</RequiredBuilding>
                 </Item>
               </RequiredBuildings>
-            </Item>
+            </Item> -->
             <!-- <Item>
               <Product>114410</Product>
               <Amount>0.0004</Amount>
@@ -239,7 +239,7 @@
               <Product>1500010153</Product>
               <Amount>0.0002</Amount>
               <HappinessValue>5</HappinessValue>
-              <MoneyValue>80</MoneyValue>
+              <MoneyValue>40</MoneyValue>
               <RequiredBuildings>
                 <Item>
                   <RequiredBuilding>1500010143</RequiredBuilding>
@@ -249,7 +249,7 @@
             <Item>
               <Product>1010352</Product>
               <HappinessValue>5</HappinessValue>
-              <MoneyValue>26</MoneyValue>
+              <MoneyValue>10</MoneyValue>
               <FullWeightPopulationCount>500</FullWeightPopulationCount>
               <RequiredBuildings>
                 <Item>
@@ -261,7 +261,7 @@
             <Item>
               <Product>1010353</Product>
               <HappinessValue>1</HappinessValue>
-              <MoneyValue>20</MoneyValue>
+              <MoneyValue>14</MoneyValue>
               <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
               <RequiredBuildings>
                 <Item>
@@ -273,7 +273,7 @@
               <Product>1010206</Product>
               <Amount>0.0003</Amount>
               <HappinessValue>1</HappinessValue>
-              <MoneyValue>40</MoneyValue>
+              <MoneyValue>35</MoneyValue>
               <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
               <RequiredBuildings>
                 <Item>
@@ -364,7 +364,7 @@
               <Product>535</Product>
               <Amount>0.00075</Amount>
               <SupplyWeight>4</SupplyWeight>
-              <MoneyValue>20</MoneyValue>
+              <MoneyValue>7</MoneyValue>
               <AdditionalGlobalUnlockRequirement>
                 <Population>15000002</Population>
                 <MinPopulationAmount>500</MinPopulationAmount>
@@ -376,7 +376,7 @@
               <Product>536</Product>
               <Amount>0.00025</Amount>
               <SupplyWeight>6</SupplyWeight>
-              <MoneyValue>40</MoneyValue>
+              <MoneyValue>27</MoneyValue>
               <AdditionalGlobalUnlockRequirement>
                 <Population>15000006</Population>
                 <MinPopulationAmount>1</MinPopulationAmount>
@@ -388,7 +388,7 @@
               <Product>2524</Product>
               <Amount>0.00017094</Amount>
               <SupplyWeight>13</SupplyWeight>
-              <MoneyValue>60</MoneyValue>
+              <MoneyValue>40</MoneyValue>
               <AdditionalGlobalUnlockRequirement>
                 <Population>15000006</Population>
                 <MinPopulationAmount>1000</MinPopulationAmount>
@@ -714,7 +714,7 @@
 
   <ModOp Type="add" GUID="142977" Path="/Values/GoodValueBalancing/WorkforceData/Moderate/Tiers">
     <Item>
-      <WorkforceValue>2.462564</WorkforceValue>
+      <WorkforceValue>1.270909</WorkforceValue>
       <WorkforceGUID>1500010804</WorkforceGUID>
     </Item>
   </ModOp>
@@ -929,13 +929,20 @@
         </Standard>
         <Blocking />
         <Building>
-          <AllowChangeDirection>1</AllowChangeDirection>
           <AllowChangeVariation>1</AllowChangeVariation>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingType>Residence</BuildingType>
           <PickingAsset>1500010143</PickingAsset>
           <AssociatedRegions>Moderate</AssociatedRegions>
         </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
         </Locked>
@@ -986,7 +993,8 @@
           </Variations>
           <Skins>
             <DefaultSkinName>23852</DefaultSkinName>
-            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinDescription>1500010189</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
             <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
             <SkinList>
               <Item>
@@ -1094,7 +1102,7 @@
         </Standard>
         <Skin>
           <SkinName>1500010833</SkinName>
-          <SkinDescription>1500010307</SkinDescription>
+          <SkinDescription>1500010189</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
@@ -1122,6 +1130,7 @@
               <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
+          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -1129,6 +1138,15 @@
           <VisibleWhenLocked>1</VisibleWhenLocked>
         </Locked>
         <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010170</GUID>
+          <Name>Mod Name</Name>
+        </Standard>
       </Values>
     </Asset>
   </ModOp>
@@ -1199,8 +1217,9 @@
             </Item>
           </Variations>
           <Skins>
-            <DefaultSkinName>1500010834</DefaultSkinName>
-            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>1500010169</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
             <!-- is only visible in combination with skin mod -->
             <OverrideDefaultIcon>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</OverrideDefaultIcon>
             <SkinList>
@@ -1307,60 +1326,13 @@
       <Template>Skin</Template>
       <Values>
         <Standard>
-          <GUID>1500010834</GUID>
-          <Name>Mixed Artisan Skin</Name>
-          <IconFilename>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</IconFilename>
-        </Standard>
-        <Skin>
-          <SkinName>1500010834</SkinName>
-          <SkinDescription>1500010307</SkinDescription>
-          <SkinVariations>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</FileName>
-            </Item>
-            <!-- repeat same variations again to double the color variations in non-default skins -->
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</FileName>
-            </Item>
-          </SkinVariations>
-        </Skin>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-          <Scope>Account</Scope>
-          <VisibleWhenLocked>1</VisibleWhenLocked>
-        </Locked>
-        <Text />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Skin</Template>
-      <Values>
-        <Standard>
           <GUID>1500010321</GUID>
           <Name>Red Tall Artisan</Name>
           <IconFilename>data\jakob\buildings\residence\high-artisan\red\icon_tall_red.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010321</SkinName>
-          <SkinDescription>1500010307</SkinDescription>
+          <SkinDescription>1500010173</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01b.cfg</FileName>
@@ -1388,6 +1360,7 @@
               <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
+          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -1407,7 +1380,7 @@
         </Standard>
         <Skin>
           <SkinName>1500010311</SkinName>
-          <SkinDescription>1500010307</SkinDescription>
+          <SkinDescription>1500010173</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01b.cfg</FileName>
@@ -1435,6 +1408,7 @@
               <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
+          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -1481,15 +1455,6 @@
         </Standard>
       </Values>
     </Asset>
-    <!-- <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010169</GUID>
-          <Name>pesca_engineer_fluff</Name>
-        </Standard>
-      </Values>
-    </Asset> -->
     <Asset>
       <!-- 
         Trigger to convert all jump engineers to vanilla engineers.
@@ -1548,245 +1513,46 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp GUID='1010347' Type="addNextSibling">
+  <!-- <ModOp GUID='1010347' Type="addNextSibling">
     <Asset>
-      <!-- 
-        This investor building is a temporary jump building.
-        It will be replaced with the vanilla investors as soon as you build it via trigger.
-        Without it, the game will link Pescatarian engineers as the downgrade for vanilla investors.
-      -->
-      <BaseAssetGUID>1010347</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010173</GUID>
-          <Name>pesca_investor_jump_building</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
-        </Standard>
-        <Locked /> <!-- unlock same as investors -->
-        <!-- disable upgrades to not break following downgrades -->
-        <Upgradable>
-          <NextGUID>0</NextGUID>
-        </Upgradable>
-        <FloorStackOwner>
-          <UpgradeTargetGUID>0</UpgradeTargetGUID>
-        </FloorStackOwner>
-        <Audio />
-      </Values>
-    </Asset>
-    <Asset>
-      <!-- 
-        Trigger to convert all jump investors to vanilla investors.
-        Note: the trigger is re-registering itself.
-      -->
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010175</GUID>
           <Name>pesca_jump_investor_built</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
         </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>ObjectBuilt</PlayerCounter>
-                <Context>1500010173</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionSetObjectGUID</Template>
-                <Values>
-                  <Action />
-                  <ActionSetObjectGUID>
-                    <NewGUID>1010347</NewGUID>
-                  </ActionSetObjectGUID>
-                  <ObjectFilter>
-                    <ObjectGUID>1500010173</ObjectGUID>
-                  </ObjectFilter>
-                </Values>
-              </TriggerAction>
-            </Item>
-            <Item>
-              <TriggerAction>
-                <Template>ActionRegisterTrigger</Template>
-                <Values>
-                  <Action />
-                  <ActionRegisterTrigger>
-                    <TriggerAsset>1500010175</TriggerAsset>
-                  </ActionRegisterTrigger>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
       </Values>
     </Asset>
     <Asset>
-      <!-- trigger to unlock jump investor -->
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010176</GUID>
           <Name>unlock_jump_investor</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
         </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
-            <Values>
-              <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1010347</UnlockNeeded>
-              </ConditionUnlocked>
-              <ConditionPropsNegatable />
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010173</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
       </Values>
     </Asset>
-  </ModOp>
-  <ModOp GUID='601888' Type="addNextSibling">
-    <!-- same as investor jump building just for engineer skyscraper -->
-    <Asset>
-      <BaseAssetGUID>601888</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010174</GUID>
-          <Name>pesca_skyscraper_jump_building</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Upgradable>
-          <NextGUID>0</NextGUID>
-        </Upgradable>
-        <FloorStackOwner>
-          <UpgradeTargetGUID>0</UpgradeTargetGUID>
-        </FloorStackOwner>
-        <Audio />
-      </Values>
-    </Asset>
+  </ModOp> -->
+  <!-- <ModOp GUID='601888' Type="addNextSibling">
     <Asset>
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010177</GUID>
           <Name>pesca_jump_skyscraper_built</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier03.png</IconFilename>
         </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>ObjectBuilt</PlayerCounter>
-                <Context>1500010174</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionSetObjectGUID</Template>
-                <Values>
-                  <Action />
-                  <ActionSetObjectGUID>
-                    <NewGUID>601888</NewGUID>
-                  </ActionSetObjectGUID>
-                  <ObjectFilter>
-                    <ObjectGUID>1500010174</ObjectGUID>
-                  </ObjectFilter>
-                </Values>
-              </TriggerAction>
-            </Item>
-            <Item>
-              <TriggerAction>
-                <Template>ActionRegisterTrigger</Template>
-                <Values>
-                  <Action />
-                  <ActionRegisterTrigger>
-                    <TriggerAsset>1500010177</TriggerAsset>
-                  </ActionRegisterTrigger>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
       </Values>
     </Asset>
     <Asset>
-      <!-- trigger to unlock jump investor -->
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010178</GUID>
           <Name>unlock_jump_skyscraper</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
         </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
-            <Values>
-              <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>601888</UnlockNeeded>
-              </ConditionUnlocked>
-              <ConditionPropsNegatable />
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010174</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
       </Values>
     </Asset>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # InfluencedByNeighbors, spawn feedback, ... -->
   <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">

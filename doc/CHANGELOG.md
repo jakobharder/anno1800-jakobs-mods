@@ -1,5 +1,21 @@
 # Changelog
 
+## Unreleased
+
+### Changed
+
+- Pescatarians: Fixed missing residence construction costs
+- Pescatarians: Fixed too high need income
+- Extra Goods: Fixed vegetable farm construction costs
+- Extra Goods: Alternative Need buff is shown in residences now
+- Minor localization updates
+
+### Added
+
+- New World Cities: Added stone paving and wall ornaments
+- Compact UI: Added electricity, sewing machines and others in the NW
+- Nate's Windmill: Added iMYA tweak support
+
 ## 5.0.2
 
 - Fixed AI not progression past farmers when playing Pescatarians

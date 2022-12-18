@@ -31,10 +31,9 @@
         <Standard>
           <GUID>1500010154</GUID>
           <Name>tools_workshop</Name>
-          <IconFilename>data\jakob\tools\tools_workshop\icon_tools_alt.png</IconFilename>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_tools.png</IconFilename>
         </Standard>
         <Building>
-          <AllowChangeDirection>1</AllowChangeDirection>
           <AllowChangeVariation>1</AllowChangeVariation>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -403,6 +402,16 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010957</GUID>
+          <Name>Tools Alt Icon</Name>
+          <IconFilename>data\jakob\tools\tools_workshop\icon_tools_alt.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- OW consumables, workers menu: insert after beer -->
   <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
@@ -416,6 +425,7 @@
   <ModOp Type="add" GUID="500003" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010154</Building>
+      <ForceIcon>1500010957</ForceIcon>
       <Tier2>
         <Item>
           <Building>1010266</Building>

@@ -1,0 +1,7 @@
+variant: 
+  source: ${annoRda}\data/dlc08/graphics/buildings/ornamental/tourism/tourism_ornaments_pavillon_02_table_03.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data\jakob\stone-pavement\maps\empty_ground_diff.psd
+      NORMAL_ENABLED: 0
+      METALLIC_TEX_ENABLED: 0

@@ -34,18 +34,13 @@ Includes a fix to correct the fan direction of grain mills.
 
 ### 1.4
 
-- Include grain mill fix.
+- Added iModYourAnno tweak support
 
-### 1.3
+### Older
 
-- NW Windmill (when enabled via separate mod)
-- Removed Windmill from Palace range increase buff
-
-### 1.2
-
-- Reduced building and maintenance cost
-- Can be played without Cap Trelawney session now
-- Performance optimization (reduced GPU memory usage as Nate's original texture is 60MB huge)
+- 1.3.2: Include grain mill fix.
+- 1.3: NW Windmill (when enabled via separate mod)
+- 1.3: Removed Windmill from Palace range increase buff
 
 ## Translations
 

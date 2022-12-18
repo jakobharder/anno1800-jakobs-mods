@@ -8,15 +8,11 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/icon_*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
     },
     {
       "action": "texture",
@@ -41,7 +37,7 @@
     }
   ],
   "modinfo": {
-    "Version": "2.3",
+    "Version": "2.3.1",
     "ModID": "jakob_upgradable_low_tier",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods", "jakob_ground_textures" ],

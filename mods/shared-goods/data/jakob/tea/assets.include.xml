@@ -28,7 +28,7 @@
         <Standard>
           <GUID>1500010848</GUID>
           <Name>Herb Farm</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\goods_africa\icon_hibiscus_farm.png</IconFilename>
+          <IconFilename>data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
@@ -101,7 +101,7 @@
         <Standard>
           <GUID>1500010940</GUID>
           <Name>Tea Maker</Name>
-          <IconFilename>data\jakob\tea\tea_maker\icon_tea_alt.png</IconFilename>
+          <IconFilename>products\tea\icon_tea.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
@@ -416,6 +416,16 @@
         <ResourceUpgrade />
       </Values>
     </Asset>
+    <Asset>
+      <Template>Icon</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010956</GUID>
+          <Name>Tea Alt Icon</Name>
+          <IconFilename>data\jakob\tea\tea_maker\icon_tea_alt.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- StandardProductList,StandardMarketplaceModerateStorageList: after fur coats -->
   <!-- <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1500010849')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
@@ -442,6 +452,7 @@
   <ModOp Type="add" GUID="500902" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010940</Building>
+      <ForceIcon>1500010956</ForceIcon>
       <Tier2>
         <Item>
           <Building>1500010848</Building>

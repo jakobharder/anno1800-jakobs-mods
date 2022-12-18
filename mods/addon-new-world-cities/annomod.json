@@ -8,15 +8,11 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/icon_*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
     },
     {
       "action": "gltf",
@@ -41,7 +37,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.0.2",
+    "Version": "1.1",
     "ModID": "jakob_new_world_cities",
     "DeprecateIds": [ "jakob_nw_construction", "jakob_bugfix_celluloid", "jakob_power_nw" ],
     "IncompatibleIds": [],
@@ -57,7 +53,12 @@
       "German": "README.md"
     },
     "KnownIssues": null,
-    "DLCDependencies": [],
+    "DLCDependencies": [
+      {
+        "DLC": "SeedsOfChange",
+        "Dependant": "partly"
+      }
+    ],
     "CreatorName": "Jakob",
     "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null

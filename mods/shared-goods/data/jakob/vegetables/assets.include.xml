@@ -9,7 +9,7 @@
         <Standard>
           <GUID>1500010830</GUID>
           <Name>Vegetable Farm</Name>
-          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_alt.png</IconFilename>
+          <IconFilename>products\vegetables\icon_cabbage.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
@@ -31,7 +31,7 @@
               <Amount>400</Amount>
             </Item>
             <Item>
-              <Ingredient>120008</Ingredient>
+              <Ingredient>1010196</Ingredient>
               <Amount>4</Amount>
             </Item>
           </Costs>
@@ -180,6 +180,7 @@
           <Tier1>
             <Item>
               <Building>1500010830</Building>
+              <ForceIcon>1500010958</ForceIcon>
             </Item>
           </Tier1>
         </ProductionChain>
@@ -315,25 +316,13 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>ConstructionCategory</Template>
+      <Template>Icon</Template>
       <Values>
         <Standard>
-          <GUID>1500010846</GUID>
-          <Name>Fishery Menu</Name>
-          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
+          <GUID>1500010958</GUID>
+          <Name>Vegetables Alt Icon</Name>
+          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_alt.png</IconFilename>
         </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1500010830</Building>
-            </Item>
-            <Item>
-              <Building>1010278</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>100000</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
       </Values>
     </Asset>
   </ModOp>

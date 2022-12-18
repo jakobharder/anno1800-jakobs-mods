@@ -14,6 +14,9 @@ No DLCs required.
 Every end product of the production chains can be used as an alternative input for Basic Needs.
 Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counterpart.
 
+If both needs are provided, the alternative is consumed first.
+There is no double consumption.
+
 ## Productions
 
 ### Vegetables (→ Fish)
@@ -59,6 +62,11 @@ Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counter
 You can disable some productions if you go to `features.include.xml` and remove single lines.
 
 ## Changes
+
+## 2.0.1
+
+- Fixed vegetable farm construction costs
+- Alternative Need buff is shown in residences now
 
 ## 2.0
 

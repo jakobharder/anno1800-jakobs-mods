@@ -2,37 +2,45 @@
 
 ![](./banner.png)
 
-Makes typical Old World construction materials production buildings available in the New World.
-
 ## Buildings
 
+### Ornaments
+
+- Dirt paving: empty tile, Hacienda walls (only with DLC10 `Seeds of Change`)
+- Stone paving: empty tile
+
+### Construction Materials
+
+Makes typical Old World construction materials production buildings available in the New World.
 Some buildings are a bit slower than their Old World counterpart.
 
-### Steel Beams
+#### Steel Beams
 
 - Steelworks
 - Furnace
 - Iron Mine: buildable on gold deposits
 
-### Windows
+#### Windows
 
 - Window Makers
 - Glassmakers
 - Sand Mine: buildable on clay deposits
 
-### Reinforced Concrete
+#### Reinforced Concrete
 
 - Concrete Factory
 - Limestone Quarry: buildable on clay deposits
 
 ## Electricity
 
-- Enable "Nate's Windmill", "Small Power Plants" and electricity in the New World.
+- Enable electricity in the New World (without extra good output like DLC12)
+- Enable `Nate's Windmill` and `Small Power Plants` for the New World.
 
-## Other
+## Changes
 
-- Fixes the floating celluloid.
+### 1.1
 
+- Added dirt/stone paving ornaments
 
 ## Translations
 

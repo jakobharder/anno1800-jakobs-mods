@@ -52,6 +52,11 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.0.2
+
+- Fixed missing residence construction costs
+- Fixed too high need income
+
 ### 2.0
 
 - Complete rework of all aspects

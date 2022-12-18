@@ -2,11 +2,10 @@
 
 New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
 
-## How to use
+## Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases)
 
 - Be sure how to use either the [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) mod manager or the [Anno Mod Loader](https://github.com/xforce/anno1800-mod-loader) directly.
 - Make sure you always have the latest version of the Anno Mod Loader installed. Mods won't show up after game updates otherwise.
-- Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases) page.
 
 ## Changes
 
