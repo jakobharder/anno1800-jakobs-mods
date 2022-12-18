@@ -1,0 +1,42 @@
+<ModOps>
+  <ModOp Type="replace" GUID="101309" Path="/Values/Street">
+    <Street>
+      <CfgFileName>data\jakob\nw-street\earth_street_02.cfg</CfgFileName>
+      <BridgeAsset>101587</BridgeAsset>
+      <InternalID>26</InternalID>
+      <DecalMapping>data/config/street/streetdecal.txt.bin</DecalMapping>
+      <DecalVariation>data/config/street/streetdecal_var.txt</DecalVariation>
+      <HidePropsAfterBuilding>1</HidePropsAfterBuilding>
+      <HidePropsWhileBuilding>1</HidePropsWhileBuilding>
+      <StyleRows>12</StyleRows>
+      <Quality>2</Quality>
+      <OverbuildRule>GoodStreet</OverbuildRule>
+      <SpeedFactor>1.5</SpeedFactor>
+      <CanBuildOnShore>1</CanBuildOnShore>
+      <AdaptToNeighbors>
+        <AdaptGroups>Street;StreetHighQuality</AdaptGroups>
+        <NeighborsThatMakeUsAdapt>Crossing_Rail_Street;Crossing_Rail_StreetHighQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetHighQuality;QuayStreet;StreetHighQuality</NeighborsThatMakeUsAdapt>
+      </AdaptToNeighbors>
+    </Street>
+  </ModOp>
+  <!-- <ModOp Type="replace" GUID="1010035" Path="/Values/Street">
+    <Street>
+      <CfgFileName>data\jakob\nw-street\earth_street_02.cfg</CfgFileName>
+      <BridgeAsset>101587</BridgeAsset>
+      <InternalID>2</InternalID>
+      <DecalMapping>data/config/street/streetdecal.txt.bin</DecalMapping>
+      <DecalVariation>data/config/street/streetdecal_var.txt</DecalVariation>
+      <HidePropsAfterBuilding>1</HidePropsAfterBuilding>
+      <HidePropsWhileBuilding>1</HidePropsWhileBuilding>
+      <StyleRows>12</StyleRows>
+      <Quality>2</Quality>
+      <OverbuildRule>GoodStreet</OverbuildRule>
+      <SpeedFactor>1.5</SpeedFactor>
+      <CanBuildOnShore>1</CanBuildOnShore>
+      <AdaptToNeighbors>
+        <AdaptGroups>Street;StreetHighQuality</AdaptGroups>
+        <NeighborsThatMakeUsAdapt>Crossing_Rail_Street;Crossing_Rail_StreetHighQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetHighQuality;QuayStreet;StreetHighQuality</NeighborsThatMakeUsAdapt>
+      </AdaptToNeighbors>
+    </Street>
+  </ModOp> -->
+</ModOps>
