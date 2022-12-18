@@ -63,6 +63,11 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
+## 2.0.1
+
+- Fixed vegetable farm construction costs
+- Alternative Need buff is shown in residences now
+
 ## 2.0
 
 - Added Tea, Vegetables, Pickled Vegetables
