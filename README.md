@@ -88,7 +88,7 @@ In-game changes, that need your attention:
 
 ![](./doc/industrial-variations.jpg)
 
-- [\[Skins\] Factory Variants](./mods/production-variations/README.md)
+- [\[Skin\] Factory Variants](./mods/production-variations/README.md)
   (Shift+V variations)
 
   Adds variations to vanilla production buildings.
@@ -164,5 +164,5 @@ Available: English, German, (Russian, Korean, French, Polish, Chinese).
 - @m_belonosov, redzmey1 for Russian translation
 - MSHS for Korean translation
 - @Petritant for French translation
-- Aveneger432 for Polish translation
+- HeroOfOlympus, Aveneger432 for Polish translation
 - darknesswei for Chinese translation
