@@ -1,4 +1,4 @@
-# Jakob's Collection 5.1
+# Jakob's Collection 5.1.1
 
 New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
 
@@ -13,7 +13,7 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
 - **[Addon] Pescatarians**
 
-  Adds Old World population with 3 tiers and new needs. They provide additional farmer workforce also in worker and artisan houses.
+  Adds Old World population new tiers and needs. They provide 1 farmer, 1 worker and 1 artisan per 3 residents.
 
 - **[Shared] Extra Goods]**
 
@@ -110,6 +110,14 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
   Adds paintbrush skins for Artisans and Engineers (also diagonal).
 
   Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
+
+## Improved Streets
+
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/streets.jpg)
+  
+- **[Skin] Improved Streets**
+
+  Replaces railroads and NW streets with more fitting textures.
 
 ## Translations
 

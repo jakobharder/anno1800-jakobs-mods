@@ -39,12 +39,12 @@ In-game changes, that need your attention:
 ![](./doc/population-tiers.jpg)
 
 - [\[Addon\] Upgradable Workers](./mods/addon-upgradable/README.md)
-  
+
   Adds "skyscraper" levels to workers and artisans with more residents and new needs.
 
 - [\[Addon\] Pescatarians](./mods/addon-pescatarians/README.md)
 
-  Adds Old World population with 3 tiers and new needs. They provide additional farmer workforce also in worker and artisan houses.
+  Adds Old World population new tiers and needs. They provide 1 farmer, 1 worker and 1 artisan per 3 residents.
 
 - [\[Shared\] Extra Goods](./mods/shared-goods/README.md)
 

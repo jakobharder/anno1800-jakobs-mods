@@ -3,7 +3,8 @@
 ## 5.1.1 - Railroads
 
 - Extra Goods: Fixed alternative need buff (maybe)
-- Improved Streets: added railroads
+- Improved Streets: Added railroads
+- New World Cities: Added missing ornament texts
 
 ## 5.1 - NW Streets and Ornaments
 
