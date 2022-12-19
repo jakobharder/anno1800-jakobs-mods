@@ -142,6 +142,14 @@ In-game changes, that need your attention:
 
   Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
 
+## Improved Streets
+
+![](./doc/streets.jpg)
+  
+- [\[Skin\] Improved Streets](./mods/improved-streets/README.md)
+
+  Replaces railroads and NW streets with more fitting textures.
+
 ## Build and Modify Yourself
 
 Download the [mod sources as zip file](https://github.com/jakobharder/anno-1800-jakobs-mods/archive/refs/heads/main.zip).
