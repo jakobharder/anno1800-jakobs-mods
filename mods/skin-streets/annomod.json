@@ -16,9 +16,14 @@
     },
     {
       "action": "texture",
-      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
+      "pattern": "data/jakob/**/*_{diff,norm,height,metal,mask,rga}.png",
       "lods": 3,
       "changePath": "maps/"
+    },
+    {
+      "action": "texture",
+      "pattern": "data/graphics/**/*_{diff,norm,height,metal,mask,rga}.png",
+      "lods": 3
     },
     {
       "action": "modinfo",
@@ -26,7 +31,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.0",
+    "Version": "1.1",
     "ModID": "jakob_street_skins",
     "DeprecateIds": [],
     "IncompatibleIds": [],

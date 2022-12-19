@@ -42,7 +42,6 @@ In-game changes, that need your attention:
   
   Adds "skyscraper" levels to workers and artisans with more residents and new needs.
 
-
 - [\[Addon\] Pescatarians](./mods/addon-pescatarians/README.md)
 
   Adds Old World population with 3 tiers and new needs. They provide additional farmer workforce also in worker and artisan houses.
