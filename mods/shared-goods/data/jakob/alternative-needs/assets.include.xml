@@ -104,12 +104,6 @@
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
     </Item>
-    <Item>
-      <Product>1010213</Product>
-      <Amount>0.000784314</Amount>
-      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
-      <IsBonusNeed>1</IsBonusNeed>
-    </Item>
   </ModOp>
   <!-- investors -->
   <ModOp Type="add" GUID="15000004" Path="/Values/PopulationLevel7/PopulationInputs">
@@ -272,6 +266,7 @@
                   <Action />
                   <ActionBuff>
                     <BuffAsset>1500010808</BuffAsset>
+                    <AddBuff>1</AddBuff>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
