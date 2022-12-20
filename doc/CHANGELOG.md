@@ -1,8 +1,8 @@
 # Changelog
 
-## 5.1.1 - Railroads
+## 5.1.2 - Railroads
 
-- Extra Goods: Fixed alternative need buff (maybe)
+- Extra Goods: Fixed alternative need buff in Cap Trelawney
 - Improved Streets: Added railroads
 - New World Cities: Added missing ornament texts
 

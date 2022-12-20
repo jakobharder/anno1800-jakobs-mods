@@ -248,11 +248,13 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010815</GUID>
-          <Name>Add Lifestyle Buff to all Residences</Name>
+          <!-- <GUID>1500010815</GUID> -->
+          <GUID>1500010915</GUID>
+          <Name>Add Lifestyle Buff to all active sessions</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
+            <Template>ConditionAlwaysTrue</Template>
             <Values>
               <Condition />
               <ConditionAlwaysTrue />
@@ -274,7 +276,60 @@
           </TriggerActions>
         </Trigger>
         <TriggerSetup>
-          <AutoRegisterTrigger>1</AutoRegisterTrigger>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- 
+        Global action buffs will only be applied to discovered regions.
+        Registering the trigger with AlwaysTrue has unwanted side effects.
+        The only way to ensure other regions are covered is by having individual first activation triggers.
+        Note: buff needs to be removed first (AddBuff=0), otherwise it won't refresh.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010916</GUID>
+          <Name>Add Lifestyle Buff to Cap Trelawney</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionActiveSession</Template>
+            <Values>
+              <Condition />
+              <ConditionActiveSession>
+                <ActiveSession>110934</ActiveSession>
+              </ConditionActiveSession>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500010808</BuffAsset>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500010808</BuffAsset>
+                    <AddBuff>1</AddBuff>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
           <UsedBySecondParties>0</UsedBySecondParties>
         </TriggerSetup>
       </Values>

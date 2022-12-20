@@ -63,13 +63,10 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
-## 2.0.2
+## 2.0.3
 
 - Removed bread from Engineer Lifestyle needs
-- Fixed alternative need buff, maybe?
-
-## 2.0.1
-
+- Fixed alternative need buff
 - Fixed vegetable farm construction costs
 - Alternative Need buff is shown in residences now
 
