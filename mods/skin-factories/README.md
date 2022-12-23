@@ -1,4 +1,4 @@
-# Production Variations
+# Factory Variants
 
 Shift+V variations for production buildings.
 
@@ -15,10 +15,8 @@ Buildings:
 
 ## Notes
 
-Buildings marked as `<QuestObject />` do not allow Shift+V after being placed.
-This mod removes the tag from the buildings.
-It may lead to odd side effects on quests.
-None have been observed so far.
+`Shift+V` is blocked on already built buildings.
+You can either change the variation before you build it, or pick it up again and change then.
 
 ## Changes
 
