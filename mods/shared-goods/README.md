@@ -63,6 +63,11 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
+## 2.1
+
+- All farms have free farmfield placement now.
+  Can be disabled via iModYourAnno tweaks.
+
 ## 2.0.3
 
 - Removed bread from Engineer Lifestyle needs

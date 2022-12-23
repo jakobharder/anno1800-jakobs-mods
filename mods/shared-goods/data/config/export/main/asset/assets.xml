@@ -1,4 +1,4 @@
-<!-- 2022-12-20-07-28 -->
+<!-- 2022-12-23-19-00 -->
 <!-- 
   Jakob's Extra Goods
 
@@ -7,4 +7,20 @@
 -->
 <ModOps>
   <Include File="../../../../../features.include.xml" />
+  
+  <!-- # Enable Tweaks -->
+  <ImyaTweaks Title="Extra Goods Features" />
+  <ModOp Type="merge" GUID="1500010830,1500010848,1500010124,1500010107" Path="/Values" ModOpID="FreeFarm" Skip="1">
+    <ModuleOwner />
+  </ModOp>
+  <ImyaExpose Path="self::ModuleOwner" ModOpID="FreeFarm" Kind="Toggle"
+    ExposeID="Free Farm Placement"
+    Description="Allow farm fields to be build further away, e.g. across the street.">
+    <AltValue>
+      <ModuleOwner>
+        <ModuleBuildRadius>0</ModuleBuildRadius>
+        <AdditionalModuleMustBeMainBuildingAdjacent>1</AdditionalModuleMustBeMainBuildingAdjacent>
+      </ModuleOwner>
+    </AltValue>
+  </ImyaExpose>
 </ModOps> 
