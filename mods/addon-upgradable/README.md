@@ -10,7 +10,7 @@ Note: Pescatarian workers, artisans do not upgrade.
 
 - Activated DLC `The High Life` (the game requires you to activate latest when you load a savegame)
 - Mod `[Shared] Ground Textures`
-- Either Mod `[Shared] Alternative Needs` or DLC `Docklands`
+- Either Mod `[Shared] Shared Goods` or DLC `Docklands`
 
 ## Buildings
 
