@@ -2,7 +2,7 @@
   <ModOp Type="replace" GUID="101309" Path="/Values/Street">
     <Street>
       <CfgFileName>data\jakob\nw-street\earth_street_02.cfg</CfgFileName>
-      <BridgeAsset>101587</BridgeAsset>
+      <BridgeAsset>1500011005</BridgeAsset>
       <InternalID>26</InternalID>
       <DecalMapping>data/config/street/streetdecal.txt.bin</DecalMapping>
       <DecalVariation>data/config/street/streetdecal_var.txt</DecalVariation>
@@ -21,5 +21,23 @@
   </ModOp>
   <ModOp Type="replace" Path="//Street[CfgFileName='data/graphics/effects/street/earth/earth_street_03/earth_street_03.cfg']/CfgFileName">
     <CfgFileName>data\jakob\railroad\earth_street_03.cfg</CfgFileName>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="101587">
+    <Asset>
+      <BaseAssetGUID>101587</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011005</GUID>
+          <Name>NW Bridge</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-street\stone_bridge.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+      </Values>
+    </Asset>
   </ModOp>
 </ModOps>
