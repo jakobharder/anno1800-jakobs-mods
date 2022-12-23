@@ -8,15 +8,11 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/icon_*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "**/icon_*.png"
     },
     {
       "action": "texture",
