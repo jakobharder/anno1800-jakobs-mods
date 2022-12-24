@@ -342,8 +342,9 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010461</GUID>
-          <Name>Unlock @ 6000 Obrero</Name>
+          <!-- <GUID>1500010461</GUID> -->
+          <GUID>1500010472</GUID>
+          <Name>Unlock @ 4000 Obrero</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -353,7 +354,49 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000006</Context> <!-- obrero -->
-                <CounterAmount>6000</CounterAmount>
+                <CounterAmount>4000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010458</Asset> <!-- windmill -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010473</GUID>
+          <Name>Unlock @ 900 Artista</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>5403</Context>
+                <CounterAmount>900</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>

@@ -22,8 +22,6 @@ The reduced ranges and exclusive radius are there to ensure the windmill is not 
 Industry influence buff apply.
 Palace buffs and obviously guild house buffs don't.
 
-OW windmill unlocks with 500 engineers and NW windmill with 1500 obreros.
-
 ## Other
 
 ### Grain Mill Bugfix

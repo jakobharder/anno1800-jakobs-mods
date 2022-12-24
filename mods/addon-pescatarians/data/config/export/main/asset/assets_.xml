@@ -1,0 +1,2141 @@
+<!-- 
+  Pescatarian
+
+  Don't use GUIDs: 1500010117, 1500010149
+-->
+
+<ModOps>
+  <!-- # Shared Needs -->
+  <Include File="../../../../../products/suits/assets.include.xml" />
+  <Include File="../../../../../products/canned-fish/assets.include.xml" />
+  <Include File="../../../../../products/olive-soap/assets.include.xml" />
+  <Include File="../../../../../products/cheese/assets.include.xml" />
+  <Include File="../../../../../products/pickled-vegetables/assets.include.xml" />
+  <Include File="../../../../../products/vegetables/assets.include.xml" />
+  
+  <!-- <Include File="../../../../jakob/ropes/assets.include.xml" /> -->
+  <Include File="../../../../jakob/music-school/assets.include.xml" />
+  <Include File="../../../../jakob/small-library/assets.include.xml" />
+  <!-- <Include File="../../../../jakob/seafood-restaurant/assets.include.xml" /> -->
+  <Include File="../../../../jakob/small-post/assets.include.xml" />
+
+  <!-- <Include File="../../../../jakob/3mast-schooner/assets.include.xml" /> -->
+
+  <!-- add to StandartProductStorageList -->
+  <ModOp Type="addNextSibling" GUID='120055'>
+    <Asset>
+      <!-- fallback dump -->
+      <Template>dump</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <ignore></ignore>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- filter lists -->
+  <ModOp Type="addNextSibling" GUID="502019">
+  <!--  <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010160</GUID>
+          <Name>worker_unlock_goods</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010161</GUID>
+          <Name>artisan_unlock_goods</Name>
+        </Standard>
+      </Values>
+    </Asset> -->
+  </ModOp>
+  <!-- session goods: insert after artisan -->
+  <!-- <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
+    <Item>
+      <Product>1500010159</Product>
+    </Item>
+    <Item>
+      <Product>1500010160</Product>
+    </Item>
+    <Item>
+      <Product>1500010161</Product>
+    </Item>
+  </ModOp> -->
+
+  <!-- # Population: Pescatarians -->
+  <ModOp GUID="15000004" Type="addNextSibling">
+    <Asset>
+      <Template>PopulationLevel7</Template>
+      <Values>
+        <Standard>
+          <GUID>601382</GUID> <!-- 1500010806 -->
+          <!-- 
+            Use GUID before any vanila population for the following reasons:
+            - GUID is used for island population order, marketplace order
+            - the last population providing a workforce is used for working conditions menu
+          -->
+          <Name>Pescatarian Artisan</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_anarchist_403.png</IconFilename>
+        </Standard>
+        <PopulationLevel7>
+          <PopulationInputs>
+            <!-- Basic Needs -->
+            <Item>
+              <Product>1500010119</Product>
+              <SupplyWeight>3</SupplyWeight>
+            </Item>
+            <Item>
+              <Product>1010200</Product>
+              <Amount>0.0006</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <MoneyValue>10</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- <Item>
+              <Product>1440005</Product>
+              <Amount>0.0004166</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <MoneyValue>10</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010142</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item> -->
+            <Item>
+              <Product>1500010836</Product>
+              <Amount>0.0006</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <MoneyValue>5</MoneyValue>
+              <FullWeightPopulationCount>150</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010818</Product>
+              <SupplyWeight>4</SupplyWeight>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+              <Amount>0.00044</Amount>
+              <SupplyWeight>7</SupplyWeight>
+              <MoneyValue>20</MoneyValue>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+              <Amount>0.0003</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <MoneyValue>20</MoneyValue>
+            </Item>
+            <Item>
+              <Product>1500010127</Product>
+              <Amount>0.0008</Amount>
+              <SupplyWeight>7</SupplyWeight>
+              <MoneyValue>30</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010831</Product>
+              <Amount>0.0004</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <MoneyValue>20</MoneyValue>
+              <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010120</Product>
+              <Amount>0.0004</Amount>
+              <SupplyWeight>7</SupplyWeight>
+              <MoneyValue>30</MoneyValue>
+              <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1500010801</Product>
+              <SupplyWeight>5</SupplyWeight>
+              <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Luxury Needs -->
+            <Item>
+              <Product>1500010118</Product>
+              <HappinessValue>5</HappinessValue>
+            </Item>
+            <Item>
+              <Product>1500010106</Product>
+              <Amount>0.0003</Amount>
+              <HappinessValue>5</HappinessValue>
+              <!-- <SupplyWeight>7</SupplyWeight> -->
+              <MoneyValue>40</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- <Item>
+              <Product>1500010825</Product>
+              <Amount>0.0002083</Amount>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>20</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item> -->
+            <!-- <Item>
+              <Product>114410</Product>
+              <Amount>0.0004</Amount>
+              <HappinessValue>3</HappinessValue>
+              <MoneyValue>80</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item> -->
+            <Item>
+              <Product>1500010820</Product>
+              <HappinessValue>2</HappinessValue>
+              <MoneyValue>10</MoneyValue>
+            </Item>
+            <Item>
+              <Product>1500010153</Product>
+              <Amount>0.0002</Amount>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>40</MoneyValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1010352</Product>
+              <HappinessValue>5</HappinessValue>
+              <MoneyValue>10</MoneyValue>
+              <FullWeightPopulationCount>500</FullWeightPopulationCount>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Luxury Needs to prepare upgrade to Engineers -->
+            <Item>
+              <Product>1010353</Product>
+              <HappinessValue>1</HappinessValue>
+              <MoneyValue>14</MoneyValue>
+              <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1010206</Product>
+              <Amount>0.0003</Amount>
+              <HappinessValue>1</HappinessValue>
+              <MoneyValue>35</MoneyValue>
+              <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Lifestyle Needs: worker houses -->
+            <Item>
+              <Product>1010197</Product>
+              <Amount>0.001</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>1010201</Product>
+              <Amount>0.0005</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>133183</Product>
+              <Amount>0.0004</Amount>
+              <SupplyWeight>5</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010143</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Lifestyle Needs: artisan houses -->
+            <Item>
+              <Product>117702</Product>
+              <Amount>0.0006</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>114330</Population>
+                <MinPopulationAmount>600</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>120037</Product>
+              <Amount>0.0002</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <Item>
+              <Product>135233</Product>
+              <Amount>0.00003</Amount>
+              <SupplyWeight>10</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+              <RequiredBuildings>
+                <Item>
+                  <RequiredBuilding>1500010144</RequiredBuilding>
+                </Item>
+              </RequiredBuildings>
+            </Item>
+            <!-- Lifestyle Needs: Mail -->
+            <Item>
+              <Product>535</Product>
+              <Amount>0.00075</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <MoneyValue>7</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000002</Population>
+                <MinPopulationAmount>500</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>536</Product>
+              <Amount>0.00025</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <MoneyValue>27</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000006</Population>
+                <MinPopulationAmount>1</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>2524</Product>
+              <Amount>0.00017094</Amount>
+              <SupplyWeight>13</SupplyWeight>
+              <MoneyValue>40</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000006</Population>
+                <MinPopulationAmount>1000</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+          </PopulationInputs>
+          <DefaultResidence>1500010144</DefaultResidence>
+          <PopulationOutputs>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>34</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>34</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>34</Amount>
+            </Item>
+            <Item>
+              <Product>1500010804</Product>
+              <Amount>100</Amount>
+            </Item>
+          </PopulationOutputs>
+          <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
+          <PopulationParticipant>Resident_tier03_atWork</PopulationParticipant>
+          <PopulationAtWorkParticipant>Resident_tier03_atWork</PopulationAtWorkParticipant>
+          <MoodText>
+            <Angry>
+              <Text>1500010810</Text>
+            </Angry>
+            <Unhappy>
+              <Text>1500010811</Text>
+            </Unhappy>
+            <Neutral>
+              <Text>1500010812</Text>
+            </Neutral>
+            <Happy>
+              <Text>1500010813</Text>
+            </Happy>
+            <Euphoric>
+              <Text>1500010814</Text>
+            </Euphoric>
+          </MoodText>
+        </PopulationLevel7>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- population group -->
+      <Template>PopulationGroup7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010134</GUID>
+          <Name>Pescatarian Population</Name>
+        </Standard>
+        <PopulationGroup7>
+          <PopulationLevels>
+            <!-- <Item>
+              <Level>601382</Level>
+            </Item>
+            <Item>
+              <Level>601383</Level>
+            </Item>
+            <Item>
+              <Level>601384</Level>
+            </Item> -->
+            <Item>
+              <Level>601382</Level>
+            </Item>
+          </PopulationLevels>
+          <Regional>Moderate</Regional>
+        </PopulationGroup7>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010810</GUID>
+          <Name>Satisfaction Artisans None</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010811</GUID>
+          <Name>Satisfaction Artisans Unhappy</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010812</GUID>
+          <Name>Satisfaction Artisans Content</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010813</GUID>
+          <Name>Satisfaction Artisans Happy</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010814</GUID>
+          <Name>Satisfaction Artisans Perfect</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <!-- consumer product lists -->
+    <!-- <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010138</GUID>
+          <Name>farmer_consumer_goods</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_farmer_204.png</IconFilename>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1010200</Product>
+            </Item>
+            <Item>
+              <Product>1010195</Product>
+            </Item>
+            <Item>
+              <Product>1500010150</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010139</GUID>
+          <Name>worker_consumer_goods</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_anarchist_403.png</IconFilename>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1500010102</Product>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+            </Item>
+            <Item>
+              <Product>1500010106</Product>
+            </Item>
+            <Item>
+              <Product>1500010153</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductList</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010140</GUID>
+          <Name>artisan_consumer_goods</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_anarchist_bekoin.png</IconFilename>
+        </Standard>
+        <ProductList>
+          <List>
+            <Item>
+              <Product>1500010127</Product>
+            </Item>
+            <Item>
+              <Product>1500010120</Product>
+            </Item>
+          </List>
+        </ProductList>
+      </Values>
+    </Asset> -->
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010804</GUID>
+          <Name>Pescatarian Workforce</Name>
+          <IconFilename>data\jakob\ui\icons\icon_pescatarian_workforce.png</IconFilename>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Product>
+          <StorageLevel>Area</StorageLevel>
+          <DeltaOnly>1</DeltaOnly>
+          <IsWorkforce>1</IsWorkforce>
+          <CanUseWorkforceTransfer>0</CanUseWorkforceTransfer>
+        </Product>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- global population -->
+  <ModOp Type="add" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList">
+    <!-- <Item>
+      <PopulationLevel>601382</PopulationLevel>
+    </Item>
+    <Item>
+      <PopulationLevel>601383</PopulationLevel>
+    </Item>
+    <Item>
+      <PopulationLevel>601384</PopulationLevel>
+    </Item> -->
+    <Item>
+      <PopulationLevel>601382</PopulationLevel>
+    </Item>
+  </ModOp>
+  <!-- <WorkforceOrder> -->
+  <!-- ??: append -->
+  <ModOp Type="add" GUID="501962" Path="/Values/KeywordFilter/Keywords">
+    <!-- <Item>
+      <Keyword>601382</Keyword>
+      <ProductList>1500010138</ProductList>
+    </Item>
+    <Item>
+      <Keyword>601383</Keyword>
+      <ProductList>1500010139</ProductList>
+    </Item>
+    <Item>
+      <Keyword>601384</Keyword>
+      <ProductList>1500010140</ProductList>
+    </Item> -->
+    <Item>
+      <Keyword>1500010804</Keyword>
+      <ProductList>1500010140</ProductList>
+    </Item>
+    <Item>
+      <Keyword>601382</Keyword>
+      <ProductList>1500010140</ProductList>
+    </Item>
+  </ModOp>
+  <!-- residence UI: append -->
+  <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/HappinessConfigs">
+    <!-- <Item>
+      <PopulationLevel>601382</PopulationLevel>
+      <AssignedConfig>502287</AssignedConfig>
+    </Item>
+    <Item>
+      <PopulationLevel>601383</PopulationLevel>
+      <AssignedConfig>502287</AssignedConfig>
+    </Item>
+    <Item>
+      <PopulationLevel>601384</PopulationLevel>
+      <AssignedConfig>502287</AssignedConfig>
+    </Item> -->
+    <Item>
+      <PopulationLevel>601382</PopulationLevel>
+      <AssignedConfig>502287</AssignedConfig>
+    </Item>
+  </ModOp>
+  <!-- city population level: insert TODO -->
+  <ModOp Type="addNextSibling" GUID="141576" Path="/Values/HappinessFeature/AttractivenessConfig/Region/Moderate/CitySizes/Item[Population='15000000' and not(Amount)]">
+    <Item>
+      <Population>601382</Population>
+      <RequiredAttractivenessLevel>Quaint</RequiredAttractivenessLevel>
+    </Item>
+    <Item>
+      <Population>601382</Population>
+      <RequiredAttractivenessLevel>Quaint</RequiredAttractivenessLevel>
+      <Amount>5</Amount>
+    </Item>
+    <Item>
+      <Population>601382</Population>
+      <RequiredAttractivenessLevel>Quaint</RequiredAttractivenessLevel>
+      <Amount>10</Amount>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="141576" Path="/Values/HappinessFeature/AttractivenessConfig/Region/Moderate/CitySizes/Item[Population='15000000' and Amount='150']">
+    <Item>
+      <Population>601382</Population>
+      <RequiredAttractivenessLevel>Quaint</RequiredAttractivenessLevel>
+      <Amount>20</Amount>
+    </Item>
+  </ModOp>
+  <!-- stats/warehouse consumer goods: insert after artisan  -->
+  <!-- <ModOp Type="addNextSibling" GUID="502031" Path="/Values/ProductList/List/Item[Product='501997']">
+    <Item>
+      <Product>1500010138</Product>
+    </Item>
+    <Item>
+      <Product>1500010139</Product>
+    </Item>
+    <Item>
+      <Product>1500010140</Product>
+    </Item>
+  </ModOp> -->
+  <!-- <ModOp Type="add" GUID="501065" Path="/Values/ObjectmenuCommuterHarbourScene/WorkforceToRegion/Moderate/WorkforceList">
+    <Item>
+      <Workforce>1500010804</Workforce>
+    </Item>
+  </ModOp> -->
+  <!-- <ModOp Type="add" GUID="25000121" Path="/Values/IslandBarScene/WorkforceOrder">
+    <Item>
+      <WorkforceEntry>1500010804</WorkforceEntry>
+    </Item>
+  </ModOp> -->
+
+  <ModOp Type="add" GUID="142977" Path="/Values/GoodValueBalancing/WorkforceData/Moderate/Tiers">
+    <Item>
+      <WorkforceValue>1.270909</WorkforceValue>
+      <WorkforceGUID>1500010804</WorkforceGUID>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='6364']/Needs">
+    <Item>
+      <BonusNeed>135233</BonusNeed>
+    </Item>
+  </ModOp>
+
+  <!-- TODO EconomyFeature -->
+
+  <!-- # Need: Potatoes -->
+  <!-- add to StandardMarketplaceModerateStorageList -->
+  <!-- <ModOp Type="addNextSibling" GUID='120057' Path="/Values/ProductStorageList/ProductList/Item[Product='1010200']">
+    <Item>
+      <Product>1010195</Product>
+    </Item>
+  </ModOp> -->
+
+  <!-- # Deprecate farmers -->
+  <ModOp GUID='1010343' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010343</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010142</GUID>
+          <Name>pescatarian_farmer</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Building>
+          <PickingAsset>1500010142</PickingAsset>
+        </Building>
+        <Locked />
+        <Upgradable>
+          <NextGUID>0</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Amount>2</Amount>
+              <Ingredient>1010196</Ingredient>
+            </Item>
+          </UpgradeCost>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate04.cfg</Filename>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate04.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <!-- disable skins -->
+            <SkinList />
+          </Skins>
+        </Object>
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>601382</PopulationLevel7>
+          <ResidentMax>10</ResidentMax>
+          <ResidentsRequiredForUpgrade>10</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
+        </Residence7>
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010194</DefaultBuff>
+        </UpgradeList> -->
+        <FloorStackOwner>
+          <!-- disable floor upgrades -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+          <AddFloorCost />
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010194</GUID>
+          <Name>farmers_love_to_farm</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010142</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>4</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- 
+        Deprecate farmers.
+        Convert all existing farmers to workers.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010809</GUID>
+          <Name>Convert Farmers to Workers</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010142</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>1500010143</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010142</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <!-- register because players could have farmers in their quick build slots -->
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010809</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Residence: Worker -->
+  <ModOp GUID='1010344' Type="addNextSibling">
+    <Asset>
+      <!-- <BaseAssetGUID>1010344</BaseAssetGUID> -->
+      <Template>ResidenceBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010143</GUID>
+          <Name>pescatarian_worker</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <BuildingType>Residence</BuildingType>
+          <PickingAsset>1500010143</PickingAsset>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+        </Locked>
+        <Upgradable>
+          <NextGUID>1500010144</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Amount>5</Amount>
+              <Ingredient>1010196</Ingredient>
+            </Item>
+            <Item>
+              <Amount>4</Amount>
+              <Ingredient>1010205</Ingredient>
+            </Item>
+            <!-- <Item>
+              <Amount>3</Amount>
+              <Ingredient>1500010825</Ingredient>
+            </Item> -->
+          </UpgradeCost>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/worker-skins/yellow/residence_tier02_estate04.cfg</Filename>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate01b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate02b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/worker-skins/yellow/residence_tier02_estate04.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>1500010189</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
+            <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010833</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>601382</PopulationLevel7>
+          <ResidentMax>24</ResidentMax>  <!-- consumption calculation base -->
+          <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
+        </Residence7>
+        <Selection />
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010147</DefaultBuff>
+        </UpgradeList> -->
+        <FloorStackOwner>
+          <!-- disable floor upgrades -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+          <AddFloorCost />
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010147</GUID>
+          <Name>workers_love_to_farm</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>8</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010282</GUID>
+          <Name>all_pescatarian_residences</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <!-- <Item>
+              <GUID>1500010142</GUID>
+            </Item> -->
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010146</GUID>
+          <Name>Residence Hint</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010833</GUID>
+          <Name>Dark Roof Worker Skin</Name>
+          <IconFilename>data\jakob\buildings\residence\worker-artisan\dark\icon_worker_dark.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010833</SkinName>
+          <SkinDescription>1500010189</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010170</GUID>
+          <Name>Mod Name</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+
+
+  <!-- # Residence: Artisan -->
+  <ModOp GUID='1010345' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010345</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010144</GUID>
+          <Name>pescatarian_artisan</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Building>
+          <PickingAsset>1500010143</PickingAsset>
+        </Building>
+        <Locked />
+        <Upgradable>
+          <NextGUID>1500010145</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Amount>8</Amount>
+              <Ingredient>1010196</Ingredient>
+            </Item>
+            <Item>
+              <Amount>3</Amount>
+              <Ingredient>1010205</Ingredient>
+            </Item>
+            <Item>
+              <Amount>2</Amount>
+              <Ingredient>1010218</Ingredient>
+            </Item>
+            <Item>
+              <Amount>2</Amount>
+              <Ingredient>1010207</Ingredient>
+            </Item>
+          </UpgradeCost>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</Filename>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>1500010169</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
+            <!-- is only visible in combination with skin mod -->
+            <OverrideDefaultIcon>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010311</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010321</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>601382</PopulationLevel7>
+          <ResidentMax>36</ResidentMax>  <!-- consumption calculation base -->
+          <ResidentsRequiredForUpgrade>36</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
+        </Residence7>
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010148</DefaultBuff>
+        </UpgradeList> -->
+        <FloorStackOwner>
+          <!-- disable floor upgrades -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+          <AddFloorCost />
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010148</GUID>
+          <Name>artisans_love_to_farm</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>12</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010172</GUID>
+          <Name>pesca_engineer_2pop_fix</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade>
+          <InputBenefitModifier>
+            <Item>
+              <Product>1500010120</Product>
+              <AdditionalSupply>-1</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1500010127</Product>
+              <AdditionalSupply>-1</AdditionalSupply>
+            </Item>
+          </InputBenefitModifier>
+        </PopulationUpgrade>
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010321</GUID>
+          <Name>Red Tall Artisan</Name>
+          <IconFilename>data\jakob\buildings\residence\high-artisan\red\icon_tall_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010321</SkinName>
+          <SkinDescription>1500010173</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010311</GUID>
+          <Name>Tall Blue Artisan Skin</Name>
+          <IconFilename>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010311</SkinName>
+          <SkinDescription>1500010173</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+
+
+  <!-- # Progression to Vanilla Engineers -->
+  <ModOp GUID='1010346' Type="addNextSibling">
+    <Asset>
+      <!-- Deprecated and used as jump building instead -->
+      <BaseAssetGUID>1010346</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010145</GUID>
+          <Name>Engineer Jump Building</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <!-- disable upgrades -->
+        <Upgradable>
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <!-- Don't remove this GUID/buff. It will break existing games otherwise-->
+          <GUID>1500010149</GUID>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- 
+        Trigger to convert all jump engineers to vanilla engineers.
+        Note: the trigger is re-registering itself.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010807</GUID>
+          <Name>Jump Building: Engineers</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010145</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionSetObjectGUID</Template>
+                <Values>
+                  <Action />
+                  <ActionSetObjectGUID>
+                    <NewGUID>1010346</NewGUID>
+                  </ActionSetObjectGUID>
+                  <ObjectFilter>
+                    <ObjectGUID>1500010145</ObjectGUID>
+                  </ObjectFilter>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010807</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- <ModOp GUID='1010347' Type="addNextSibling">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010175</GUID>
+          <Name>pesca_jump_investor_built</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010176</GUID>
+          <Name>unlock_jump_investor</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp> -->
+  <!-- <ModOp GUID='601888' Type="addNextSibling">
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010177</GUID>
+          <Name>pesca_jump_skyscraper_built</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010178</GUID>
+          <Name>unlock_jump_skyscraper</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp> -->
+
+  <!-- # InfluencedByNeighbors, spawn feedback, ... -->
+  <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
+    <!-- <Item>
+      <Building>1500010142</Building>
+    </Item> -->
+    <Item>
+      <Building>1500010143</Building>
+    </Item>
+    <Item>
+      <Building>1500010144</Building>
+    </Item>
+    <Item>
+      <Building>1500010145</Building>
+    </Item>
+    <!-- <Item>
+      <Building>1500010173</Building>
+    </Item> -->
+  </ModOp>
+  <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <!-- <Item>
+      <Building>1500010142</Building>
+    </Item> -->
+    <Item>
+      <Building>1500010143</Building>
+    </Item>
+    <Item>
+      <Building>1500010144</Building>
+    </Item>
+    <!-- <Item>
+      <Building>1500010145</Building>
+    </Item> -->
+  </ModOp>
+
+  <!-- # Service: Community Center -->
+  <ModOp GUID='1010372' Type="addNextSibling">
+    <Asset>
+      <Template>JakobPublicServiceWithMarket</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010100</GUID>
+          <Name>pescatarian_church_building</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+        </Standard>
+        <Building>
+          <BuildingType>Logistic</BuildingType>
+          <BuildingCategoryName>100003</BuildingCategoryName>
+          <SkipUnlockMessage>1</SkipUnlockMessage>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>2500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>15</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/community_center/community_center.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <GUIType>Market</GUIType>
+        </Selection>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>227033</Sound>
+            </Item>
+            <Item>
+              <Sound>200851</Sound>
+            </Item>
+          </ActiveSounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <VectorElement>
+                  <InheritedIndex>0</InheritedIndex>
+                  <InheritanceMapV2>
+                    <Entry>
+                      <TemplateName>PublicServiceBuilding</TemplateName>
+                      <Index>0</Index>
+                    </Entry>
+                  </InheritanceMapV2>
+                </VectorElement>
+                <Sound>214786</Sound>
+              </Item>
+            </BuildSuccessful>
+          </ConstructionSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController>
+          <NightBehavior>HideAll</NightBehavior>
+        </FeedbackController>
+        <Infolayer />
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010805</DefaultBuff>
+        </UpgradeList> -->
+        <Market>
+          <FullSupplyDistance>40</FullSupplyDistance>
+          <NoSupplyDistance>80</NoSupplyDistance>
+        </Market>
+        <StorageBase>
+          <ProductStorageList>120057</ProductStorageList>
+        </StorageBase>
+        <PublicService>
+          <FullSatisfactionDistance>40</FullSatisfactionDistance>
+          <NoSatisfactionDistance>80</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1500010119</Product>
+            </Item>
+            <Item>
+              <Product>1500010118</Product>
+            </Item>
+            <Item>
+              <Product>120020</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+        <!-- <ItemContainer>
+          <SocketCount>1</SocketCount>
+          <SocketAllocation>RadiusBuilding;GuildHouse</SocketAllocation>
+          <SocketScope>Local</SocketScope>
+          <SocketScopeRadius>80</SocketScopeRadius>
+          <InitSocketItems>
+            <Item>
+              <Item>1500010808</Item>
+              <StackSize>1</StackSize>
+            </Item>
+          </InitSocketItems>
+        </ItemContainer> -->
+        <!-- <BuffFactory>
+          <BaseBuff>1500010808</BaseBuff>
+          <BaseBuffDistance>80</BaseBuffDistance>
+          <BaseBuffScope>Local</BaseBuffScope>
+        </BuffFactory> -->
+        <AmbientMoodProvider>
+          <AmbientMood>ResidenceTier1</AmbientMood>
+          <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+              <InactiveAmount>25</InactiveAmount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <MaximumHitPoints>4750</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+            </Fire>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Culture />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010119</GUID>
+          <Name>pescatarian_market_service</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory> <!-- basic need -->
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+        <ExpeditionAttribute />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010118</GUID>
+          <Name>pescatarian_church_service</Name>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11709</ProductCategory> <!-- luxury need -->
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+        </Product>
+        <ExpeditionAttribute />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- Variations: Townhall -->
+  <!-- <ModOp Type="add" GUID="100415" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\buildings\school-townhall\townhall.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="100415" Path="/Values/Building">
+    <AllowChangeVariation>1</AllowChangeVariation>
+  </ModOp>
+  <ModOp Type="replace" GUID="100415" Path="/Values/Building/AllowChangeVariation">
+    <AllowChangeVariation>1</AllowChangeVariation>
+  </ModOp> -->
+
+  <!-- # Build Menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010186</GUID>
+          <Name>Pescatarians Menu</Name>
+          <IconFilename>data\jakob\ui\icons\icon_pescatarian_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010100</Building>
+            </Item>
+            <Item>
+              <Building>1500010143</Building>
+            </Item>
+            <Item>
+              <Building>1500010816</Building>
+            </Item>
+            <Item>
+              <Building>1500010819</Building>
+            </Item>
+            <Item>
+              <Building>1500010800</Building>
+            </Item>
+            <Item>
+              <Building>1500010817</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010188</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010188</GUID>
+          <Name>pescatarian_menu_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- insert after market in city and farmers menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID='500092,25000189' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
+    <Item>
+      <Building>1500010186</Building>
+    </Item>
+  </ModOp>
+  <!-- insert canned fish, suits into artisan menu after coats (extra goods will add it to worker) -->
+  <!-- <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
+    <Item>
+      <Building>1500010122</Building>
+    </Item>
+    <Item>
+      <Building>1500010129</Building>
+    </Item>
+  </ModOp> -->
+
+  <!-- # Buff Targets -->
+  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010282</GUID>
+    </Item>
+  </ModOp>
+  <!-- remove some special cases with unfitting benefits -->
+  <ModOp Type="remove" GUID="111161,111162,111176,111163,116182,111180" Path="/Values/ItemEffect/EffectTargets/Item[GUID='1500010282']" />
+
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
+    <Item>
+      <GUID>1500010143</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
+    <Item>
+      <GUID>1500010144</GUID>
+    </Item>
+  </ModOp>
+  <!-- Replace "Engineers" with "All Engineers" in items and specialists.
+       Can be done multiple times and mods properly adding themselves to 193861 should be fine. -->
+  <ModOp Type="replace" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets/Item[GUID='1010346'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[GUID='1010346']">
+    <Item>
+      <GUID>193861</GUID>
+    </Item>
+  </ModOp>
+  <!-- <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
+    <Item>
+      <GUID>1500010145</GUID>
+    </Item>
+  </ModOp> -->
+  <!-- add community center everywhere where marketplace is -->
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
+    <Item>
+      <GUID>1500010100</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Unlocks, notifications -->
+  <!-- <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">
+    <Item>
+      <Asset>601382</Asset>
+    </Item>
+  </ModOp> -->
+  <!-- milestone banner: prepend -->
+  <ModOp Type="addPrevSibling" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners/Item[1]">
+    <!-- works -->
+    <Item>
+      <RequiredValue>1500</RequiredValue>
+      <PopulationGUID>15000002</PopulationGUID>
+      <Notification>1500010135</Notification>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="130249">
+    <Asset>
+      <!-- LockableNotification works -->
+      <Template>LockableNotification</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010135</GUID> <!-- was 501389 -->
+          <Name>Pescatarian_Notification</Name>
+        </Standard>
+        <Notification>
+          <NotificationType>
+            <Template>MainNotification</Template>
+            <Values>
+              <MainNotification>
+                <Title>1500010136</Title>
+                <NotificationMainIconAsset>601383</NotificationMainIconAsset>
+                <Icon01>1500010102</Icon01>
+                <Icon02>1500010106</Icon02>
+                <Icon03>1500010120</Icon03>
+                <Icon04>1500010127</Icon04>
+                <BackgroundAnimation>data\ui\video\ui_alpha\main_banner\mainbanner_city_luxuryneed_a.bk2</BackgroundAnimation>
+              </MainNotification>
+              <BaseNotification>
+                <NotificationText>1500010137</NotificationText>
+                <NotificationAudioAsset>201843</NotificationAudioAsset>
+              </BaseNotification>
+              <NotificationSubtitle>
+                <Subtitle>265159</Subtitle>
+              </NotificationSubtitle>
+            </Values>
+          </NotificationType>
+        </Notification>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010136</GUID>
+          <Name>pescatarian_notification_title</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010137</GUID>
+          <Name>pescatarian_notification_text</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <!-- <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010180</GUID>
+          <Name>obsolete: unhide construction menu</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010186</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset> -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010185</GUID>
+          <Name>unlock everything</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>400</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010142</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010100</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010143</Asset> <!-- workers -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010144</Asset> <!-- artisans -->
+                      </Item>
+                      <Item>
+                        <Asset>1500010145</Asset> <!-- engineers -->
+                      </Item>
+                      <!-- <Item>
+                        <Asset>1500010162</Asset> <!- - wooden accessory asset pool - ->
+                      </Item>
+                      <Item>
+                        <Asset>1500010163</Asset> <!- - tools asset pool - ->
+                      </Item>
+                      <Item>
+                        <Asset>1500010164</Asset> <!- - canned fish asset pool - ->
+                      </Item>
+                      <Item>
+                        <Asset>1500010165</Asset> <!- - OW suits asset pool - ->
+                      </Item>
+                      <Item>
+                        <Asset>1500010166</Asset> <!- - olive soap asset pool - ->
+                      </Item>
+                      <Item>
+                        <Asset>1500010167</Asset> <!- - cheese asset pool - ->
+                      </Item>
+                      <Item>
+                        <Asset>1500010168</Asset> <!- - premium beer asset pool - ->
+                      </Item> -->
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- extra unlock because added in a newer version -->
+    <!-- <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010187</GUID>
+          <Name>obsolete: unlock construction menu</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset> -->
+    <!-- bugfix: unhide buildings -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010802</GUID>
+          <Name>unhide_residence_community_center</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010142</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010143</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010100</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # cleanup -->
+  <ModOp Type="remove" GUID='1500010221' />
+</ModOps>

@@ -1,0 +1,6 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data/graphics/buildings/special/bridges/bridge_stone_road_01.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config
+      cModelDiffTex: data\jakob\nw-street\maps\stone_bridge_diff.psd

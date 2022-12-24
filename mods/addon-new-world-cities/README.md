@@ -38,6 +38,10 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ## Changes
 
+### 1.2
+
+- Added enclosed greenery
+
 ### 1.1
 
 - Added dirt/stone paving ornaments

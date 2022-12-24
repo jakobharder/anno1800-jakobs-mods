@@ -1,0 +1,6 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data/cdlc05/graphics/buildings/ornamental/grass_platforms/irrigation_channel_tripple_corner_bassin_01.cfg
+  modifications:
+    - xpath: //Config/Files/Config[FileName="data\cdlc05\graphics\buildings\ornamental\grass_platforms\irrigation_channel_ground.cfg"]
+      FileName: data\jakob\nw-enclosed-greenery\irrigation_channel_ground.cfg
