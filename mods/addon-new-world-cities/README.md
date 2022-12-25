@@ -36,6 +36,10 @@ Some buildings are a bit slower than their Old World counterpart.
 - Enable electricity in the New World (without extra good output like DLC12)
 - Enable `Nate's Windmill` and `Small Power Plants` for the New World.
 
+## Vanilla Bugfixes
+
+- Fixes Tropical Forest Variant 7 grass color
+
 ## Changes
 
 ### 1.2
