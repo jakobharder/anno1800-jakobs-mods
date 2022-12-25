@@ -1,0 +1,14 @@
+variant: 
+  source: ${annoRda}\data/dlc08/graphics/buildings/ornamental/tourism/tourism_ornaments_pavillon_02_table_02.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config
+      cModelDiffTex: data/jakob/nw-stone-pavement/maps/empty_ground_diff.psd
+      cModelNormalTex:  data/jakob/nw-stone-pavement/maps/empty_ground_norm.psd
+      NORMAL_ENABLED: 1
+      METALLIC_TEX_ENABLED: 0
+      HEIGHT_MAP_ENABLED: 0
+    - xpath: //Config/Decals/Config
+      Extents.x: 0.650000
+      Extents.y: 0.300000
+      Extents.z: 0.650000
+      OnStreets: 1

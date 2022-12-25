@@ -1,6 +1,117 @@
 <ModOps>
-  
-  <!-- # Ornaments: walls, plaza, ... -->
+  <!-- # Menu -->
+  <!-- New World, Classic Ornaments -->
+  <ModOp Type="add" GUID="500055,500079" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011051</Building>
+    </Item>
+  </ModOp>
+  <!-- New World, Empire of Skies Ornaments -->
+  <ModOp Type="addPrevSibling" GUID="7229" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011052</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="101255">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011051</GUID>
+          <Name>Ornaments</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\icon_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500011052</Building>
+            </Item>
+            <Item>
+              <Building>1500011050</Building>
+            </Item>
+            <Item>
+              <Building>1500011053</Building>
+            </Item>
+            <Item>
+              <Building>1500011049</Building>
+            </Item>
+            <Item>
+              <Building>1500011059</Building>
+            </Item>
+            <Item>
+              <Building>1500011060</Building>
+            </Item>
+            <Item>
+              <Building>1500011056</Building>
+            </Item>
+            <Item>
+              <Building>1500011057</Building>
+            </Item>
+            <Item>
+              <Building>1500011006</Building>
+            </Item>
+            <Item>
+              <Building>1500011054</Building>
+            </Item>
+            <Item>
+              <Building>1500011058</Building>
+            </Item>
+            <Item>
+              <Building>1500011061</Building>
+            </Item>
+            <Item>
+              <Building>1500011063</Building>
+            </Item>
+            <Item>
+              <Building>1500011066</Building>
+            </Item>
+            <Item>
+              <Building>1500011067</Building>
+            </Item>
+            <Item>
+              <Building>1500011068</Building>
+            </Item>
+            <Item>
+              <Building>1500011069</Building>
+            </Item>
+            <Item>
+              <Building>1500011070</Building>
+            </Item>
+            <Item>
+              <Building>1500011071</Building>
+            </Item>
+            <Item>
+              <Building>1500011072</Building>
+            </Item>
+            <Item>
+              <Building>1500011073</Building>
+            </Item>
+            <Item>
+              <Building>1500011074</Building>
+            </Item>
+            <Item>
+              <Building>1500011075</Building>
+            </Item>
+            <Item>
+              <Building>1500011076</Building>
+            </Item>
+            <Item>
+              <Building>1500011077</Building>
+            </Item>
+            <Item>
+              <Building>1500011078</Building>
+            </Item>
+            <Item>
+              <Building>1500011079</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>19564</CategoryDescription>
+        </ConstructionCategory>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Misc Ornaments -->
   <ModOp Type="addNextSibling" GUID="101255">
     <Asset>
       <Template>OrnamentalBuilding</Template>
@@ -21,24 +132,8 @@
               <Ingredient>1010017</Ingredient>
               <Amount>25</Amount>
             </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
           </Costs>
         </Cost>
-        <Selection />
         <Object>
           <Variations>
             <Item>
@@ -46,8 +141,6 @@
             </Item>
           </Variations>
         </Object>
-        <Constructable />
-        <Mesh />
         <SoundEmitter>
           <DestroySounds>
             <Item>
@@ -68,17 +161,6 @@
           <ConstructionSounds>
             <BuildSuccessful>
               <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>OrnamentalBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
-              </Item>
-              <Item>
                 <Sound>9818759</Sound>
               </Item>
             </BuildSuccessful>
@@ -86,32 +168,10 @@
               <Item>
                 <Sound>9818387</Sound>
               </Item>
-              <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>OrnamentalBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
-              </Item>
             </BuildFailed>
             <BuildMoveStart>
               <Item>
                 <Sound>9818755</Sound>
-              </Item>
-              <Item>
-                <VectorElement>
-                  <InheritedIndex>0</InheritedIndex>
-                  <InheritanceMapV2>
-                    <Entry>
-                      <TemplateName>OrnamentalBuilding</TemplateName>
-                      <Index>0</Index>
-                    </Entry>
-                  </InheritanceMapV2>
-                </VectorElement>
               </Item>
             </BuildMoveStart>
           </ConstructionSounds>
@@ -119,37 +179,13 @@
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
         </Locked>
-        <FeedbackController />
         <Ornament>
           <OrnamentUnit>1</OrnamentUnit>
           <OrnamentIconInfotip>500276</OrnamentIconInfotip>
           <OrnamentDescription>3049</OrnamentDescription>
         </Ornament>
-        <AmbientMoodProvider />
-        <Pausable />
-        <Infolayer />
-        <Culture />
       </Values>
     </Asset>
-    <!-- <Asset>
-      <BaseAssetGUID>1500011049</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500011048</GUID>
-          <Name>Colorful Plaza</Name>
-        </Standard>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data/jakob/buildings/ornamental/nw_plaza/cultural_props_1x1_01.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-      </Values>
-    </Asset> -->
     <Asset>
       <BaseAssetGUID>1500011049</BaseAssetGUID>
       <Values>
@@ -229,7 +265,7 @@
         <Standard>
           <GUID>1500011056</GUID>
           <Name>Flower Pot</Name>
-          <IconFilename>data\jakob\nw-stone-pavement\icon_flowerpot.png</IconFilename>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_flowerpot.png</IconFilename>
         </Standard>
         <Blocking>
           <HidePropsRadius>0</HidePropsRadius>
@@ -251,7 +287,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\nw-stone-pavement\flowerpot.cfg</Filename>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\up_st_reward_01.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -276,115 +312,12 @@
       <Template>OrnamentalBuilding</Template>
       <Values>
         <Standard>
-          <GUID>1500011057</GUID>
-          <Name>Flower Bed</Name>
-          <IconFilename>data\jakob\nw-stone-pavement\icon_flowerbed.png</IconFilename>
-        </Standard>
-        <Blocking>
-          <HidePropsRadius>0</HidePropsRadius>
-          <DeletePropsRadius>0</DeletePropsRadius>
-        </Blocking>
-        <Building>
-          <BuildingCategoryName>1500011055</BuildingCategoryName>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <AssociatedRegions>Colony01</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>25</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\nw-stone-pavement\flowerbed.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-          <DLCDependency>24961</DLCDependency>
-        </Locked>
-        <Ornament>
-          <OrnamentUnit>1</OrnamentUnit>
-          <OrnamentDescription>144126</OrnamentDescription>
-        </Ornament>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>OrnamentalBuilding</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011058</GUID>
-          <Name>Hacienda Tree</Name>
-          <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_3.png</IconFilename>
-        </Standard>
-        <Blocking>
-          <HidePropsRadius>0</HidePropsRadius>
-          <DeletePropsRadius>0</DeletePropsRadius>
-        </Blocking>
-        <Building>
-          <BuildingCategoryName>1500011055</BuildingCategoryName>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <AssociatedRegions>Colony01</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-          <VariationIcons>
-            <Item>
-              <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_1.png</IconFilename>
-            </Item>
-            <Item>
-              <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_2.png</IconFilename>
-            </Item>
-            <Item>
-              <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_3.png</IconFilename>
-            </Item>
-          </VariationIcons>
-        </Building>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>25</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\nw-stone-pavement\hacienda_tree_2.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\nw-stone-pavement\hacienda_tree_3.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\nw-stone-pavement\hacienda_tree_4.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-          <DLCDependency>24961</DLCDependency>
-        </Locked>
-        <Ornament>
-          <OrnamentUnit>1</OrnamentUnit>
-          <OrnamentDescription>25182</OrnamentDescription>
-        </Ornament>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>OrnamentalBuilding</Template>
-      <Values>
-        <Standard>
           <GUID>1500011059</GUID>
           <Name>Statue of a Woman</Name>
           <IconFilename>data\jakob\nw-stone-pavement\icon_statue_woman.png</IconFilename>
         </Standard>
         <Building>
-          <BuildingCategoryName>1500011055</BuildingCategoryName>
+          <BuildingCategoryName>5753</BuildingCategoryName>
         </Building>
         <Cost>
           <Costs>
@@ -418,7 +351,7 @@
         <Standard>
           <GUID>1500011060</GUID>
           <Name>Newsstand</Name>
-          <IconFilename>data\jakob\nw-stone-pavement\icon_newsstand.png</IconFilename>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_newsstand.png</IconFilename>
         </Standard>
         <Blocking>
           <HidePropsRadius>0</HidePropsRadius>
@@ -440,7 +373,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\nw-stone-pavement\newsstand.cfg</Filename>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\cultural_props_1x1_15.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -483,7 +416,7 @@
         <Standard>
           <GUID>1500011061</GUID>
           <Name>Street Map</Name>
-          <IconFilename>data\jakob\nw-stone-pavement\icon_streetmap.png</IconFilename>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_streetmap.png</IconFilename>
         </Standard>
         <Blocking>
           <HidePropsRadius>0</HidePropsRadius>
@@ -504,7 +437,7 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\nw-stone-pavement\streetmap.cfg</Filename>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_info_02.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -523,61 +456,35 @@
         </Ornament>
       </Values>
     </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="101497">
     <Asset>
-      <Template>ConstructionCategory</Template>
+      <BaseAssetGUID>101497</BaseAssetGUID>
       <Values>
         <Standard>
-          <GUID>1500011051</GUID>
-          <Name>Ornaments</Name>
-          <IconFilename>data\jakob\nw-stone-pavement\icon_menu.png</IconFilename>
+          <GUID>1500011063</GUID>
+          <Name>Piazza Benches</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_piazza.png</IconFilename>
         </Standard>
-        <ConstructionCategory>
-          <BuildingList>
+        <Building>
+          <BuildingCategoryName>1500011055</BuildingCategoryName>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Object>
+          <Variations>
             <Item>
-              <Building>1500011052</Building>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\cultural_props_1x1_02.cfg</Filename>
             </Item>
-            <Item>
-              <Building>1500011050</Building>
-            </Item>
-            <Item>
-              <Building>1500011053</Building>
-            </Item>
-            <Item>
-              <Building>1500011049</Building>
-            </Item>
-            <Item>
-              <Building>1500011048</Building>
-            </Item>
-            <Item>
-              <Building>1500011056</Building>
-            </Item>
-            <Item>
-              <Building>1500011054</Building>
-            </Item>
-            <Item>
-              <Building>1500011057</Building>
-            </Item>
-            <Item>
-              <Building>1500011058</Building>
-            </Item>
-            <Item>
-              <Building>1500011059</Building>
-            </Item>
-            <Item>
-              <Building>1500011060</Building>
-            </Item>
-            <Item>
-              <Building>1500011061</Building>
-            </Item>
-            <Item>
-              <Building>1500011006</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>19564</CategoryDescription>
-        </ConstructionCategory>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # Hacienda -->
   <ModOp Type="addNextSibling" GUID="25194">
     <Asset>
       <BaseAssetGUID>25194</BaseAssetGUID>
@@ -606,7 +513,6 @@
               <Building>1500011053</Building>
             </Item>
           </InfluencedByNeighbors>
-          <BuildingCategoryName>1500011055</BuildingCategoryName>
         </Building>
         <Object>
           <Variations>
@@ -666,7 +572,6 @@
               <Building>1500011053</Building>
             </Item>
           </InfluencedByNeighbors>
-          <BuildingCategoryName>1500011055</BuildingCategoryName>
         </Building>
         <Object>
           <Variations>
@@ -699,22 +604,110 @@
         </Locked>
       </Values>
     </Asset>
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011057</GUID>
+          <Name>Flower Bed</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\icon_flowerbed.png</IconFilename>
+        </Standard>
+        <Blocking>
+          <HidePropsRadius>0</HidePropsRadius>
+          <DeletePropsRadius>0</DeletePropsRadius>
+        </Blocking>
+        <Building>
+          <BuildingCategoryName>6565</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\flowerbed.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24961</DLCDependency>
+        </Locked>
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentDescription>144126</OrnamentDescription>
+        </Ornament>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011058</GUID>
+          <Name>Hacienda Tree</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_3.png</IconFilename>
+        </Standard>
+        <Blocking>
+          <HidePropsRadius>0</HidePropsRadius>
+          <DeletePropsRadius>0</DeletePropsRadius>
+        </Blocking>
+        <Building>
+          <BuildingCategoryName>6565</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <VariationIcons>
+            <Item>
+              <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_1.png</IconFilename>
+            </Item>
+            <Item>
+              <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_2.png</IconFilename>
+            </Item>
+            <Item>
+              <IconFilename>data\jakob\nw-stone-pavement\icon_hacienda_tree_3.png</IconFilename>
+            </Item>
+          </VariationIcons>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\hacienda_tree_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\hacienda_tree_3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\hacienda_tree_4.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24961</DLCDependency>
+        </Locked>
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentDescription>25182</OrnamentDescription>
+        </Ornament>
+      </Values>
+    </Asset>
   </ModOp>
-
-  <!-- New World, Classic Ornaments -->
-  <ModOp Type="add" GUID="500055,500079" Path="/Values/ConstructionCategory/BuildingList">
-    <Item>
-      <Building>1500011051</Building>
-    </Item>
-  </ModOp>
-
-  <!-- New World, Empire of Skies Ornaments -->
-  <ModOp Type="addPrevSibling" GUID="7229" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-    <Item>
-      <Building>1500011052</Building>
-    </Item>
-  </ModOp>
-
   <!-- add new walls to Hacienda wall as neighbors -->
   <ModOp Type="add" GUID="25194" Path="/Values/Building/InfluencedByNeighbors">
     <Item>
@@ -723,5 +716,344 @@
     <Item>
       <Building>1500011053</Building>
     </Item>
+  </ModOp>
+
+  <!-- # Tourist Season -->
+  <ModOp Type="addNextSibling" GUID="134722">
+    <Asset>
+      <BaseAssetGUID>134722</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011061</GUID>
+          <Name>Street Map</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_streetmap.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_info_02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="134730">
+    <Asset>
+      <BaseAssetGUID>134730</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011066</GUID>
+          <Name>Yellow Parasol</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_parasol.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_pavillon_02_table_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="134731">
+    <Asset>
+      <BaseAssetGUID>134731</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011067</GUID>
+          <Name>Blue Parasol</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_parasol_blue.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_pavillon_02_table_02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="134732">
+    <Asset>
+      <BaseAssetGUID>134732</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011068</GUID>
+          <Name>Red Parasol</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_parasol_red.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_pavillon_02_table_03.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="134733">
+    <Asset>
+      <BaseAssetGUID>134733</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011069</GUID>
+          <Name>Green Parasol</Name>
+          <IconFilename>data\jakob\nw-stone-pavement\city_decorations\icon_parasol_green.png</IconFilename>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_pavillon_02_table_04.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="134735">
+    <Asset>
+      <BaseAssetGUID>134735</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011070</GUID>
+          <Name>Musician's Stage</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\city_decorations\tourism_ornaments_stage_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410084</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # City Lights Pack -->
+  <ModOp Type="addNextSibling" GUID="80040">
+    <Asset>
+      <BaseAssetGUID>80040</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011071</GUID>
+          <Name>Farmer's Stall</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\market_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80041">
+    <Asset>
+      <BaseAssetGUID>80041</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011072</GUID>
+          <Name>Florist's Stall</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\market_02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80042">
+    <Asset>
+      <BaseAssetGUID>80042</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011073</GUID>
+          <Name>Grocer's Stall</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\market_03.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80043">
+    <Asset>
+      <BaseAssetGUID>80043</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011074</GUID>
+          <Name>Fishmonger's Stall</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\market_04.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80044">
+    <Asset>
+      <BaseAssetGUID>80044</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011075</GUID>
+          <Name>Cheesemonger's Stall</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\market_05.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80060">
+    <Asset>
+      <BaseAssetGUID>80060</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011076</GUID>
+          <Name>Public Timepiece</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\clock_01.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80061">
+    <Asset>
+      <BaseAssetGUID>80061</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011077</GUID>
+          <Name>Steel Clockhouse</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\clock_02.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80062">
+    <Asset>
+      <BaseAssetGUID>80062</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011078</GUID>
+          <Name>City Light</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\fence_lamp.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="80063">
+    <Asset>
+      <BaseAssetGUID>80063</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011079</GUID>
+          <Name>Telephone Box</Name>
+        </Standard>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\nw-stone-pavement\lights_pack\phone_booth.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>410081</DLCDependency>
+        </Locked>
+      </Values>
+    </Asset>
   </ModOp>
 </ModOps>

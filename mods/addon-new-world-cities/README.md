@@ -41,6 +41,7 @@ Some buildings are a bit slower than their Old World counterpart.
 ### 1.2
 
 - Added enclosed greenery
+- Added City Lights Pack and Tourism ornament variants
 
 ### 1.1
 

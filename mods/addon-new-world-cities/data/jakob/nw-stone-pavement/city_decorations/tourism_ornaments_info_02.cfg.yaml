@@ -1,6 +1,5 @@
 variant: 
-  # needs annoRda variable set in vscode settings
-  source: ${annoRda}\data/graphics/buildings/ornamental/cultural_props_system/cultural_props_system_1x1_system/cultural_props_1x1_15.cfg
+  source: ${annoRda}\data/dlc08/graphics/buildings/ornamental/tourism/tourism_ornaments_info_02.cfg
   modifications:
     - xpath: //Config/Decals/Config/Materials/Config
       cModelDiffTex: data/jakob/nw-stone-pavement/maps/empty_ground_diff.psd
