@@ -1,0 +1,60 @@
+{
+  "src": ".",
+  "out": "${annoMods}/${modName}",  
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.*,README.md,**/icon_*.png}"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "gltf",
+      "pattern": "**/*.gltf",
+      "lods": 3,
+      "changePath": "rdm/"
+    },
+    {
+      "action": "texture",
+      "pattern": "data/jakob/**/*_{diff,norm,height,metal,mask,rga}.png",
+      "lods": 3,
+      "changePath": "maps/"
+    },
+    {
+      "action": "texture",
+      "pattern": "data/graphics/**/*_{diff,norm,height,metal,mask,rga}.png",
+      "lods": 3
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0",
+    "ModID": "jakob_railway",
+    "DeprecateIds": [],
+    "IncompatibleIds": [],
+    "ModDependencies": [ ],
+    "Category": {
+      "English": "Addon"
+    },
+    "ModName": {
+      "English": "Railway (Jakob)"
+    },
+    "Description": {
+      "English": "README.md"
+    },
+    "KnownIssues": null,
+    "DLCDependencies": [],
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}
