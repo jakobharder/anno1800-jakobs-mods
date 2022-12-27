@@ -1,4 +1,5 @@
 <ModOps>
+  <!-- replace NW street -->
   <ModOp Type="replace" GUID="101309" Path="/Values/Street">
     <Street>
       <CfgFileName>data\jakob\nw-street\earth_street_02.cfg</CfgFileName>
@@ -19,11 +20,14 @@
       </AdaptToNeighbors>
     </Street>
   </ModOp>
-  <!-- leave out quay crossing 80138 -->
+
+  <!-- replace railway, but leave out quay crossing 80138 -->
   <ModOp Type="merge" GUID="1010136,1010165,1010183,101409" Path="/Values/Street">
     <CfgFileName>data\jakob\railroad\earth_street_03.cfg</CfgFileName>
     <StyleCols>1</StyleCols>
   </ModOp>
+
+  <!-- replace NW bridge -->
   <ModOp Type="addNextSibling" GUID="101587">
     <Asset>
       <BaseAssetGUID>101587</BaseAssetGUID>

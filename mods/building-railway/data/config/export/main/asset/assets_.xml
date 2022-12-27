@@ -9,6 +9,83 @@
     </Item>
   </ModOp>
 
+  <!-- # Add useful plazas to Railway menu -->
+  <ModOp Type="addPrevSibling" GUID="5731" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011082</Building>
+    </Item>
+    <Item>
+      <Building>270038</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addPrevSibling" GUID="500174" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011082</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500164">
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011082</GUID>
+          <Name>Railway Dirt Pavement</Name>
+          <IconFilename>data\jakob\railway\icon_empty.png</IconFilename>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>1500011083</BuildingCategoryName>
+          <AssociatedRegions>Colony01;Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/railway/empty.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>9818759</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+        </Ornament>
+      </Values>
+    </Asset>
+  </ModOp>
+
   <!-- # Platform -->
   <ModOp Type="addNextSibling" GUID="101587">
     <Asset>
@@ -24,7 +101,8 @@
           <DeletePropsRadius>0</DeletePropsRadius>
         </Blocking>
         <Building>
-          <BuildingCategoryName>5749</BuildingCategoryName>
+          <BuildModeStartVariation>5</BuildModeStartVariation>
+          <BuildingCategoryName>1500011083</BuildingCategoryName>
           <InfluencedByNeighbors>
             <Item>
               <Building>1500011080</Building>
@@ -109,16 +187,17 @@
             <Mid>
               <Pool>
                 <Item>
+                  <Variation>5</Variation>
                   <DirectionOffet>1</DirectionOffet>
                   <Weight>10</Weight>
                 </Item>
                 <Item>
-                  <Variation>5</Variation>
+                  <Variation>6</Variation>
                   <DirectionOffet>1</DirectionOffet>
                   <Weight>5</Weight>
                 </Item>
                 <Item>
-                  <Variation>6</Variation>
+                  <Variation>7</Variation>
                   <DirectionOffet>1</DirectionOffet>
                   <Weight>2</Weight>
                 </Item>
@@ -127,20 +206,24 @@
             <TCrossing>
               <Pool>
                 <Item>
-                  <DirectionOffet>1</DirectionOffet>
-                  <Variation>4</Variation>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>3</Variation>
                 </Item>
               </Pool>
             </TCrossing>
             <Crossing>
               <Pool>
                 <Item>
-                  <Variation>3</Variation>
+                  <Variation>4</Variation>
                 </Item>
               </Pool>
             </Crossing>
             <End>
               <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>0</Variation>
+                </Item>
                 <Item>
                   <DirectionOffet>1</DirectionOffet>
                   <Variation>1</Variation>
@@ -177,19 +260,22 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\platform\platform_mid.cfg</Filename>
+              <Filename>data\jakob\platform\platform_end.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\platform\platform_end.cfg</Filename>
+              <Filename>data\jakob\platform\platform_end_entry.cfg</Filename>
             </Item>
             <Item>
               <Filename>data\jakob\platform\platform_corner.cfg</Filename>
             </Item>
             <Item>
+              <Filename>data\jakob\platform\platform_3way.cfg</Filename>
+            </Item>
+            <Item>
               <Filename>data\jakob\platform\platform_xing.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\platform\platform_3way.cfg</Filename>
+              <Filename>data\jakob\platform\platform_mid.cfg</Filename>
             </Item>
             <Item>
               <Filename>data\jakob\platform\platform_mid2.cfg</Filename>
@@ -199,21 +285,14 @@
             </Item>
           </Variations>
         </Object>
-        <Constructable />
-        <Mesh>
-          <ForbidCollapseEffect>1</ForbidCollapseEffect>
-          <LogoMode>CorporationLogoFromPlayer</LogoMode>
-          <SetCompanyLogo>1</SetCompanyLogo>
-        </Mesh>
-        <SoundEmitter />
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
           <DLCDependency>24964</DLCDependency>
         </Locked>
         <Ornament>
-          <PlazzaSize>1</PlazzaSize>
           <OrnamentUnit>1</OrnamentUnit>
-          <OrnamentDescription>269811</OrnamentDescription>
+          <OrnamentDescription>544</OrnamentDescription>
+          <OrnamentType>Ornament_IndustrialPack</OrnamentType>
         </Ornament>
       </Values>
     </Asset>
@@ -230,7 +309,8 @@
           <DeletePropsRadius>0</DeletePropsRadius>
         </Blocking>
         <Building>
-          <BuildingCategoryName>5749</BuildingCategoryName>
+          <BuildModeStartVariation>5</BuildModeStartVariation>
+          <BuildingCategoryName>1500011083</BuildingCategoryName>
           <InfluencedByNeighbors>
             <Item>
               <Building>1500011080</Building>
@@ -315,6 +395,7 @@
             <Mid>
               <Pool>
                 <Item>
+                  <Variation>5</Variation>
                   <DirectionOffet>1</DirectionOffet>
                 </Item>
               </Pool>
@@ -323,19 +404,23 @@
               <Pool>
                 <Item>
                   <DirectionOffet>3</DirectionOffet>
-                  <Variation>0</Variation>
+                  <Variation>3</Variation>
                 </Item>
               </Pool>
             </TCrossing>
             <Crossing>
               <Pool>
                 <Item>
-                  <Variation>3</Variation>
+                  <Variation>4</Variation>
                 </Item>
               </Pool>
             </Crossing>
             <End>
               <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>0</Variation>
+                </Item>
                 <Item>
                   <DirectionOffet>1</DirectionOffet>
                   <Variation>1</Variation>
@@ -372,40 +457,33 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\platform\platform_roofed_mid.cfg</Filename>
-            </Item>
-            <Item>
               <Filename>data\jakob\platform\platform_end.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\platform\platform_corner.cfg</Filename>
+              <Filename>data\jakob\platform\platform_end_entry.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\platform\platform_xing.cfg</Filename>
+              <Filename>data\jakob\platform\platform_roof_corner.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\platform\platform_3way.cfg</Filename>
+              <Filename>data\jakob\platform\platform_roof_3way.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\platform\platform_mid2.cfg</Filename>
+              <Filename>data\jakob\platform\platform_roof_xing.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\platform\platform_roof_mid.cfg</Filename>
             </Item>
           </Variations>
         </Object>
-        <Constructable />
-        <Mesh>
-          <ForbidCollapseEffect>1</ForbidCollapseEffect>
-          <LogoMode>CorporationLogoFromPlayer</LogoMode>
-          <SetCompanyLogo>1</SetCompanyLogo>
-        </Mesh>
-        <SoundEmitter />
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
           <DLCDependency>24964</DLCDependency>
         </Locked>
         <Ornament>
-          <PlazzaSize>1</PlazzaSize>
           <OrnamentUnit>1</OrnamentUnit>
-          <OrnamentDescription>269811</OrnamentDescription>
+          <OrnamentDescription>544</OrnamentDescription>
+          <OrnamentType>Ornament_IndustrialPack</OrnamentType>
         </Ornament>
       </Values>
     </Asset>
