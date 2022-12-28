@@ -87,6 +87,6 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Translations
 
-Available: English, German, Russian
+Available: Chinese, English, German, Polish, Russian
 
-Thanks to redzmey1 for Russian translation!
+Thanks to redzmey1, darknesswei, HeroOfOlympus for translations!

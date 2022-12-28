@@ -1,7 +1,7 @@
 <ModOps>
   <!-- # Shared Goods -->
   <Include File="../../../products/texts/texts_chinese.include.xml" />
-  
+
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1440005</GUID>
@@ -140,95 +140,95 @@
       <Text>[AssetData(1500010250) Text]</Text>
     </Text>
   </ModOp>
-    
+
   <!-- # Kitchen (Pickled Vegetables) -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010830</GUID>
-      <Text>Vegetable Farm</Text>
+      <Text>蔬菜农场</Text>
     </Text>
     <Text>
       <GUID>1500010944</GUID>
-      <Text>Vegetable Field</Text>
+      <Text>菜园子</Text>
     </Text>
     <Text>
       <GUID>1500010835</GUID>
-      <Text>Kitchen</Text>
+      <Text>厨房</Text>
     </Text>
     <Text>
       <GUID>1500010946</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Vegetables -->
-    </Text>  
+    </Text>
   </ModOp>
 
   <!-- # Tea Maker -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010940</GUID>
-      <Text>Tea Maker</Text> <!-- Building: Tea Maker -->
+      <Text>制茶商</Text> <!-- Building: Tea Maker -->
     </Text>
     <Text>
       <GUID>1500010848</GUID>
-      <Text>Herb Farm</Text> <!-- Building: Herb Farm -->
+      <Text>草本农场</Text> <!-- Building: Herb Farm -->
     </Text>
     <Text>
       <GUID>1500010849</GUID>
-      <Text>Herbs</Text> <!-- Product: Herbs -->
+      <Text>草本植物</Text> <!-- Product: Herbs -->
     </Text>
     <Text>
       <GUID>1500010943</GUID>
-      <Text>Herbs Field</Text> <!-- Module: Herbs Field -->
+      <Text>草本种植区</Text> <!-- Module: Herbs Field -->
     </Text>
     <Text>
       <GUID>1500010945</GUID>
       <Text>[AssetData(269193) Text]</Text> <!-- Land Reform Act: Herbs -->
     </Text>
   </ModOp>
-  
+
   <!-- # Alternative Needs -->
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
-    <Text>Fine Clothes</Text>
+    <Text>精制服装</Text>
   </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
-    <Text>Food</Text>
+    <Text>食物</Text>
   </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
-    <Text>Food</Text>
+    <Text>食物</Text>
   </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
-    <Text>Canned Food</Text>
+    <Text>罐装食品</Text>
   </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
     <Text>[AssetData(984) Text]</Text> <!-- Tools -->
   </ModOp>
   <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
-    <Text>Hot Beverages</Text>
+    <Text>热饮</Text>
   </ModOp>
 
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010846</GUID>
-      <Text>Basic Food</Text>
+      <Text>基本食物</Text>
     </Text>
     <Text>
       <GUID>1500010808</GUID>
-      <Text>Alternative Needs</Text>
+      <Text>可替代需求</Text>
     </Text>
     <Text>
       <GUID>1500010823</GUID>
-      <Text>Alternative needs consumption reduces basic needs.</Text>
+      <Text>可替代需求的消费减少了基本需求。</Text>
     </Text>
     <Text>
       <GUID>1500010159</GUID>
-      <Text>Alternative Needs</Text>
+      <Text>可替代需求</Text>
     </Text>
     <Text>
       <GUID>1500010949</GUID>
-      <Text>Alternative &amp; Luxury Need</Text>
+      <Text>可替代 &amp; 奢侈 需求</Text>
     </Text>
     <Text>
       <GUID>1500010950</GUID>
-      <Text>Alternative &amp; Basic Need</Text>
+      <Text>可替代 &amp; 基本 需求</Text>
     </Text>
   </ModOp>
 </ModOps>
