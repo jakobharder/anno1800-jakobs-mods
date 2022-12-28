@@ -11,7 +11,6 @@ You need to rebuild bridges if you want the right color after activating this mo
 Likewise, if you deactivate the mod those new bridges will disappear.
 
 The railway texture is inspired by [Gravel Railway Retexture](https://www.nexusmods.com/anno1800/mods/391) by Bluesatin.
-It is essentially a heavily retextured version of it. Bump map has been recreated.
 
 ## Changes
 
