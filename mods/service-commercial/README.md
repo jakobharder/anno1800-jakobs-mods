@@ -29,29 +29,21 @@ Note: The buildings do not count as quest objectives.
 
 ## Changes
 
-### 1.5
+### 1.5.3
 
-- Fixed restaurant townhall buffs
-- Visual improvements
+- Fixed public services for the Skyline Tower
 
-### 1.4
+### Older
 
-- Polish translation
-- Chinese translation
-
-### 1.3
-
-- Added end, crossing, T-crossing variants
-- Added skins to warehouse store
-- Added ornamental store with
-
-### 1.2
-
-- Fixed GU14 maintenance buff
-
-### 1.1
-
-- Increased warehouse range
+- 1.5: Fixed restaurant townhall buffs
+- 1.5: Visual improvements
+- 1.4: Polish translation
+- 1.4: Chinese translation
+- 1.3: Added end, crossing, T-crossing variants
+- 1.3: Added skins to warehouse store
+- 1.3: Added ornamental store with
+- 1.2: Fixed GU14 maintenance buff
+- 1.1: Increased warehouse range
 
 ## Translations
 
