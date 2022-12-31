@@ -1,19 +1,7 @@
 <ModOps>
-  <!-- # Vanilla Target Pools -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010714</GUID>
-      <Text>[AssetData(1010560) Text]</Text> <!-- pool: Sand Mine -->
-    </Text>
-    <Text>
-      <GUID>1500010715</GUID>
-      <Text>[AssetData(1010305) Text]</Text> <!-- pool: Iron Mine -->
-    </Text>
-    <Text>
-      <GUID>1500010716</GUID>
-      <Text>[AssetData(1010309) Text]</Text> <!-- pool: Cement Mine -->
-    </Text>
-  </ModOp>
+  <!-- # Shared Target Pools -->
+  <Include File="../../../pools/texts_italian.include.xml" />
+
   <!-- # Steel Beams -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
