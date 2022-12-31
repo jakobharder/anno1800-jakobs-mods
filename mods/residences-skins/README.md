@@ -11,8 +11,6 @@ skins for hotels.
 
 ## Translations
 
-Available: English, German
+Available: Chinese, English, German, Polish
 
-Thanks to
-- Aveneger432 for Polish translation
-- darknesswei for Chinese translation
+Thanks to Aveneger432, darknesswei for translations

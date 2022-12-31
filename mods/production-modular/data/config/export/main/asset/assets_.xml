@@ -3,6 +3,7 @@ Modular Factories
 -->
 <ModOps>
   <Include File="../../../../../features.include.xml" />
+  <Include File="../../../../../pools/assets-pools.include.xml" />
 
   <!-- # boostable buildings -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
@@ -392,11 +393,6 @@ Modular Factories
   <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500010600</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" Path="//ItemEffect/EffectTargets[Item/GUID='1010284']">
-    <Item>
-      <GUID>1500010600</GUID>
     </Item>
   </ModOp>
   <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010284']">

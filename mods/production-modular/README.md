@@ -7,7 +7,7 @@ You find the buildings in the respective production chain menus.
 The buildings are intended visual alternatives without any gameplay benefit.
 Their cost and cycles are adjusted to their changed footprint.
 
-Buildings:
+### Buildings
 
 - Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
 - (Tools are part of the `[Shared] Extra Goods (Jakob)` mod)
@@ -15,11 +15,12 @@ Buildings:
 
 ## Changes
 
-### 1.2
+- 1.2: Added Sewing Machines to boostable factories menu
+- 1.2: Added LODs
+- 1.1: Fixed missing models
 
-- Added Sewing Machines to boostable factories menu
-- Added LODs
+## Translations
 
-### 1.1
+Available: English, German, Japanese, Polish
 
-- Fixed missing models
+Thanks to HeroOfOlympus for translations!

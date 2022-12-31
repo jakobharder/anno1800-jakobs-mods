@@ -42,8 +42,6 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Translations
 
-Available: English, German, Japanese, Polish, Chinese
+Available: Chinese, English, German, Japanese, Polish
 
-Thanks to
-- Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+Thanks to Aveneger432, darknesswei for tranlsations

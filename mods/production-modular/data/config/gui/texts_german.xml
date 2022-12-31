@@ -1,8 +1,23 @@
 <ModOps>
+  <!-- # Shared Target Pools -->
+  <Include File="../../../pools/texts_german.include.xml" />
+  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010600</GUID>
       <Text>Nähmaschinenfabrik</Text> <!-- building: sewing machines -->
+    </Text>
+  </ModOp>
+
+  <!-- # Modular Factories menu -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010601</GUID>
+      <Text>Modulare Fabriken</Text> <!-- menu: modular factories -->
+    </Text>
+    <Text>
+      <GUID>1500010602</GUID>
+      <Text>Mehrere Fabriken verbinden sich zu einer großen Fabrik.</Text> <!-- menu desc: modular factories -->
     </Text>
   </ModOp>
 </ModOps>

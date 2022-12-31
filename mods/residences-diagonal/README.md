@@ -35,8 +35,6 @@ Known issues:
 
 ## Translations (skin names only)
 
-Available: English, German, Polish, Chinese
+Available: Chinese, English, German, Polish
 
-Thanks go to:
-- Aveneger432 for Polish translation
-- darknesswei for Chinese translation
+Thanks go to Aveneger432, HeroOfOlympus, darknesswei for translations

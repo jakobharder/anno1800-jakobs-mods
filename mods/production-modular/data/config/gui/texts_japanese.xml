@@ -1,8 +1,23 @@
 <ModOps>
+  <!-- # Shared Target Pools -->
+  <Include File="../../../pools/texts_japanese.include.xml" />
+  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010600</GUID>
       <Text>ミシン工場</Text> <!-- building: sewing machines -->
+    </Text>
+  </ModOp>
+
+  <!-- # Modular Factories menu -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010601</GUID>
+      <Text>モジュール式工場</Text> <!-- menu: modular factories -->
+    </Text>
+    <Text>
+      <GUID>1500010602</GUID>
+      <Text>複数の工場が一つの大きい工場に統合します。</Text> <!-- menu desc: modular factories -->
     </Text>
   </ModOp>
 </ModOps>
