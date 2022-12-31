@@ -1,27 +1,44 @@
 # Changelog
 
-## 5.1.2 - Railroads
+## Unreleased - Quality Improvements
+
+### New Content
+
+- Railway Buildings, 1.0: New mod with dynamic passenger and freight platforms
+- New World Cities, 1.2: Added City Lights Pack, enclosed greenery and other ornaments
+- Improved Streets, 1.2: Added recolored NW Stone Bridge
+- Extra Goods, 2.1: Added iMYA tweaks
+
+### Changes
+
+- New World Cities, 1.2: Fixed item effect pools for construction material buildings
+- Commerical Streets, 1.5.3: Fixed missing public services for the Skyline Tower
+- New Town Halls, 1.7: Added skin icons / names (skin button is new with GU16)
+- Modular Factories, 1.2.3: Added item effect pool to avoid double mention of Sewing Machine Factory
+- Improved Streets, 1.2: Improved compatibility with City Ornaments (railway texture)
+- Extra Goods, 2.1: Enabled free farmfield placement. Can be disabled via iMYA
+- Upgradable Workers, 2.3.2: Fixed missing skin icons
+- Pescatarians, 2.0.3, Fixed missing skin icons
+- Improved Chinese translations (across several mods)
+
+## 5.1.2 - Railways, NW Streets and Ornaments
+
+### New Content
+
+- Improved Streets: Added improved railway and NW stone street textures
+- New World Cities: Added stone paving and wall ornaments
+- Compact UI: Added electricity, sewing machines and others in the NW
+- Nate's Windmill: Added iMYA tweaks
+
+### Changes
 
 - Extra Goods: Fixed alternative need buff in Cap Trelawney
-- Improved Streets: Added railroads
 - New World Cities: Added missing ornament texts
-
-## 5.1 - NW Streets and Ornaments
-
-### Changed
-
 - Pescatarians: Fixed missing residence construction costs
 - Pescatarians: Fixed too high need income
 - Extra Goods: Fixed vegetable farm construction costs
 - Extra Goods: Alternative Need buff is shown in residences now
 - Minor localization updates
-
-### Added
-
-- Improved Streets: more fitting texture for NW
-- New World Cities: Added stone paving and wall ornaments
-- Compact UI: Added electricity, sewing machines and others in the NW
-- Nate's Windmill: Added iMYA tweak support
 
 ## 5.0.2
 

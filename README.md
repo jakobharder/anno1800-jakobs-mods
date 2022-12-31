@@ -87,7 +87,7 @@ In-game changes, that need your attention:
 
 ![](./doc/industrial-variations.jpg)
 
-- [\[Skin\] Factory Variants](./mods/production-variations/README.md)
+- [\[Skin\] Factory Variants](./mods/skin-factories/README.md)
   (Shift+V variations)
 
   Adds variations to vanilla production buildings.
