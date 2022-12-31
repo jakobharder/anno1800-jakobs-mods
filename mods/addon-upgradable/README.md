@@ -56,6 +56,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.3.2
+
+- Fixed missing skin icons
+
 ### 2.3
 
 - Replaced Cheese with Tea. Cheese is now an alternative lifestyle need for Sausages.

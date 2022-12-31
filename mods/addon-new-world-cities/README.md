@@ -46,6 +46,8 @@ Some buildings are a bit slower than their Old World counterpart.
 
 - Added enclosed greenery
 - Added City Lights Pack and Tourism ornament variants
+- Added fix for wrong grass color in Tropical Forest ornaments
+- Fixed missing item effect pools for some construction material buildings
 
 ### 1.1
 
