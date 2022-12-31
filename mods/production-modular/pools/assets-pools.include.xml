@@ -438,6 +438,7 @@
   <ModOp Type="remove" GUID="1500010999" />
 
   <!-- # All Sewing Machine Factories -->
+  <!-- Also merge with NW Sewing Machine Factories -->
   <ModOp Type="addNextSibling" GUID="190886">
     <Asset>
       <!-- 2nd duplicate to ensure there's always at least one to remove afterwards to avoid warnings -->
@@ -461,6 +462,9 @@
             <Item>
               <GUID>1010284</GUID>
             </Item>
+            <Item>
+              <GUID>6083</GUID>
+            </Item>
           </EffectTargetGUIDs>
         </ItemEffectTargetPool>
       </Values>
@@ -476,6 +480,9 @@
           <EffectTargets>
             <Item>
               <GUID>1010284</GUID>
+            </Item>
+            <Item>
+              <GUID>6083</GUID>
             </Item>
           </EffectTargets>
         </ItemEffect>
@@ -493,5 +500,6 @@
       <GUID>1500011904</GUID>
     </Item>
   </ModOp>
+  <ModOp Type="remove" Path="//ItemEffect/EffectTargets/Item[GUID='6083']" />
   <ModOp Type="remove" GUID="1500010999" />
 </ModOps>
