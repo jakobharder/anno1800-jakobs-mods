@@ -1,4 +1,4 @@
-# Jakob's Collection 5.1.1
+# Jakob's Collection 5.2
 
 New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
 
@@ -118,6 +118,27 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 - **[Skin] Improved Streets**
 
   Replaces railroads and NW streets with more fitting textures.
+
+## 5.2 Changes - Quality Improvements
+
+### New Content
+
+- Railway Buildings, 1.0: New mod with dynamic passenger and freight platforms
+- New World Cities, 1.2: Added City Lights Pack, enclosed greenery and other ornaments
+- Improved Streets, 1.2: Added recolored NW Stone Bridge
+- Extra Goods, 2.1: Added iMYA tweaks
+
+### Changes
+
+- New World Cities, 1.2: Fixed item effect pools for construction material buildings
+- Commerical Streets, 1.5.3: Fixed missing public services for the Skyline Tower
+- New Town Halls, 1.7: Added skin icons / names (skin button is new with GU16)
+- Modular Factories, 1.2.3: Added item effect pool to avoid double mention of Sewing Machine Factory
+- Improved Streets, 1.2: Improved compatibility with City Ornaments (railway texture)
+- Extra Goods, 2.1: Enabled free farmfield placement. Can be disabled via iMYA
+- Upgradable Workers, 2.3.2: Fixed missing skin icons
+- Pescatarians, 2.0.3, Fixed missing skin icons
+- Improved Chinese translations (across several mods)
 
 ## Translations
 

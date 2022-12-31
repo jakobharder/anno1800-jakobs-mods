@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased - Quality Improvements
+## 5.2 - Quality Improvements
 
 ### New Content
 
