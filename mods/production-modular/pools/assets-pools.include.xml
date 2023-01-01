@@ -26,8 +26,7 @@
     How it works:
 
     - Always add new pool before potentially existing pool.
-    - Rename the last entry to pool name, so that all pools before it are named "duplicate".
-    - Remove all duplicates.
+    - Remove all except last.
     - Replace buff targets - ItemEffect/EffectTargets only, not ItemEffectTargetPool/EffectTargetGUIDs.
   -->
 
@@ -48,7 +47,7 @@
       <Values>
         <Standard>
           <GUID>1500010714</GUID>
-          <Name>duplicate</Name>
+          <Name>all sand mines</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -77,10 +76,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500010714'][last()]/Values/Standard/Name">
-    <Name>all sand mines</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500010714' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500010714'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010560']">
     <Item>
@@ -106,7 +102,7 @@
       <Values>
         <Standard>
           <GUID>1500010715</GUID>
-          <Name>duplicate</Name>
+          <Name>all iron mines</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -135,10 +131,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500010715'][last()]/Values/Standard/Name">
-    <Name>all iron mines</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500010715' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500010715'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010305']">
     <Item>
@@ -164,7 +157,7 @@
       <Values>
         <Standard>
           <GUID>1500010716</GUID>
-          <Name>duplicate</Name>
+          <Name>all cement mines</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -193,10 +186,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500010716'][last()]/Values/Standard/Name">
-    <Name>all cement mines</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500010716' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500010716'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010309']">
     <Item>
@@ -222,7 +212,7 @@
       <Values>
         <Standard>
           <GUID>1500011900</GUID>
-          <Name>duplicate</Name>
+          <Name>all window makers</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -251,10 +241,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500011900'][last()]/Values/Standard/Name">
-    <Name>all window makers</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011900' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011900'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010285']">
     <Item>
@@ -280,7 +267,7 @@
       <Values>
         <Standard>
           <GUID>1500011901</GUID>
-          <Name>duplicate</Name>
+          <Name>all steelworks</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -309,10 +296,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500011901'][last()]/Values/Standard/Name">
-    <Name>all steelworks</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011901' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011901'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010296']">
     <Item>
@@ -338,7 +322,7 @@
       <Values>
         <Standard>
           <GUID>1500011902</GUID>
-          <Name>duplicate</Name>
+          <Name>all concrete factories</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -367,10 +351,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500011902'][last()]/Values/Standard/Name">
-    <Name>all concrete factories</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011902' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011902'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010280']">
     <Item>
@@ -396,7 +377,7 @@
       <Values>
         <Standard>
           <GUID>1500011903</GUID>
-          <Name>duplicate</Name>
+          <Name>all glassmakers</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -425,10 +406,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500011903'][last()]/Values/Standard/Name">
-    <Name>all glassmakers</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011903' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011903'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010319']">
     <Item>
@@ -455,7 +433,7 @@
       <Values>
         <Standard>
           <GUID>1500011904</GUID>
-          <Name>duplicate</Name>
+          <Name>all sewing machine factories</Name>
         </Standard>
         <ItemEffectTargetPool>
           <EffectTargetGUIDs>
@@ -490,10 +468,7 @@
     </Asset>
   </ModOp>
   <!-- remove duplicates -->
-  <ModOp Type="replace" Path="//Asset[Values/Standard/GUID='1500011904'][last()]/Values/Standard/Name">
-    <Name>all sewing machine factories</Name>
-  </ModOp>
-  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011904' and Values/Standard/Name='duplicate']"/>
+  <ModOp Type="remove" Path="//Asset[Values/Standard/GUID='1500011904'][position() < last()]"/>
   <!-- replace original target GUIDs -->
   <ModOp Type="replace" Path="//ItemEffect/EffectTargets/Item[GUID='1010284']">
     <Item>
