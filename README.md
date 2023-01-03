@@ -146,7 +146,7 @@ In-game changes, that need your attention:
 
 ![](./doc/streets.jpg)
   
-- [\[Skin\] Improved Streets](./mods/improved-streets/README.md)
+- [\[Skin\] Improved Streets](./mods/skin-streets/README.md)
 
   Replaces railroads and NW streets with more fitting textures.
 
