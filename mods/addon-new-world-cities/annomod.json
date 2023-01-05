@@ -1,14 +1,18 @@
 {
-  "src": ".",
-  "out": "${annoMods}/${modName}",  
+  "src": [ ".", "../../shared" ],
+  "out": "${annoMods}/${modName}",
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
+      "pattern": "pools/**/{*.include.xml,icon_*.png}"
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md,**/icon_*.png}"
+      "pattern": "data/**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png}"
     },
     {
       "action": "cf7",
@@ -49,8 +53,7 @@
       "English": "New World Cities (Jakob)"
     },
     "Description": {
-      "English": "README.md",
-      "German": "README.md"
+      "English": "README.md"
     },
     "KnownIssues": null,
     "DLCDependencies": [
