@@ -6,6 +6,10 @@
 
 - Railway Buildings, 1.1: Added random freight trains
 
+### Changes
+
+- More Chinese translations (across several mods)
+
 ## 5.2 - Quality Improvements
 
 ### New Content
