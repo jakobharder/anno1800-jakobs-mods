@@ -1,0 +1,10 @@
+variant: 
+  source: cargo.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name='main']/Materials/Config[Name='walls']
+      cModelDiffTex: data/graphics/buildings/production/mining_04/maps/mining_04_slot_01_diff.psd
+      cModelMetallicTex: data/graphics/buildings/production/mining_04/maps/mining_04_slot_01_metal.psd
+      cModelNormalTex: data/graphics/buildings/production/mining_04/maps/mining_04_slot_01_norm.psd
+      cDiffuseColor.r: 0.55
+      cDiffuseColor.g: 0.45
+      cDiffuseColor.b: 0.45

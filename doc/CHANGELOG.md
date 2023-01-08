@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### New Content
+
+- Railway Buildings, 1.1: Added random freight trains
+
 ## 5.2 - Quality Improvements
 
 ### New Content

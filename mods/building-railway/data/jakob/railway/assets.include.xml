@@ -1,0 +1,78 @@
+<ModOps>
+  <!-- # Add useful plazas to Railway menu -->
+  <ModOp Type="addPrevSibling" GUID="5731" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011082</Building>
+    </Item>
+    <Item>
+      <Building>270038</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addPrevSibling" GUID="500174" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011082</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500164">
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011082</GUID>
+          <Name>Railway Dirt Pavement</Name>
+          <IconFilename>data\jakob\railway\icon_empty.png</IconFilename>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>1500011083</BuildingCategoryName>
+          <AssociatedRegions>Colony01;Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/railway/empty.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>9818759</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+        </Ornament>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

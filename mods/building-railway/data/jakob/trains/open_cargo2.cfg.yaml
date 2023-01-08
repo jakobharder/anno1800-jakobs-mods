@@ -1,0 +1,4 @@
+variant: 
+  source: cargo.cfg
+  modifications:
+    - xpath-remove: //Config/Models/Config[Name='cargo']
