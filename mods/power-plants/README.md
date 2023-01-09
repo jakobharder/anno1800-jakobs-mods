@@ -18,7 +18,7 @@ Fuel station is only available if you have `Bright Harvest` active.
 - Small Oil Power Plant
 - Small Gas Power Plant
 
-Use the mod `Small Power Plants, New World` to enable the power plants in the New World.
+Use the mod `[Addon] New World Cities` to enable the power plants in the New World.
 
 ### Fuel
 
