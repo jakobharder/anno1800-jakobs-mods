@@ -1095,6 +1095,15 @@
       </Values>
     </Asset>
   </ModOp>
+  <!-- add to neighbor feature -->
+  <ModOp GUID='7233' Type='add' Path='/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule'>
+    <Item>
+      <Building>1500010200</Building>
+    </Item>
+    <Item>
+      <Building>1500010201</Building>
+    </Item>
+  </ModOp>
   <!-- add neighbor influences -->
   <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
     <Item>
@@ -2112,6 +2121,15 @@
         <Text />
       </Values>
     </Asset>
+  </ModOp>
+  <!-- add to neighbor feature -->
+  <ModOp GUID='7233' Type='add' Path='/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule'>
+    <Item>
+      <Building>1500010225</Building>
+    </Item>
+    <Item>
+      <Building>1500010226</Building>
+    </Item>
   </ModOp>
   <!-- add neighbor influences -->
   <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">

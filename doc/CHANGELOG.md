@@ -8,6 +8,7 @@
 
 ### Changes
 
+- Upgradable Workers, 2.3.3: Fixed automatic variation to work with new GU16 handling
 - More Chinese translations (across several mods)
 
 ## 5.2 - Quality Improvements

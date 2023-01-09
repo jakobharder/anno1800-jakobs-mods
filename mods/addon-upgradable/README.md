@@ -56,27 +56,19 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
-### 2.3.2
+### 2.3.3
 
-- Fixed missing skin icons
+- Fixed automatic variation to work with new GU16 handling
 
-### 2.3
+### Older
 
-- Replaced Cheese with Tea. Cheese is now an alternative lifestyle need for Sausages.
-
-### 2.2
-
-- Improved Russian translation (thanks to @m_belonosov)
-- Moved stone pavement to separate menu with City Decoration (new) and City Lights Pack (more) ornaments.
-
-### 2.1
-
-- Fixed buff issues
-- Visual + performance improvement
-
-### 2.0
-
-- Added Artisans 🥳
+- 2.3.2: Fixed missing skin icons
+- 2.3: Replaced Cheese with Tea. Cheese is now an alternative lifestyle need for Sausages.
+- 2.2: Improved Russian translation (thanks to @m_belonosov)
+- 2.2: Moved stone pavement to separate menu with City Decoration (new) and City Lights Pack (more) ornaments.
+- 2.1: Fixed buff issues
+- 2.1: Visual + performance improvement
+- 2.0: Added Artisans 🥳
 
 ## Translations
 
