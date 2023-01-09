@@ -1,5 +1,16 @@
 # Changelog
 
+## 5.3
+
+### New Content
+
+- Railway Buildings, 1.1: Added random freight trains
+
+### Changes
+
+- Upgradable Workers, 2.3.3: Fixed automatic variation to work with new GU16 handling
+- More Chinese translations (across several mods)
+
 ## 5.2 - Quality Improvements
 
 ### New Content

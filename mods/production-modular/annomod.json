@@ -1,22 +1,22 @@
 {
-  "src": ".",
+  "src": [ ".", "../../shared" ],
   "out": "${annoMods}/${modName}",  
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
+      "pattern": "pools/**/{*.include.xml,icon_*.png}"
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "data/**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.png,README.md,data/**/icon_*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "**/icon*.png"
     },
     {
       "action": "gltf",
@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.2.3",
+    "Version": "1.2.4",
     "ModID": "jakob_modular_factories",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_ground_textures" ],

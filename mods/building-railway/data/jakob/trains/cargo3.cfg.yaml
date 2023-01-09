@@ -1,0 +1,12 @@
+variant: 
+  source: cargo.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name='closed']
+      FileName: data\jakob\trains\rdm\cars_closed2_lod0.rdm
+    - xpath: //Config/Models/Config[Name='closed']/Materials/Config[Name='walls']
+      cModelDiffTex: data/graphics/buildings/production/mining_04/maps/mining_04_slot_01_diff.psd
+      cModelMetallicTex: data/graphics/buildings/production/mining_04/maps/mining_04_slot_01_metal.psd
+      cModelNormalTex: data/graphics/buildings/production/mining_04/maps/mining_04_slot_01_norm.psd
+      cDiffuseColor.r: 0.65
+      cDiffuseColor.g: 0.65
+      cDiffuseColor.b: 0.65
