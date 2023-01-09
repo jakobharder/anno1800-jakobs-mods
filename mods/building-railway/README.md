@@ -1,6 +1,9 @@
 # Railway Stations
 
-Railway freight and passenger platforms.
+
+Dynamic railway freight and passenger platforms.
+
+Randomized freight trains.
 
 ## Changes
 
