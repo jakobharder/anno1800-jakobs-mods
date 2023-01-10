@@ -1,5 +1,5 @@
 {
-  "src": [ ".", "../../shared" ],
+  "src": [ "../../shared", "." ],
   "out": "${annoMods}/${modName}",  
   "converter": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png,**/icons/*.png}"
+      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png,**/icons/*.png,features.include.xml}"
     },
     {
       "action": "cf7",
