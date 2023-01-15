@@ -166,10 +166,11 @@ Available: English, German, (Russian, Korean, French, Polish, Chinese).
 
 ## Special Thanks
 
-- @taubenangriff for sharing some assets
-- @taludas for playtest feedback
-- @m_belonosov, redzmey1 for Russian translation
+- m_belonosov, redzmey1 for Russian translation
 - MSHS for Korean translation
-- @Petritant for French translation
+- Tonton Yip, Petritant for French translation
 - HeroOfOlympus, Aveneger432 for Polish translation
 - darknesswei for Chinese translation
+- Taubenangriff for sharing some assets
+- Taludas, Ionovia for playtest feedback
+- Ricky for being Ricky

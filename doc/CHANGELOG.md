@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Changes
+
+- More French translations (across several mods)
+
 ## 5.3 - Random Freight Trains
 
 ### New Content

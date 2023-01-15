@@ -45,6 +45,6 @@ You find the biogas production in materials and embedded in the gas and small po
 
 ## Translations
 
-Available: English, German
+Available: Chinese, French, English, German, Korean, Polish
 
-I appreciate any translation feedback! https://discord.com/invite/KtfWbev
+Thanks to darknesswei, Tonton Yip for translations!
