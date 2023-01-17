@@ -63,6 +63,11 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
+## 2.1.1
+
+- Added Tea Maker, Herb Farm to more production pools
+- Fixed tools name in statistics
+
 ## 2.1
 
 - All farms have free farmfield placement now.

@@ -5,6 +5,7 @@
 ### Changes
 
 - More French translations (across several mods)
+- Minor fixes
 
 ## 5.3 - Random Freight Trains
 
