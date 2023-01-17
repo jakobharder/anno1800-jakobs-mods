@@ -63,8 +63,9 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
-## 2.1.1
+## 2.2
 
+- Moved alternative needs to separate mod: `[Gameplay] Alternative Needs (Jakob)`
 - Added Tea Maker, Herb Farm to more production pools
 - Fixed tools name in statistics
 

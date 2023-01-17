@@ -4,6 +4,8 @@
 
 ### Changes
 
+- Moved alternative needs to separate mod `[Gameplay] Alternative Needs (Jakob)`.
+  Only works in combination with `[Shared] Extra Goods (Jakob)`.
 - More French translations (across several mods)
 - Minor fixes
 

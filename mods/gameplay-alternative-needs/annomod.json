@@ -1,5 +1,5 @@
 {
-  "src": [ "../../shared", "." ],
+  "src": [ "." ],
   "out": "${annoMods}/${modName}",  
   "converter": [
     {
@@ -12,27 +12,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md,features.include.xml}"
-    },
-    {
-      "action": "cf7",
-      "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "**/icon_*.png"
-    },
-    {
-      "action": "gltf",
-      "pattern": "**/!(propsonly)*.gltf",
-      "lods": 4,
-      "changePath": "rdm/",
-      "animPath": "anim/",
-      "plantPattern": "(hemp_field|olive_tree|cabbage_field).gltf"
-    },
-    {
-      "action": "cfgyaml",
-      "pattern": "**/*.cfg.yaml"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/icon_*.png,features.include.xml}"
     },
     {
       "action": "texture",
@@ -46,19 +26,18 @@
     }
   ],
   "modinfo": {
-    "Version": "2.2",
-    "ModID": "jakob_extra_goods",
+    "Version": "1.0",
+    "ModID": "jakob_alternative_needs",
     "IncompatibleIds": [],
-    "ModDependencies": [ "jakob_ground_textures" ],
+    "ModDependencies": [ "jakob_extra_goods" ],
     "Category": {
-      "English": "Shared"
+      "English": "Gameplay"
     },
     "ModName": {
-      "English": "Extra Goods (Jakob)"
+      "English": "Alternative Needs (Jakob)"
     },
     "Description": {
-      "English": "README.md",
-      "German": "README.md"
+      "English": "README.md"
     },
     "KnownIssues": null,
     "DLCDependencies": [
