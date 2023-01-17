@@ -56,6 +56,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.3.4
+
+- Included fix for Harborlife in case you forgot to update Harborlife
+
 ### 2.3.3
 
 - Fixed automatic variation to work with new GU16 handling

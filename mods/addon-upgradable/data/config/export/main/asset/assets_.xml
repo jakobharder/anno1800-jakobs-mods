@@ -2603,7 +2603,7 @@
       <Values>
         <Standard>
           <GUID>1500010220</GUID>
-          <Name>unlock workers</Name>
+          <Name>Workers @ 700 Engineers</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -2748,7 +2748,7 @@
       <Values>
         <Standard>
           <GUID>1500010239</GUID>
-          <Name>unlock artisans</Name>
+          <Name>Artisans @ 700 Engineers</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -2835,6 +2835,14 @@
         </TriggerSetup>
       </Values>
     </Asset>
+  </ModOp>
+
+  <!-- # Harborlife Fix -->
+  <!-- just in case people didn't update and blame upgradable worker for it -->
+  <ModOp Type="add" GUID="8856002,8856003" Path="/Values | //Asset[Standard/GUID='1500010221']/Values">
+    <FloorStackOwner>
+      <UpgradeTargetGUID>0</UpgradeTargetGUID>
+    </FloorStackOwner>
   </ModOp>
   
   <!-- # cleanup -->
