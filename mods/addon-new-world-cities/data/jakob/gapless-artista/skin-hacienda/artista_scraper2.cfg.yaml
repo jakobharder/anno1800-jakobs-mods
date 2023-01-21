@@ -1,0 +1,38 @@
+variant: 
+  source: ../artista_scraper2.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_1"]
+      cModelDiffTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_01_hacienda_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_1b"]
+      cModelDiffTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_01_hacienda_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_1c"]
+      cModelDiffTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_01_hacienda_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_2"]
+      cModelDiffTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_02_hacienda_diff.psd
+      cModelNormalTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_02_hacienda_norm.psd
+      cModelMetallicTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_02_hacienda_metal.psd
+    # - xpath: //Config/Models/Config/Materials/Config[Name="t3_3"]
+    #   cModelDiffTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_03_hacienda_diff.psd
+    #   cModelNormalTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_t03_v03_hacienda_norm.psd
+    #   cModelMetallicTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_t03_v03_hacienda_metal.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_roof0"]
+      cModelDiffTex: data\jakob\gapless-artista\maps\roof1_diff.psd
+      METALLIC_TEX_ENABLED: 0
+      NORMAL_ENABLED: 0
+      cDiffuseColor.r: 0.8
+      cDiffuseColor.g: 0.8
+      cDiffuseColor.b: 0.7
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_roof1"]
+      cModelDiffTex: data\jakob\gapless-artista\maps\roof1_diff.psd
+      METALLIC_TEX_ENABLED: 0
+      NORMAL_ENABLED: 0
+      cDiffuseColor.r: 0.9
+      cDiffuseColor.g: 0.85
+      cDiffuseColor.b: 0.8
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_roof2"]
+      cModelDiffTex: data\jakob\gapless-artista\maps\roof1_diff.psd
+      METALLIC_TEX_ENABLED: 0
+      NORMAL_ENABLED: 0
+      cDiffuseColor.r: 0.8
+      cDiffuseColor.g: 0.8
+      cDiffuseColor.b: 0.8

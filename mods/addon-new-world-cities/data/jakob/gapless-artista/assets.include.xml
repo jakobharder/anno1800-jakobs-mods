@@ -1,0 +1,719 @@
+<!-- 
+New World Cities
+
+GUIDs: https://github.com/anno-mods/GuidRanges
+1500011040 building
+1500011041 buff
+1500011042 plaza
+
+-->
+
+<ModOps>
+  <!-- # Artista Scraper as normal upgrade path -->
+  <!-- <ModOp Type="add" GUID="5405" Path="/Values/Upgradable">
+    <NextGUID>1500011044</NextGUID>
+  </ModOp>
+  <ModOp Type="replace" GUID="5405" Path="/Values/Residence7/ResidentsRequiredForUpgrade">
+    <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
+  </ModOp> -->
+
+  <!-- # Fancy New Residences -->
+  <!-- ====================== -->
+  <ModOp Type="addNextSibling" GUID="101255">
+    <Asset>
+      <Template>ResidenceBuilding7_Colony</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011044</GUID>
+          <Name>Tier 3 Scraper</Name>
+          <IconFilename>data\jakob\gapless-artista\icon_residence.png</IconFilename>
+          <InfoDescription>163059</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingType>Residence</BuildingType>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1500011040</Building>
+            </Item>
+            <Item>
+              <Building>101255</Building>
+            </Item>
+            <Item>
+              <Building>5405</Building>
+            </Item>
+            <Item>
+              <Building>1500011043</Building>
+            </Item>
+            <Item>
+              <Building>1500011044</Building>
+            </Item>
+            <Item>
+              <Building>1500011090</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <!--
+              Multiple entries of the same variation for different rotations don't work.
+              But vanilla assets.xml also defines them, so they were supposed to work at some point.
+            -->
+            <Corner>
+              <Pool>
+                <Item>
+                  <Variation>0</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>1</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>2</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>3</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+              </Pool>
+            </Corner>
+            <Mid>
+              <Pool>
+                <Item>
+                  <Variation>4</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>5</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>6</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>7</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+              </Pool>
+            </Mid>
+            <!-- <End>
+              <Pool>
+                <Item>
+                  <Variation>0</Variation>
+                </Item>
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+                <Item>
+                  <Variation>2</Variation>
+                </Item>
+                <Item>
+                  <Variation>10</Variation>
+                </Item>
+                <Item>
+                  <Variation>11</Variation>
+                </Item>
+              </Pool>
+            </End> -->
+          </BuildingBlockPool>
+          <InfluencedVariationDirection>
+            <!--
+              Direction rotates counter clock wise.
+              Default facing is X towards NW, Y towards NE.
+            -->
+            <Item>
+              <!-- single -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-east -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, south -->
+              <Direction>2</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- end, north-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- mid, south-west to north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, east -->
+              <Direction>3</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, north-west -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, west -->
+              <Direction>1</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- mid, north-west to south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-west  -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, north -->
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- cross -->
+            </Item>
+          </InfluencedVariationDirection>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Mesh />
+        <Object>
+          <Variations>
+            <!-- corners -->
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper5.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper6.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper7.cfg</Filename>
+            </Item>
+            <!-- straights -->
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper8.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper9.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <!-- <DefaultSkinDescription>1500010189</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName> -->
+            <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500011100</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011102</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+          <DefaultParticipant>SA_Resident_tier03</DefaultParticipant>
+        </Object>
+        <Selection>
+          <ParticipantMessageArcheType>SA_Resident_tier03</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24963</DLCDependency>
+        </Locked>
+        <Upgradable>
+          <CurrentTier>3</CurrentTier>
+          <NextGUID>1500011090</NextGUID>
+          <UpgradeCost />
+        </Upgradable>
+        <SoundEmitter>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+          <MaterialType>Wood</MaterialType>
+        </SoundEmitter>
+        <Infolayer />
+        <FeedbackController />
+        <Residence7>
+          <PopulationLevel7>5403</PopulationLevel7>
+          <ResidentMax>40</ResidentMax>
+          <ResidentsRequiredForUpgrade>40</ResidentsRequiredForUpgrade>
+          <ResidentsOccupancyThresholdMax>0.5</ResidentsOccupancyThresholdMax>
+          <IsBaseResidence>0</IsBaseResidence>
+        </Residence7>
+        <LogisticNode>
+          <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
+        </LogisticNode>
+        <AmbientMoodProvider>
+          <Murmur>DLC12_Artistas</Murmur>
+          <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
+          <HappinessDependentMurmur>
+            <Angry>
+              <Murmur>OberaUnhappy</Murmur>
+            </Angry>
+            <Unhappy>
+              <Murmur>OberaContent</Murmur>
+            </Unhappy>
+            <Neutral>
+              <Murmur>OberaContent</Murmur>
+            </Neutral>
+            <Happy>
+              <Murmur>OberaHappy</Murmur>
+            </Happy>
+            <Euphoric>
+              <Murmur>OberaHappy</Murmur>
+            </Euphoric>
+          </HappinessDependentMurmur>
+        </AmbientMoodProvider>
+        <UpgradeList />
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>2000</MaximumHitPoints>
+        </Attackable>
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <BaseChance>4.5</BaseChance>
+              <DensityFactor>0.025</DensityFactor>
+              <DensityDistance>15</DensityDistance>
+            </Fire>
+            <Riot>
+              <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
+              <HappinessThreshold>10</HappinessThreshold>
+            </Riot>
+            <Illness>
+              <BaseChance>4.5</BaseChance>
+              <HitpointFactor>0.1</HitpointFactor>
+              <DensityFactor>0.025</DensityFactor>
+              <DensityDistance>15</DensityDistance>
+              <DilapidatedFactor>10</DilapidatedFactor>
+              <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
+              <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
+              <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
+            </Illness>
+            <Explosion>
+              <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
+              <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Pausable />
+        <Culture />
+        <StreetActivation />
+        <InfluenceSource />
+        <Maintenance>
+          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
+      <BaseAssetGUID>1500011044</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011090</GUID>
+          <Name>Tier 3 Scraper Level 2</Name>
+          <IconFilename>data\jakob\gapless-artista\icon_residence.png</IconFilename>
+        </Standard>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <!-- corners -->
+            <Item>
+              <!-- <Filename>data\jakob\gapless-artista\artista_scraper4.cfg</Filename> -->
+              <Filename>data\jakob\gapless-artista\artista_scraper5_lvl2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper5_lvl2.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- <Filename>data\jakob\gapless-artista\artista_scraper6.cfg</Filename> -->
+              <Filename>data\jakob\gapless-artista\artista_scraper5_lvl2.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- <Filename>data\jakob\gapless-artista\artista_scraper7.cfg</Filename> -->
+              <Filename>data\jakob\gapless-artista\artista_scraper5_lvl2.cfg</Filename>
+            </Item>
+            <!-- straights -->
+            <Item>
+              <!-- <Filename>data\jakob\gapless-artista\artista_scraper1.cfg</Filename> -->
+              <Filename>data\jakob\gapless-artista\artista_scraper2_lvl2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper2_lvl2.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- <Filename>data\jakob\gapless-artista\artista_scraper8.cfg</Filename> -->
+              <Filename>data\jakob\gapless-artista\artista_scraper2_lvl2.cfg</Filename>
+            </Item>
+            <Item>
+              <!-- <Filename>data\jakob\gapless-artista\artista_scraper9.cfg</Filename> -->
+              <Filename>data\jakob\gapless-artista\artista_scraper2_lvl2.cfg</Filename>
+            </Item>
+          </Variations>
+          <DefaultParticipant>SA_Resident_tier03</DefaultParticipant>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24963</DLCDependency>
+        </Locked>
+        <Upgradable>
+          <CurrentTier>3</CurrentTier>
+          <NextGUID>0</NextGUID>
+          <UpgradeCost />
+        </Upgradable>
+        <Residence7>
+          <PopulationLevel7>5403</PopulationLevel7>
+          <ResidentMax>40</ResidentMax>
+          <ResidentsRequiredForUpgrade>40</ResidentsRequiredForUpgrade>
+          <ResidentsOccupancyThresholdMax>0.5</ResidentsOccupancyThresholdMax>
+          <IsBaseResidence>0</IsBaseResidence>
+        </Residence7>
+        <Maintenance>
+          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011100</GUID>
+          <Name>Hacienda Artista, Gapless</Name>
+          <IconFilename>data/jakob/artisan-skins/icon_tier03_colorful_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011100</SkinName>
+          <!-- <SkinDescription>1500010834</SkinDescription> -->
+          <SkinVariations>
+            <!-- corners -->
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper5.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper6.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper7.cfg</FileName>
+            </Item>
+            <!-- straights -->
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper8.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper9.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500011101</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011102</GUID>
+          <Name>Tiled Artista, Gapless</Name>
+          <IconFilename>data/jakob/artisan-skins/icon_tier03_colorful_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011100</SkinName>
+          <!-- <SkinDescription>1500010834</SkinDescription> -->
+          <SkinVariations>
+            <!-- corners -->
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper5.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper6.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper7.cfg</FileName>
+            </Item>
+            <!-- straights -->
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper8.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper9.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500011101</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add spawn feeback -->
+  <ModOp GUID="142785,2001090" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011044</Building>
+    </Item>
+  </ModOp>
+  <!-- add to neighbor feature -->
+  <ModOp GUID='7233' Type='add' Path='/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule'>
+    <Item>
+      <Building>1500011044</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Needs -->
+  <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5381']">
+    <Item>
+      <Product>1010354</Product>
+      <SupplyWeight>10</SupplyWeight>
+      <MoneyValue>10</MoneyValue>
+      <FullWeightPopulationCount>6000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>899</NoWeightPopulationCount>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500011044</RequiredBuilding>
+        </Item>
+        <Item>
+          <RequiredBuilding>1500011090</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
+    </Item>
+  </ModOp>
+  <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5388']">
+    <Item>
+      <Product>135233</Product>
+      <Amount>0.000053</Amount>
+      <SupplyWeight>10</SupplyWeight>
+      <MoneyValue>65</MoneyValue>
+      <FullWeightPopulationCount>6000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>3199</NoWeightPopulationCount>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500011044</RequiredBuilding>
+        </Item>
+        <Item>
+          <RequiredBuilding>1500011090</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
+    </Item>
+  </ModOp>
+  <ModOp GUID="5403" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+    <Item>
+      <Product>1010213</Product>
+      <Amount>0.0002083</Amount>
+      <SupplyWeight>10</SupplyWeight>
+      <MoneyValue>100</MoneyValue>
+      <FullWeightPopulationCount>8000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500011090</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
+    </Item>
+    <Item>
+      <Product>1500010120</Product>
+      <Amount>0.0002083</Amount>
+      <SupplyWeight>10</SupplyWeight>
+      <MoneyValue>100</MoneyValue>
+      <FullWeightPopulationCount>8000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500011090</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
+    </Item>
+  </ModOp>
+
+  <!-- # Targets -->
+  <ModOp GUID="193957,190762,25677" Type="add" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011044</GUID>
+    </Item>
+  </ModOp>
+  <ModOp GUID="7728" Type="add" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500011044</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Build Menus -->
+  <ModOp GUID="5405" Path="/Values/Upgradable" Type="replace">
+    <Upgradable>
+      <NextGUID>1500011044</NextGUID>
+      <UpgradeCost>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010205</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>838</Ingredient>
+          <Amount>1</Amount>
+        </Item>
+      </UpgradeCost>
+    </Upgradable>
+  </ModOp>
+  <ModOp Type="merge" GUID="5405" Path="/Values">
+    <Residence7>
+      <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
+    </Residence7>
+  </ModOp>
+
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011087</GUID>
+          <Name>New World Cities</Name>
+          <IconFilename>data\jakob\gapless-artista\icon_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <!-- <Item>
+              <Building>1500011040</Building>
+            </Item> -->
+            <Item>
+              <Building>1500011043</Building>
+            </Item>
+            <Item>
+              <Building>1500011044</Building>
+            </Item>
+            <!-- <Item>
+              <Building>1500011090</Building>
+            </Item> -->
+          </BuildingList>
+          <CategoryDescription>13108</CategoryDescription>
+        </ConstructionCategory>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- New World, Artista -->
+  <ModOp Type="addPrevSibling" GUID="5466" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011044</Building>
+    </Item>
+  </ModOp>
+  <!-- New World, City -->
+  <ModOp Type="addNextSibling" GUID='500137' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
+    <Item>
+      <Building>1500011087</Building>
+    </Item>
+  </ModOp>
+</ModOps>
