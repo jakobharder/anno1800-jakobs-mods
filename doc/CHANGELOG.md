@@ -1,6 +1,10 @@
 # Changelog
 
-## [Unreleased]
+## 5.4
+
+### New Content
+
+- New World Cities, 1.3: Added gapless Artista residences
 
 ### Changes
 
