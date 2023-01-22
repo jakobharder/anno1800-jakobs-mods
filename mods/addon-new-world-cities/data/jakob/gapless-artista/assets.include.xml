@@ -247,9 +247,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           </Variations>
           <Skins>
             <DefaultSkinName>23852</DefaultSkinName>
-            <!-- <DefaultSkinDescription>1500010189</DefaultSkinDescription>
-            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName> -->
-            <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
+            <DefaultSkinDescription>23853</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500011055</DefaultSkinCategoryName>
+            <OverrideDefaultIcon>data\jakob\gapless-artista\icon_default_skin.png</OverrideDefaultIcon>
             <SkinList>
               <Item>
                 <SkinAssetGuid>1500011100</SkinAssetGuid>
@@ -266,12 +266,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Selection>
         <Constructable />
         <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
           <DLCDependency>24963</DLCDependency>
         </Locked>
         <Upgradable>
           <CurrentTier>3</CurrentTier>
-          <NextGUID>1500011090</NextGUID>
+          <!-- <NextGUID>1500011090</NextGUID> -->
+          <NextGUID>0</NextGUID>
           <UpgradeCost />
         </Upgradable>
         <SoundEmitter>
@@ -434,8 +434,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <DefaultParticipant>SA_Resident_tier03</DefaultParticipant>
         </Object>
         <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-          <DLCDependency>24963</DLCDependency>
+          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Upgradable>
           <CurrentTier>3</CurrentTier>
@@ -466,7 +465,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500011100</GUID>
           <Name>Hacienda Artista, Gapless</Name>
-          <IconFilename>data/jakob/artisan-skins/icon_tier03_colorful_red.png</IconFilename>
+          <IconFilename>data\jakob\gapless-artista\skin-hacienda\icon_white_skin.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500011100</SkinName>
@@ -503,6 +502,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24961</DLCDependency>
         </Locked>
         <Text />
       </Values>
@@ -513,7 +513,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <GUID>1500011102</GUID>
           <Name>Tiled Artista, Gapless</Name>
-          <IconFilename>data/jakob/artisan-skins/icon_tier03_colorful_red.png</IconFilename>
+          <IconFilename>data\jakob\gapless-artista\skin-tiled-roof\icon_tile_roof_skin.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500011102</SkinName>
@@ -572,7 +572,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5381']">
     <Item>
       <Product>1010354</Product>
-      <SupplyWeight>10</SupplyWeight>
+      <SupplyWeight>5</SupplyWeight>
       <MoneyValue>10</MoneyValue>
       <FullWeightPopulationCount>6000</FullWeightPopulationCount>
       <NoWeightPopulationCount>899</NoWeightPopulationCount>
@@ -588,9 +588,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
   <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5388']">
     <Item>
-      <Product>135233</Product>
-      <Amount>0.000053</Amount>
-      <SupplyWeight>10</SupplyWeight>
+      <Product>1010248</Product>
+      <Amount>0.0001</Amount>
+      <SupplyWeight>5</SupplyWeight>
       <MoneyValue>65</MoneyValue>
       <FullWeightPopulationCount>6000</FullWeightPopulationCount>
       <NoWeightPopulationCount>3199</NoWeightPopulationCount>
@@ -609,7 +609,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Product>1010213</Product>
       <Amount>0.0002083</Amount>
       <SupplyWeight>10</SupplyWeight>
-      <MoneyValue>100</MoneyValue>
+      <MoneyValue>80</MoneyValue>
       <FullWeightPopulationCount>8000</FullWeightPopulationCount>
       <NoWeightPopulationCount>5999</NoWeightPopulationCount>
       <RequiredBuildings>
@@ -622,9 +622,22 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Product>1500010120</Product>
       <Amount>0.0002083</Amount>
       <SupplyWeight>10</SupplyWeight>
-      <MoneyValue>100</MoneyValue>
+      <MoneyValue>80</MoneyValue>
       <FullWeightPopulationCount>8000</FullWeightPopulationCount>
       <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500011090</RequiredBuilding>
+        </Item>
+      </RequiredBuildings>
+    </Item>
+    <Item>
+      <Product>135233</Product>
+      <Amount>0.000053</Amount>
+      <SupplyWeight>10</SupplyWeight>
+      <MoneyValue>100</MoneyValue>
+      <FullWeightPopulationCount>6000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>3199</NoWeightPopulationCount>
       <RequiredBuildings>
         <Item>
           <RequiredBuilding>1500011090</RequiredBuilding>
@@ -642,6 +655,14 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <ModOp GUID="7728" Type="add" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500011044</GUID>
+    </Item>
+  </ModOp>
+  <ModOp GUID="105127" Type="add" Path="/Values/PlayerCounterContextPool/Contexts">
+    <Item>
+      <Asset>1500011044</Asset>
+    </Item>
+    <Item>
+      <Asset>1500011090</Asset>
     </Item>
   </ModOp>
 
@@ -715,5 +736,53 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     <Item>
       <Building>1500011087</Building>
     </Item>
+  </ModOp>
+
+  <!-- # Unlocks -->
+  <ModOp Type="addNextSibling" GUID="130249">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011004</GUID>
+          <Name>@ Artista Unlock</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>5405</UnlockNeeded>
+              </ConditionUnlocked>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011044</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011090</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
 </ModOps>

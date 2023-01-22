@@ -1,6 +1,6 @@
 # New World Cities
 
-![](./banner.png)
+![](./banner.jpg)
 
 ## Buildings
 
