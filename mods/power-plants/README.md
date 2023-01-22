@@ -24,6 +24,11 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 - Fuel Station with integrated oil pump
 
+## Known Issues
+
+- The coal power plant will drop an item into your harbor when destroyed.
+  You can ignore it or sell it.
+
 ## Changes
 
 ### 2.7
