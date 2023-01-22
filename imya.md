@@ -1,4 +1,4 @@
-# Jakob's Collection 5.3
+# Jakob's Collection 5.4
 
 New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
 
@@ -15,17 +15,17 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
   Adds Old World population new tiers and needs. They provide 1 farmer, 1 worker and 1 artisan per 3 residents.
 
-- **[Shared] Extra Goods]**
-
-  Adds production chains for Upgradable Workers and Pescatarians: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
-
 - **[Addon\] New World Cities**
 
-  Adds steel beams, windows and concrete factories to the New World.
+  Adds gapless Artista residences.
+  
+  Makes construction buildings (steel beams, windows and concrete) available in the New World.
 
   Enables `Windmill` and `Small Power Plants` mods in the New World.
 
-  New residences are coming soon...
+- **[Shared] Extra Goods]**
+
+  Adds production chains for Upgradable Workers and Pescatarians: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
 
 ## Service Building Variation Mods
 
