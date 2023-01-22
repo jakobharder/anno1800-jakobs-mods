@@ -24,6 +24,11 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 - Fuel Station with integrated oil pump
 
+## Known Issues
+
+- The coal power plant will drop an item into your harbor when destroyed.
+  You can ignore it or sell it.
+
 ## Changes
 
 ### 2.7
@@ -41,11 +46,8 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 ## Translations
 
-Available: English, German, Korean, Polish, Chinese
+Available: Chinese, French, English, German, Korean, Polish
 
-Thanks to
-- MSHS for Korean translation
-- Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip for tranlsations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

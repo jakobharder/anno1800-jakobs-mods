@@ -1,8 +1,13 @@
 # New World Cities
 
-![](./banner.png)
+![](./banner.jpg)
 
 ## Buildings
+
+### Residences
+
+- Gapless Artista: residences build in blocks like Engineers and Investors.
+  They provide a little extra population.
 
 ### Ornaments
 
@@ -41,6 +46,10 @@ Some buildings are a bit slower than their Old World counterpart.
 - Fixes Tropical Forest Variant 7 grass color
 
 ## Changes
+
+### 1.3
+
+- Added gapless Artista residences with 3 skins
 
 ### 1.2
 

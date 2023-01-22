@@ -56,6 +56,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.3.4
+
+- Included fix for Harborlife in case you forgot to update Harborlife
+
 ### 2.3.3
 
 - Fixed automatic variation to work with new GU16 handling
@@ -74,11 +78,6 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 Available: all
 
-Thanks to
-- @m_belonosov, redzmey1 for Russian translation
-- MSHS for Korean translation
-- @Petritant for French translation
-- Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip for translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

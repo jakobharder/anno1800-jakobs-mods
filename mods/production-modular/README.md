@@ -22,6 +22,6 @@ Their cost and cycles are adjusted to their changed footprint.
 
 ## Translations
 
-Available: English, German, Japanese, Polish
+Available: Chinese, French, English, German, Japanese, Polish
 
-Thanks to HeroOfOlympus for translations!
+Thanks to HeroOfOlympus, darknesswei, Tonton Yip for translations!

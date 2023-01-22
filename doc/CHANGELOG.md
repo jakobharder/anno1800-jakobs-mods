@@ -1,5 +1,18 @@
 # Changelog
 
+## 5.4
+
+### New Content
+
+- New World Cities, 1.3: Added gapless Artista residences
+
+### Changes
+
+- Moved alternative needs to separate mod `[Gameplay] Alternative Needs (Jakob)`.
+  Only works in combination with `[Shared] Extra Goods (Jakob)`.
+- More French translations (across several mods)
+- Minor fixes
+
 ## 5.3 - Random Freight Trains
 
 ### New Content

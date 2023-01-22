@@ -1,5 +1,5 @@
 {
-  "src": [ ".", "../../shared" ],
+  "src": [ "../../shared", "." ],
   "out": "${annoMods}/${modName}",  
   "converter": [
     {
@@ -46,7 +46,7 @@
     }
   ],
   "modinfo": {
-    "Version": "2.1",
+    "Version": "2.2",
     "ModID": "jakob_extra_goods",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_ground_textures" ],

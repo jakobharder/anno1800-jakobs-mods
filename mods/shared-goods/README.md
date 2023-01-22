@@ -63,6 +63,12 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Changes
 
+## 2.2
+
+- Moved alternative needs to separate mod: `[Gameplay] Alternative Needs (Jakob)`
+- Added Tea Maker, Herb Farm to more production pools
+- Fixed tools name in statistics
+
 ## 2.1
 
 - All farms have free farmfield placement now.
@@ -87,6 +93,6 @@ You can disable some productions if you go to `features.include.xml` and remove 
 
 ## Translations
 
-Available: Chinese, English, German, Polish, Russian
+Available: Chinese, French, English, German, Polish, Russian
 
-Thanks to redzmey1, darknesswei, HeroOfOlympus for translations!
+Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip for translations!

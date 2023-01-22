@@ -47,11 +47,8 @@ Note: The buildings do not count as quest objectives.
 
 ## Translations
 
-Available: English, German, Korean, Polish, Chinese
+Available: Chinese, French, English, German, Korean, Polish
 
-Thanks to
-- MSHS for Korean translation
-- Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip for tranlsations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

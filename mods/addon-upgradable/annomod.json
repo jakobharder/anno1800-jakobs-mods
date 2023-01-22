@@ -1,5 +1,5 @@
 {
-  "src": [ ".", "../../shared" ],
+  "src": [ "../../shared", "." ],
   "out": "${annoMods}/${modName}",  
   "converter": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png,**/icons/*.png}"
+      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png,**/icons/*.png,features.include.xml}"
     },
     {
       "action": "cf7",
@@ -41,7 +41,7 @@
     }
   ],
   "modinfo": {
-    "Version": "2.3.3",
+    "Version": "2.3.4",
     "ModID": "jakob_upgradable_low_tier",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods", "jakob_ground_textures" ],

@@ -15,25 +15,6 @@ Rebalancing of productions may only happen when the first version number changes
 
 See full [changelog](./doc/CHANGELOG.md).
 
-## v5 Update Guide
-
-### Install
-
-Mod names have changed, most notably they got `(Jakob)` at the end to help you manage bigger collections.
-
-That unfortunately means you need to take extra care updating this time.
-
-- Easy way: Install via [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases).
-
-- Manual way: Delete all v4 mods before you install v5, mostly because folder names have changed.
-
-### In-game Changes
-
-In-game changes, that need your attention:
-
-- Upgradable Workers now have Tea as mandatory need with Cheese moving to alternative needs.
-- Pescatarians have changed and rebalanced needs. Check your islands if you need to adjust your productions.
-
 ## Population Tier Mods
 
 ![](./doc/population-tiers.jpg)
@@ -46,17 +27,17 @@ In-game changes, that need your attention:
 
   Adds Old World population new tiers and needs. They provide 1 farmer, 1 worker and 1 artisan per 3 residents.
 
+- [\[Addon\] New World Cities](./mods/addon-new-world-cities/README.md)
+
+  Adds gapless Artista residences.
+  
+  Makes construction buildings (steel beams, windows and concrete) available in the New World.
+
+  Enables `Windmill` and `Small Power Plants` mods in the New World.
+  
 - [\[Shared\] Extra Goods](./mods/shared-goods/README.md)
 
   Adds production chains for Upgradable Workers and Pescatarians: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
-
-- [\[Addon\] New World Cities](./mods/addon-new-world-cities/README.md)
-
-  Adds steel beams, windows and concrete factories to the New World.
-
-  Enables `Windmill` and `Small Power Plants` mods in the New World.
-
-  New residences are coming soon...
 
 ## Service Building Variation Mods
 
@@ -166,10 +147,11 @@ Available: English, German, (Russian, Korean, French, Polish, Chinese).
 
 ## Special Thanks
 
-- @taubenangriff for sharing some assets
-- @taludas for playtest feedback
-- @m_belonosov, redzmey1 for Russian translation
+- m_belonosov, redzmey1 for Russian translation
 - MSHS for Korean translation
-- @Petritant for French translation
+- Tonton Yip, Petritant for French translation
 - HeroOfOlympus, Aveneger432 for Polish translation
 - darknesswei for Chinese translation
+- Taubenangriff for sharing some assets
+- Taludas, Ionovia for playtest feedback
+- Ricky for being Ricky
