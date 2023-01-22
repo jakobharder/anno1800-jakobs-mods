@@ -49,6 +49,7 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.3
 
+- 1.3.1: fix Harborlife compatibility
 - Added gapless Artista residences with 3 skins
 
 ### 1.2
