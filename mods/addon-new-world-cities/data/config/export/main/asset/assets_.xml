@@ -1,3 +1,28 @@
 <ModOps>
   <Include File="../../../../../features.include.xml" />
+
+  <ModOp Type="addNextSibling" GUID='120055'>
+    <Asset>
+      <!-- fallback dump -->
+      <Template>none</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010221</GUID>
+        </Standard>
+        <ignore></ignore>
+        <Upgradable />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Harborlife Fix -->
+  <!-- just in case people didn't update and blame upgradable worker for it -->
+  <ModOp Type="replace" GUID="1440137000" Path="/Values/Upgradable | //Asset[Standard/GUID='1500010221']/Values/Upgradable">
+    <Upgradable>
+      <NextGUID>0</NextGUID>
+    </Upgradable>
+  </ModOp>
+  
+  <!-- # cleanup -->
+  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>

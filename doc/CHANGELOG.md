@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.4.1
+
+- Fix Harborlife compatibility
+
 ## 5.4
 
 ### New Content
