@@ -1,0 +1,6 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\residence\residence_tier05_07\residence_tier05_07.cfg
+  modifications:
+    - xpath: //Config/Files/Config
+      FileName: data\jakob\investor-skins\skin1\residence_tier05_04.cfg

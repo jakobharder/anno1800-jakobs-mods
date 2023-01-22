@@ -1,14 +1,22 @@
 # Changelog
 
-## 5.4.1
-
-- Fix Harborlife compatibility
-
-## 5.4
+## [Unreleased]
 
 ### New Content
 
-- New World Cities, 1.3: Added gapless Artista residences
+- Residence Skins, 1.3: Added Investor roof skins
+
+### Changes
+
+## 5.4 - Terraced Artistas
+
+### 5.4.1
+
+- New World Cities, 1.3.1: Fixed missing Artistas when played with Harborlife
+
+### New Content
+
+- New World Cities, 1.3: Added Terraced Artista residences
 
 ### Changes
 
