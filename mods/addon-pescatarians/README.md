@@ -52,6 +52,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
+### 2.0.4
+
+- Increased Library range in exchange for higher maintenance
+
 ### 2.0.3
 
 - Fixed missing skin icons

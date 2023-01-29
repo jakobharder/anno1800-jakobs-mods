@@ -3,9 +3,9 @@
 -->
 <ModOps>
     <!-- # Service: Small Library -->
-    <ModOp GUID="1010358" Type="addNextSibling">
+    <ModOp GUID="1010360" Type="addNextSibling">
       <Asset>
-        <BaseAssetGUID>1010358</BaseAssetGUID>
+        <BaseAssetGUID>1010360</BaseAssetGUID>
         <Values>
           <Standard>
             <GUID>1500010816</GUID>
@@ -15,7 +15,6 @@
           <Building>
             <SecondPartyRelevant>0</SecondPartyRelevant>
           </Building>
-          <Blocking />
           <Cost>
             <Costs>
               <Item>
@@ -49,8 +48,6 @@
               </SkinList>
             </Skins>
           </Object>
-          <Mesh />
-          <Constructable />
           <Locked />
           <SoundEmitter>
             <ConstructionSounds>
@@ -82,10 +79,6 @@
               </Item>
             </BuildingRepaired>
           </SoundEmitter>
-          <FeedbackController>
-            <NightBehavior>HideAll</NightBehavior>
-          </FeedbackController>
-          <Infolayer />
           <AmbientMoodProvider>
             <AmbientMood>ResidenceTier3</AmbientMood>
             <DynamicEnvironmentType>Building_Residence</DynamicEnvironmentType>
@@ -94,31 +87,14 @@
             <Maintenances>
               <Item>
                 <Product>1010017</Product>
-                <Amount>50</Amount>
-                <InactiveAmount>25</InactiveAmount>
+                <Amount>70</Amount>
+                <InactiveAmount>35</InactiveAmount>
               </Item>
             </Maintenances>
           </Maintenance>
-          <Attackable>
-            <MaximumHitPoints>4750</MaximumHitPoints>
-            <SelfHealPerHealTick>4</SelfHealPerHealTick>
-          </Attackable>
-          <Pausable />
-          <IncidentInfectable>
-            <Infectable>
-              <Fire>
-                <Base>1</Base>
-              </Fire>
-            </Infectable>
-            <IncidentInfectionChanceFactors>
-              <Fire>
-                <DensityDistance>20</DensityDistance>
-              </Fire>
-            </IncidentInfectionChanceFactors>
-          </IncidentInfectable>
           <PublicService>
-            <FullSatisfactionDistance>25</FullSatisfactionDistance>
-            <NoSatisfactionDistance>35</NoSatisfactionDistance>
+            <FullSatisfactionDistance>35</FullSatisfactionDistance>
+            <NoSatisfactionDistance>60</NoSatisfactionDistance>
             <PublicServiceOutputs>
               <Item>
                 <Product>1500010818</Product>

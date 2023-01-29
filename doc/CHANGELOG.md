@@ -9,7 +9,8 @@
 
 ### Changed
 
-- Diagonal Residences: Fixed jje skin.
+- Diagonal Residences: Fixed jje skin
+- Pescatarians: 2.0.4: Minor balancing adjustments
 
 ### Changes
 
