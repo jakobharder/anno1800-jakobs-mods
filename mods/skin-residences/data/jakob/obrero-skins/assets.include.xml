@@ -1,0 +1,52 @@
+<ModOps>
+  <!-- # Vanilla Obrero Skins -->
+  <ModOp GUID='1010345' Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011103</GUID>
+          <Name>Obrero, Hacienda Skin</Name>
+          <IconFilename>data\jakob\obrero-skins\skin-hacienda\icon_hacienda_skin.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011103</SkinName>
+          <!-- <SkinDescription>1500010834</SkinDescription> -->
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\obrero-skins\skin-hacienda\estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\obrero-skins\skin-hacienda\estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\obrero-skins\skin-hacienda\estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\obrero-skins\skin-hacienda\estate04.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\obrero-skins\skin-hacienda\estate05.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010322</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <Scope>Account</Scope>
+          <DLCDependency>24961</DLCDependency>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp GUID="101255" Type="add" Path="/Values/Object/Skins">
+    <!-- ignore duplicates, first one wins -->
+    <OverrideDefaultIcon>data\jakob\obrero-skins\icon_default_skin.png</OverrideDefaultIcon>
+    <SkinList />
+  </ModOp>
+  <ModOp GUID="101255" Type="add" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500011103</SkinAssetGuid>
+    </Item>
+  </ModOp>
+</ModOps>

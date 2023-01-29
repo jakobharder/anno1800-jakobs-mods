@@ -569,21 +569,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
 
   <!-- # Needs -->
-  <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5381']">
+  <ModOp GUID="5403" Type="add" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='1010354']/RequiredBuildings">
     <Item>
-      <Product>1010354</Product>
-      <SupplyWeight>5</SupplyWeight>
-      <MoneyValue>10</MoneyValue>
-      <FullWeightPopulationCount>6000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>899</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500011044</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500011090</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
+      <RequiredBuilding>1500011044</RequiredBuilding>
+    </Item>
+    <Item>
+      <RequiredBuilding>1500011090</RequiredBuilding>
     </Item>
   </ModOp>
   <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5388']">

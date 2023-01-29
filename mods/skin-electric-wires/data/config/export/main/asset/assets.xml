@@ -1,0 +1,126 @@
+<ModOps>
+  <!-- muggenstuermer GUID-Range  1337500000 - 1337510000  -->
+  <!-- ID's are used for this mod: 1337500369,1337500370,1337509994,1337509993 -->
+
+  <!--
+	Vanilla GUIDs
+	LINES :
+		101388-corner and cross line 1 tile
+		101389-corner line
+  101390-straight 2 tiles line (between posts)
+		101391-straight 3 tiles line (between posts)
+  101392-?
+	
+	POSTS :
+		101393-straight post
+		101394-corner and cross post
+		101396-t-cross
+  post
+		101401-railway cross post
+		
+  -->
+  <ModOp Type="addNextSibling" GUID="101392">
+    <Asset>
+      <Template>VisualObject</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011104</GUID>
+          <Name>Electric Wire Corner</Name>
+        </Standard>
+        <Mesh />
+        <Object>
+          <Type>NotSerialized</Type>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\electric\pole_04_corner_b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\electric\pole_04_corner.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\electric\pole_04_corner_b.cfg</Filename>
+            </Item>
+          </Variations>
+          <AssignDefaultParticipant>1</AssignDefaultParticipant>
+        </Object>
+        <QuestObject />
+        <SoundEmitter />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="141170" Path="/Values/ElectricityFeature/ElectricPoleCorner">
+    <ElectricPoleCorner>1500011104</ElectricPoleCorner>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="101393" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\pole_01_straight.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101396" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\pole_03_tcross.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\electric\pole_02_xing_b.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101394" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\pole_02_xing.cfg</Filename>
+      </Item>
+      <Item>
+        <Filename>data\jakob\electric\pole_02_xing_b.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101401" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\pole_01_straight.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+
+  <ModOp Type="replace" GUID="101388" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\wire_01.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101389" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\wire_02.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101390" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\wire_03.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101391" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\wire_04.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+  <ModOp Type="replace" GUID="101392" Path="Values/Object/Variations">
+    <Variations>
+      <Item>
+        <Filename>data\jakob\electric\wire_05.cfg</Filename>
+      </Item>
+    </Variations>
+  </ModOp>
+</ModOps>

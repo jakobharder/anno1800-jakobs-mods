@@ -1,14 +1,28 @@
 # Changelog
 
-## 5.4.1
-
-- Fix Harborlife compatibility
-
-## 5.4
+## [Unreleased]
 
 ### New Content
 
-- New World Cities, 1.3: Added gapless Artista residences
+- New Mod: Improved Electric Wires
+- Residence Skins, 1.3: Added Investor and Obrero skins
+
+### Changed
+
+- Diagonal Residences: Fixed jje skin
+- Pescatarians: 2.0.4: Minor balancing adjustments
+
+### Changes
+
+## 5.4 - Terraced Artistas
+
+### 5.4.1
+
+- New World Cities, 1.3.1: Fixed missing Artistas when played with Harborlife
+
+### New Content
+
+- New World Cities, 1.3: Added Terraced Artista residences
 
 ### Changes
 

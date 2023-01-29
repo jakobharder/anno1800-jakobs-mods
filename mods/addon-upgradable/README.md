@@ -1,8 +1,8 @@
-# Upgradable Workers (and Artisans)
+# Terraced Houses (aka Upgradable Workers)
 
 ![](./banner.png)
 
-Skyscraper-like upgrades for vanilla worker and artisan residences.
+Terraced versions of worker and artisan residences using Skyscraper mechanics.
 
 Note: Pescatarian workers, artisans do not upgrade.
 
@@ -45,7 +45,7 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods (Jakob)`.
 
 - Canned Fish
-- Cheese
+- Tea
 - Suits
 - Tools
 

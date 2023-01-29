@@ -116,7 +116,7 @@ See full [changelog](./doc/CHANGELOG.md).
 
   Available in the New World when played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
 
-- [\[Skin\] Residence Skins](./mods/residences-skins/README.md)
+- [\[Skin\] Residence Skins](./mods/skin-residences/README.md)
   (paintbrush skins)
 
   Adds paintbrush skins for Artisans and Engineers (also diagonal).

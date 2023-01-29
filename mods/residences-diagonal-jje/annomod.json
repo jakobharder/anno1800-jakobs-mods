@@ -8,11 +8,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
-    },
-    {
-      "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/icon*.png}"
     },
     {
       "action": "cfgyaml",
@@ -24,7 +20,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.1",
+    "Version": "1.1.1",
     "ModID": "jakob_diagonal_residences_jje",
     "IncompatibleIds": [],
     "ModDependencies": [],
