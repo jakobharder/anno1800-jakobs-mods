@@ -1,0 +1,10 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data/graphics/buildings/residence/residence_colony01_tier02_estate02/residence_colony01_tier02_estate02.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="residence_colony01_tier02_02"]
+      cModelDiffTex: data\dlc10\graphics\buildings\special\hacienda\living_space_module\maps\residence_colony01_tier02_02_diff.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name="residence_colony01_tier02_03"]
+      cModelDiffTex: data\dlc10\graphics\buildings\special\hacienda\living_space_module\maps\residence_colony01_tier02_03_diff.psd
+    # - xpath: //Config/Models/Config[Name="residence_colony01_tier02_04"]
+    #   cModelDiffTex: data\dlc10\graphics\buildings\special\hacienda\living_space_module\maps\ground_living_space_module_tier02_02_diff.psd

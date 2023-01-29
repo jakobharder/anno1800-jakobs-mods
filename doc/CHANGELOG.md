@@ -4,7 +4,7 @@
 
 ### New Content
 
-- Residence Skins, 1.3: Added Investor roof skins
+- Residence Skins, 1.3: Added Investor and Obrero skins
 
 ### Changes
 
