@@ -1,0 +1,10 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ../skin-default/narrow.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name='5_5']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate04/maps/residence_tier05_05_diff.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate04/maps/residence_tier_05_05_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='roof']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate04/maps/residence_tier05_05_diff.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate04/maps/residence_tier_05_05_norm.psd

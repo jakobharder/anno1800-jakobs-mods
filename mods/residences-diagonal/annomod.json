@@ -8,15 +8,11 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.png,README.md,**/icon*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
-    },
-    {
-      "action": "static",
-      "pattern": "data/jakob/ui/icons/*.png"
     },
     {
       "action": "texture",
@@ -26,16 +22,10 @@
     },
     {
       "action": "gltf",
-      "pattern": "data/jakob/buildings/**/*.gltf",
-      "lods": 4,
+      "pattern": "data/jakob/**/*.gltf",
+      "lods": 5,
       "changePath": "rdm/",
       "animPath": "anim/"
-    },
-    {
-      "action": "gltf",
-      "pattern": "data/jakob/decals/*.gltf",
-      "lods": 0,
-      "changePath": "rdm/"
     },
     {
       "action": "cfgyaml",
@@ -47,7 +37,7 @@
     }
   ],
   "modinfo": {
-    "Version": "1.4.4",
+    "Version": "1.5",
     "ModID": "jakob_diagonal_residences",
     "IncompatibleIds": [],
     "ModDependencies": [],

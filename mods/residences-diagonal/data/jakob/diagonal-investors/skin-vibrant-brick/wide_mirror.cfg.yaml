@@ -1,0 +1,12 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ../skin-default/wide_mirror.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name='5_6']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate01/maps/residence_tier05_02_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate05/maps/residence_tier05_06_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate01/maps/residence_tier05_02_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='roof']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate01/maps/residence_tier05_02_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate05/maps/residence_tier05_06_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier05_01_estate01/maps/residence_tier05_02_norm.psd

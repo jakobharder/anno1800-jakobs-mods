@@ -105,7 +105,7 @@ See full [changelog](./doc/CHANGELOG.md).
 - [\[Building\] Diagonal Residences](./mods/residences-diagonal/README.md)
   (separate build icon)
 
-  Adds diagonal residences (engineers only currently).
+  Adds diagonal Engineer and Investor residences.
 
   You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
 
