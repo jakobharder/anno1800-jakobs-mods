@@ -56,6 +56,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 - Increased Library range in exchange for higher maintenance
 - Reduced timber cost of level 1 residence to 4
+- Increased number of residents before need warning is shown
 
 ### 2.0.3
 
