@@ -6,6 +6,10 @@
 
 - Residence Skins, 1.3: Added Investor and Obrero skins
 
+### Changed
+
+- Diagonal Residences: Fixed jje skin.
+
 ### Changes
 
 ## 5.4 - Terraced Artistas
