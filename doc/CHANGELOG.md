@@ -4,6 +4,7 @@
 
 ### New Content
 
+- New Mod: Improved Electric Wires
 - Residence Skins, 1.3: Added Investor and Obrero skins
 
 ### Changed

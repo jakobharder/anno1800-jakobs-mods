@@ -1,0 +1,8 @@
+variant:
+  source: pole_01_straight.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\electric\rdm\electricity_pole_04_lod0.rdm
+    - xpath: //Config/Lights/Config/Transformer/Config[ConfigType='ORIENTATION_TRANSFORM']
+      Position.z: -0.300624
+      Position.x: -0.300624
