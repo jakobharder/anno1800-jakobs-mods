@@ -130,6 +130,10 @@ See full [changelog](./doc/CHANGELOG.md).
 - [\[Skin\] Improved Streets](./mods/skin-streets/README.md)
 
   Replaces railroads and NW streets with more fitting textures.
+  
+- [\[Skin\] Improved Electric Wires](./mods/skin-electric-wires/README.md)
+
+  Replaces electric wires and poles with lighter, less distracting models.
 
 ## Build and Modify Yourself
 

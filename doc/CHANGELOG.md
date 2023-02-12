@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## 5.5 - Diagonal Investors
 
 ### New Content
 
