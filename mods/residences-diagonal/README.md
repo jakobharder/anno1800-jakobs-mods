@@ -1,6 +1,6 @@
 # Diagonal Residences
 
-![](./banner.png)
+![](./banner.jpg)
 
 ## Buildings
 

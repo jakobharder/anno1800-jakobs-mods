@@ -1,5 +1,7 @@
 # Improved Eletric Wires
 
+![](./banner.jpg)
+
 You can use only one mod changing electric poles and wires.
 
 Please decide between:
