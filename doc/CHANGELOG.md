@@ -11,7 +11,10 @@
 ### Changed
 
 - Diagonal Residences: Fixed jje skin
-- Pescatarians: 2.0.4: Minor balancing adjustments
+- New World Cities, 1.3.2: New residence icons, minor mixes
+- Pescatarians, 2.0.4: New residence icons, Minor balancing adjustments
+- Upgradable Workers, 2.3.5: New residence icons
+- Updated Chinese translations
 
 ### Changes
 
