@@ -1,0 +1,11 @@
+variant: 
+  source: ../diagonal_narrow.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name='4_5']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_04/maps/residence_tier04_04_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_04/maps/residence_tier04_04_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_04/maps/residence_tier04_04_normal.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='roof']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_04/maps/residence_tier04_04_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_04/maps/residence_tier04_04_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_04/maps/residence_tier04_04_normal.psd

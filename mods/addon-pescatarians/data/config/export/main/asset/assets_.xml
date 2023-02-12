@@ -615,7 +615,7 @@
     </Asset>
   </ModOp>
   <!-- global population -->
-  <ModOp Type="add" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList">
+  <ModOp Type="addPrevSibling" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList/Item[1]">
     <!-- <Item>
       <PopulationLevel>601382</PopulationLevel>
     </Item>
@@ -931,7 +931,7 @@
         <Standard>
           <GUID>1500010143</GUID>
           <Name>pescatarian_worker</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_residence.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
         <Blocking />
@@ -1167,7 +1167,7 @@
         <Standard>
           <GUID>1500010144</GUID>
           <Name>pescatarian_artisan</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian_menu.png</IconFilename>
+          <IconFilename>data/jakob/ui/icons/icon_pescatarian_residence.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
         <Building>

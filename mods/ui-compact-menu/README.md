@@ -4,6 +4,10 @@ Combines city construction menu icons into categories: tourists, public services
 
 ## Changes
 
+### 1.2
+
+- Added Kurila's harbor guns category (thanks)
+
 ### 1.1
 
 - Included NW administration and institutions
