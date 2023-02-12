@@ -615,7 +615,7 @@
     </Asset>
   </ModOp>
   <!-- global population -->
-  <ModOp Type="add" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList">
+  <ModOp Type="addPrevSibling" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList/Item[1]">
     <!-- <Item>
       <PopulationLevel>601382</PopulationLevel>
     </Item>
