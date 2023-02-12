@@ -1,0 +1,19 @@
+variant: 
+  source: ../diagonalx2.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name='4_6']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_06/maps/residence_tier04_06_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_06/maps/residence_tier04_06_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_06/maps/residence_tier04_06_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='roof']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_06/maps/residence_tier04_06_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_06/maps/residence_tier04_06_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_03_06/maps/residence_tier04_06_norm.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='mrkiese']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_01_estate01/maps/residence_tier04_05_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_01_estate01/maps/residence_tier04_04_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_01_estate01/maps/residence_tier04_05_normal.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='sockel']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_01_estate01/maps/residence_tier04_05_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_01_estate01/maps/residence_tier04_04_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_01_estate01/maps/residence_tier04_05_normal.psd

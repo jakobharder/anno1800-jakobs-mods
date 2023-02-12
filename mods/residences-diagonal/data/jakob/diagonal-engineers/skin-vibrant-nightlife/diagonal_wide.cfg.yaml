@@ -1,0 +1,11 @@
+variant: 
+  source: ../diagonal_wide.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name='4_5']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_02_estate05/maps/residence_tier04_05_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_02_estate05/maps/residence_tier04_05_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_02_estate05/maps/residence_tier04_05_normal.psd
+    - xpath: //Config/Models/Config/Materials/Config[Name='roof']
+      cModelDiffTex: data/cdlc06/graphics/buildings/residence/residence_tier04_02_estate05/maps/residence_tier04_05_diff.psd
+      cModelMetallicTex: data/cdlc06/graphics/buildings/residence/residence_tier04_02_estate05/maps/residence_tier04_05_metal.psd
+      cModelNormalTex: data/cdlc06/graphics/buildings/residence/residence_tier04_02_estate05/maps/residence_tier04_05_normal.psd
