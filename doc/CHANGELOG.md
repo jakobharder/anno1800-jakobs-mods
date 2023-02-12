@@ -7,6 +7,7 @@
 - New Mod: Improved Electric Wires
 - Residence Skins, 1.3: Added Investor and Obrero skins
 - Diagonal Residences, 1.5: Added diagonal Investors
+- Compact Menu, 1.2: Added harbor guns category (thanks to Kurila)
 
 ### Changed
 
