@@ -1,10 +1,10 @@
 # Changelog
 
-## [Unreleased]
+## 5.5 - Diagonal Investors
+
+### 5.5.1
 
 - Diagonal Residences, 1.5.1: Fixed upgrade choosing wrong shape
-
-## 5.5 - Diagonal Investors
 
 ### New Content
 
