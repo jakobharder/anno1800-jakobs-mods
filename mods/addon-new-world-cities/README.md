@@ -6,8 +6,10 @@
 
 ### Residences
 
-- Gapless Artista: residences build in blocks like Engineers and Investors.
+- Terraced Artista: residences build in blocks like Engineers and Investors.
   They provide a little extra population.
+
+Use `Alt+F` to go into paintbrush mode.
 
 ### Ornaments
 
