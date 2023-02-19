@@ -7,6 +7,7 @@
 - Upgradable Workers, 2.3.6: Allow change variation before building a residence
 - New World Cities, 1.3.3: Allow change variation before building a residence
 - Residence Skins, 1.3.1: Fix Obrero skin unlock
+- Diagonal Residences, 1.5.2: Add missing Lifestyle needs to Investors
 
 ## 5.5 - Diagonal Investors
 

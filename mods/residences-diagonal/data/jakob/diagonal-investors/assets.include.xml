@@ -556,9 +556,19 @@
       </Values>
     </Asset>
   </ModOp>
+  
+  <!-- # Lifestyle Needs -->
+  <ModOp GUID="15000004" Type="add"
+    Path="/Values/PopulationLevel7/PopulationInputs/Item/RequiredBuildings[Item/RequiredBuilding='1010347']">
+    <Item>
+      <RequiredBuilding>1500011110</RequiredBuilding>
+    </Item>
+  </ModOp>
+
   <!-- # Misc -->
   <!-- add to neighbor feature for upgrade -->
-  <ModOp GUID='7233' Type='add' Path='/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule'>
+  <ModOp GUID="7233" Type="add"
+    Path="/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule">
     <Item>
       <Building>1500010401</Building>
     </Item>

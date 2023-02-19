@@ -27,6 +27,7 @@ You might be interested in the following mods as well:
 
 ### 1.5
 
+- 1.5.2: Add missing Lifestyle needs for Investors
 - 1.5.1: Fixed upgrade choosing wrong shape
 - Added Investors
 
