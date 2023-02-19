@@ -56,18 +56,17 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
-### 2.3.4
+### 2.3
 
-- Included fix for Harborlife in case you forgot to update Harborlife
-
-### 2.3.3
-
-- Fixed automatic variation to work with new GU16 handling
+- 2.3.6: Allow rotation before placing a residence
+- 2.3.5: New residence icons
+- 2.3.4: Included fix for Harborlife in case you forgot to update Harborlife
+- 2.3.3: Fixed automatic variation to work with new GU16 handling
+- 2.3.2: Fixed missing skin icons
+- Replaced Cheese with Tea. Cheese is now an alternative lifestyle need for Sausages.
 
 ### Older
 
-- 2.3.2: Fixed missing skin icons
-- 2.3: Replaced Cheese with Tea. Cheese is now an alternative lifestyle need for Sausages.
 - 2.2: Improved Russian translation (thanks to @m_belonosov)
 - 2.2: Moved stone pavement to separate menu with City Decoration (new) and City Lights Pack (more) ornaments.
 - 2.1: Fixed buff issues

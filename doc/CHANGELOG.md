@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+
+- Upgradable Workers, 2.3.6: Allow change variation before building a residence
+- New World Cities, 1.3.3: Allow change variation before building a residence
+- Residence Skins, 1.3.1: Fix Obrero skin unlock
+
 ## 5.5 - Diagonal Investors
 
 ### 5.5.1
