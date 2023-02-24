@@ -17,7 +17,7 @@
           <GUID>1500010401</GUID>
           <Name>diagonal</Name>
           <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_engineers.png</IconFilename>
-          <InfoDescription>1500010405</InfoDescription>
+          <InfoDescription>1500010424</InfoDescription>
         </Standard>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
@@ -106,7 +106,7 @@
           <GUID>1500010402</GUID>
           <Name>diagonal_endpiece</Name>
           <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_endpiece.png</IconFilename>
-          <InfoDescription>1500010406</InfoDescription>
+          <InfoDescription>1500010425</InfoDescription>
         </Standard>
         <Blocking />
         <Building>
@@ -138,30 +138,12 @@
         <FeedbackController />
         <Ornament>
           <OrnamentUnit>1</OrnamentUnit>
-          <OrnamentDescription>1500010406</OrnamentDescription>
+          <OrnamentDescription>1500010425</OrnamentDescription>
         </Ornament>
         <AmbientMoodProvider />
         <Pausable />
         <Infolayer />
         <Culture />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010405</GUID>
-          <Name>diagonal_description</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010406</GUID>
-          <Name>diagonal_endpiece_description</Name>
-        </Standard>
       </Values>
     </Asset>
     <Asset>
@@ -581,18 +563,9 @@
               <Building>1500010415</Building>
             </Item>
           </BuildingList>
-          <CategoryDescription>1500010404</CategoryDescription>
+          <CategoryDescription>1500010426</CategoryDescription>
         </ConstructionCategory>
         <Locked />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010404</GUID>
-          <Name>diagonal_menu_description</Name>
-        </Standard>
       </Values>
     </Asset>
   </ModOp>
@@ -770,7 +743,7 @@
   <Include File="../../../../jakob/diagonal-engineers/assets.include.xml" />
 
   <!-- # Post fixes -->
-  <ModOp Type="add" GUID="1500010401,1500010402,1500010403,1500010404,1500010405,1500010406,1500010407,1500010408" Path="/Values">
+  <ModOp Type="add" GUID="1500010401,1500010402,1500010403,1500010407,1500010408" Path="/Values">
     <CultureUpgrade>
       <!-- I accidentally used this GUID for a buff previously.
            This makes sure it's at least not shown in the UI. -->
