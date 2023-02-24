@@ -59,6 +59,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 ### 2.3
 
 - 2.3.6: Allow rotation before placing a residence
+- 2.3.6: Change picking asset to level 1 worker, artisan instead of farmers
 - 2.3.5: New residence icons
 - 2.3.4: Included fix for Harborlife in case you forgot to update Harborlife
 - 2.3.3: Fixed automatic variation to work with new GU16 handling
