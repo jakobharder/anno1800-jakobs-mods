@@ -1,6 +1,6 @@
 # Terraced Houses (aka Upgradable Workers)
 
-![](./banner.png)
+![](./banner.jpg)
 
 Terraced versions of worker and artisan residences using Skyscraper mechanics.
 
