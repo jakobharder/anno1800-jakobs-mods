@@ -1,55 +1,14 @@
 <!-- 
   Cheese Production
+
+  Deprecated GUIDs: 1500010112
 -->
 <ModOps>
   <!-- # Goods Lists -->
   <Include File="../../../products/cheese/assets.include.xml" />
-  
-  <!-- add to StandartProductStorageList -->
-  <ModOp Type="addNextSibling" GUID='120055'>
-    <Asset>
-      <!-- fallback dump -->
-      <Template>fake</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ignore></ignore>
-      </Values>
-    </Asset>
-  </ModOp>
 
-  <!-- # Need: Cheese -->
-  <ModOp GUID='1010263' Type="addNextSibling">
-    <!-- <Asset>
-      <Template>Product</Template>
-      <Values>
-        <Standard>
-          <GUID>1440005</GUID>
-          <Name>milk</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_milk.png</IconFilename>
-        </Standard>
-        <Locked />
-        <Product>
-          <StorageLevel>Building</StorageLevel>
-          <ProductCategory>11702</ProductCategory>
-          <BasePrice>20</BasePrice>
-          <CivLevel>2</CivLevel>
-          <AssociatedRegion>Moderate;Meta</AssociatedRegion>
-          <ProductionRegions>
-            <Item>
-              <RegionType>Moderate</RegionType>
-            </Item>
-            <Item>
-              <RegionType>Meta</RegionType>
-            </Item>
-          </ProductionRegions>
-        </Product>
-        <ExpeditionAttribute>
-          <BaseMorale>5</BaseMorale>
-        </ExpeditionAttribute>
-      </Values>
-    </Asset> -->
+  <!-- # Milk Farm -->
+  <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
       <BaseAssetGUID>1010263</BaseAssetGUID>
       <Values>
@@ -71,18 +30,6 @@
               <Ingredient>1010196</Ingredient>
               <Amount>6</Amount>
             </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-            </Item>
-            <Item>
-              <Ingredient>1010202</Ingredient>
-            </Item>
           </Costs>
         </Cost>
         <Object>
@@ -93,7 +40,6 @@
           </Variations>
         </Object>
         <Locked />
-        <UpgradeList />
         <FactoryBase>
           <FactoryOutputs>
             <Item>
@@ -120,6 +66,28 @@
         </Maintenance>
       </Values>
     </Asset>
+  </ModOp>
+  <!-- all farms, including cattle farm -->
+  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+  </ModOp>
+  <!-- cattle farms -->
+  <ModOp Type="add" GUID="190872,193958" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+  </ModOp>
+  <!-- specific items -->
+  <ModOp Type="add" GUID="136827,190894" Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Cheese Dairy -->
+  <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
       <Template>FactoryBuilding7</Template>
       <Values>
@@ -132,8 +100,6 @@
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <AllowChangeVariation>0</AllowChangeVariation>
-          <BuildModeStartVariation>1</BuildModeStartVariation>
           <!-- enable asphalt -->
           <AlternativeGrassColorAvailable>1</AlternativeGrassColorAvailable>
         </Building>
@@ -166,9 +132,6 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/suits/worker_multifactory/worker_multifactory_cheese.cfg</Filename>
-            </Item>
-            <Item>
               <Filename>data/jakob/cheese/dairy/dairy.cfg</Filename>
             </Item>
           </Variations>
@@ -180,7 +143,6 @@
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
           </Colors>
         </Selection>
-        <Constructable />
         <Locked />
         <SoundEmitter>
           <ActiveSounds>
@@ -199,10 +161,6 @@
             </InfectedFire>
           </IncidentSounds>
         </SoundEmitter>
-        <FeedbackController />
-        <Infolayer />
-        <UpgradeList />
-        <Factory7 />
         <FactoryBase>
           <FactoryInputs>
             <Item>
@@ -272,29 +230,25 @@
         <Culture>
           <CultureType>Culture</CultureType>
         </Culture>
-        <QuestObject />
         <Electrifiable />
       </Values>
     </Asset>
-    <Asset>
-      <Template>ProductionChain</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010111</GUID>
-          <Name>cheese_chain</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
-        </Standard>
-        <ProductionChain>
-          <Building>1500010103</Building>
-          <Tier1>
-            <Item>
-              <Building>1500010104</Building>
-            </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked />
-      </Values>
-    </Asset>
+  </ModOp>
+  <!-- all food productions -->
+  <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010103</GUID>
+    </Item>
+  </ModOp>
+  <!-- electricity -->
+  <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010103</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Cheese Production -->
+  <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
       <Template>AssetPool</Template>
       <Values>
@@ -324,55 +278,11 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010112</GUID>
-          <Name>obsolete: dairy_reduced_needs</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010144</GUID> <!-- Pescatarian workers -->
-            </Item>
-            <Item>
-              <GUID>1500010145</GUID> <!-- Pescatarian artisans -->
-            </Item>
-            <Item>
-              <GUID>1500010200</GUID> <!-- upgraded worker level 1 -->
-            </Item>
-            <Item>
-              <GUID>1500010201</GUID> <!-- upgraded worker level 2 -->
-            </Item>
-          </EffectTargets>
-          <AllowStacking>0</AllowStacking>
-        </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade>
-          <GoodConsumptionUpgrade>
-            <Item>
-              <ProvidedNeed>1500010102</ProvidedNeed>
-              <AmountInPercent>-30</AmountInPercent>
-            </Item>
-          </GoodConsumptionUpgrade>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010196</GUID>
-          <Name>Unlock @ 900 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -410,56 +320,70 @@
         </TriggerSetup>
       </Values>
     </Asset>
+  </ModOp>
+  <!-- feedback -->
+  <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010103</Building>
+    </Item>
+    <Item>
+      <Building>1500010104</Building>
+    </Item>
+  </ModOp>
+  <!-- general production targets -->
+  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010104</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010103</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- boostable buildings -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010104</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010103</Factory>
+    </Item>
+  </ModOp>
+  
+  <!-- # Construction Menu: after Sausages -->
+  <ModOp Type="addNextSibling" GUID="1010263">
     <Asset>
-      <Template>Icon</Template>
+      <Template>ProductionChain</Template>
       <Values>
         <Standard>
-          <GUID>1500010952</GUID>
-          <Name>Cheese Alt Icon</Name>
-          <IconFilename>data\jakob\cheese\dairy\icon_cheese_alt.png</IconFilename>
+          <GUID>1500010111</GUID>
+          <Name>Cheese</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_sheep_cheese.png</IconFilename>
         </Standard>
+        <ProductionChain>
+          <Building>1500010103</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010104</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
       </Values>
     </Asset>
   </ModOp>
-  <!-- StandardProductList,StandardMarketplaceModerateStorageList: end -->
-  <!-- <ModOp Type="add" GUID="120055,120057" Path="/Values/ProductStorageList/ProductList[not(Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList">
-    <Item>
-      <Product>1440005</Product>
-    </Item>
-  </ModOp> -->
-  <!-- product lists: after sausages -->
-  <!-- <ModOp Type="addNextSibling" GUID="502018,502005" Path="/Values/ProductList/List/Item[Product='1010238' and not(../Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
-    <Item>
-      <Product>1440005</Product>
-    </Item>
-  </ModOp> -->
-  <!-- product lists: after pigs -->
-  <!-- <ModOp Type="addNextSibling" GUID="502037" Path="/Values/ProductList/List/Item[Product='1010199' and not(../Item/Product='1440005')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList/Item[last()]">
-    <Item>
-      <Product>1440005</Product>
-    </Item>
-  </ModOp> -->
-
-  <!-- OW consumables, workers menu: insert after beer -->
-  <!-- <ModOp Type="addNextSibling" GUID='500945,25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500006']">
+  <ModOp Type="add" GUID="1010263">
+    <ignore>
+      <Item />
+    </ignore>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000190,500945"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244' and not(//ForceIcon[.='1500010952']) and (//PopulationInputs/Item/Product='1500010102')] | //ignore/Item[1]">
     <Item>
       <Building>1500010111</Building>
     </Item>
-  </ModOp> -->
-  <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\cheese\dairy\icon_cheese_menu.png</IconFilename>
   </ModOp>
-  <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
-    <Item>
-      <Building>1500010103</Building>
-      <ForceIcon>1500010952</ForceIcon>
-      <Tier2>
-        <Item>
-          <Building>1500010104</Building>
-        </Item>
-      </Tier2>
-    </Item>
-  </ModOp>
+  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # Restaurant recipes: hot chocolate -->
   <ModOp Type="addNextSibling" GUID="132753">
@@ -498,15 +422,6 @@
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
         </Locked>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010251</GUID>
-          <Name>hot_chocolate_description</Name>
-        </Standard>
       </Values>
     </Asset>
     <Asset>
@@ -623,9 +538,6 @@
           </EffectTargets>
           <AllowStacking>0</AllowStacking>
         </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
         <ResidenceUpgrade>
           <AdditionalHappiness>1</AdditionalHappiness>
           <GoodConsumptionUpgrade>
@@ -643,12 +555,6 @@
             </Item>
           </GoodConsumptionUpgrade>
         </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
       </Values>
     </Asset>
     <Asset>
@@ -667,9 +573,6 @@
           </EffectTargets>
           <AllowStacking>0</AllowStacking>
         </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
         <ResidenceUpgrade>
           <GoodConsumptionUpgrade>
             <Item>
@@ -686,12 +589,6 @@
             </Item>
           </GoodConsumptionUpgrade>
         </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
       </Values>
     </Asset>
   </ModOp>
@@ -700,68 +597,4 @@
       <Recipe>1500010250</Recipe>
     </Item>
   </ModOp>
-
-  <!-- # Feedback -->
-  <ModOp Type="add" GUID='142311' Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500010103</Building>
-    </Item>
-    <Item>
-      <Building>1500010104</Building>
-    </Item>
-  </ModOp>
-
-  <!-- # buff targets -->
-  <!-- all farms, including cattle farm -->
-  <ModOp Type="add" GUID="190011" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010104</GUID>
-    </Item>
-  </ModOp>
-  <!-- cattle farms -->
-  <ModOp Type="add" GUID="190872,193958" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010104</GUID>
-    </Item>
-  </ModOp>
-  <!-- all food productions -->
-  <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010103</GUID>
-    </Item>
-  </ModOp>
-  
-  <!-- specific items -->
-  <ModOp Type="add" GUID="136827,190894" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010104</GUID>
-    </Item>
-  </ModOp>
-  <!-- general production targets -->
-  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010104</GUID>
-    </Item>
-    <Item>
-      <GUID>1500010103</GUID>
-    </Item>
-  </ModOp>
-  <!-- electricity -->
-  <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010103</GUID>
-    </Item>
-  </ModOp>
-  <!-- boostable buildings -->
-  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
-    <Item>
-      <Factory>1500010104</Factory>
-    </Item>
-    <Item>
-      <Factory>1500010103</Factory>
-    </Item>
-  </ModOp>
-
-  <!-- # cleanup -->
-  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>

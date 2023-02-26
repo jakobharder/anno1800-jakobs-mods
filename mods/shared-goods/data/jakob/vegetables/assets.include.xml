@@ -170,28 +170,6 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>ProductionChain</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010846</GUID>
-          <Name>Fishery Menu</Name>
-          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
-        </Standard>
-        <ProductionChain>
-          <Building>1010278</Building>
-          <Tier1>
-            <Item>
-              <Building>1500010830</Building>
-              <ForceIcon>1500010958</ForceIcon>
-            </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-      </Values>
-    </Asset>
-    <Asset>
       <Template>Farmfield</Template>
       <Values>
         <Standard>
@@ -328,12 +306,20 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- build menu -->
-  <ModOp Type="replace" GUID="500945,25000189" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010278']">
+
+  <!-- # Construction Menu: after Fish -->
+  <ModOp Type="add" GUID="1010278">
+    <ignore>
+      <Item />
+    </ignore>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000189,500945"
+    Path="/Values/ConstructionCategory/BuildingList/Item[(Building='1010278' or position()=1) and not(//ForceIcon[.='1500010957']) and (//PopulationInputs/Item/Product='1500010836')][last()] | //ignore/Item[1]">
     <Item>
-      <Building>1500010846</Building>
+      <Building>1500010830</Building>
     </Item>
   </ModOp>
+  <ModOp Type="remove" Path="//ignore" />
 
   <!-- # General -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">

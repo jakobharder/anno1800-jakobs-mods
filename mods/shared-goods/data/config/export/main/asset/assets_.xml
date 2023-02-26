@@ -1,12 +1,26 @@
-<!-- 2022-12-23-19-00 -->
 <!-- 
   Jakob's Extra Goods
 
-  1440005 milk // 1500010101 New Horizon GUID/product; bundled with permission
   1440224 hemp product // 1500010123 New Horizon GUID/product; bundled with permission
 -->
 <ModOps>
-  <Include File="../../../../../features.include.xml" />
+  <!-- Vegetables Production: Vegetable Farm -->
+  <Include File="../../../../jakob/vegetables/assets.include.xml" />
+  <!-- Cheese Production: Diary Farm, Cheese Dairy -->
+  <Include File="../../../../jakob/cheese/assets.include.xml" />
+  <!-- Canned Fish Production: Olive Farm, Fish Cannery -->
+  <Include File="../../../../jakob/canned-fish/assets.include.xml" />
+  <!-- Tools Production: Tools Workshop -->
+  <Include File="../../../../jakob/tools/assets.include.xml" />
+  <!-- Suits Production: Hemp Farm, Cloth Maker, Suits Factory -->
+  <Include File="../../../../jakob/suits/assets.include.xml" />
+  <!-- Tea Production: Herb Farm, Tea Maker -->
+  <Include File="../../../../jakob/tea/assets.include.xml" />
+
+  <!-- Olive Soap Production: Soap Factory (needs Canned Fish Production) -->
+  <Include File="../../../../jakob/soap/assets.include.xml" />
+  <!-- Pickled Vegetables Production: Kitchen (needs Vegetable Production) -->
+  <Include File="../../../../jakob/pickled-vegetables/assets.include.xml" />
   
   <!-- # Enable Tweaks -->
   <ImyaTweaks Title="Extra Goods Features" />

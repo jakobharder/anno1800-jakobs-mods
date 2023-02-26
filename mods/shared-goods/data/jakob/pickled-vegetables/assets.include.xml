@@ -151,7 +151,7 @@
       <Values>
         <Standard>
           <GUID>1500010914</GUID>
-          <Name>Unlock @ 900 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -189,34 +189,8 @@
         </TriggerSetup>
       </Values>
     </Asset>
-    <Asset>
-      <Template>Icon</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010953</GUID>
-          <Name>Pickled Vegetables Alt Icon</Name>
-          <IconFilename>data\jakob\pickled-vegetables\kitchen\icon_vegetables_alt.png</IconFilename>
-        </Standard>
-      </Values>
-    </Asset>
   </ModOp>
-  <!-- build menu -->
-  <ModOp Type="replace" GUID="500004" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\pickled-vegetables\kitchen\icon_vegetables_menu.png</IconFilename>
-  </ModOp>
-  <ModOp Type="add" GUID="500004" Path="/Values/ProductionChain/Tier1">
-    <Item>
-      <Building>1500010835</Building>
-      <ForceIcon>1500010953</ForceIcon>
-      <Tier2>
-        <Item>
-          <Building>1500010830</Building>
-        </Item>
-      </Tier2>
-    </Item>
-  </ModOp>
-
-  <!-- # General -->
+  <!-- General -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
     <Item>
       <Factory>1500010835</Factory>
@@ -233,4 +207,41 @@
       <GUID>1500010835</GUID>
     </Item>
   </ModOp>
+
+  <!-- # Construction Menu: after bread -->
+  <ModOp Type="addNextSibling" GUID="1010263">
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010114</GUID>
+          <Name>Pickled Vegetables</Name>
+          <IconFilename>products\pickled-vegetables\icon_vegetables.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>1500010835</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010830</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="1010263">
+    <ignore>
+      <Item />
+    </ignore>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000190,500945"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500004' and not(//ForceIcon[.='1500010953']) and (//PopulationInputs/Item/Product='1500010831')] | //ignore/Item[1]">
+    <Item>
+      <Building>1500010114</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" Path="//ignore" />
 </ModOps>

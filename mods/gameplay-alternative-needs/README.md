@@ -18,6 +18,10 @@ There is no double consumption.
 
 ## Changes
 
+### 1.1
+
+- Moved combined construction menus from extra goods to this mod
+
 ### 1.0
 
 - Moved out of `[Shared] Extra Goods (Jakob)`

@@ -11,6 +11,8 @@ No DLCs required.
 
 ## Alternative Needs
 
+Use mod `[Gameplay] Alternative Needs` to enable alternative needs.
+
 Every end product of the production chains can be used as an alternative input for Basic Needs.
 Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counterpart.
 
@@ -62,6 +64,11 @@ There is no double consumption.
 You can disable some productions if you go to `features.include.xml` and remove single lines.
 
 ## Changes
+
+## 2.3
+
+- Only combine construction menus when played with alternative needs
+- Only show products used by other mods
 
 ## 2.2
 
