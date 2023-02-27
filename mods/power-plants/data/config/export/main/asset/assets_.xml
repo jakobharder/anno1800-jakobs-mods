@@ -656,7 +656,62 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 
   <!-- # Buff Target Pools -->
   <!-- =================== -->
-
+  
+  <!-- Pool All Oil Powerplants  -->
+  <ModOp GUID='193864' Type="addNextSibling" Condition="!//Values[Standard/GUID='1500300990']">  
+      <Asset>
+          <Template>ItemEffectTargetPool</Template>
+          <Values>
+              <Standard>
+                  <GUID>1500300990</GUID>
+                  <Name>All Oil Powerplants</Name>
+              </Standard>
+              <Text>
+                  <LocaText>
+                      <English>
+                      <Text>All Oil Powerplants</Text>
+                      <Status>Exported</Status>
+                      </English>
+                  </LocaText>
+                  <LineID>44659</LineID>
+              </Text>
+              <ItemEffectTargetPool>
+                  <EffectTargetGUIDs>
+                      <Item>
+                          <GUID>100780</GUID>
+                      </Item>
+                      <Item>
+                          <GUID>5164</GUID>
+                      </Item>                                                               
+                  </EffectTargetGUIDs>
+              </ItemEffectTargetPool>
+          </Values>
+      </Asset>  
+  </ModOp> 
+  <!-- add to all oil powerplants -->
+  <ModOp Type="add" GUID='1500300990' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs" Condition="//Values[Standard/GUID='1500300990']">
+    <Item>
+      <GUID>1500010033</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010459</GUID>
+    </Item>
+  </ModOp>
+  <!-- addjust Items -->
+  <ModOp Type="replace" GUID='191373,191377' Path="/Values/ItemEffect/EffectTargets">
+      <EffectTargets>
+          <Item>
+            <GUID>193864</GUID><!-- All Powerplants -->
+          </Item>
+      </EffectTargets>                   
+  </ModOp>
+  <ModOp Type="replace" GUID='191375,191376' Path="/Values/ItemEffect/EffectTargets">
+      <EffectTargets>
+          <Item>
+            <GUID>1500300990</GUID><!-- All Oil Powerplants -->
+          </Item>
+      </EffectTargets>                   
+  </ModOp> 
   <!-- add to maintenance, production, public, power plants -->
   <ModOp Type="add" GUID='368,6000018,190136,193864' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
