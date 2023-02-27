@@ -80,6 +80,15 @@ let bundles = {
   }
 };
 
+const downloads = glob.sync("./download/*.zip");
+downloads.forEach(download => {
+  console.log(`Unzip ${download}`);
+  child_process.execFileSync('tar', [
+    '-xf', download,
+    '-C', './out/'
+  ]);
+});
+
 const versions = [];
 const mods = glob.sync("./out/*/").map(e => e.substr(0, e.length - 1));
 
@@ -103,6 +112,7 @@ fs.writeFileSync('./out/versions.md', versions.join('\n'));
 for (const [modid, bundle] of Object.entries(bundles)) {
   const version = bundle.version ? `-${bundle.version}` : ``;
 
+  console.log(`Package ${bundle.name}${version}.zip`);
   child_process.execFileSync('tar', [
       '-c', '-a',
       '-f', `out/${bundle.name}${version}.zip`,
