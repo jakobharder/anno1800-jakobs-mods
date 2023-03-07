@@ -1,9 +1,26 @@
 <ModOps>
+  <!-- # Gas Power Plant -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010020</GUID>
       <Text>Малая газовая электростанция</Text>
     </Text>
+    <Text>
+      <GUID>1500010036</GUID>
+      <Text>Reduced coverage with 1/2 gas consumption.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010456</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010457</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Small Power Plants -->
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010030</GUID>
       <Text>Small Power Plants</Text>
@@ -29,10 +46,6 @@
       <Text>Small Coal Power Plant</Text>
     </Text>
     <Text>
-      <GUID>1500010036</GUID>
-      <Text>Reduced coverage with 1/2 gas consumption.</Text>
-    </Text>
-    <Text>
       <GUID>1500010040</GUID>
       <Text>Limited coverage. Boosted by nearby coal mine with extra range and coal.</Text>
     </Text>
@@ -43,14 +56,6 @@
     <Text>
       <GUID>1500010044</GUID>
       <Text>Coal power plants are boosted by nearby coal mines with extra range and coal.</Text>
-    </Text>
-    <Text>
-      <GUID>1500010456</GUID>
-      <Text>[AssetData(1500010020) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010457</GUID>
-      <Text>[AssetData(1500010020) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010459</GUID>

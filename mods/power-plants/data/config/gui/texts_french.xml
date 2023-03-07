@@ -1,9 +1,26 @@
 <ModOps>
+  <!-- # Gas Power Plant -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010020</GUID>
       <Text>Petite centrale au gaz</Text>
     </Text>
+    <Text>
+      <GUID>1500010036</GUID>
+      <Text>Couverture réduite avec une consommation de gaz réduite de moitié.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010456</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010457</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+  </ModOp>
+  
+  <!-- # Small Power Plants -->
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010030</GUID>
       <Text>Petites centrales</Text>
@@ -29,10 +46,6 @@
       <Text>Petite centrale au charbon</Text>
     </Text>
     <Text>
-      <GUID>1500010036</GUID>
-      <Text>Couverture réduite avec une consommation de gaz réduite de moitié.</Text>
-    </Text>
-    <Text>
       <GUID>1500010040</GUID>
       <Text>Couverture limitée. Améliorée par un mine de charbon voisine, avec une portée et du charbon supplémentaires.</Text>
     </Text>
@@ -43,14 +56,6 @@
     <Text>
       <GUID>1500010044</GUID>
       <Text>Les centrales à charbon sont améliorées par les mines de charbon voisines, ce qui leur confère une portée et du charbon supplémentaires.</Text>
-    </Text>
-    <Text>
-      <GUID>1500010456</GUID>
-      <Text>[AssetData(1500010020) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010457</GUID>
-      <Text>[AssetData(1500010020) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010459</GUID>
