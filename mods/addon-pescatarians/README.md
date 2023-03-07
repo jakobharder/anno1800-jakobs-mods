@@ -52,23 +52,15 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Changes
 
-### 2.0.4
-
-- Increased Library range in exchange for higher maintenance
-- Reduced timber cost of level 1 residence to 4
-- Increased number of residents before need warning is shown
-
-### 2.0.3
-
-- Fixed missing skin icons
-
-### 2.0.2
-
-- Fixed missing residence construction costs
-- Fixed too high need income
-
 ### 2.0
 
+- 2.0.5: Fixed music school having normal skins
+- 2.0.4: Increased Library range in exchange for higher maintenance
+- 2.0.4: Reduced timber cost of level 1 residence to 4
+- 2.0.4: Increased number of residents before need warning is shown
+- 2.0.3: Fixed missing skin icons
+- 2.0.2: Fixed missing residence construction costs
+- 2.0.2: Fixed too high need income
 - Complete rework of all aspects
 - Added new models for worker and artisan ter
 - Added Lifestyle needs
