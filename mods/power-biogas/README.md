@@ -1,50 +1,43 @@
-# Biogas Plant
+# Biogas Production
 
-![](./banner.png)
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
+![](./banner.jpg)
 
 The biogas plant converts dung from animal farms into gas for use in power plants.
 
-Needs "The Passage" DLC activated. "Seeds of Change" DLC is not required.
+## Requirements
 
-## Notes
+- Activated DLC `The Passage`.
+- DLC `Seeds of Change` is not required.
 
-The mod comes with two buildings.
+## Buildings
 
-The dung depot provides a buff to nearby animal farms in the OW and NW to produce extra dung.
+You find the biogas production in the material menu, and in the gas electricity menus.
 
-The biogas plant processes dung into gas.
+### Dung Collector
 
-Biogas: 1,33/min using 3 dung per cycle
-Dung per any farm (OW): 0,5/min or 1/min with silo
-Dung production NW is same as with the Fertilizer building and will not stack.
+- The collector provides a buff to nearby animal farms in the OW and NW to produce extra dung.
+- Dung per any farm (OW): 0,5/min or 1/min with silo
+- Dung production NW is same as with the Fertilizer building and will not stack.
 
-You find the biogas production in materials and embedded in the gas and small power plants construction menus.
+### Biogas Plant
+
+- The plant processes dung into gas.
+- Biogas: 1,33/min using 3 dung per cycle
+
+### Small Gas Power Plant
+
+- Power plant consuming only half compared to the Arctic Gas-fired Power Plant in exchange for a reduced range.
 
 ## Changes
 
-### 1.4
+### 1.5
 
-- Minor fixes and optimizations
-
-### 1.3
-
-- Switched from farm waste to dung with some rebalancing
-  (please rebuild to update ranges)
-- Added NW variants and OW sheep farm
-
-### 1.2
-
-- GU14 support
-
-### 1.1
-
-- Fixed farm waste missing from warehouse category 'all'
-- Reduced pollution penalty
+- Added Small Gas Power Plant (from Small Power Plants)
 
 ## Translations
 
 Available: Chinese, French, English, German, Korean, Polish
 
 Thanks to darknesswei, Tonton Yip for translations!
+
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

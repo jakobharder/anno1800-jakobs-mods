@@ -494,16 +494,19 @@
     </Item>
   </ModOp>
   <!-- Construction Menu -->
-  <!-- <ModOp Type="add" GUID="1500010456">
+  <ModOp Type="add" GUID="1500010456">
     <ignore>
+      <Item />
       <Item />
     </ignore>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="500137,25000194"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()] | //ignore[1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
     <Item>
       <Building>1500010456</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" Path="//ignore[1]" /> -->
+  <ModOp Type="remove" GUID="500137,25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010457'][1] | //ignore/Item[1]" />
+  <ModOp Type="remove" Path="//ignore[1]" />
 </ModOps>

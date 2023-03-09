@@ -12,8 +12,10 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 -->
 
 <ModOps>
+  <Include File="../../../../jakob/small_gas_power_plant/assets.include.xml" />
+
   <!-- # OW Biogas-->
-  <ModOp GUID='100780' Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="100780">
     <Asset>
       <Template>FactoryBuilding7</Template>
       <Values>
@@ -28,7 +30,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <AllowChangeVariation>1</AllowChangeVariation>
-          <AllowChangeDirection>1</AllowChangeDirection>
           <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
           <BuildModeStartVariation>1</BuildModeStartVariation>
         </Building>
@@ -465,7 +466,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <GUID>1500010450</GUID>
           <Name>biogas_plant_nw</Name>
           <IconFilename>data/jakob/ui/icons/icon_biogas_plant.png</IconFilename>
-          <Version>dlc03</Version>
           <InfoDescription>1500010011</InfoDescription>
         </Standard>
         <Building>
@@ -474,7 +474,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <AssociatedRegions>Colony01</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
           <AllowChangeVariation>0</AllowChangeVariation>
-          <AllowChangeDirection>1</AllowChangeDirection>
         </Building>
         <Maintenance>
           <IncomeCategory>AdministrationBuildings</IncomeCategory>
@@ -518,7 +517,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <AssociatedRegions>Colony01</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
           <AllowChangeVariation>0</AllowChangeVariation>
-          <AllowChangeDirection>1</AllowChangeDirection>
         </Building>
         <Object>
           <Variations>
@@ -587,8 +585,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 
   <!-- # Construction menus -->
   <ModOp Type="addNextSibling" GUID='120055'>
-    <Asset>
-      <!-- fallback dump -->
+    <!-- <Asset>
       <Template>none</Template>
       <Values>
         <Standard>
@@ -596,9 +593,10 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Standard>
         <ignore></ignore>
       </Values>
-    </Asset>
+    </Asset> -->
   </ModOp>
-  <ModOp Type="addNextSibling" GUID='117559' Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
+  <ModOp Type="addNextSibling" GUID="117559"
+    Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
     <Item>
       <Building>1500010010</Building>
       <Tier2>
@@ -608,17 +606,20 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       </Tier2>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID='500943' Path="/Values/ConstructionCategory/BuildingList">
+  <ModOp Type="add" GUID="500943"
+    Path="/Values/ConstructionCategory/BuildingList">
     <Item>
       <Building>1500010451</Building>
     </Item>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList/Item[not(../Item/Building='1500010456')][Building='500916' or (not(../Item/Building='500916'))][last()] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
+  <!-- <ModOp Type="addNextSibling" GUID="25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[not(../Item/Building='1500010456')][Building='500916' or (not(../Item/Building='500916'))][last()] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
     <Item>
       <Building>1500010452</Building>
     </Item>
-  </ModOp>
-  <ModOp Type="add" GUID='500949' Path="/Values/ConstructionCategory/BuildingList">
+  </ModOp> -->
+  <ModOp Type="add" GUID="500949"
+    Path="/Values/ConstructionCategory/BuildingList">
     <Item>
       <Building>1500010452</Building>
     </Item>

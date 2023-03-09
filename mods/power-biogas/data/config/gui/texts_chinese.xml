@@ -1,52 +1,73 @@
 <ModOps>
-    <ModOp Type="add" Path="/TextExport/Texts">
-        <Text>
-            <GUID>1500010010</GUID>
-            <Text>沼气发电厂</Text>
-        </Text>
-        <Text>
-            <GUID>1500010011</GUID>
-            <Text>利用动物养殖场的粪便生产气体。</Text>
-        </Text>
-        <Text>
-            <GUID>1500010012</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010013</GUID>
-            <Text>动物养殖场储存粪便，以便进一步加工。</Text>
-        </Text>
-        <Text>
-            <GUID>1500010015</GUID>
-            <Text>粪便收集器</Text>
-        </Text>
-        <Text>
-            <GUID>1500010018</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010019</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010037</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010450</GUID>
-            <Text>[AssetData(1500010010) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010451</GUID>
-            <Text>沼气</Text>
-        </Text>
-        <Text>
-            <GUID>1500010452</GUID>
-            <Text>[AssetData(1500010451) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010453</GUID>
-            <Text>[AssetData(1500010015) Text]</Text>
-        </Text>
-    </ModOp>
+  <!-- # Gas Power Plant -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010020</GUID>
+      <Text>小型燃气发电厂</Text>
+    </Text>
+    <Text>
+      <GUID>1500010036</GUID>
+      <Text>覆盖范围更小，消耗减少2/3</Text>
+    </Text>
+    <Text>
+      <GUID>1500010456</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010457</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Biogas -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010010</GUID>
+      <Text>沼气发电厂</Text>
+    </Text>
+    <Text>
+      <GUID>1500010011</GUID>
+      <Text>利用动物养殖场的粪便生产气体。</Text>
+    </Text>
+    <Text>
+      <GUID>1500010012</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010013</GUID>
+      <Text>动物养殖场储存粪便，以便进一步加工。</Text>
+    </Text>
+    <Text>
+      <GUID>1500010015</GUID>
+      <Text>粪便收集器</Text>
+    </Text>
+    <Text>
+      <GUID>1500010018</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010019</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010037</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010450</GUID>
+      <Text>[AssetData(1500010010) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010451</GUID>
+      <Text>沼气</Text>
+    </Text>
+    <Text>
+      <GUID>1500010452</GUID>
+      <Text>[AssetData(1500010451) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010453</GUID>
+      <Text>[AssetData(1500010015) Text]</Text>
+    </Text>
+  </ModOp>
 </ModOps>

@@ -4,8 +4,8 @@
 -->
 <ModOps>
   <!-- # NW Construction Menus -->
-  <!-- insert all after oil power plant in obrero menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID="25000194"
+  <!-- insert all after oil power plant in city menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID="500137"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
     <Item>
       <Building>1500010457</Building>
@@ -14,9 +14,9 @@
       <Building>1500010458</Building>
     </Item>
   </ModOp>
-  <!-- insert all after boxing area in city menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID="500137"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101259' or (not(../Item/Building='101259'))][last()]">
+  <!-- insert all after boxing area in obrero menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID="25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
     <Item>
       <Building>1500010457</Building>
     </Item>

@@ -2,7 +2,7 @@ variant:
   source: biogas_plant2.cfg
   modifications:
     - xpath: //Config/Models/Config[Name="model_building"]
-      FileName: data/jakob/buildings/production/biogas_plant/biogas_plant2_nw_lod0.rdm
+      FileName: data/jakob/buildings/production/biogas_plant/rdm/biogas_plant2_nw_lod0.rdm
   cf7:
     - xpath: //FeedbackDefinition/FeedbackConfigs/i[MultiplyActorByDummyCount="shovelers"]/AssetVariationList
       GuidVariationList: CDATA[40 101624 -1 101625 -1 101626 -1 101627 -1 101628 -1]

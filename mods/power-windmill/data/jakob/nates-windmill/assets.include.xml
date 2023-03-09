@@ -125,24 +125,6 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010002</GUID>
-          <Name>Provides Electricity</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010004</GUID>
-          <Name>production building infocorner</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
       <BaseAssetGUID>1500010001</BaseAssetGUID>
       <Values>
         <Standard>
@@ -201,7 +183,7 @@
   </ModOp>
   <!-- Old World Menu Sorting City, insert after oil power plant -->
   <ModOp Type="addNextSibling" GUID="500092"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506' or Building='117559'][last()]">
     <Item>
       <Building>1500010001</Building>
     </Item>
