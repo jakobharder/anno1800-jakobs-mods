@@ -8,6 +8,11 @@
   <Include File="../../../../../products/suits/assets.include.xml" />
   <Include File="../../../../../products/tea/assets.include.xml" />
 
+  <!-- # Vanilla Changes -->
+  <ModOp Type="replace" GUID="412,502386" Path="/Values/Standard/IconFilename">
+    <IconFilename>data/ui/2kimages/main/icons/icon_increase_population_2.png</IconFilename>
+  </ModOp>
+
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
     <Asset>
