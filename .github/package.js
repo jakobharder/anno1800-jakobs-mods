@@ -11,7 +11,7 @@ let bundles = {
   },
   'jakob_upgradable_low_tier': { 
     name: 'Terraced-Houses',
-    glob: [ '[*Upgradable*', '[*Extra*', '[*Ground*', '[*Railway*', '[*Docklands*' ],
+    glob: [ '[*Upgradable*', '[*Extra*', '[*Ground*', '[*Railway*', '[*Docklands*', '[*Modular*' ],
     version: '0'
   },
   'jakob_pescatarians': { 
@@ -19,7 +19,7 @@ let bundles = {
     glob: [ '[*Pescatarian*', '[*Extra*', '[*Ground*' ],
     version: '0'
   },
-  'jakob_Biogas_Plant': { 
+  'jakob_biogas': { 
     name: 'Biogas-Production',
     glob: [ '[*Biogas*' ],
     version: '0'
@@ -34,11 +34,11 @@ let bundles = {
     glob: [ '[*Diagonal*' ],
     version: '0'
   },
-  'jakob_modular_factories': { 
-    name: 'Modular-Factories',
-    glob: [ '[*Modular*', '[*Ground*' ],
-    version: '0'
-  },
+  // 'jakob_modular_factories': { 
+  //   name: 'Modular-Factories',
+  //   glob: [ '[*Modular*', '[*Ground*' ],
+  //   version: '0'
+  // },
   'jakob_Nates_Windmill': { 
     name: 'Nates-Windmill',
     glob: [ '[*Windmill*' ],
@@ -76,6 +76,11 @@ let bundles = {
   'jakob_compact_menus': { 
     name: 'Compact-Menus',
     glob: [ '[*Compact*' ],
+    version: '0'
+  },
+  'jakob_nw_monument_small': {
+    name: 'Smaller-NW-Tourism-Monument',
+    glob: [ '[*Monument*' ],
     version: '0'
   }
 };

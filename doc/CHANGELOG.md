@@ -4,6 +4,7 @@
 
 ### Changed
 
+- New Town Halls, 2.0: Converted all town hall buildings into skins
 - Biogas Production, 1.5: Now includes Small Gas Power Plant from Small Power Plants
 - Upgradable Workers, 2.3.6: Allow change variation before building a residence
 - New World Cities, 1.3.3: Allow change variation before building a residence

@@ -70,6 +70,11 @@ New Town Hall
               <Filename>data/jakob/buildings/townhall/townhall4.cfg</Filename>
             </Item>
           </Variations>
+          <Skins>
+            <SkinList>
+              <Item />
+            </SkinList>
+          </Skins>
         </Object>
         <Maintenance>
           <Maintenances>
@@ -481,7 +486,7 @@ New Town Hall
         </Standard>
         <Skin>
           <SkinName>1500010054</SkinName>
-          <SkinDescription>0</SkinDescription>
+          <SkinDescription>1500011146</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data/jakob/buildings/townhall/townhall6.cfg</FileName>
@@ -505,7 +510,7 @@ New Town Hall
         </Standard>
         <Skin>
           <SkinName>1500010055</SkinName>
-          <SkinDescription>0</SkinDescription>
+          <SkinDescription>1500011146</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data/jakob/buildings/townhall/townhall5.cfg</FileName>
@@ -529,7 +534,7 @@ New Town Hall
         </Standard>
         <Skin>
           <SkinName>1500010056</SkinName>
-          <SkinDescription>0</SkinDescription>
+          <SkinDescription>1500011146</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data/jakob/buildings/townhall/townhall1.cfg</FileName>
@@ -553,7 +558,7 @@ New Town Hall
         </Standard>
         <Skin>
           <SkinName>1500010057</SkinName>
-          <SkinDescription>0</SkinDescription>
+          <SkinDescription>1500011146</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data/jakob/buildings/townhall/townhall2.cfg</FileName>
@@ -741,6 +746,186 @@ New Town Hall
     </Item>
   </ModOp>
 
+  <!-- # As Skins -->
+  <ModOp Type="addNextSibling" GUID="100415">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011140</GUID>
+          <Name>New Town Hall, default</Name>
+          <IconFilename>data\jakob\buildings\townhall\icon_townhall_darkred.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011140</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/scholarhall.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011141</GUID>
+          <Name>Red Town Hall, #1</Name>
+          <IconFilename>data\jakob\buildings\townhall\icon_red_townhall_1.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011140</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/scholarhall.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011142</GUID>
+          <Name>Red Town Hall, #2</Name>
+          <IconFilename>data\jakob\buildings\townhall\icon_red_townhall_2.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011142</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/scholarhall2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011143</GUID>
+          <Name>Red Town Hall, #3</Name>
+          <IconFilename>data\jakob\buildings\townhall\icon_red_townhall_3.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011143</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/scholarhall3.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011144</GUID>
+          <Name>Town Hall Tower, #1</Name>
+          <IconFilename>data\jakob\buildings\townhall\icon_townhall_tower_1.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011144</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/townhall3.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011145</GUID>
+          <Name>Town Hall Tower, #2</Name>
+          <IconFilename>data\jakob\buildings\townhall\icon_townhall_tower_2.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011145</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/buildings/townhall/townhall4.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="100415" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500010040</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010054</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010055</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010056</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500010057</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011141</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011142</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011143</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011144</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011145</SkinAssetGuid>
+    </Item>
+  </ModOp>
+
   <!-- # Build Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
@@ -771,9 +956,9 @@ New Town Hall
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID='500092,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415'))][last()]">
+  <!-- <ModOp Type="addNextSibling" GUID='500092,25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or (not(../Item/Building='100415'))][last()]">
     <Item>
       <Building>1500010050</Building>
     </Item>
-  </ModOp>
+  </ModOp> -->
 </ModOps>
