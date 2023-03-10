@@ -6,8 +6,10 @@
 
 ### Residences
 
-- Gapless Artista: residences build in blocks like Engineers and Investors.
+- Terraced Artista: residences build in blocks like Engineers and Investors.
   They provide a little extra population.
+
+Use `Alt+F` to go into paintbrush mode.
 
 ### Ornaments
 
@@ -49,7 +51,8 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.3
 
-- 1.3.1: fix Harborlife compatibility
+- 1.3.2: fix Harborlife compatibility
+- 1.3.3: allow rotation before placing an Artista residence
 - Added gapless Artista residences with 3 skins
 
 ### 1.2

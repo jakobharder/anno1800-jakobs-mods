@@ -4,23 +4,32 @@
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds}"
+      "pattern": "**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,**/icons/*.png,banner.png,README.md}"
+      "pattern": "{data/config/**/*,banner.*,README.md,**/effects/*.png,**/icon_*.png}"
     },
     {
       "action": "cf7",
       "pattern": "**/*.cf7"
     },
     {
+      "action": "rdpxml",
+      "pattern": "**/*.rdp.xml"
+    },
+    {
       "action": "texture",
-      "pattern": "**/*_{diff,norm,height,metal}.png"
+      "pattern": "**/*_{diff,norm,height,metal}.png",
+      "lods": 3,
+      "changePath": "maps/"
     },
     {
       "action": "gltf",
-      "pattern": "**/*.{glb,gltf}"
+      "pattern": "**/*.gltf",
+      "lods": 4,
+      "changePath": "rdm/",
+      "animPath": "anim/"
     },
     {
       "action": "cfgyaml",
@@ -32,9 +41,9 @@
     }
   ],
   "modinfo": {
-    "Version": "1.4.1",
-    "ModID": "jakob_Biogas_Plant",
-    "IncompatibleIds": [],
+    "Version": "1.5",
+    "ModID": "jakob_biogas",
+    "DeprecateIds": [ "jakob_Biogas_Plant" ],
     "ModDependencies": null,
     "Category": {
       "English": "Building"

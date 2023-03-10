@@ -125,24 +125,6 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010002</GUID>
-          <Name>Provides Electricity</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010004</GUID>
-          <Name>production building infocorner</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
       <BaseAssetGUID>1500010001</BaseAssetGUID>
       <Values>
         <Standard>
@@ -193,13 +175,15 @@
   <!-- NW variant is only available via small power plants -->
 
   <!-- Old World Menu Engineers, insert after oil power plant -->
-  <ModOp Type="addNextSibling" GUID='25000192' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
+  <ModOp Type="addNextSibling" GUID="25000192"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
     <Item>
       <Building>1500010001</Building>
     </Item>
   </ModOp>
   <!-- Old World Menu Sorting City, insert after oil power plant -->
-  <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
+  <ModOp Type="addNextSibling" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506' or Building='117559'][last()]">
     <Item>
       <Building>1500010001</Building>
     </Item>

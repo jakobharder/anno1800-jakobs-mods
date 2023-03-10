@@ -4,15 +4,9 @@
 -->
 <ModOps>
   <!-- # NW Construction Menus -->
-  <!-- remove biogas by first adding it and then deleting all occurences to avoid not found warnings -->
-  <ModOp Type="add" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList">
-    <Item>
-      <Building>1500010452</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010452']" />
-  <!-- insert all after oil power plant in obrero menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID='25000194' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
+  <!-- insert all after oil power plant in city menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID="500137"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
     <Item>
       <Building>1500010457</Building>
     </Item>
@@ -20,8 +14,9 @@
       <Building>1500010458</Building>
     </Item>
   </ModOp>
-  <!-- insert all after boxing area in city menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID='500137' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101259' or (not(../Item/Building='101259'))][last()]">
+  <!-- insert all after boxing area in obrero menu, fallback append -->
+  <ModOp Type="addNextSibling" GUID="25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
     <Item>
       <Building>1500010457</Building>
     </Item>

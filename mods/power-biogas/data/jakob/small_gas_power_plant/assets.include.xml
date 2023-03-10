@@ -1,0 +1,512 @@
+<ModOps>
+  <!-- # Small Gas Power Plant -->
+  <!-- the building is a copy of gas-fired power plant, 
+       all differences are commented -->
+  <ModOp Type="addNextSibling" GUID="117547">
+    <Asset>
+      <Template>PowerplantBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010020</GUID>
+          <Name>Small Gas Power Plant</Name>
+          <IconFilename>data/jakob/small_gas_power_plant/icon_small_gas_power_plant.png</IconFilename>
+          <InfoDescription>1500010036</InfoDescription>
+        </Standard>
+        <Building>
+          <BuildingCategoryName>11169</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Blocking />
+        <Cost> <!-- reduced to half -->
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Amount>40000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient> <!-- timber -->
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient> <!-- bricks -->
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient> <!-- Steel Beams -->
+              <Amount>30</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient> <!-- windows -->
+              <Amount>20</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient> <!-- concrete -->
+              <Amount>20</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/small_gas_power_plant/small_gas_power_plant.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier04_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>200832</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <LogisticNode>
+          <TransporterCountMax>1</TransporterCountMax>
+          <PathLayers>Street</PathLayers>
+        </LogisticNode>
+        <AmbientMoodProvider />
+        <Maintenance> <!-- reduced to half -->
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product> <!-- Credits -->
+              <Amount>600</Amount>
+              <InactiveAmount>300</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010117</Product> <!-- Engineers -->
+              <Amount>125</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <!-- important for burn damage -->
+          <MaximumHitPoints>3500</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+          <Explosion> <!-- reduced to half -->
+            <DamageExplosionChance>20</DamageExplosionChance>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>15</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Explosion> <!-- reduced to half -->
+              <BaseChance>3</BaseChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Powerplant> <!-- reduced to 40% coverage -->
+          <!-- industry power supply, visual power lines? -->
+          <IndustrializationDistance>28</IndustrializationDistance>
+        </Powerplant>
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>112706</Product> <!-- gas -->
+              <Amount>1</Amount>
+              <StorageAmount>10</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <CycleTime>45</CycleTime>
+        </FactoryBase>
+        <Culture />
+        <PublicService> <!-- reduced to 40% coverage -->
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>28</FullSatisfactionDistance>
+          <NoSatisfactionDistance>28</NoSatisfactionDistance>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010474</GUID>
+          <Name>Unhide @ 1 Engineer</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context> <!-- 1 engineer -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010020</Asset> <!-- gas -->
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010042</GUID>
+          <Name>@ 1 Investor</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context> <!-- 1 investor -->
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010020</Asset> <!-- gas -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add to gas powerplant chain as Tier1 to gas -->
+  <ModOp Type="add" GUID="117559">
+    <ignore/>
+  </ModOp>
+  <ModOp Type="add" GUID="117559"
+    Path="/Values/ProductionChain/Tier1[not(Item/Building='1500010020')] | //ignore[1]">
+    <Item>
+      <Building>1500010020</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" Path="//ignore[1]" />
+  <!-- add to maintenance, production, public, power plants -->
+  <ModOp Type="add" GUID="368,6000018,190136,193864"
+    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010020</GUID>
+    </Item>
+  </ModOp>
+  <!-- add to palace forward buff social welfare act -->
+  <ModOp Type="add" GUID="269460"
+    Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010020</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # NW Gas Power Plant -->
+  <ModOp Type="addNextSibling" GUID="1500010020">
+    <Asset>
+      <BaseAssetGUID>1500010020</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010457</GUID>
+          <Name>NW Gas Power Plant</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_gas.png</IconFilename>
+        </Standard>
+        <Building>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/small_gas_power_plant/small_gas_power_plant_nw.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+          <DLCDependency>410042</DLCDependency>
+        </Locked>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>600</Amount>
+              <InactiveAmount>300</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010367</Product>
+              <Amount>200</Amount>
+              <ShutdownThreshold>0.5</ShutdownThreshold>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Powerplant>
+          <!-- industry power supply, visual power lines? -->
+          <IndustrializationDistance>32</IndustrializationDistance>
+        </Powerplant>
+        <PublicService>
+          <!-- resident power supply, green/blue road visualization -->
+          <FullSatisfactionDistance>32</FullSatisfactionDistance>
+          <NoSatisfactionDistance>32</NoSatisfactionDistance>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010456</GUID>
+          <Name>Gas Power Plant NW</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_electric_works_gas.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>1500010457</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010450</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500010453</Building>
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+          <InfoTipHeight>550</InfoTipHeight>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010475</GUID>
+          <Name>Unhide @ 600 Obreros</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>600</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010456</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010471</GUID>
+          <Name>@ 5000 Obreros</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>5000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010456</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010476</GUID>
+          <Name>@ 900 Artista</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>5403</Context>
+                <CounterAmount>900</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010457</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010456</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- add to maintenance, production, public, power plants -->
+  <ModOp Type="add" GUID="368,6000018,190136,193864"
+    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010457</GUID>
+    </Item>
+  </ModOp>
+  <!-- add to palace forward buff social welfare act -->
+  <ModOp Type="add" GUID="269460"
+    Path="/Values/ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500010457</GUID>
+    </Item>
+  </ModOp>
+  <!-- Construction Menu -->
+  <ModOp Type="add" GUID="1500010456">
+    <ignore>
+      <Item />
+      <Item />
+    </ignore>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500137,25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()]">
+    <Item>
+      <Building>1500010456</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="500137,25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010457'][1] | //ignore/Item[1]" />
+  <ModOp Type="remove" Path="//ignore[1]" />
+</ModOps>

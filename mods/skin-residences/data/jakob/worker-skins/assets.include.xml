@@ -50,11 +50,13 @@
         </Locked>
         <Text />
       </Values>
+      <ignore />
     </Asset>
   </ModOp>
-  <ModOp GUID="1010344,1500010143" Type="add" Path="/Values/Object/Skins/SkinList">
+  <ModOp Type="add" GUID="1010344,1500010143" Path="/Values/Object/Skins/SkinList | //ignore[1]">
     <Item>
       <SkinAssetGuid>1500010199</SkinAssetGuid>
     </Item>
   </ModOp>
+  <ModOp Type="add" Path="//ignore[1]" />
 </ModOps>

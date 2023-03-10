@@ -99,25 +99,26 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                 </Item>
               </Pool>
             </Mid>
-            <!-- <End>
+            <End>
               <Pool>
                 <Item>
-                  <Variation>0</Variation>
+                  <Variation>8</Variation>
+                  <DirectionOffet>2</DirectionOffet>
                 </Item>
                 <Item>
-                  <Variation>1</Variation>
-                </Item>
-                <Item>
-                  <Variation>2</Variation>
+                  <Variation>9</Variation>
+                  <DirectionOffet>2</DirectionOffet>
                 </Item>
                 <Item>
                   <Variation>10</Variation>
+                  <DirectionOffet>2</DirectionOffet>
                 </Item>
                 <Item>
                   <Variation>11</Variation>
+                  <DirectionOffet>2</DirectionOffet>
                 </Item>
               </Pool>
-            </End> -->
+            </End>
           </BuildingBlockPool>
           <InfluencedVariationDirection>
             <!--
@@ -126,17 +127,17 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             -->
             <Item>
               <!-- single -->
-              <Type>Mid</Type>
+              <Type>DontCare</Type>
             </Item>
             <Item>
               <!-- end, south-west -->
               <Direction>1</Direction>
-              <Type>Mid</Type>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- end, south-east -->
               <Direction>2</Direction>
-              <Type>Mid</Type>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- corner, south -->
@@ -146,7 +147,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             <Item>
               <!-- end, north-east -->
               <Direction>3</Direction>
-              <Type>Mid</Type>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- mid, south-west to north-east -->
@@ -165,7 +166,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
             <Item>
               <!-- end, north-west -->
-              <Type>Mid</Type>
+              <Type>End</Type>
             </Item>
             <Item>
               <!-- corner, west -->
@@ -215,6 +216,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Costs>
         </Cost>
+        <Constructable>
+          <ConstructionMenuIcon>1500011044</ConstructionMenuIcon>
+        </Constructable>
         <Mesh />
         <Object>
           <Variations>
@@ -232,6 +236,19 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <Filename>data\jakob\gapless-artista\artista_scraper7.cfg</Filename>
             </Item>
             <!-- straights -->
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper8.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\gapless-artista\artista_scraper9.cfg</Filename>
+            </Item>
+            <!-- end -->
             <Item>
               <Filename>data\jakob\gapless-artista\artista_scraper1.cfg</Filename>
             </Item>
@@ -396,6 +413,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Costs>
         </Cost>
+        <Constructable>
+          <ConstructionMenuIcon>1500011090</ConstructionMenuIcon>
+        </Constructable>
         <Object>
           <Variations>
             <!-- corners -->
@@ -497,6 +517,19 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             <Item>
               <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper9.cfg</FileName>
             </Item>
+            <!-- end -->
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper8.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-hacienda\artista_scraper9.cfg</FileName>
+            </Item>
           </SkinVariations>
           <SkinCategoryDescription>1500011055</SkinCategoryDescription>
         </Skin>
@@ -533,6 +566,19 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper7.cfg</FileName>
             </Item>
             <!-- straights -->
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper8.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper9.cfg</FileName>
+            </Item>
+            <!-- end -->
             <Item>
               <FileName>data\jakob\gapless-artista\skin-tiled-roof\artista_scraper1.cfg</FileName>
             </Item>

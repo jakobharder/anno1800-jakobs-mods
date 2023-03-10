@@ -1,9 +1,26 @@
 <ModOps>
+  <!-- # Gas Power Plant -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010020</GUID>
       <Text>小型燃气发电厂</Text>
     </Text>
+    <Text>
+      <GUID>1500010036</GUID>
+      <Text>覆盖范围更小，消耗减少2/3</Text>
+    </Text>
+    <Text>
+      <GUID>1500010456</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010457</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Small Power Plants -->
+  <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010030</GUID>
       <Text>小型发电厂</Text>
@@ -29,10 +46,6 @@
       <Text>小型煤炭发电厂</Text>
     </Text>
     <Text>
-      <GUID>1500010036</GUID>
-      <Text>覆盖范围更小，消耗减少2/3</Text>
-    </Text>
-    <Text>
       <GUID>1500010040</GUID>
       <Text>覆盖范围有限。被附近的煤矿提升，有额外的范围和煤炭。</Text>
     </Text>
@@ -43,14 +56,6 @@
     <Text>
       <GUID>1500010044</GUID>
       <Text>煤电厂被附近的煤矿提振，有额外的范围和煤炭。</Text>
-    </Text>
-    <Text>
-      <GUID>1500010456</GUID>
-      <Text>[AssetData(1500010020) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500010457</GUID>
-      <Text>[AssetData(1500010020) Text]</Text>
     </Text>
     <Text>
       <GUID>1500010459</GUID>

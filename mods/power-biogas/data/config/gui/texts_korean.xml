@@ -1,52 +1,73 @@
 <ModOps>
-    <ModOp Type="add" Path="/TextExport/Texts">
-        <Text>
-            <GUID>1500010010</GUID>
-            <Text>바이오가스 공장</Text>
-        </Text>
-        <Text>
-            <GUID>1500010011</GUID>
-            <Text>가축 농장의 폐기물로 가스를 생산합니다.</Text>
-        </Text>
-        <Text>
-            <GUID>1500010012</GUID>
-            <Text>[AssetData(24806) Text]</Text> <!-- buff: farm waste -->
-        </Text>
-        <Text>
-            <GUID>1500010013</GUID>
-            <Text>폐기물 저장소 주변의 가축 농장은 추가 처리를 위해 농장 폐기물을 저장합니다.</Text>
-        </Text>
-        <Text>
-            <GUID>1500010015</GUID>
-            <Text>폐기물 저장소</Text>
-        </Text>
-        <Text>
-            <GUID>1500010018</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010019</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010037</GUID>
-            <Text>[AssetData(24806) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010450</GUID>
-            <Text>[AssetData(1500010010) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010451</GUID>
-            <Text>바이오가스</Text>
-        </Text>
-        <Text>
-            <GUID>1500010452</GUID>
-            <Text>[AssetData(1500010451) Text]</Text>
-        </Text>
-        <Text>
-            <GUID>1500010453</GUID>
-            <Text>[AssetData(1500010015) Text]</Text>
-        </Text>
-    </ModOp>
+  <!-- # Gas Power Plant -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010020</GUID>
+      <Text>소형 가스 화력 발전소</Text>
+    </Text>
+    <Text>
+      <GUID>1500010036</GUID>
+      <Text>가스 소비량 1/2로 감소.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010456</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010457</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+  </ModOp>
+  
+  <!-- # Biogas -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010010</GUID>
+      <Text>바이오가스 공장</Text>
+    </Text>
+    <Text>
+      <GUID>1500010011</GUID>
+      <Text>가축 농장의 폐기물로 가스를 생산합니다.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010012</GUID>
+      <Text>[AssetData(24806) Text]</Text> <!-- buff: farm waste -->
+    </Text>
+    <Text>
+      <GUID>1500010013</GUID>
+      <Text>폐기물 저장소 주변의 가축 농장은 추가 처리를 위해 농장 폐기물을 저장합니다.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010015</GUID>
+      <Text>폐기물 저장소</Text>
+    </Text>
+    <Text>
+      <GUID>1500010018</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010019</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010037</GUID>
+      <Text>[AssetData(24806) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010450</GUID>
+      <Text>[AssetData(1500010010) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010451</GUID>
+      <Text>바이오가스</Text>
+    </Text>
+    <Text>
+      <GUID>1500010452</GUID>
+      <Text>[AssetData(1500010451) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010453</GUID>
+      <Text>[AssetData(1500010015) Text]</Text>
+    </Text>
+  </ModOp>
 </ModOps>

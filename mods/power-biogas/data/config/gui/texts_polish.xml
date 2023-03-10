@@ -1,5 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ModOps>
+  <!-- # Gas Power Plant -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010020</GUID>
+      <Text>Mała elektrownia gazowa</Text>
+    </Text>
+    <Text>
+      <GUID>1500010036</GUID>
+      <Text>Zmniejszony zasięg przy połowicznym zużyciu gazu.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010456</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+    <Text>
+      <GUID>1500010457</GUID>
+      <Text>[AssetData(1500010020) Text]</Text>
+    </Text>
+  </ModOp>
+  
+  <!-- # Biogas -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010010</GUID>

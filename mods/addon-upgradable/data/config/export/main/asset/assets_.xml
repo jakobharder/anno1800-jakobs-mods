@@ -8,6 +8,11 @@
   <Include File="../../../../../products/suits/assets.include.xml" />
   <Include File="../../../../../products/tea/assets.include.xml" />
 
+  <!-- # Vanilla Changes -->
+  <ModOp Type="replace" GUID="412,502386" Path="/Values/Standard/IconFilename">
+    <IconFilename>data/ui/2kimages/main/icons/icon_increase_population_2.png</IconFilename>
+  </ModOp>
+
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
     <Asset>
@@ -158,6 +163,7 @@
         <Locked />
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <PickingAsset>1500010200</PickingAsset>
           <!-- overwrite influence direction have front fassades always facing outwards -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingBlockPool>
@@ -245,7 +251,7 @@
             <Item>
               <!-- single -->
               <Direction>0</Direction>
-              <Type>Mid</Type>
+              <Type>DontCare</Type>
             </Item>
             <Item>
               <!-- end, south-west -->
@@ -341,6 +347,9 @@
             </Item>
           </Costs>
         </Cost>
+        <Constructable>
+          <ConstructionMenuIcon>1500010200</ConstructionMenuIcon>
+        </Constructable>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
@@ -636,6 +645,9 @@
             </Item>
           </Costs>
         </Cost>
+        <Constructable>
+          <ConstructionMenuIcon>1500010201</ConstructionMenuIcon>
+        </Constructable>
         <FloorStackOwner>
           <FloorCount>2</FloorCount>
           <Components>
@@ -1227,6 +1239,7 @@
         <Locked />
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <PickingAsset>1500010225</PickingAsset>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <!--
             Artisans are either upgraded from modern workers or vanilla artisans.
@@ -1294,7 +1307,7 @@
             <Item>
               <!-- single -->
               <Direction>0</Direction>
-              <Type>Mid</Type>
+              <Type>DontCare</Type>
             </Item>
             <Item>
               <!-- end, south-west -->
@@ -1391,6 +1404,9 @@
             </Item>
           </Costs>
         </Cost>
+        <Constructable>
+          <ConstructionMenuIcon>1500010225</ConstructionMenuIcon>
+        </Constructable>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
@@ -1629,6 +1645,9 @@
             </Item>
           </Costs>
         </Cost>
+        <Constructable>
+          <ConstructionMenuIcon>1500010226</ConstructionMenuIcon>
+        </Constructable>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
