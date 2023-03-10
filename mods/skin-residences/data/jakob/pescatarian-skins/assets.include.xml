@@ -82,45 +82,10 @@
         </Locked>
         <Text />
       </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010307</GUID>
-          <Name>artisan_skin_description</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010308</GUID>
-          <Name>default_skin_name</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010309</GUID>
-          <Name>colorful_skin_name</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010310</GUID>
-          <Name>black_skin_name</Name>
-        </Standard>
-      </Values>
+      <ignore />
     </Asset>
   </ModOp>
-  <ModOp GUID='1500010144' Type="add" Path="/Values/Object/Skins/SkinList">
+  <ModOp Type="add" GUID="1500010144" Path="/Values/Object/Skins/SkinList | //ignore[1]">
     <Item>
       <SkinAssetGuid>1500010304</SkinAssetGuid>
     </Item>
@@ -134,4 +99,5 @@
       <SkinAssetGuid>1500010306</SkinAssetGuid>
     </Item>
   </ModOp>
+  <ModOp Type="remove" Path="//ignore[1]" />
 </ModOps>
