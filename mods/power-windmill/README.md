@@ -30,6 +30,10 @@ Includes a fix to correct the fan direction of grain mills.
 
 ## Changes
 
+### 1.5
+
+- Changed maintenance cost to 250
+
 ### 1.4
 
 - Added iModYourAnno tweak support
