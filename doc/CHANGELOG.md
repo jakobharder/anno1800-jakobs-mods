@@ -7,6 +7,7 @@
 - New Town Halls, 2.0: Converted all town hall buildings into skins
 - Biogas Production, 1.5: Now includes Small Gas Power Plant from Small Power Plants
 - Nate's Windmill, 1.5: Changed maintenance cost to 250 
+- Alternative Needs, 1.2: Buff should be fixed for all sessions and multiplayer now
 - Pescatarians, 2.0.6: Fixed music school showing wrong skins
 - Upgradable Workers, 2.3.6: Allow change variation before building a residence
 - Upgradable Workers, 2.3.6: Copy will now place workers instead of farmers

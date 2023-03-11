@@ -6,9 +6,7 @@ Makes products from `[Shared] Extra Goods (Jakob)` available as alternative Life
 
 ## Requirements
 
-**DOES NOT SUPPORT MULTIPLAYER**
-
-Only works with `[Shared] Extra Goods (Jakob)`.
+You can play without `[Shared] Extra Goods (Jakob)`, but then you need to import all goods through Docklands.
 
 ## Alternative Needs
 
@@ -19,6 +17,11 @@ If both needs are provided, the alternative is consumed first.
 There is no double consumption.
 
 ## Changes
+
+### 1.2
+
+- Works in all sessions
+- Should work in multiplayer. Please report if you have troubles.
 
 ### 1.1
 

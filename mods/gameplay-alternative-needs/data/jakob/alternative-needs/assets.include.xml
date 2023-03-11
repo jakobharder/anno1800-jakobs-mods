@@ -244,11 +244,11 @@
         </Standard>
       </Values>
     </Asset>
-    <Asset>
+    <!-- <Asset>
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500010815</GUID> -->
+          <!- - <GUID>1500010815</GUID> - ->
           <GUID>1500010915</GUID>
           <Name>Add Lifestyle Buff to all active sessions</Name>
         </Standard>
@@ -279,28 +279,28 @@
           <UsedBySecondParties>0</UsedBySecondParties>
         </TriggerSetup>
       </Values>
-    </Asset>
+    </Asset> -->
     <Asset>
       <!-- 
         Global action buffs will only be applied to discovered regions.
         Registering the trigger with AlwaysTrue has unwanted side effects.
-        The only way to ensure other regions are covered is by having individual first activation triggers.
+        The only way to ensure other regions are covered is by repeating the trigger once entered.
         Note: buff needs to be removed first (AddBuff=0), otherwise it won't refresh.
       -->
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010916</GUID>
-          <Name>Add Lifestyle Buff to Cap Trelawney</Name>
+          <Name>Add Lifestyle Buff to newly entered session</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionActiveSession</Template>
+            <Template>ConditionEvent</Template>
             <Values>
               <Condition />
-              <ConditionActiveSession>
-                <ActiveSession>110934</ActiveSession>
-              </ConditionActiveSession>
+              <ConditionEvent>
+                <ConditionEvent>SessionEnter</ConditionEvent>
+              </ConditionEvent>
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -311,6 +311,7 @@
                   <Action />
                   <ActionBuff>
                     <BuffAsset>1500010808</BuffAsset>
+                    <AddBuff>0</AddBuff>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
@@ -332,24 +333,6 @@
         <TriggerSetup>
           <UsedBySecondParties>0</UsedBySecondParties>
         </TriggerSetup>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010949</GUID>
-          <Name>Alternative &amp; Luxury Need</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010950</GUID>
-          <Name>Alternative &amp; Basic Need</Name>
-        </Standard>
       </Values>
     </Asset>
   </ModOp>
