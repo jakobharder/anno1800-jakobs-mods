@@ -1,6 +1,6 @@
 # Pescatarians
 
-![](./banner.png)
+![](./banner.jpg)
 
 Alternative Old World population providing with new needs, productions and workforce twists.
 

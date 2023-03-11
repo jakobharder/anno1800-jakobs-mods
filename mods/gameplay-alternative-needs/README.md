@@ -1,5 +1,7 @@
 # Alternative Needs
 
+![](./banner.jpg)
+
 Makes products from `[Shared] Extra Goods (Jakob)` available as alternative Lifestyle needs to Basic needs.
 
 ## Requirements
