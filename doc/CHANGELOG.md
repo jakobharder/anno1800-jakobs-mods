@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### New Content
+
+- Extra Goods, 2.4: Custom model for suits factory (and some building rebalancing)
+
 ### Changed
 
 - New Town Halls, 2.0: Converted all town hall buildings into skins
