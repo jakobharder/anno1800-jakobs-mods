@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "anno-modding-tools": "https://github.com/anno-mods/vscode-anno-modding-tools/releases/download/v1.8.1/anno-modding-tools-1.8.1.tgz"
+    "anno-modding-tools": "https://github.com/anno-mods/vscode-anno-modding-tools/releases/download/v1.8.2/anno-modding-tools-1.8.2.tgz"
   },
   "downloads": {
-    "shared-extra-goods": "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.3/Shared-Extra-Goods-2.3.zip"
+    "shared-extra-goods": "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.4/Shared-Extra-Goods-2.4.zip"
   },
   "scripts": {
     "build-changed": "powershell node node_modules/anno-modding-tools/out/buildmod.js $(node .github/getChanged.js)",

@@ -7,19 +7,6 @@
 
 <ModOps>
   <Include File="../../../../jakob/nates-windmill/assets.include.xml" />
-  <Include File="../../../../jakob/fix-wind-direction/assets.include.xml" />
 
   <Include File="./cheats.include.xml" />
-
-  <!-- # Enable Tweaks -->
-  <ImyaTweaks Title="Windmill Features" />
-  <ModOp Type="replace" GUID="1010313" Path="/Values/Object/Variations/Item/Filename[1]" ModOpID="BugfixToggle" Skip="1">
-      <Filename>data\jakob\fix-wind-direction\processing_02.cfg</Filename>
-  </ModOp>
-  <ImyaExpose Path="self::Filename" ModOpID="BugfixToggle" Kind="Toggle" ExposeID="Fix Grain Mill"
-    Description="Fix wind direction of original flour mill.">
-    <AltValue>
-      <Filename>data/graphics/buildings/production/processing_02/processing_02.cfg</Filename>
-    </AltValue>
-  </ImyaExpose>
 </ModOps>

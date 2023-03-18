@@ -1,5 +1,5 @@
 {
-  "src": [ "." ],
+  "src": [ "../../shared", "." ],
   "out": "${annoMods}/${modName}",  
   "converter": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "action": "static",
-      "pattern": "{data/config/**/*,banner.png,README.md,**/icon_*.png,features.include.xml}"
+      "pattern": "{data/config/**/*,banner.*,README.md,**/icon_*.png,features.include.xml}"
     },
     {
       "action": "texture",
@@ -21,12 +21,11 @@
       "changePath": "maps/"
     },
     {
-      "action": "modinfo",
-      "content_en": true
+      "action": "modinfo"
     }
   ],
   "modinfo": {
-    "Version": "1.1",
+    "Version": "1.2",
     "ModID": "jakob_alternative_needs",
     "IncompatibleIds": [],
     "ModDependencies": [ "jakob_extra_goods" ],

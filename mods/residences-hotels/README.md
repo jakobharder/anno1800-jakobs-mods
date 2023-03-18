@@ -1,8 +1,6 @@
 # Small Hotels
 
-![](./banner.png)
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
+![](./banner.jpg)
 
 Includes a small hotel with 4 variations and many paintbrush skins for both small and normal hotel.
 
@@ -45,3 +43,5 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 Available: Chinese, French, English, German, Japanese, Polish
 
 Thanks to Aveneger432, darknesswei, Tonton Yip for tranlsations
+
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

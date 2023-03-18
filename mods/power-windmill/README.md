@@ -1,6 +1,6 @@
 # Nate's Windmill
 
-![](./banner.png)
+![](./banner.jpg)
 
 The windmill is a service building providing electricity to industry and residents.
 It's intended as an alternative to Nate's electricity items for guild houses - a little cheaper, but not as powerful to keep it balanced.
@@ -29,6 +29,10 @@ Palace buffs and obviously guild house buffs don't.
 Includes a fix to correct the fan direction of grain mills.
 
 ## Changes
+
+### 1.5
+
+- Changed maintenance cost to 250
 
 ### 1.4
 
