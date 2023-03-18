@@ -1,5 +1,7 @@
 # Modular Factories
 
+![](./banner.jpg)
+
 Factory buildings merge into bigger factory blocks like engineer and investor residences do.
 
 You find the buildings in the respective production chain menus.

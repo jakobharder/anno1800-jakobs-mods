@@ -1,6 +1,6 @@
 # Residence Skins
 
-![](./banner.png)
+![](./banner.jpg)
 
 Paintbrush skins for NW and OW residences.
 

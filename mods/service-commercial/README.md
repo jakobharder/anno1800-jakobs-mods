@@ -1,6 +1,6 @@
 # Commercial Street
 
-![](./banner.png)
+![](./banner.jpg)
 
 Malls and restaurants fitting into the 3x3 residential areas.
 
