@@ -1,4 +1,4 @@
-# Jakob's Collection 5.5.1
+# Jakob's Collection 5.6
 
 New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
 
