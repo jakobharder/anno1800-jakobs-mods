@@ -290,7 +290,8 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010916</GUID>
+          <!-- <GUID>1500010916</GUID> -->
+          <GUID>1500010917</GUID>
           <Name>Add Lifestyle Buff to newly entered session</Name>
         </Standard>
         <Trigger>
@@ -325,6 +326,17 @@
                     <BuffAsset>1500010808</BuffAsset>
                     <AddBuff>1</AddBuff>
                   </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500010917</TriggerAsset>
+                  </ActionRegisterTrigger>
                 </Values>
               </TriggerAction>
             </Item>
