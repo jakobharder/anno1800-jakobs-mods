@@ -584,17 +584,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   
 
   <!-- # Construction menus -->
-  <ModOp Type="addNextSibling" GUID='120055'>
-    <!-- <Asset>
-      <Template>none</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ignore></ignore>
-      </Values>
-    </Asset> -->
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="117559"
     Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
     <Item>
@@ -612,12 +601,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Building>1500010451</Building>
     </Item>
   </ModOp>
-  <!-- <ModOp Type="addNextSibling" GUID="25000194"
-    Path="/Values/ConstructionCategory/BuildingList/Item[not(../Item/Building='1500010456')][Building='500916' or (not(../Item/Building='500916'))][last()] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore">
-    <Item>
-      <Building>1500010452</Building>
-    </Item>
-  </ModOp> -->
   <ModOp Type="add" GUID="500949"
     Path="/Values/ConstructionCategory/BuildingList">
     <Item>
