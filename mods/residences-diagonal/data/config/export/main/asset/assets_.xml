@@ -15,13 +15,11 @@
       <Values>
         <Standard>
           <GUID>1500010401</GUID>
-          <Name>diagonal</Name>
+          <Name>Diagonal Engineer Residence</Name>
           <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_engineers.png</IconFilename>
           <InfoDescription>1500010424</InfoDescription>
         </Standard>
-        <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
-        </Locked>
+        <Locked />
         <Blocking>
           <DeletePropsRadius>1</DeletePropsRadius>
           <HidePropsRadius>1</HidePropsRadius>
@@ -104,7 +102,7 @@
       <Values>
         <Standard>
           <GUID>1500010402</GUID>
-          <Name>diagonal_endpiece</Name>
+          <Name>Diagonal End Ornament</Name>
           <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_endpiece.png</IconFilename>
           <InfoDescription>1500010425</InfoDescription>
         </Standard>
@@ -151,7 +149,7 @@
       <Values>
         <Standard>
           <GUID>1500010415</GUID>
-          <Name>diagonal</Name>
+          <Name>Narrow Engineer Residence</Name>
           <IconFilename>data/jakob/diagonal-engineers/icon_narrow_engineers.png</IconFilename>
         </Standard>
         <Locked />
@@ -323,12 +321,10 @@
         <Standard>
           <GUID>1500010221</GUID>
         </Standard>
-        <ignore>
-          <Item>
-            <GUID>1010346</GUID>
-          </Item>
-        </ignore>
       </Values>
+      <ignore>
+        <Item />
+      </ignore>
     </Asset>
   </ModOp>
   <!-- add neighbor influences -->
@@ -351,7 +347,7 @@
   </ModOp>
   <!-- Replace "Engineers" with "All Engineers" in items and specialists.
        Can be done multiple times and mods properly adding themselves to 193861 should be fine. -->
-  <ModOp Type="replace" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets/Item[GUID='1010346'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[GUID='1010346']">
+  <ModOp Type="replace" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets/Item[GUID='1010346'] | //Asset[Values/Standard/GUID='1500010221']/ignore/Item[1]">
     <Item>
       <GUID>193861</GUID>
     </Item>
@@ -589,7 +585,7 @@
       <Values>
         <Standard>
           <GUID>1500010411</GUID>
-          <Name>unlock_diagonal</Name>
+          <Name>@ 1 Engineer</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>

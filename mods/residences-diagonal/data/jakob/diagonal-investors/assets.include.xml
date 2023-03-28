@@ -10,9 +10,7 @@
           <IconFilename>data/jakob/diagonal-investors/icon_diagonal_investors.png</IconFilename>
           <InfoDescription>1500010424</InfoDescription>
         </Standard>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
         <Blocking>
           <DeletePropsRadius>1</DeletePropsRadius>
           <HidePropsRadius>1</HidePropsRadius>
@@ -112,7 +110,50 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011117</GUID>
+          <!-- <GUID>1500011117</GUID> -->
+          <GUID>1500011118</GUID>
+          <Name>Relock to fix unlocked at new game</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000004</Context>
+                <CounterAmount>0</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionLockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionLockAsset>
+                    <LockAssets>
+                      <Item>
+                        <Asset>1500011110</Asset>
+                      </Item>
+                    </LockAssets>
+                  </ActionLockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011119</GUID>
           <Name>@ Investors</Name>
         </Standard>
         <Trigger>
