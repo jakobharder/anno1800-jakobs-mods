@@ -52,6 +52,7 @@ Some buildings are a bit slower than their Old World counterpart.
 ### 1.3
 
 - 1.3.4: change Terraced Artista unlock to 300 Artistas
+- 1.3.4: fix Terraced Artista roofs at night
 - 1.3.3: fix Harborlife compatibility
 - 1.3.2: allow rotation before placing an Artista residence
 - Added gapless Artista residences with 3 skins
