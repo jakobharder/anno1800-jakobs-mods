@@ -17,8 +17,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
   </ModOp> -->
 
-  <!-- # Fancy New Residences -->
-  <!-- ====================== -->
+  <!-- # Terraced Artista Residences -->
   <ModOp Type="addNextSibling" GUID="101255">
     <Asset>
       <Template>ResidenceBuilding7_Colony</Template>
@@ -281,8 +280,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Selection>
           <ParticipantMessageArcheType>SA_Resident_tier03</ParticipantMessageArcheType>
         </Selection>
-        <Constructable />
         <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
           <DLCDependency>24963</DLCDependency>
         </Locked>
         <Upgradable>
@@ -454,6 +453,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <DefaultParticipant>SA_Resident_tier03</DefaultParticipant>
         </Object>
         <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
           <DLCDependency>410085</DLCDependency>
         </Locked>
         <Upgradable>
@@ -786,19 +786,10 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Standard>
           <!-- <GUID>1500011004</GUID> -->
           <GUID>1500011007</GUID>
-          <Name>@ Artista Unlock</Name>
+          <Name>Unhide @ Artista Unlock</Name>
         </Standard>
         <Locked />
         <Trigger>
-          <!-- <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
-            <Values>
-              <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>5405</UnlockNeeded>
-              </ConditionUnlocked>
-            </Values>
-          </TriggerCondition> -->
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>
             <Values>
@@ -821,11 +812,99 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                       <Item>
                         <Asset>5405</Asset> <!-- unlock Artistas due to a conflict of 1.3 and Harborlife -->
                       </Item>
+                      <!-- <Item>
+                        <Asset>1500011044</Asset>
+                      </Item> -->
+                      <!-- <Item>
+                        <Asset>1500011090</Asset>
+                      </Item> -->
+                    </UnlockAssets>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500011044</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011008</GUID>
+          <Name>Lock to fix saves</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionAlwaysTrue</Template>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionLockAsset>
+                    <LockAssets>
                       <Item>
                         <Asset>1500011044</Asset>
                       </Item>
                       <Item>
                         <Asset>1500011090</Asset>
+                      </Item>
+                    </LockAssets>
+                  </ActionLockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011009</GUID>
+          <Name>@ 300 Artista</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>5403</Context>
+                <CounterAmount>300</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011044</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
