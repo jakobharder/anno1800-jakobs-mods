@@ -58,6 +58,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.3
 
+- 2.3.7: Slightly increased tea consumption
 - 2.3.6: Allow rotation before placing a residence
 - 2.3.6: Change picking asset to level 1 worker, artisan instead of farmers
 - 2.3.6: Change stone pavement street icon
