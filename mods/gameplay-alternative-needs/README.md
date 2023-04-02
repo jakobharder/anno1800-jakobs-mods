@@ -34,6 +34,6 @@ There is no double consumption.
 
 ## Translations
 
-Available: Chinese, French, English, German, Polish, Russian
+Available: Chinese, French, English, German, Polish, Russian, Spanish
 
-Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip for translations!
+Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar for translations!

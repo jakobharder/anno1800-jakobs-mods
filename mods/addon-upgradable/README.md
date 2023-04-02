@@ -80,6 +80,6 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 Available: all
 
-Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip for translations!
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar for translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

@@ -2,10 +2,11 @@
   <!-- # Shared Target Pools -->
   <Include File="../../../pools/texts_spanish.include.xml" />
   
+  <!-- # Modular Factories -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010600</GUID>
-      <Text>Fábrica de máquinas de costura</Text> <!-- building: sewing machines -->
+      <GUID>1500010600</GUID> <!-- cannot use AssetData text -->
+      <Text>Fábrica de máquinas de coser</Text> <!-- building: sewing machines -->
     </Text>
   </ModOp>
 
@@ -13,11 +14,11 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010601</GUID>
-      <Text>Modular Factories</Text> <!-- menu: modular factories -->
+      <Text>Fábricas Modulares</Text> <!-- menu: modular factories -->
     </Text>
     <Text>
       <GUID>1500010602</GUID>
-      <Text>Multiple factories merge into one</Text> <!-- menu desc: modular factories -->
+      <Text>Múltiples fábricas se fusionan en una</Text> <!-- menu desc: modular factories -->
     </Text>
   </ModOp>
 </ModOps>

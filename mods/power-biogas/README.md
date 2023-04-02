@@ -36,8 +36,8 @@ You find the biogas production in the material menu, and in the gas electricity 
 
 ## Translations
 
-Available: Chinese, French, English, German, Korean, Polish
+Available: Chinese, French, English, German, Korean, Polish, Spanish
 
-Thanks to darknesswei, Tonton Yip for translations!
+Thanks to darknesswei, Tonton Yip for, mfuegar translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

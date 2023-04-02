@@ -28,6 +28,6 @@ You can still use it though, if you prefer separately buildable town halls.
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
 
-Contact me if you have new or improved translations.
+Thanks to mfuegar for translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

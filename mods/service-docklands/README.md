@@ -26,8 +26,8 @@ New World Docklands must be loaded first, so best not change the folder names of
 
 ## Translations
 
-Available: Chinese, French, English, German, Polish
+Available: Chinese, French, English, German, Polish, Spanish
 
-Thanks to Tonton Yip for translations!
+Thanks to Tonton Yip, mfuegar for translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

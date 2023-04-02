@@ -41,6 +41,6 @@ You might be interested in the following mods as well:
 
 ## Translations
 
-Available: Chinese, French, English, German, Polish
+Available: Chinese, French, English, German, Polish, Spanish
 
-Thanks go to Aveneger432, HeroOfOlympus, darknesswei, Tonton Yip for translations!
+Thanks go to Aveneger432, HeroOfOlympus, darknesswei, Tonton Yip, mfuegar for translations!

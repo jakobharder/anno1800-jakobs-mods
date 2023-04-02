@@ -7,6 +7,7 @@
 - Extra Goods, 2.5: Replaced tea production with new tea factory and tea import docks
 - Upgradable Workers, 2.3.7: Slightly increased tea consumption
 - New World Cities, 1.3.4: Changed Terraced Artista unlock to 300 Artistas
+- Spanish translations thanks to mfuegar
 
 ### Fixes
 

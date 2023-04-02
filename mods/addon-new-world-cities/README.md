@@ -70,8 +70,8 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ## Translations
 
-Available: Chinese, English, German, Polish
+Available: Chinese, English, German, Polish, Spanish
 
-Thanks go to HeroOfOlympus, darknesswei for translations
+Thanks go to HeroOfOlympus, darknesswei, mfuegar for translations
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
