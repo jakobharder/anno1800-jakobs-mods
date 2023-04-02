@@ -54,6 +54,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.0
 
+- 2.0.8: Fixed unlock banner icon
 - 2.0.7: Minor translation fixes
 - 2.0.5: Fixed music school having normal skins
 - 2.0.4: Increased Library range in exchange for higher maintenance
