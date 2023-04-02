@@ -40,8 +40,8 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Translations
 
-Available: Chinese, French, English, German, Japanese, Polish
+Available: Chinese, French, English, German, Japanese, Polish, Spanish
 
-Thanks to Aveneger432, darknesswei, Tonton Yip for tranlsations
+Thanks to Aveneger432, darknesswei, Tonton Yip, mfuegar for tranlsations
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

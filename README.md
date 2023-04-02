@@ -151,11 +151,12 @@ Available: English, German, (Russian, Korean, French, Polish, Chinese).
 
 ## Special Thanks
 
-- m_belonosov, redzmey1 for Russian translation
-- MSHS for Korean translation
-- Tonton Yip, Petritant for French translation
-- HeroOfOlympus, Aveneger432 for Polish translation
+- m_belonosov, redzmey1 for Russian translations
+- MSHS for Korean translations
+- Tonton Yip, Petritant for French translations
+- HeroOfOlympus, Aveneger432 for Polish translations
 - darknesswei for Chinese translation
+- mfuegar for Spanish translations
 - Taubenangriff for sharing some assets
 - Taludas, Ionovia for playtest feedback
-- Ricky for being Ricky
+- Kurila for improvements on compact UI, shared products and extra goods

@@ -1,63 +1,63 @@
 <ModOps>
   <!-- # Shared Goods -->
   <Include File="../../../products/texts/texts_german.include.xml" />
-  
+
   <!-- # Vanilla Changes -->
   <ModOp Type="merge" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']">
     <Text>
       <Text>Etagen ausbauen</Text>
     </Text>
   </ModOp>
-
+  
   <!-- # Workers -->  
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010200</GUID>
-      <Text>Arbeiter-Reihenhaus: Stufe 1</Text>
+      <Text>Arbeiter-Reihenhaus: Stufe 1</Text> <!-- construction menu, residence UI -->
     </Text>
     <Text>
       <GUID>1500010201</GUID>
-      <Text>Arbeiter-Reihenhaus: Stufe 2</Text>
+      <Text>Arbeiter-Reihenhaus: Stufe 2</Text> <!-- residence UI -->
     </Text>
     <Text>
       <GUID>1500010206</GUID>
-      <Text>Rote Dächer</Text>
+      <Text>Rote Dächer</Text> <!-- skin name -->
     </Text>
     <Text>
       <GUID>1500010207</GUID>
-      <Text>Du bevorzugst rote Dächer?</Text>
+      <Text>Du bevorzugst rote Dächer?</Text> <!-- skin desc -->
     </Text>
     <Text>
       <GUID>1500010208</GUID>
-      <Text>Schwarze Dächer</Text>
+      <Text>Schwarze Dächer</Text> <!-- skin name -->
     </Text>
     <Text>
       <GUID>1500010209</GUID>
-      <Text>Keine Lust auf eine Mischung?</Text>
+      <Text>Keine Lust auf eine Mischung?</Text> <!-- skin desc -->
     </Text>
     <Text>
       <GUID>1500010212</GUID>
-      <Text>Upgradefähige Wohnhäuser</Text>
+      <Text>Upgradefähige Wohnhäuser</Text> <!-- construction menu name -->
     </Text>
     <Text>
       <GUID>1500010213</GUID>
-      <Text>Baumenü</Text>
+      <Text>Baumenü</Text> <!-- construction menu desc -->
     </Text>
     <Text>
       <GUID>1500010214</GUID>
-      <Text>Der Hochhaus-Upgradeknopf hat eine bessere Zufallsauswahl für die Häusertypen.</Text>
+      <Text>Der Hochhaus-Upgradeknopf hat eine bessere Zufallsauswahl für die Häusertypen.</Text> <!-- level 1 residence construction desc -->
     </Text>
     <Text>
       <GUID>1500010215</GUID>
-      <Text>Pflasterstein (Straße)</Text>
+      <Text>Pflasterstein (Straße)</Text> <!-- construction menu, ornament UI -->
     </Text>
     <Text>
       <GUID>1500010217</GUID>
-      <Text>Verbessere Wohnhäuser zu</Text>
+      <Text>Verbessere Wohnhäuser zu</Text> <!-- notification small/top text -->
     </Text>
     <Text>
       <GUID>1500010218</GUID>
-      <Text>Reihenhäuser</Text>
+      <Text>Reihenhäuser</Text> <!-- notification big/middle text -->
     </Text>
     <Text>
       <GUID>1500010222</GUID>
@@ -69,7 +69,7 @@
     </Text>
     <Text>
       <GUID>1500010224</GUID>
-      <Text>[AssetData(1500010223) Text]</Text> <!-- stone pavement decorations -->
+      <Text>[AssetData(1500010223) Text]</Text> <!-- construction menu, ornament UI -->
     </Text>
     <Text>
       <GUID>1500010281</GUID>

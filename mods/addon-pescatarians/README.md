@@ -77,13 +77,8 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ## Translations
 
-Available: Chinese, English, French, German, Korean, Polish, Russian
+Available: Chinese, English, French, German, Korean, Polish, Russian, Spanish
 
-Thanks to
-- @m_belonosov, redzmey1 for Russian translation
-- MSHS for Korean translation
-- @Petritant for French translation
-- HeroOfOlympus, Aveneger432 for Polish translation
-- darknesswei for Chinese tranlsation
+Thanks to @m_belonosov, redzmey1, MSHS, @Petritant, HeroOfOlympus, Aveneger432, darknesswei, mfuegar for translations
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

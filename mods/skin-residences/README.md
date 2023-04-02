@@ -48,6 +48,6 @@ Hint: the mod `[Building] Small Hotels (Jakob)` includes skins for hotels.
 
 ## Translations
 
-Available: Chinese, French, English, German, Polish
+Available: Chinese, French, English, German, Polish, Spanish
 
-Thanks to Aveneger432, darknesswei, Tonton Yip for translations!
+Thanks to Aveneger432, darknesswei, Tonton Yip, mfuegar for translations!

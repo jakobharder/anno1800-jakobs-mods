@@ -48,4 +48,4 @@ Includes a fix to correct the fan direction of grain mills.
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
 
-Contact me if you have new or improved translations.
+Thanks to mfuegar for translations!

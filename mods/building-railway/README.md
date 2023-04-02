@@ -16,6 +16,6 @@ Randomized freight trains.
 
 ## Translations
 
-Thanks to Tonton Yip for translations!
+Thanks to Tonton Yip, mfuegar for translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
