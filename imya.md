@@ -123,36 +123,37 @@ New tiers, products, industries and more than 300 new visual assets (custom mode
 
   Replaces electric wires and poles with lighter, less distracting models.
 
-## 5.5 Changes - Diagonal Investors
+## 5.7 - Tea Docks and Factory
 
-### New Content
+### New Content and Changes
 
-- New Mod: Improved Electric Wires
-- Residence Skins, 1.3: Added Investor and Obrero skins
-- Diagonal Residences, 1.5: Added diagonal Investors
-- Compact Menu, 1.2: Added harbor guns category (thanks to Kurila)
+- Extra Goods, 2.5: Replaced tea production with new tea factory and tea import docks
+- Upgradable Workers, 2.3.7: Slightly increased tea consumption
+- Spanish translations thanks to mfuegar
 
-### Changed
+### Fixes
 
-- Diagonal Residences: Fixed jje skin
-- New World Cities, 1.3.2: New residence icons, minor mixes
-- Pescatarians, 2.0.4: New residence icons, Minor balancing adjustments
-- Upgradable Workers, 2.3.5: New residence icons
-- Updated Chinese translations
+- New World Cities, 1.3.4: Fixed Terraced Artista roofs at night
+- New World Cities, 1.3.4: Changed Terraced Artista unlock to 300 Artistas
+- Diagonal Residences, 1.5.3: Fixed investors unlocking at game start
+- Alternative Needs, 1.2.1: Buff should be fixed for all sessions and multiplayer now
+- Pescatarians, 2.0.7: Minor translation fixes
 
 ## Translations
 
 I appreciate feedback if you encounter wrong or missing translations.
 Easiest way to contact is @jakob in the modding discord (or Annoverse).
 
-Available: English, German, (Russian, Korean, French, Polish, Chinese).
+Available: English, German, (Russian, Korean, French, Polish, Spanish, Chinese).
 
 ## Special Thanks
 
-- @taubenangriff for sharing some assets
-- @taludas for playtest feedback
-- @m_belonosov, redzmey1 for Russian translation
-- MSHS for Korean translation
-- @Petritant for French translation
-- HeroOfOlympus, Aveneger432 for Polish translation
+- m_belonosov, redzmey1 for Russian translations
+- MSHS for Korean translations
+- Tonton Yip, Petritant for French translations
+- HeroOfOlympus, Aveneger432 for Polish translations
 - darknesswei for Chinese translation
+- mfuegar for Spanish translations
+- Taubenangriff for sharing some assets
+- Taludas, Ionovia for playtest feedback
+- Kurila for improvements on compact UI, shared products and extra goods

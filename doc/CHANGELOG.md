@@ -6,14 +6,14 @@
 
 - Extra Goods, 2.5: Replaced tea production with new tea factory and tea import docks
 - Upgradable Workers, 2.3.7: Slightly increased tea consumption
-- New World Cities, 1.3.4: Changed Terraced Artista unlock to 300 Artistas
 - Spanish translations thanks to mfuegar
 
 ### Fixes
 
 - New World Cities, 1.3.4: Fixed Terraced Artista roofs at night
-- Alternative Needs, 1.2.1: Buff should be fixed for all sessions and multiplayer now
+- New World Cities, 1.3.4: Changed Terraced Artista unlock to 300 Artistas
 - Diagonal Residences, 1.5.3: Fixed investors unlocking at game start
+- Alternative Needs, 1.2.1: Buff should be fixed for all sessions and multiplayer now
 - Pescatarians, 2.0.7: Minor translation fixes
 
 ## 5.6 - Quality Improvements

@@ -147,7 +147,7 @@ Install the plugin, open a mod folder and press `F1` and choose `Build Anno Mod`
 I appreciate feedback if you encounter wrong or missing translations.
 Easiest way to contact is @jakob in the modding discord (or Annoverse).
 
-Available: English, German, (Russian, Korean, French, Polish, Chinese).
+Available: English, German, (Russian, Korean, French, Polish, Spanish, Chinese).
 
 ## Special Thanks
 
