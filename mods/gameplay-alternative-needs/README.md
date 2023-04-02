@@ -6,7 +6,7 @@ Makes products from `[Shared] Extra Goods (Jakob)` available as alternative Life
 
 ## Requirements
 
-You can play without `[Shared] Extra Goods (Jakob)`, but then you need to import all goods through Docklands.
+You need `[Shared] Extra Goods (Jakob)` to play.
 
 ## Alternative Needs
 
