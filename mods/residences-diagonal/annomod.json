@@ -37,10 +37,15 @@
     }
   ],
   "modinfo": {
-    "Version": "1.5.3",
+    "Version": "1.6",
     "ModID": "jakob_diagonal_residences",
     "IncompatibleIds": [],
     "ModDependencies": [],
+    "LoadAfterIds": [
+      "[Ornamental] Red Tile Roof Building Variations GU16",
+      "[Ornamental] Red Tile Roof Building Variations"
+    ],
+    "DeprecateIds": [ "jakob_diagonal_residences_jje" ],
     "Category": {
       "English": "Building"
     },
