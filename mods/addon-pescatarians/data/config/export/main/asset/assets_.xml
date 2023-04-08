@@ -21,19 +21,6 @@
 
   <!-- <Include File="../../../../jakob/3mast-schooner/assets.include.xml" /> -->
 
-  <!-- add to StandartProductStorageList -->
-  <ModOp Type="addNextSibling" GUID='120055'>
-    <Asset>
-      <!-- fallback dump -->
-      <Template>dump</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ignore></ignore>
-      </Values>
-    </Asset>
-  </ModOp>
   <!-- filter lists -->
   <ModOp Type="addNextSibling" GUID="502019">
   <!--  <Asset>
@@ -55,18 +42,6 @@
       </Values>
     </Asset> -->
   </ModOp>
-  <!-- session goods: insert after artisan -->
-  <!-- <ModOp Type="addNextSibling" GUID="502012" Path="/Values/ProductList/List/Item[Product='502006']">
-    <Item>
-      <Product>1500010159</Product>
-    </Item>
-    <Item>
-      <Product>1500010160</Product>
-    </Item>
-    <Item>
-      <Product>1500010161</Product>
-    </Item>
-  </ModOp> -->
 
   <!-- # Population: Pescatarians -->
   <ModOp GUID="15000004" Type="addNextSibling">
@@ -927,7 +902,7 @@
       <Values>
         <Standard>
           <GUID>1500010143</GUID>
-          <Name>pescatarian_worker</Name>
+          <Name>Pescatarian Worker House</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_residence.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
@@ -1163,7 +1138,7 @@
       <Values>
         <Standard>
           <GUID>1500010144</GUID>
-          <Name>pescatarian_artisan</Name>
+          <Name>Pescatarian Artisan House</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_residence.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
         </Standard>
@@ -1860,18 +1835,9 @@
       <Building>1500010186</Building>
     </Item>
   </ModOp>
-  <!-- insert canned fish, suits into artisan menu after coats (extra goods will add it to worker) -->
-  <!-- <ModOp Type="addNextSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500019']">
-    <Item>
-      <Building>1500010122</Building>
-    </Item>
-    <Item>
-      <Building>1500010129</Building>
-    </Item>
-  </ModOp> -->
 
   <!-- # Buff Targets -->
-  <ModOp Type="add" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
+  <ModOp Type="add" Path="//ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
     <Item>
       <GUID>1500010282</GUID>
     </Item>
@@ -1879,28 +1845,16 @@
   <!-- remove some special cases with unfitting benefits -->
   <ModOp Type="remove" GUID="111161,111162,111176,111163,116182,111180" Path="/Values/ItemEffect/EffectTargets/Item[GUID='1500010282']" />
 
-  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
     <Item>
       <GUID>1500010143</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
     <Item>
       <GUID>1500010144</GUID>
     </Item>
   </ModOp>
-  <!-- Replace "Engineers" with "All Engineers" in items and specialists.
-       Can be done multiple times and mods properly adding themselves to 193861 should be fine. -->
-  <ModOp Type="replace" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets/Item[GUID='1010346'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[GUID='1010346']">
-    <Item>
-      <GUID>193861</GUID>
-    </Item>
-  </ModOp>
-  <!-- <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010346']">
-    <Item>
-      <GUID>1500010145</GUID>
-    </Item>
-  </ModOp> -->
   <!-- add community center everywhere where marketplace is -->
   <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
     <Item>
@@ -1916,7 +1870,6 @@
   </ModOp> -->
   <!-- milestone banner: prepend -->
   <ModOp Type="addPrevSibling" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners/Item[1]">
-    <!-- works -->
     <Item>
       <RequiredValue>1500</RequiredValue>
       <PopulationGUID>15000002</PopulationGUID>
@@ -1925,12 +1878,11 @@
   </ModOp>
   <ModOp Type="addNextSibling" GUID="130249">
     <Asset>
-      <!-- LockableNotification works -->
       <Template>LockableNotification</Template>
       <Values>
         <Standard>
-          <GUID>1500010135</GUID> <!-- was 501389 -->
-          <Name>Pescatarian_Notification</Name>
+          <GUID>1500010135</GUID>
+          <Name>Banner</Name>
         </Standard>
         <Notification>
           <NotificationType>
@@ -1959,36 +1911,18 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010136</GUID>
-          <Name>pescatarian_notification_title</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010137</GUID>
-          <Name>pescatarian_notification_text</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <!-- <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010180</GUID>
-          <Name>obsolete: unhide construction menu</Name>
+          <Name>Creative Mode</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Template>ConditionIsCreativeMode</Template>
             <Values>
               <Condition />
-              <ConditionAlwaysTrue />
+              <ConditionIsCreativeMode />
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -1998,11 +1932,32 @@
                 <Values>
                   <Action />
                   <ActionUnlockAsset>
-                    <UnhideAssets>
+                    <UnlockAssets>
                       <Item>
-                        <Asset>1500010186</Asset>
+                        <Asset>1500010100</Asset>
                       </Item>
-                    </UnhideAssets>
+                      <Item>
+                        <Asset>1500010143</Asset> 
+                      </Item>
+                      <Item>
+                        <Asset>1500010144</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010145</Asset> 
+                      </Item>
+                      <Item>
+                        <Asset>1500010800</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010801</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010817</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010816</Asset>
+                      </Item>
+                    </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>
@@ -2011,12 +1966,13 @@
         </Trigger>
         <TriggerSetup />
       </Values>
-    </Asset> -->
+    </Asset>
     <Asset>
       <Template>Trigger</Template>
       <Values>
         <Standard>
           <GUID>1500010185</GUID>
+          <!-- <GUID>1500010187</GUID> -->
           <Name>unlock everything</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
@@ -2041,41 +1997,17 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010142</Asset>
-                      </Item>
-                      <Item>
                         <Asset>1500010100</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010143</Asset> <!-- workers -->
+                        <Asset>1500010143</Asset> 
                       </Item>
                       <Item>
-                        <Asset>1500010144</Asset> <!-- artisans -->
+                        <Asset>1500010144</Asset> 
                       </Item>
                       <Item>
-                        <Asset>1500010145</Asset> <!-- engineers -->
+                        <Asset>1500010145</Asset> 
                       </Item>
-                      <!-- <Item>
-                        <Asset>1500010162</Asset> <!- - wooden accessory asset pool - ->
-                      </Item>
-                      <Item>
-                        <Asset>1500010163</Asset> <!- - tools asset pool - ->
-                      </Item>
-                      <Item>
-                        <Asset>1500010164</Asset> <!- - canned fish asset pool - ->
-                      </Item>
-                      <Item>
-                        <Asset>1500010165</Asset> <!- - OW suits asset pool - ->
-                      </Item>
-                      <Item>
-                        <Asset>1500010166</Asset> <!- - olive soap asset pool - ->
-                      </Item>
-                      <Item>
-                        <Asset>1500010167</Asset> <!- - cheese asset pool - ->
-                      </Item>
-                      <Item>
-                        <Asset>1500010168</Asset> <!- - premium beer asset pool - ->
-                      </Item> -->
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -2086,17 +2018,6 @@
         <TriggerSetup />
       </Values>
     </Asset>
-    <!-- extra unlock because added in a newer version -->
-    <!-- <Asset>
-      <Template>Trigger</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010187</GUID>
-          <Name>obsolete: unlock construction menu</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        </Standard>
-      </Values>
-    </Asset> -->
     <!-- bugfix: unhide buildings -->
     <Asset>
       <Template>Trigger</Template>
@@ -2142,7 +2063,4 @@
       </Values>
     </Asset>
   </ModOp>
-
-  <!-- # cleanup -->
-  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>
