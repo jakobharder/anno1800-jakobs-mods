@@ -28,6 +28,9 @@
             </Item>
           </InfluencedByNeighbors>
         </Building>
+        <Constructable>
+          <ConstructionMenuIcon>1500011110</ConstructionMenuIcon>
+        </Constructable>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
@@ -110,62 +113,19 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500011117</GUID> -->
-          <GUID>1500011118</GUID>
-          <Name>Relock to fix unlocked at new game</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000004</Context>
-                <CounterAmount>0</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionLockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionLockAsset>
-                    <LockAssets>
-                      <Item>
-                        <Asset>1500011110</Asset>
-                      </Item>
-                    </LockAssets>
-                  </ActionLockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
           <GUID>1500011119</GUID>
-          <Name>@ Investors</Name>
+          <!-- <GUID>1500011117</GUID> -->
+          <!-- <GUID>1500011118</GUID> -->
+          <Name>@ Investors (1010347)</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
+            <Template>ConditionUnlocked</Template>
             <Values>
               <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000004</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
+              <ConditionUnlocked>
+                <UnlockNeeded>1010347</UnlockNeeded>
+              </ConditionUnlocked>
             </Values>
           </TriggerCondition>
           <TriggerActions>
