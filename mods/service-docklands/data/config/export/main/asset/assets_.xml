@@ -1,5 +1,5 @@
 <ModOps>
-  <ModOp GUID="601463" Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="601463">
     <Asset>
       <BaseAssetGUID>601463</BaseAssetGUID>
       <Values>
@@ -144,14 +144,16 @@
   </ModOp>
 
   <!-- lordys NW Docklands -->
-  <ModOp Type="add" GUID="1404422070" Path="/Values/ModuleOwner/ConstructionOptions">
-    <Item>
-      <ModuleGUID>1500010080</ModuleGUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="1404422060,1404422061,1404422062,1404422063,1404422077,1404422078" Path="/Values/Building/InfluencedByNeighbors">
-    <Item>
-      <Building>1500010080</Building>
-    </Item>
-  </ModOp>
+  <Group Condition="//Values[Standard/GUID='1404422070']">
+    <ModOp Type="add" GUID="1404422070" Path="/Values/ModuleOwner/ConstructionOptions">
+      <Item>
+        <ModuleGUID>1500010080</ModuleGUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1404422060,1404422061,1404422062,1404422063,1404422077,1404422078" Path="/Values/Building/InfluencedByNeighbors">
+      <Item>
+        <Building>1500010080</Building>
+      </Item>
+    </ModOp>
+  </Group>
 </ModOps>
