@@ -1,38 +1,11 @@
 <ModOps>
-  <Include File="../../../../../features.include.xml" />
-
-  <ModOp Type="addNextSibling" GUID="120055">
-    <Asset>
-      <!-- fallback dump -->
-      <Template>none</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ignore></ignore>
-        <Upgradable />
-      </Values>
-    </Asset>
-  </ModOp>
+  <Include File="/features.include.xml" />
 
   <!-- # Harborlife Fix -->
   <!-- just in case people didn't update and blame upgradable worker for it -->
-  <ModOp Type="replace" GUID="1440137000"
-         Path="/Values/Upgradable | //Asset[Values/Standard/GUID='1500010221']/Values/Upgradable">
+  <ModOp Type="replace" GUID="1440137000" Condition="~" Path="/Values/Upgradable">
     <Upgradable>
       <NextGUID>0</NextGUID>
     </Upgradable>
   </ModOp>
-
-  <!-- # New World Paintbrush button -->
-  <ModOp Type="add" GUID="2001271" Path="/Values/GUIConfig/KeyBindings[not(Item/KeyTypes='Alt;F')]">
-    <Item>
-      <KeyTypes>Alt;F</KeyTypes>
-      <Command>game.startMouseMode(24507)</Command>
-      <Active>Session</Active>
-    </Item>
-  </ModOp>
-
-  <!-- # cleanup -->
-  <ModOp Type="remove" GUID="1500010221" />
 </ModOps>
