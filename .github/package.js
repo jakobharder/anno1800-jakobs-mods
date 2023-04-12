@@ -3,6 +3,10 @@ const path = require('path');
 const glob = require('glob');
 const fs = require('fs');
 
+let subs = {
+  'Shared-Pools*': [ '[Addon] New World Cities (Jakob)' ]
+}
+
 let bundles = {
   'jakob_new_world_cities': { 
     name: 'New-World-Cities',
@@ -93,6 +97,19 @@ downloads.forEach(download => {
     '-C', './out/'
   ]);
 });
+
+for (const sub of Object.keys(subs)) {
+  const subMod = glob.sync("./download/" + sub)[0];
+  if (subMod) {
+    for (const subTarget of subs[sub]) {
+      console.log(`Copy ${subMod} into ${subTarget}`);
+      child_process.execFileSync('tar', [
+        '-xf', subMod,
+        '-C', path.join('./out', subTarget)
+      ]);
+    }
+  }
+}
 
 const versions = [];
 const mods = glob.sync("./out/*/").map(e => e.substr(0, e.length - 1));

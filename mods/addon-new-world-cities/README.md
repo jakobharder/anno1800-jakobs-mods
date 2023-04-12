@@ -49,6 +49,10 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ## Changes
 
+### 1.4
+
+- Immediately unlock in creative mode
+
 ### 1.3
 
 - 1.3.5: technical improvements

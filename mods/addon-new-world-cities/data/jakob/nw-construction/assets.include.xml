@@ -2,9 +2,9 @@
   NW Construction
 -->
 <ModOps>
-  <!-- # Vanilla Changes -->
+  <!-- # Unoptimized -->
   <Include File="/pools/assets-pools.include.xml" />
-  
+
   <!-- # Unlock Charcoal Kiln for all -->
   <ModOp Type="merge" GUID="1345" Path="/Values" />
   <ModOp Type="remove" GUID="1345" Path="/Values/Locked/DLCDependency" Condition="~/Values/Locked/DLCDependency" />
@@ -730,7 +730,7 @@
         <GUID>1500010707</GUID>
       </Item>
     </ModOp>
-    <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010560']">
+    <ModOp Type="add" GUID="1500010714" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
       <Item>
         <GUID>1500010708</GUID>
       </Item>
@@ -1034,7 +1034,7 @@
       </Item>
     </ModOp>
   </Group>
-  
+
   <!-- # Feedback -->
   <ModOp Type="add" GUID="142413" Path="/Values/FeedbackBuildingGroup/Buildings">
     <!-- Steel Beams -->
@@ -1064,7 +1064,60 @@
   </ModOp>
 
   <!-- # Unlocks -->
-  <ModOp Type="addNextSibling" GUID="1010280">
+  <ModOp Type="addNextSibling" GUID="119">
+    <Asset>
+      <Template>AssetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010721</GUID>
+          <Name>All Construction Assets</Name>
+        </Standard>
+        <AssetPool>
+          <AssetList>
+            <!-- construction menus -->
+            <Item>
+              <Asset>1500010703</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010704</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010705</Asset>
+            </Item>
+            <!-- Steel Beams -->
+            <Item>
+              <Asset>1500010700</Asset>
+            </Item>
+            <Item>
+              <Asset>6080</Asset>
+            </Item>
+            <Item>
+              <Asset>1345</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010710</Asset>
+            </Item>
+            <!-- Windows -->
+            <Item>
+              <Asset>1500010701</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010707</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010708</Asset>
+            </Item>
+            <!-- Concrete -->
+            <Item>
+              <Asset>1500010702</Asset>
+            </Item>
+            <Item>
+              <Asset>1500010711</Asset>
+            </Item>
+          </AssetList>
+        </AssetPool>
+      </Values>
+    </Asset>
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
@@ -1093,45 +1146,8 @@
                   <Action />
                   <ActionUnlockAsset>
                     <UnhideAssets>
-                      <!-- construction menus -->
                       <Item>
-                        <Asset>1500010703</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010704</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010705</Asset>
-                      </Item>
-                      <!-- Steel Beams -->
-                      <Item>
-                        <Asset>1500010700</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>6080</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1345</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010710</Asset>
-                      </Item>
-                      <!-- Windows -->
-                      <Item>
-                        <Asset>1500010701</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010707</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010708</Asset>
-                      </Item>
-                      <!-- Concrete -->
-                      <Item>
-                        <Asset>1500010702</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010711</Asset>
+                        <Asset>1500010721</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
@@ -1149,9 +1165,9 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
+          <GUID>1500010720</GUID>
           <!-- <GUID>1500010713</GUID> < 1.0 -->
           <!-- <GUID>1500010717</GUID> < 1.1 -->
-          <GUID>1500010720</GUID>
           <Name>Unlock All</Name>
         </Standard>
         <Locked />
@@ -1175,45 +1191,46 @@
                   <Action />
                   <ActionUnlockAsset>
                     <UnlockAssets>
-                      <!-- construction menus -->
                       <Item>
-                        <Asset>1500010703</Asset>
+                        <Asset>1500010721</Asset>
                       </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010722</GUID>
+          <Name>Creative Mode</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
                       <Item>
-                        <Asset>1500010704</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010705</Asset>
-                      </Item>
-                      <!-- Steel Beams -->
-                      <Item>
-                        <Asset>1500010700</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>6080</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1345</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010710</Asset>
-                      </Item>
-                      <!-- Windows -->
-                      <Item>
-                        <Asset>1500010701</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010707</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010708</Asset>
-                      </Item>
-                      <!-- Concrete -->
-                      <Item>
-                        <Asset>1500010702</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010711</Asset>
+                        <Asset>1500010721</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
