@@ -4,7 +4,10 @@ const glob = require('glob');
 const fs = require('fs');
 
 let subs = {
-  'Shared-Pools*': [ '[Addon] New World Cities (Jakob)' ]
+  'Shared-Pools*': [
+    '[Addon] New World Cities (Jakob)',
+    '[Building] Small Hotels (Jakob)'
+  ]
 }
 
 let bundles = {

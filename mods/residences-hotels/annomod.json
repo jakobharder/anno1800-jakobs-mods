@@ -42,10 +42,10 @@
     }
   ],
   "modinfo": {
-    "Version": "1.4.3",
+    "Version": "1.5",
     "ModID": "jakob_small_hotels",
-    "IncompatibleIds": [],
-    "ModDependencies": [],
+    "ModDependencies": [ "jakob_shared_base" ],
+    "LoadAfterIds": [ "jakob_shared_base" ],
     "Category": {
       "English": "Building"
     },
