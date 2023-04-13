@@ -309,10 +309,12 @@
   </ModOp>
 
   <!-- # City Decorations -->
-  <ModOp Type="add" GUID="134722,101497,102482,114776,134730,134731,134732,134733,134735" Path="/Values/Building">
-    <AllowChangeVariation>1</AllowChangeVariation>
-    <BuildModeStartVariation>0</BuildModeStartVariation>
-  </ModOp>
+  <Group>
+    <ModOp Type="add" GUID="134722,101497,102482,114776,134730,134731,134732,134733,134735" Path="/Values/Building">
+      <AllowChangeVariation>1</AllowChangeVariation>
+      <BuildModeStartVariation>0</BuildModeStartVariation>
+    </ModOp>
+  </Group>
   <ModOp Type="add" GUID="134722" Path="/Values/Object/Variations">
     <Item>
       <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_info_02.cfg</Filename>
@@ -360,10 +362,12 @@
   </ModOp>
 
   <!-- # City Lights Pack -->
-  <ModOp Type="add" GUID="80040,80041,80042,80043,80044,80045,80046,80047,80048,80049,80050,80051,80060,80061,80062,80063" Path="/Values/Building">
-    <AllowChangeVariation>1</AllowChangeVariation>
-    <BuildModeStartVariation>0</BuildModeStartVariation>
-  </ModOp>
+  <Group>
+    <ModOp Type="add" GUID="80040,80041,80042,80043,80044,80045,80046,80047,80048,80049,80050,80051,80060,80061,80062,80063" Path="/Values/Building">
+      <AllowChangeVariation>1</AllowChangeVariation>
+      <BuildModeStartVariation>0</BuildModeStartVariation>
+    </ModOp>
+  </Group>
   <ModOp Type="add" GUID="80040" Path="/Values/Object/Variations">
     <Item>
       <Filename>data\jakob\stone-pavement\stone_lights_pack\market_01.cfg</Filename>
