@@ -1,24 +1,9 @@
 {
-  "src": ".",
-  "out": "${annoMods}/${modName}",  
+  "out": "${annoMods}/${modName}",
   "converter": [
     {
       "action": "static",
-      "pattern": "**/*.{cfg,dds,prp}"
-    },
-    {
-      "action": "static",
       "pattern": "{data/config/**/*,banner.*,README.md}"
-    },
-    {
-      "action": "texture",
-      "pattern": "**/*_{diff,norm,rga,height,metal,mask}.png",
-      "lods": 3,
-      "changePath": "maps/"
-    },
-    {
-      "action": "cfgyaml",
-      "pattern": "**/*.cfg.yaml"
     },
     {
       "action": "modinfo",
@@ -26,10 +11,8 @@
     }
   ],
   "modinfo": {
-    "Version": "1.4.1",
+    "Version": "1.5.0",
     "ModID": "jakob_ground_textures",
-    "IncompatibleIds": [],
-    "ModDependencies": [],
     "Category": {
       "English": "Shared"
     },
@@ -39,8 +22,6 @@
     "Description": {
       "English": "README.md"
     },
-    "KnownIssues": null,
-    "DLCDependencies": [],
     "CreatorName": "Jakob",
     "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
     "Image" : null

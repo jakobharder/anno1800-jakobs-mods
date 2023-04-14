@@ -1,0 +1,43 @@
+{
+  "out": "${annoMods}/[Shared] Ground Textures (Jakob)/${modName}",
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "**/*.{cfg,dds,prp}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.*,README.md}"
+    },
+    {
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,rga,height,metal,mask}.png",
+      "lods": 3,
+      "changePath": "maps/"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
+  "modinfo": {
+    "Version": "1.0",
+    "ModID": "jakob_ground_industry",
+    "Category": {
+      "English": "Shared"
+    },
+    "ModName": {
+      "English": "Ground Textures Industry (Jakob)"
+    },
+    "Description": {
+      "English": "README.md"
+    },
+    "CreatorName": "Jakob",
+    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+    "Image" : null
+  }
+}
