@@ -1,6 +1,6 @@
 <ModOps>
   <!-- # Small Gas Power Plant -->
-  <!-- the building is a copy of gas-fired power plant, 
+  <!-- the building is a copy of gas-fired power plant,
        all differences are commented -->
   <ModOp Type="addNextSibling" GUID="117547">
     <Asset>
@@ -242,8 +242,8 @@
   <Group>
     <ModOp Type="merge" GUID="117559" Path="/Values/ProductionChain/Tier1" />
     <ModOp Type="add" GUID="117559"
-      Condition="~/Values/ProductionChain/Tier1[not(Item/Building='1500010020')]"
-      Path="/Values/ProductionChain/Tier1[not(Item/Building='1500010020')]">
+      Condition="!~/Values/ProductionChain/Tier1/Item[Building='1500010020']"
+      Path="/Values/ProductionChain/Tier1">
       <Item>
         <Building>1500010020</Building>
       </Item>
