@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Alternative Needs via Lifestyle
 -->
 <ModOps>
@@ -147,32 +147,6 @@
     </Item>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="1010343">
-    <!-- <Asset>
-      <Template>ForwardBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010805</GUID>
-          <Name>Pescatarian Lifestyle</Name>
-          <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
-          <InfoDescription>1500010169</InfoDescription>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010100</GUID>
-            </Item>
-          </EffectTargets>
-        </ItemEffect>
-        <CultureUpgrade>
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
-        <EffectForward>
-          <ForwardEffect>1500010808</ForwardEffect>
-          <ForwardEffectRange>80</ForwardEffectRange>
-          <ForwardEffectScope>StreetDistance</ForwardEffectScope>
-        </EffectForward>
-      </Values>
-    </Asset> -->
     <Asset>
       <Template>TownhallBuff</Template>
       <Values>
@@ -281,7 +255,7 @@
       </Values>
     </Asset> -->
     <Asset>
-      <!-- 
+      <!--
         Global action buffs will only be applied to discovered regions.
         Registering the trigger with AlwaysTrue has unwanted side effects.
         The only way to ensure other regions are covered is by repeating the trigger once entered.
@@ -368,13 +342,13 @@
         <Standard>
           <GUID>1500010952</GUID>
           <Name>Cheese Alt Icon</Name>
-          <IconFilename>data\jakob\cheese\dairy\icon_cheese_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_cheese_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\cheese\dairy\icon_cheese_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_cheese_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -396,13 +370,13 @@
         <Standard>
           <GUID>1500010951</GUID>
           <Name>Canned Fish Alt Icon</Name>
-          <IconFilename>data\jakob\canned-fish\fish_cannery\icon_canned_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_canned_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="500008" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\canned-fish\fish_cannery\icon_canned_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_canned_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="500008" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -430,13 +404,13 @@
         <Standard>
           <GUID>1500010953</GUID>
           <Name>Pickled Vegetables Alt Icon</Name>
-          <IconFilename>data\jakob\pickled-vegetables\kitchen\icon_vegetables_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_vegetables_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="500004" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\pickled-vegetables\kitchen\icon_vegetables_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_vegetables_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="500004" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -451,7 +425,6 @@
   </ModOp>
 
   <!-- # Olive Soap - Construction Menu -->
-  
   <ModOp Type="addNextSibling" GUID="1010281">
     <Asset>
       <Template>Icon</Template>
@@ -459,13 +432,13 @@
         <Standard>
           <GUID>1500010954</GUID>
           <Name>Olive Soap Alt Icon</Name>
-          <IconFilename>data\jakob\soap\olive_soap_factory\icon_soap_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_soap_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="25000220" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\soap\olive_soap_factory\icon_soap_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_soap_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="25000220" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -478,7 +451,7 @@
       </Tier2>
     </Item>
   </ModOp>
-  
+
   <!-- # Suits - Construction Menu -->
   <ModOp Type="addNextSibling" GUID="1010315">
     <Asset>
@@ -487,13 +460,13 @@
         <Standard>
           <GUID>1500010955</GUID>
           <Name>Suits Alt Icon</Name>
-          <IconFilename>data\jakob\ui\icons\icon_suits_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_suits_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="500019" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\ui\icons\icon_suits_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_suits_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="500019" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -523,13 +496,13 @@
         <Standard>
           <GUID>1500010956</GUID>
           <Name>Tea Alt Icon</Name>
-          <IconFilename>data\jakob\tea\tea_maker\icon_tea_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_tea_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="500902" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\tea\tea_maker\icon_tea_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_tea_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="500902" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -542,7 +515,7 @@
       </Tier2>
     </Item>
   </ModOp>
-  
+
   <!-- # Tools - Construction Menu -->
   <ModOp Type="addNextSibling" GUID='1010200'>
     <Asset>
@@ -551,13 +524,13 @@
         <Standard>
           <GUID>1500010957</GUID>
           <Name>Tools Alt Icon</Name>
-          <IconFilename>data\jakob\tools\tools_workshop\icon_tools_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_tools_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
   </ModOp>
   <ModOp Type="replace" GUID="500003" Path="/Values/Standard/IconFilename">
-    <IconFilename>data\jakob\tools\tools_workshop\icon_tools_menu.png</IconFilename>
+    <IconFilename>data\jakob\alternative-needs\icon_tools_menu.png</IconFilename>
   </ModOp>
   <ModOp Type="add" GUID="500003" Path="/Values/ProductionChain/Tier1">
     <Item>
@@ -590,7 +563,7 @@
         <Standard>
           <GUID>1500010846</GUID>
           <Name>Fishery Menu</Name>
-          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_menu.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_vegetables2_menu.png</IconFilename>
         </Standard>
         <ProductionChain>
           <Building>1010278</Building>
@@ -612,7 +585,7 @@
         <Standard>
           <GUID>1500010958</GUID>
           <Name>Vegetables Alt Icon</Name>
-          <IconFilename>data\jakob\vegetables\vegetable_farm\icon_vegetables2_alt.png</IconFilename>
+          <IconFilename>data\jakob\alternative-needs\icon_vegetables2_alt.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
