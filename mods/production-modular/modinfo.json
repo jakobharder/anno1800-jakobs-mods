@@ -1,6 +1,45 @@
 {
   "src": [ "../../shared", "." ],
   "out": "${annoMods}/[Addon] Terraced Houses (Jakob)/${modName}",
+  "converter": [
+    {
+      "action": "static",
+      "pattern": "pools/**/{*.include.xml,icon_*.png}"
+    },
+    {
+      "action": "static",
+      "pattern": "data/**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
+    },
+    {
+      "action": "static",
+      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png,features.include.xml}"
+    },
+    {
+      "action": "cf7",
+      "pattern": "**/*.cf7"
+    },
+    {
+      "action": "gltf",
+      "pattern": "**/!(propsonly)*.gltf",
+      "lods": 4,
+      "changePath": "rdm/",
+      "animPath": "anim/"
+    },
+    {
+      "action": "cfgyaml",
+      "pattern": "**/*.cfg.yaml"
+    },
+    {
+      "action": "texture",
+      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
+      "lods": 3,
+      "changePath": "maps/"
+    },
+    {
+      "action": "modinfo",
+      "content_en": true
+    }
+  ],
   "Version": "1.2.4",
   "ModID": "jakob_modular_factories",
   "ModDependencies": [ "jakob_ground_textures" ],
