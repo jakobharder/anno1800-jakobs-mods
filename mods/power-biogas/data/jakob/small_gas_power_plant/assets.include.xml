@@ -237,6 +237,45 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010045</GUID>
+          <Name>Creative Mode</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010020</Asset> <!-- gas -->
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- Add to Gas Chain -->
   <Group>
@@ -397,7 +436,7 @@
       <Values>
         <Standard>
           <GUID>1500010471</GUID>
-          <Name>@ 5000 Obreros</Name>
+          <Name>@ 2000 Obreros</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -407,7 +446,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000006</Context>
-                <CounterAmount>5000</CounterAmount>
+                <CounterAmount>2000</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>

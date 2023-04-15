@@ -30,16 +30,14 @@ Includes a fix to correct the fan direction of grain mills.
 
 ## Changes
 
-### 1.5
+### 1.6
 
-- Changed maintenance cost to 250
-
-### 1.4
-
-- Added iModYourAnno tweak support
+- Immediately unlock in creative mode
 
 ### Older
 
+- 1.5: Changed maintenance cost to 250
+- 1.4: Added iModYourAnno tweak support
 - 1.3.2: Include grain mill fix.
 - 1.3: NW Windmill (when enabled via separate mod)
 - 1.3: Removed Windmill from Palace range increase buff
