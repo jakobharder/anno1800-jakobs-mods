@@ -1,4 +1,4 @@
-<!-- 
+<!--
 Biogas Production
 
 Git: https://github.com/jakobharder/anno-1800-jakobs-mods
@@ -12,7 +12,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 -->
 
 <ModOps>
-  <Include File="../../../../jakob/small_gas_power_plant/assets.include.xml" />
+  <Include File="/data/jakob/small_gas_power_plant/assets.include.xml" />
 
   <!-- # OW Biogas-->
   <ModOp Type="addNextSibling" GUID="100780">
@@ -555,7 +555,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     </Asset>
   </ModOp>
 
-  
+
   <!-- # Buff target pools -->
   <!-- add to maintenance, public -->
   <ModOp Type="add" GUID='368,190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -581,7 +581,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <GUID>1500010450</GUID> <!-- biogas plant -->
     </Item>
   </ModOp>
-  
+
 
   <!-- # Construction menus -->
   <ModOp Type="addNextSibling" GUID="117559"
