@@ -78,10 +78,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp GUID="101255" Type="add" Path="/Values/Object/Skins">
-    <!-- ignore duplicates, first one wins -->
-    <OverrideDefaultIcon>data\jakob\obrero-skins\icon_default_skin.png</OverrideDefaultIcon>
-    <SkinList />
+  <ModOp GUID="101255" Type="merge" Path="/Values/Object">
+    <Skins>
+      <!-- ignore duplicates, first one wins -->
+      <OverrideDefaultIcon>data\jakob\obrero-skins\icon_default_skin.png</OverrideDefaultIcon>
+      <SkinList />
+    </Skins>
   </ModOp>
   <ModOp GUID="101255" Type="add" Path="/Values/Object/Skins/SkinList">
     <Item>
