@@ -1,0 +1,29 @@
+{
+  "bundle": {
+    "jakob_shared_base": "https://github.com/anno-mods/shared-resources/releases/download/v1.1/Shared-Pools-and-Definitions-1.1.zip"
+  },
+  "Version": "1.4",
+  "ModID": "jakob_new_world_cities",
+  "DeprecateIds": [ "jakob_nw_construction", "jakob_bugfix_celluloid", "jakob_power_nw" ],
+  "IncompatibleIds": [],
+  "ModDependencies": [ "jakob_shared_base" ],
+  "LoadAfterIds": [ "jakob_shared_base" ],
+  "Category": {
+    "English": "Addon"
+  },
+  "ModName": {
+    "English": "New World Cities (Jakob)"
+  },
+  "Description": {
+    "English": "README.md"
+  },
+  "DLCDependencies": [
+    {
+      "DLC": "SeedsOfChange",
+      "Dependant": "partly"
+    }
+  ],
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
+  "Image" : null
+}
