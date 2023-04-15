@@ -572,15 +572,14 @@
   <!-- # Vanilla skins -->
   <Group>
     <!-- First add empty SkinList, then skins. That makes sure skins work even if somebody else already added some. -->
-    <ModOp GUID="601445" Type="add" Path="Values/Object">
+    <ModOp Type="merge" GUID="601445" Path="/Values/Object">
       <Skins>
-        <DefaultSkinName>23852</DefaultSkinName>
         <DefaultSkinDescription>23853</DefaultSkinDescription>
         <OverrideDefaultIcon>data\jakob\ui\icons\icon_small_hotel_skin0.png</OverrideDefaultIcon>
         <SkinList />
       </Skins>
     </ModOp>
-    <ModOp GUID="601445" Type="add" Path="Values/Object/Skins/SkinList">
+    <ModOp Type="add" GUID="601445" Path="/Values/Object/Skins/SkinList">
       <Item>
         <SkinAssetGuid>1500010507</SkinAssetGuid>
       </Item>
@@ -609,7 +608,7 @@
         <SkinAssetGuid>1500010538</SkinAssetGuid>
       </Item>
     </ModOp>
-    <ModOp GUID="601445" Type="addNextSibling">
+    <ModOp Type="addNextSibling" GUID="601445">
       <Asset>
         <Template>Skin</Template>
         <Values>
