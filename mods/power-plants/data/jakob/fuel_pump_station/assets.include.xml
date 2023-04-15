@@ -1,7 +1,7 @@
 
 <ModOps>
   <!-- # Fuel Pump Station -->
-  <ModOp GUID='118571' Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="269756">
     <Asset>
       <Template>JakobFactoryWithModules</Template>
       <Values>
@@ -161,7 +161,7 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp GUID='269840' Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="269756">
     <Asset>
       <Template>JakobFactoryWithModules</Template>
       <Values>
@@ -381,7 +381,8 @@
   </ModOp>
 
   <!-- add to maintenance, production, public -->
-  <ModOp Type="add" GUID='368,6000018,190136' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+  <ModOp Type="add" GUID="368,6000018,190136"
+    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
     <Item>
       <GUID>1500010467</GUID>
     </Item>

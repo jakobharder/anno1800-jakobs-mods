@@ -1,6 +1,6 @@
 <ModOps>
   <!-- # Small Gas Power Plant -->
-  <!-- the building is a copy of gas-fired power plant, 
+  <!-- the building is a copy of gas-fired power plant,
        all differences are commented -->
   <ModOp Type="addNextSibling" GUID="117547">
     <Asset>
@@ -238,31 +238,35 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- add to gas powerplant chain as Tier1 to gas -->
-  <ModOp Type="add" GUID="117559">
-    <ignore/>
-  </ModOp>
-  <ModOp Type="add" GUID="117559"
-    Path="/Values/ProductionChain/Tier1[not(Item/Building='1500010020')] | //ignore[1]">
-    <Item>
-      <Building>1500010020</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" Path="//ignore[1]" />
-  <!-- add to maintenance, production, public, power plants -->
-  <ModOp Type="add" GUID="368,6000018,190136,193864"
-    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010020</GUID>
-    </Item>
-  </ModOp>
-  <!-- add to palace forward buff social welfare act -->
-  <ModOp Type="add" GUID="269460"
-    Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010020</GUID>
-    </Item>
-  </ModOp>
+  <!-- Add to Gas Chain -->
+  <Group>
+    <ModOp Type="merge" GUID="117559" Path="/Values/ProductionChain/Tier1" />
+    <ModOp Type="add" GUID="117559"
+      Condition="!~/Values/ProductionChain/Tier1/Item[Building='1500010020']"
+      Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500010020</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- Effect Targets -->
+  <Group>
+    <!-- add to maintenance, production, public, power plants -->
+    <ModOp Type="add" GUID="368,6000018,190136,193864"
+      Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010020</GUID>
+      </Item>
+    </ModOp>
+    <!-- add to palace forward buff social welfare act -->
+    <ModOp Type="add" GUID="269460"
+      Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500010020</GUID>
+      </Item>
+    </ModOp>
+  </Group>
 
   <!-- # NW Gas Power Plant -->
   <ModOp Type="addNextSibling" GUID="1500010020">
@@ -479,31 +483,35 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- add to maintenance, production, public, power plants -->
-  <ModOp Type="add" GUID="368,6000018,190136,193864"
-    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010457</GUID>
-    </Item>
-  </ModOp>
-  <!-- add to palace forward buff social welfare act -->
-  <ModOp Type="add" GUID="269460"
-    Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500010457</GUID>
-    </Item>
-  </ModOp>
+
+  <!-- Effect Targets -->
+  <Group>
+    <!-- add to maintenance, production, public, power plants -->
+    <ModOp Type="add" GUID="368,6000018,190136,193864"
+      Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010457</GUID>
+      </Item>
+    </ModOp>
+    <!-- add to palace forward buff social welfare act -->
+    <ModOp Type="add" GUID="269460"
+      Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500010457</GUID>
+      </Item>
+    </ModOp>
+  </Group>
+
   <!-- Construction Menu -->
-  <!-- <ModOp Type="add" GUID="1500010456">
-    <ignore>
-      <Item />
-    </ignore>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="500137,25000194"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or (not(../Item/Building='500916'))][last()] | //ignore[1]">
-    <Item>
-      <Building>1500010456</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" Path="//ignore[1]" /> -->
+  <!-- <Group>
+    <ModOp Type="addNextSibling" GUID="500137,25000194"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or not(../Item/Building='500916')][last()]">
+      <Item>
+        <Building>1500010456</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="remove" GUID="500137,25000194"
+      Condition="~/Values/ConstructionCategory/BuildingList/Item[Building='1500010457']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010457']" />
+  </Group> -->
 </ModOps>
