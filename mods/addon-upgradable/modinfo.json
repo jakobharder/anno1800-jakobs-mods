@@ -1,6 +1,5 @@
 {
   "src": [ "../../shared", "." ],
-  "out": "${annoMods}/${modName}",
   "converter": [
     {
       "action": "static",
@@ -36,38 +35,29 @@
       "pattern": "**/*.cfg.yaml"
     },
     {
-      "action": "modinfo",
-      "content_en": true
+      "action": "modinfo"
     }
   ],
-  "modinfo": {
-    "Version": "2.4.0",
-    "ModID": "jakob_terraced_houses",
-    "IncompatibleIds": [],
-    "DeprecatedIds": [ "jakob_upgradable_low_tier" ],
-    "ModDependencies": [ "jakob_extra_goods", "jakob_ground_textures" ],
-    "Category": {
-      "English": "Addon"
+  "Version": "2.4.0",
+  "ModID": "jakob_terraced_houses",
+  "DeprecatedIds": [ "jakob_upgradable_low_tier" ],
+  "ModDependencies": [ "jakob_extra_goods", "jakob_ground_textures" ],
+  "Category": {
+    "English": "Addon"
+  },
+  "ModName": {
+    "English": "Terraced Houses (Jakob)"
+  },
+  "DLCDependencies": [
+    {
+      "DLC": "Highlife",
+      "Dependant": "required"
     },
-    "ModName": {
-      "English": "Terraced Houses (Jakob)"
-    },
-    "Description": {
-      "English": "README.md"
-    },
-    "KnownIssues": null,
-    "DLCDependencies": [
-      {
-        "DLC": "Highlife",
-        "Dependant": "required"
-      },
-      {
-        "DLC": "Docklands",
-        "Dependant": "partly"
-      }
-    ],
-    "CreatorName": "Jakob",
-    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
-    "Image" : null
-  }
+    {
+      "DLC": "Docklands",
+      "Dependant": "partly"
+    }
+  ],
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
 }

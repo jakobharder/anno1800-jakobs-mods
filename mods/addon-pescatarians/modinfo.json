@@ -1,6 +1,5 @@
 {
   "src": [ "../../shared", "." ],
-  "out": "${annoMods}/${modName}",  
   "converter": [
     {
       "action": "static",
@@ -36,38 +35,29 @@
       "pattern": "**/*.cfg.yaml"
     },
     {
-      "action": "modinfo",
-      "content_en": true
+      "action": "modinfo"
     }
   ],
-  "modinfo": {
-    "Version": "2.1",
-    "ModID": "jakob_pescatarians",
-    "IncompatibleIds": [],
-    "ModDependencies": [ "jakob_extra_goods" ],
-    "Category": {
-      "English": "Addon"
+  "Version": "2.1",
+  "ModID": "jakob_pescatarians",
+  "ModDependencies": [ "jakob_extra_goods" ],
+  "Category": {
+    "English": "Addon"
+  },
+  "ModName": {
+    "English": "Pescatarians (Jakob)",
+    "German": "Pescetarier (Jakob)"
+  },
+  "DLCDependencies": [
+    {
+      "DLC": "LandOfLions",
+      "Dependant": "atLeastOneRequired"
     },
-    "ModName": {
-      "English": "Pescatarians (Jakob)",
-      "German": "Pescetarier (Jakob)"
-    },
-    "Description": {
-      "English": "README.md"
-    },
-    "KnownIssues": null,
-    "DLCDependencies": [
-      {
-        "DLC": "LandOfLions",
-        "Dependant": "atLeastOneRequired"
-      },
-      {
-        "DLC": "Docklands",
-        "Dependant": "atLeastOneRequired"
-      }
-    ],
-    "CreatorName": "Jakob",
-    "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods",
-    "Image" : null
-  }
+    {
+      "DLC": "Docklands",
+      "Dependant": "atLeastOneRequired"
+    }
+  ],
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
 }
