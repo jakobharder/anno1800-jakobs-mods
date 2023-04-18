@@ -7,7 +7,11 @@
   ],
   "ModDependencies": [
     "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-ground-textures-industry-jakob.zip",
-    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip"
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip",
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-pools-and-definitions.zip"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
   ],
   "Category": {
     "English": "Building"

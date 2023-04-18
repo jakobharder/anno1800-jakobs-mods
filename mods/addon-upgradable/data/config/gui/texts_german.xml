@@ -1,15 +1,12 @@
 <ModOps>
-  <!-- # Shared Goods -->
-  <Include File="../../../products/texts/texts_german.include.xml" />
-
   <!-- # Vanilla Changes -->
   <ModOp Type="merge" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']">
     <Text>
       <Text>Etagen ausbauen</Text>
     </Text>
   </ModOp>
-  
-  <!-- # Workers -->  
+
+  <!-- # Workers -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010200</GUID>

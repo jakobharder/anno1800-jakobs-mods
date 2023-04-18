@@ -2,9 +2,6 @@
   NW Construction
 -->
 <ModOps>
-  <!-- # Unoptimized -->
-  <Include File="/pools/assets-pools.include.xml" />
-
   <!-- # Unlock Charcoal Kiln for all -->
   <ModOp Type="merge" GUID="1345" Path="/Values" />
   <ModOp Type="remove" GUID="1345" Path="/Values/Locked/DLCDependency" Condition="~/Values/Locked/DLCDependency" />
