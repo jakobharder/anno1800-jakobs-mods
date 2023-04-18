@@ -6,7 +6,7 @@ Makes products from `[Shared] Extra Goods (Jakob)` available as alternative Life
 
 ## Requirements
 
-You need `[Shared] Extra Goods (Jakob)` to play.
+You need `[Addon] Pescatarians (Jakob)` and `[Addon] Upgradable Workers (Jakob)` to play.
 
 ## Alternative Needs
 

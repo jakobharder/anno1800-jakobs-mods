@@ -1,33 +1,19 @@
 {
-  "src": [ "../../shared", "." ],
-  "out": "${annoMods}/${modName}",
-  "converter": [
-    {
-      "action": "static",
-      "pattern": "products/**/{*.include.xml,icon_*.png}"
-    },
-    {
-      "action": "static",
-      "pattern": "data/**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
-    },
-    {
-      "action": "static",
-      "pattern": "{data/config/**/*,banner.*,README.md,**/icon_*.png,features.include.xml}"
-    },
-    {
-      "action": "texture",
-      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
-      "lods": 3,
-      "changePath": "maps/"
-    },
-    {
-      "action": "modinfo"
-    }
-  ],
   "Version": "1.2.2",
   "ModID": "jakob_alternative_needs",
-  "ModDependencies": [ "jakob_extra_goods" ],
-  "LoadAfterIds": [ "*" ],
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip",
+    "addon-pescatarians-jakob",
+    "addon-terraced-houses-jakob"
+  ],
+  "LoadAfterIds": [
+    "production-vegetables-and-cheese-jakob",
+    "production-pickles-jakob",
+    "production-olive-soap-jakob",
+    "production-tools-jakob",
+    "production-cans-and-suits-jakob",
+    "production-import-tea"
+  ],
   "Category": {
     "English": "Gameplay"
   },

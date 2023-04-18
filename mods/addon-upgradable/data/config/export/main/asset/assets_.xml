@@ -2,12 +2,6 @@
   Upgradable Low Tiers
 -->
 <ModOps>
-  <!-- # Shared Products -->
-  <Include File="/products/canned-fish/assets.include.xml" />
-  <Include File="/products/tools/assets.include.xml" />
-  <Include File="/products/suits/assets.include.xml" />
-  <Include File="/products/tea/assets.include.xml" />
-
   <!-- # Vanilla Changes -->
   <ModOp Type="replace" GUID="412,502386" Path="/Values/Standard/IconFilename">
     <IconFilename>data/ui/2kimages/main/icons/icon_increase_population_2.png</IconFilename>
@@ -1122,92 +1116,90 @@
       <Building>1500010201</Building>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="15000001" Path="/Values/PopulationLevel7/PopulationInputs">
-    <!-- low -->
-    <Item>
-      <Product>1500010847</Product> <!-- tea -->
-      <Amount>0.00026</Amount>
-      <SupplyWeight>4</SupplyWeight>
-      <MoneyValue>20</MoneyValue>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <FullWeightPopulationCount>800</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010200</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500010201</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>1500010153</Product> <!-- tools -->
-      <Amount>0.0004166</Amount>
-      <SupplyWeight>4</SupplyWeight>
-      <MoneyValue>80</MoneyValue>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010200</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500010201</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>1010354</Product> <!-- electricity -->
-      <SupplyWeight>2</SupplyWeight>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010200</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500010201</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <!-- high -->
-    <Item>
-      <Product>1500010127</Product> <!-- OW suits -->
-      <Amount>0.0004166</Amount>
-      <SupplyWeight>5</SupplyWeight>
-      <MoneyValue>50</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-      <NoWeightPopulationCount>999</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010201</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>1500010120</Product> <!-- canned fish -->
-      <Amount>0.0004166</Amount>
-      <SupplyWeight>5</SupplyWeight>
-      <MoneyValue>25</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-      <NoWeightPopulationCount>999</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010201</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="502005" Path="/Values/ProductList/List">
-    <Item>
-      <Product>1500010127</Product>
-    </Item>
-  </ModOp>
+  <!-- Population Changes -->
+  <Group>
+    <ModOp Type="add" GUID="15000001" Path="/Values/PopulationLevel7/PopulationInputs">
+      <!-- low -->
+      <Item>
+        <Product>1500010847</Product>
+        <Amount>0.00026</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <FullWeightPopulationCount>800</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010200</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010201</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1500010153</Product> <!-- tools -->
+        <Amount>0.0004166</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>80</MoneyValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010200</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010201</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1010354</Product> <!-- electricity -->
+        <SupplyWeight>2</SupplyWeight>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010200</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010201</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <!-- high -->
+      <Item>
+        <Product>1500010127</Product> <!-- OW suits -->
+        <Amount>0.0004166</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>50</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010201</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1500010120</Product> <!-- canned fish -->
+        <Amount>0.0004166</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>999</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010201</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+    </ModOp>
+  </Group>
 
   <!-- # Residence: Artisans -->
   <ModOp Type="addNextSibling" GUID="102843">
@@ -2162,132 +2154,134 @@
       <Building>1500010226</Building>
     </Item>
   </ModOp>
-  <!-- add needs -->
-  <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
-    <!-- low -->
-    <Item>
-      <Product>1500010847</Product> <!-- Tea -->
-      <Amount>0.00052</Amount>
-      <SupplyWeight>7</SupplyWeight>
-      <MoneyValue>25</MoneyValue>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <FullWeightPopulationCount>800</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010225</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500010226</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>1010248</Product> <!-- gramophone -->
-      <Amount>0.000027775</Amount>
-      <SupplyWeight>7</SupplyWeight>
-      <MoneyValue>80</MoneyValue>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <FullWeightPopulationCount>800</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010225</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500010226</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>1010354</Product> <!-- electricity -->
-      <SupplyWeight>6</SupplyWeight>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <FullWeightPopulationCount>1000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010225</RequiredBuilding>
-        </Item>
-        <Item>
-          <RequiredBuilding>1500010226</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <!-- <Item>
-      <Product>1010208</Product> <!- - light bulbs - ->
-      <Amount>0.000138889</Amount>
-      <SupplyWeight>4</SupplyWeight>
-      <MoneyValue>70</MoneyValue>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
-      <RequiredToBeBuilding>1500010225</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-    </Item> -->
-    <!-- high -->
-    <!-- <Item>
-      <Product>1010208</Product> <!- - light bulbs - ->
-      <Amount>0.000138889</Amount>
-      <SupplyWeight>4</SupplyWeight>
-      <MoneyValue>70</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
-      <FullWeightPopulationCount>1200</FullWeightPopulationCount>
-      <NoWeightPopulationCount>749</NoWeightPopulationCount>
-    </Item> -->
-    <Item>
-      <Product>120037</Product> <!-- bombins -->
-      <Amount>0.00005555</Amount>
-      <SupplyWeight>6</SupplyWeight>
-      <MoneyValue>60</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1199</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010226</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>135230</Product> <!-- typewriter -->
-      <Amount>0.000027775</Amount>
-      <SupplyWeight>7</SupplyWeight>
-      <MoneyValue>80</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1199</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010226</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <Item>
-      <Product>135233</Product> <!-- violins -->
-      <Amount>0.000027775</Amount>
-      <SupplyWeight>7</SupplyWeight>
-      <MoneyValue>100</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <FullWeightPopulationCount>2000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1499</NoWeightPopulationCount>
-      <RequiredBuildings>
-        <Item>
-          <RequiredBuilding>1500010226</RequiredBuilding>
-        </Item>
-      </RequiredBuildings>
-    </Item>
-    <!-- <Item>
-      <Product>1500010234</Product> <!- - toy trains - ->
-      <Amount>0.000138889</Amount>
-      <SupplyWeight>6</SupplyWeight>
-      <MoneyValue>70</MoneyValue>
-      <RequiredFloorLevel>2</RequiredFloorLevel>
-      <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
-      <FullWeightPopulationCount>2000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>1499</NoWeightPopulationCount>
-    </Item> -->
-  </ModOp>
+  <!-- Population Changes -->
+  <Group>
+    <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
+      <!-- low -->
+      <Item>
+        <Product>1500010847</Product>
+        <Amount>0.00052</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>75</MoneyValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <FullWeightPopulationCount>800</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010225</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010226</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1010248</Product> <!-- gramophone -->
+        <Amount>0.000027775</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>80</MoneyValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <FullWeightPopulationCount>800</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010225</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010226</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1010354</Product> <!-- electricity -->
+        <SupplyWeight>6</SupplyWeight>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010225</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500010226</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <!-- <Item>
+        <Product>1010208</Product> <!- - light bulbs - ->
+        <Amount>0.000138889</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>70</MoneyValue>
+        <RequiredFloorLevel>1</RequiredFloorLevel>
+        <RequiredToBeBuilding>1500010225</RequiredToBeBuilding>
+        <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+      </Item> -->
+      <!-- high -->
+      <!-- <Item>
+        <Product>1010208</Product> <!- - light bulbs - ->
+        <Amount>0.000138889</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>70</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+        <FullWeightPopulationCount>1200</FullWeightPopulationCount>
+        <NoWeightPopulationCount>749</NoWeightPopulationCount>
+      </Item> -->
+      <Item>
+        <Product>120037</Product> <!-- bombins -->
+        <Amount>0.00005555</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>60</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1199</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010226</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135230</Product> <!-- typewriter -->
+        <Amount>0.000027775</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>80</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1199</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010226</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>135233</Product> <!-- violins -->
+        <Amount>0.000027775</Amount>
+        <SupplyWeight>7</SupplyWeight>
+        <MoneyValue>100</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500010226</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <!-- <Item>
+        <Product>1500010234</Product> <!- - toy trains - ->
+        <Amount>0.000138889</Amount>
+        <SupplyWeight>6</SupplyWeight>
+        <MoneyValue>70</MoneyValue>
+        <RequiredFloorLevel>2</RequiredFloorLevel>
+        <RequiredToBeBuilding>1500010226</RequiredToBeBuilding>
+        <FullWeightPopulationCount>2000</FullWeightPopulationCount>
+        <NoWeightPopulationCount>1499</NoWeightPopulationCount>
+      </Item> -->
+    </ModOp>
+  </Group>
 
   <!-- # Artisan: Buff Targets -->
   <ModOp Type="addNextSibling" GUID="1500010225">

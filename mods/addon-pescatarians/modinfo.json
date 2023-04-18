@@ -1,46 +1,17 @@
 {
-  "src": [ "../../shared", "." ],
-  "converter": [
-    {
-      "action": "static",
-      "pattern": "products/**/{*.include.xml,icon_*.png}"
-    },
-    {
-      "action": "static",
-      "pattern": "data/**/*.{cfg,ifo,prp,fc,rdm,dds,include.xml}"
-    },
-    {
-      "action": "static",
-      "pattern": "{data/config/**/*,banner.*,README.md,data/**/icon_*.png,features.include.xml}"
-    },
-    {
-      "action": "cf7",
-      "pattern": "**/*.cf7"
-    },
-    {
-      "action": "texture",
-      "pattern": "**/*_{diff,norm,height,metal,mask}.png",
-      "lods": 3,
-      "changePath": "maps/"
-    },
-    {
-      "action": "gltf",
-      "pattern": "**/*.gltf",
-      "lods": 4,
-      "changePath": "rdm/",
-      "animPath": "anim/"
-    },
-    {
-      "action": "cfgyaml",
-      "pattern": "**/*.cfg.yaml"
-    },
-    {
-      "action": "modinfo"
-    }
-  ],
   "Version": "2.1",
   "ModID": "jakob_pescatarians",
-  "ModDependencies": [ "jakob_extra_goods" ],
+  "DeprecateIds": [
+  ],
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.6/production-olive-soap-jakob.zip",
+    "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.6/production-pickles-jakob.zip",
+    "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.6/production-cans-and-suits-jakob.zip",
+    "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.6/production-tools-jakob.zip",
+    "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.6/production-vegetables-and-cheese-jakob.zip",
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-products-jakob.zip",
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-ground-textures-industry-jakob.zip"
+  ],
   "Category": {
     "English": "Addon"
   },

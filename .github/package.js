@@ -3,12 +3,12 @@ const path = require('path');
 const glob = require('glob');
 const fs = require('fs');
 
-let subs = {
-  'Shared-Pools*': [
-    '[Addon] New World Cities (Jakob)',
-    '[Building] Small Hotels (Jakob)'
-  ]
-}
+// let subs = {
+//   'Shared-Pools*': [
+//     '[Addon] New World Cities (Jakob)',
+//     '[Building] Small Hotels (Jakob)'
+//   ]
+// }
 
 let bundles = {
   'jakob_new_world_cities': { 
@@ -92,27 +92,27 @@ let bundles = {
   }
 };
 
-const downloads = glob.sync("./download/*.zip");
-downloads.forEach(download => {
-  console.log(`Unzip ${download}`);
-  child_process.execFileSync('tar', [
-    '-xf', download,
-    '-C', './out/'
-  ]);
-});
+// const downloads = glob.sync("./download/*.zip");
+// downloads.forEach(download => {
+//   console.log(`Unzip ${download}`);
+//   child_process.execFileSync('tar', [
+//     '-xf', download,
+//     '-C', './out/'
+//   ]);
+// });
 
-for (const sub of Object.keys(subs)) {
-  const subMod = glob.sync("./download/" + sub)[0];
-  if (subMod) {
-    for (const subTarget of subs[sub]) {
-      console.log(`Copy ${subMod} into ${subTarget}`);
-      child_process.execFileSync('tar', [
-        '-xf', subMod,
-        '-C', path.join('./out', subTarget)
-      ]);
-    }
-  }
-}
+// for (const sub of Object.keys(subs)) {
+//   const subMod = glob.sync("./download/" + sub)[0];
+//   if (subMod) {
+//     for (const subTarget of subs[sub]) {
+//       console.log(`Copy ${subMod} into ${subTarget}`);
+//       child_process.execFileSync('tar', [
+//         '-xf', subMod,
+//         '-C', path.join('./out', subTarget)
+//       ]);
+//     }
+//   }
+// }
 
 const versions = [];
 const mods = glob.sync("./out/*/").map(e => e.substr(0, e.length - 1));

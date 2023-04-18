@@ -1,11 +1,15 @@
 {
   "out": "${annoMods}/[Addon] Terraced Houses (Jakob)/${modName}",
   "Version": "1.2.4",
-  "ModID": "jakob_docklands",
-  "OptionalDependencies": [ "NewWorldDocklands" ],
-  "LoadAfterIds": [ "NewWorldDocklands" ],
+  "ModID": "building-docklands-gate-jakob",
+  "DeprecateIds": [
+    "jakob_docklands"
+  ],
+  "LoadAfterIds": [
+    "NewWorldDocklands"
+  ],
   "Category": {
-    "English": "Module"
+    "English": "Building"
   },
   "ModName": {
     "English": "Docklands Gate (Jakob)"

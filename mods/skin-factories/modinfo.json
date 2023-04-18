@@ -1,8 +1,13 @@
 {
   "out": "${annoMods}/[Skin] Everything Skin Pack (Jakob)/${modName}",
   "Version": "1.2.1",
-  "ModID": "jakob_production_variations",
-  "ModDependencies": [ "jakob_ground_industry" ],
+  "ModID": "skin-factory-variants-jakob",
+  "DeprecateIds": [
+    "jakob_production_variations"
+  ],
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-ground-textures-industry-jakob.zip"
+  ],
   "Category": {
     "English": "Skin"
   },
