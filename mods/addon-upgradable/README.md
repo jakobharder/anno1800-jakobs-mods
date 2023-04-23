@@ -60,6 +60,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 - Immediately unlock in creative mode
 - Included `Modular Factories`, `Dockland Gates` and `Railway Stations` as sub-mods
+- Increased income from tea
 - Fixed unlocks when High Life DLC is not owned
 
 ### 2.3
