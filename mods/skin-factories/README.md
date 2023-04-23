@@ -22,6 +22,10 @@ You can either change the variation before you build it, or pick it up again and
 
 ## Changes
 
+### 1.3
+
+- Changed concrete pavement Shift+G to skin
+
 ### 1.2
 
 - Fixed mirrored bakery sign
