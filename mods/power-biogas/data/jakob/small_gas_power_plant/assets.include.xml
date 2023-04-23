@@ -279,7 +279,6 @@
   </ModOp>
   <!-- Add to Gas Chain -->
   <Group>
-    <ModOp Type="merge" GUID="117559" Path="/Values/ProductionChain/Tier1" />
     <ModOp Type="add" GUID="117559"
       Condition="!~/Values/ProductionChain/Tier1/Item[Building='1500010020']"
       Path="/Values/ProductionChain/Tier1">
