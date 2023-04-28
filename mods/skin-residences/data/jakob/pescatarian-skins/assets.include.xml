@@ -3,8 +3,7 @@
 -->
 <ModOps>
   <!-- # Pescatarian artisans skins -->
-  <!-- add skins -->
-  <ModOp GUID='1010345' Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="1010345">
     <Asset>
       <Template>Skin</Template>
       <Values>
@@ -56,7 +55,7 @@
   </ModOp>
   <ModOp Type="add" GUID="1500010144"
     Condition="~"
-    Path="/Values/Object/Skins/SkinList]">
+    Path="/Values/Object/Skins/SkinList">
     <Item>
       <SkinAssetGuid>1500010304</SkinAssetGuid>
     </Item>
