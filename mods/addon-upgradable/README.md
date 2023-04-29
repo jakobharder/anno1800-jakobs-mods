@@ -1,4 +1,4 @@
-# Terraced Houses (aka Upgradable Workers)
+# Industrial Cities
 
 ![](./banner.jpg)
 
