@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build-changed": "powershell node node_modules/anno-modding-tools/out/buildmod.js $(node .github/getChanged.js)",
-    "build": "node node_modules/anno-modding-tools/out/buildmod.js foreign-additions/**/modinfo.json && node node_modules/anno-modding-tools/out/buildmod.js mods/**/modinfo.json",
+    "build": "node node_modules/anno-modding-tools/out/buildmod.js {foreign-additions,mods,shared}/**/modinfo.json",
     "package": "node .github/download.js && node .github/package.js",
     "download": "node .github/download.js",
     "create-doc": "node ./doc/create-nexus.js"

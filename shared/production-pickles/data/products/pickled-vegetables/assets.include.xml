@@ -1,0 +1,87 @@
+<ModOps>
+  <!-- # Product: Pickled Vegetables -->
+  <ModOp GUID="1010217" Type="addNextSibling">
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010831</GUID>
+          <Name>Pickled Vegetables</Name>
+          <IconFilename>data/products/pickled-vegetables/icon_vegetables.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11704</ProductCategory>
+          <BasePrice>30</BasePrice>
+          <CivLevel>1</CivLevel>
+          <AssociatedRegion>Moderate</AssociatedRegion>
+          <ProductionRegions>
+            <Item>
+              <RegionType>Moderate</RegionType>
+            </Item>
+          </ProductionRegions>
+        </Product>
+        <ExpeditionAttribute>
+          <BaseMorale>30</BaseMorale>
+          <ExpeditionAttributes>
+            <Item>
+              <Attribute>Faith</Attribute>
+              <Amount>15</Amount>
+            </Item>
+          </ExpeditionAttributes>
+        </ExpeditionAttribute>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Lists -->
+  <Group>
+    <!-- After Bread -->
+    <Group>
+      <ModOp Type="addNextSibling" GUID="120055,120057"
+        Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010831']"
+        Path="/Values/ProductStorageList/ProductList/Item[Product='1010213']">
+        <Item>
+          <Product>1500010831</Product>
+        </Item>
+      </ModOp>
+      <ModOp Type="addNextSibling" GUID="501996,502018,502005"
+        Condition="!~/Values/ProductList/List/Item[Product='1500010831']"
+        Path="/Values/ProductList/List/Item[Product='1010213']">
+        <Item>
+          <Product>1500010831</Product>
+        </Item>
+      </ModOp>
+    </Group>
+    <!-- Before Vegetables -->
+    <Group>
+      <ModOp Type="addPrevSibling" GUID="502037"
+        Condition="!~/Values/ProductList/List/Item[Product='1500010836']"
+        Path="/Values/ProductList/List/Item[1]">
+        <Item>
+          <Product>1500010836</Product>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # Expedition -->
+  <ModOp Type="add" GUID="800111"
+    Condition="!~/Values/ExpeditionFeature/FeedOption/FeedOptions[Item/Product='1500010831']"
+    Path="/Values/ExpeditionFeature/FeedOption/FeedOptions">
+    <Item>
+      <MoraleFactor>0.3</MoraleFactor>
+      <Product>1500010831</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Docklands (ordered, unique) -->
+  <!-- <ModOp Type="add" GUID="131764" Path="/Values/TradeContractFeature/Traders/Item[TraderName='131809']/TradeLevels/Item/Trades[Item/Good='1010213' and not(Item/Good='1500010120')] | //Values[Standard/GUID='1500010221']/ProductStorageList/ProductList"> -->
+    <!-- feedl -->
+    <!-- <Item>
+      <Level>Rare</Level>
+      <Good>1500010120</Good>
+    </Item>
+  </ModOp> -->
+</ModOps>
