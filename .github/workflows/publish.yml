@@ -2,7 +2,8 @@ on:
   push:
     tags:
       - "*"
-
+permissions:
+  contents: write
 name: Publish
 
 jobs:
