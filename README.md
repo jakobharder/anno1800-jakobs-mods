@@ -12,9 +12,9 @@ All mods are compatible previous versions and can be added to existing savegames
 
 See full [changelog](./doc/CHANGELOG.md).
 
-![](./doc/industrial-cities.jpg)
-
 ## `[Addon] Industrial Cities (Jakob)`
+
+![](./doc/industrial-cities.jpg)
 
 Terraced houses with skyscraper-like levels for Workers, Artisans.
 They come with new needs, productions and fitting ornaments.
@@ -45,9 +45,9 @@ They come with new needs, productions and fitting ornaments.
 - Passenger and Cargo Platforms, Dirt and Concrete tiles
 - Various cargo train variations
 
-![](./doc/nw-cities.jpg)
-
 ## `[Addon] New World Cities (Jakob)`
+
+![](./doc/nw-cities.jpg)
 
 Terraced houses for Artistas, construction material production and more electricity options for the New World.
 They come with new needs, productions and fitting ornaments.
@@ -73,9 +73,9 @@ They come with new needs, productions and fitting ornaments.
 - NW stone pavement + ornaments from all categories
 - Hacienda walls on grass and dirt
 
-![](./doc/pescatarians.jpg)
-
 ## `[Addon] Pescatarians (Jakob)`
+
+![](./doc/pescatarians.jpg)
 
 Pescatarians are an alternative OW population.
 Ideally for more farmer workforce with Artisan-looking towns.
@@ -100,9 +100,9 @@ Ideally for more farmer workforce with Artisan-looking towns.
 - Canned Fish Factory, Olive Orchard
 - Olive Soap Maker, Olives
 
-![](./doc/diagonal.jpg)
-
 ## `[Building] Diagonal Residences`
+
+![](./doc/diagonal.jpg)
 
 ### Buildings
 
@@ -113,13 +113,9 @@ Ideally for more farmer workforce with Artisan-looking towns.
 
 You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
 
-## Skin Mods
-
-Only visuals. No gameplay changes.
+## `[Skin] Everything Skin Pack`
 
 ![](./doc/skin-pack.jpg)
-
-## `[Skin] Everything Skin Pack`
 
 ### Skins
 
@@ -134,9 +130,9 @@ Only visuals. No gameplay changes.
 - Factory Variants:
   adds Shift+V variations to vanilla production buildings.
 
-![](./doc/improved-streets.jpg)
-
 ## `[Skin] Improved Streets`
+
+![](./doc/improved-streets.jpg)
 
 Replaces railroads and NW streets with more fitting textures.
 
@@ -145,9 +141,9 @@ Replaces railroads and NW streets with more fitting textures.
 - More sandy NW stone street
 - Wider railway texture to fit both cities and rural areas
 
-![](./doc/electric-wires.jpg)
-
 ## `[Skin] Improved Electric Wires`
+
+![](./doc/electric-wires.jpg)
 
 Replaces electric wires and poles with lighter, less distracting models.
 
