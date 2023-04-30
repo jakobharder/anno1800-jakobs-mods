@@ -1,0 +1,11 @@
+variant:
+  source: ../artisan_c1.cfg
+  modifications:
+    - xpath: //Config/Models/Config[Name="left"]/Materials/Config[Name="artisan_roof"]
+      cDiffuseColor.r: 1.00
+      cDiffuseColor.g: 0.96
+      cDiffuseColor.b: 0.79
+    - xpath: //Config/Models/Config[Name="right"]/Materials/Config[Name="artisan_roof"]
+      cDiffuseColor.r: 1.00
+      cDiffuseColor.g: 0.96
+      cDiffuseColor.b: 0.79

@@ -1260,7 +1260,7 @@
                 <Item>
                   <Variation>0</Variation>
                 </Item>
-                <Item>              
+                <Item>
                   <Variation>1</Variation>
                 </Item>
                 <Item>
@@ -1458,6 +1458,9 @@
               <!-- <Item>
                 <SkinAssetGuid>1500010235</SkinAssetGuid>
               </Item> -->
+              <Item>
+                <SkinAssetGuid>1500010243</SkinAssetGuid>
+              </Item>
             </SkinList>
           </Skins>
         </Object>
@@ -1702,6 +1705,9 @@
               <!-- <Item>
                 <SkinAssetGuid>1500010228</SkinAssetGuid>
               </Item> -->
+              <Item>
+                <SkinAssetGuid>1500010242</SkinAssetGuid>
+              </Item>
             </SkinList>
           </Skins>
         </Object>
@@ -1932,6 +1938,72 @@
       <Template>Skin</Template>
       <Values>
         <Standard>
+          <GUID>1500010242</GUID>
+          <Name>Green roof skin, 4f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_brick.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010242</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h24.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h51.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h44.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h12.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h51.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h12.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c1.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c4.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c7.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c7.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c1.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c8.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
           <GUID>1500010235</GUID>
           <Name>Mixed skin, 3f</Name>
           <IconFilename>data/jakob/ui/icons/artisan_scraper_colored.png</IconFilename>
@@ -2003,7 +2075,7 @@
           <IconFilename>data/jakob/ui/icons/artisan_scraper_blue.png</IconFilename>
         </Standard>
         <Skin>
-          <SkinName>1500010236</SkinName>
+          <SkinName>1500010229</SkinName>
           <SkinDescription>0</SkinDescription>
           <SkinVariations>
             <!-- first 4 variations match vanilla buildings -->
@@ -2069,7 +2141,7 @@
           <IconFilename>data/jakob/ui/icons/artisan_scraper_brick.png</IconFilename>
         </Standard>
         <Skin>
-          <SkinName>1500010237</SkinName>
+          <SkinName>1500010230</SkinName>
           <SkinDescription>0</SkinDescription>
           <SkinVariations>
             <!-- first 4 variations match vanilla buildings -->
@@ -2117,6 +2189,72 @@
             </Item>
             <Item>
               <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_c8_3f.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010243</GUID>
+          <Name>Green roof skin, 3f</Name>
+          <IconFilename>data/jakob/ui/icons/artisan_scraper_brick.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010242</SkinName>
+          <SkinDescription>0</SkinDescription>
+          <SkinVariations>
+            <!-- first 4 variations match vanilla buildings -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h24_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h51_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <!-- only matches on T -->
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h44_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h12_3f.cfg</FileName>
+            </Item>
+            <!-- remaining variations only auto match on neighbor influence -->
+            <!-- end piece (corner) -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h51_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end1.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_h12_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_end2.cfg</FileName> -->
+            </Item>
+            <!-- corners -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c1_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c4_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c7_3f.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c7_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner5.cfg</FileName> -->
+            </Item>
+            <!-- repeat end piece as corner, can't be end piece and corner at the same time otherwise end pieces are prioritised in construction -->
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c1_3f.cfg</FileName>
+              <!-- <FileName>data/jakob/buildings/residence/artisan_scraper/skin3/artisan_corner3.cfg</FileName> -->
+            </Item>
+            <Item>
+              <FileName>data/jakob/buildings/residence/artisan_scraper/skin4/artisan_c8_3f.cfg</FileName>
             </Item>
           </SkinVariations>
         </Skin>
