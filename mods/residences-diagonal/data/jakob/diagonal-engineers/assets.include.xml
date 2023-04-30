@@ -289,4 +289,69 @@
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # jje Skins -->
+  <ModOp Type="addNextSibling" GUID="101037221" Condition="//Standard[GUID='101037221']">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010412</GUID>
+          <Name>Diagonal Engineer Skin, jje</Name>
+          <IconFilename>data/jakob/diagonal-engineers/skinjje/icon_tier04_jje.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010413</SkinName>
+          <SkinDescription>1500010414</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_wide.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_wide2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_narrow.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_narrow2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_diagonal.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/diagonalx2.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010421</GUID>
+          <Name>Narrow Engineer Skin, jje</Name>
+          <IconFilename>data/jakob/diagonal-engineers/skinjje/icon_tier04_jje.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010413</SkinName>
+          <SkinDescription>1500010414</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-engineers/skinjje/3x1.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
 </ModOps>

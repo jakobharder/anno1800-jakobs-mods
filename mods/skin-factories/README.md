@@ -1,7 +1,5 @@
 # Factory Variants
 
-![](./banner.jpg)
-
 Shift+V variations for production buildings.
 
 AI will also build these variations.
@@ -21,6 +19,10 @@ Buildings:
 You can either change the variation before you build it, or pick it up again and change then.
 
 ## Changes
+
+### 1.3
+
+- Changed concrete pavement Shift+G to skin
 
 ### 1.2
 

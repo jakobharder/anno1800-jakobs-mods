@@ -1,15 +1,11 @@
 {
   "dependencies": {
-    "anno-modding-tools": "https://github.com/anno-mods/vscode-anno-modding-tools/releases/download/v1.8.2/anno-modding-tools-1.8.2.tgz"
-  },
-  "downloads": {
-    "shared-extra-goods": "https://github.com/anno-mods/shared-extra-goods/releases/download/v2.5/Shared-Extra-Goods-2.5.zip"
+    "anno-modding-tools": "https://github.com/anno-mods/vscode-anno-modding-tools/releases/download/v1.12.4/anno-modding-tools-1.12.4.tgz"
   },
   "scripts": {
     "build-changed": "powershell node node_modules/anno-modding-tools/out/buildmod.js $(node .github/getChanged.js)",
-    "build": "node node_modules/anno-modding-tools/out/buildmod.js foreign-additions/**/annomod.json && node node_modules/anno-modding-tools/out/buildmod.js mods/**/annomod.json",
-    "package": "node .github/download.js && node .github/package.js",
-    "download": "node .github/download.js",
+    "build": "node node_modules/anno-modding-tools/out/buildmod.js {foreign-additions,mods,shared}/**/modinfo.json",
+    "package": "node .github/package.js",
     "create-doc": "node ./doc/create-nexus.js"
   }
 }

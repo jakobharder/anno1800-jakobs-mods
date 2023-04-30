@@ -12,12 +12,12 @@ function getModName(changedPath) {
   return undefined;
 }
 
-const folders = [...new Set(changed.map(e => getModName(e)).filter(e => e !== undefined && fs.existsSync(path.join(e, "annomod.json"))))];
+const folders = [...new Set(changed.map(e => getModName(e)).filter(e => e !== undefined && fs.existsSync(path.join(e, "modinfo.json"))))];
 if (folders.length === 0 || !folders[0]) {
   return;
 }
 else if (folders.length === 1) {
-  console.log(`${folders[0]}/annomod.json`);
+  console.log(`${folders[0]}/modinfo.json`);
   return;
 }
-console.log(`{${folders.join(',')}}/annomod.json`);
+console.log(`{${folders.join(',')}}/modinfo.json`);

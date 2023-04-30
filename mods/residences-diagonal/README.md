@@ -9,6 +9,7 @@
 - Diagonal Engineers: including Vibrant Cities and 4 custom skins
 - Diagonal Investors: including Vibrant Cities and 3 custom skins
 - Narrow Engineers
+- Skins matching jje's Red Tile Roof buildings for Engineers
 
 Use Shift+V to cycle through variations before you place it.
 You need to relocate if you want to change an existing building.
@@ -25,8 +26,14 @@ You might be interested in the following mods as well:
 
 ## Changes
 
-### 1.5
+### 1.6
 
+- Fixed icons for GU17
+- Immediate unlock in creative mode
+- Skin for jje's red tile roof is now included and automatically shows when needed
+
+### 1.5
+ 
 - 1.5.3: Fixed investor unlock
 - 1.5.2: Add missing Lifestyle needs for Investors
 - 1.5.1: Fixed upgrade choosing wrong shape

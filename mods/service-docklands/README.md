@@ -1,7 +1,5 @@
 # Docklands Gate
 
-![](./banner.png)
-
 The docklands gate connects modules across streets to keep atractiveness bonus.
 
 ## Docklands Module
@@ -15,13 +13,14 @@ New World Docklands must be loaded first, so best not change the folder names of
 
 ## Changes
 
-### 1.2.1
+### 1.2
 
-- New build icon
+- 1.2.5: Added to Docklands construction menu
+- 1.2.4: Fixed warnings when used without New World Docklands
+- 1.2.1: New build icon
+- New World Docklands support.
 
 ### Older
-
-- 1.2: New World Docklands support.
 - 1.1: Fixed lights
 
 ## Translations

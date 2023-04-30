@@ -1,10 +1,8 @@
 <ModOps>
-  <!-- # Shared Target Pools -->
-  <Include File="../../../pools/texts_german.include.xml" />
-  
+  <!-- # Modular Factories -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010600</GUID>
+      <GUID>1500010600</GUID> <!-- cannot use AssetData text -->
       <Text>Nähmaschinenfabrik</Text> <!-- building: sewing machines -->
     </Text>
   </ModOp>

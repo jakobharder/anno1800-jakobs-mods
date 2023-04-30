@@ -146,12 +146,12 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="190136,191501,368" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='3741']">
     <Item>
       <GUID>1500010817</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="2015" Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741'] | //Values[Standard=GUID='2015']/ConstructionCategory/BuildingList/Item[last()]">
+  <ModOp Type="addNextSibling" GUID="2015" Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741']">
     <Item>
       <Building>1500010817</Building>
     </Item>

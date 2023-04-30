@@ -49,8 +49,13 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ## Changes
 
+### 1.4
+
+- Immediately unlock in creative mode
+
 ### 1.3
 
+- 1.3.5: technical improvements
 - 1.3.4: change Terraced Artista unlock to 300 Artistas
 - 1.3.4: fix Terraced Artista roofs at night
 - 1.3.3: fix Harborlife compatibility

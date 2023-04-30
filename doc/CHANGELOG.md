@@ -1,5 +1,26 @@
 # Changelog
 
+You can simply overwrite older version. The modloader automatically takes the right versions.
+
+## [Unreleased]
+
+### Changes
+
+- All mods immediately unlock in creative mode now
+- Combined mods
+  - **Industrial Cities**: combines `Upgradable Workers`, `Modular Factories`, `Extra Goods`, `Small Power Plants`, `Dockland Gates` and `Railway Stations`
+  - **Everything Skin Pack**: combines `New Town Halls`, `Residence Skins` and `Factory Variations`
+  - **Pescatarians**: includes `Extra Goods` now
+  - **Diagonal Residences**: includes jje1000 skins now.
+- Updated Spanish and Chinese translations thanks to mfuegar and darknesswei
+- Upgradeable Workers, 2.4: Increased income for tea.
+
+### Fixes
+
+- Pescatarians, 2.1: Aligned items/buffs effecting post office with vanilla post office
+- Upgradeable Workers, 2.4: Fixed unlocks when High Life DLC is not owned
+- Improved loading performance using new [modloader10](https://github.com/jakobharder/anno1800-mod-loader/blob/main/doc/modloader10.md) features
+
 ## 5.7 - Tea Docks and Factory
 
 ### New Content and Changes
@@ -26,7 +47,7 @@
 
 - New Town Halls, 2.0: Converted all town hall buildings into skins
 - Biogas Production, 1.5: Now includes Small Gas Power Plant from Small Power Plants
-- Nate's Windmill, 1.5: Changed maintenance cost to 250 
+- Nate's Windmill, 1.5: Changed maintenance cost to 250
 - Alternative Needs, 1.2: Buff should be fixed for all sessions and multiplayer now
 - Pescatarians, 2.0.6: Fixed music school showing wrong skins
 - Upgradable Workers, 2.3.6: Allow change variation before building a residence

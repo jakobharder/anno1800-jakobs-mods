@@ -1,11 +1,11 @@
 <ModOps>
-  <ModOp GUID="601463" Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="601463">
     <Asset>
       <BaseAssetGUID>601463</BaseAssetGUID>
       <Values>
         <Standard>
           <GUID>1500010079</GUID>
-          <Name>dockland_arch</Name>
+          <Name>Docklands Gate</Name>
           <IconFilename>data\jakob\buildings\docklands\icon_gate.png</IconFilename>
           <InfoDescription>1500010081</InfoDescription>
         </Standard>
@@ -65,7 +65,7 @@
       <Values>
         <Standard>
           <GUID>1500010080</GUID>
-          <Name>dockland_arch</Name>
+          <Name>Docklands Gate</Name>
           <IconFilename>data\jakob\buildings\docklands\icon_gate.png</IconFilename>
           <InfoDescription>1500010081</InfoDescription>
         </Standard>
@@ -121,37 +121,38 @@
         </Warehouse>
       </Values>
     </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010081</GUID>
-          <Name>Gate Description</Name>
-        </Standard>
-        <Text />
-      </Values>
-    </Asset>
   </ModOp>
   <ModOp Type="add" GUID="601470" Path="/Values/ModuleOwner/ConstructionOptions">
     <Item>
       <ModuleGUID>1500010079</ModuleGUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="601460,601461,601462,601463,131777,131778" Path="/Values/Building/InfluencedByNeighbors">
+  <ModOp Type="add" GUID="601460,601461,601462,601463,131777,131778"
+    Path="/Values/Building/InfluencedByNeighbors">
     <Item>
       <Building>1500010079</Building>
     </Item>
   </ModOp>
+  <ModOp Type="add" GUID="7291"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010079</Building>
+      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+    </Item>
+  </ModOp>
 
-  <!-- lordys NW Docklands -->
-  <ModOp Type="add" GUID="1404422070" Path="/Values/ModuleOwner/ConstructionOptions">
-    <Item>
-      <ModuleGUID>1500010080</ModuleGUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="1404422060,1404422061,1404422062,1404422063,1404422077,1404422078" Path="/Values/Building/InfluencedByNeighbors">
-    <Item>
-      <Building>1500010080</Building>
-    </Item>
-  </ModOp>
+  <!-- Lordy's NW Docklands -->
+  <Group Condition="//Values[Standard/GUID='1404422070']">
+    <ModOp Type="add" GUID="1404422070" Path="/Values/ModuleOwner/ConstructionOptions">
+      <Item>
+        <ModuleGUID>1500010080</ModuleGUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1404422060,1404422061,1404422062,1404422063,1404422077,1404422078"
+      Path="/Values/Building/InfluencedByNeighbors">
+      <Item>
+        <Building>1500010080</Building>
+      </Item>
+    </ModOp>
+  </Group>
 </ModOps>

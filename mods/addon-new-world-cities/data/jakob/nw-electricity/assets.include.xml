@@ -3,14 +3,16 @@
   <!--
     + all colony factories (with input)
     + baseasset users with disabled industrialization
-    - fuel production 
+    - fuel production
     - NW Tourism Christo Redentor
   -->
-  <ModOp Type='replace' Path='//Values/Industrializable/BoostedByIndustrialization["0" and ../../Building/AssociatedRegions="Colony01" and (../../FactoryBase/FactoryInputs or ../../../BaseAssetGUID) and not(../../FactoryBase/FactoryOutputs/Item/Product="270042") and not(../../BuffFactory/ProductionBuffs) and not(../../Standard/GUID="1440134400")]'>
-    <BoostedByIndustrialization>1</BoostedByIndustrialization>
-  </ModOp>
-  <!-- mines -->
-  <ModOp Type='add' Path='//Asset[Template="SlotFactoryBuilding7"]/Values/Industrializable'>
-    <BoostedByIndustrialization>1</BoostedByIndustrialization>
-  </ModOp>
+  <Group>
+    <ModOp Type="replace" Path="//Industrializable/BoostedByIndustrialization['0' and ../../Building/AssociatedRegions='Colony01' and (../../FactoryBase/FactoryInputs or ../../../BaseAssetGUID) and not(../../FactoryBase/FactoryOutputs/Item/Product='270042') and not(../../BuffFactory/ProductionBuffs) and not(../../Standard/GUID='1440134400')]">
+      <BoostedByIndustrialization>1</BoostedByIndustrialization>
+    </ModOp>
+    <!-- mines -->
+    <ModOp Type="add" Path="//Industrializable[../../Template='SlotFactoryBuilding7']">
+      <BoostedByIndustrialization>1</BoostedByIndustrialization>
+    </ModOp>
+  </Group>
 </ModOps>

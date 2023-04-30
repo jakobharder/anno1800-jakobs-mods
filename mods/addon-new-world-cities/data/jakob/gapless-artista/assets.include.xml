@@ -9,14 +9,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 -->
 
 <ModOps>
-  <!-- # Artista Scraper as normal upgrade path -->
-  <!-- <ModOp Type="add" GUID="5405" Path="/Values/Upgradable">
-    <NextGUID>1500011044</NextGUID>
-  </ModOp>
-  <ModOp Type="replace" GUID="5405" Path="/Values/Residence7/ResidentsRequiredForUpgrade">
-    <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
-  </ModOp> -->
-
   <!-- # Terraced Artista Residences -->
   <ModOp Type="addNextSibling" GUID="101255">
     <Asset>
@@ -779,13 +771,13 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
 
   <!-- # Unlocks -->
-  <ModOp Type="addNextSibling" GUID="130249">
+  <ModOp Type="addNextSibling" GUID="119">
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500011004</GUID> -->
           <GUID>1500011007</GUID>
+          <!-- <GUID>1500011004</GUID> -->
           <Name>Unhide @ Artista Unlock</Name>
         </Standard>
         <Locked />
@@ -893,6 +885,44 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                 <Context>5403</Context>
                 <CounterAmount>300</CounterAmount>
               </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011044</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011013</GUID>
+          <Name>Creative Mode</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
             </Values>
           </TriggerCondition>
           <TriggerActions>

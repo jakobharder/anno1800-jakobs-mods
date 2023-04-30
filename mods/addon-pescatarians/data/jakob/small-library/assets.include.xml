@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Small Library as replacement for School.
 -->
 <ModOps>
@@ -38,6 +38,9 @@
               </Item>
             </Variations>
             <Skins>
+              <DefaultSkinName>23852</DefaultSkinName>
+              <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
+              <OverrideDefaultIcon>data/jakob/small-library/icon_skin_default.png</OverrideDefaultIcon>
               <SkinList>
                 <Item>
                   <SkinAssetGuid>1500010841</SkinAssetGuid>
@@ -170,7 +173,7 @@
           <Standard>
             <GUID>1500010841</GUID>
             <Name>Dark Skin</Name>
-            <IconFilename>data/jakob/engineer-skins/icon_tier04_tourist_red.png</IconFilename>
+            <IconFilename>data/jakob/small-library/icon_skin_yellow.png</IconFilename>
           </Standard>
           <Skin>
             <SkinName>1500010841</SkinName>
@@ -179,6 +182,7 @@
                 <FileName>data\jakob\small-library\skin-dark.cfg</FileName>
               </Item>
             </SkinVariations>
+            <SkinCategoryDescription>1500010170</SkinCategoryDescription>
           </Skin>
           <Locked>
             <DefaultLockedState>0</DefaultLockedState>
@@ -194,15 +198,16 @@
           <Standard>
             <GUID>1500010842</GUID>
             <Name>Red Skin</Name>
-            <IconFilename>data/jakob/engineer-skins/icon_tier04_tourist_red.png</IconFilename>
+            <IconFilename>data/jakob/small-library/icon_skin_school.png</IconFilename>
           </Standard>
           <Skin>
-            <SkinName>1500010841</SkinName>
+            <SkinName>1500010842</SkinName>
             <SkinVariations>
               <Item>
                 <FileName>data\jakob\small-library\library.cfg</FileName>
               </Item>
             </SkinVariations>
+            <SkinCategoryDescription>1500010170</SkinCategoryDescription>
           </Skin>
           <Locked>
             <DefaultLockedState>0</DefaultLockedState>

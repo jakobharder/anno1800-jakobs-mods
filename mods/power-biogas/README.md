@@ -30,6 +30,10 @@ You find the biogas production in the material menu, and in the gas electricity 
 
 ## Changes
 
+### 1.6
+
+- Immediately unlock in creative mode
+
 ### 1.5
 
 - Added Small Gas Power Plant (from Small Power Plants)

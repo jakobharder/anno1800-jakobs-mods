@@ -1,7 +1,5 @@
 # Small Power Plants
 
-![](./banner.jpg)
-
 Small power plant have less coverage than normal plants and consume coal, oil or gas.
 
 ## Requirements
@@ -31,12 +29,13 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 ## Changes
 
-### 2.7
+### 2.9
 
-- Fuel station with integrated oil pump
+- Immediately unlock in creative mode
 
 ### Older
 
+- 2.7: Fuel station with integrated oil pump
 - 2.6: Chinese translation
 - 2.5: NW Oil and Gas Power Plants (when enabled via separate mod)
 - 2.4: Fixed GU14 maintenance buff

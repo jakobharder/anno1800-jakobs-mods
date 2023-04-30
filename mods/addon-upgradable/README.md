@@ -1,6 +1,4 @@
-# Terraced Houses (aka Upgradable Workers)
-
-![](./banner.jpg)
+# Upgradable Workers
 
 Terraced versions of worker and artisan residences using Skyscraper mechanics.
 
@@ -8,7 +6,7 @@ Note: Pescatarian workers, artisans do not upgrade.
 
 ## Requirements
 
-- Activated DLC `The High Life` (the game requires you to activate latest when you load a savegame)
+- Activated DLC `The High Life`
 - Mod `[Shared] Ground Textures`
 - Either Mod `[Shared] Shared Goods` or DLC `Docklands`
 
@@ -55,6 +53,13 @@ All products are available as Dockland imports, or can be produced with `[Shared
 - The arrows for skyscraper upgrade don't show sometimes. The buildings will upgrade if you click anyway.
 
 ## Changes
+
+### 2.4
+
+- Immediately unlock in creative mode
+- Included `Modular Factories`, `Dockland Gates` and `Railway Stations` as sub-mods
+- Increased income from tea
+- Fixed unlocks when High Life DLC is not owned
 
 ### 2.3
 

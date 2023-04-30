@@ -20,17 +20,19 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Changes
 
-### 1.4.1
+### 1.5
 
-- Fixed compatibility issues with `Train-Stations and Hotels`.
+- Immediate unlock in creative mode
+- Fix missing hotel skins
 
 ### 1.4
 
+- 1.4.1: Fixed compatibility issues with `Train-Stations and Hotels`.
 - Fixed missing skin
 
 ### 1.3
 
-- Fixed no matching node warning 
+- Fixed no matching node warning
 - Chinese translation
 
 ### 1.2

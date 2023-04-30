@@ -6,7 +6,7 @@ Production Variations
   <!-- <ModOp Type="remove" GUID="1010325" Path="/Values/QuestObject" />
   <ModOp Type="remove" GUID="1010291" Path="/Values/QuestObject" />
   <ModOp Type="remove" GUID="1010295" Path="/Values/QuestObject" /> -->
-  
+
   <!-- # Fur Dealer Variations -->
   <ModOp Type="add" GUID="1010325" Path="/Values/Building">
     <AllowChangeVariation>1</AllowChangeVariation>
@@ -25,17 +25,9 @@ Production Variations
   </ModOp>
 
   <!-- # Bakery Variations -->
-  <ModOp Type="add" GUID="1010291" Path="/Values/Building">
+  <ModOp Type="merge" GUID="1010291" Path="/Values/Building">
     <AllowChangeVariation>1</AllowChangeVariation>
     <AllowChangeDirection>1</AllowChangeDirection>
-    <!-- enable asphalt -->
-    <AlternativeGrassColorAvailable>1</AlternativeGrassColorAvailable>
-  </ModOp>
-  <!-- enable Shift+G on original without replacing other mods -->
-  <ModOp Type="replace" GUID="1010291" Path="/Values/Object/Variations/Item[Filename='data/graphics/buildings/production/food_01/food_01.cfg']">
-    <Item>
-      <Filename>data\jakob\variations\bakery\bakery_b0.cfg</Filename>
-    </Item>
   </ModOp>
   <!-- add new variations -->
   <ModOp Type="add" GUID="1010291" Path="/Values/Object/Variations">
@@ -47,18 +39,18 @@ Production Variations
     </Item>
   </ModOp>
   <!-- add ground skin -->
-  <!-- <ModOp GUID="1010291" Type="addNextSibling">
+  <ModOp GUID="1010291" Type="addNextSibling">
     <Asset>
       <Template>Skin</Template>
       <Values>
         <Standard>
           <GUID>1500010320</GUID>
-          <Name>bakery ground skind</Name>
-          <IconFilename>data/jakob/artisan-skins/icon_tier03_colorful.png</IconFilename>
+          <Name>Bakery Industry Ground Skin</Name>
+          <IconFilename>data/jakob/variations/bakery/icon_industry_ground.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010320</SkinName>
-          <SkinDescription>1500010320</SkinDescription>
+          <SkinDescription>1500010323</SkinDescription>
           <SkinVariations>
             <Item>
               <FileName>data\jakob\variations\bakery\bakery_b0_altg.cfg</FileName>
@@ -70,6 +62,7 @@ Production Variations
               <FileName>data\jakob\variations\bakery\bakery_b2_altg.cfg</FileName>
             </Item>
           </SkinVariations>
+          <SkinCategoryDescription>1500010324</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -77,16 +70,21 @@ Production Variations
         <Text />
       </Values>
     </Asset>
-  </ModOp> -->
-  <!-- <ModOp GUID="1010291" Type="add" Path="/Values/Object">
+  </ModOp>
+  <ModOp Type="merge" GUID="1010291" Path="/Values/Object">
     <Skins>
-      <SkinList>
-        <Item>
-          <SkinAssetGuid>1500010320</SkinAssetGuid>
-        </Item>
-      </SkinList>
+      <DefaultSkinName>1010291</DefaultSkinName>
+      <DefaultSkinDescription>23853</DefaultSkinDescription>
+      <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+      <OverrideDefaultIcon>data/jakob/variations/bakery/icon_vanilla_ground.png</OverrideDefaultIcon>
+      <SkinList />
     </Skins>
-  </ModOp> -->
+  </ModOp>
+  <ModOp Type="add" GUID="1010291" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500010320</SkinAssetGuid>
+    </Item>
+  </ModOp>
 
   <!-- # Cannery Variations -->
   <ModOp Type="add" GUID="1010295" Path="/Values/Building">

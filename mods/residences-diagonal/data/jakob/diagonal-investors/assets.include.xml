@@ -28,6 +28,9 @@
             </Item>
           </InfluencedByNeighbors>
         </Building>
+        <Constructable>
+          <ConstructionMenuIcon>1500011110</ConstructionMenuIcon>
+        </Constructable>
         <Upgradable>
           <!-- disable upgrade -->
           <NextGUID>0</NextGUID>
@@ -110,62 +113,19 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500011117</GUID> -->
-          <GUID>1500011118</GUID>
-          <Name>Relock to fix unlocked at new game</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000004</Context>
-                <CounterAmount>0</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionLockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionLockAsset>
-                    <LockAssets>
-                      <Item>
-                        <Asset>1500011110</Asset>
-                      </Item>
-                    </LockAssets>
-                  </ActionLockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
           <GUID>1500011119</GUID>
-          <Name>@ Investors</Name>
+          <!-- <GUID>1500011117</GUID> -->
+          <!-- <GUID>1500011118</GUID> -->
+          <Name>@ Investors (1010347)</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
+            <Template>ConditionUnlocked</Template>
             <Values>
               <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000004</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
+              <ConditionUnlocked>
+                <UnlockNeeded>1010347</UnlockNeeded>
+              </ConditionUnlocked>
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -193,23 +153,6 @@
     </Asset>
   </ModOp>
   <!-- # Targets -->
-  <ModOp GUID='194018' Type="addNextSibling">
-    <Asset>
-      <!-- fallback dump -->
-      <Template>fallback</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ignore>
-          <Item>
-            <GUID>1010347</GUID>
-          </Item>
-        </ignore>
-      </Values>
-    </Asset>
-  </ModOp>
-
   <!-- add neighbor influences -->
   <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
     <Item>
@@ -223,15 +166,16 @@
     </Item>
   </ModOp>
 
-  <!-- Replace "Investors" with "All Engineers" in items and specialists.
+  <!-- Replace "Investors" with "All Investors" in items and specialists.
        Can be done multiple times and mods properly adding themselves to 194026 should be fine. -->
-  <ModOp Type="replace" Path="//Asset[Template='TownhallBuff' or Template='GuildhouseItem' or Template='TownhallItem']/Values/ItemEffect/EffectTargets/Item[GUID='1010347'] | //Asset[Values/Standard/GUID='1500010221']/Values/ignore/Item[GUID='1010347']">
+  <ModOp Type="replace" AllowNoMatch="1"
+    Path="//EffectTargets/Item[GUID='1010347' and (../../../../Template='TownhallBuff' or ../../../../Template='GuildhouseItem' or ../../../../Template='TownhallItem')]">
     <Item>
       <GUID>194026</GUID>
     </Item>
   </ModOp>
   <!-- residence buff targets -->
-  <ModOp Type="add" Path="//Asset[Template='ItemEffectTargetPool']/Values/ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010347']">
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010347']">
     <Item>
       <GUID>1500011110</GUID>
     </Item>
@@ -617,6 +561,4 @@
       <Building>1500011110</Building>
     </Item>
   </ModOp>
-  <!-- # Clean up -->
-  <ModOp Type="remove" GUID='1500010221' />
 </ModOps>

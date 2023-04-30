@@ -4,11 +4,6 @@
 
 Alternative Old World population providing with new needs, productions and workforce twists.
 
-## Requirements
-
-- Mod `[Shared] Extra Goods (Jakob)` for production chains
-- Mod `[Skin] Residence Skins (Jakob)` (optional for correct skins, but highly recommended)
-
 ## Population
 
 ### Pescatarians
@@ -51,6 +46,13 @@ All products are available as Dockland imports, or can be produced with `[Shared
 - Suits
 
 ## Changes
+
+### 2.1
+
+- Immediate unlock in creative mode
+- Fixed unlock banner icon
+- Aligned items/buffs effecting post office with vanilla post office
+- Include required productions from Extra Goods
 
 ### 2.0
 
