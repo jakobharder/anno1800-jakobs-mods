@@ -7,14 +7,18 @@ You can simply overwrite older version. The modloader automatically takes the ri
 ### Changes
 
 - All mods immediately unlock in creative mode now
-- Updated Spanish translations thanks to mfuegar
-- Updated Chinese translations thanks to darknesswei
-- Terraced Houses, 3.0: Combined `Upgradable Workers` with `Modular Factories`, `Dockland Gates` and `Railway Stations` as sub-mods
+- Combined mods
+  - **Industrial Cities**: combines `Upgradable Workers`, `Modular Factories`, `Extra Goods`, `Small Power Plants`, `Dockland Gates` and `Railway Stations`
+  - **Everything Skin Pack**: combines `New Town Halls`, `Residence Skins` and `Factory Variations`
+  - **Pescatarians**: includes `Extra Goods` now
+  - **Diagonal Residences**: includes jje1000 skins now.
+- Updated Spanish and Chinese translations thanks to mfuegar and darknesswei
+- Upgradeable Workers, 2.4: Increased income for tea.
 
 ### Fixes
 
 - Pescatarians, 2.1: Aligned items/buffs effecting post office with vanilla post office
-- Terraced Houses, 2.4: Fixed unlocks when High Life DLC is not owned
+- Upgradeable Workers, 2.4: Fixed unlocks when High Life DLC is not owned
 - Improved loading performance using new [modloader10](https://github.com/jakobharder/anno1800-mod-loader/blob/main/doc/modloader10.md) features
 
 ## 5.7 - Tea Docks and Factory
