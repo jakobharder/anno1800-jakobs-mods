@@ -1,7 +1,5 @@
 # Docklands Gate
 
-![](./banner.png)
-
 The docklands gate connects modules across streets to keep atractiveness bonus.
 
 ## Docklands Module

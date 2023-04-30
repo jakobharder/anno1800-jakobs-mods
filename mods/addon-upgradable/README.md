@@ -1,6 +1,4 @@
-# Industrial Cities
-
-![](./banner.jpg)
+# Upgradable Workers
 
 Terraced versions of worker and artisan residences using Skyscraper mechanics.
 

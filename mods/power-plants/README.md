@@ -1,7 +1,5 @@
 # Small Power Plants
 
-![](./banner.jpg)
-
 Small power plant have less coverage than normal plants and consume coal, oil or gas.
 
 ## Requirements

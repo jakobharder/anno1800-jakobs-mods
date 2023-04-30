@@ -1,7 +1,5 @@
 # New Town Halls
 
-![](./banner.jpg)
-
 Adds 10 Town Hall skins.
 
 ## Requirements

@@ -1,7 +1,5 @@
 # Residence Skins
 
-![](./banner.jpg)
-
 Paintbrush skins for NW and OW residences.
 
 The roofs are colored in realtime for reduced memory usage and better performance.
