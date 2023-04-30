@@ -12,6 +12,7 @@ Randomized freight trains.
 
 ## Changes
 
+1.2: Added passengers to T crossing platforms.
 1.1: Added random freight trains.
 
 ## Translations
