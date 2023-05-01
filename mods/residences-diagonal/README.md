@@ -28,6 +28,7 @@ You might be interested in the following mods as well:
 
 ### 1.6
 
+- 1.6.2: Updated Spanish translations
 - 1.6.1: Fixed blurry icons
 - Fixed icons for GU17
 - Immediate unlock in creative mode

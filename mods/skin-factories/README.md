@@ -22,6 +22,7 @@ You can either change the variation before you build it, or pick it up again and
 
 ### 1.3
 
+- 1.3.1: Updated Spanish translations
 - Changed concrete pavement Shift+G to skin
 
 ### 1.2
