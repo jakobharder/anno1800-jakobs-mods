@@ -4,6 +4,10 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 5.8 - Artista Skyscrapers
 
+### 5.8.1
+
+- New World Cities, 1.4.1: Fixed compatibility issue with Harbor Life
+
 ### New Content and Major Changes
 
 - New World Cities, 1.4: Added Artista skyscrapers
