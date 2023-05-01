@@ -12,7 +12,7 @@ All mods are compatible previous versions and can be added to existing savegames
 
 See full [changelog](./doc/CHANGELOG.md).
 
-## `[Addon] Industrial Cities (Jakob)`
+## `[Addon] Industrial Cities`
 
 ![](./doc/industrial-cities.jpg)
 
@@ -45,7 +45,7 @@ They come with new needs, productions and fitting ornaments.
 - Passenger and Cargo Platforms, Dirt and Concrete tiles
 - Various cargo train variations
 
-## `[Addon] New World Cities (Jakob)`
+## `[Addon] New World Cities`
 
 ![](./doc/nw-cities.jpg)
 
@@ -74,7 +74,7 @@ They come with new needs, productions and fitting ornaments.
 - NW stone pavement + ornaments from all categories
 - Hacienda walls on grass and dirt
 
-## `[Addon] Pescatarians (Jakob)`
+## `[Addon] Pescatarians`
 
 ![](./doc/pescatarians.jpg)
 
@@ -148,29 +148,39 @@ Replaces railroads and NW streets with more fitting textures.
 
 Replaces electric wires and poles with lighter, less distracting models.
 
-## Various Gameplay Mods
+## `[Building] Small Hotels`
 
-- [\[Building\] Nate's Windmill](./mods/power-windmill/README.md)
+![](./doc/hotels.jpg)
+
+Adds hotel skins and new smaller hotels.
+
+### Buildings
+
+- Small Hotel OW, 4 Variants and many skins
+- Small Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+
+### Skins
+
+- Hotel OW
+- Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+
+## `[Building] Nate's Windmill`
 
   Adds a windmill with small range but infinite power.
 
-- [\[Building\] Biogas Production](./mods/power-biogas/README.md)
+## `[Building] Biogas Production`
 
   Adds production to process dung from animal farms into gas.
 
-- [\[Building\] Small Hotels](./mods/residences-hotels/README.md)
-  (separate build icon)
+## `[Building] Commercial Street`
 
-  Adds a small hotel with 4 variations and many skins, as well as skins for the original hotel.
+  Adds small malls and restaurants fitting nicely into engineer and investor blocks.
 
-  Available in the New World when played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
+## `[Gameplay] Alternative Needs`
 
-- [\[Building\] Commercial Street](./mods/service-commercial/README.md)
-  (seprate build icon)
+Adds products from `[Addon] Industrial Cities` and `[Addon] Pescatarians` available as Lifestyle needs as alternatives to some Basic needs.
 
-  Adds small malls and restaurants fitting nicely into engineer and investor blocks. 
-
-- [\[Gameplay\] New World Tourism, Small Monument Base](./foreign-additions/nw-tourism/README.md)
+## `[Gameplay] New World Tourism, Small Monument Base`
 
   10x10 instead of 14x14 base for Christo Redentor from [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
 

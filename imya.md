@@ -1,143 +1,201 @@
-# Jakob's Collection 5.7
+# Jakob's Collection 5.8
 
-New tiers, products, industries and more than 300 new visual assets (custom models, variations, skins, ...).
+New population tiers, products, industries and more than 800 new visual assets (custom models, skins, ...).
 
-## Population Tier Mods
+## `[Addon] Industrial Cities`
 
-![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/population-tiers.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/industrial-cities.jpg)
 
-- **[Addon] Upgradable Workers**
+Terraced houses with skyscraper-like levels for Workers, Artisans.
+They come with new needs, productions and fitting ornaments.
 
-  Adds "skyscraper" levels to workers and artisans with more residents and new needs.
+### Gameplay
 
+- Tiers: 2 Worker tiers, 2 Artisan tiers
 
-- **[Addon] Pescatarians**
+### Buildings
 
-  Adds Old World population new tiers and needs. They provide 1 farmer, 1 worker and 1 artisan per 3 residents.
+- Terraced Worker Houses (2 Levels)
+- Terraced Artisan Houses (2 Levels)
+- Modular Sewing Machine Factory
+- Docklands Gate module (street gate)
+- Small power plants (coal, oil, gas)
+- Fuel pump station (fuel station + oil pump in one building)
 
-- **[Addon\] New World Cities**
+### Productions
 
-  Adds gapless Artista residences.
-  
-  Makes construction buildings (steel beams, windows and concrete) available in the New World.
+- Tea Import Dock, Tea Factory
+- Tools Workshop
+- Suits Factory, Hemp Farm, Linen Maker
+- Canned Fish Factory, Olive Orchard
 
-  Enables `Windmill` and `Small Power Plants` mods in the New World.
+### Ornaments
 
-- **[Shared] Extra Goods]**
+- NW stone pavement + ornaments from all categories
+- Passenger and Cargo Platforms, Dirt and Concrete tiles
+- Various cargo train variations
 
-  Adds production chains for Upgradable Workers and Pescatarians: milk, cheese, olives, canned Fish, (mass produced) suits, tools, ...
+## `[Addon] New World Cities`
 
-## Service Building Variation Mods
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/nw-cities.jpg)
 
-![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/public-variations.jpg)
+Terraced houses for Artistas, construction material production and more electricity options for the New World.
+They come with new needs, productions and fitting ornaments.
 
-- **[Building] New Town Halls**
-  (separate build icon)
+### Gameplay
 
-  Adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
+- Tiers: 2 Artista tiers (terraced, skyscraper)
 
-- **[Building] Commercial Street**
-  (seprate build icon)
+### Buildings
 
-  Adds small malls and restaurants fitting nicely into engineer and investor blocks. 
+- Terraced Artista Houses
+- Artista Skyscrapers
+- Enables `Windmill` and `Industrial Cities` power plants in the New World
 
-- **[Gameplay] New World Tourism, Small Monument Base**
+### Productions
 
-  10x10 instead of 14x14 base for Christo Redentor from **New World Tourism**.
+- NW Steelworks
+- NW Concrete Factory
+- NW Glassmaker
+- NW Window Maker
 
-- **[Module\] Docklands Gate**
-  (Docklands module)
+### Ornaments
 
-  Adds a gate that connects modules across streets to keep atractiveness bonus.
+- NW stone pavement + ornaments from all categories
+- Hacienda walls on grass and dirt
 
-  Available in the New World when played with **New World Docklands**.
-  
-## Industrial Variation Mods
+## `[Addon] Pescatarians`
 
-![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/industrial-variations.jpg)
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/pescatarians.jpg)
 
-- **[Skin] Factory Variants**
-  (Shift+V variations)
+Pescatarians are an alternative OW population.
+Ideally for more farmer workforce with Artisan-looking towns.
 
-  Adds variations to vanilla production buildings.
+### Gameplay
 
-- **[Building] Modular Factories**
-  (separate build icon)
+- Tiers: 2 Pescatarian Tiers all providing 1/3 farmer, 1/3 worker & 1/3 artisan per resident
+- Completely different needs
 
-  Adds factory variants of vanilla productions adjusting their visuals when built in blocks.
+### Buildings
 
-  Tools factory from `[Shared] Extra Goods (Jakob)` is already modular.
+- Pescatarian Residence (2 Tiers)
+- Community Center
+- Music School
 
-## Electricity Mods
+### Productions
 
-![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/electricity.jpg)
+- Vegetable Farm, Kitchen
+- Cheese Dairy, Milk Farm
+- Tools Workshop
+- Suits Factory, Hemp Farm, Linen Maker
+- Canned Fish Factory, Olive Orchard
+- Olive Soap Maker, Olives
 
-- **[Building] Nate's Windmill**
+## `[Building] Diagonal Residences`
+
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/diagonal.jpg)
+
+### Buildings
+
+- Diagonal Engineers: including Vibrant Cities and 4 custom skins
+- Diagonal Investors: including Vibrant Cities and 3 custom skins
+- Narrow Engineers
+- Skins matching jje1000's Red Tile Roof buildings for Engineers
+
+You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
+
+## `[Skin] Everything Skin Pack`
+
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/skin-pack.jpg)
+
+### Skins
+
+- New Town Halls:
+  adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
+- Residence Skins:
+  adds paintbrush skins for Artisans and Engineers (also diagonal).
+  Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
+
+### Shift+V Variants
+
+- Factory Variants:
+  adds Shift+V variations to vanilla production buildings.
+
+## `[Skin] Improved Streets`
+
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/improved-streets.jpg)
+
+Replaces railroads and NW streets with more fitting textures.
+
+### Textures
+
+- More sandy NW stone street
+- Wider railway texture to fit both cities and rural areas
+
+## `[Skin] Improved Electric Wires`
+
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/electric-wires.jpg)
+
+Replaces electric wires and poles with lighter, less distracting models.
+
+## `[Building] Small Hotels`
+
+![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/hotels.jpg)
+
+Adds hotel skins and new smaller hotels.
+
+### Buildings
+
+- Small Hotel OW, 4 Variants and many skins
+- Small Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+
+### Skins
+
+- Hotel OW
+- Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+
+## `[Building] Nate's Windmill`
 
   Adds a windmill with small range but infinite power.
 
-- **[Building\] Small Power Plants**
-
-  Adds coal, oil and gas power plants with reduced cost and coverage.
-
-  Coal power is free when built next to a coal mine.
-
-- **[Building] Biogas Production**
+## `[Building] Biogas Production`
 
   Adds production to process dung from animal farms into gas.
 
-## Residential Variation Mods
+## `[Building] Commercial Street`
 
-![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/residential-variations.jpg)
+  Adds small malls and restaurants fitting nicely into engineer and investor blocks.
 
-- **[Building\] Diagonal Residences**
-  (separate build icon)
+## `[Gameplay] Alternative Needs`
 
-  Adds diagonal Engineer and Investor residences.
+Adds products from `[Addon] Industrial Cities` and `[Addon] Pescatarians` available as Lifestyle needs as alternatives to some Basic needs.
 
-  You might be interested in **jje1000's Diagonal Roads** as well.
+## `[Gameplay] New World Tourism, Small Monument Base`
 
-- **[Building\] Small Hotels**
-  (separate build icon)
+  10x10 instead of 14x14 base for Christo Redentor from [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
 
-  Adds a small hotel with 4 variations and many skins, as well as skins for the original hotel.
+## Changes
 
-  Available in the New World when played with **New World Tourism**.
+## 5.8 - Artista Skyscrapers
 
-- **[Skin] Residence Skins**
-  (paintbrush skins)
+### New Content and Major Changes
 
-  Adds paintbrush skins for Artisans and Engineers (also diagonal).
+- New World Cities, 1.4: Added Artista skyscrapers
+- All mods immediately unlock in creative mode now
+- Combined mods
+  - **Industrial Cities**: combines `Upgradable Workers`, `Modular Factories`, `Extra Goods`, `Small Power Plants`, `Dockland Gates` and `Railway Stations`
+  - **Everything Skin Pack**: combines `New Town Halls`, `Residence Skins` and `Factory Variations`
+  - **Pescatarians**: includes `Extra Goods` now
+  - **Diagonal Residences**: includes jje1000 skins now
+- Industrial Cities, 3.0: Added passengers to T crossing platforms
+- Industrial Cities, 3.0: Added green roof skin for Artisan Terraced Houses
 
-  Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
+### Fixes and Minor Changes
 
-## Improved Streets
-
-![](https://github.com/jakobharder/anno-1800-jakobs-mods/raw/main/doc/streets.jpg)
-  
-- **[Skin] Improved Streets**
-
-  Replaces railroads and NW streets with more fitting textures.
-
-- **[Skin] Improved Electric Wires]**
-
-  Replaces electric wires and poles with lighter, less distracting models.
-
-## 5.7 - Tea Docks and Factory
-
-### New Content and Changes
-
-- Extra Goods, 2.5: Replaced tea production with new tea factory and tea import docks
-- Upgradable Workers, 2.3.7: Slightly increased tea consumption
-- Spanish translations thanks to mfuegar
-
-### Fixes
-
-- New World Cities, 1.3.4: Fixed Terraced Artista roofs at night
-- New World Cities, 1.3.4: Changed Terraced Artista unlock to 300 Artistas
-- Diagonal Residences, 1.5.3: Fixed investors unlocking at game start
-- Alternative Needs, 1.2.1: Buff should be fixed for all sessions and multiplayer now
-- Pescatarians, 2.0.7: Minor translation fixes
+- Updated Spanish and Chinese translations thanks to mfuegar and darknesswei
+- Pescatarians, 2.1: Aligned items/buffs effecting post office with vanilla post office
+- Industrial Cities, 3.0: Fixed unlocks of terraced houses when High Life DLC is not owned
+- Improved loading performance using new modloader10 features
 
 ## Translations
 

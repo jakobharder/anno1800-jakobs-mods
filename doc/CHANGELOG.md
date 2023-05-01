@@ -2,9 +2,9 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## [Unreleased]
+## 5.8 - Artista Skyscrapers
 
-### Changes
+### New Content and Major Changes
 
 - New World Cities, 1.4: Added Artista skyscrapers
 - All mods immediately unlock in creative mode now
@@ -21,7 +21,6 @@ You can simply overwrite older version. The modloader automatically takes the ri
 - Updated Spanish and Chinese translations thanks to mfuegar and darknesswei
 - Pescatarians, 2.1: Aligned items/buffs effecting post office with vanilla post office
 - Industrial Cities, 3.0: Fixed unlocks of terraced houses when High Life DLC is not owned
-- Industrial Cities, 3.0: Added passengers to T crossing platforms
 - Improved loading performance using new [modloader10](https://github.com/jakobharder/anno1800-mod-loader/blob/main/doc/modloader10.md) features
 
 ## 5.7 - Tea Docks and Factory
