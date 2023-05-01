@@ -1,0 +1,7 @@
+variant:
+  source: artista_scraper1.cfg
+  modifications:
+    - xpath-remove: //Config/Models/Config/Materials/Config[Name="t3_roof0"]
+    - xpath-remove: //Config/Models/Config/Materials/Config[Name="t3_roof1"]
+    - xpath: /Config/Models/Config
+      FileName: data\jakob\gapless-artista\rdm\artista_scraper_lvl2_h1_lod0.rdm

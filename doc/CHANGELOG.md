@@ -6,6 +6,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ### Changes
 
+- New World Cities, 1.4: Added Artista skyscrapers
 - All mods immediately unlock in creative mode now
 - Combined mods
   - **Industrial Cities**: combines `Upgradable Workers`, `Modular Factories`, `Extra Goods`, `Small Power Plants`, `Dockland Gates` and `Railway Stations`
