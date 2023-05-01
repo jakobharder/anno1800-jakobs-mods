@@ -1,0 +1,15 @@
+variant:
+  source: artista_scraper6.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name="t3_roof0"]
+      Name: t3_3h
+      cModelMetallicTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_t03_v03_hacienda_metal.psd
+      cModelDiffTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_colony01_tier03_03_hacienda_diff.psd
+      cModelNormalTex: data/dlc12/graphics/buildings/special/hacienda/living_space_module/maps/residence_t03_v03_hacienda_norm.psd
+      NIGHT_GLOW_ENABLED: 1
+      cNightGlowMap: data/dlc12/graphics/buildings/residence/residence_colony01_tier03_03/maps/residence_t03_v03_mask.psd
+      cDiffuseColor.r: 1.30
+      cDiffuseColor.g: 1.05
+      cDiffuseColor.b: 0.90
+    - xpath: /Config/Models/Config
+      FileName: data\jakob\gapless-artista\rdm\artista_scraper_lvl2_h6_lod0.rdm

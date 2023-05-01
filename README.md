@@ -54,11 +54,12 @@ They come with new needs, productions and fitting ornaments.
 
 ### Gameplay
 
-- Tiers: 2 Artista tiers
+- Tiers: 2 Artista tiers (terraced, skyscraper)
 
 ### Buildings
 
-- "Terraced" Artista Houses (1 Level)
+- Terraced Artista Houses
+- Artista Skyscrapers
 - Enables `Windmill` and `Industrial Cities` power plants in the New World
 
 ### Productions

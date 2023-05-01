@@ -8,8 +8,7 @@
 
 - Terraced Artista: residences build in blocks like Engineers and Investors.
   They provide a little extra population.
-
-Use `Alt+F` to go into paintbrush mode.
+- Artista skyscrapers
 
 ### Ornaments
 
@@ -52,6 +51,7 @@ Some buildings are a bit slower than their Old World counterpart.
 ### 1.4
 
 - Immediately unlock in creative mode
+- Added Artista skyscrapers
 
 ### 1.3
 
