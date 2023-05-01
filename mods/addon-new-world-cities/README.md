@@ -8,11 +8,11 @@
 
 - Terraced Artista: residences build in blocks like Engineers and Investors.
   They provide a little extra population.
-- Artista skyscrapers
+- Artista skyscrapers (only with DLC `The High Life`)
 
 ### Ornaments
 
-- Dirt paving: empty tile, Hacienda walls (only with DLC10 `Seeds of Change`)
+- Dirt paving: empty tile, Hacienda walls (only with DLC `Seeds of Change`)
 - Stone paving: empty tile
 
 ### Construction Materials
