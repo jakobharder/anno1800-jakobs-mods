@@ -4,7 +4,7 @@ New population tiers, products, industries and more than 800 new visual assets (
 
 ## Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases)
 
-Be sure either use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) mod manager or know [how to install mods manually](https://github.com/jakobharder/anno1800-mod-loader#mods).
+Either use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) mod manager or know [how to install mods manually](https://github.com/jakobharder/anno1800-mod-loader#mods).
 
 ## Changes
 
