@@ -50,6 +50,7 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.4
 
+- 1.4.3: Fixed Artista skyscraper not unlocking for some
 - 1.4.2: Fixed blurry icons
 - 1.4.1: Fixed compatibility issue with Harbor Life
 - Immediately unlock in creative mode
