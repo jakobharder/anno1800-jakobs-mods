@@ -6,7 +6,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ### 5.8.3
 
-- New World Cities, 1.4.3: Fixed Artista skyscraper not unlocking for some
+- New World Cities, 1.4.3: Various fixes for Artista skyscrapers
 - Updated Spanish translations
 
 ### 5.8.2
