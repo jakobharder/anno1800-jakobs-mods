@@ -79,11 +79,9 @@ Note: the menu has no scroll option. It may not show if you already have too man
 
 ## Changes
 
-### 3.1
-
-
 ### 3.0
 
+- 3.0.1: Fixed blurry icons
 - Immediately unlock in creative mode
 - Merged `Upgradable Workers`, `Modular Factories`, `Dockland Gates` and `Railway Stations` into one mod
 - Added passengers to T crossing platforms

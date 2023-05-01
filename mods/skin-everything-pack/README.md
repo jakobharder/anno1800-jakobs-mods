@@ -52,6 +52,7 @@ Hint: the mod `[Building] Small Hotels (Jakob)` includes skins for hotels.
 - Tourist red roofs
 - Dark roofs
 - Bordeaux roofs
+
 ## Notes
 
 `Shift+V` is blocked on already built buildings.

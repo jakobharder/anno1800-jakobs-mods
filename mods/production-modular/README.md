@@ -15,6 +15,7 @@ Their cost and cycles are adjusted to their changed footprint.
 
 ## Changes
 
+- 1.2.5: Fixed blurry icons
 - 1.2.3: Added item effect pool to avoid double mention of Sewing Machine Factory
 - 1.2: Added Sewing Machines to boostable factories menu
 - 1.2: Added LODs

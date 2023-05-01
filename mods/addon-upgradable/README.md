@@ -56,6 +56,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.4
 
+- 2.4.1: Fixed blurry icons
 - Added green roof skin
 - Immediately unlock in creative mode
 - Included `Modular Factories`, `Dockland Gates` and `Railway Stations` as sub-mods
