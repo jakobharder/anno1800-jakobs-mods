@@ -32,6 +32,7 @@ You find the biogas production in the material menu, and in the gas electricity 
 
 ### 1.6
 
+- 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
 ### 1.5

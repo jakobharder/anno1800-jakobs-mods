@@ -6,6 +6,7 @@ Combines city construction menu icons into categories: tourists, public services
 
 ### 1.2
 
+- 1.2.3: Fixed blurry icons
 - 1.2.2: Updated Chinese translation
 - Added Kurila's harbor guns category (thanks)
 

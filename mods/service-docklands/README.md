@@ -15,6 +15,7 @@ New World Docklands must be loaded first, so best not change the folder names of
 
 ### 1.2
 
+- 1.2.6: Fixed blurry icons
 - 1.2.5: Added to Docklands construction menu
 - 1.2.4: Fixed warnings when used without New World Docklands
 - 1.2.1: New build icon

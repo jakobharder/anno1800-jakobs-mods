@@ -20,6 +20,7 @@ You can still use it though, if you prefer separately buildable town halls.
 
 ### 2.0
 
+- 2.0.1: Fixed blurry icons
 - Converted all town halls to skins
 
 ## Translations

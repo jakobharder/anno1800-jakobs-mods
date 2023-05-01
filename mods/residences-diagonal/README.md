@@ -28,12 +28,13 @@ You might be interested in the following mods as well:
 
 ### 1.6
 
+- 1.6.1: Fixed blurry icons
 - Fixed icons for GU17
 - Immediate unlock in creative mode
 - Skin for jje's red tile roof is now included and automatically shows when needed
 
 ### 1.5
- 
+
 - 1.5.3: Fixed investor unlock
 - 1.5.2: Add missing Lifestyle needs for Investors
 - 1.5.1: Fixed upgrade choosing wrong shape

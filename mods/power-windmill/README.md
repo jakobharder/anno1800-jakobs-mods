@@ -32,6 +32,7 @@ Includes a fix to correct the fan direction of grain mills.
 
 ### 1.6
 
+- 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
 ### Older

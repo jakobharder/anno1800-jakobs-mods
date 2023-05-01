@@ -31,6 +31,7 @@ Note: The buildings do not count as quest objectives.
 
 ### 1.5.3
 
+- 1.5.4: Fixed blurry icons
 - Fixed public services for the Skyline Tower
 
 ### Older

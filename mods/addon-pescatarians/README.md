@@ -49,6 +49,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.1
 
+- 2.1.1: Fixed blurry icons
 - Immediate unlock in creative mode
 - Fixed unlock banner icon
 - Aligned items/buffs effecting post office with vanilla post office
