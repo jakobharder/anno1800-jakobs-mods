@@ -7,6 +7,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 ### 5.8.3
 
 - New World Cities, 1.4.3: Various fixes for Artista skyscrapers
+- Alternative Needs, 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
 - Updated Spanish translations
 
 ### 5.8.2
