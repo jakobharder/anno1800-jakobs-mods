@@ -20,6 +20,7 @@ There is no double consumption.
 
 ### 1.2
 
+- 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
 - 1.2.3: Fixed blurry icons
 - 1.2.2: Internal changes
 - 1.2.1: Another fix for alternative needs buff in other sessions

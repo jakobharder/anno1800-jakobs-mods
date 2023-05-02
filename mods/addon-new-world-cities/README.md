@@ -8,11 +8,11 @@
 
 - Terraced Artista: residences build in blocks like Engineers and Investors.
   They provide a little extra population.
-- Artista skyscrapers
+- Artista skyscrapers (only with DLC `The High Life`)
 
 ### Ornaments
 
-- Dirt paving: empty tile, Hacienda walls (only with DLC10 `Seeds of Change`)
+- Dirt paving: empty tile, Hacienda walls (only with DLC `Seeds of Change`)
 - Stone paving: empty tile
 
 ### Construction Materials
@@ -50,6 +50,11 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.4
 
+- 1.4.3: Fixed Artista skyscraper not unlocking for some
+- 1.4.3: Added fix for NW Tourism to use vanilla New World residences pool
+- 1.4.3: Added skyscraper costs.
+- 1.4.3: Removed concrete, windows and steel cost from limestone quarry
+- 1.4.3: Replaced ore mine / limestone quarry icons
 - 1.4.2: Fixed blurry icons
 - 1.4.1: Fixed compatibility issue with Harbor Life
 - Immediately unlock in creative mode
@@ -57,11 +62,11 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.3
 
-- 1.3.5: technical improvements
-- 1.3.4: change Terraced Artista unlock to 300 Artistas
-- 1.3.4: fix Terraced Artista roofs at night
-- 1.3.3: fix Harborlife compatibility
-- 1.3.2: allow rotation before placing an Artista residence
+- 1.3.5: Technical improvements
+- 1.3.4: Changed Terraced Artista unlock to 300 Artistas
+- 1.3.4: Fixed Terraced Artista roofs at night
+- 1.3.3: Fixed Harborlife compatibility
+- 1.3.2: Allow rotation before placing an Artista residence
 - Added gapless Artista residences with 3 skins
 
 ### 1.2

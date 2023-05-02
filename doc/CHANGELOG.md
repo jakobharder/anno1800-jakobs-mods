@@ -4,6 +4,16 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 5.8 - Artista Skyscrapers
 
+### 5.8.3
+
+- New World Cities, 1.4.3:
+  - Various fixes for Artista skyscrapers
+  - Added fix for New World Tourism to use vanilla New World residences pool
+  - Removed concrete, windows and steel cost from limestone quarry
+  - Replaced ore mine / limestone quarry icons
+- Alternative Needs, 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
+- Updated Spanish translations
+
 ### 5.8.2
 
 - Fixed icons being blurry for some people

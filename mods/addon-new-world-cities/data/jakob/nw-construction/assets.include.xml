@@ -80,19 +80,19 @@
             <Building>1500010700</Building>
             <Tier1>
               <Item>
-                <Building>6080</Building> <!-- smelter -->
+                <Building>6080</Building>
                 <Tier2>
                   <Item>
-                    <Building>1388</Building> <!-- ore -->
+                    <Building>1388</Building>
                     <Tier3>
                       <Item>
-                        <Building>1500010710</Building> <!-- ore -->
+                        <Building>1500010710</Building>
                         <ForceIcon>1500010719</ForceIcon>
                       </Item>
                     </Tier3>
                   </Item>
                   <Item>
-                    <Building>1345</Building> <!-- coal -->
+                    <Building>1345</Building>
                   </Item>
                 </Tier2>
               </Item>
@@ -808,22 +808,23 @@
             <Building>1500010702</Building>
             <Tier1>
               <Item>
-                <Building>1500010711</Building> <!-- cement mine -->
+                <Building>1500010711</Building>
+                <ForceIcon>1500010723</ForceIcon>
               </Item>
               <Item>
-                <Building>6080</Building> <!-- smelter -->
+                <Building>6080</Building>
                 <Tier2>
                   <Item>
-                    <Building>1388</Building> <!-- ore -->
+                    <Building>1388</Building>
                     <Tier3>
                       <Item>
-                        <Building>1500010710</Building> <!-- ore -->
+                        <Building>1500010710</Building>
                         <ForceIcon>1500010719</ForceIcon>
                       </Item>
                     </Tier3>
                   </Item>
                   <Item>
-                    <Building>1345</Building> <!-- coal -->
+                    <Building>1345</Building>
                   </Item>
                 </Tier2>
               </Item>
@@ -837,8 +838,18 @@
         <Values>
           <Standard>
             <GUID>1500010719</GUID>
-            <Name>Gold Ore Icon</Name>
-            <IconFilename>data/ui/2kimages/main/3dicons/icon_gold_ore.png</IconFilename>
+            <Name>Ore on Gold Icon</Name>
+            <IconFilename>data/ui/jakob/icon_ore_on_gold.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010723</GUID>
+            <Name>Cement on Clay Icon</Name>
+            <IconFilename>data/ui/jakob/icon_cement_on_clay.png</IconFilename>
           </Standard>
         </Values>
       </Asset>
@@ -860,26 +871,15 @@
             <Costs>
               <Item>
                 <Ingredient>1010017</Ingredient>
-                <Amount>6000</Amount>
+                <Amount>12000</Amount>
               </Item>
               <Item>
                 <Ingredient>1010196</Ingredient>
-                <Amount>8</Amount>
+                <Amount>6</Amount>
               </Item>
               <Item>
                 <Ingredient>1010205</Ingredient>
-                <Amount>15</Amount>
-              </Item>
-              <Item>
-                <Ingredient>1010218</Ingredient>
-                <Amount>12</Amount>
-              </Item>
-              <Item>
-                <Ingredient>1010207</Ingredient>
-                <Amount>10</Amount>
-              </Item>
-              <Item>
-                <Ingredient>1010202</Ingredient>
+                <Amount>6</Amount>
               </Item>
             </Costs>
           </Cost>

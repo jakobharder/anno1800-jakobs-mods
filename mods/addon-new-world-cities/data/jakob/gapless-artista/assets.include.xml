@@ -16,7 +16,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Values>
         <Standard>
           <GUID>1500011044</GUID>
-          <Name>Tier 3 Scraper</Name>
+          <Name>Terraced Artista Houses</Name>
           <IconFilename>data\jakob\gapless-artista\icon_residence.png</IconFilename>
           <InfoDescription>163059</InfoDescription>
         </Standard>
@@ -279,7 +279,28 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <Upgradable>
           <CurrentTier>3</CurrentTier>
           <NextGUID>1500011090</NextGUID>
-          <UpgradeCost />
+          <UpgradeCost>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010205</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010218</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010207</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>838</Ingredient>
+          <Amount>1</Amount>
+        </Item>
+      </UpgradeCost>
         </Upgradable>
         <SoundEmitter>
           <BuildingRepaired>
@@ -384,7 +405,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Values>
         <Standard>
           <GUID>1500011090</GUID>
-          <Name>Tier 3 Scraper Level 2</Name>
+          <Name>Artista Skyscraper</Name>
           <IconFilename>data\jakob\gapless-artista\icon_residence.png</IconFilename>
         </Standard>
         <Cost>
@@ -607,11 +628,17 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     <Item>
       <Building>1500011044</Building>
     </Item>
+    <Item>
+      <Building>1500011090</Building>
+    </Item>
   </ModOp>
   <!-- add to neighbor feature -->
   <ModOp GUID='7233' Type='add' Path='/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule'>
     <Item>
       <Building>1500011044</Building>
+    </Item>
+    <Item>
+      <Building>1500011090</Building>
     </Item>
   </ModOp>
 
@@ -692,10 +719,16 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     <Item>
       <GUID>1500011044</GUID>
     </Item>
+    <Item>
+      <GUID>1500011090</GUID>
+    </Item>
   </ModOp>
   <ModOp GUID="7728" Type="add" Path="/Values/ItemEffect/EffectTargets">
     <Item>
       <GUID>1500011044</GUID>
+    </Item>
+    <Item>
+      <GUID>1500011090</GUID>
     </Item>
   </ModOp>
   <ModOp GUID="105127" Type="add" Path="/Values/PlayerCounterContextPool/Contexts">
@@ -884,7 +917,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011009</GUID>
+          <GUID>1500011014</GUID>
+          <!-- <GUID>1500011009</GUID> -->
+          <!-- <GUID>1500011008</GUID> -->
           <Name>@ 300 Artista</Name>
         </Standard>
         <Trigger>
