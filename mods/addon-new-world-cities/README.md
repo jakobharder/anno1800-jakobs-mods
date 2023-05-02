@@ -50,6 +50,7 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.4
 
+- 1.4.3: Removed concrete, windows and steel cost from limestone quarry
 - 1.4.3: Added fix for NW Tourism to use vanilla New World residences pool
 - 1.4.3: Fixed Artista skyscraper not unlocking for some
 - 1.4.3: Added skyscraper costs.
