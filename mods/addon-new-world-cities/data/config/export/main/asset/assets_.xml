@@ -8,4 +8,12 @@
       <NextGUID>0</NextGUID>
     </Upgradable>
   </ModOp>
+
+  <!-- # NW Tourism Fix -->
+  <ModOp Type="replace" AllowNoMatch="1"
+    Path="//ItemEffect/EffectTargets/Item[GUID='1440134394']">
+    <Item>
+      <GUID>25677</GUID>
+    </Item>
+  </ModOp>
 </ModOps>

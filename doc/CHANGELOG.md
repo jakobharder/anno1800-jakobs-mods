@@ -6,7 +6,9 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ### 5.8.3
 
-- New World Cities, 1.4.3: Various fixes for Artista skyscrapers
+- New World Cities, 1.4.3:
+  - Various fixes for Artista skyscrapers
+  - Added fix for New World Tourism to use vanilla New World residences pool
 - Alternative Needs, 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
 - Updated Spanish translations
 
