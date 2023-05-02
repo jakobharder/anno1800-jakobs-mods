@@ -10,6 +10,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Various fixes for Artista skyscrapers
   - Added fix for New World Tourism to use vanilla New World residences pool
   - Removed concrete, windows and steel cost from limestone quarry
+  - Replaced ore mine / limestone quarry icons
 - Alternative Needs, 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
 - Updated Spanish translations
 
