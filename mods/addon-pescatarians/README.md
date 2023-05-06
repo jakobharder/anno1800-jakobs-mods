@@ -49,6 +49,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.1
 
+- 2.1.3: Fixed missing unlock for Olive Soap build menu
 - 2.1.2: Updated Spanish translations
 - 2.1.1: Fixed blurry icons
 - Immediate unlock in creative mode
