@@ -148,7 +148,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 - Pescatarians, 2.0.3, Fixed missing skin icons
 - Improved Chinese translations (across several mods)
 
-## 5.1.2 - Railways, NW Streets and Ornaments
+## 5.1 - Railways, NW Streets and Ornaments
 
 ### New Content
 
@@ -167,13 +167,13 @@ You can simply overwrite older version. The modloader automatically takes the ri
 - Extra Goods: Alternative Need buff is shown in residences now
 - Minor localization updates
 
-## 5.0.2
+## 5 - Pescatarians v2 and Alternative Needs
+
+### 5.0.2
 
 - Fixed AI not progression past farmers when playing Pescatarians
 - Fixed crash when selecting Commercial Street Warehouse
 - Fixed Modular Sewing Machines unlocked too early
-
-## 5 - Pescatarians v2 and Alternative Needs
 
 Please delete all previous mods from this collection, or use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) to install.
 
