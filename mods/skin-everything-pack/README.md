@@ -57,3 +57,11 @@ Hint: the mod `[Building] Small Hotels (Jakob)` includes skins for hotels.
 
 `Shift+V` is blocked on already built buildings.
 You can either change the variation before you build it, or pick it up again and change then.
+
+Thanks to DrD_AVEL for the translations!
+
+## Changes
+
+### 1.0
+
+- 1.0.1: Russian translation

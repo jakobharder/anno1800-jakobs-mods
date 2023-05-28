@@ -31,6 +31,7 @@ Note: The buildings do not count as quest objectives.
 
 ### 1.5.3
 
+- 1.5.5: Russian translation
 - 1.5.4: Fixed blurry icons
 - Fixed public services for the Skyline Tower
 
@@ -50,6 +51,6 @@ Note: The buildings do not count as quest objectives.
 
 Available: Chinese, French, English, German, Korean, Polish, Spanish
 
-Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar for tranlsations!
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for tranlsations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

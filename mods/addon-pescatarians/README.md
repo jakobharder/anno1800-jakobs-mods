@@ -49,6 +49,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.1
 
+- 2.1.3: Russian translation
 - 2.1.3: Fixed missing unlock for Olive Soap build menu
 - 2.1.2: Updated Spanish translations
 - 2.1.1: Fixed blurry icons
@@ -84,6 +85,6 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 Available: Chinese, English, French, German, Korean, Polish, Russian, Spanish
 
-Thanks to @m_belonosov, redzmey1, MSHS, @Petritant, HeroOfOlympus, Aveneger432, darknesswei, mfuegar for translations
+Thanks to @m_belonosov, redzmey1, MSHS, @Petritant, HeroOfOlympus, Aveneger432, darknesswei, mfuegar, DrD_AVEL for the translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

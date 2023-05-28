@@ -28,6 +28,7 @@ You might be interested in the following mods as well:
 
 ### 1.6
 
+- 1.6.3: Russian translation
 - 1.6.2: Updated Spanish translations
 - 1.6.1: Fixed blurry icons
 - Fixed icons for GU17
@@ -52,4 +53,4 @@ You might be interested in the following mods as well:
 
 Available: Chinese, French, English, German, Polish, Spanish
 
-Thanks go to Aveneger432, HeroOfOlympus, darknesswei, Tonton Yip, mfuegar for translations!
+Thanks go to Aveneger432, HeroOfOlympus, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!

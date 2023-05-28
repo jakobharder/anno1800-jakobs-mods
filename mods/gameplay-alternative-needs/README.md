@@ -20,6 +20,7 @@ There is no double consumption.
 
 ### 1.2
 
+- 1.2.5: Russian translation
 - 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
 - 1.2.3: Fixed blurry icons
 - 1.2.2: Internal changes
@@ -39,4 +40,4 @@ There is no double consumption.
 
 Available: Chinese, French, English, German, Polish, Russian, Spanish
 
-Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar for translations!
+Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL for the translations!

@@ -15,6 +15,7 @@ New World Docklands must be loaded first, so best not change the folder names of
 
 ### 1.2
 
+- 1.2.7: Russian translation
 - 1.2.6: Fixed blurry icons
 - 1.2.5: Added to Docklands construction menu
 - 1.2.4: Fixed warnings when used without New World Docklands
@@ -28,6 +29,6 @@ New World Docklands must be loaded first, so best not change the folder names of
 
 Available: Chinese, French, English, German, Polish, Spanish
 
-Thanks to Tonton Yip, mfuegar for translations!
+Thanks to Tonton Yip, mfuegar, DrD_AVEL for the translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

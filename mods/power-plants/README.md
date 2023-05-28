@@ -31,6 +31,7 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 ### 2.9
 
+- 2.9.2: Russian translation
 - 2.9.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
@@ -48,6 +49,6 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 Available: Chinese, French, English, German, Korean, Polish, Spanish
 
-Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar for tranlsations!
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for tranlsations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)
