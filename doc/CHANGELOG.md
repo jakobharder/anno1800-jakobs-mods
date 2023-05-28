@@ -4,6 +4,19 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 5.8 - Artista Skyscrapers
 
+### [Unreleased]
+
+- Pescatarians, 2.1.3:
+  - Fixed missing unlock for Olive Soap
+  - Fixed disappearing Fish Cannery when played with  `Cattle needs to be butchered`
+  - Olive fields now work with Taludas' `Free Farmfield Placement`.
+  - Cheese unlocks ealier at 1 Artisans now (new game only)
+- Industrial Cities, 3.0.2:
+  - Fixed disappearing Fish Cannery when played with  `Cattle needs to be butchered`
+  - Olive fields now work with Taludas' `Free Farmfield Placement`.
+- Smaller NW Tourism Monument, 1.0.2: Fixed potential loading order issue
+- Updated Russian translations
+
 ### 5.8.3
 
 - New World Cities, 1.4.3:

@@ -200,7 +200,7 @@ Available: English, German, (Russian, Korean, French, Polish, Spanish, Chinese).
 
 ## Special Thanks
 
-- m_belonosov, redzmey1 for Russian translations
+- m_belonosov, redzmey1, DrD_AVEL for Russian translations
 - MSHS for Korean translations
 - Tonton Yip, Petritant for French translations
 - HeroOfOlympus, Aveneger432 for Polish translations
