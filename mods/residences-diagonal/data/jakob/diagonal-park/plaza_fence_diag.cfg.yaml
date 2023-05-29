@@ -1,0 +1,6 @@
+variant:
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\graphics\buildings\ornamental\cultural_props_system\cultural_props_system_1x1_system\cultural_props_1x1_05.cfg
+  modifications:
+    - xpath: //Config/Files/Config
+      FileName: data\jakob\diagonal-park\fence_diag.cfg
