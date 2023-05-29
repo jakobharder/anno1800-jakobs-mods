@@ -1,8 +1,11 @@
 variant:
-  # needs annoRda variable set in vscode settings
-  source: ${annoRda}\data\graphics\buildings\ornamental\park_props_system\park_props_system_1x1\park_props_system_1x1_29.cfg
+  source: ./path_end.cfg
   modifications:
-    - xpath: //Config/Decals/Config/Materials/Config
+    - xpath: //Config/Decals/Config/Materials/Config[Name="bright"]
       cModelDiffTex: data\jakob\diagonal-park\maps\path_diag_diff.psd
+      NORMAL_ENABLED: 0
+      METALLIC_TEX_ENABLED: 0
+    - xpath: //Config/Decals/Config/Materials/Config[Name="dark"]
+      cModelDiffTex: data\jakob\diagonal-park\maps\path_diag_dark_diff.psd
       NORMAL_ENABLED: 0
       METALLIC_TEX_ENABLED: 0
