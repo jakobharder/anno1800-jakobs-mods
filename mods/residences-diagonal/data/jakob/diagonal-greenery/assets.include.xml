@@ -13,20 +13,22 @@
     </Item>
   </ModOp> -->
 
-  <ModOp Type="merge" GUID="1500010224" Path="/Values/Object">
-    <Skins>
-      <DefaultSkinName>23852</DefaultSkinName>
-      <DefaultSkinDescription>23853</DefaultSkinDescription>
-      <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
-    </Skins>
-  </ModOp>
-  <ModOp Type="add" GUID="1500010224" Path="/Values/Object/Skins">
-    <SkinList>
-      <Item>
-        <SkinAssetGuid>1500010434</SkinAssetGuid>
-      </Item>
-    </SkinList>
-  </ModOp>
+  <Group Condition="@1500010224">
+    <ModOp Type="merge" GUID="1500010224" Path="/Values/Object">
+      <Skins>
+        <DefaultSkinName>23852</DefaultSkinName>
+        <DefaultSkinDescription>23853</DefaultSkinDescription>
+        <DefaultSkinCategoryName>7312</DefaultSkinCategoryName>
+      </Skins>
+    </ModOp>
+    <ModOp Type="add" GUID="1500010224" Path="/Values/Object/Skins">
+      <SkinList>
+        <Item>
+          <SkinAssetGuid>1500010434</SkinAssetGuid>
+        </Item>
+      </SkinList>
+    </ModOp>
+  </Group>
 
   <!-- # Stone Plaza -->
   <ModOp Type="addNextSibling" GUID="119">
