@@ -26,6 +26,11 @@ You might be interested in the following mods as well:
 
 ## Changes
 
+### 1.7
+
+- Added greenery wall with diagonal skin
+- Added corner variations skins to fences, park paths
+
 ### 1.6
 
 - 1.6.3: Russian translation

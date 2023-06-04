@@ -2,9 +2,13 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## 5.8 - Artista Skyscrapers
+## [Unreleased] - Corner Variation Skins
 
-### [Unreleased]
+### New Content
+
+- Diagonal Residences, 1.7: Added diagonal and other corner variations for enclosed greenery, fences and park paths.
+
+### Fixes and Minor Changes
 
 - Pescatarians, 2.1.3:
   - Fixed missing unlock for Olive Soap
@@ -16,6 +20,8 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Olive fields now work with Taludas' `Free Farmfield Placement`.
 - Smaller NW Tourism Monument, 1.0.2: Fixed potential loading order issue
 - Updated Russian translations
+
+## 5.8 - Artista Skyscrapers
 
 ### 5.8.3
 
