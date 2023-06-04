@@ -22,6 +22,7 @@ You can either change the variation before you build it, or pick it up again and
 
 ### 1.3
 
+- 1.3.2: Russian translation
 - 1.3.1: Updated Spanish translations
 - Changed concrete pavement Shift+G to skin
 
@@ -33,3 +34,9 @@ You can either change the variation before you build it, or pick it up again and
 ### 1.1
 
 - Added bakery variations
+
+## Translations
+
+Thanks to DrD_AVEL for the translations!
+
+[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

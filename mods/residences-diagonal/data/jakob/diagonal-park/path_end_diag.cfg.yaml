@@ -1,0 +1,11 @@
+variant:
+  source: ./path_end.cfg
+  modifications:
+    - xpath: //Config/Decals/Config/Materials/Config[Name="bright"]
+      cModelDiffTex: data\jakob\diagonal-park\maps\path_end_diag_diff.psd
+      NORMAL_ENABLED: 0
+      METALLIC_TEX_ENABLED: 0
+    - xpath: //Config/Decals/Config/Materials/Config[Name="dark"]
+      cModelDiffTex: data\jakob\diagonal-park\maps\path_end_diag_dark_diff.psd
+      NORMAL_ENABLED: 0
+      METALLIC_TEX_ENABLED: 0

@@ -32,6 +32,7 @@ You find the biogas production in the material menu, and in the gas electricity 
 
 ### 1.6
 
+- 1.6.2: Russian translation
 - 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
@@ -43,6 +44,6 @@ You find the biogas production in the material menu, and in the gas electricity 
 
 Available: Chinese, French, English, German, Korean, Polish, Spanish
 
-Thanks to darknesswei, Tonton Yip for, mfuegar translations!
+Thanks to darknesswei, Tonton Yip for, mfuegar, DrD_AVEL translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

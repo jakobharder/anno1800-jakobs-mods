@@ -20,6 +20,7 @@ You can still use it though, if you prefer separately buildable town halls.
 
 ### 2.0
 
+- 2.0.2: Russian translation
 - 2.0.1: Fixed blurry icons
 - Converted all town halls to skins
 
@@ -27,6 +28,6 @@ You can still use it though, if you prefer separately buildable town halls.
 
 Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
 
-Thanks to mfuegar for translations!
+Thanks to mfuegar, DrD_AVEL for the translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

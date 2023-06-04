@@ -50,6 +50,7 @@ Some buildings are a bit slower than their Old World counterpart.
 
 ### 1.4
 
+- 1.4.4: Russian translation
 - 1.4.3: Fixed Artista skyscraper not unlocking for some
 - 1.4.3: Added fix for NW Tourism to use vanilla New World residences pool
 - 1.4.3: Added skyscraper costs.
@@ -84,6 +85,6 @@ Some buildings are a bit slower than their Old World counterpart.
 
 Available: Chinese, English, German, Polish, Spanish
 
-Thanks go to HeroOfOlympus, darknesswei, mfuegar for translations
+Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

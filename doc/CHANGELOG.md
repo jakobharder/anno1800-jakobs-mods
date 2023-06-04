@@ -2,6 +2,26 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## 5.9 - Corner Variation Skins
+
+### New Content
+
+- Diagonal Residences, 1.7: Added diagonal and other corner variations for enclosed greenery, fences and park paths.
+
+### Fixes and Minor Changes
+
+- Pescatarians, 2.1.3:
+  - Fixed missing unlock for Olive Soap
+  - Fixed disappearing Fish Cannery when played with  `Cattle needs to be butchered`
+  - Olive fields now work with Taludas' `Free Farmfield Placement`.
+  - Cheese unlocks ealier at 1 Artisans now (new game only)
+- Industrial Cities, 3.0.2:
+  - Fixed disappearing Fish Cannery when played with  `Cattle needs to be butchered`
+  - Olive fields now work with Taludas' `Free Farmfield Placement`.
+- Commercial Street, 1.5.6: Removed from Tourists construction menu
+- Smaller NW Tourism Monument, 1.0.2: Fixed potential loading order issue
+- Updated Russian and Chinese translations
+
 ## 5.8 - Artista Skyscrapers
 
 ### 5.8.3
@@ -148,7 +168,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 - Pescatarians, 2.0.3, Fixed missing skin icons
 - Improved Chinese translations (across several mods)
 
-## 5.1.2 - Railways, NW Streets and Ornaments
+## 5.1 - Railways, NW Streets and Ornaments
 
 ### New Content
 
@@ -167,13 +187,13 @@ You can simply overwrite older version. The modloader automatically takes the ri
 - Extra Goods: Alternative Need buff is shown in residences now
 - Minor localization updates
 
-## 5.0.2
+## 5 - Pescatarians v2 and Alternative Needs
+
+### 5.0.2
 
 - Fixed AI not progression past farmers when playing Pescatarians
 - Fixed crash when selecting Commercial Street Warehouse
 - Fixed Modular Sewing Machines unlocked too early
-
-## 5 - Pescatarians v2 and Alternative Needs
 
 Please delete all previous mods from this collection, or use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) to install.
 

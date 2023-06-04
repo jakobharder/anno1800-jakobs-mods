@@ -56,6 +56,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.4
 
+- 2.4.3: Russian translation
 - 2.4.2: Updated Spanish translations
 - 2.4.1: Fixed blurry icons
 - Added green roof skin
@@ -88,6 +89,6 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 Available: all
 
-Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar for translations!
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

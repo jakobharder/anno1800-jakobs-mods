@@ -1,4 +1,4 @@
-# Jakob's Collection 5.8
+# Jakob's Collection 5.9
 
 New population tiers, products, industries and more than 800 new visual assets (custom models, skins, ...).
 
@@ -176,26 +176,25 @@ Adds products from `[Addon] Industrial Cities` and `[Addon] Pescatarians` availa
 
 ## Changes
 
-## 5.8 - Artista Skyscrapers
+## 5.9 - Corner Variation Skins
 
-### New Content and Major Changes
+### New Content
 
-- New World Cities, 1.4: Added Artista skyscrapers
-- All mods immediately unlock in creative mode now
-- Combined mods
-  - **Industrial Cities**: combines `Upgradable Workers`, `Modular Factories`, `Extra Goods`, `Small Power Plants`, `Dockland Gates` and `Railway Stations`
-  - **Everything Skin Pack**: combines `New Town Halls`, `Residence Skins` and `Factory Variations`
-  - **Pescatarians**: includes `Extra Goods` now
-  - **Diagonal Residences**: includes jje1000 skins now
-- Industrial Cities, 3.0: Added passengers to T crossing platforms
-- Industrial Cities, 3.0: Added green roof skin for Artisan Terraced Houses
+- Diagonal Residences, 1.7: Added diagonal and other corner variations for enclosed greenery, fences and park paths.
 
 ### Fixes and Minor Changes
 
-- Updated Spanish and Chinese translations thanks to mfuegar and darknesswei
-- Pescatarians, 2.1: Aligned items/buffs effecting post office with vanilla post office
-- Industrial Cities, 3.0: Fixed unlocks of terraced houses when High Life DLC is not owned
-- Improved loading performance using new modloader10 features
+- Pescatarians, 2.1.3:
+  - Fixed missing unlock for Olive Soap
+  - Fixed disappearing Fish Cannery when played with  `Cattle needs to be butchered`
+  - Olive fields now work with Taludas' `Free Farmfield Placement`.
+  - Cheese unlocks ealier at 1 Artisans now (new game only)
+- Industrial Cities, 3.0.2:
+  - Fixed disappearing Fish Cannery when played with  `Cattle needs to be butchered`
+  - Olive fields now work with Taludas' `Free Farmfield Placement`.
+- Commercial Street, 1.5.6: Removed from Tourists construction menu
+- Smaller NW Tourism Monument, 1.0.2: Fixed potential loading order issue
+- Updated Russian and Chinese translations
 
 ## Translations
 

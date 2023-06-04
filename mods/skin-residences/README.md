@@ -41,6 +41,7 @@ Hint: the mod `[Building] Small Hotels (Jakob)` includes skins for hotels.
 
 ### 1.3
 
+- 1.3.4: Russian translation
 - Added Investor skins with colored roofs
 - Added Obrero skin with white walls
 
@@ -48,4 +49,4 @@ Hint: the mod `[Building] Small Hotels (Jakob)` includes skins for hotels.
 
 Available: Chinese, French, English, German, Polish, Spanish
 
-Thanks to Aveneger432, darknesswei, Tonton Yip, mfuegar for translations!
+Thanks to Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!

@@ -81,6 +81,7 @@ Note: the menu has no scroll option. It may not show if you already have too man
 
 ### 3.0
 
+- 3.0.2: Russian translation
 - 3.0.1: Fixed blurry icons
 - Immediately unlock in creative mode
 - Merged `Upgradable Workers`, `Modular Factories`, `Dockland Gates` and `Railway Stations` into one mod
@@ -93,6 +94,6 @@ Note: the menu has no scroll option. It may not show if you already have too man
 
 Available: all
 
-Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar for translations!
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

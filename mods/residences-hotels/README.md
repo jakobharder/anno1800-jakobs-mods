@@ -22,6 +22,7 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ### 1.5
 
+- 1.5.2: Russian translation
 - 1.5.1: Fixed blurry icons
 - Immediate unlock in creative mode
 - Fix missing hotel skins
@@ -45,6 +46,6 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 Available: Chinese, French, English, German, Japanese, Polish, Spanish
 
-Thanks to Aveneger432, darknesswei, Tonton Yip, mfuegar for tranlsations
+Thanks to Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for tranlsations
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

@@ -15,6 +15,7 @@ Their cost and cycles are adjusted to their changed footprint.
 
 ## Changes
 
+- 1.2.6: Russian translation
 - 1.2.5: Fixed blurry icons
 - 1.2.3: Added item effect pool to avoid double mention of Sewing Machine Factory
 - 1.2: Added Sewing Machines to boostable factories menu
@@ -25,4 +26,4 @@ Their cost and cycles are adjusted to their changed footprint.
 
 Available: Chinese, French, English, German, Japanese, Polish, Spanish
 
-Thanks to HeroOfOlympus, darknesswei, Tonton Yip, mfuegar for translations!
+Thanks to HeroOfOlympus, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!
