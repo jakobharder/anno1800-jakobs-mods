@@ -2,7 +2,7 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## [Unreleased] - Corner Variation Skins
+## 5.9 - Corner Variation Skins
 
 ### New Content
 

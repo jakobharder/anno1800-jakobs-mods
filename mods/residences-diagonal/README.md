@@ -4,6 +4,9 @@
 
 ## Buildings
 
+Use Shift+V to cycle through variations before you place it.
+You need to relocate if you want to change an existing building.
+
 ### Residences
 
 - Diagonal Engineers: including Vibrant Cities and 4 custom skins
@@ -11,14 +14,19 @@
 - Narrow Engineers
 - Skins matching jje's Red Tile Roof buildings for Engineers
 
-Use Shift+V to cycle through variations before you place it.
-You need to relocate if you want to change an existing building.
+### Ornaments
 
-You might be interested in the following mods as well: 
+- Diagonal Enclosed Greenery on plaza and stone pavement
+- Skins with diagonal and other corner variations for fences and park paths
+
+## Notes
+
+You might be interested in the following mods as well:
 - [Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) - diagonal pavement and fence ornaments
+- [Diagonal Hedges as Skins](https://www.nexusmods.com/anno1800/mods/589) - makes above fence ornaments available as skins
 - `[Ornamental] Plaza street` from [Spice it Up](https://www.nexusmods.com/anno1800/mods/5) - plaza tiles with street connection
 
-## Known Issues
+Known issues:
 
 - People can go into a corners of the buildings in some situations.
   There is an ornament included to place on diagonal endings to prevent such glitches.
