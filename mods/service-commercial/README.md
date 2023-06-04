@@ -29,8 +29,10 @@ Note: The buildings do not count as quest objectives.
 
 ## Changes
 
-### 1.5.3
+### 1.5
 
+- 1.5.6: Removed Tourist menu entry
+- 1.5.6: Updated Chinese translation
 - 1.5.5: Russian translation
 - 1.5.4: Fixed blurry icons
 - Fixed public services for the Skyline Tower
