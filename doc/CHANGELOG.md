@@ -4,6 +4,10 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 5.9 - Corner Variation Skins
 
+### 5.9.1
+
+- Pescatarians, 2.1.4: Fixed missing vegetable farms
+
 ### New Content
 
 - Diagonal Residences, 1.7: Added diagonal and other corner variations for enclosed greenery, fences and park paths.

@@ -112,6 +112,11 @@ Ideally for more farmer workforce with Artisan-looking towns.
 - Narrow Engineers
 - Skins matching jje1000's Red Tile Roof buildings for Engineers
 
+### Ornaments
+
+- Diagonal Enclosed Greenery on plaza and stone pavement
+- Skins with diagonal and other corner variations for fences and park paths
+
 You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
 
 ## `[Skin] Everything Skin Pack`
