@@ -9,7 +9,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <!-- # Includes -->
   <Include File="/data/jakob/fuel_pump_station/assets.include.xml" />
   <Include File="/data/jakob/small_gas_power_plant/assets.include.xml" />
-  <Include File="./pool_oil_powerplants.include.xml" />
 
   <!-- # OW Power Plants -->
   <ModOp Type="addNextSibling" GUID="117547">
@@ -414,6 +413,17 @@ GUIDs: https://github.com/anno-mods/GuidRanges
 
   <!-- # Buff Target Pools -->
   <!-- =================== -->
+
+  <!-- add to all oil powerplants -->
+  <ModOp Type="add" GUID="1500300910"
+    Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010033</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010459</GUID>
+    </Item>
+  </ModOp>
 
   <!-- add to maintenance, production, public, power plants -->
   <ModOp Type="add" GUID='368,6000018,190136,193864' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">

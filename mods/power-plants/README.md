@@ -31,6 +31,7 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 ### 2.9
 
+- 2.9.3: Fixed missing ground texture of the oil power plant
 - 2.9.2: Russian translation
 - 2.9.1: Fixed blurry icons
 - Immediately unlock in creative mode

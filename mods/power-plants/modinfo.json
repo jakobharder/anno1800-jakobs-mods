@@ -1,8 +1,12 @@
 {
   "out": "${annoMods}/[Addon] Industrial Cities (Jakob)/${modName}",
-  "Version": "2.9.2",
+  "Version": "2.9.3",
   "ModID": "jakob_Small_Gas_Power_Plant",
-  "DeprecateIds": [
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v4/shared-pools-and-definitions.zip"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
   ],
   "Category": {
     "English": "Building"
