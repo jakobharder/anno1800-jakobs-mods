@@ -2,6 +2,12 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+- Industrial Cities, 3.0.3:
+  - Fixed missing ground texture of the oil power plant
+  - Coal power plant doesn't drop buff icon anymore
+
 ## 5.9 - Corner Variation Skins
 
 ### 5.9.1

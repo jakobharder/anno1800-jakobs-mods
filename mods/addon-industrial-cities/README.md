@@ -81,6 +81,8 @@ Note: the menu has no scroll option. It may not show if you already have too man
 
 ### 3.0
 
+- 3.0.3: Fixed missing ground texture of the oil power plant
+- 3.0.3: Coal power plant doesn't drop buff icon anymore
 - 3.0.2: Russian translation
 - 3.0.1: Fixed blurry icons
 - Immediately unlock in creative mode

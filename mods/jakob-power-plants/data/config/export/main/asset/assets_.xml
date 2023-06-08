@@ -122,7 +122,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       </Values>
     </Asset>
     <Asset>
-      <Template>JakobCoalPowerplant</Template>
+      <Template>PowerplantBuilding</Template>
       <Values>
         <Standard>
           <GUID>1500010035</GUID>
@@ -268,17 +268,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <FullSatisfactionDistance>21</FullSatisfactionDistance>
           <NoSatisfactionDistance>21</NoSatisfactionDistance>
         </PublicService>
-        <ItemContainer>
-          <SocketCount>2</SocketCount>
-          <SocketAllocation>RadiusBuilding;GuildHouse</SocketAllocation>
-          <SocketScope>Radius</SocketScope>
-          <SocketScopeRadius>6</SocketScopeRadius>
-          <InitSocketItems>
-            <Item>
-              <Item>1500010034</Item>
-            </Item>
-          </InitSocketItems>
-        </ItemContainer>
       </Values>
     </Asset>
     <Asset>
@@ -411,8 +400,77 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     </Asset>
   </ModOp>
 
-  <!-- # Buff Target Pools -->
+  <!-- # Buffs -->
   <!-- =================== -->
+
+  <ModOp Type="addNextSibling" GUID="119">
+  <Asset>
+      <!--
+        Global action buffs will only be applied to discovered regions.
+        Registering the trigger with AlwaysTrue has unwanted side effects.
+        The only way to ensure other regions are covered is by repeating the trigger once entered.
+        Note: buff needs to be removed first (AddBuff=0), otherwise it won't refresh.
+      -->
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011187</GUID>
+          <Name>Add Coal Buff to newly entered session</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionEvent</Template>
+            <Values>
+              <Condition />
+              <ConditionEvent>
+                <ConditionEvent>SessionEnter</ConditionEvent>
+              </ConditionEvent>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500010034</BuffAsset>
+                    <AddBuff>0</AddBuff>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500010034</BuffAsset>
+                    <AddBuff>1</AddBuff>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500011187</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
 
   <!-- add to all oil powerplants -->
   <ModOp Type="add" GUID="1500300910"
