@@ -4,7 +4,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 5.9 - Corner Variation Skins
 
-### 5.9.2
+### 5.9.3
 
 - Industrial Cities, 3.0.3:
   - Fixed missing ground texture of the oil power plant
