@@ -20,6 +20,7 @@ There is no double consumption.
 
 ### 1.2
 
+- 1.2.6: Made tea icon more distinguishable
 - 1.2.5: Russian translation
 - 1.2.4: Load mod last to avoid conflicts with mods overwriting full menu entries
 - 1.2.3: Fixed blurry icons

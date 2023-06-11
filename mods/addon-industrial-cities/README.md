@@ -50,6 +50,15 @@ All products can also be imported through Docklands.
 - Tea Importer: Imported Tea
 - Tea Factory: Tea from Imported Tea
 
+### Power Plants
+
+- Coal Power Plant with bonus when built next too coal mines (OW only)
+- Small Oil Power Plant (OW / NW*)
+- Small Gas Power Plant (OW / NW*)
+- Fuel Station with integrated oil pump (OW / NW)
+
+(*) Oil and Gas power plants are available in the NW when played together with `[Addon] New World Cities`.
+
 ### Modular Factories
 
 - Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
@@ -81,6 +90,8 @@ Note: the menu has no scroll option. It may not show if you already have too man
 
 ### 3.0
 
+- 3.0.3: Fixed missing ground texture of the oil power plant
+- 3.0.3: Coal power plant doesn't drop buff icon anymore
 - 3.0.2: Russian translation
 - 3.0.1: Fixed blurry icons
 - Immediately unlock in creative mode

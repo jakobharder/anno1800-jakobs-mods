@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500010401</GUID>
           <Name>Diagonal Engineer Residence</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_engineers.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_diagonal_engineers.png</IconFilename>
           <InfoDescription>1500010424</InfoDescription>
         </Standard>
         <Locked />
@@ -97,7 +97,7 @@
         <Standard>
           <GUID>1500010402</GUID>
           <Name>Diagonal End Ornament</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_endpiece.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_diagonal_endpiece.png</IconFilename>
           <InfoDescription>1500010425</InfoDescription>
         </Standard>
         <Blocking />
@@ -133,7 +133,7 @@
         <Standard>
           <GUID>1500010415</GUID>
           <Name>Narrow Engineer Residence</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_narrow_engineers.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_narrow_engineers.png</IconFilename>
         </Standard>
         <Locked />
         <Blocking />
@@ -343,7 +343,7 @@
         <Standard>
           <GUID>1500010416</GUID>
           <Name>3x1_pop</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_engineers.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_diagonal_engineers.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -403,7 +403,7 @@
         <Standard>
           <GUID>1500010417</GUID>
           <Name>Engineers, tourist red roofs</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_tier04_tourist_red.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier04_tourist_red.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010318</SkinName>
@@ -428,7 +428,7 @@
         <Standard>
           <GUID>1500010418</GUID>
           <Name>Engineers, dark roofs</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_tier04_pescatarian_dark.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier04_pescatarian_dark.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010310</SkinName>
@@ -453,7 +453,7 @@
         <Standard>
           <GUID>1500010419</GUID>
           <Name>Engineers, bordeaux roofs</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_tier04_bordeaux.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier04_bordeaux.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010319</SkinName>
@@ -478,7 +478,7 @@
         <Standard>
           <GUID>1500010420</GUID>
           <Name>Engineers, investor green roofs</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_tier04_investor_green.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier04_investor_green.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010306</SkinName>
@@ -507,7 +507,7 @@
         <Standard>
           <GUID>1500010403</GUID>
           <Name>diagonal_menu</Name>
-          <IconFilename>data/jakob/diagonal-engineers/icon_diagonal_residences.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_diagonal_residences.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>
@@ -548,6 +548,40 @@
         <Locked />
       </Values>
     </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011171</GUID>
+          <Name>Diagonal Ornaments</Name>
+          <IconFilename>data/ui/jakob/icon_diagonal_ornaments.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>102099</Building>
+            </Item>
+            <Item>
+              <Building>101498</Building>
+            </Item>
+            <Item>
+              <Building>1500010428</Building>
+            </Item>
+            <Item>
+              <Building>102159</Building>
+            </Item>
+            <Item>
+              <Building>102083</Building>
+            </Item>
+            <Item>
+              <Building>1500010224</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010426</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
   </ModOp>
   <!-- engineers menu: insert before first -->
   <ModOp GUID="25000192,500447" Type="addPrevSibling" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
@@ -562,6 +596,17 @@
       <Building>1500010403</Building>
     </Item>
   </ModOp>
+  <!-- Ornaments -->
+  <ModOp Type="add" GUID="500069,500068" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011171</Building>
+    </Item>
+  </ModOp>
+  <!-- <ModOp Type="add" GUID="500055,500079" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011171</Building>
+    </Item>
+  </ModOp> -->
 
   <!-- # Unlock -->
   <ModOp GUID="100780" Type="addNextSibling">
