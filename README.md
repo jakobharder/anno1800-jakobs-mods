@@ -1,6 +1,6 @@
 # Jakob's Collection - Anno 1800 Mods
 
-New population tiers, products, industries and more than 800 new visual assets (custom models, skins, ...).
+New population tiers, products, industries and tons of new visual assets (custom models, skins, ...).
 
 ## Download from [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases)
 
@@ -16,40 +16,40 @@ See full [changelog](./doc/CHANGELOG.md).
 
 ![](./doc/industrial-cities.jpg)
 
-Terraced houses with skyscraper-like levels for Workers, Artisans.
+Terraced houses with skyscraper-like levels for workers, artisans.
 They come with new needs, productions and fitting ornaments.
 
 ### Gameplay
 
-- Tiers: 2 Worker tiers, 2 Artisan tiers
+- Tiers: 2 worker tiers, 2 artisan tiers
 
 ### Buildings
 
-- Terraced Worker Houses (2 Levels)
-- Terraced Artisan Houses (2 Levels)
-- Modular Sewing Machine Factory
-- Docklands Gate module (street gate)
+- Terraced worker houses (2 Levels)
+- Terraced artisan houses (2 Levels)
+- Modular sewing machine factory
+- Docklands gate module (street gate)
 - Small power plants (coal, oil, gas)
 - Fuel pump station (fuel station + oil pump in one building)
 
 ### Productions
 
-- Tea Import Dock, Tea Factory
-- Tools Workshop
-- Suits Factory, Hemp Farm, Linen Maker
-- Canned Fish Factory, Olive Orchard
+- Tea import dock, tea factory
+- Tools workshop
+- Suits factory, hemp farm, linen maker
+- Canned fish factory, olive orchard
 
 ### Ornaments
 
 - NW stone pavement + ornaments from all categories
-- Passenger and Cargo Platforms, Dirt and Concrete tiles
+- Passenger and cargo platforms, dirt and concrete tiles
 - Various cargo train variations
 
 ## `[Addon] New World Cities`
 
 ![](./doc/nw-cities.jpg)
 
-Terraced houses for Artistas, construction material production and more electricity options for the New World.
+Terraced houses for artistas, construction material production and more electricity options for the New World.
 They come with new needs, productions and fitting ornaments.
 
 ### Gameplay
@@ -58,8 +58,8 @@ They come with new needs, productions and fitting ornaments.
 
 ### Buildings
 
-- Terraced Artista Houses
-- Artista Skyscrapers
+- Terraced artista houses
+- Artista skyscrapers
 - Enables `Windmill` and `Industrial Cities` power plants in the New World
 
 ### Productions
@@ -79,7 +79,7 @@ They come with new needs, productions and fitting ornaments.
 ![](./doc/pescatarians.jpg)
 
 Pescatarians are an alternative OW population.
-Ideally for more farmer workforce with Artisan-looking towns.
+Ideally for more farmer workforce with artisan-looking towns.
 
 ### Gameplay
 
@@ -88,18 +88,18 @@ Ideally for more farmer workforce with Artisan-looking towns.
 
 ### Buildings
 
-- Pescatarian Residence (2 Tiers)
-- Community Center
-- Music School
+- Pescatarian residence (2 Tiers)
+- Community center
+- Music school
 
 ### Productions
 
-- Vegetable Farm, Kitchen
-- Cheese Dairy, Milk Farm
-- Tools Workshop
-- Suits Factory, Hemp Farm, Linen Maker
-- Canned Fish Factory, Olive Orchard
-- Olive Soap Maker, Olives
+- Vegetable farm, kitchen
+- Cheese dairy, milk farm
+- Tools workshop
+- Suits factory, hemp farm, linen maker
+- Canned fish factory, olive orchard
+- Olive soap maker, olives
 
 ## `[Building] Diagonal Residences`
 
@@ -107,14 +107,14 @@ Ideally for more farmer workforce with Artisan-looking towns.
 
 ### Buildings
 
-- Diagonal Engineers: including Vibrant Cities and 4 custom skins
-- Diagonal Investors: including Vibrant Cities and 3 custom skins
-- Narrow Engineers
-- Skins matching jje1000's Red Tile Roof buildings for Engineers
+- Diagonal engineers: including Vibrant Cities and 4 custom skins
+- Diagonal investors: including Vibrant Cities and 3 custom skins
+- Narrow engineers
+- Skins matching jje1000's red tile roof buildings for engineers
 
 ### Ornaments
 
-- Diagonal Enclosed Greenery on plaza and stone pavement
+- Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
 You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
@@ -125,15 +125,15 @@ You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/
 
 ### Skins
 
-- New Town Halls:
+- New town halls:
   adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
 - Residence Skins:
-  adds paintbrush skins for Artisans and Engineers (also diagonal).
+  adds paintbrush skins for artisans and engineers (also diagonal).
   Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
 
 ### Shift+V Variants
 
-- Factory Variants:
+- Factory variants:
   adds Shift+V variations to vanilla production buildings.
 
 ## `[Skin] Improved Streets`
@@ -161,7 +161,7 @@ Adds hotel skins and new smaller hotels.
 
 ### Buildings
 
-- Small Hotel OW, 4 Variants and many skins
+- Small Hotel OW, 4 variants and many skins
 - Small Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
 
 ### Skins
@@ -183,7 +183,7 @@ Adds hotel skins and new smaller hotels.
 
 ## `[Gameplay] Alternative Needs`
 
-Adds products from `[Addon] Industrial Cities` and `[Addon] Pescatarians` available as Lifestyle needs as alternatives to some Basic needs.
+Adds products from `[Addon] Industrial Cities` and `[Addon] Pescatarians` available as lifestyle needs as alternatives to some basic needs.
 
 ## `[Gameplay] New World Tourism, Small Monument Base`
 
