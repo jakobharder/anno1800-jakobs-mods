@@ -22,6 +22,7 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ### 1.5
 
+- 1.5.3: Added missing tourists feedback
 - 1.5.2: Russian translation
 - 1.5.1: Fixed blurry icons
 - Immediate unlock in creative mode
