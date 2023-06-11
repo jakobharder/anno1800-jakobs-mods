@@ -6,6 +6,10 @@ New population tiers, products, industries and tons of new visual assets (custom
 
 Either use [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) mod manager or know [how to install mods manually](https://github.com/jakobharder/anno1800-mod-loader#mods).
 
+:warning: DO NOT download via the green code button.
+That's the source code and it won't run.
+Never use that button anywhere if you want to play Anno mods.
+
 ## Changes
 
 All mods are compatible previous versions and can be added to existing savegames. Smaller rebalancing may happen and will be listed in the changelogs for you to adjust.
