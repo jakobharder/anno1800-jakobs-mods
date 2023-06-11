@@ -8,7 +8,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 - Industrial Cities, 3.0.3:
   - Fixed missing ground texture of the oil power plant
-  - Coal power plant doesn't drop buff icon anymore
+  - Coal power plant doesn't drop buff item into warehouse anymore
 - Diagonal Residences, 1.7.1:
   - Fixed missing plaza ground when on light shift+g grass
   - Added to ornaments tab
