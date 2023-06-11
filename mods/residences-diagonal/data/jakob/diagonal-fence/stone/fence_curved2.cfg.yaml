@@ -14,4 +14,5 @@ variant:
       cModelNormalTex: data\jakob\diagonal-fence\stone\maps\stone_norm.psd
       METALLIC_TEX_ENABLED: 0
       HEIGHT_MAP_ENABLED: 0
+    - xpath-remove: //Config/Decals/Config[Name="underground"]/Transformer
     - xpath-remove: //Config/Decals/Config[Name="underground2"]

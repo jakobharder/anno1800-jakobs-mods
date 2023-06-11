@@ -9,4 +9,5 @@ variant:
       cModelMetallicTex: data\jakob\diagonal-fence\generic\maps\fence_curved2_metal.psd
       cHeightMap: data\jakob\diagonal-fence\generic\maps\fence_curved_height.psd
       NORMAL_ENABLED: 0
+    - xpath-remove: //Config/Decals/Config[Name="underground"]/Transformer
     - xpath-remove: //Config/Decals/Config[Name="underground2"]

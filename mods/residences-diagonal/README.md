@@ -9,14 +9,14 @@ You need to relocate if you want to change an existing building.
 
 ### Residences
 
-- Diagonal Engineers: including Vibrant Cities and 4 custom skins
-- Diagonal Investors: including Vibrant Cities and 3 custom skins
-- Narrow Engineers
-- Skins matching jje's Red Tile Roof buildings for Engineers
+- Diagonal engineers: including Vibrant Cities and 4 custom skins
+- Diagonal investors: including Vibrant Cities and 3 custom skins
+- Narrow engineers
+- Skins matching jje's red tile roof buildings for engineers
 
 ### Ornaments
 
-- Diagonal Enclosed Greenery on plaza and stone pavement
+- Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
 ## Notes
@@ -36,6 +36,8 @@ Known issues:
 
 ### 1.7
 
+- 1.7.1: Fixed missing plaza ground when on light shift+g grass
+- 1.7.1: Added to ornaments tab
 - Added greenery wall with diagonal skin
 - Added corner variations skins to fences, park paths
 
@@ -51,16 +53,16 @@ Known issues:
 ### 1.5
 
 - 1.5.3: Fixed investor unlock
-- 1.5.2: Add missing Lifestyle needs for Investors
+- 1.5.2: Add missing lifestyle needs for investors
 - 1.5.1: Fixed upgrade choosing wrong shape
-- Added Investors
+- Added investors
 
 ### Older
 
 - 1.4: Fixed narrow building unlock
 - 1.3: internal clean-up
 - 1.2: Fixed narrow building consumption and costs
-- 1.2: Improved buff target names (i.e. "Affects x Residences")
+- 1.2: Improved buff target names (i.e. "affects x residences")
 
 ## Translations
 

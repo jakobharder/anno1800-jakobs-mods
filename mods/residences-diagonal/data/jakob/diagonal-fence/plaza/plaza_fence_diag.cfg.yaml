@@ -8,4 +8,5 @@ variant:
       cModelNormalTex: data\jakob\diagonal-fence\generic\maps\fence_diag_norm.psd
       cModelMetallicTex: data\jakob\diagonal-fence\generic\maps\fence_diag_metal.psd
       cHeightMap: data\jakob\diagonal-fence\generic\maps\fence_diag_height.psd
+    - xpath-remove: //Config/Decals/Config[Name="underground"]/Transformer
     - xpath-remove: //Config/Decals/Config[Name="underground2"]
