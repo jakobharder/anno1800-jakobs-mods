@@ -151,7 +151,8 @@
       <Template>TownhallBuff</Template>
       <Values>
         <Standard>
-          <GUID>1500010808</GUID>
+          <GUID>1500010826</GUID>
+          <!-- <GUID>1500010808</GUID> -->
           <Name>Lifestyle Alternatives</Name>
           <IconFilename>data/ui/jakob/icon_alternative_lifestyle.png</IconFilename>
           <InfoDescription>1500010823</InfoDescription>
@@ -285,7 +286,7 @@
                 <Values>
                   <Action />
                   <ActionBuff>
-                    <BuffAsset>1500010808</BuffAsset>
+                    <BuffAsset>1500010808</BuffAsset> <!-- remove old GUID -->
                     <AddBuff>0</AddBuff>
                   </ActionBuff>
                 </Values>
@@ -297,7 +298,19 @@
                 <Values>
                   <Action />
                   <ActionBuff>
-                    <BuffAsset>1500010808</BuffAsset>
+                    <BuffAsset>1500010826</BuffAsset>
+                    <AddBuff>0</AddBuff>
+                  </ActionBuff>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionBuff</Template>
+                <Values>
+                  <Action />
+                  <ActionBuff>
+                    <BuffAsset>1500010826</BuffAsset>
                     <AddBuff>1</AddBuff>
                   </ActionBuff>
                 </Values>

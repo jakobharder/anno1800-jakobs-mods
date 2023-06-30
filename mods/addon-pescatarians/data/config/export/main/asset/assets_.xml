@@ -1755,30 +1755,33 @@
   </ModOp>
 
   <!-- # Buff Targets -->
-  <ModOp Type="add" Path="//ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
-    <Item>
-      <GUID>1500010282</GUID>
-    </Item>
-  </ModOp>
-  <!-- remove some special cases with unfitting benefits -->
-  <ModOp Type="remove" GUID="111161,111162,111176,111163,116182,111180" Path="/Values/ItemEffect/EffectTargets/Item[GUID='1500010282']" />
+  <Group>
+    <ModOp Type="add"
+      Path="//ItemEffect/EffectTargets[(Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345') and not(../../Standard/GUID='111161') and not(../../Standard/GUID='111162') and not(../../Standard/GUID='111163') and not(../../Standard/GUID='111176') and not(../../Standard/GUID='111180') and not(../../Standard/GUID='111182')]">
+      <Item>
+        <GUID>1500010282</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344' and not(../../Standard/GUID='194015')]">
+      <Item>
+        <GUID>1500010143</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345' and not(../../Standard/GUID='194015')]">
+      <Item>
+        <GUID>1500010144</GUID>
+      </Item>
+    </ModOp>
 
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
-    <Item>
-      <GUID>1500010143</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
-    <Item>
-      <GUID>1500010144</GUID>
-    </Item>
-  </ModOp>
-  <!-- add community center everywhere where marketplace is -->
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
-    <Item>
-      <GUID>1500010100</GUID>
-    </Item>
-  </ModOp>
+    <!-- add community center everywhere where marketplace is -->
+    <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
+      <Item>
+        <GUID>1500010100</GUID>
+      </Item>
+    </ModOp>
+  </Group>
 
   <!-- # Unlocks, notifications -->
   <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">
