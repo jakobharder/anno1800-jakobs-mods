@@ -31,6 +31,8 @@ Use the mod `[Addon] New World Cities` to enable the power plants in the New Wor
 
 ### 2.9
 
+- 2.9.5: Fixed coal power plant character (engineer -> worker)
+- 2.9.4: Fixed buildings disappearing
 - 2.9.3: Fixed missing ground texture of the oil power plant
 - 2.9.3: Coal power plant doesn't drop buff icon anymore
 - 2.9.2: Russian translation
