@@ -1154,9 +1154,9 @@
           <ResidentsRequiredForUpgrade>36</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
-        <!-- <UpgradeList>
-          <DefaultBuff>1500010148</DefaultBuff>
-        </UpgradeList> -->
+        <UpgradeList>
+          <DefaultBuff>1500010172</DefaultBuff>
+        </UpgradeList>
         <FloorStackOwner>
           <!-- disable floor upgrades -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
@@ -1170,7 +1170,7 @@
       <Values>
         <Standard>
           <GUID>1500010148</GUID>
-          <Name>artisans_love_to_farm</Name>
+          <Name>Unused: artisans_love_to_farm</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
           <InfoDescription>1500010171</InfoDescription>
         </Standard>
@@ -1207,7 +1207,7 @@
       <Values>
         <Standard>
           <GUID>1500010172</GUID>
-          <Name>pesca_engineer_2pop_fix</Name>
+          <Name>Increase Artisan Need Population</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
           <InfoDescription>1500010171</InfoDescription>
         </Standard>
@@ -1217,18 +1217,28 @@
         <PopulationUpgrade>
           <InputBenefitModifier>
             <Item>
-              <Product>1500010120</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
+              <Product>1500010119</Product>
+              <AdditionalSupply>3</AdditionalSupply>
             </Item>
             <Item>
-              <Product>1500010127</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
+              <Product>1500010818</Product>
+              <AdditionalSupply>3</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+              <AdditionalSupply>2</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+              <AdditionalSupply>2</AdditionalSupply>
             </Item>
           </InputBenefitModifier>
         </PopulationUpgrade>
         <ResidenceUpgrade />
         <IncidentInfectableUpgrade />
-        <CultureUpgrade />
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
         <InfluenceSourceUpgrade />
         <WarehouseUpgrade />
         <DistributionUpgrade />

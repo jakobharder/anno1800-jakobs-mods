@@ -49,6 +49,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.1
 
+- 2.1.7: Freshly upgraded artisan house has now same population as full worker houses
 - 2.1.4: Fixed missing vegetable farms
 - 2.1.3: Russian translation
 - 2.1.3: Fixed missing unlock for Olive Soap build menu
