@@ -1154,9 +1154,9 @@
           <ResidentsRequiredForUpgrade>36</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
         </Residence7>
-        <!-- <UpgradeList>
-          <DefaultBuff>1500010148</DefaultBuff>
-        </UpgradeList> -->
+        <UpgradeList>
+          <DefaultBuff>1500010172</DefaultBuff>
+        </UpgradeList>
         <FloorStackOwner>
           <!-- disable floor upgrades -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
@@ -1170,7 +1170,7 @@
       <Values>
         <Standard>
           <GUID>1500010148</GUID>
-          <Name>artisans_love_to_farm</Name>
+          <Name>Unused: artisans_love_to_farm</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
           <InfoDescription>1500010171</InfoDescription>
         </Standard>
@@ -1207,7 +1207,7 @@
       <Values>
         <Standard>
           <GUID>1500010172</GUID>
-          <Name>pesca_engineer_2pop_fix</Name>
+          <Name>Increase Artisan Need Population</Name>
           <IconFilename>data/jakob/ui/icons/icon_pescatarian_church.png</IconFilename>
           <InfoDescription>1500010171</InfoDescription>
         </Standard>
@@ -1217,18 +1217,28 @@
         <PopulationUpgrade>
           <InputBenefitModifier>
             <Item>
-              <Product>1500010120</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
+              <Product>1500010119</Product>
+              <AdditionalSupply>3</AdditionalSupply>
             </Item>
             <Item>
-              <Product>1500010127</Product>
-              <AdditionalSupply>-1</AdditionalSupply>
+              <Product>1500010818</Product>
+              <AdditionalSupply>3</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+              <AdditionalSupply>2</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+              <AdditionalSupply>2</AdditionalSupply>
             </Item>
           </InputBenefitModifier>
         </PopulationUpgrade>
         <ResidenceUpgrade />
         <IncidentInfectableUpgrade />
-        <CultureUpgrade />
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
         <InfluenceSourceUpgrade />
         <WarehouseUpgrade />
         <DistributionUpgrade />
@@ -1755,30 +1765,33 @@
   </ModOp>
 
   <!-- # Buff Targets -->
-  <ModOp Type="add" Path="//ItemEffect/EffectTargets[Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345']">
-    <Item>
-      <GUID>1500010282</GUID>
-    </Item>
-  </ModOp>
-  <!-- remove some special cases with unfitting benefits -->
-  <ModOp Type="remove" GUID="111161,111162,111176,111163,116182,111180" Path="/Values/ItemEffect/EffectTargets/Item[GUID='1500010282']" />
+  <Group>
+    <ModOp Type="add"
+      Path="//ItemEffect/EffectTargets[(Item/GUID='1010343' or Item/GUID='1010344' or Item/GUID='1010345') and not(../../Standard/GUID='111161') and not(../../Standard/GUID='111162') and not(../../Standard/GUID='111163') and not(../../Standard/GUID='111176') and not(../../Standard/GUID='111180') and not(../../Standard/GUID='111182')]">
+      <Item>
+        <GUID>1500010282</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344' and not(../../Standard/GUID='194015')]">
+      <Item>
+        <GUID>1500010143</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345' and not(../../Standard/GUID='194015')]">
+      <Item>
+        <GUID>1500010144</GUID>
+      </Item>
+    </ModOp>
 
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010344']">
-    <Item>
-      <GUID>1500010143</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010345']">
-    <Item>
-      <GUID>1500010144</GUID>
-    </Item>
-  </ModOp>
-  <!-- add community center everywhere where marketplace is -->
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
-    <Item>
-      <GUID>1500010100</GUID>
-    </Item>
-  </ModOp>
+    <!-- add community center everywhere where marketplace is -->
+    <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010372']">
+      <Item>
+        <GUID>1500010100</GUID>
+      </Item>
+    </ModOp>
+  </Group>
 
   <!-- # Unlocks, notifications -->
   <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">

@@ -4,6 +4,13 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 5.9 - Corner Variation Skins
 
+### 5.9.4
+
+- Pescatarians, 2.1.7:
+  - Fix: Upgrade to level 2 Pescatarian houses doesn't reduce residence number
+  - Fix: Removed alternative needs buff from Pescatarians
+- Fixed various missing and broken text issues
+
 ### 5.9.3
 
 - Industrial Cities, 3.0.4:
