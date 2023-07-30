@@ -1,8 +1,18 @@
-<!-- 
-  Compact Menus
--->
 <ModOps>
   <Include File="./assets-weapons.include.xml" />
+
+  <!-- # Vanilla Fixes -->
+  <!-- swap NW warehouse and residence -->
+  <Group Condition="@500137/.//BuildingList[Item/Building='101323' and Item/Building='101254']">
+    <ModOp GUID='500137' Type="remove"
+			Path="/Values/ConstructionCategory/BuildingList/Item[Building='101323'][1]" />
+    <ModOp GUID='500137' Type="addPrevSibling"
+			Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254'][1]">
+			<Item>
+				<Building>101323</Building>
+			</Item>
+		</ModOp>
+  </Group>
 
   <!-- # Tourists -->
   <ModOp Type="addNextSibling" GUID="601445">
@@ -48,7 +58,8 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445' or position()=last()][1]">
+  <ModOp Type="addNextSibling" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445' or position()=last()][1]">
     <Item>
       <Building>1500010930</Building>
     </Item>
@@ -58,7 +69,8 @@
       <Building>0</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='601445' or Building='1500010500' or Building='601326' or Building='132780' or Building='132782' or Building='132781' or Building='132765']" />
+  <ModOp Type="remove" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='601445' or Building='1500010500' or Building='601326' or Building='132780' or Building='132782' or Building='132781' or Building='132765']" />
 
   <!-- # Administration -->
   <ModOp Type="addNextSibling" GUID="100415">
@@ -97,7 +109,8 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or position()=last()][1]">
+  <ModOp Type="addNextSibling" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or position()=last()][1]">
     <Item>
       <Building>1500010931</Building>
     </Item>
@@ -107,8 +120,9 @@
       <Building>0</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='100415' or Building='1010516' or Building='100586' or Building='1500010050']" />
-  
+  <ModOp Type="remove" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='100415' or Building='1010516' or Building='100586' or Building='1500010050']" />
+
   <!-- # Administration NW -->
   <ModOp Type="addNextSibling" GUID="100415">
     <Asset>
@@ -137,7 +151,8 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='101285' or position()=last()][1]">
+  <ModOp Type="addNextSibling" GUID="500137"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101285' or position()=last()][1]">
     <Item>
       <Building>1500010934</Building>
     </Item>
@@ -147,7 +162,8 @@
       <Building>0</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101285' or Building='101284' or Building='101286']" />
+  <ModOp Type="remove" GUID="500137"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101285' or Building='101284' or Building='101286']" />
 
   <!-- # Institutions -->
   <ModOp Type="addNextSibling" GUID="1010463">
@@ -201,7 +217,8 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or position()=last()][1]">
+  <ModOp Type="addNextSibling" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or position()=last()][1]">
     <Item>
       <Building>1500010932</Building>
     </Item>
@@ -211,7 +228,8 @@
       <Building>0</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500092" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010463' or Building='1010462' or Building='1010464' or Building='2000150010' or Building='1337500011' or Building='1337500012' or Building='1337500001' or Building='1337500002' or Building='1337500018' or Building='1337500019' or Building='2000150036']" />
+  <ModOp Type="remove" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010463' or Building='1010462' or Building='1010464' or Building='2000150010' or Building='1337500011' or Building='1337500012' or Building='1337500001' or Building='1337500002' or Building='1337500018' or Building='1337500019' or Building='2000150036']" />
 
   <!-- # Institutions NW -->
   <ModOp Type="addNextSibling" GUID="1010463">
@@ -241,7 +259,8 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addNextSibling" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='101275' or position()=last()][1]">
+  <ModOp Type="addNextSibling" GUID="500137"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101275' or position()=last()][1]">
     <Item>
       <Building>1500010933</Building>
     </Item>
@@ -251,10 +270,11 @@
       <Building>0</Building>
     </Item>
   </ModOp>
-  <ModOp Type="remove" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101275' or Building='101274' or Building='101276']" />
+  <ModOp Type="remove" GUID="500137"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101275' or Building='101274' or Building='101276']" />
 
   <!-- # Electricity -->
-  <!-- 
+  <!--
     Swap base oil chain with Artista oil chain.
     It's important to keep 7305 alive, otherwise triggers for it won't register.
     This way you can safely add and remove the mod without harming any triggers.
@@ -278,31 +298,19 @@
 
   <!-- # Orchards -->
   <!-- keep in mind others like Taludas do the same, so use guards -->
-  <ModOp Type="addNextSibling" GUID="120055">
-    <Asset>
-      <Template>fallback</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010221</GUID>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item />
-          </BuildingList>
-        </ConstructionCategory>
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='134614'] | //Values[Standard/GUID='1500010221']/ConstructionCategory/BuildingList/Item[last()]">
-    <Item>
-      <Building>7425</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='133004' or Building='133030' or Building='133031' or Building='134614'] | //Values[Standard/GUID='1500010221']/ConstructionCategory/BuildingList/Item[last()]" />
-  <ModOp Type="remove" GUID="1500010221" />
-  
+  <Group Condition="!@500950/ConstructionCategory/BuildingList[not(Item/Building='134614')]">
+    <ModOp Type="addNextSibling" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='134614']">
+      <Item>
+        <Building>7425</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="remove" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='133004' or Building='133030' or Building='133031' or Building='134614']" />
+  </Group>
+
   <!-- # Sewing Machines -->
-  <!-- 
+  <!--
     Move aluminium sewing machines to base sewing machines and replace them.
   -->
   <ModOp Type="remove" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='6623']" />

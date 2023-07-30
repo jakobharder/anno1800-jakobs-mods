@@ -4,6 +4,10 @@ Combines city construction menu icons into categories: tourists, public services
 
 ## Changes
 
+### 1.3
+
+- Swapped NW warehouse and residence to be consistent with OW
+
 ### 1.2
 
 - 1.2.4: Russian translation
