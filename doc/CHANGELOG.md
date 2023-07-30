@@ -2,6 +2,10 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+- Updated Chinese translation
+
 ## 5.9 - Corner Variation Skins
 
 ### 5.9.4
