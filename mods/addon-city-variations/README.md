@@ -56,6 +56,11 @@ The roofs are colored in realtime for reduced memory usage and better performanc
 - Investors, various roof skins
 - Hotels, various wall and roof skins
 
+### Ornaments
+
+- Diagonal enclosed greenery on plaza and stone pavement
+- Skins with diagonal and other corner variations for fences and park paths
+
 ## Credits
 
 Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for translations!

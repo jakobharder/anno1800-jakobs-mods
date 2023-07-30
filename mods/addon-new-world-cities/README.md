@@ -14,6 +14,8 @@
 
 - Dirt paving: empty tile, Hacienda walls (only with DLC `Seeds of Change`)
 - Stone paving: empty tile
+- Diagonal enclosed greenery on plaza and stone pavement
+- Skins with diagonal and other corner variations for fences and park paths
 
 ### Construction Materials
 
@@ -47,6 +49,10 @@ Some buildings are a bit slower than their Old World counterpart.
 - Fixes Tropical Forest Variant 7 grass color
 
 ## Changes
+
+### 1.5
+
+- Added diagonal and cornered fence skins
 
 ### 1.4
 

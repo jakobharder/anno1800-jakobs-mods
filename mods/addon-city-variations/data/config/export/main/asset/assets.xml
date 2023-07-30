@@ -76,4 +76,22 @@
       </Item>
     </ModOp>
   </Group>
+
+  <!-- # Diagonal Ornaments -->
+  <Group Condition="#jakob-diagonal-ornaments">
+    <ModOp Type="add" GUID="500069,500068"
+      Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500011171']"
+      Path="/Values/ConstructionCategory/BuildingList">
+      <Item>
+        <Building>1500011171</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500055,500079"
+      Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500011171']"
+      Path="/Values/ConstructionCategory/BuildingList">
+      <Item>
+        <Building>1500011171</Building>
+      </Item>
+    </ModOp>
+  </Group>
 </ModOps>

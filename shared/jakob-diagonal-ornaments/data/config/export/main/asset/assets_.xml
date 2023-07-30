@@ -4,4 +4,42 @@
   <Include File="../../../../jakob/diagonal-park/assets.include.xml" />
   <Include File="../../../../jakob/diagonal-fence/assets.include.xml" />
   <!-- <Include File="../../../../jakob/diagonal-walls/assets.include.xml" /> -->
+
+  <!-- # Menu -->
+  <ModOp GUID="1010346" Type="addNextSibling">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011171</GUID>
+          <Name>Diagonal Ornaments</Name>
+          <IconFilename>data/ui/jakob/icon_diagonal_ornaments.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>102099</Building>
+            </Item>
+            <Item>
+              <Building>101498</Building>
+            </Item>
+            <Item>
+              <Building>1500010428</Building>
+            </Item>
+            <Item>
+              <Building>102159</Building>
+            </Item>
+            <Item>
+              <Building>102083</Building>
+            </Item>
+            <Item>
+              <Building>1500010224</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010426</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
 </ModOps>
