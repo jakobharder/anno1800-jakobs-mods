@@ -1,5 +1,3 @@
-# Industrial Cities
-
 ![](./banner.jpg)
 
 Increased population residences, new productions, railway stations, more power stations.

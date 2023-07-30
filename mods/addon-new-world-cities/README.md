@@ -1,5 +1,3 @@
-# New World Cities
-
 ![](./banner.jpg)
 
 ## Buildings

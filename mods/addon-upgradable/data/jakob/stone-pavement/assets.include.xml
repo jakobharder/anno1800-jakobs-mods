@@ -6,7 +6,7 @@
       <Values>
         <Standard>
           <GUID>1500010215</GUID>
-          <Name>simple_stone_plaza_1x1</Name>
+          <Name>Stone Pavement Street</Name>
           <IconFilename>data\jakob\stone-pavement\icon_street.png</IconFilename>
           <InfoDescription>1500010222</InfoDescription>
         </Standard>
@@ -93,7 +93,7 @@
       <Values>
         <Standard>
           <GUID>1500010224</GUID>
-          <Name>simple_stone_plaza_1x1</Name>
+          <Name>Stone Pavement</Name>
           <IconFilename>data\jakob\stone-pavement\icon_empty.png</IconFilename>
           <InfoDescription>1500010222</InfoDescription>
         </Standard>
@@ -305,6 +305,12 @@
   <ModOp Type="add" GUID="500069,500068" Path="/Values/ConstructionCategory/BuildingList">
     <Item>
       <Building>1500010223</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="501823"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010224</Building>
     </Item>
   </ModOp>
 

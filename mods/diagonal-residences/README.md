@@ -1,5 +1,3 @@
-# Diagonal Residences
-
 ![](./banner.jpg)
 
 ## Buildings
@@ -44,29 +42,6 @@ Known issues:
 - 1.7.1: Added to ornaments tab
 - Added greenery wall with diagonal skin
 - Added corner variations skins to fences, park paths
-
-### 1.6
-
-- 1.6.3: Russian translation
-- 1.6.2: Updated Spanish translations
-- 1.6.1: Fixed blurry icons
-- Fixed icons for GU17
-- Immediate unlock in creative mode
-- Skin for jje's red tile roof is now included and automatically shows when needed
-
-### 1.5
-
-- 1.5.3: Fixed investor unlock
-- 1.5.2: Add missing lifestyle needs for investors
-- 1.5.1: Fixed upgrade choosing wrong shape
-- Added investors
-
-### Older
-
-- 1.4: Fixed narrow building unlock
-- 1.3: internal clean-up
-- 1.2: Fixed narrow building consumption and costs
-- 1.2: Improved buff target names (i.e. "affects x residences")
 
 ## Translations
 

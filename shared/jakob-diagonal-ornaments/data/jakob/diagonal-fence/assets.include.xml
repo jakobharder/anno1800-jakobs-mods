@@ -51,7 +51,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500010436</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -87,7 +87,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500010437</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -123,7 +123,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500010438</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -161,7 +161,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500011180</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -197,7 +197,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500011181</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -233,7 +233,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500011182</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -271,7 +271,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500011183</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -307,7 +307,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500011184</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -343,7 +343,7 @@
           <InfoDescription>163093</InfoDescription>
         </Standard>
         <Skin>
-          <SkinCategoryDescription>1500010403</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
           <SkinName>1500011185</SkinName>
           <SkinDescription>1500011186</SkinDescription>
           <SkinVariations>
@@ -361,6 +361,378 @@
             </Item>
             <Item>
               <FileName>data/graphics/buildings/ornamental/cultural_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # NW Fence -->
+  <ModOp Type="merge" GUID="102849" Path="/Values">
+    <Building>
+      <AlternativeGrassColorAvailable>1</AlternativeGrassColorAvailable>
+    </Building>
+    <Object>
+      <Skins>
+        <OverrideDefaultIcon>data/ui/jakob/icon_fence_default.png</OverrideDefaultIcon>
+        <SkinList />
+      </Skins>
+    </Object>
+  </ModOp>
+  <ModOp Type="add" GUID="102849" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500011207</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011213</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011210</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011208</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011214</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011211</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011209</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011215</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011212</SkinAssetGuid>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="101498">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011207</GUID>
+          <Name>Diagonal Fence</Name>
+          <IconFilename>data/ui/jakob/icon_fence_diag.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011207</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-plaza\plaza_fence_diag.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011208</GUID>
+          <Name>Curved Fence</Name>
+          <IconFilename>data/ui/jakob/icon_fence_curve.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011208</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-plaza\plaza_fence_curved.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011209</GUID>
+          <Name>Curved Fence 2</Name>
+          <IconFilename>data/ui/jakob/icon_fence_curve2.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011209</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-plaza\plaza_fence_curved2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+
+    <!-- Stone Skins -->
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011210</GUID>
+          <Name>Diagonal Fence Stone</Name>
+          <IconFilename>data/ui/jakob/icon_fence_stone_diag.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011210</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-stone\fence_diag.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011211</GUID>
+          <Name>Curved Fence Stone</Name>
+          <IconFilename>data/ui/jakob/icon_fence_stone_curve.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011211</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-stone\fence_curved.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011212</GUID>
+          <Name>Curved Fence 2 Stone</Name>
+          <IconFilename>data/ui/jakob/icon_fence_stone_curve2.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011212</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-stone\fence_curved2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+
+    <!-- Park Skins -->
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011213</GUID>
+          <Name>Diagonal Fence Stone</Name>
+          <IconFilename>data/ui/jakob/icon_fence_park_diag.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011213</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-park\fence_diag.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011214</GUID>
+          <Name>Curved Fence Park</Name>
+          <IconFilename>data/ui/jakob/icon_fence_park_curve.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011214</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-park\fence_curved.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011215</GUID>
+          <Name>Curved Fence 2 Park</Name>
+          <IconFilename>data/ui/jakob/icon_fence_park_curve2.png</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011171</SkinCategoryDescription>
+          <SkinName>1500011215</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_06.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-fence\nw-park\fence_curved2.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_14.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/cultural_colony01_props_system/cultural_props_system_1x1_system/cultural_props_1x1_12.cfg</FileName>
             </Item>
           </SkinVariations>
         </Skin>

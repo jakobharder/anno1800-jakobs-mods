@@ -1,4 +1,4 @@
-# City Variations
+![](banner.jpg)
 
 Add more variety to your cities with skins, variations and non-gameplay changing buildings.
 
