@@ -20,7 +20,7 @@ There is no double consumption.
 
 ### 1.3
 
-- Added compatibility with Clarks Tailoring
+- Added compatibility with the mod `Clarks Tailoring`
 
 ### 1.2
 

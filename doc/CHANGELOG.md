@@ -8,7 +8,9 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Includes residence skins, town halls, small hotels and commercial street
   - Replaces "Everything Skin Pack"
 - Alternative Needs, 1.3:
-  - Added compatibility with Clarks Tailoring
+  - Added compatibility with the mod `Clarks Tailoring`
+- Improved Streets, 1.3:
+  - Disable railway skin when the mod `Stone Railway` is active
 - Updated Chinese translation
 
 ## 5.9 - Corner Variation Skins
