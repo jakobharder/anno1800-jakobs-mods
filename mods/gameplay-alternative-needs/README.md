@@ -21,6 +21,7 @@ There is no double consumption.
 ### 1.3
 
 - Added compatibility with the mod `Clarks Tailoring`
+- Yet another fix for multiplayer
 
 ### 1.2
 
