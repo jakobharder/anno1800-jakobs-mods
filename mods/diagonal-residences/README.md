@@ -34,6 +34,10 @@ Known issues:
 
 ## Changes
 
+### 1.8
+
+- Fixed plaza greenery corner hitbox
+
 ### 1.7
 
 - 1.7.1: Fixed missing plaza ground when on light shift+g grass
