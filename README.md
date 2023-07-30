@@ -16,6 +16,28 @@ All mods are compatible previous versions and can be added to existing savegames
 
 See full [changelog](./doc/CHANGELOG.md).
 
+## `[Addon] City Variations`
+
+![](./doc/city-variations.jpg)
+
+### Buildings
+
+- Small Hotel OW, 4 variants and many skins
+- Small Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+- Small Department, Furniture and Drug Store
+- Small Store Warehouse (+ skins for all mall types)
+- Small Ornamental mall (+ skins for all mall types)
+- Small Courtyard Restaurant
+
+### Skins
+
+- New town halls:
+  adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
+- Residence Skins:
+  adds paintbrush skins for artisans and engineers (also diagonal).
+  Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
+- Hotel, also in the NW if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+
 ## `[Addon] Industrial Cities`
 
 ![](./doc/industrial-cities.jpg)
@@ -48,6 +70,11 @@ They come with new needs, productions and fitting ornaments.
 - NW stone pavement + ornaments from all categories
 - Passenger and cargo platforms, dirt and concrete tiles
 - Various cargo train variations
+
+### Shift+V Variants
+
+- Factory variants:
+  adds Shift+V variations to vanilla production buildings.
 
 ## `[Addon] New World Cities`
 
@@ -123,23 +150,6 @@ Ideally for more farmer workforce with artisan-looking towns.
 
 You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
 
-## `[Skin] Everything Skin Pack`
-
-![](./doc/skin-pack.jpg)
-
-### Skins
-
-- New town halls:
-  adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
-- Residence Skins:
-  adds paintbrush skins for artisans and engineers (also diagonal).
-  Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
-
-### Shift+V Variants
-
-- Factory variants:
-  adds Shift+V variations to vanilla production buildings.
-
 ## `[Skin] Improved Streets`
 
 ![](./doc/improved-streets.jpg)
@@ -156,22 +166,6 @@ Replaces railroads and NW streets with more fitting textures.
 ![](./doc/electric-wires.jpg)
 
 Replaces electric wires and poles with lighter, less distracting models.
-
-## `[Building] Small Hotels`
-
-![](./doc/hotels.jpg)
-
-Adds hotel skins and new smaller hotels.
-
-### Buildings
-
-- Small Hotel OW, 4 variants and many skins
-- Small Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
-
-### Skins
-
-- Hotel OW
-- Hotel NW, if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
 
 ## `[Building] Nate's Windmill`
 

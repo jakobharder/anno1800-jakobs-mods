@@ -1,20 +1,3 @@
-<!-- 
-Minimall
-
-1500010850-55 department stores
-1500010856-61 furniture stores
-1500010862-67 drug stores
-1500010868 construction menu
-# 1500010869
-1500010870 department recipe list
-1500010871-75 department recipes
-1500010876 furniture recipe list
-1500010877-81 furniture recipes
-1500010882 drug recipe list
-1500010883-87 drug recipes
-1500010888 warehouse
--->
-
 <ModOps>
   <!-- # Minimall: Department Store -->
   <ModOp GUID='135210' Type="addNextSibling">
@@ -3097,59 +3080,6 @@ Minimall
     </Asset>
   </ModOp>
 
-
-  <!-- # Unlocks -->
-  <ModOp Type="addNextSibling" GUID='135100'>
-    
-  </ModOp>
-
-
   <!-- # Construction menu -->
-  <!-- Old World Menu Engineers, insert after oil power plant -->
-  <ModOp Type="addNextSibling" GUID="135100">
-    <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010868</GUID>
-          <Name>minimalls_menu</Name>
-          <IconFilename>data\jakob\ui\icons\icon_commercial.png</IconFilename>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1500010517</Building>
-            </Item>
-            <Item>
-              <Building>1500010888</Building>
-            </Item>
-            <Item>
-              <Building>1500010850</Building>
-            </Item>
-            <Item>
-              <Building>1500010856</Building>
-            </Item>
-            <Item>
-              <Building>1500010862</Building>
-            </Item>
-            <Item>
-              <Building>1500010909</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>13108</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID='500094' Path="/Values/ConstructionCategory/BuildingList/Item[Building='132781']">
-    <Item>
-      <Building>1500010868</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID='25000192,500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='134629']">
-    <Item>
-      <Building>1500010868</Building>
-    </Item>
-  </ModOp>
+  <!-- done in parent mod -->
 </ModOps>

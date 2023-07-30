@@ -6,7 +6,6 @@ Malls and restaurants fitting into the 3x3 residential areas.
 
 ## Requirements
 
-- Mod `[Shared] Ground Textures`
 - DLC `The High Life` (optional: to get malls)
 - DLC `Tourist Season` (optional: to get restaurants)
 
@@ -28,6 +27,10 @@ Note: The buildings do not count as quest objectives.
 - Cafe and Bar are TBD
 
 ## Changes
+
+### 1.6
+
+- Added iMYA tweaks
 
 ### 1.5
 
@@ -53,6 +56,6 @@ Note: The buildings do not count as quest objectives.
 
 Available: Chinese, French, English, German, Korean, Polish, Spanish
 
-Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for tranlsations!
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for translations!
 
 [Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

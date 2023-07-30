@@ -20,6 +20,10 @@ Note: you may still see the old unlocks, but the new unlocks should be still in 
 
 ## Changes
 
+### 1.6
+
+- Added iMYA tweaks
+
 ### 1.5
 
 - 1.5.3: Added missing tourists feedback
