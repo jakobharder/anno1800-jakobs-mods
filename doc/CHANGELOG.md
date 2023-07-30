@@ -4,6 +4,11 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## [Unreleased]
 
+- City Variations, 1.0:
+  - Includes residence skins, town halls, small hotels and commercial street
+  - Replaces "Everything Skin Pack"
+- Alternative Needs, 1.3:
+  - Added compatibility with Clarks Tailoring
 - Updated Chinese translation
 
 ## 5.9 - Corner Variation Skins

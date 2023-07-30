@@ -18,6 +18,10 @@ There is no double consumption.
 
 ## Changes
 
+### 1.3
+
+- Added compatibility with Clarks Tailoring
+
 ### 1.2
 
 - 1.2.6: Made tea icon more distinguishable
