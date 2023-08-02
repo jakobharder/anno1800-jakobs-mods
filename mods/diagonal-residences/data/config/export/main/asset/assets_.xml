@@ -562,16 +562,6 @@
       <Building>1500010403</Building>
     </Item>
   </ModOp>
-  <!-- Ornaments -->
-  <Group Condition="#jakob-diagonal-ornaments">
-    <ModOp Type="add" GUID="500069,500068"
-      Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500011171']"
-      Path="/Values/ConstructionCategory/BuildingList">
-      <Item>
-        <Building>1500011171</Building>
-      </Item>
-    </ModOp>
-  </Group>
 
   <!-- # Unlock -->
   <ModOp GUID="100780" Type="addNextSibling">

@@ -1,17 +1,6 @@
 <ModOps>
   <Include File="/features.include.xml" />
 
-  <!-- # Diagonal Ornaments -->
-  <Group Condition="#jakob-diagonal-ornaments">
-    <ModOp Type="add" GUID="500055,500079"
-      Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500011204']"
-      Path="/Values/ConstructionCategory/BuildingList">
-      <Item>
-        <Building>1500011204</Building>
-      </Item>
-    </ModOp>
-  </Group>
-
   <!-- # Harborlife Fix -->
   <!-- just in case people didn't update and blame upgradable worker for it -->
   <ModOp Type="replace" GUID="1440137000" Condition="~" Path="/Values/Upgradable">

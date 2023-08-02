@@ -1,9 +1,13 @@
 ![](./banner.jpg)
 
+Add diagonal residences and ornaments to break up the standard grid.
+
 ## Buildings
 
 Use Shift+V to cycle through variations before you place it.
 You need to relocate if you want to change an existing building.
+
+Buildings are fully functional, but expect some visual and user experience oddities as there is no true diagonal support.
 
 ### Residences
 
@@ -19,10 +23,11 @@ You need to relocate if you want to change an existing building.
 
 ## Notes
 
-You might be interested in the following mods as well:
-- [Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) - diagonal pavement and fence ornaments
-- [Diagonal Hedges as Skins](https://www.nexusmods.com/anno1800/mods/589) - makes above fence ornaments available as skins
-- `[Ornamental] Plaza street` from [Spice it Up](https://www.nexusmods.com/anno1800/mods/5) - plaza tiles with street connection
+You might be interested in the following mods from other creators:
+
+- `Diagonal Roads` - diagonal pavement and fence ornaments
+- `Diagonal Hedges as Skins` - makes above fence ornaments available as skins
+- `Plaza street` from `Spice it Up` - plaza tiles with street connection
 
 Known issues:
 
@@ -34,6 +39,7 @@ Known issues:
 
 ### 1.8
 
+- Added NW variants of all ornaments
 - Fixed plaza greenery corner hitbox
 
 ### 1.7

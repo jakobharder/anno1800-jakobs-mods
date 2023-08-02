@@ -11,6 +11,8 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Added iMYA tweaks
 - New World Cities, 1.5:
   - Added NW diagonal and cornered fence skins
+- Diagonal Residences, 1.8:
+  - Added NW diagonal and cornered fence skins
 - Alternative Needs, 1.3:
   - Added compatibility with the mod `Clarks Tailoring`
   - Yet another fix for multiplayer
