@@ -265,8 +265,9 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
+          <GUID>1500010918</GUID>
+          <!-- <GUID>1500010917</GUID> -->
           <!-- <GUID>1500010916</GUID> -->
-          <GUID>1500010917</GUID>
           <Name>Add Lifestyle Buff to newly entered session</Name>
         </Standard>
         <Trigger>
@@ -329,9 +330,6 @@
             </Item>
           </TriggerActions>
         </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
@@ -517,6 +515,33 @@
         </Tier2>
       </Item>
     </ModOp>
+
+    <!-- Clarks Tailoring -->
+    <Group Condition="@1800000200">
+      <ModOp Type="replace" GUID="1800000200" Path="/Values/Standard/IconFilename">
+        <IconFilename>data/ui/jakob/icon_suits_menu.png</IconFilename>
+      </ModOp>
+      <ModOp Type="add" GUID="1800000200"
+        Path="/Values/ProductionChain/Tier1">
+        <Item>
+          <Building>1500011150</Building>
+          <ForceIcon>1500010955</ForceIcon>
+          <Tier2>
+            <Item>
+              <Building>1500010126</Building>
+              <Tier3>
+                <Item>
+                  <Building>1500010124</Building>
+                </Item>
+              </Tier3>
+            </Item>
+            <Item>
+              <Building>1010267</Building>
+            </Item>
+          </Tier2>
+        </Item>
+      </ModOp>
+    </Group>
   </Group>
 
   <!-- # Tea - Construction Menu -->

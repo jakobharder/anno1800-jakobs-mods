@@ -2,7 +2,15 @@
 
 Combines city construction menu icons into categories: tourists, public services, institutions, malls and administration.
 
+Note: this mod does not recreate the whole menu, but only combines what is correctly added.
+Some mods add their icon only to either progression type sorting or category type sorting.
+Please contact the respective mod authors for fixes.
+
 ## Changes
+
+### 1.3
+
+- Swapped NW warehouse and residence to be consistent with OW
 
 ### 1.2
 

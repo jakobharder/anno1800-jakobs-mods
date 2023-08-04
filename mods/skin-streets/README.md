@@ -16,6 +16,7 @@ The railway texture is inspired by [Gravel Railway Retexture](https://www.nexusm
 
 ## Changes
 
+- 1.3: disable railway skin when the mod `Stone Railway` is active
 - 1.2: added NW stone bridge
 - 1.2: improved compatibility with City Ornaments
 - 1.1: added railway skin

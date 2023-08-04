@@ -2,6 +2,26 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+- City Variations, 1.0:
+  - Includes residence skins, town halls, small hotels and commercial street
+  - Replaces `Everything Skin Pack`
+  - Added diagonal and cornered fence skins
+  - Added iMYA tweaks
+- New World Cities, 1.5:
+  - Added NW diagonal and cornered fence skins
+- Diagonal Residences, 1.8:
+  - Added NW diagonal and cornered fence skins
+- Alternative Needs, 1.3:
+  - Added compatibility with the mod `Clarks Tailoring`
+  - Yet another fix for multiplayer
+- Improved Streets, 1.3:
+  - Disable railway skin when the mod `Stone Railway` is active
+- Compact Build Menus, 1.3:
+  - Swapped NW warehouse and residence to be consistent with OW
+- Updated Chinese translation
+
 ## 5.9 - Corner Variation Skins
 
 ### 5.9.4

@@ -1,0 +1,23 @@
+variant:
+  source: ../generic/template.cfg
+  modifications:
+    - xpath: //Config/Files/Config
+      FileName: data\jakob\diagonal-fence\nw-generic\fence_curved.cfg
+    - xpath: //Config/Decals/Config[Name="fence"]/Materials/Config
+      cModelDiffTex: data\jakob\diagonal-fence\generic\maps\fence_curved_diff.psd
+      cModelNormalTex: data\jakob\diagonal-fence\generic\maps\fence_curved_norm.psd
+      cModelMetallicTex: data\jakob\diagonal-fence\generic\maps\fence_curved_metal.psd
+      cHeightMap: data\jakob\diagonal-fence\generic\maps\fence_curved_height.psd
+      cDiffuseColor.r: 1
+      cDiffuseColor.g: 1
+      cDiffuseColor.b: 1
+    - xpath: //Config/Decals/Config[Name="underground"]/Materials/Config
+      cModelDiffTex: data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/maps/park_props_system_1x1_ground_diff.psd
+      cModelNormalTex: data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/maps/park_props_system_1x1_ground_norm.psd
+      METALLIC_TEX_ENABLED: 0
+      HEIGHT_MAP_ENABLED: 0
+    - xpath: //Config/Decals/Config[Name="underground2"]/Materials/Config
+      cModelDiffTex: data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/maps/park_props_system_1x1_ground_bright_diff.psd
+      cModelNormalTex: data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/maps/park_props_system_1x1_ground_norm.psd
+      METALLIC_TEX_ENABLED: 0
+      HEIGHT_MAP_ENABLED: 0

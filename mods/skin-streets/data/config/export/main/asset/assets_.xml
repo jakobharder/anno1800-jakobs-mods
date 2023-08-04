@@ -22,7 +22,7 @@
   </ModOp>
 
   <!-- replace railway, but leave out quay crossing 80138 -->
-  <ModOp Type="merge" GUID="1010136,1010165,1010183,101409" Path="/Values/Street">
+  <ModOp Type="merge" Condition="!#Stone Railway" GUID="1010136,1010165,1010183,101409" Path="/Values/Street">
     <CfgFileName>data\jakob\railroad\earth_street_03.cfg</CfgFileName>
     <StyleCols>1</StyleCols>
   </ModOp>

@@ -1,0 +1,91 @@
+<ModOps>
+  <!-- # Includes -->
+  <Include File="../../../../jakob/diagonal-greenery/assets.include.xml" />
+  <Include File="../../../../jakob/diagonal-park/assets.include.xml" />
+  <Include File="../../../../jakob/diagonal-fence/assets.include.xml" />
+  <!-- <Include File="../../../../jakob/diagonal-walls/assets.include.xml" /> -->
+
+  <!-- # Menu -->
+  <ModOp GUID="1010346" Type="addNextSibling">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011171</GUID>
+          <Name>Diagonal Ornaments</Name>
+          <IconFilename>data/ui/jakob/icon_diagonal_ornaments.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>102099</Building>
+            </Item>
+            <Item>
+              <Building>101498</Building>
+            </Item>
+            <Item>
+              <Building>1500010428</Building>
+            </Item>
+            <Item>
+              <Building>102159</Building>
+            </Item>
+            <Item>
+              <Building>102083</Building>
+            </Item>
+            <Item>
+              <Building>1500010224</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010426</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011204</GUID>
+          <Name>NW Diagonal Ornaments</Name>
+          <IconFilename>data/ui/jakob/icon_diagonal_ornaments.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>102099</Building>
+            </Item>
+            <Item>
+              <Building>102849</Building>
+            </Item>
+            <Item>
+              <Building>1500011200</Building>
+            </Item>
+            <Item>
+              <Building>102159</Building>
+            </Item>
+            <Item>
+              <Building>102083</Building>
+            </Item>
+            <Item>
+              <Building>1500011049</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500010426</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="500069,500068"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011171</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="500055,500079"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011204</Building>
+    </Item>
+  </ModOp>
+</ModOps>

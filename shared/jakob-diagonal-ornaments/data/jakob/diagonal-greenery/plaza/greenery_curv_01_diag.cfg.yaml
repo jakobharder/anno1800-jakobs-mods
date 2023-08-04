@@ -1,0 +1,9 @@
+variant:
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\cdlc05\graphics\buildings\ornamental\grass_platforms\irrigation_channel_curv_01.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\diagonal-greenery\rdm\greenery_corner_lod0.rdm
+    - xpath: //Config/Files/Config
+      FileName: data\jakob\diagonal-greenery\plaza\ground.cfg
+    - xpath-remove: //Config/PropContainers

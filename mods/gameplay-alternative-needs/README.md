@@ -18,6 +18,11 @@ There is no double consumption.
 
 ## Changes
 
+### 1.3
+
+- Added compatibility with the mod `Clarks Tailoring`
+- Yet another fix for multiplayer
+
 ### 1.2
 
 - 1.2.6: Made tea icon more distinguishable

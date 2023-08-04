@@ -1,0 +1,20 @@
+variant:
+  source: ../generic/template.cfg
+  modifications:
+    - xpath: //Config/Files/Config
+      FileName: data\jakob\diagonal-fence\nw-generic\fence_diag.cfg
+    - xpath: //Config/Decals/Config[Name="fence"]/Materials/Config
+      cModelDiffTex: data\jakob\diagonal-fence\generic\maps\fence_diag_diff.psd
+      cModelNormalTex: data\jakob\diagonal-fence\generic\maps\fence_diag_norm.psd
+      cModelMetallicTex: data\jakob\diagonal-fence\generic\maps\fence_diag_metal.psd
+      cHeightMap: data\jakob\diagonal-fence\generic\maps\fence_diag_height.psd
+      cDiffuseColor.r: 1
+      cDiffuseColor.g: 1
+      cDiffuseColor.b: 1
+    - xpath: //Config/Decals/Config[Name="underground"]/Materials/Config
+      cModelDiffTex: data\jakob\diagonal-fence\nw-stone\maps\stone_diff.psd
+      cModelNormalTex: data\jakob\diagonal-fence\stone\maps\stone_norm.psd
+      METALLIC_TEX_ENABLED: 0
+      HEIGHT_MAP_ENABLED: 0
+    - xpath-remove: //Config/Decals/Config[Name="underground"]/Transformer
+    - xpath-remove: //Config/Decals/Config[Name="underground2"]

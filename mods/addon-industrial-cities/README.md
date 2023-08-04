@@ -1,5 +1,3 @@
-# Industrial Cities
-
 ![](./banner.jpg)
 
 Increased population residences, new productions, railway stations, more power stations.
@@ -63,6 +61,15 @@ All products can also be imported through Docklands.
 
 - Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
 - Tools Workshop: 7 variations, 4x4 tiles
+
+### Factory Variations
+
+Shift+V variations for production buildings.
+
+- Fur Dealer: 3 new variations
+- Bakery: 2 new variations (+ skin for stone pavement)
+- Cannery: 2 new variations
+- more will follow ...
 
 ### Railway Ornaments
 

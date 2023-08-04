@@ -1,0 +1,457 @@
+<ModOps>
+  <!-- # Stone Pavement Ornaments -->
+  <ModOp Type="addNextSibling" GUID="102159">
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010215</GUID>
+          <Name>Stone Pavement Street</Name>
+          <IconFilename>data\jakob\stone-pavement\icon_street.png</IconFilename>
+          <InfoDescription>1500010222</InfoDescription>
+        </Standard>
+        <Blocking>
+          <HidePropsRadius>0</HidePropsRadius>
+          <DeletePropsRadius>0</DeletePropsRadius>
+          <GroundDecalAsset>24774</GroundDecalAsset>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+        </Blocking>
+        <Building>
+          <BuildingCategoryName>11149</BuildingCategoryName>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Selection />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\stone-pavement\empty.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable>
+          <DestructionCategory>StreetsAndBridges</DestructionCategory>
+        </Constructable>
+        <Mesh />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>OrnamentalBuilding</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>9818759</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <Locked />
+        <FeedbackController />
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentIconInfotip>500276</OrnamentIconInfotip>
+          <OrnamentDescription>0</OrnamentDescription>
+        </Ornament>
+        <AmbientMoodProvider />
+        <Pausable />
+        <Infolayer />
+        <Culture />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010224</GUID>
+          <Name>Stone Pavement</Name>
+          <IconFilename>data\jakob\stone-pavement\icon_empty.png</IconFilename>
+          <InfoDescription>1500010222</InfoDescription>
+        </Standard>
+        <Blocking>
+          <HidePropsRadius>0</HidePropsRadius>
+          <DeletePropsRadius>0</DeletePropsRadius>
+        </Blocking>
+        <Building>
+          <BuildingCategoryName>11149</BuildingCategoryName>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Selection />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\stone-pavement\empty.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Constructable />
+        <Mesh />
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+            <Item>
+              <VectorElement>
+                <InheritedIndex>0</InheritedIndex>
+                <InheritanceMapV2>
+                  <Entry>
+                    <TemplateName>OrnamentalBuilding</TemplateName>
+                    <Index>0</Index>
+                  </Entry>
+                </InheritanceMapV2>
+              </VectorElement>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildSuccessful>
+              <Item>
+                <Sound>9818759</Sound>
+              </Item>
+            </BuildSuccessful>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <Locked />
+        <FeedbackController />
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentIconInfotip>500276</OrnamentIconInfotip>
+          <OrnamentDescription>0</OrnamentDescription>
+        </Ornament>
+        <AmbientMoodProvider />
+        <Pausable />
+        <Infolayer />
+        <Culture />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010223</GUID>
+          <Name>Menu: Stone Pavement Decorations</Name>
+          <IconFilename>data\jakob\stone-pavement\icon_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010215</Building>
+            </Item>
+            <Item>
+              <Building>1500010224</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>134722</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>101497</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>102482</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>114776</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>134730</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>134731</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>134732</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>134733</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>134735</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80040</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80041</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80042</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80043</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80044</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80045</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80046</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80047</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80048</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80049</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80050</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80051</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80060</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80061</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80062</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>80063</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>19564</CategoryDescription>
+        </ConstructionCategory>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- Build Menu -->
+  <!-- <ModOp Type="addPrevSibling" GUID="500116" Path="/Values/ConstructionCategory/BuildingList/Item[Building='501823']">
+    <Item>
+      <Building>1500010223</Building>
+    </Item>
+  </ModOp> -->
+  <ModOp Type="add" GUID="500069,500068" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010223</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="501823"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010224</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # City Decorations -->
+  <Group>
+    <ModOp Type="add" GUID="134722,101497,102482,114776,134730,134731,134732,134733,134735" Path="/Values/Building">
+      <AllowChangeVariation>1</AllowChangeVariation>
+      <BuildModeStartVariation>0</BuildModeStartVariation>
+    </ModOp>
+  </Group>
+  <ModOp Type="add" GUID="134722" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_info_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="101497" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\cultural_props_1x1_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="102482" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\cultural_props_1x1_15.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="114776" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\up_st_reward_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="134730" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_pavillon_02_table_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="134731" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_pavillon_02_table_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="134732" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_pavillon_02_table_03.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="134733" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_pavillon_02_table_04.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="134735" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_city_decorations\tourism_ornaments_stage_01.cfg</Filename>
+    </Item>
+  </ModOp>
+
+  <!-- # City Lights Pack -->
+  <Group>
+    <ModOp Type="add" GUID="80040,80041,80042,80043,80044,80045,80046,80047,80048,80049,80050,80051,80060,80061,80062,80063" Path="/Values/Building">
+      <AllowChangeVariation>1</AllowChangeVariation>
+      <BuildModeStartVariation>0</BuildModeStartVariation>
+    </ModOp>
+  </Group>
+  <ModOp Type="add" GUID="80040" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\market_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80041" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\market_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80042" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\market_03.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80043" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\market_04.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80044" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\market_05.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80045" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\food_service_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80046" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\food_service_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80047" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\food_service_03.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80048" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\food_service_04.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80049" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\restaurant_table_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80050" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\restaurant_table_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80051" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\restaurant_table_03.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80060" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\clock_01.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80061" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\clock_02.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80062" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\fence_lamp.cfg</Filename>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="80063" Path="/Values/Object/Variations">
+    <Item>
+      <Filename>data\jakob\stone-pavement\stone_lights_pack\phone_booth.cfg</Filename>
+    </Item>
+  </ModOp>
+</ModOps>
