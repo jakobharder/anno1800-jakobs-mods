@@ -18,6 +18,8 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Yet another fix for multiplayer
 - Improved Streets, 1.3:
   - Disable railway skin when the mod `Stone Railway` is active
+- Compact Build Menus, 1.3:
+  - Swapped NW warehouse and residence to be consistent with OW
 - Updated Chinese translation
 
 ## 5.9 - Corner Variation Skins
