@@ -1,6 +1,6 @@
 ![](./banner.jpg)
 
-Exchanges railway and New World stone street textures with visually improved versions.
+Exchange railway and New World stone street textures with visually improved versions.
 
 ## Notes
 
@@ -18,5 +18,3 @@ The railway texture is inspired by [Gravel Railway Retexture](https://www.nexusm
 - 1.2: added NW stone bridge
 - 1.2: improved compatibility with City Ornaments
 - 1.1: added railway skin
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

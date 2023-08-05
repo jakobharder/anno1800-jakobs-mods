@@ -1,13 +1,7 @@
-# Nate's Windmill
-
 ![](./banner.jpg)
 
 The windmill is a service building providing electricity to industry and residents.
 It's intended as an alternative to Nate's electricity items for guild houses - a little cheaper, but not as powerful to keep it balanced.
-
-## Requirements
-
-You need to use Mod `[Gameplay] Small Power Plants, New World` to use the windmill in the New World.
 
 ## Buildings
 
@@ -36,16 +30,6 @@ Includes a fix to correct the fan direction of grain mills.
 - 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
-### Older
-
-- 1.5: Changed maintenance cost to 250
-- 1.4: Added iModYourAnno tweak support
-- 1.3.2: Include grain mill fix.
-- 1.3: NW Windmill (when enabled via separate mod)
-- 1.3: Removed Windmill from Palace range increase buff
-
-## Translations
-
-Available: English, French, German, Italian, Polish, Russian, Spanish, Japanese, Korean, Simplified Chinese, Traditional Chinese
+## Credits
 
 Thanks to mfuegar, DrD_AVEL for the translations!

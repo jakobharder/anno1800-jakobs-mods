@@ -1,6 +1,6 @@
 ![](./banner.jpg)
 
-Replace the rather ugly electric poles with more elegant versions.
+Modern and elegant electric poles perfect for big cities. They also work nicely with diagonal zigzag streets.
 
 ## Notes
 

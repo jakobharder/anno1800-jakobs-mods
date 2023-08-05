@@ -1,5 +1,3 @@
-# Biogas Production
-
 ![](./banner.jpg)
 
 The biogas plant converts dung from animal farms into gas for use in power plants.
@@ -36,14 +34,6 @@ You find the biogas production in the material menu, and in the gas electricity 
 - 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
-### 1.5
-
-- Added Small Gas Power Plant (from Small Power Plants)
-
-## Translations
-
-Available: Chinese, French, English, German, Korean, Polish, Spanish
+## Credits
 
 Thanks to darknesswei, Tonton Yip for, mfuegar, DrD_AVEL translations!
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

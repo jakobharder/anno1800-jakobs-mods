@@ -1,6 +1,6 @@
 ![](./banner.jpg)
 
-Adds products like Cheese, Suits and Canned Fish as alternative basic needs to vanilla population.
+Add products like Cheese, Suits and Canned Fish as alternative basic needs to vanilla population.
 
 They are listed in Lifestyle needs and need to be enabled individually.
 
