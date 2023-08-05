@@ -5,10 +5,10 @@ You can simply overwrite older version. The modloader automatically takes the ri
 ## [Unreleased]
 
 - City Variations, 1.0:
-  - Includes residence skins, town halls, small hotels and commercial street
-  - Replaces `Everything Skin Pack`
+  - Merges `Everything Skin Pack` with small hotels and commercial street
+  - Added iMYA tweaks to disable optional buildings
   - Added diagonal and cornered fence skins
-  - Added iMYA tweaks
+  - Added small post office (`Empire of the Skies` only)
 - New World Cities, 1.5:
   - Added NW diagonal and cornered fence skins
 - Diagonal Residences, 1.8:

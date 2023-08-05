@@ -31,6 +31,12 @@ The buildings function and unlock the same as their normal counterparts, but wit
 Only with DLC `The High Life` and DLC `Tourist Season`.
 Can be disabled with iMYA tweaks.
 
+### Small Post Office
+
+Functoinal post office fitting into smaller OW towns.
+
+Only with DLC `Empire of the Skies`.
+
 ## Skins and Shift+V Variations
 
 Note: `Shift+V` is blocked on already built buildings.

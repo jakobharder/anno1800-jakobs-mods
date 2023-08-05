@@ -1,10 +1,6 @@
-<!-- 
-  Small Post Office with better fitting visuals for Artisans and Workers.
--->
 <ModOps>
-  <!-- TODO FeedbackBuildingGroup 2549 -->
   <!-- # Service: Post Office -->
-  <ModOp GUID="3741" Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="3741">
     <Asset>
       <BaseAssetGUID>3741</BaseAssetGUID>
       <Values>
@@ -23,7 +19,10 @@
             </Item>
           </Variations>
         </Object>
-        <Locked />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
         <FactoryBase>
           <FactoryOutputs>
             <Item>
@@ -51,10 +50,10 @@
               <Ingredient>1010205</Ingredient>
               <Amount>25</Amount>
             </Item>
-            <!-- <Item>
-              <Ingredient>1500010825</Ingredient>
-              <Amount>15</Amount>
-            </Item> -->
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>5</Amount>
+            </Item>
           </Costs>
         </Cost>
         <ItemContainer>
@@ -76,13 +75,12 @@
         </Maintenance>
       </Values>
     </Asset>
-    <!-- Unlock with 1500 Artisans and DLC availability. -->
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010838</GUID>
-          <Name>Unlock Small Post Office</Name>
+          <GUID>1500011205</GUID>
+          <Name>Always unlock with Empire Skies</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -117,28 +115,6 @@
               </TriggerAction>
             </Item>
           </TriggerActions>
-          <SubTriggers>
-            <Item>
-              <SubTrigger>
-                <Template>AutoCreateTrigger</Template>
-                <Values>
-                  <Trigger>
-                    <TriggerCondition>
-                      <Template>ConditionPlayerCounter</Template>
-                      <Values>
-                        <Condition />
-                        <ConditionPlayerCounter>
-                          <PlayerCounter>PopulationByLevel</PlayerCounter>
-                          <Context>15000002</Context>
-                          <CounterAmount>1500</CounterAmount>
-                        </ConditionPlayerCounter>
-                      </Values>
-                    </TriggerCondition>
-                  </Trigger>
-                </Values>
-              </SubTrigger>
-            </Item>
-          </SubTriggers>
         </Trigger>
         <TriggerSetup>
           <UsedBySecondParties>0</UsedBySecondParties>
@@ -146,14 +122,22 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='3741']">
-    <Item>
-      <GUID>1500010817</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="2015" Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741']">
+  <ModOp Type="addNextSibling" GUID="2015"
+    Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500010817']"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741']">
     <Item>
       <Building>1500010817</Building>
+      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="@2549/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010817</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="@368/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010817</GUID>
     </Item>
   </ModOp>
 </ModOps>
