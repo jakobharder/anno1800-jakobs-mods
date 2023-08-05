@@ -1,5 +1,7 @@
 ![](./banner.jpg)
 
+Terraced houses, construction material productions and more to fully grow your cities.
+
 ## Buildings
 
 ### Residences
@@ -65,30 +67,6 @@ Some buildings are a bit slower than their Old World counterpart.
 - Immediately unlock in creative mode
 - Added Artista skyscrapers
 
-### 1.3
-
-- 1.3.5: Technical improvements
-- 1.3.4: Changed Terraced Artista unlock to 300 Artistas
-- 1.3.4: Fixed Terraced Artista roofs at night
-- 1.3.3: Fixed Harborlife compatibility
-- 1.3.2: Allow rotation before placing an Artista residence
-- Added gapless Artista residences with 3 skins
-
-### 1.2
-
-- Added enclosed greenery
-- Added City Lights Pack and Tourism ornament variants
-- Added fix for wrong grass color in Tropical Forest ornaments
-- Fixed missing item effect pools for some construction material buildings
-
-### 1.1
-
-- Added dirt/stone paving ornaments
-
-## Translations
-
-Available: Chinese, English, German, Polish, Spanish
+## Credits
 
 Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

@@ -45,6 +45,10 @@ All products are available as Dockland imports, or can be produced with `[Shared
 - Canned Fish
 - Suits
 
+## Known Issues
+
+- Pescatarians are not listed in the global balance overview.
+
 ## Changes
 
 ### 2.1
@@ -61,33 +65,6 @@ All products are available as Dockland imports, or can be produced with `[Shared
 - Aligned items/buffs effecting post office with vanilla post office
 - Include required productions from Extra Goods
 
-### 2.0
-
-- 2.0.7: Minor translation fixes
-- 2.0.5: Fixed music school having normal skins
-- 2.0.4: Increased Library range in exchange for higher maintenance
-- 2.0.4: Reduced timber cost of level 1 residence to 4
-- 2.0.4: Increased number of residents before need warning is shown
-- 2.0.3: Fixed missing skin icons
-- 2.0.2: Fixed missing residence construction costs
-- 2.0.2: Fixed too high need income
-- Complete rework of all aspects
-- Added new models for worker and artisan ter
-- Added Lifestyle needs
-- Added Vegetables, Pickled Vegetables
-- Added Library building / service as replacement for schools
-- Added Post Office to work with DLC11
-- Removed farmer tier (buildings will be automatically upgraded)
-- Removed Wooden Accessories, Bottled Beer
-
-## Known Issues
-
-- Pescatarians are not listed in the global balance overview.
-
-## Translations
-
-Available: Chinese, English, French, German, Korean, Polish, Russian, Spanish
+## Credits
 
 Thanks to @m_belonosov, redzmey1, MSHS, @Petritant, HeroOfOlympus, Aveneger432, darknesswei, mfuegar, DrD_AVEL for the translations!
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

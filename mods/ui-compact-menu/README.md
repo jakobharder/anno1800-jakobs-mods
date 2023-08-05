@@ -1,10 +1,16 @@
-# Compact Menus
+![](./banner.jpg)
 
-Combines city construction menu icons into categories: tourists, public services, institutions, malls and administration.
+Combine city construction menu icons into categories: tourists, public services, institutions, malls and administration.
 
-Note: this mod does not recreate the whole menu, but only combines what is correctly added.
+## Notes
+
+This mod does not recreate the whole menu, but only combines what is correctly added.
 Some mods add their icon only to either progression type sorting or category type sorting.
 Please contact the respective mod authors for fixes.
+
+Buildings from Muggenstuermer and Xan are included.
+
+Contact me if you have any mod conflicts so that I can take care of them.
 
 ## Changes
 
@@ -12,27 +18,6 @@ Please contact the respective mod authors for fixes.
 
 - Swapped NW warehouse and residence to be consistent with OW
 
-### 1.2
-
-- 1.2.4: Russian translation
-- 1.2.3: Fixed blurry icons
-- 1.2.2: Updated Chinese translation
-- Added Kurila's harbor guns category (thanks)
-
-### 1.1
-
-- Included NW administration and institutions
-- Merged NW orchards
-- Removed duplicate NW electricity chain
-- Removed duplicate NW sewing Machines
-
-## Notes
-
-Buildings from Muggenstuermer and Xan are included.
-Other mod buildings should be untouched as long as this mod is loaded last.
-
-Contact me if you have any mod conflicts and I take care of them.
+## Credits
 
 Thanks to darknesswei, DrD_AVEL for the translations!
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

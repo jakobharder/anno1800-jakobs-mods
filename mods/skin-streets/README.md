@@ -1,5 +1,3 @@
-# Improved Street Skins
-
 ![](./banner.jpg)
 
 Exchanges railway and New World stone street textures with visually improved versions.
