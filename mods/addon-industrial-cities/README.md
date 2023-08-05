@@ -109,10 +109,6 @@ Note: the menu has no scroll option. It may not show if you already have too man
 - Increased income from tea
 - Fixed unlocks when High Life DLC is not owned
 
-## Translations
-
-Available: all
+## Credits
 
 Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!
-
-[Project on GitHub](https://github.com/jakobharder/anno-1800-jakobs-mods)

@@ -4,7 +4,7 @@ Add more variety to your cities with skins, variations and non-gameplay changing
 
 Skins and variations do not affect gameplay in any way.
 
-Buildings have a different tile size. Their effects are adjusted accordingly, but have otherwise same gameplay functionality.
+Buildings have a different tile size. Their effects are adjusted accordingly but have otherwise same gameplay functionality.
 
 ## Buildings
 
@@ -21,8 +21,7 @@ The small hotels and normal hotel skins can be used in the New World if you use 
 
 ### Commercial Street (optional)
 
-Buildings function and unlock the same as their normal counterparts, but with decreased range. The buildings do not count as quest objectives.
-
+The buildings function and unlock the same as their normal counterparts, but with decreased range. The buildings do not count as quest objectives.
 
 - Department, Furniture and Drug Store
 - Store Warehouse (+ skins for all mall types)
@@ -35,7 +34,7 @@ Can be disabled with iMYA tweaks.
 ## Skins and Shift+V Variations
 
 Note: `Shift+V` is blocked on already built buildings.
-You can either change the variation before you build it, or pick it up again and change then.
+You can either change the variation before you build it or pick it up again and change then.
 
 ### Town Hall Variations
 

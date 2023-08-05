@@ -1,5 +1,20 @@
 <ModOps>
-  <Include File="/features.include.xml" />
+  <!-- Add electrity support to the New World -->
+  <Include File="/data/jakob/nw-electricity/assets.include.xml" />
+
+  <!-- Power Plants: Oil, Gas, Coal and Wind (if the respective mods for OW are available) -->
+  <Include File="/data/jakob/nw-power-plants/assets.include.xml" />
+
+  <!-- NW Construction: Steel, Windows, Concrete -->
+  <Include File="/data/jakob/nw-construction/assets.include.xml" />
+
+  <!-- Stone/Dirt Pavement Ornaments -->
+  <Include File="/data/jakob/nw-stone-pavement/assets.include.xml" />
+  <!-- Enclosed greenery uses InternalID 100 -->
+  <Include File="/data/jakob/nw-enclosed-greenery/assets.include.xml" />
+
+  <!-- Terraced Artista / Skyscraper -->
+  <Include File="/data/jakob/gapless-artista/assets.include.xml" />
 
   <!-- # Harborlife Fix -->
   <!-- just in case people didn't update and blame upgradable worker for it -->
