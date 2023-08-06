@@ -1,17 +1,6 @@
-<!-- 
-New Town Hall
-
-1500010021 new town hall
-1500010022 unhide trigger
-1500010023 unlock trigger
-1500010024 town hall tower
-1500010025 unhide trigger
-1500010026 unlock trigger
-1500010027 tower buff
-
--->
-
 <ModOps>
+  <Include File="./guildhouse.include.xml" />
+
   <!-- # Town Hall Tower -->
   <!-- ================= -->
   <ModOp GUID='100415' Type="addNextSibling">
@@ -21,7 +10,7 @@ New Town Hall
         <Standard>
           <GUID>1500010024</GUID>
           <Name>town_hall_tower</Name>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tallb.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_new_townhall_tallb.png</IconFilename>
         </Standard>
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -115,7 +104,7 @@ New Town Hall
         <Standard>
           <GUID>1500010027</GUID>
           <Name>town_hall_tower_forward</Name>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tallb.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_new_townhall_tallb.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -139,7 +128,7 @@ New Town Hall
         <Standard>
           <GUID>1500010028</GUID>
           <Name>town_hall_tower_buff</Name>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhall_tallb.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_new_townhall_tallb.png</IconFilename>
         </Standard>
         <ItemEffect>
           <EffectTargets>
@@ -277,7 +266,7 @@ New Town Hall
         <Standard>
           <GUID>1500010021</GUID>
           <Name>new_town_hall</Name>
-          <IconFilename>data\jakob\ui\icons\icon_new_townhallb.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_new_townhallb.png</IconFilename>
         </Standard>
         <Building>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -598,7 +587,7 @@ New Town Hall
         <Standard>
           <GUID>1500010051</GUID>
           <Name>scholar_townhall</Name>
-          <IconFilename>data\jakob\ui\icons\icon_scholar_townhallb.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_scholar_townhallb.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -934,7 +923,7 @@ New Town Hall
         <Standard>
           <GUID>1500010050</GUID>
           <Name>Build menu: Administration</Name>
-          <IconFilename>data\jakob\ui\icons\icon_townhall_menub.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_townhall_menub.png</IconFilename>
         </Standard>
         <ConstructionCategory>
           <BuildingList>

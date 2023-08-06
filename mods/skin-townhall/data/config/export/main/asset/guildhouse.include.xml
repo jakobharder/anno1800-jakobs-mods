@@ -1,0 +1,60 @@
+<ModOps>
+  <ModOp GUID="100415" Type="addNextSibling">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011220</GUID>
+          <Name>Higher Guildhouse Yellow</Name>
+          <IconFilename>data/ui/jakob/icon_guildhouse_yellow.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011220</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/guildhouse/guildhouse.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011221</GUID>
+          <Name>Higher Guildhouse Red</Name>
+          <IconFilename>data/ui/jakob/icon_guildhouse_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011221</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/guildhouse/guildhouse-red.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="1010516" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500011220</SkinAssetGuid>
+    </Item>
+    <Item>
+      <SkinAssetGuid>1500011221</SkinAssetGuid>
+    </Item>
+  </ModOp>
+</ModOps>

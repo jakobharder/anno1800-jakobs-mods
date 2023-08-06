@@ -1,6 +1,6 @@
 ![](./banner.jpg)
 
-Adds products like Cheese, Suits and Canned Fish as alternative basic needs to vanilla population.
+Add products like Cheese, Suits and Canned Fish as alternative basic needs to vanilla population.
 
 They are listed in Lifestyle needs and need to be enabled individually.
 
@@ -18,8 +18,9 @@ There is no double consumption.
 
 ## Changes
 
-### 1.3
+### 2.0
 
+- Combined menus are now tweakable with iMYA - default switched off.
 - Added compatibility with the mod `Clarks Tailoring`
 - Yet another fix for multiplayer
 

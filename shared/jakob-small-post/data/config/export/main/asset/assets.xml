@@ -1,0 +1,143 @@
+<ModOps>
+  <!-- # Service: Post Office -->
+  <ModOp Type="addNextSibling" GUID="3741">
+    <Asset>
+      <BaseAssetGUID>3741</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010817</GUID>
+          <Name>Post Office</Name>
+          <IconFilename>data/ui/jakob/icon_post.png</IconFilename>
+        </Standard>
+        <Building>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\small-post\post.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>24962</DLCDependency>
+        </Locked>
+        <FactoryBase>
+          <FactoryOutputs>
+            <Item>
+              <Product>535</Product>
+              <Amount>1</Amount>
+              <StorageAmount>3</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>45</CycleTime>
+          <WarehouseTransporterAsset>829</WarehouseTransporterAsset>
+          <MissingConnectionInfolayer>0</MissingConnectionInfolayer>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>10000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>25</Amount>
+            </Item>
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <ItemContainer>
+          <SocketScopeRadius>18</SocketScopeRadius>
+          <SocketScopeRadiusOverlapCategory>Postbox</SocketScopeRadiusOverlapCategory>
+        </ItemContainer>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>400</Amount>
+              <InactiveAmount>200</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>40</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011205</GUID>
+          <Name>Always unlock with Empire Skies</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsDLCActive</Template>
+            <Values>
+              <Condition />
+              <ConditionIsDLCActive>
+                <DLCAssetList>
+                  <Item>
+                    <DLCAsset>24962</DLCAsset>
+                  </Item>
+                </DLCAssetList>
+              </ConditionIsDLCActive>
+              <ConditionPropsNegatable />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010817</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="2015"
+    Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500010817']"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='3741']">
+    <Item>
+      <Building>1500010817</Building>
+      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="@2549/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010817</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="@368/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010817</GUID>
+    </Item>
+  </ModOp>
+</ModOps>

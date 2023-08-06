@@ -31,16 +31,25 @@ The buildings function and unlock the same as their normal counterparts, but wit
 Only with DLC `The High Life` and DLC `Tourist Season`.
 Can be disabled with iMYA tweaks.
 
+### Small Post Office
+
+Functoinal post office fitting into smaller OW towns.
+
+Only with DLC `Empire of the Skies`.
+
 ## Skins and Shift+V Variations
 
 Note: `Shift+V` is blocked on already built buildings.
 You can either change the variation before you build it or pick it up again and change then.
 
-### Town Hall Variations
+### Town Hall and Guild House Skins
 
-- New Town Hall with 5 roof color variations
-- Red Town Hall with 3 model variations
-- 2 City Hall Towers
+Paintbrush skins for town halls and guild houses.
+
+- New Town Hall with 5 roof color skins
+- Red Town Hall with 3 model skins (DLC `Land of Lions` only)
+- 2 City Hall Towers skins (DLC `The High Life` only)
+- City Guildhouse with 2 skins
 
 ### Residence Skins
 
