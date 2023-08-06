@@ -12,9 +12,13 @@ You can still use it though, if you prefer separately buildable town halls.
 
 ## Skins
 
-- New Town Hall with 5 roof color variations
-- Red Town Hall with 3 model variations
+- New Town Hall with 5 roof color variants
+- Red Town Hall with 3 model variants
 - 2 City Hall Towers
+
+## Shift+V Variations
+
+- Higher Guildhouse
 
 ## Changes
 

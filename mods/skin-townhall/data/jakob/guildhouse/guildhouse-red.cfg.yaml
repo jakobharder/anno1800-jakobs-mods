@@ -1,0 +1,8 @@
+variant:
+  source: ${annoRda}\data\graphics\buildings\special\guild_house\guild_house.cfg
+  modifications:
+    # model changes
+    - xpath: //Config/Models/Config
+      FileName: data/jakob/guildhouse/rdm/guildhouse_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config
+      cModelDiffTex: data/jakob/guildhouse/maps/guildhouse_diff.psd

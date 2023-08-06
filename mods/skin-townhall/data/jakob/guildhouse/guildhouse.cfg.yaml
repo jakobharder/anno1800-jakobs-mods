@@ -1,0 +1,6 @@
+variant:
+  source: ${annoRda}\data\graphics\buildings\special\guild_house\guild_house.cfg
+  modifications:
+    # model changes
+    - xpath: //Config/Models/Config
+      FileName: data/jakob/guildhouse/rdm/guildhouse_lod0.rdm
