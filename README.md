@@ -16,9 +16,11 @@ All mods are compatible previous versions and can be added to existing savegames
 
 See full [changelog](./doc/CHANGELOG.md).
 
-## `[Addon] City Variations`
+## `Jakob's City Variations`
 
 ![](./doc/city-variations.jpg)
+
+Add more variety to your cities with skins, variations and non-gameplay changing buildings.
 
 ### Buildings
 
@@ -28,17 +30,26 @@ See full [changelog](./doc/CHANGELOG.md).
 - Small Store Warehouse (+ skins for all mall types)
 - Small Ornamental mall (+ skins for all mall types)
 - Small Courtyard Restaurant
+- Small Post Office
 
 ### Skins
 
-- New town halls:
+- Town hall:
   adds 3 red brick town halls, the "new town hall" and two smaller town hall skyscrapers.
-- Residence Skins:
-  adds paintbrush skins for artisans and engineers (also diagonal).
-  Uses less video memory for better performance than the Colour Collection, but is mostly on roof changes.
+- Guild house: higher guild house with 2 color skins
+- Residences:
+  skins for normal and diagonal residences.
+  Use less video memory for better performance than the Colour Collection, but is mostly only roof changes.
 - Hotel, also in the NW if played with [New World Tourism](https://github.com/anno-mods/New-World-Tourism)
+- Factory variants:
+  adds Shift+V variations to vanilla production buildings.
 
-## `[Addon] Industrial Cities`
+### Ornaments
+
+- Diagonal enclosed greenery on plaza and stone pavement
+- Skins with diagonal and other corner variations for fences and park paths
+
+## `Jakob's Industrial Cities`
 
 ![](./doc/industrial-cities.jpg)
 
@@ -71,12 +82,7 @@ They come with new needs, productions and fitting ornaments.
 - Passenger and cargo platforms, dirt and concrete tiles
 - Various cargo train variations
 
-### Shift+V Variants
-
-- Factory variants:
-  adds Shift+V variations to vanilla production buildings.
-
-## `[Addon] New World Cities`
+## `Jakob's New World Cities`
 
 ![](./doc/nw-cities.jpg)
 
@@ -104,8 +110,10 @@ They come with new needs, productions and fitting ornaments.
 
 - NW stone pavement + ornaments from all categories
 - Hacienda walls on grass and dirt
+- Diagonal enclosed greenery on plaza and stone pavement
+- Skins with diagonal and other corner variations for fences and park paths
 
-## `[Addon] Pescatarians`
+## `Pescatarians (Jakob)`
 
 ![](./doc/pescatarians.jpg)
 
@@ -122,6 +130,7 @@ Ideally for more farmer workforce with artisan-looking towns.
 - Pescatarian residence (2 Tiers)
 - Community center
 - Music school
+- Small post office
 
 ### Productions
 
@@ -132,7 +141,7 @@ Ideally for more farmer workforce with artisan-looking towns.
 - Canned fish factory, olive orchard
 - Olive soap maker, olives
 
-## `[Building] Diagonal Residences`
+## `Diagonal Residences (Jakob)`
 
 ![](./doc/diagonal.jpg)
 
@@ -150,7 +159,7 @@ Ideally for more farmer workforce with artisan-looking towns.
 
 You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/anno1800/mods/164) as well.
 
-## `[Skin] Improved Streets`
+## `Improved Streets (Jakob)`
 
 ![](./doc/improved-streets.jpg)
 
@@ -161,31 +170,27 @@ Replaces railroads and NW streets with more fitting textures.
 - More sandy NW stone street
 - Wider railway texture to fit both cities and rural areas
 
-## `[Skin] Improved Electric Wires`
+## `Improved Poles (Jakob)`
 
 ![](./doc/electric-wires.jpg)
 
 Replaces electric wires and poles with lighter, less distracting models.
 
-## `[Building] Nate's Windmill`
+## `Nate's Windmill (Jakob)`
 
   Adds a windmill with small range but infinite power.
 
-## `[Building] Biogas Production`
+## `Biogas Production (Jakob)`
 
   Adds production to process dung from animal farms into gas.
 
-## `[Building] Commercial Street`
+## `Compact Menus (Jakob)`
 
-  Adds small malls and restaurants fitting nicely into engineer and investor blocks.
+Combine city construction menu icons into categories: tourists, public services, institutions, malls and administration.
 
-## `[Gameplay] Alternative Needs`
+## `Alternative Needs (Jakob)`
 
-Adds products from `[Addon] Industrial Cities` and `[Addon] Pescatarians` available as lifestyle needs as alternatives to some basic needs.
-
-## `[Gameplay] New World Tourism, Small Monument Base`
-
-  10x10 instead of 14x14 base for Christo Redentor from [New World Tourism](https://github.com/anno-mods/New-World-Tourism).
+Adds products from `Industrial Cities` and `Pescatarians` available as lifestyle needs as alternatives to some basic needs.
 
 ## Build and Modify Yourself
 

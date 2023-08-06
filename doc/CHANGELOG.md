@@ -2,17 +2,23 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## [Unreleased]
+## 6.0 - City Variations
+
+### New Content
 
 - City Variations, 1.0:
   - Merges `Everything Skin Pack` with small hotels and commercial street
   - Added iMYA tweaks to disable optional buildings
-  - Added diagonal and cornered fence skins
+  - Added 2 guild house skins
   - Added small post office (`Empire of the Skies` only)
+  - Added diagonal and cornered fence skins
 - New World Cities, 1.5:
   - Added NW diagonal and cornered fence skins
 - Diagonal Residences, 1.8:
   - Added NW diagonal and cornered fence skins
+
+### Fixes and Minor Changes
+
 - Alternative Needs, 1.3:
   - Added compatibility with the mod `Clarks Tailoring`
   - Yet another fix for multiplayer
