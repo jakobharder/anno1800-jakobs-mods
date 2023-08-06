@@ -1,23 +1,25 @@
 <ModOps>
   <!-- # Alternative Needs -->
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
-    <Text>Costumes</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
-    <Text>Nourriture</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
-    <Text>Nourriture</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
-    <Text>Conserves</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
-    <Text>[AssetData(984) Text]</Text> <!-- Tools -->
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
-    <Text>Boissons chaudes</Text>
-  </ModOp>
+  <Group Skip="1">
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+      <Text>Costumes</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+      <Text>Nourriture</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+      <Text>Nourriture</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+      <Text>Conserves</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+      <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
+      <Text>Boissons chaudes</Text>
+    </ModOp>
+  </Group>
 
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>

@@ -1,0 +1,323 @@
+<ModOps>
+  <!-- # Cheese - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010111']">
+    <ModOp Type="remove" GUID="25000190,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010111']" />
+    <ModOp Type="addNextSibling" GUID="1010263">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010952</GUID>
+            <Name>Cheese Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_cheese_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="25000244" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_cheese_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="25000244" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500010103</Building>
+        <ForceIcon>1500010952</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1500010104</Building>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Canned Fish - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010122']">
+    <ModOp Type="remove" GUID="25000191,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010122']" />
+    <ModOp Type="addNextSibling" GUID="1010200">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010951</GUID>
+            <Name>Canned Fish Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_canned_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="500008" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_canned_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="500008" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500010121</Building>
+        <ForceIcon>1500010951</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1010305</Building>
+          </Item>
+          <Item>
+            <Building>1500010107</Building>
+          </Item>
+          <Item>
+            <Building>1010278</Building>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Pickled Vegetables - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010114']">
+    <ModOp Type="remove" GUID="25000190,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010114']" />
+    <ModOp Type="addNextSibling" GUID="1010265">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010953</GUID>
+            <Name>Pickled Vegetables Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_vegetables_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="500004" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_vegetables_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="500004" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500010835</Building>
+        <ForceIcon>1500010953</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1500010830</Building>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Olive Soap - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010191']">
+    <ModOp Type="remove" GUID="25000190,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010191']" />
+    <ModOp Type="addNextSibling" GUID="1010281">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010954</GUID>
+            <Name>Olive Soap Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_soap_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="25000220" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_soap_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="25000220" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500010108</Building>
+        <ForceIcon>1500010954</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1500010107</Building>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Suits - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010129']">
+    <ModOp Type="remove" GUID="25000191,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010129']" />
+    <ModOp Type="addNextSibling" GUID="1010315">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010955</GUID>
+            <Name>Suits Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_suits_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="500019" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_suits_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="500019" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500011150</Building>
+        <ForceIcon>1500010955</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1500010126</Building>
+            <Tier3>
+              <Item>
+                <Building>1500010124</Building>
+              </Item>
+            </Tier3>
+          </Item>
+          <Item>
+            <Building>1010267</Building>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+
+    <!-- Clarks Tailoring -->
+    <Group Condition="@1800000200">
+      <ModOp Type="replace" GUID="1800000200" Path="/Values/Standard/IconFilename">
+        <IconFilename>data/ui/jakob/icon_suits_menu.png</IconFilename>
+      </ModOp>
+      <ModOp Type="add" GUID="1800000200"
+        Path="/Values/ProductionChain/Tier1">
+        <Item>
+          <Building>1500011150</Building>
+          <ForceIcon>1500010955</ForceIcon>
+          <Tier2>
+            <Item>
+              <Building>1500010126</Building>
+              <Tier3>
+                <Item>
+                  <Building>1500010124</Building>
+                </Item>
+              </Tier3>
+            </Item>
+            <Item>
+              <Building>1010267</Building>
+            </Item>
+          </Tier2>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # Tea - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010959']">
+    <ModOp Type="remove" GUID="25000192,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010959']" />
+    <ModOp Type="addNextSibling" GUID="1010265">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010956</GUID>
+            <Name>Tea Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_tea_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="500902" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_tea_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="500902" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500011162</Building>
+        <ForceIcon>1500010956</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1500011160</Building>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Tools - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010155']">
+    <ModOp Type="remove" GUID="25000191,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010155']" />
+    <ModOp Type="addNextSibling" GUID='1010200'>
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010957</GUID>
+            <Name>Tools Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_tools_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="500003" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_tools_menu.png</IconFilename>
+    </ModOp>
+    <ModOp Type="add" GUID="500003" Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>1500010154</Building>
+        <ForceIcon>1500010957</ForceIcon>
+        <Tier2>
+          <Item>
+            <Building>1010266</Building>
+          </Item>
+          <Item>
+            <Building>1010297</Building>
+            <Tier3>
+              <Item>
+                <Building>1010305</Building>
+              </Item>
+              <Item>
+                <Building>1010304</Building>
+              </Item>
+            </Tier3>
+          </Item>
+        </Tier2>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Vegetables - Construction Menu -->
+  <Group Condition="//Values[Standard/GUID='500945']/ConstructionCategory/BuildingList/Item[Building='1500010830']">
+    <ModOp Type="remove" GUID="25000189,500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010830']" />
+    <ModOp Type="addNextSibling" GUID="1010265">
+      <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010846</GUID>
+            <Name>Fishery Menu</Name>
+            <IconFilename>data/ui/jakob/icon_vegetables2_menu.png</IconFilename>
+          </Standard>
+          <ProductionChain>
+            <Building>1010278</Building>
+            <Tier1>
+              <Item>
+                <Building>1500010830</Building>
+                <ForceIcon>1500010958</ForceIcon>
+              </Item>
+            </Tier1>
+          </ProductionChain>
+          <Locked>
+            <DefaultLockedState>0</DefaultLockedState>
+          </Locked>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010958</GUID>
+            <Name>Vegetables Alt Icon</Name>
+            <IconFilename>data/ui/jakob/icon_vegetables2_alt.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="replace" GUID="500945,25000189" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010278']"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010278']">
+      <Item>
+        <Building>1500010846</Building>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

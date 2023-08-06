@@ -18,8 +18,9 @@ There is no double consumption.
 
 ## Changes
 
-### 1.3
+### 2.0
 
+- Combined menus are now tweakable with iMYA - default switched off.
 - Added compatibility with the mod `Clarks Tailoring`
 - Yet another fix for multiplayer
 

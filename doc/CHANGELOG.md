@@ -19,7 +19,8 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ### Fixes and Minor Changes
 
-- Alternative Needs, 1.3:
+- Alternative Needs, 2.0:
+  - Added iMYA tweaks to enable combined menus (default off)
   - Added compatibility with the mod `Clarks Tailoring`
   - Yet another fix for multiplayer
 - Improved Streets, 1.3:

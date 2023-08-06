@@ -1,23 +1,25 @@
 <ModOps>
   <!-- # Alternative Needs -->
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
-    <Text>精制服装</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
-    <Text>食物</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
-    <Text>食物</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
-    <Text>罐装食品</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
-    <Text>[AssetData(984) Text]</Text> <!-- Tools -->
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
-    <Text>热饮</Text>
-  </ModOp>
+  <Group Skip="1">
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+      <Text>精制服装</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+      <Text>食物</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+      <Text>食物</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+      <Text>罐装食品</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+      <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
+      <Text>热饮</Text>
+    </ModOp>
+  </Group>
 
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>

@@ -1,23 +1,25 @@
 <ModOps>
   <!-- # Alternative Needs -->
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
-    <Text>Ropa fina</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
-    <Text>Comida</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
-    <Text>Comida</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
-    <Text>Comida enlatada</Text>
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
-    <Text>[AssetData(984) Text]</Text> <!-- Tools -->
-  </ModOp>
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
-    <Text>Bebidas calientes</Text>
-  </ModOp>
+  <Group Skip="1">
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+      <Text>Ropa fina</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+      <Text>Comida</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+      <Text>Comida</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+      <Text>Comida enlatada</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+      <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500902']/Text">
+      <Text>Bebidas calientes</Text>
+    </ModOp>
+  </Group>
 
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
