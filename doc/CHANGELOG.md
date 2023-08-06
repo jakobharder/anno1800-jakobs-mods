@@ -2,6 +2,11 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+- New World Cities, 1.6:
+  - Added flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+
 ## 6.0 - City Variations
 
 ### 6.0.1
@@ -14,7 +19,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Merges `Everything Skin Pack` with small hotels and commercial street
   - Added iMYA tweaks to disable optional buildings
   - Added 2 guild house skins
-  - Added small post office (`Empire of the Skies` only)
+  - Added small post office (only with DLC `Empire of the Skies`)
   - Added diagonal and cornered fence skins
 - New World Cities, 1.5:
   - Added NW diagonal and cornered fence skins

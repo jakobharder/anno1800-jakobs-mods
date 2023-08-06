@@ -1,0 +1,313 @@
+<ModOps>
+  <!-- # Bread Chain -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010313">
+      <Asset>
+        <BaseAssetGUID>1010313</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500011230</GUID>
+            <Name>Flour Mill</Name>
+          </Standard>
+          <Building>
+            <AssociatedRegions>Colony01</AssociatedRegions>
+          </Building>
+          <Selection>
+            <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
+          </Selection>
+          <Locked>
+            <DLCDependency>24961</DLCDependency>
+          </Locked>
+          <FactoryBase>
+            <IsMainFactory>0</IsMainFactory>
+          </FactoryBase>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>50</Amount>
+              </Item>
+              <Item>
+                <Product>1010367</Product>
+                <Amount>10</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+        </Values>
+      </Asset>
+      <Asset>
+        <BaseAssetGUID>1010291</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500011231</GUID>
+            <Name>Bakery</Name>
+          </Standard>
+          <Building>
+            <AssociatedRegions>Colony01</AssociatedRegions>
+          </Building>
+          <Object>
+            <Skins>
+              <SkinList />
+            </Skins>
+          </Object>
+          <Selection>
+            <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
+          </Selection>
+          <Locked>
+            <DLCDependency>24961</DLCDependency>
+          </Locked>
+          <FactoryBase>
+            <IsMainFactory>0</IsMainFactory>
+          </FactoryBase>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>60</Amount>
+              </Item>
+              <Item>
+                <Product>1010367</Product>
+                <Amount>50</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011232</GUID>
+            <Name>Bread Chain</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
+          </Standard>
+          <ProductionChain>
+            <Building>1500011231</Building>
+            <Tier1>
+              <Item>
+                <Building>1500011230</Building>
+                <Tier2>
+                  <Item>
+                    <Building>25128</Building>
+                  </Item>
+                </Tier2>
+              </Item>
+            </Tier1>
+          </ProductionChain>
+          <Locked>
+            <DLCDependency>24961</DLCDependency>
+          </Locked>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500950,5466"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010529' or position()=last()][1]">
+      <Item>
+        <Building>1500011232</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="1440134380"
+      Condition="@1440134380"
+      Path="/Values/ConstructionCategory/BuildingList/Item[last()]">
+      <Item>
+        <Building>1500011232</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Unlocks -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010313">
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011234</GUID>
+            <Name>Unhide @ Artista</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>5403</Context>
+                  <CounterAmount>1</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnhideAssets>
+                        <Item>
+                          <Asset>1500011230</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011231</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011232</Asset>
+                        </Item>
+                      </UnhideAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011234</GUID>
+            <Name>@ 300 Artista</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>5403</Context>
+                  <CounterAmount>300</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500011230</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011231</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011232</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011233</GUID>
+            <Name>Creative Mode</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionIsCreativeMode</Template>
+              <Values>
+                <Condition />
+                <ConditionIsCreativeMode />
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500011230</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011231</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011232</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
+
+  <!-- # Feedback -->
+  <ModOp Type="add" GUID="7018" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011230</Building>
+    </Item>
+    <Item>
+      <Building>1500011231</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Buffs -->
+  <!-- boostable -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500011230</Factory>
+    </Item>
+    <Item>
+      <Factory>1500011231</Factory>
+    </Item>
+  </ModOp>
+  <!-- effect pools -->
+  <ModOp Type="add" GUID="6000018,193856,190897,368" Path="/.//ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011230</GUID>
+    </Item>
+    <Item>
+      <GUID>1500011231</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="1500200678" Path="/.//ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011230</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="1500200673" Path="/.//ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011231</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="191396" Path="/.//ItemEffect/EffectTargets">
+    <Item>
+      <GUID>1500011231</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="7118" Path="/.//ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1010213</GUID>
+    </Item>
+  </ModOp>
+</ModOps>

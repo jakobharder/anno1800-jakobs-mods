@@ -8,7 +8,14 @@ Terraced houses, construction material productions and more to fully grow your c
 
 - Terraced Artista: residences build in blocks like Engineers and Investors.
   They provide a little extra population.
-- Artista skyscrapers (only with DLC `The High Life`)
+- Artista skyscrapers (only with DLC `The High Life` and `New World Rising`)
+
+### Productions
+
+- **Bread**: Flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+- **Steel Beams**: Steelworks, furnace, iron mine buildable on gold deposits
+- **Windows**: Window makers, glassmakers, sand mine buildable on clay deposits
+- **Reinforced Concrete**: Concrete factory, limestone quarry buildable on clay deposits
 
 ### Ornaments
 
@@ -16,28 +23,6 @@ Terraced houses, construction material productions and more to fully grow your c
 - Stone paving: empty tile
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
-
-### Construction Materials
-
-Makes typical Old World construction materials production buildings available in the New World.
-Some buildings are a bit slower than their Old World counterpart.
-
-#### Steel Beams
-
-- Steelworks
-- Furnace
-- Iron Mine: buildable on gold deposits
-
-#### Windows
-
-- Window Makers
-- Glassmakers
-- Sand Mine: buildable on clay deposits
-
-#### Reinforced Concrete
-
-- Concrete Factory
-- Limestone Quarry: buildable on clay deposits
 
 ## Electricity
 
@@ -49,6 +34,10 @@ Some buildings are a bit slower than their Old World counterpart.
 - Fixes Tropical Forest Variant 7 grass color
 
 ## Changes
+
+### 1.6
+
+- Added flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
 
 ### 1.5
 
