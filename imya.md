@@ -4,7 +4,7 @@ New population tiers, products, industries and more than 800 new visual assets (
 
 ## `Jakob's City Variations`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/city-variations.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/city-variations.jpg)
 
 Add more variety to your cities with skins, variations and non-gameplay changing buildings.
 
@@ -37,7 +37,7 @@ Add more variety to your cities with skins, variations and non-gameplay changing
 
 ## `Jakob's Industrial Cities`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/industrial-cities.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/industrial-cities.jpg)
 
 Terraced houses with skyscraper-like levels for workers, artisans.
 They come with new needs, productions and fitting ornaments.
@@ -70,7 +70,7 @@ They come with new needs, productions and fitting ornaments.
 
 ## `Jakob's New World Cities`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/nw-cities.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/nw-cities.jpg)
 
 Terraced houses for artistas, construction material production and more electricity options for the New World.
 They come with new needs, productions and fitting ornaments.
@@ -101,7 +101,7 @@ They come with new needs, productions and fitting ornaments.
 
 ## `Pescatarians (Jakob)`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/pescatarians.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/pescatarians.jpg)
 
 Pescatarians are an alternative OW population.
 Ideally for more farmer workforce with artisan-looking towns.
@@ -129,7 +129,7 @@ Ideally for more farmer workforce with artisan-looking towns.
 
 ## `Diagonal Residences (Jakob)`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/diagonal.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/diagonal.jpg)
 
 ### Buildings
 
@@ -147,7 +147,7 @@ You might be interested in [jje1000's Diagonal Roads](https://www.nexusmods.com/
 
 ## `Improved Streets (Jakob)`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/improved-streets.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/improved-streets.jpg)
 
 Replaces railroads and NW streets with more fitting textures.
 
@@ -158,7 +158,7 @@ Replaces railroads and NW streets with more fitting textures.
 
 ## `Improved Poles (Jakob)`
 
-![](https://github.com/jakobharder/anno1800-jakobs-mods/blob/main/doc/electric-wires.jpg)
+![](https://raw.githubusercontent.com/jakobharder/anno1800-jakobs-mods/main/doc/electric-wires.jpg)
 
 Replaces electric wires and poles with lighter, less distracting models.
 
