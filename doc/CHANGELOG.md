@@ -6,6 +6,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 - New World Cities, 1.6:
   - Added flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+  - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## 6.0 - City Variations
 

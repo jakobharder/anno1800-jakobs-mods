@@ -38,6 +38,7 @@ Terraced houses, construction material productions and more to fully grow your c
 ### 1.6
 
 - Added flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+- Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ### 1.5
 
