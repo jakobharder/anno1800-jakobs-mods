@@ -2,6 +2,10 @@
 
 Terraced houses, construction material productions and more to fully grow your cities.
 
+## Requirements
+
+The mod `Improved Streets` is recommended as those streets visualy fit better to Artista residences and many of the here included ornaments.
+
 ## Buildings
 
 ### Residences
