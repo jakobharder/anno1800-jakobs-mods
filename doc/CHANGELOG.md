@@ -4,6 +4,10 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 6.0 - City Variations
 
+### 6.0.1
+
+- Pescatarians, 2.1.9: Fixed vegetable farm disappearing in some cases
+
 ### New Content
 
 - City Variations, 1.0:
