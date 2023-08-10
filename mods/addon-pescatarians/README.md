@@ -53,6 +53,7 @@ All products are available as Dockland imports, or can be produced with `[Shared
 
 ### 2.1
 
+- 2.1.9: Fixed vegetable farm sometimes disappearing
 - 2.1.7: Freshly upgraded artisan house has now same population as full worker houses
 - 2.1.7: Fixed various missing and broken text issues
 - 2.1.4: Fixed missing vegetable farms
