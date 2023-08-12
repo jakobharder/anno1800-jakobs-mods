@@ -1,7 +1,7 @@
 <ModOps>
   <!-- # Bread Chain -->
   <ModOp Type="addNextSibling" GUID="1010313">
-    <Asset>
+    <!-- <Asset>
       <BaseAssetGUID>1010313</BaseAssetGUID>
       <Values>
         <Standard>
@@ -34,7 +34,7 @@
           </Maintenances>
         </Maintenance>
       </Values>
-    </Asset>
+    </Asset> -->
     <Asset>
       <BaseAssetGUID>1010291</BaseAssetGUID>
       <Values>
@@ -53,10 +53,28 @@
         <Selection>
           <ParticipantMessageArcheType>SA_Resident_tier02_atWork</ParticipantMessageArcheType>
         </Selection>
-        <Locked>
-          <DLCDependency>24961</DLCDependency>
-        </Locked>
+        <Locked />
         <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>120034</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+            <Item>
+              <Product>120008</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1010213</Product>
+              <Amount>1</Amount>
+              <StorageAmount>2</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>60</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <Maintenance>
@@ -86,18 +104,14 @@
           <Building>1500011231</Building>
           <Tier1>
             <Item>
-              <Building>1500011230</Building>
-              <Tier2>
-                <Item>
-                  <Building>25128</Building>
-                </Item>
-              </Tier2>
+              <Building>101270</Building>
+            </Item>
+            <Item>
+              <Building>101260</Building>
             </Item>
           </Tier1>
         </ProductionChain>
-        <Locked>
-          <DLCDependency>24961</DLCDependency>
-        </Locked>
+        <Locked />
       </Values>
     </Asset>
   </ModOp>

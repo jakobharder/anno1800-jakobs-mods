@@ -34,9 +34,7 @@ Alternative Old World population providing with new needs, productions and workf
 
 ## Products
 
-All products are available as Dockland imports, or can be produced with `[Shared] Extra Goods (Jakob)`.
-
-### Importable or from Extra Goods
+All products come with new production buildings.
 
 - Vegetables
 - Cheese
