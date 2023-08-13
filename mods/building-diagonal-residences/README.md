@@ -2,6 +2,10 @@
 
 Add diagonal residences and ornaments to break up the standard grid.
 
+## Recommended Mods
+
+- `Improved Poles` changes poles and wires into more elegant versions that work well with diagonals.
+
 ## Buildings
 
 Use Shift+V to cycle through variations before you place it.

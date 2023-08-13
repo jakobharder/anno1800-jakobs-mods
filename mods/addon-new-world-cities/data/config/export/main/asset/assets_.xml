@@ -15,6 +15,37 @@
 
   <!-- Terraced Artista / Skyscraper -->
   <Include File="/data/jakob/gapless-artista/assets.include.xml" />
+  <Include File="/data/jakob/terraced-obrero/_assets.include.xml" />
+
+  <!-- # Neighbors -->
+  <ModOp Type="add" GUID="1500011043,1500011044"
+    Path="/Values/Building/InfluencedByNeighbors">
+    <!-- <Item>
+      <Building>1500011040</Building>
+    </Item> -->
+    <Item>
+      <Building>1500011043</Building>
+    </Item>
+    <Item>
+      <Building>1500011044</Building>
+    </Item>
+    <Item>
+      <Building>1500011090</Building>
+    </Item>
+  </ModOp>
+  <!-- add to neighbor feature -->
+  <ModOp Type="add" GUID="7233"
+    Path="/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule">
+    <Item>
+      <Building>1500011043</Building>
+    </Item>
+    <Item>
+      <Building>1500011044</Building>
+    </Item>
+    <Item>
+      <Building>1500011090</Building>
+    </Item>
+  </ModOp>
 
   <Include File="/data/jakob/nw-tourist-chains/assets.include.xml" />
 

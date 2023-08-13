@@ -27,22 +27,10 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <AssociatedRegions>Colony01</AssociatedRegions>
           <InfluencedByNeighbors>
             <Item>
-              <Building>1500011040</Building>
-            </Item>
-            <Item>
               <Building>101255</Building>
             </Item>
             <Item>
               <Building>5405</Building>
-            </Item>
-            <Item>
-              <Building>1500011043</Building>
-            </Item>
-            <Item>
-              <Building>1500011044</Building>
-            </Item>
-            <Item>
-              <Building>1500011090</Building>
             </Item>
           </InfluencedByNeighbors>
           <BuildingBlockPool>
@@ -398,6 +386,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
+        <Distribution />
       </Values>
     </Asset>
     <Asset>
@@ -499,6 +488,30 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
+        <UpgradeList>
+          <DefaultBuff>1500011097</DefaultBuff>
+        </UpgradeList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011097</GUID>
+          <Name>Artista Skyscraper Buff</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+        </Standard>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>1010367</Product>
+              <Amount>20</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+        <CultureUpgrade>
+          <HideBuff>0</HideBuff>
+        </CultureUpgrade>
       </Values>
     </Asset>
     <Asset>
@@ -625,15 +638,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
   <!-- add spawn feeback -->
   <ModOp GUID="142785,2001090" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500011044</Building>
-    </Item>
-    <Item>
-      <Building>1500011090</Building>
-    </Item>
-  </ModOp>
-  <!-- add to neighbor feature -->
-  <ModOp GUID='7233' Type='add' Path='/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule'>
     <Item>
       <Building>1500011044</Building>
     </Item>

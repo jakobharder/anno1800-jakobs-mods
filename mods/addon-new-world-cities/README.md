@@ -2,21 +2,25 @@
 
 Terraced houses, construction material productions and more to fully grow your cities.
 
-## Requirements
+## Recommended Mods
 
-The mod `Improved Streets` is recommended as those streets visualy fit better to Artista residences and many of the here included ornaments.
+- `Improved Streets` changes NW streets to a more sandy look
+- `NW Tourism` adds hotels with needs fitting to productions of this mod
 
 ## Buildings
 
 ### Residences
 
-- Terraced Artista: residences build in blocks like Engineers and Investors.
-  They provide a little extra population.
+Residences for with increased population and additional needs.
+
+- Terraced Obreros: residences merge into blocks like Engineers and Investors
+- Terraced Artistas: residences merge into blocks
 - Artista skyscrapers (only with DLC `The High Life` and `New World Rising`)
 
 ### Productions
 
-- **Bread**: Flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+- Maize **Bread**: Flour mill, bakery
+- Citrus **Jam**: Jam kitchen (only with DLC `Tourist Season`)
 - **Steel Beams**: Steelworks, furnace, iron mine buildable on gold deposits
 - **Windows**: Window makers, glassmakers, sand mine buildable on clay deposits
 - **Reinforced Concrete**: Concrete factory, limestone quarry buildable on clay deposits
@@ -41,7 +45,8 @@ The mod `Improved Streets` is recommended as those streets visualy fit better to
 
 ### 1.6
 
-- Added flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+- Added Terraced Obreros
+- Added flour mill, bakery
 - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ### 1.5
