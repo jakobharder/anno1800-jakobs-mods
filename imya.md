@@ -1,4 +1,4 @@
-# Jakob's Collection 5.9
+# Jakob's Collection 6.0
 
 New population tiers, products, industries and more than 800 new visual assets (custom models, skins, ...).
 
