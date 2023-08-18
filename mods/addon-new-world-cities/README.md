@@ -1,41 +1,58 @@
 ![](./banner.jpg)
 
-Terraced houses, construction material productions and more to fully grow your cities.
+Terraced houses with more population, new needs and material productions for the New World.
 
 ## Recommended Mods
 
 - `Improved Streets` changes NW streets to a more sandy look
-- `NW Tourism` adds hotels with needs fitting to productions of this mod
+- `New World Tourism` adds hotels with needs fitting to productions of this mod
 
 ## Buildings
 
-### Residences
+### Phase I - Terraced Houses
 
-Residences for with increased population and additional needs.
+*Unlocks with 750 Obreros*
 
-- Terraced Obreros: residences merge into blocks like Engineers and Investors
-- Terraced Artistas: residences merge into blocks
-- Artista skyscrapers (only with DLC `The High Life` and `New World Rising`)
+**Residences** with increased population capacity.
 
-### Productions
+- Terraced **Jornaleros**
+- Terraced **Obreros**: residences merge into blocks like Engineers and Investors
+
+**Production** of new additional needs for terraced houses.
 
 - Maize **Bread**: Flour mill, bakery
 - Citrus **Jam**: Jam kitchen (only with DLC `Tourist Season`)
-- **Steel Beams**: Steelworks, furnace, iron mine buildable on gold deposits
-- **Windows**: Window makers, glassmakers, sand mine buildable on clay deposits
-- **Reinforced Concrete**: Concrete factory, limestone quarry buildable on clay deposits
 
-### Ornaments
+**Ornaments** with fitting ground for new terraced houses.
 
 - Dirt paving: empty tile, Hacienda walls (only with DLC `Seeds of Change`)
 - Stone paving: empty tile
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
-## Electricity
+### Phase II - Materials & Electricity
+
+*Unlocks with 1500 Obreros / 1 Artista*
+
+**Construction materials** can be produced in the New World now.
+
+- **Steel Beams**: Steelworks, furnace, iron mine buildable on gold deposits
+- **Windows**: Window makers, glassmakers, sand mine buildable on clay deposits
+- **Reinforced Concrete**: Concrete factory, limestone quarry buildable on clay deposits
+
+**Electricity** in combination with other mods.
 
 - Enable electricity in the New World (without extra good output like DLC12)
 - Enable `Nate's Windmill` and `Small Power Plants` for the New World.
+
+### Phase III - Terraced Artistas
+
+*Unlocks with 300 Artistas*
+
+**Residences** with increased population capacity.
+
+- Terraced **Artistas**: residences merge into blocks
+- Artista skyscrapers (only with DLC `The High Life` and `New World Rising`)
 
 ## Vanilla Bugfixes
 
@@ -43,7 +60,7 @@ Residences for with increased population and additional needs.
 
 ## Changes
 
-### 1.6
+### 2.0
 
 - Added Terraced Obreros
 - Added flour mill, bakery
@@ -52,19 +69,6 @@ Residences for with increased population and additional needs.
 ### 1.5
 
 - Added diagonal and cornered fence skins
-
-### 1.4
-
-- 1.4.4: Russian translation
-- 1.4.3: Fixed Artista skyscraper not unlocking for some
-- 1.4.3: Added fix for NW Tourism to use vanilla New World residences pool
-- 1.4.3: Added skyscraper costs.
-- 1.4.3: Removed concrete, windows and steel cost from limestone quarry
-- 1.4.3: Replaced ore mine / limestone quarry icons
-- 1.4.2: Fixed blurry icons
-- 1.4.1: Fixed compatibility issue with Harbor Life
-- Immediately unlock in creative mode
-- Added Artista skyscrapers
 
 ## Credits
 

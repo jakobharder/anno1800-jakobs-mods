@@ -173,71 +173,12 @@
         <Cost>
           <Costs>
             <Item>
-              <VectorElement>
-                <InheritedIndex>0</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7_Colony</TemplateName>
-                    <Index>0</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010196</Ingredient>
+              <Amount>4</Amount>
             </Item>
             <Item>
-              <VectorElement>
-                <InheritedIndex>1</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7_Colony</TemplateName>
-                    <Index>1</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-              <Amount>3</Amount>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>2</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7_Colony</TemplateName>
-                    <Index>2</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>3</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7_Colony</TemplateName>
-                    <Index>3</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>4</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7_Colony</TemplateName>
-                    <Index>4</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
-            </Item>
-            <Item>
-              <VectorElement>
-                <InheritedIndex>5</InheritedIndex>
-                <InheritanceMapV2>
-                  <Entry>
-                    <TemplateName>ResidenceBuilding7_Colony</TemplateName>
-                    <Index>5</Index>
-                  </Entry>
-                </InheritanceMapV2>
-              </VectorElement>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
             </Item>
           </Costs>
         </Cost>
@@ -448,22 +389,7 @@
     </Item>
   </ModOp>
   <!-- add spawn feeback -->
-  <ModOp GUID="142785" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500011040</Building>
-    </Item>
-    <Item>
-      <Building>1500011043</Building>
-    </Item>
-  </ModOp>
-  <!-- add spawn feeback -->
-  <ModOp GUID="142976" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500011040</Building>
-    </Item>
-  </ModOp>
-  <!-- add spawn feeback -->
-  <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+  <ModOp GUID="142785,2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500011043</Building>
     </Item>

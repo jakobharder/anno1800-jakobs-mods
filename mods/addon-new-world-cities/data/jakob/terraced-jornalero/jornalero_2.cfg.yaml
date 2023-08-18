@@ -1,0 +1,9 @@
+variant:
+  source: jornalero.cfg
+  modifications:
+    - xpath-remove: //Config/Models/Config/Materials/Config[Name="ht1_4"]
+    - xpath-remove: //Config/Models/Config/Materials/Config[Name="t2_2"]
+    - xpath-remove: //Config/Models/Config/Materials/Config[Name="t2_3"]
+    - xpath-remove: //Config/Models/Config/Materials/Config[Name="ht2_1"]
+    - xpath: /Config/Models/Config
+      FileName: data\jakob\terraced-jornalero\rdm\jornalero_j2_lod0.rdm
