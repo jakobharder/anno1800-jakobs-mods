@@ -9,7 +9,8 @@
     ExposeID="Small Hotels"
     Description="Smaller hotel buildings fitting half the population">
   </ImyaExpose>
-  <Group ModOpID="SmallHotelsFeatureToggle" Condition="#jakob_small_hotels">
+  <!-- <Group ModOpID="SmallHotelsFeatureToggle" Condition="#jakob_small_hotels"> -->
+  <Group ModOpID="SmallHotelsFeatureToggle">
     <!-- OW city, tourists, insert after hotel -->
     <ModOp Type="addNextSibling" GUID="132779,500092"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
@@ -28,7 +29,8 @@
     Description="3x3 sized mall and restaurant buildings fitting perfectly in your residence blocks">
   </ImyaExpose>
   <!-- Old World Menu Engineers, insert after oil power plant -->
-  <Group ModOpID="CommercialStreetFeatureToggle" Condition="#jakob_small_malls">
+  <!-- <Group ModOpID="CommercialStreetFeatureToggle" Condition="#jakob_small_malls"> -->
+  <Group ModOpID="CommercialStreetFeatureToggle">
     <ModOp Type="addNextSibling" GUID="135100">
       <Asset>
         <Template>ConstructionCategory</Template>
