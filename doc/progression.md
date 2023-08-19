@@ -11,7 +11,7 @@ Condition | Content | Unhide
 | | TBD `New World Cities` maize bread chain |
 | | TBD `New World Cities` citrus jam chain |
 1000 Obreros | *Artista unlock*
-1500 Obreros<br/>1 Artista | **New World Cities II** | 750 Obreros
+1500 Obreros<br/>300 Artistas | **New World Cities II** | 750 Obreros
 | | TBD `New World Cities` construction materials |
 | | TBD `Biogas Production` |
 | | TBD `Nate's Windmill` |

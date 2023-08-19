@@ -237,11 +237,9 @@
             <ParticipantMessageArcheType>SA_Resident_tier01</ParticipantMessageArcheType>
           </Selection>
           <Constructable />
-          <Locked>
-            <DefaultLockedState>0</DefaultLockedState>
-          </Locked>
+          <Locked />
           <Upgradable>
-            <CurrentTier>2</CurrentTier>
+            <CurrentTier>1</CurrentTier>
             <NextGUID>1500011043</NextGUID>
             <UpgradeCost>
               <Costs>
@@ -346,6 +344,16 @@
           <Culture />
           <StreetActivation />
           <Distribution />
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>15</Amount>
+                <InactiveAmount>15</InactiveAmount>
+              </Item>
+            </Maintenances>
+            <IncomeCategory>Residences</IncomeCategory>
+          </Maintenance>
         </Values>
       </Asset>
       <Asset>

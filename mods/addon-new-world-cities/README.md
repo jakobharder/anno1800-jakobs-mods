@@ -7,21 +7,22 @@ Terraced houses with more population, new needs and material productions for the
 - `Improved Streets` changes NW streets to a more sandy look
 - `New World Tourism` adds hotels with needs fitting to productions of this mod
 
-## Buildings
+## Content
 
-### Phase I - Terraced Houses
+### Level I - Terraced Houses
 
 *Unlocks with 750 Obreros*
 
 **Residences** with increased population capacity.
+They merge into blocks like Engineers and Investors.
 
-- Terraced **Jornaleros**
-- Terraced **Obreros**: residences merge into blocks like Engineers and Investors
+- Terraced **Jornaleros**: additionally consume bread and jam
+- Terraced **Obreros**: additionally consume bread, jam and electricity
 
 **Production** of new additional needs for terraced houses.
 
-- Maize **Bread**: Flour mill, bakery
-- Citrus **Jam**: Jam kitchen (only with DLC `Tourist Season`)
+- Maize **Bread**: bakery consuming wood and corn
+- Citrus **Jam**: jam kitchen consuming citrus (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
 
 **Ornaments** with fitting ground for new terraced houses.
 
@@ -30,9 +31,9 @@ Terraced houses with more population, new needs and material productions for the
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
-### Phase II - Materials & Electricity
+### Level II - Materials & Electricity
 
-*Unlocks with 1500 Obreros / 1 Artista*
+*Unlocks with 1500 Obreros or 300 Artistas*
 
 **Construction materials** can be produced in the New World now.
 
@@ -43,32 +44,29 @@ Terraced houses with more population, new needs and material productions for the
 **Electricity** in combination with other mods.
 
 - Enable electricity in the New World (without extra good output like DLC12)
-- Enable `Nate's Windmill` and `Small Power Plants` for the New World.
+- Enable power plants from `Nate's Windmill`, `Biogas Production` and `Industrial Cities` in the New World.
 
-### Phase III - Terraced Artistas
+### Level III - Terraced Artistas
 
+Only with `New World Rising`.
 *Unlocks with 300 Artistas*
 
 **Residences** with increased population capacity.
 
 - Terraced **Artistas**: residences merge into blocks
-- Artista skyscrapers (only with DLC `The High Life` and `New World Rising`)
+- Artista skyscrapers (only with DLC `The High Life`)
 
 ## Vanilla Bugfixes
 
-- Fixes Tropical Forest Variant 7 grass color
+- Fixes tropical forest variant 7 grass color
 
 ## Changes
 
 ### 2.0
 
-- Added Terraced Obreros
+- Added terraced jornaleros and obreros
 - Added flour mill, bakery
 - Added NW jam kitchen (only with DLC `Tourist Season`)
-
-### 1.5
-
-- Added diagonal and cornered fence skins
 
 ## Credits
 
