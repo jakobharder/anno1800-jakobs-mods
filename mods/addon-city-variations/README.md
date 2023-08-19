@@ -69,6 +69,10 @@ The roofs are colored in realtime for reduced memory usage and better performanc
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
+## Changes
+
+- 1.0.1: fixed missing hotels, commercial street icons
+
 ## Credits
 
 Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for translations!
