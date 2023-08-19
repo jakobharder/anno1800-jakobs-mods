@@ -348,8 +348,8 @@
             <Maintenances>
               <Item>
                 <Product>1010017</Product>
-                <Amount>15</Amount>
-                <InactiveAmount>15</InactiveAmount>
+                <Amount>30</Amount>
+                <InactiveAmount>30</InactiveAmount>
               </Item>
             </Maintenances>
             <IncomeCategory>Residences</IncomeCategory>
@@ -377,7 +377,7 @@
             </InputBenefitModifier>
           </PopulationUpgrade>
           <CultureUpgrade>
-            <HideBuff>0</HideBuff>
+            <HideBuff>1</HideBuff>
           </CultureUpgrade>
         </Values>
       </Asset>
@@ -400,12 +400,25 @@
     </ModOp>
     <ModOp GUID="15000005" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
       <Item>
+        <Product>120035</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>40</MoneyValue>
+        <FullWeightPopulationCount>700</FullWeightPopulationCount>
+        <NoWeightPopulationCount>399</NoWeightPopulationCount>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500011250</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
         <Product>1010213</Product>
         <Amount>0.0002083</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>40</MoneyValue>
         <FullWeightPopulationCount>1000</FullWeightPopulationCount>
-        <NoWeightPopulationCount>0</NoWeightPopulationCount>
+        <NoWeightPopulationCount>499</NoWeightPopulationCount>
         <RequiredBuildings>
           <Item>
             <RequiredBuilding>1500011250</RequiredBuilding>
