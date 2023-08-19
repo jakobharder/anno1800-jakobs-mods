@@ -29,9 +29,9 @@ Buildings are fully functional, but expect some visual and user experience oddit
 
 You might be interested in the following mods from other creators:
 
-- `Diagonal Roads` - diagonal pavement and fence ornaments
-- `Diagonal Hedges as Skins` - makes above fence ornaments available as skins
-- `Plaza street` from `Spice it Up` - plaza tiles with street connection
+- [`Diagonal Roads`](https://www.nexusmods.com/anno1800/mods/164) - diagonal pavement and fence ornaments
+- [`Diagonal Hedges as Skins`](https://www.nexusmods.com/anno1800/mods/589) - makes above fence ornaments available as skins
+- [`Plaza Streets [Spice it Up]`](https://mod.io/g/anno-1800/m/plaza-streets) - adds plaza tiles with street function
 
 Known issues:
 
