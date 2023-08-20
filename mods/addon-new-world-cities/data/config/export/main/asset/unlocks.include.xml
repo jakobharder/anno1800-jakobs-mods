@@ -35,18 +35,6 @@
                       <Item>
                         <Asset>1500011250</Asset>
                       </Item>
-                      <Item>
-                        <Asset>1500011231</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500011232</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500011235</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500011236</Asset>
-                      </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -98,12 +86,6 @@
                       <Item>
                         <Asset>1500011232</Asset>
                       </Item>
-                      <Item>
-                        <Asset>1500011235</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500011236</Asset>
-                      </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -151,12 +133,6 @@
                       <Item>
                         <Asset>1500011232</Asset>
                       </Item>
-                      <Item>
-                        <Asset>1500011235</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500011236</Asset>
-                      </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -170,4 +146,124 @@
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # New World Cities I - Terraced Houses, DLC -->
+  <ModOp Type="addNextSibling" GUID="119">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011255</GUID>
+          <Name>Creative Mode, DLC Stuff</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011235</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011236</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <SubTriggers>
+          <Item>
+            <SubTrigger>
+              <Template>AutoCreateTrigger</Template>
+              <Values>
+                <Trigger>
+                  <TriggerCondition>
+                    <Template>ConditionIsDLCActive</Template>
+                    <Values>
+                      <Condition />
+                      <ConditionIsDLCActive>
+                        <DLCAssetList>
+                          <Item>
+                            <DLCAsset>410084</DLCAsset>
+                          </Item>
+                        </DLCAssetList>
+                      </ConditionIsDLCActive>
+                      <ConditionPropsNegatable />
+                    </Values>
+                  </TriggerCondition>
+                </Trigger>
+              </Values>
+            </SubTrigger>
+          </Item>
+          <Item>
+            <SubTrigger>
+              <Template>AutoCreateTrigger</Template>
+              <Values>
+                <Trigger>
+                  <TriggerCondition>
+                    <Template>ConditionIsDLCActive</Template>
+                    <Values>
+                      <Condition />
+                      <ConditionIsDLCActive>
+                        <DLCAssetList>
+                          <Item>
+                            <DLCAsset>410085</DLCAsset>
+                          </Item>
+                        </DLCAssetList>
+                      </ConditionIsDLCActive>
+                      <ConditionPropsNegatable />
+                    </Values>
+                  </TriggerCondition>
+                </Trigger>
+              </Values>
+            </SubTrigger>
+          </Item>
+          <Item>
+            <SubTrigger>
+              <Template>AutoCreateTrigger</Template>
+              <Values>
+                <Trigger>
+                  <TriggerCondition>
+                    <Template>ConditionIsDLCActive</Template>
+                    <Values>
+                      <Condition />
+                      <ConditionIsDLCActive>
+                        <DLCAssetList>
+                          <Item>
+                            <DLCAsset>24963</DLCAsset>
+                          </Item>
+                        </DLCAssetList>
+                      </ConditionIsDLCActive>
+                      <ConditionPropsNegatable />
+                    </Values>
+                  </TriggerCondition>
+                </Trigger>
+              </Values>
+            </SubTrigger>
+          </Item>
+        </SubTriggers>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- New World Cities II - Materials and Electricity -->
+
+  <!-- New World Cities III - Terraced Artista Houses -->
 </ModOps>

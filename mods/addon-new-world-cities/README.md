@@ -4,8 +4,8 @@ Terraced houses with more population, new needs and material productions for the
 
 ## Recommended Mods
 
-- `Improved Streets` changes NW streets to a more sandy look
-- `New World Tourism` adds hotels with needs fitting to productions of this mod
+- `Improved Streets` changes NW streets to a more sandy look.
+- `New World Tourism` toursits benefit from local production of bread and jam.
 
 ## Content
 
@@ -16,13 +16,21 @@ Terraced houses with more population, new needs and material productions for the
 **Residences** with increased population capacity.
 They merge into blocks like Engineers and Investors.
 
-- Terraced **Jornaleros**: additionally consume bread and jam
-- Terraced **Obreros**: additionally consume bread, jam and electricity
+- Terraced **Jornaleros**
+  - Additionally consume bread, cheese as basic needs and jam as lifestyle need.
+- Terraced **Obreros**
+  - Additionally consume bread, cheese, electricity as basic needs and jam as lifestyle need.
 
 **Production** of new additional needs for terraced houses.
 
-- Maize **Bread**: bakery consuming wood and corn
-- Citrus **Jam**: jam kitchen consuming citrus (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
+- Maize **Bread**
+  - Bakery consuming flour
+  - Mill consuming wood and corn
+- Minas **Cheese**
+  - Dairy consuming milk
+  - Milk farm
+- Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
+  - Jam kitchen consuming citrus
 
 **Ornaments** with fitting ground for new terraced houses.
 
@@ -37,14 +45,25 @@ They merge into blocks like Engineers and Investors.
 
 **Construction materials** can be produced in the New World now.
 
-- **Steel Beams**: Steelworks, furnace, iron mine buildable on gold deposits
-- **Windows**: Window makers, glassmakers, sand mine buildable on clay deposits
-- **Reinforced Concrete**: Concrete factory, limestone quarry buildable on clay deposits
+- **Steel Beams**
+  - Steelworks
+  - Furnace
+  - Iron mine buildable on gold deposits
+- **Windows**
+  - Window makers
+  - Glassmakers
+  - Sand mine buildable on clay deposits
+- **Reinforced Concrete**
+  - Concrete factory
+  - Limestone quarry buildable on clay deposits
 
 **Electricity** in combination with other mods.
 
 - Enable electricity in the New World (without extra good output like DLC12)
-- Enable power plants from `Nate's Windmill`, `Biogas Production` and `Industrial Cities` in the New World.
+- Enable power plants from
+  - `Nate's Windmill`,
+  - `Biogas Production` and
+  - `Industrial Cities` in the New World.
 
 ### Level III - Terraced Artistas
 
@@ -53,8 +72,10 @@ Only with `New World Rising`.
 
 **Residences** with increased population capacity.
 
-- Terraced **Artistas**: residences merge into blocks
+- Terraced **Artistas**
+  - Additionally consume bread, gramophones, electricity
 - Artista skyscrapers (only with DLC `The High Life`)
+  - Additionally consume bread, gramophones, electricity, violins, canned fish
 
 ## Vanilla Bugfixes
 
