@@ -18,6 +18,10 @@
   <Include File="/data/jakob/terraced-obrero/_assets.include.xml" />
   <Include File="/data/jakob/terraced-jornalero/_assets.include.xml" />
 
+  <!-- Needs -->
+  <Include File="/data/jakob/milk-collector/_assets.include.xml" />
+  <Include File="/data/jakob/nw-needs/_assets.include.xml" />
+
   <Include File="./banners.include.xml" />
   <Include File="./unlocks.include.xml" />
 
@@ -57,21 +61,11 @@
     </Item>
   </ModOp>
 
-  <Include File="/data/jakob/nw-needs/assets.include.xml" />
-
   <!-- # Harborlife Fix -->
   <!-- just in case people didn't update and blame upgradable worker for it -->
-  <ModOp Type="replace" GUID="1440137000" Condition="~" Path="/Values/Upgradable">
+  <!-- <ModOp Type="replace" GUID="1440137000" Condition="~" Path="/Values/Upgradable">
     <Upgradable>
       <NextGUID>0</NextGUID>
     </Upgradable>
-  </ModOp>
-
-  <!-- # NW Tourism Fix -->
-  <ModOp Type="replace" AllowNoMatch="1"
-    Path="//ItemEffect/EffectTargets/Item[GUID='1440134394']">
-    <Item>
-      <GUID>25677</GUID>
-    </Item>
-  </ModOp>
+  </ModOp> -->
 </ModOps>

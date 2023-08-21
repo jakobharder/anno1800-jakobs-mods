@@ -239,8 +239,23 @@
         <Locked />
         <Upgradable>
           <CurrentTier>2</CurrentTier>
-          <NextGUID>0</NextGUID>
-          <UpgradeCost />
+          <Upgradable>
+            <NextGUID>1500011044</NextGUID>
+            <UpgradeCost>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>4</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>2</Amount>
+              </Item>
+              <Item>
+                <Ingredient>838</Ingredient>
+                <Amount>1</Amount>
+              </Item>
+            </UpgradeCost>
+          </Upgradable>
         </Upgradable>
         <SoundEmitter>
           <BuildingRepaired>
@@ -422,6 +437,17 @@
     <ModOp GUID="15000006" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
       <Item>
         <Product>1010213</Product>
+        <Amount>0.0002083</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500011043</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1500010102</Product>
         <Amount>0.0002083</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>20</MoneyValue>
