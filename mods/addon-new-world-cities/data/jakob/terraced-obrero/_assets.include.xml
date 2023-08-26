@@ -272,9 +272,10 @@
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
           <PopulationLevel7>15000006</PopulationLevel7>
-          <ResidentMax>80</ResidentMax>
-          <ResidentsRequiredForUpgrade>20</ResidentsRequiredForUpgrade>
+          <ResidentMax>35</ResidentMax>
+          <ResidentsRequiredForUpgrade>35</ResidentsRequiredForUpgrade>
           <IsBaseResidence>0</IsBaseResidence>
+          <MoveInMs>8000</MoveInMs>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -299,9 +300,7 @@
             </Euphoric>
           </HappinessDependentMurmur>
         </AmbientMoodProvider>
-        <UpgradeList>
-          <DefaultBuff>1500011041</DefaultBuff> <!-- extra population in this building -->
-        </UpgradeList>
+        <UpgradeList />
         <Attackable>
           <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>3000</MaximumHitPoints>
@@ -347,57 +346,6 @@
         <Culture />
         <StreetActivation />
         <Distribution />
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>60</Amount>
-              <InactiveAmount>60</InactiveAmount>
-            </Item>
-          </Maintenances>
-          <IncomeCategory>Residences</IncomeCategory>
-        </Maintenance>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011041</GUID>
-          <Name>Terraced Obrero Buff</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
-        </Standard>
-        <PopulationUpgrade>
-          <InputBenefitModifier>
-            <Item>
-              <Product>120033</Product>
-              <AdditionalSupply>3</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>120043</Product>
-              <AdditionalSupply>2</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>120035</Product>
-              <AdditionalSupply>4</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>120032</Product>
-              <AdditionalSupply>2</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>120037</Product>
-              <AdditionalSupply>2</AdditionalSupply>
-            </Item>
-            <Item>
-              <Product>1010206</Product>
-              <AdditionalSupply>2</AdditionalSupply>
-            </Item>
-          </InputBenefitModifier>
-        </PopulationUpgrade>
-        <CultureUpgrade>
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
       </Values>
     </Asset>
   </ModOp>
@@ -437,9 +385,10 @@
     <ModOp GUID="15000006" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
       <Item>
         <Product>1010213</Product>
-        <Amount>0.0002083</Amount>
+        <Amount>0.00047619</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>20</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
         <RequiredBuildings>
           <Item>
             <RequiredBuilding>1500011043</RequiredBuilding>
@@ -448,9 +397,10 @@
       </Item>
       <Item>
         <Product>1500010102</Product>
-        <Amount>0.0002083</Amount>
+        <Amount>0.00047619</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>20</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
         <RequiredBuildings>
           <Item>
             <RequiredBuilding>1500011043</RequiredBuilding>
@@ -459,7 +409,7 @@
       </Item>
       <Item>
         <Product>133183</Product>
-        <Amount>0.0002083</Amount>
+        <Amount>0.00047619</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>20</MoneyValue>
         <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
@@ -474,6 +424,7 @@
         <Product>1010354</Product>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>10</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
         <RequiredBuildings>
           <Item>
             <RequiredBuilding>1500011043</RequiredBuilding>

@@ -17,9 +17,11 @@ Terraced houses with more population, new needs and material productions for the
 They merge into blocks like Engineers and Investors.
 
 - Terraced **Jornaleros**
-  - Additionally consume bread, cheese as basic needs and jam as lifestyle need.
+  - 15 additional residents with tortillas, bread and cheese as basic needs.
+  - 5 additional residents with jam as lifestyle need.
 - Terraced **Obreros**
-  - Additionally consume bread, cheese, electricity as basic needs and jam as lifestyle need.
+  - 15 additional residents with bread, cheese and electricity as basic needs.
+  - 5 additional residents with jam as lifestyle need.
 
 **Production** of new additional needs for terraced houses.
 
@@ -28,7 +30,7 @@ They merge into blocks like Engineers and Investors.
   - Mill consuming wood and corn
 - Minas **Cheese**
   - Dairy consuming milk
-  - Milk farm
+  - Milking palour
 - Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
   - Jam kitchen consuming citrus
 
@@ -73,9 +75,9 @@ Only with `New World Rising`.
 **Residences** with increased population capacity.
 
 - Terraced **Artistas**
-  - Additionally consume bread, gramophones, electricity
+  - 30 additional residents with bread, gramophones and electricity as basic needs.
 - Artista skyscrapers (only with DLC `The High Life`)
-  - Additionally consume bread, gramophones, electricity, violins, canned fish
+  - 50 additional residents with bread, gramophones, electricity, violins and canned fish as basic needs.
 
 ## Vanilla Bugfixes
 
@@ -91,5 +93,7 @@ Only with `New World Rising`.
 - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## Credits
+
+Thanks to Lordy for the milking palour model.
 
 Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!

@@ -268,27 +268,27 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <CurrentTier>3</CurrentTier>
           <NextGUID>1500011090</NextGUID>
           <UpgradeCost>
-        <Item>
-          <Ingredient>1010196</Ingredient>
-          <Amount>2</Amount>
-        </Item>
-        <Item>
-          <Ingredient>1010205</Ingredient>
-          <Amount>2</Amount>
-        </Item>
-        <Item>
-          <Ingredient>1010218</Ingredient>
-          <Amount>2</Amount>
-        </Item>
-        <Item>
-          <Ingredient>1010207</Ingredient>
-          <Amount>2</Amount>
-        </Item>
-        <Item>
-          <Ingredient>838</Ingredient>
-          <Amount>1</Amount>
-        </Item>
-      </UpgradeCost>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </UpgradeCost>
         </Upgradable>
         <SoundEmitter>
           <BuildingRepaired>
@@ -302,10 +302,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         <FeedbackController />
         <Residence7>
           <PopulationLevel7>5403</PopulationLevel7>
-          <ResidentMax>40</ResidentMax>
-          <ResidentsRequiredForUpgrade>40</ResidentsRequiredForUpgrade>
+          <ResidentMax>70</ResidentMax>
+          <ResidentsRequiredForUpgrade>70</ResidentsRequiredForUpgrade>
           <ResidentsOccupancyThresholdMax>0.5</ResidentsOccupancyThresholdMax>
           <IsBaseResidence>0</IsBaseResidence>
+          <MoveInMs>8000</MoveInMs>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -474,10 +475,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Upgradable>
         <Residence7>
           <PopulationLevel7>5403</PopulationLevel7>
-          <ResidentMax>40</ResidentMax>
-          <ResidentsRequiredForUpgrade>40</ResidentsRequiredForUpgrade>
+          <ResidentMax>90</ResidentMax>
+          <ResidentsRequiredForUpgrade>90</ResidentsRequiredForUpgrade>
           <ResidentsOccupancyThresholdMax>0.5</ResidentsOccupancyThresholdMax>
           <IsBaseResidence>0</IsBaseResidence>
+          <MoveInMs>8000</MoveInMs>
         </Residence7>
         <Maintenance>
           <IncomeCategory>Skyscrapers</IncomeCategory>
@@ -488,9 +490,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
-        <UpgradeList>
-          <DefaultBuff>1500011097</DefaultBuff>
-        </UpgradeList>
+        <UpgradeList />
       </Values>
     </Asset>
     <Asset>
@@ -498,19 +498,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Values>
         <Standard>
           <GUID>1500011097</GUID>
-          <Name>Artista Skyscraper Buff</Name>
+          <Name>Artista Skyscraper Buff (deprecated)</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
         </Standard>
-        <DistributionUpgrade>
-          <AddDeltas>
-            <Item>
-              <Product>1010367</Product>
-              <Amount>20</Amount>
-            </Item>
-          </AddDeltas>
-        </DistributionUpgrade>
         <CultureUpgrade>
-          <HideBuff>0</HideBuff>
+          <HideBuff>1</HideBuff>
         </CultureUpgrade>
       </Values>
     </Asset>
@@ -655,14 +647,13 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <RequiredBuilding>1500011090</RequiredBuilding>
     </Item>
   </ModOp>
-  <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='5388']">
+  <ModOp GUID="5403" Type="addNextSibling" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='120037']">
     <Item>
-      <Product>1010248</Product>
-      <Amount>0.0001</Amount>
+      <Product>1010213</Product>
+      <Amount>0.00047619</Amount>
       <SupplyWeight>5</SupplyWeight>
-      <MoneyValue>65</MoneyValue>
-      <FullWeightPopulationCount>6000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>3199</NoWeightPopulationCount>
+      <MoneyValue>20</MoneyValue>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <RequiredBuildings>
         <Item>
           <RequiredBuilding>1500011044</RequiredBuilding>
@@ -675,13 +666,17 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   </ModOp>
   <ModOp GUID="5403" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
     <Item>
-      <Product>1010213</Product>
-      <Amount>0.0002083</Amount>
-      <SupplyWeight>10</SupplyWeight>
-      <MoneyValue>80</MoneyValue>
-      <FullWeightPopulationCount>8000</FullWeightPopulationCount>
-      <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      <Product>1010248</Product>
+      <Amount>0.00011905</Amount>
+      <SupplyWeight>5</SupplyWeight>
+      <MoneyValue>50</MoneyValue>
+      <FullWeightPopulationCount>6000</FullWeightPopulationCount>
+      <NoWeightPopulationCount>3199</NoWeightPopulationCount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <RequiredBuildings>
+        <Item>
+          <RequiredBuilding>1500011044</RequiredBuilding>
+        </Item>
         <Item>
           <RequiredBuilding>1500011090</RequiredBuilding>
         </Item>
@@ -689,11 +684,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     </Item>
     <Item>
       <Product>1500010120</Product>
-      <Amount>0.0002083</Amount>
+      <Amount>0.00011905</Amount>
       <SupplyWeight>10</SupplyWeight>
-      <MoneyValue>80</MoneyValue>
+      <MoneyValue>35</MoneyValue>
       <FullWeightPopulationCount>8000</FullWeightPopulationCount>
       <NoWeightPopulationCount>5999</NoWeightPopulationCount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <RequiredBuildings>
         <Item>
           <RequiredBuilding>1500011090</RequiredBuilding>
@@ -702,11 +698,12 @@ GUIDs: https://github.com/anno-mods/GuidRanges
     </Item>
     <Item>
       <Product>135233</Product>
-      <Amount>0.000053</Amount>
+      <Amount>0.00011905</Amount>
       <SupplyWeight>10</SupplyWeight>
-      <MoneyValue>100</MoneyValue>
+      <MoneyValue>80</MoneyValue>
       <FullWeightPopulationCount>6000</FullWeightPopulationCount>
       <NoWeightPopulationCount>3199</NoWeightPopulationCount>
+      <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <RequiredBuildings>
         <Item>
           <RequiredBuilding>1500011090</RequiredBuilding>
