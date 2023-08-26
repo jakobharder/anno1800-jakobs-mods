@@ -44,6 +44,18 @@
                     <Variation>3</Variation>
                     <DirectionOffet>2</DirectionOffet>
                   </Item>
+                  <!-- <Item>
+                    <Variation>4</Variation>
+                    <DirectionOffet>2</DirectionOffet>
+                  </Item>
+                  <Item>
+                    <Variation>5</Variation>
+                    <DirectionOffet>2</DirectionOffet>
+                  </Item> -->
+                </Pool>
+              </Corner>
+              <Mid>
+                <Pool>
                   <Item>
                     <Variation>4</Variation>
                     <DirectionOffet>2</DirectionOffet>
@@ -52,10 +64,6 @@
                     <Variation>5</Variation>
                     <DirectionOffet>2</DirectionOffet>
                   </Item>
-                </Pool>
-              </Corner>
-              <Mid>
-                <Pool>
                   <Item>
                     <Variation>6</Variation>
                     <DirectionOffet>2</DirectionOffet>
@@ -64,6 +72,10 @@
                     <Variation>7</Variation>
                     <DirectionOffet>2</DirectionOffet>
                   </Item>
+                </Pool>
+              </Mid>
+              <End>
+                <Pool>
                   <Item>
                     <Variation>8</Variation>
                     <DirectionOffet>2</DirectionOffet>
@@ -72,21 +84,11 @@
                     <Variation>9</Variation>
                     <DirectionOffet>2</DirectionOffet>
                   </Item>
-                </Pool>
-              </Mid>
-              <End>
-                <Pool>
                   <Item>
                     <Variation>10</Variation>
                   </Item>
                   <Item>
                     <Variation>11</Variation>
-                  </Item>
-                  <Item>
-                    <Variation>12</Variation>
-                  </Item>
-                  <Item>
-                    <Variation>13</Variation>
                   </Item>
                 </Pool>
               </End>
@@ -199,18 +201,12 @@
               <Item>
                 <Filename>data\jakob\terraced-jornalero\jornalero_6.cfg</Filename>
               </Item>
-              <Item>
-                <Filename>data\jakob\terraced-jornalero\jornalero_3b.cfg</Filename>
-              </Item>
-              <Item>
-                <Filename>data\jakob\terraced-jornalero\jornalero_4.cfg</Filename>
-              </Item>
               <!-- straights -->
               <Item>
-                <Filename>data\jakob\terraced-jornalero\jornalero_1.cfg</Filename>
+                <Filename>data\jakob\terraced-jornalero\jornalero_2.cfg</Filename>
               </Item>
               <Item>
-                <Filename>data\jakob\terraced-jornalero\jornalero_2.cfg</Filename>
+                <Filename>data\jakob\terraced-jornalero\jornalero_1.cfg</Filename>
               </Item>
               <Item>
                 <Filename>data\jakob\terraced-jornalero\jornalero_5.cfg</Filename>
@@ -220,10 +216,10 @@
               </Item>
               <!-- end -->
               <Item>
-                <Filename>data\jakob\terraced-jornalero\jornalero_2.cfg</Filename>
+                <Filename>data\jakob\terraced-jornalero\jornalero_4.cfg</Filename>
               </Item>
               <Item>
-                <Filename>data\jakob\terraced-jornalero\jornalero_1.cfg</Filename>
+                <Filename>data\jakob\terraced-jornalero\jornalero_6.cfg</Filename>
               </Item>
               <Item>
                 <Filename>data\jakob\terraced-jornalero\jornalero_5.cfg</Filename>
@@ -450,6 +446,22 @@
             <RequiredBuilding>1500011250</RequiredBuilding>
           </Item>
         </RequiredBuildings>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Targets -->
+  <Group>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='101254']">
+      <Item>
+        <GUID>1500011250</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffect/EffectTargets[Item/GUID='101254']">
+      <Item>
+        <GUID>1500011250</GUID>
       </Item>
     </ModOp>
   </Group>

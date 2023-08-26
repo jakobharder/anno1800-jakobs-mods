@@ -29,6 +29,34 @@
             <Corner>
               <Pool>
                 <Item>
+                  <Variation>8</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>9</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>10</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>11</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>12</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>13</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+              </Pool>
+            </Corner>
+            <Mid>
+              <Pool>
+                <Item>
                   <DirectionOffet>2</DirectionOffet>
                 </Item>
                 <Item>
@@ -43,49 +71,21 @@
                   <Variation>3</Variation>
                   <DirectionOffet>2</DirectionOffet>
                 </Item>
-                <Item>
-                  <Variation>4</Variation>
-                  <DirectionOffet>2</DirectionOffet>
-                </Item>
-                <Item>
-                  <Variation>5</Variation>
-                  <DirectionOffet>2</DirectionOffet>
-                </Item>
-              </Pool>
-            </Corner>
-            <Mid>
-              <Pool>
-                <Item>
-                  <Variation>6</Variation>
-                  <DirectionOffet>2</DirectionOffet>
-                </Item>
-                <Item>
-                  <Variation>7</Variation>
-                  <DirectionOffet>2</DirectionOffet>
-                </Item>
-                <Item>
-                  <Variation>8</Variation>
-                  <DirectionOffet>2</DirectionOffet>
-                </Item>
-                <Item>
-                  <Variation>9</Variation>
-                  <DirectionOffet>2</DirectionOffet>
-                </Item>
               </Pool>
             </Mid>
             <End>
               <Pool>
                 <Item>
-                  <Variation>10</Variation>
+                  <Variation>4</Variation>
                 </Item>
                 <Item>
-                  <Variation>11</Variation>
+                  <Variation>5</Variation>
                 </Item>
                 <Item>
-                  <Variation>12</Variation>
+                  <Variation>6</Variation>
                 </Item>
                 <Item>
-                  <Variation>13</Variation>
+                  <Variation>7</Variation>
                 </Item>
               </Pool>
             </End>
@@ -185,25 +185,6 @@
         <Mesh />
         <Object>
           <Variations>
-            <!-- corners -->
-            <Item>
-              <Filename>data\jakob\terraced-obrero\obrero_scraper3.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\terraced-obrero\obrero_scraper4.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\terraced-obrero\obrero_scraper3b.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\terraced-obrero\obrero_scraper5.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\terraced-obrero\obrero_scraper6.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\terraced-obrero\obrero_scraper6b.cfg</Filename>
-            </Item>
             <!-- straights -->
             <Item>
               <Filename>data\jakob\terraced-obrero\obrero_scraper1.cfg</Filename>
@@ -229,6 +210,25 @@
             </Item>
             <Item>
               <Filename>data\jakob\terraced-obrero\obrero_scraper2c.cfg</Filename>
+            </Item>
+            <!-- corners -->
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper3b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper5.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper6.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper6b.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -479,6 +479,22 @@
             <RequiredBuilding>1500011043</RequiredBuilding>
           </Item>
         </RequiredBuildings>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Targets -->
+  <Group>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='101255']">
+      <Item>
+        <GUID>1500011043</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffect/EffectTargets[Item/GUID='101255']">
+      <Item>
+        <GUID>1500011043</GUID>
       </Item>
     </ModOp>
   </Group>
