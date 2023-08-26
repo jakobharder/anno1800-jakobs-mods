@@ -86,7 +86,8 @@ Only with `New World Rising`.
 ### 2.0
 
 - Added terraced jornaleros and obreros
-- Added flour mill, bakery
+- Added NW bread production: flour mill, bakery
+- Added NW cheese production: milking palour, cheese dairy
 - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## Credits

@@ -4,8 +4,10 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## [Unreleased]
 
-- New World Cities, 1.6:
-  - Added flour mill, bakery (only with DLC `Seeds of Change` and `New World Rising`)
+- New World Cities, 2.0:
+  - Added terraced jornaleros and obreros
+  - Added NW bread production: flour mill, bakery
+  - Added NW cheese production: milking palour, cheese dairy
   - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## 6.0 - City Variations
