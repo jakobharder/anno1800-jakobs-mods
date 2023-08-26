@@ -1,5 +1,6 @@
 {
-  "Version": "1.5",
+  "out": "${annoMods}/[Addon] New World Cities (Jakob)",
+  "Version": "2.0",
   "ModID": "jakob_new_world_cities",
   "DeprecateIds": [
     "jakob_nw_construction",
@@ -7,12 +8,14 @@
     "jakob_power_nw"
   ],
   "ModDependencies": [
-    "https://github.com/anno-mods/shared-resources/releases/download/v8.1/shared-pools-and-definitions.zip"
+    "https://github.com/anno-mods/shared-resources/releases/download/v8.1/shared-pools-and-definitions.zip",
+    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.5/shared-products-jakob.zip"
   ],
   "LoadAfterIds": [
     "shared-pools-and-definitions",
     "Spice_Harborlife",
-    "FamTaubeLexy_NewWorldHotels"
+    "FamTaubeLexy_NewWorldHotels",
+    "shared-products-jakob"
   ],
   "bundle": [
     "../../shared/jakob-diagonal-ornaments"
@@ -21,7 +24,7 @@
     "English": "Addon"
   },
   "ModName": {
-    "English": "New World Cities (Jakob)"
+    "English": "Jakob's New World Cities"
   },
   "DLCDependencies": [
     {

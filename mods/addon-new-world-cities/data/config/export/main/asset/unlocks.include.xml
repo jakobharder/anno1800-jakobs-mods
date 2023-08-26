@@ -1,0 +1,299 @@
+<ModOps>
+  <!-- # New World Cities I - Terraced Houses -->
+  <ModOp Type="addNextSibling" GUID="119">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011252</GUID>
+          <Name>Unhide @ 500 Obreros</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500011043</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011250</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011253</GUID>
+          <Name>@ 750 Obreros</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000006</Context>
+                <CounterAmount>750</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011043</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011250</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011230</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011231</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011232</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011237</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011238</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011240</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011254</GUID>
+          <Name>Creative Mode</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011043</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011250</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011230</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011231</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011232</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011237</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011238</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011240</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # New World Cities I - Terraced Houses + NW Tourism -->
+  <ModOp Type="addNextSibling" Condition="#FamTaubeLexy_NewWorldHotels" GUID="119">
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011256</GUID>
+          <Name>@ 1 NW Tourist</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+						<Template>ConditionPlayerCounter</Template>
+						<Values>
+							<Condition />
+							<ConditionPlayerCounter>
+								<PlayerCounter>PopulationByLevel</PlayerCounter>
+								<CounterScope>Session</CounterScope>
+								<Context>601379</Context>
+								<CounterAmount>1</CounterAmount>
+							</ConditionPlayerCounter>
+						</Values>
+					</TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011235</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011236</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011233</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011255</GUID>
+          <Name>Creative Mode, DLC Stuff</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011235</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011236</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011233</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+          <SubTriggers>
+            <Item>
+              <SubTrigger>
+                <Template>AutoCreateTrigger</Template>
+                <Values>
+                  <Trigger>
+                    <TriggerCondition>
+                      <Template>ConditionIsDLCActive</Template>
+                      <Values>
+                        <Condition />
+                        <ConditionIsDLCActive>
+                          <DLCAssetList>
+                            <Item>
+                              <DLCAsset>410084</DLCAsset>
+                            </Item>
+                          </DLCAssetList>
+                        </ConditionIsDLCActive>
+                        <ConditionPropsNegatable />
+                      </Values>
+                    </TriggerCondition>
+                  </Trigger>
+                </Values>
+              </SubTrigger>
+            </Item>
+          </SubTriggers>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- New World Cities II - Materials and Electricity -->
+
+  <!-- New World Cities III - Terraced Artista Houses -->
+</ModOps>

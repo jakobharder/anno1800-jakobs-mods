@@ -1,0 +1,170 @@
+<ModOps>
+  <ModOp Type="addNextSibling" GUID="101269">
+    <Asset>
+      <Template>BuffFactory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011240</GUID>
+          <Name>Milk Collector</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</IconFilename>
+          <InfoDescription>1500011243</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>11151</BuildingCategoryName>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Amount>15000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient> <!-- Wood -->
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient> <!-- Bricks -->
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient> <!-- Metal -->
+              <Amount>5</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Maintenance>
+          <IncomeCategory>ProductionBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>50</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Selection>
+          <GUIType>Generic</GUIType>
+        </Selection>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\milk-collector\nw-milk.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <SoundEmitter>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+        </SoundEmitter>
+        <Locked />
+        <AmbientMoodProvider>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Attackable>
+          <MaximumHitPoints>5000</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+        </IncidentInfectable>
+        <LogisticNode />
+        <FactoryBase />
+        <BuffFactory>
+          <BaseBuff>1500011241</BaseBuff>
+          <BaseBuffScope>Radius</BaseBuffScope>
+          <BaseBuffDistance>15</BaseBuffDistance>
+          <ProductionBuffScope>Radius</ProductionBuffScope>
+          <ProductionBuffDistance>15</ProductionBuffDistance>
+        </BuffFactory>
+        <UpgradeList />
+        <PublicService>
+          <!-- dummy public service to ensure ProductionBuffs are working -->
+          <FullSatisfactionDistance>15</FullSatisfactionDistance>
+          <NoSatisfactionDistance>15</NoSatisfactionDistance>
+          <PublicServiceOutputs>
+            <Item>
+              <Product>1500011242</Product>
+            </Item>
+          </PublicServiceOutputs>
+        </PublicService>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011241</GUID>
+          <Name>Milk 120s Buff</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>101269</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>5385</Product>
+              <AdditionalOutputCycle>1</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011242</GUID>
+          <Name>Milk Collection Service</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_milk.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Product>
+          <ProductColor>-11415604</ProductColor>
+          <StorageLevel>Building</StorageLevel>
+          <ProductCategory>11708</ProductCategory>
+          <IsAbstract>1</IsAbstract>
+          <AssociatedRegion>Colony01</AssociatedRegion>
+        </Product>
+        <ExpeditionAttribute />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Feedback -->
+  <ModOp Type="add" GUID="7018" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011230</Building>
+    </Item>
+    <Item>
+      <Building>1500011231</Building>
+    </Item>
+    <Item>
+      <Building>1500011237</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Buffs -->
+  <ModOp Type="add" GUID="6000018,193856,190897,368" Path="/.//ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500011240</GUID>
+    </Item>
+  </ModOp>
+</ModOps>
