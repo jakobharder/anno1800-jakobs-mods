@@ -21,10 +21,11 @@ There is no double consumption.
 ### 2.0
 
 - 2.0.1: Fixed undiscovered sessions
+- 2.0.1: Updated French translations (thanks Water)
 - Combined menus are now tweakable with iMYA - default switched off.
 - Added compatibility with the mod `Clarks Tailoring`
 - Yet another fix for multiplayer
 
 ## Credits
 
-Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL for the translations!
+Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL, Water for the translations!
