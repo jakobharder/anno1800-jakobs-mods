@@ -1,6 +1,7 @@
 ![](./banner.jpg)
 
-Modern and elegant electric poles perfect for big cities. They also work nicely with diagonal zigzag streets.
+Modern and elegant electric poles perfect for big cities.
+They also work nicely with diagonal zigzag streets.
 
 ## Notes
 

@@ -9,6 +9,8 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Added NW bread production: flour mill, bakery
   - Added NW cheese production: milking palour, cheese dairy
   - Added NW jam kitchen (only with DLC `Tourist Season`)
+- Alternative Needs, 2.0.1:
+  - Fixed undiscovered sessions
 
 ## 6.0 - City Variations
 

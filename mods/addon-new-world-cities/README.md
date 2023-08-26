@@ -4,8 +4,8 @@ Terraced houses with more population, new needs and material productions for the
 
 ## Recommended Mods
 
-- `Improved Streets` changes NW streets to a more sandy look.
-- `New World Tourism` toursits benefit from local production of bread and jam.
+- `Improved Streets` changes NW streets to a sandier look.
+- `New World Tourism` tourists benefit from local production of bread and jam.
 
 ## Content
 
