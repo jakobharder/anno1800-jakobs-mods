@@ -1,0 +1,468 @@
+<ModOps>
+  <!-- # Terraced Obreros -->
+  <ModOp Type="addNextSibling" GUID="101255">
+    <Asset>
+      <Template>ResidenceBuilding7_Colony</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011043</GUID>
+          <Name>Terraced Obreros</Name>
+          <IconFilename>data/ui/jakob/icon_terraced_obrera.png</IconFilename>
+          <InfoDescription>163059</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>101255</Building>
+            </Item>
+            <Item>
+              <Building>5405</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <!--
+              Multiple entries of the same variation for different rotations don't work.
+              But vanilla assets.xml also defines them, so they were supposed to work at some point.
+            -->
+            <Corner>
+              <Pool>
+                <Item>
+                  <Variation>8</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>9</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>10</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>11</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>12</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>13</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+              </Pool>
+            </Corner>
+            <Mid>
+              <Pool>
+                <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>1</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>2</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <Item>
+                  <Variation>3</Variation>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+              </Pool>
+            </Mid>
+            <End>
+              <Pool>
+                <Item>
+                  <Variation>4</Variation>
+                </Item>
+                <Item>
+                  <Variation>5</Variation>
+                </Item>
+                <Item>
+                  <Variation>6</Variation>
+                </Item>
+                <Item>
+                  <Variation>7</Variation>
+                </Item>
+              </Pool>
+            </End>
+          </BuildingBlockPool>
+          <InfluencedVariationDirection>
+            <!--
+              Direction rotates counter clock wise.
+              Default facing is X towards NW, Y towards NE.
+            -->
+            <Item>
+              <!-- single -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-east -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, south -->
+              <Direction>2</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- end, north-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- mid, south-west to north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, east -->
+              <Direction>3</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, north-west -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, west -->
+              <Direction>1</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- mid, north-west to south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-west  -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, north -->
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- cross -->
+            </Item>
+          </InfluencedVariationDirection>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Mesh />
+        <Object>
+          <Variations>
+            <!-- straights -->
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper2b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper2c.cfg</Filename>
+            </Item>
+            <!-- end -->
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper2b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper2c.cfg</Filename>
+            </Item>
+            <!-- corners -->
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper3.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper4.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper3b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper5.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper6.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\terraced-obrero\obrero_scraper6b.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Selection>
+          <ParticipantMessageArcheType>SA_Resident_tier02</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked />
+        <Upgradable>
+          <CurrentTier>2</CurrentTier>
+          <Upgradable>
+            <NextGUID>1500011044</NextGUID>
+            <UpgradeCost>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>4</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>2</Amount>
+              </Item>
+              <Item>
+                <Ingredient>838</Ingredient>
+                <Amount>1</Amount>
+              </Item>
+            </UpgradeCost>
+          </Upgradable>
+        </Upgradable>
+        <SoundEmitter>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+          <MaterialType>Stone</MaterialType>
+        </SoundEmitter>
+        <Infolayer />
+        <FeedbackController />
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>15000006</PopulationLevel7>
+          <ResidentMax>35</ResidentMax>
+          <ResidentsRequiredForUpgrade>35</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>0</IsBaseResidence>
+          <MoveInMs>8000</MoveInMs>
+        </Residence7>
+        <LogisticNode>
+          <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
+        </LogisticNode>
+        <AmbientMoodProvider>
+          <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
+          <HappinessDependentMurmur>
+            <Angry>
+              <Murmur>OberaUnhappy</Murmur>
+            </Angry>
+            <Unhappy>
+              <Murmur>OberaContent</Murmur>
+            </Unhappy>
+            <Neutral>
+              <Murmur>OberaContent</Murmur>
+            </Neutral>
+            <Happy>
+              <Murmur>OberaHappy</Murmur>
+            </Happy>
+            <Euphoric>
+              <Murmur>OberaHappy</Murmur>
+            </Euphoric>
+          </HappinessDependentMurmur>
+        </AmbientMoodProvider>
+        <UpgradeList />
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>3000</MaximumHitPoints>
+        </Attackable>
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <BaseChance>3.5</BaseChance>
+              <DensityFactor>0.025</DensityFactor>
+              <DensityDistance>15</DensityDistance>
+            </Fire>
+            <Riot>
+              <ResidenceHappinessFactor>0.4</ResidenceHappinessFactor>
+              <HappinessThreshold>10</HappinessThreshold>
+            </Riot>
+            <Illness>
+              <BaseChance>3.5</BaseChance>
+              <HitpointFactor>0.1</HitpointFactor>
+              <DensityFactor>0.025</DensityFactor>
+              <DensityDistance>15</DensityDistance>
+              <DilapidatedFactor>10</DilapidatedFactor>
+              <FactoryOvertimeFactor>0.3</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.15</FactoryUndertimeFactor>
+              <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
+              <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
+            </Illness>
+            <Explosion>
+              <ResidenceFullOvertimeChance>20</ResidenceFullOvertimeChance>
+              <ResidenceFullUndertimeChance>-15</ResidenceFullUndertimeChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Pausable />
+        <Culture />
+        <StreetActivation />
+        <Distribution />
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- <ModOp Type="merge" GUID="1010345" Path="/Values">
+    <Upgradable>
+      <NextGUID>1500011043</NextGUID>
+    </Upgradable>
+  </ModOp>
+  <ModOp Type="add" GUID="5405" Path="/Values">
+    <Upgradable>
+      <NextGUID>1500011044</NextGUID>
+    </Upgradable>
+  </ModOp> -->
+  <!-- <ModOp Type="merge" GUID="5405" Path="/Values">
+    <Residence7>
+      <ResidentsRequiredForUpgrade>20</ResidentsRequiredForUpgrade>
+    </Residence7>
+  </ModOp> -->
+
+  <ModOp Type="add" GUID="15000006" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='120020']/RequiredBuildings">
+    <Item>
+      <RequiredBuilding>1500011040</RequiredBuilding>
+    </Item>
+    <Item>
+      <RequiredBuilding>1500011043</RequiredBuilding>
+    </Item>
+  </ModOp>
+  <!-- add spawn feeback -->
+  <ModOp GUID="142785,2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011043</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Needs -->
+  <Group>
+    <ModOp GUID="15000006" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
+      <Item>
+        <Product>1010213</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500011043</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1500010102</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500011043</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>133183</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>20</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500011043</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+      <Item>
+        <Product>1010354</Product>
+        <SupplyWeight>5</SupplyWeight>
+        <MoneyValue>10</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <RequiredBuildings>
+          <Item>
+            <RequiredBuilding>1500011043</RequiredBuilding>
+          </Item>
+        </RequiredBuildings>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Targets -->
+  <Group>
+    <ModOp Type="add"
+      Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='101255']">
+      <Item>
+        <GUID>1500011043</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add"
+      Path="//ItemEffect/EffectTargets[Item/GUID='101255']">
+      <Item>
+        <GUID>1500011043</GUID>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Build Menus -->
+  <!-- New World, Obrero -->
+  <ModOp Type="addPrevSibling" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011043</Building>
+    </Item>
+  </ModOp>
+
+
+  <ModOp Type="add" GUID="269492"
+    Path=".//EffectTargets[Item/GUID='1010516']">
+    <Item>
+        <GUID>1554900077</GUID>
+    </Item>
+  </ModOp>
+</ModOps>

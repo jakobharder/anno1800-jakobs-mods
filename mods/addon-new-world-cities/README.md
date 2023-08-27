@@ -1,72 +1,99 @@
 ![](./banner.jpg)
 
-Terraced houses, construction material productions and more to fully grow your cities.
+Terraced houses with more population, new needs and material productions for the New World.
 
-## Buildings
+## Recommended Mods
 
-### Residences
+- `Improved Streets` changes NW streets to a sandier look.
+- `New World Tourism` tourists benefit from local production of bread and jam.
 
-- Terraced Artista: residences build in blocks like Engineers and Investors.
-  They provide a little extra population.
-- Artista skyscrapers (only with DLC `The High Life`)
+## Content
 
-### Ornaments
+### Level I - Terraced Houses
+
+*Unlocks with 750 Obreros*
+
+**Residences** with increased population capacity.
+They merge into blocks like Engineers and Investors.
+
+- Terraced **Jornaleros**
+  - 15 additional residents with tortillas, bread and cheese as basic needs.
+  - 5 additional residents with jam as lifestyle need.
+- Terraced **Obreros**
+  - 15 additional residents with bread, cheese and electricity as basic needs.
+  - 5 additional residents with jam as lifestyle need.
+
+**Production** of new additional needs for terraced houses.
+
+- Maize **Bread**
+  - Bakery consuming flour
+  - Mill consuming wood and corn
+- Minas **Cheese**
+  - Dairy consuming milk
+  - Milking palour
+- Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
+  - Jam kitchen consuming citrus
+
+**Ornaments** with fitting ground for new terraced houses.
 
 - Dirt paving: empty tile, Hacienda walls (only with DLC `Seeds of Change`)
 - Stone paving: empty tile
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
-### Construction Materials
+### Level II - Materials & Electricity
 
-Makes typical Old World construction materials production buildings available in the New World.
-Some buildings are a bit slower than their Old World counterpart.
+*Unlocks with 1500 Obreros or 300 Artistas*
 
-#### Steel Beams
+**Construction materials** can be produced in the New World now.
 
-- Steelworks
-- Furnace
-- Iron Mine: buildable on gold deposits
+- **Steel Beams**
+  - Steelworks
+  - Furnace
+  - Iron mine buildable on gold deposits
+- **Windows**
+  - Window makers
+  - Glassmakers
+  - Sand mine buildable on clay deposits
+- **Reinforced Concrete**
+  - Concrete factory
+  - Limestone quarry buildable on clay deposits
 
-#### Windows
-
-- Window Makers
-- Glassmakers
-- Sand Mine: buildable on clay deposits
-
-#### Reinforced Concrete
-
-- Concrete Factory
-- Limestone Quarry: buildable on clay deposits
-
-## Electricity
+**Electricity** in combination with other mods.
 
 - Enable electricity in the New World (without extra good output like DLC12)
-- Enable `Nate's Windmill` and `Small Power Plants` for the New World.
+- Enable power plants from
+  - `Nate's Windmill`,
+  - `Biogas Production` and
+  - `Industrial Cities` in the New World.
+
+### Level III - Terraced Artistas
+
+Only with `New World Rising`.
+*Unlocks with 300 Artistas*
+
+**Residences** with increased population capacity.
+
+- Terraced **Artistas**
+  - 30 additional residents with bread, gramophones and electricity as basic needs.
+- Artista skyscrapers (only with DLC `The High Life`)
+  - 50 additional residents with bread, gramophones, electricity, violins and canned fish as basic needs.
 
 ## Vanilla Bugfixes
 
-- Fixes Tropical Forest Variant 7 grass color
+- Fixes tropical forest variant 7 grass color
 
 ## Changes
 
-### 1.5
+### 2.0
 
-- Added diagonal and cornered fence skins
-
-### 1.4
-
-- 1.4.4: Russian translation
-- 1.4.3: Fixed Artista skyscraper not unlocking for some
-- 1.4.3: Added fix for NW Tourism to use vanilla New World residences pool
-- 1.4.3: Added skyscraper costs.
-- 1.4.3: Removed concrete, windows and steel cost from limestone quarry
-- 1.4.3: Replaced ore mine / limestone quarry icons
-- 1.4.2: Fixed blurry icons
-- 1.4.1: Fixed compatibility issue with Harbor Life
-- Immediately unlock in creative mode
-- Added Artista skyscrapers
+- Added terraced jornaleros and obreros
+- Added NW bread production: flour mill, bakery
+- Added NW cheese production: milking palour, cheese dairy
+- Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## Credits
+
+Thanks to Lordy for the milking palour model.
 
 Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!
