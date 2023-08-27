@@ -91,13 +91,13 @@ They come with new needs, productions and fitting ornaments.
 
 ### Gameplay
 
-- Tiers: 2 Artista tiers (terraced, skyscraper)
+- Extra level tiers with more population for jornaleros, obrerors and artista
 
 ### Buildings
 
-- Terraced artista houses
+- Terraced jornalero, obrero and artista houses
 - Artista skyscrapers
-- Enables `Windmill` and `Industrial Cities` power plants in the New World
+- Enables `Windmill`, `Biogas Production` and `Industrial Cities` power plants in the New World
 
 ### Productions
 

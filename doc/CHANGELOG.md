@@ -11,6 +11,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Added NW jam kitchen (only with DLC `Tourist Season`)
 - Alternative Needs, 2.0.1:
   - Fixed undiscovered sessions
+- Updated French translations (thanks to Water)
 
 ## 6.0 - City Variations
 
