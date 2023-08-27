@@ -11,7 +11,7 @@ You need `Pescatarians` and `Industrial Cities` to play.
 ## Content
 
 Every end product of the production chains can be used as an alternative input for Basic Needs.
-Enable it in the Lifestyle needs and when fulfilled it will fulfill it's counterpart.
+Enable it in the Lifestyle needs and when fulfilled it will fulfill its counterpart.
 
 If both needs are provided, the alternative is consumed first.
 There is no double consumption.
@@ -28,4 +28,4 @@ There is no double consumption.
 
 ## Credits
 
-Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL, Water for the translations!
+Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL and Water for the translations!
