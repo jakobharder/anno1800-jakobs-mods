@@ -2,7 +2,7 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## [Unreleased]
+## 6.1 - Terraced Jornaleros, Obreros
 
 - New World Cities, 2.0:
   - Added terraced jornaleros and obreros

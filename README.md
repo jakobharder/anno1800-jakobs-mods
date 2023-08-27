@@ -86,8 +86,7 @@ They come with new needs, productions and fitting ornaments.
 
 ![](./doc/nw-cities.jpg)
 
-Terraced houses for artistas, construction material production and more electricity options for the New World.
-They come with new needs, productions and fitting ornaments.
+Terraced houses, material and need productions and more electricity options for the New World.
 
 ### Gameplay
 
@@ -101,10 +100,12 @@ They come with new needs, productions and fitting ornaments.
 
 ### Productions
 
-- NW Steelworks
-- NW Concrete Factory
-- NW Glassmaker
-- NW Window Maker
+- NW steelworks
+- NW concrete factory (+ limestone quarry)
+- NW window maker (+ glass maker and sand pit)
+- NW bakery (+ mill)
+- NW cheese dairy (+ milking palour)
+- NW jam kitchen (from citrus, only with NW Tourism)
 
 ### Ornaments
 
