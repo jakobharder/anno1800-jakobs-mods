@@ -2,7 +2,8 @@
 Modular Factories
 -->
 <ModOps>
-  <Include File="/data/jakob/modular-factories-menu/assets.include.xml" />
+  <Include File="./menu.include.xml" />
+  <Include File="./chemicals.include.xml" />
 
   <!-- # boostable buildings -->
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
@@ -36,18 +37,8 @@ Modular Factories
             </Item>
           </InfluencedByNeighbors>
           <BuildingBlockPool>
-            <DontCare>
-              <Pool>
-                <Item></Item>
-              </Pool>
-            </DontCare>
-            <Single>
-              <Pool>
-                <Item>
-                  <Variation>0</Variation>
-                </Item>
-              </Pool>
-            </Single>
+            <DontCare />
+            <Single />
             <Mid>
               <Pool>
                 <Item>
@@ -396,6 +387,17 @@ Modular Factories
   <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010284']">
     <Item>
       <GUID>1500010600</GUID>
+    </Item>
+  </ModOp>
+
+  <!-- # Neighbors -->
+  <ModOp Type="add" GUID="1500010154,1500010600,1500011270,1500011271" Condition="~"
+    Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500011270</Building>
+    </Item>
+    <Item>
+      <Building>1500011271</Building>
     </Item>
   </ModOp>
 </ModOps>
