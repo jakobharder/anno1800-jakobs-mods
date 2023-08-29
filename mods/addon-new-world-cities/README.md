@@ -87,6 +87,9 @@ Only with `New World Rising`.
 
 ### 2.0
 
+- 2.0.2: fixed missing obrero -> artista upgrade
+- 2.0.2: fixed issue with needs menu of artista skyscrapers
+- 2.0.2: fixed duplicate citrus jam entry in consumables
 - Added terraced jornaleros and obreros
 - Added NW bread production: flour mill, bakery
 - Added NW cheese production: milking palour, cheese dairy

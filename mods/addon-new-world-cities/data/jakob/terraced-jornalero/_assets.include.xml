@@ -3,7 +3,7 @@
   <Group>
     <ModOp Type="addNextSibling" GUID="101255">
       <Asset>
-        <Template>ResidenceBuilding7_Colony</Template>
+        <Template>JakobNWCResidence</Template>
         <Values>
           <Standard>
             <GUID>1500011250</GUID>
@@ -11,17 +11,7 @@
             <IconFilename>data/ui/jakob/icon_terraced_jornalero.png</IconFilename>
             <InfoDescription>163059</InfoDescription>
           </Standard>
-          <Blocking />
           <Building>
-            <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
-            <InfluencedByNeighbors>
-              <Item>
-                <Building>101255</Building>
-              </Item>
-              <Item>
-                <Building>5405</Building>
-              </Item>
-            </InfluencedByNeighbors>
             <BuildingBlockPool>
               <!--
                 Multiple entries of the same variation for different rotations don't work.
@@ -93,85 +83,6 @@
                 </Pool>
               </End>
             </BuildingBlockPool>
-            <InfluencedVariationDirection>
-              <!--
-                Direction rotates counter clock wise.
-                Default facing is X towards NW, Y towards NE.
-              -->
-              <Item>
-                <!-- single -->
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- end, south-west -->
-                <Direction>1</Direction>
-                <Type>End</Type>
-              </Item>
-              <Item>
-                <!-- end, south-east -->
-                <Direction>2</Direction>
-                <Type>End</Type>
-              </Item>
-              <Item>
-                <!-- corner, south -->
-                <Direction>2</Direction>
-                <Type>Corner</Type>
-              </Item>
-              <Item>
-                <!-- end, north-east -->
-                <Direction>3</Direction>
-                <Type>End</Type>
-              </Item>
-              <Item>
-                <!-- mid, south-west to north-east -->
-                <Direction>1</Direction>
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- corner, east -->
-                <Direction>3</Direction>
-                <Type>Corner</Type>
-              </Item>
-              <Item>
-                <!-- T, front facing south-east -->
-                <Direction>3</Direction>
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- end, north-west -->
-                <Type>End</Type>
-              </Item>
-              <Item>
-                <!-- corner, west -->
-                <Direction>1</Direction>
-                <Type>Corner</Type>
-              </Item>
-              <Item>
-                <!-- mid, north-west to south-east -->
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- T, front facing south-west  -->
-                <Direction>2</Direction>
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- corner, north -->
-                <Type>Corner</Type>
-              </Item>
-              <Item>
-                <!-- T, front facing north-west -->
-                <Direction>1</Direction>
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- T, front facing north-east -->
-                <Type>Mid</Type>
-              </Item>
-              <Item>
-                <!-- cross -->
-              </Item>
-            </InfluencedVariationDirection>
           </Building>
           <Cost>
             <Costs>
@@ -185,7 +96,6 @@
               </Item>
             </Costs>
           </Cost>
-          <Mesh />
           <Object>
             <Variations>
               <!-- corners -->
@@ -232,7 +142,6 @@
           <Selection>
             <ParticipantMessageArcheType>SA_Resident_tier01</ParticipantMessageArcheType>
           </Selection>
-          <Constructable />
           <Locked />
           <Upgradable>
             <CurrentTier>1</CurrentTier>
@@ -258,8 +167,6 @@
             </BuildingRepaired>
             <MaterialType>Stone</MaterialType>
           </SoundEmitter>
-          <Infolayer />
-          <FeedbackController />
           <Residence7>
             <ResidenceStorage>
               <InputStorageMax>1</InputStorageMax>
@@ -270,9 +177,6 @@
             <IsBaseResidence>0</IsBaseResidence>
             <MoveInMs>8000</MoveInMs>
           </Residence7>
-          <LogisticNode>
-            <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
-          </LogisticNode>
           <AmbientMoodProvider>
             <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
             <HappinessDependentMurmur>
@@ -293,7 +197,6 @@
               </Euphoric>
             </HappinessDependentMurmur>
           </AmbientMoodProvider>
-          <UpgradeList />
           <Attackable>
             <AttackableType>IslandBuilding</AttackableType>
             <MaximumHitPoints>3000</MaximumHitPoints>
@@ -335,10 +238,6 @@
               </Explosion>
             </IncidentInfectionChanceFactors>
           </IncidentInfectable>
-          <Pausable />
-          <Culture />
-          <StreetActivation />
-          <Distribution />
         </Values>
       </Asset>
     </ModOp>

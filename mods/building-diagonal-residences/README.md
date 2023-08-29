@@ -43,6 +43,7 @@ Known issues:
 
 ### 1.8
 
+- 1.8.1: fixed giant showing up in single greenery ornaments
 - Added NW variants of all ornaments
 - Fixed plaza greenery corner hitbox
 

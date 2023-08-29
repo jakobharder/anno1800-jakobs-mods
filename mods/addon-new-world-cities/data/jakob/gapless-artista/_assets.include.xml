@@ -12,7 +12,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
   <!-- # Terraced Artista Residences -->
   <ModOp Type="addNextSibling" GUID="101255">
     <Asset>
-      <Template>ResidenceBuilding7_Colony</Template>
+      <Template>JakobNWCResidence</Template>
       <Values>
         <Standard>
           <GUID>1500011044</GUID>
@@ -20,19 +20,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data\ui\jakob\nwc\icon_residence.png</IconFilename>
           <InfoDescription>163059</InfoDescription>
         </Standard>
-        <Blocking />
         <Building>
-          <BuildingType>Residence</BuildingType>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-          <AssociatedRegions>Colony01</AssociatedRegions>
-          <InfluencedByNeighbors>
-            <Item>
-              <Building>101255</Building>
-            </Item>
-            <Item>
-              <Building>5405</Building>
-            </Item>
-          </InfluencedByNeighbors>
           <BuildingBlockPool>
             <!--
               Multiple entries of the same variation for different rotations don't work.
@@ -99,85 +87,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
               </Pool>
             </End>
           </BuildingBlockPool>
-          <InfluencedVariationDirection>
-            <!--
-              Direction rotates counter clock wise.
-              Default facing is X towards NW, Y towards NE.
-            -->
-            <Item>
-              <!-- single -->
-              <Type>DontCare</Type>
-            </Item>
-            <Item>
-              <!-- end, south-west -->
-              <Direction>1</Direction>
-              <Type>End</Type>
-            </Item>
-            <Item>
-              <!-- end, south-east -->
-              <Direction>2</Direction>
-              <Type>End</Type>
-            </Item>
-            <Item>
-              <!-- corner, south -->
-              <Direction>2</Direction>
-              <Type>Corner</Type>
-            </Item>
-            <Item>
-              <!-- end, north-east -->
-              <Direction>3</Direction>
-              <Type>End</Type>
-            </Item>
-            <Item>
-              <!-- mid, south-west to north-east -->
-              <Direction>1</Direction>
-              <Type>Mid</Type>
-            </Item>
-            <Item>
-              <!-- corner, east -->
-              <Direction>3</Direction>
-              <Type>Corner</Type>
-            </Item>
-            <Item>
-              <!-- T, front facing south-east -->
-              <Direction>3</Direction>
-              <Type>Mid</Type>
-            </Item>
-            <Item>
-              <!-- end, north-west -->
-              <Type>End</Type>
-            </Item>
-            <Item>
-              <!-- corner, west -->
-              <Direction>1</Direction>
-              <Type>Corner</Type>
-            </Item>
-            <Item>
-              <!-- mid, north-west to south-east -->
-              <Type>Mid</Type>
-            </Item>
-            <Item>
-              <!-- T, front facing south-west  -->
-              <Direction>2</Direction>
-              <Type>Mid</Type>
-            </Item>
-            <Item>
-              <!-- corner, north -->
-              <Type>Corner</Type>
-            </Item>
-            <Item>
-              <!-- T, front facing north-west -->
-              <Direction>1</Direction>
-              <Type>Mid</Type>
-            </Item>
-            <Item>
-              <!-- T, front facing north-east -->
-              <Type>Mid</Type>
-            </Item>
-            <Item>
-              <!-- cross -->
-            </Item>
-          </InfluencedVariationDirection>
         </Building>
         <Cost>
           <Costs>
@@ -195,10 +104,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Costs>
         </Cost>
-        <Constructable>
-          <ConstructionMenuIcon>1500011044</ConstructionMenuIcon>
-        </Constructable>
-        <Mesh />
         <Object>
           <Variations>
             <!-- corners -->
@@ -298,19 +203,14 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           </BuildingRepaired>
           <MaterialType>Wood</MaterialType>
         </SoundEmitter>
-        <Infolayer />
-        <FeedbackController />
         <Residence7>
           <PopulationLevel7>5403</PopulationLevel7>
-          <ResidentMax>70</ResidentMax>
-          <ResidentsRequiredForUpgrade>70</ResidentsRequiredForUpgrade>
+          <ResidentMax>75</ResidentMax>
+          <ResidentsRequiredForUpgrade>75</ResidentsRequiredForUpgrade>
           <ResidentsOccupancyThresholdMax>0.5</ResidentsOccupancyThresholdMax>
           <IsBaseResidence>0</IsBaseResidence>
           <MoveInMs>8000</MoveInMs>
         </Residence7>
-        <LogisticNode>
-          <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
-        </LogisticNode>
         <AmbientMoodProvider>
           <Murmur>DLC12_Artistas</Murmur>
           <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
@@ -332,7 +232,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Euphoric>
           </HappinessDependentMurmur>
         </AmbientMoodProvider>
-        <UpgradeList />
         <Attackable>
           <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>2000</MaximumHitPoints>
@@ -374,10 +273,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Explosion>
           </IncidentInfectionChanceFactors>
         </IncidentInfectable>
-        <Pausable />
-        <Culture />
-        <StreetActivation />
-        <InfluenceSource />
         <Maintenance>
           <IncomeCategory>Skyscrapers</IncomeCategory>
           <Maintenances>
@@ -387,7 +282,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
-        <Distribution />
       </Values>
     </Asset>
     <Asset>
@@ -475,8 +369,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Upgradable>
         <Residence7>
           <PopulationLevel7>5403</PopulationLevel7>
-          <ResidentMax>90</ResidentMax>
-          <ResidentsRequiredForUpgrade>90</ResidentsRequiredForUpgrade>
+          <ResidentMax>95</ResidentMax>
+          <ResidentsRequiredForUpgrade>95</ResidentsRequiredForUpgrade>
           <ResidentsOccupancyThresholdMax>0.5</ResidentsOccupancyThresholdMax>
           <IsBaseResidence>0</IsBaseResidence>
           <MoveInMs>8000</MoveInMs>
@@ -490,7 +384,6 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
-        <UpgradeList />
       </Values>
     </Asset>
     <Asset>

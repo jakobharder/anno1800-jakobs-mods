@@ -4,11 +4,25 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 6.1 - Terraced Jornaleros, Obreros
 
+### 6.1.1
+
+- New World Cities, 2.0.2:
+  - Fixed missing obrero -> artista upgrade
+  - Fixed issue with needs menu of artista skyscrapers
+  - Fixed duplicate citrus jam entry in consumables
+- Diagonal Residences, 1.8.1:
+  - Fixed giant showing up in single greenery ornaments
+
+### New Content
+
 - New World Cities, 2.0:
   - Added terraced jornaleros and obreros
   - Added NW bread production: flour mill, bakery
   - Added NW cheese production: milking palour, cheese dairy
   - Added NW jam kitchen (only with DLC `Tourist Season`)
+
+### Fixes and Minor Updates
+
 - Alternative Needs, 2.0.1:
   - Fixed undiscovered sessions
 - Updated French translations (thanks to Water)
