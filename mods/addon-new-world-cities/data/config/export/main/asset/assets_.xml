@@ -14,9 +14,9 @@
   <Include File="/data/jakob/nw-enclosed-greenery/assets.include.xml" />
 
   <!-- Terraced Artista / Skyscraper -->
-  <Include File="/data/jakob/gapless-artista/_assets.include.xml" />
-  <Include File="/data/jakob/terraced-obrero/_assets.include.xml" />
   <Include File="/data/jakob/terraced-jornalero/_assets.include.xml" />
+  <Include File="/data/jakob/terraced-obrero/_assets.include.xml" />
+  <Include File="/data/jakob/gapless-artista/_assets.include.xml" />
 
   <!-- Needs -->
   <Include File="/data/jakob/milk-collector/_assets.include.xml" />
@@ -26,11 +26,8 @@
   <Include File="./unlocks.include.xml" />
 
   <!-- # Neighbors -->
-  <ModOp Type="add" GUID="1500011043,1500011044,1500011250"
+  <!-- <ModOp Type="add" GUID="1500011043,1500011044,1500011250"
     Path="/Values/Building/InfluencedByNeighbors">
-    <!-- <Item>
-      <Building>1500011040</Building>
-    </Item> -->
     <Item>
       <Building>1500011043</Building>
     </Item>
@@ -43,7 +40,7 @@
     <Item>
       <Building>1500011250</Building>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <!-- add to neighbor feature -->
   <ModOp Type="add" GUID="7233"
     Path="/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule">
