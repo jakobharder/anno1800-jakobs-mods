@@ -4,7 +4,7 @@ Terraced houses with more population, new needs and material productions for the
 
 ## Recommended Mods
 
-- `Improved Streets` changes NW streets to a sandier look.
+- `Streets & Railways` changes NW streets to a sandier look.
 - `New World Tourism` tourists benefit from local production of bread and jam.
 
 ## Content
@@ -30,7 +30,7 @@ They merge into blocks like Engineers and Investors.
   - Mill consuming wood and corn
 - Minas **Cheese**
   - Dairy consuming milk
-  - Milking palour
+  - Milking parlour
 - Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
   - Jam kitchen consuming citrus
 
@@ -92,11 +92,11 @@ Only with `New World Rising`.
 - 2.0.2: fixed duplicate citrus jam entry in consumables
 - Added terraced jornaleros and obreros
 - Added NW bread production: flour mill, bakery
-- Added NW cheese production: milking palour, cheese dairy
+- Added NW cheese production: milking parlour, cheese dairy
 - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## Credits
 
-Thanks to Lordy for the milking palour model.
+Thanks to Lordy for the milking parlour model.
 
 Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!
