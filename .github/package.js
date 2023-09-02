@@ -61,6 +61,6 @@ for (mod of modsToPackage) {
   child_process.execFileSync('tar', [
       '-ca',
       '-f', path.join(process.cwd(), `out/${mod.name}-${mod.version}.zip`),
-      '-C', path.join(process.cwd(), 'out/'), `${mod.folder}`
+      '-C', path.join(process.cwd(), 'out/'), `"${mod.folder}"`
     ]);
 }
