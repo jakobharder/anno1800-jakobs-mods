@@ -4,31 +4,39 @@
 
 Condition | Content | Unhide
 --- | --- | ---
-1 Worker | `Industrial Cities` stone pavement | 1 Worker
+150 Workers | *Bakery unlock*
 400 Workers | `Pescatarians`<br/>needs unlocks? | immediately
 | | Vegetable farm
-1 Artisan | Cheese dairy | none
-250 Artisans | `Industrial Cities` docklands gate | 1 Artisan
+| | Cheese dairy<br/>(was 1 Artisan) | none
+750 Workers | *Artisan unlock* | 500 Workers
+250 Artisans | *Variaty theater (for Pesca II)*
+|| **Industrial Cities I - Advanced Factories**
+| | `Industrial Cities` docklands gate | 1 Artisan
 | | `Industrial Cities` modular sewing machine factory (same as vanilla)
+| | TBD `Industrial Cities` soap factory, rendering works
+| | TBD `Industrial Cities` bakery, flour mill
+| | TBD `Industrial Cities` worker cloths
+| | `Industrial Cities` tools factory (need for Pesca I??)<br/>TBD (is 900 artisans) | none
+1 Worker | `Industrial Cities` stone pavement | 1 Worker
 | | Olive soap factory (need for Pesca I)<br/>TBD (is 700 engineers)
-| | *Variaty theater (for Pesca II)*
-1500 Artisans | *Engineer unlock* | 900 Artisans
-| | *University (for Pesca II)*
-1500 Artisans<br/>1 Engineer | `Industrial Cities` suits factory | none
+800 Artisans | **Industrial Cities II - Terraced Houses**
+| | `Industrial Cities` suits factory | none
+| | `Industrial Cities` terraced workers level 1 | 1 Worker
+| | `Industrial Cities` terraced artisans level 1 | 1 Artisan
+| | `Industrial Cities` tea docks<br/>TBD (is 400 engineers) | none
+| | `Industrial Cities` Fish cannery |
+| | `Industrial Cities` products:<br/>cheese(why?), tools, suits, canned fish | none
+1500 Artisans | *University (for Pesca II)* | 900 Artisans
+| | *Engineer unlock*
 1 Engineer | *Vanilla electricity & oil power plants* | none
+500 Engineers | **Industrial Cities III - Terraced Houses**
 | | `Industrial Cities` small coal and oil power plants
 | | `Industrial Cities` railway platforms<br/>TBD (is immediately now)
 | | `Shared` diagonal ornaments<br/>TBD (is immediately now)
-700 Engineers | **Industrial Cities - Terraced Houses** (banner)
-| | `Industrial Cities` terraced workers level 1 and 2 | 1 Worker
-| | `Industrial Cities` terraced artisans level 1 and 2 | 1 Artisan
-| | `Industrial Cities` products:<br/>cheese(why?), tools, suits, canned fish, electricity | none
-| | `Industrial Cities` tea docks<br/>TBD (is 400 engineers) | none
-| | `Industrial Cities` tools factory (need for Pesca I??)<br/>TBD (is 900 engineers) | none
+| | `Industrial Cities` terraced workers level 2
+| | `Industrial Cities` terraced artisans level 2
 | | Windmill<br/>TBD (is 500 engineers) | 1 Engineer
-| | `Industrial Cities` Fish cannery |
 1 Investor | Biogas Production | 1 Engineer
-Unknown |
 
 ## Old World Needs
 
@@ -66,6 +74,29 @@ Theater | | 5 | | 2000
 --- | Converts | --- | --- | --- | ---
 University | | 1 | | 4000
 Sewing Machines | 0.0003 | 1
+
+### Terraced Workers
+
+Need | Consumption | Residents | Coins | Required | Unlock
+--- | --- | --- | --- | --- | ---
+Tea | 0.00026 | 4 | | 800
+Tools | 0.0004166 | 4 | | 1000
+Electricity | | 2 | | 1200 |
+--- | Level II | --- | --- | --- | ---
+Suits | 0.0004166 | 5 | | 1500
+Canned Fish | 0.0004166 | 5 | | 1500
+
+### Terraced Artisans
+
+Need | Consumption | Residents | Coins | Required | Unlock
+--- | --- | --- | --- | --- | ---
+Tea | 0.00052 | 7 | | 800
+Gramophones | 0.000027775 | 7 | | 800 | 3000 investors
+Electricity | | 6 | | 1000 |
+--- | Level II | --- | --- | --- | ---
+Bombins | 0.00005555 | 6 | | 1500
+Typewriters | 0.000027775 | 7 | | 1500
+Violins | 0.000027775 | 7 | | 2000
 
 ## New World Unlocks
 

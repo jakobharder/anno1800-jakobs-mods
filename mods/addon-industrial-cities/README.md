@@ -2,13 +2,33 @@
 
 Increased population residences, new productions, railway stations, more power stations.
 
-## Requirements
+## Content
 
-- Residences require activated DLC `The High Life`
+### Level I - Factory Complex
 
-## Buildings
+*Unlocks at 250 Artisans*
 
-### Residences - Terraced Houses
+**Productions** visually merge together into big complexes.
+Some have doubled production, doubled workforce and tripled maintenance cost.
+
+- **Soap**
+  - Rendering works (doubled)
+  - Soap factory (doubled)
+- **Sewing Machines**
+  - Sewing machine factory (normal)
+- **Tools**
+  - Tools factory consuming iron and wood
+
+Other buildings:
+
+- **Docklands Gate**: to connect modules across streets to keep atractiveness bonus (only with DLC `Docklands`)
+
+*Note: the module menu has no scroll option. It may not show some modules if you already have too many module mods.*
+
+### Level II - Terraced Houses
+
+Only with DLC `The High Life`.
+*Unlocks at 700 Engineers*
 
 - Worker Level 1: 30 workers
 - Worker Level 2: 40 workers
@@ -33,10 +53,6 @@ All products can also be imported through Docklands.
 - Olive Orchard: Olives
 - Fish Cannery: Canned Fish from Ore, Olives and Fish
 
-#### Tools
-
-- Modular Tools Workshop: Tools from Iron and Wood
-
 #### Suits
 
 - Hemp Farm: Hemp
@@ -57,11 +73,6 @@ All products can also be imported through Docklands.
 
 (*) Oil and Gas power plants are available in the NW when played together with `[Addon] New World Cities`.
 
-### Modular Factories
-
-- Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
-- Tools Workshop: 7 variations, 4x4 tiles
-
 ### Factory Variations
 
 Shift+V variations for production buildings.
@@ -81,12 +92,7 @@ Shift+V variations for production buildings.
 - Also function as street.
 - Adds Shift+V variations with this ground to various City Decoration and City Lights Pack ornaments.
 
-### Docklands Module
 
-The docklands gate connects modules across streets to keep atractiveness bonus.
-It is available in the docklands module construction.
-
-Note: the menu has no scroll option. It may not show if you already have too many modules.
 
 ## Known Issues
 

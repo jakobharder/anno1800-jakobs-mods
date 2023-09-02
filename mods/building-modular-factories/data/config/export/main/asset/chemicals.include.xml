@@ -15,7 +15,6 @@
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <BuildModeStartVariation>0</BuildModeStartVariation>
           <InfluencedByNeighbors>
             <Item>
               <Building>1500010154</Building>
@@ -89,19 +88,19 @@
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>3</Amount>
+              <Amount>8</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>3</Amount>
+              <Amount>10</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
-              <Amount>3</Amount>
+              <Amount>8</Amount>
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>3</Amount>
+              <Amount>2</Amount>
             </Item>
             <Item>
               <Ingredient>1010202</Ingredient>
@@ -126,16 +125,14 @@
           </Colors>
         </Selection>
         <Constructable />
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
         <SoundEmitter>
           <ActiveSounds>
             <Item>
-              <Sound>239444</Sound>
+              <Sound>216871</Sound>
             </Item>
             <Item>
-              <Sound>239332</Sound>
+              <Sound>202350</Sound>
             </Item>
           </ActiveSounds>
           <IncidentSounds>
@@ -168,9 +165,7 @@
           <CycleTime>15</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
-        <LogisticNode>
-          <TransporterCountMax>1</TransporterCountMax>
-        </LogisticNode>
+        <LogisticNode />
         <AmbientMoodProvider>
           <Murmur>Factory</Murmur>
           <DynamicEnvironmentType>None</DynamicEnvironmentType>
@@ -179,16 +174,17 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>170</Amount>
-              <InactiveAmount>85</InactiveAmount>
+              <Amount>150</Amount>
+              <InactiveAmount>75</InactiveAmount>
             </Item>
             <Item>
-              <Product>1010116</Product>
-              <Amount>50</Amount>
+              <Product>1010115</Product>
+              <Amount>100</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
         <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>2500</MaximumHitPoints>
           <SelfHealPerHealTick>6</SelfHealPerHealTick>
         </Attackable>
@@ -215,11 +211,18 @@
               <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
               <HappinessThreshold>20</HappinessThreshold>
             </Riot>
+            <Explosion>
+              <BaseChance>2</BaseChance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Explosion>
           </IncidentInfectionChanceFactors>
         </IncidentInfectable>
         <Industrializable />
         <Culture>
-          <CultureType>Culture</CultureType>
+          <Attractiveness>-10</Attractiveness>
+          <CultureType>Military</CultureType>
         </Culture>
         <Electrifiable />
       </Values>
@@ -330,9 +333,7 @@
           </Colors>
         </Selection>
         <Constructable />
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
         <SoundEmitter>
           <ActiveSounds>
             <Item>
@@ -383,8 +384,8 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>80</Amount>
-              <InactiveAmount>40</InactiveAmount>
+              <Amount>120</Amount>
+              <InactiveAmount>60</InactiveAmount>
             </Item>
             <Item>
               <Product>1010115</Product>
