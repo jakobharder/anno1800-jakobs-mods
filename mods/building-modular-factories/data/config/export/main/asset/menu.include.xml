@@ -1,0 +1,80 @@
+<ModOps>
+  <!-- <ModOp Type="addNextSibling" GUID="1010035">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011272</GUID>
+          <Name>Moderate Modding Menu</Name>
+          <IconFilename>data\ui\2kimages\main\icons\icon_pollution.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList />
+          <CategoryDescription>19564</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000035"
+    Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500945']">
+    <Item>
+      <Category>1500011272</Category>
+    </Item>
+  </ModOp> -->
+
+  <!-- # Modular Factories Menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010601</GUID>
+          <Name>Modular Factories Menu</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_multifactory_assembly_line.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList />
+          <CategoryDescription>1500010602</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010602</GUID>
+          <Name>Modular factories menu description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addPrevSibling" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500010601</Building>
+    </Item>
+  </ModOp>
+
+  <!-- <ModOp Type="add" GUID="1500010601,1500011272" Path="/Values/ConstructionCategory/BuildingList"> -->
+  <ModOp Type="add" GUID="1500010601" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011271</Building>
+    </Item>
+    <Item>
+      <Building>1500011270</Building>
+    </Item>
+    <Item>
+      <Building>1500010154</Building>
+    </Item>
+    <Item>
+      <Building>1500010600</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="addNextSibling" GUID="25000191" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003' or position()=last()][1]">
+    <Item>
+      <Building>1500011273</Building>
+    </Item>
+  </ModOp>
+</ModOps>

@@ -113,6 +113,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <DynamicEnvironmentType>None</DynamicEnvironmentType>
         </AmbientMoodProvider>
         <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>1000</MaximumHitPoints>
           <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>
@@ -242,7 +243,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <DynamicEnvironmentType>None</DynamicEnvironmentType>
         </AmbientMoodProvider>
         <Attackable>
-          <!-- important for burn damage -->
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>5000</MaximumHitPoints>
           <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>

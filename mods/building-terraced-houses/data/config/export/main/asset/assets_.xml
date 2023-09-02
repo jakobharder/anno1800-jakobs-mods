@@ -404,6 +404,7 @@
           <ResidentMax>20</ResidentMax> <!-- needs to be the standard max for the population level -->
           <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
           <IsBaseResidence>0</IsBaseResidence>
+          <MoveInMs>8000</MoveInMs>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -1478,6 +1479,7 @@
           <ResidentMax>30</ResidentMax> <!-- needs to be the standard max for the population level -->
           <ResidentsRequiredForUpgrade>50</ResidentsRequiredForUpgrade>
           <IsBaseResidence>0</IsBaseResidence>
+          <MoveInMs>8000</MoveInMs>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level3</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -2328,10 +2330,10 @@
         </RequiredBuildings>
       </Item>
       <Item>
-        <Product>1010248</Product> <!-- gramophone -->
-        <Amount>0.000027775</Amount>
+        <Product>120037</Product> <!-- bombins -->
+        <Amount>0.00005555</Amount>
         <SupplyWeight>7</SupplyWeight>
-        <MoneyValue>80</MoneyValue>
+        <MoneyValue>60</MoneyValue>
         <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>800</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
@@ -2381,10 +2383,10 @@
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
       </Item> -->
       <Item>
-        <Product>120037</Product> <!-- bombins -->
-        <Amount>0.00005555</Amount>
+        <Product>1010248</Product> <!-- gramophone -->
+        <Amount>0.000027775</Amount>
         <SupplyWeight>6</SupplyWeight>
-        <MoneyValue>60</MoneyValue>
+        <MoneyValue>80</MoneyValue>
         <RequiredFloorLevel>2</RequiredFloorLevel>
         <FullWeightPopulationCount>1500</FullWeightPopulationCount>
         <NoWeightPopulationCount>1199</NoWeightPopulationCount>
@@ -2652,66 +2654,7 @@
   </ModOp>
 
   <!-- # Unlocks, notifications -->
-  <!-- milestone banner: prepend -->
-  <ModOp Type="add" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners">
-    <Item>
-      <RequiredValue>700</RequiredValue>
-      <PopulationGUID>15000003</PopulationGUID>
-      <Notification>1500010216</Notification>
-    </Item>
-  </ModOp>
   <ModOp Type="addNextSibling" GUID="130249">
-    <Asset>
-      <Template>LockableNotification</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010216</GUID>
-          <Name>workers_rise_notification</Name>
-        </Standard>
-        <Notification>
-          <NotificationType>
-            <Template>MainNotification</Template>
-            <Values>
-              <MainNotification>
-                <Title>1500010217</Title>
-                <NotificationMainIconAsset>1500010201</NotificationMainIconAsset>
-                <Icon01>1500010102</Icon01>
-                <Icon02>1500010153</Icon02>
-                <Icon03>1500010120</Icon03>
-                <Icon04>1500010127</Icon04>
-                <BackgroundAnimation>data\ui\video\ui_alpha\main_banner\mainbanner_engineers_a.bk2</BackgroundAnimation>
-              </MainNotification>
-              <BaseNotification>
-                <NotificationText>1500010218</NotificationText>
-                <NotificationAudioAsset>201842</NotificationAudioAsset>
-              </BaseNotification>
-              <NotificationSubtitle>
-                <Subtitle>265159</Subtitle>
-              </NotificationSubtitle>
-            </Values>
-          </NotificationType>
-        </Notification>
-        <Locked />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010217</GUID>
-          <Name>workers_rise_notification_title</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010218</GUID>
-          <Name>workers_rise_notification_text</Name>
-        </Standard>
-      </Values>
-    </Asset>
     <Asset>
       <Template>Trigger</Template>
       <Values>
@@ -2759,11 +2702,11 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010220</GUID>
-          <Name>Workers @ 700 Engineers</Name>
+          <GUID>1500011284</GUID>
+          <Name>I @ 800 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -2773,8 +2716,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000003</Context> <!-- engineers -->
-                <CounterAmount>700</CounterAmount>
+                <Context>15000002</Context>
+                <CounterAmount>800</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2787,13 +2730,13 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010212</Asset> <!-- menu -->
+                        <Asset>1500010212</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010200</Asset> <!-- level 1 -->
+                        <Asset>1500010200</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010201</Asset> <!-- level 2 -->
+                        <Asset>1500010225</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -2833,7 +2776,7 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010102</Asset> <!-- cheese -->
+                        <Asset>1500010847</Asset> <!-- cheese -->
                       </Item>
                       <Item>
                         <Asset>1500010153</Asset> <!-- tools -->
@@ -2908,7 +2851,7 @@
       <Values>
         <Standard>
           <GUID>1500010239</GUID>
-          <Name>Artisans @ 700 Engineers</Name>
+          <Name>II @ 800 engineers</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -2919,7 +2862,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000003</Context>
-                <CounterAmount>700</CounterAmount>
+                <CounterAmount>800</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2932,7 +2875,7 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010225</Asset>
+                        <Asset>1500010201</Asset>
                       </Item>
                       <Item>
                         <Asset>1500010226</Asset>
@@ -2964,8 +2907,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context>
-                <CounterAmount>1</CounterAmount>
+                <Context>15000002</Context>
+                <CounterAmount>250</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>

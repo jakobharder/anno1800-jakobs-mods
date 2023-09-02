@@ -4,14 +4,14 @@ Terraced houses with more population, new needs and material productions for the
 
 ## Recommended Mods
 
-- `Improved Streets` changes NW streets to a sandier look.
+- `Streets & Railways` changes NW streets to a sandier look.
 - `New World Tourism` tourists benefit from local production of bread and jam.
 
 ## Content
 
-### Level I - Terraced Houses
+### 1 - Terraced Houses
 
-*Unlocks with 750 Obreros*
+*Unlocks at 750 obreros - or creative mode*
 
 **Residences** with increased population capacity.
 They merge into blocks like Engineers and Investors.
@@ -30,7 +30,7 @@ They merge into blocks like Engineers and Investors.
   - Mill consuming wood and corn
 - Minas **Cheese**
   - Dairy consuming milk
-  - Milking palour
+  - Milking parlour
 - Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
   - Jam kitchen consuming citrus
 
@@ -41,9 +41,9 @@ They merge into blocks like Engineers and Investors.
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
-### Level II - Materials & Electricity
+### 2 - Materials & Electricity
 
-*Unlocks with 1500 Obreros or 300 Artistas*
+*Unlocks at 1500 obreros or 300 artistas - or creative mode*
 
 **Construction materials** can be produced in the New World now.
 
@@ -67,10 +67,10 @@ They merge into blocks like Engineers and Investors.
   - `Biogas Production` and
   - `Industrial Cities` in the New World.
 
-### Level III - Terraced Artistas
+### 3 - Terraced Artistas
 
-Only with `New World Rising`.
-*Unlocks with 300 Artistas*
+*Unlocks at 300 artistas - or creative mode*.
+Only with DLC `New World Rising`.
 
 **Residences** with increased population capacity.
 
@@ -92,11 +92,11 @@ Only with `New World Rising`.
 - 2.0.2: fixed duplicate citrus jam entry in consumables
 - Added terraced jornaleros and obreros
 - Added NW bread production: flour mill, bakery
-- Added NW cheese production: milking palour, cheese dairy
+- Added NW cheese production: milking parlour, cheese dairy
 - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## Credits
 
-Thanks to Lordy for the milking palour model.
+Thanks to Lordy for the milking parlour model.
 
 Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!

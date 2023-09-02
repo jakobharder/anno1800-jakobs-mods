@@ -2,6 +2,16 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+### New Content
+
+- Industrial Cities, 3.1:
+  - Added industrial soap factory, rendering works
+  - Swaped terraced artisan gramophone and bombin needs
+  - Rebalanced unlocks
+  - Fixed power plants being attacked
+
 ## 6.1 - Terraced Jornaleros, Obreros
 
 ### 6.1.1

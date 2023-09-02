@@ -1,0 +1,481 @@
+<ModOps>
+  <!-- # Chemicals -->
+  <ModOp Type="addNextSibling" GUID="1010284">
+    <Asset>
+      <Template>FactoryBuilding7Variable</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011270</GUID>
+          <Name>Soap Factory</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_soap_2.png</IconFilename>
+        </Standard>
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <AllowChangeDirection>1</AllowChangeDirection>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1500010154</Building>
+            </Item>
+            <Item>
+              <Building>1500010600</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <DontCare />
+            <Single />
+            <Mid>
+              <Pool>
+                <Item />
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+              </Pool>
+            </Mid>
+            <End>
+              <Pool>
+                <Item />
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+              </Pool>
+            </End>
+            <!-- alt end -->
+            <Crossing>
+              <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item>
+                <!-- <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>1</Variation>
+                </Item> -->
+              </Pool>
+            </Crossing>
+            <Corner>
+              <Pool>
+                <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <!-- <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                  <Variation>1</Variation>
+                </Item> -->
+              </Pool>
+            </Corner>
+            <!-- alt corner -->
+            <TCrossing>
+              <Pool>
+                <Item>
+                  <DirectionOffet>0</DirectionOffet>
+                </Item>
+                <!-- <Item>
+                  <DirectionOffet>0</DirectionOffet>
+                  <Variation>1</Variation>
+                </Item> -->
+              </Pool>
+            </TCrossing>
+          </BuildingBlockPool>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\chemicals\chemicals_soap.cfg</Filename>
+            </Item>
+            <!-- <Item>
+              <Filename>data\jakob\chemicals\chemicals_soap2.cfg</Filename>
+            </Item> -->
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>216871</Sound>
+            </Item>
+            <Item>
+              <Sound>202350</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1010234</Product>
+              <Amount>1</Amount>
+              <StorageAmount>8</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1010203</Product>
+              <Amount>1</Amount>
+              <StorageAmount>8</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>15</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode />
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>150</Amount>
+              <InactiveAmount>75</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>100</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+          <SelfHealPerHealTick>6</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+            <Explosion>
+              <BaseChance>2</BaseChance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryOvertimeFactor>0.1</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture>
+          <Attractiveness>-10</Attractiveness>
+          <CultureType>Military</CultureType>
+        </Culture>
+        <Electrifiable />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FactoryBuilding7Variable</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011271</GUID>
+          <Name>Rendering Works</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_tallow.png</IconFilename>
+        </Standard>
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1500010154</Building>
+            </Item>
+            <Item>
+              <Building>1500010600</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <DontCare />
+            <Single />
+            <Mid>
+              <Pool>
+                <Item>
+                  <DirectionOffet>0</DirectionOffet>
+                  <!-- <Variation>1</Variation> -->
+                </Item>
+              </Pool>
+            </Mid>
+            <End>
+              <Pool>
+                <Item />
+              </Pool>
+            </End>
+            <!-- alt end -->
+            <Crossing>
+              <Pool>
+                <Item />
+              </Pool>
+            </Crossing>
+            <Corner>
+              <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item>
+              </Pool>
+            </Corner>
+            <!-- alt corner -->
+            <TCrossing>
+              <Pool>
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item>
+              </Pool>
+            </TCrossing>
+          </BuildingBlockPool>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>2000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\chemicals\chemicals_tallow.cfg</Filename>
+            </Item>
+            <!-- <Item>
+              <Filename>data\jakob\chemicals\chemicals_tallow2.cfg</Filename>
+            </Item> -->
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Constructable />
+        <Locked />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>216883</Sound>
+            </Item>
+            <Item>
+              <Sound>206345</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>1010199</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1010234</Product>
+              <Amount>1</Amount>
+              <StorageAmount>4</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>30</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode>
+          <TransporterCountMax>1</TransporterCountMax>
+        </LogisticNode>
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>120</Amount>
+              <InactiveAmount>60</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>80</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+          <SelfHealPerHealTick>6</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture>
+          <Attractiveness>-10</Attractiveness>
+          <CultureType>Military</CultureType>
+        </Culture>
+        <Electrifiable />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011273</GUID>
+          <Name>Industrial Soap Chain</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_soap_2.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>25000220</TextOverride>
+        </Text>
+        <ProductionChain>
+          <Building>1500011270</Building>
+          <Tier1>
+            <Item>
+              <Building>1500011271</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010269</Building>
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+          <InfoTipHeight>550</InfoTipHeight>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011270</Building>
+    </Item>
+    <Item>
+      <Building>1500011271</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010281']">
+    <Item>
+      <GUID>1500011270</GUID>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010312']">
+    <Item>
+      <GUID>1500011271</GUID>
+    </Item>
+  </ModOp>
+</ModOps>

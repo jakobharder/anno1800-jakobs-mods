@@ -4,7 +4,7 @@ Add diagonal residences and ornaments to break up the standard grid.
 
 ## Recommended Mods
 
-- `Improved Poles` changes poles and wires into more elegant versions that work well with diagonals.
+- `Electric Poles` changes poles and wires into more elegant versions that work well with diagonals.
 
 ## Buildings
 

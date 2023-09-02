@@ -6,7 +6,7 @@ const fs = require('fs');
 function readMeta(filePath) {
   const modinfo = JSON.parse(fs.readFileSync(filePath));
   return {
-    name: modinfo.ModName.English.replace(' (Jakob)', '').replace(/ /g, '-').replace(',', ''),
+    name: modinfo.ModName.English.replace(' (Jakob)', '').replace(/ /g, '-').replace(',', '').replace('\'', ''),
     folder: `[${modinfo.Category.English}] ${modinfo.ModName.English}`,
     version: modinfo.Version,
     id: modinfo.ModID,
@@ -31,17 +31,25 @@ function copyFolderSync(source, target) {
   });
 }
 
-// const idsToPackage = [
-//   "jakob_industrial_cities",
-//   "jakob_new_world_cities",
-//   "jakob_pescatarians"
-// ];
+const idsToPackage = [
+  "jakob-city-variations",
+  "jakob_new_world_cities",
+  "jakob_pescatarians",
+  "jakob_industrial_cities",
+  "jakob_Biogas_Plant",
+  "jakob_diagonal_residences",
+  "jakob_Nates_Windmill",
+  "jakob_alternative_needs",
+  "jakob_skin_electric_poles",
+  "jakob_street_skins",
+  "jakob_compact_menus"
+];
 
-const modsToPackage = glob.sync("./{foreign-additions,mods}/**/modinfo.json")
+const modsToPackage = glob.sync("./mods/**/modinfo.json")
   .map(e => readMeta(e))
-  .filter(e => fs.existsSync(path.join('out', e.folder)));
-  // .filter(e => idsToPackage.indexOf(e.id) >= 0);
-const modsToInclude = glob.sync("./{foreign-additions,mods,shared}/**/modinfo.json")
+  // .filter(e => fs.existsSync(path.join('out', e.folder)));
+  .filter(e => idsToPackage.indexOf(e.id) >= 0);
+const modsToInclude = glob.sync("./{mods,shared}/**/modinfo.json")
   .map(e => readMeta(e));
 
 for (mod of modsToPackage) {

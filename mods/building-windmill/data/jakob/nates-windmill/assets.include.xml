@@ -75,7 +75,7 @@
         <FeedbackController />
         <AmbientMoodProvider />
         <Attackable>
-          <!-- important for burn damage -->
+          <AttackableType>IslandBuilding</AttackableType>
           <MaximumHitPoints>3000</MaximumHitPoints>
           <SelfHealPerHealTick>4</SelfHealPerHealTick>
         </Attackable>

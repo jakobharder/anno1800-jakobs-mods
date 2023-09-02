@@ -10,9 +10,7 @@
           <BuildingType>Factory</BuildingType>
           <BuildingCategoryName>100000</BuildingCategoryName>
           <InfluencedVariationDirection>
-            <Item>
-              <Type>Single</Type>
-            </Item>
+            <Item />
             <Item>
               <!-- end, south-west -->
               <Direction>3</Direction>
@@ -166,6 +164,7 @@
           <ConsumerPriority>1</ConsumerPriority>
         </Maintenance>
         <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
           <HasRuinState>1</HasRuinState>
           <SelfHealPerHealTick>300</SelfHealPerHealTick>
         </Attackable>

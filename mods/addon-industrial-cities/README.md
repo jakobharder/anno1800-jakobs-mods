@@ -1,99 +1,116 @@
 ![](./banner.jpg)
 
-Increased population residences, new productions, railway stations, more power stations.
+Terraced houses and industrialized productions.
 
-## Requirements
-
-- Residences require activated DLC `The High Life`
-
-## Buildings
-
-### Residences - Terraced Houses
-
-- Worker Level 1: 30 workers
-- Worker Level 2: 40 workers
-- Artisan Level 1: 50 artisans
-- Artissan Level 2: 70 artisans
-
-You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
-
-Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.
-
-There is no cross progression from upgraded residences to their next population tier.
-You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
+Give your cities a 19th/20th century industrialization vibe and increase population and production densitity.
 
 You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)`.
 
-### New Productions
+## Content
 
-All products can also be imported through Docklands.
+### 1 - Industrial Complex
 
-#### Canned Fish
+*Unlocks at 250 artisans - or creative mode*
 
-- Olive Orchard: Olives
-- Fish Cannery: Canned Fish from Ore, Olives and Fish
+**Productions** visually merge together into big complexes.
+Some have doubled production, doubled workforce and tripled maintenance cost.
 
-#### Tools
+- **Soap**
+  - Rendering works (doubled)
+  - Soap factory (doubled)
+- **Sewing machines**
+  - Sewing machine factory (normal)
+- **Tools**
+  - Tools factory consuming iron and wood
 
-- Modular Tools Workshop: Tools from Iron and Wood
+Other buildings:
 
-#### Suits
+- **Docklands Gate**: to connect modules across streets to keep atractiveness bonus (only with DLC `Docklands`)
 
-- Hemp Farm: Hemp
-- Linen Cloth Maker: Linen from Hemp
-- Suits Factory: Suits from Linen and Wool
+*Note: the module menu has no scroll option. It may not show some modules if you already have too many module mods.*
 
-#### Tea
+### 2 - Terraced Houses
 
-- Tea Importer: Imported Tea
-- Tea Factory: Tea from Imported Tea
+*Unlocks at 800 artisans - or creative mode*. Only with DLC `The High Life`.
 
-### Power Plants
+**Residences** with increased population capacity.
+They merge into blocks like engineers and investors.
 
-- Coal Power Plant with bonus when built next too coal mines (OW only)
-- Small Oil Power Plant (OW / NW*)
-- Small Gas Power Plant (OW / NW*)
-- Fuel Station with integrated oil pump (OW / NW)
+- Terraced **worker** houses
+  - Level 1: +10 residents with tea, tools and electricity as basic needs.
+- Terraced **artisan** houses
+  - Level 1: +20 residents with tea, bombins and electricity as basic needs.needs.
 
-(*) Oil and Gas power plants are available in the NW when played together with `[Addon] New World Cities`.
+*Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.*
 
-### Modular Factories
+**Needs productions** for additional residents. All products can also be imported through docklands.
 
-- Sewing Machines: 7 variations, 4x4 tiles, 1/3 cost and production cycles.
-- Tools Workshop: 7 variations, 4x4 tiles
+- **Sardines**
+  - Fish cannery consuming olives, fish and iron ore
+  - Olive orchard
+- **Suits**
+  - Suits factory consuming linen and wool
+  - Linen cloth maker consuming hemp
+  - Hemp farm
+- **Tea**
+  - Tea factory consuimg imported tea
+  - Tea importer
 
-### Factory Variations
+**Cosmetics** for terraced houses.
 
-Shift+V variations for production buildings.
+- Stone pavement ornaments as Shift+V variations for various existing ornaments including `City Decoration` and `City Lights Pack`
+- Stone pavement with street function
+
+### 3 - Terraced Houses II
+
+*Unlocks at 800 engineers - or creative mode*. Only with DLC `The High Life`.
+
+**Residences** with increased population capacity.
+They merge into blocks like engineers and investors.
+
+- Terraced **worker** houses
+  - Level 2: +10 additional residents with suits and sardines as basic needs.
+- Terraced **artisan** houses
+  - Level 2: +20 residents with gramophones, typewriters and violines as basic needs.
+
+Smaller **power plants** and additional energy options.
+
+- Coal power plant with bonus when built next too coal mines
+- Small oil power plant
+- Small gas power plant
+- Fuel station with integrated oil pump
+
+**Cosmetics** for railways.
+
+- Dynamic railway freight and passenger platforms ornaments (only with cDLC `Industrial Zone`)
+- Randomized freight train skins
+
+### Additional Cosmetics
+
+*Unlocks immediately*
+
+**Cosmetic** shift+V variations for production buildings.
 
 - Fur Dealer: 3 new variations
 - Bakery: 2 new variations (+ skin for stone pavement)
-- Cannery: 2 new variations
-- more will follow ...
+- Cannery: 2 new variationsS
 
-### Railway Ornaments
+## Notes and Known Issues
 
-- Dynamic railway freight and passenger platforms.
-- Randomized freight train skins.
-
-### Stone Pavement Ornaments
-
-- Also function as street.
-- Adds Shift+V variations with this ground to various City Decoration and City Lights Pack ornaments.
-
-### Docklands Module
-
-The docklands gate connects modules across streets to keep atractiveness bonus.
-It is available in the docklands module construction.
-
-Note: the menu has no scroll option. It may not show if you already have too many modules.
-
-## Known Issues
-
+- There is no cross progression from upgraded residences to their next population tier.
+You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
 - (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
 - The arrows for skyscraper upgrade don't show sometimes. The buildings will upgrade if you click anyway.
 
 ## Changes
+
+### 3.1
+
+- Added industrial soap factory and rendering works
+- Swaped terraced artisan gramophone and bombin needs
+- Rebalanced unlocks (see readme)
+- Renamed canned fish to sardines
+- Fixed power plants being attacked
 
 ### 3.0
 
