@@ -101,6 +101,10 @@ Shift+V variations for production buildings.
 
 ## Changes
 
+### 3.1
+
+- Added industrial soap factory and rendering works
+
 ### 3.0
 
 - 3.0.5: Fixed various missing and broken text issues
