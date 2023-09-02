@@ -8,9 +8,17 @@ You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)
 
 ## Content
 
+*Unlocks immediately*
+
+**Cosmetic** shift+V variations for production buildings.
+
+- Fur Dealer: 3 new variations
+- Bakery: 2 new variations (+ skin for stone pavement)
+- Cannery: 2 new variations
+
 ### Level I - Factory Complex
 
-*Unlocks at 250 artisans*
+*Unlocks at 250 artisans - or creative mode*
 
 **Productions** visually merge together into big complexes.
 Some have doubled production, doubled workforce and tripled maintenance cost.
@@ -29,10 +37,18 @@ Other buildings:
 
 *Note: the module menu has no scroll option. It may not show some modules if you already have too many module mods.*
 
+**Cosmetics** fitting to more industrial living zones.
+
+- Stone pavement ornaments as Shift+V variations for various existing ornaments including `City Decoration` and `City Lights Pack`
+- Stone pavement with street function
+
 ### Level II - Terraced Houses
 
 Only with DLC `The High Life`.
-*Unlocks at 700 engineers*
+*Unlocks at 700 engineers - or creative mode*
+
+**Residences** with increased population capacity.
+They merge into blocks like engineers and investors.
 
 - Terraced **worker** houses
   - Level 1: +10 residents with tea, tools and electricity as basic needs.
@@ -41,65 +57,37 @@ Only with DLC `The High Life`.
   - Level 1: +20 residents with tea, bombins and electricity as basic needs.
   - Level 2: +40 residents with gramophones, typewriters and violines as basic needs.
 
-You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
+*Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.*
 
-Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/investor skyscrapers.
+**Needs productions** for additional residents. All products can also be imported through docklands.
 
-There is no cross progression from upgraded residences to their next population tier.
-You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
+- **Sardines**
+  - Fish cannery consuming olives, fish and iron ore
+  - Olive orchard
+- **Suits**
+  - Suits factory consuming linen and wool
+  - Linen cloth maker consuming hemp
+  - Hemp farm
+- **Tea**
+  - Tea factory consuimg imported tea
+  - Tea importer
 
-### New Productions
+Smaller **power plants** and additional energy options.
 
-All products can also be imported through Docklands.
+- Coal power plant with bonus when built next too coal mines
+- Small oil power plant
+- Small gas power plant
+- Fuel station with integrated oil pump
 
-#### Sardines
+**Cosmetics** for railways.
 
-- Olive Orchard: Olives
-- Fish Cannery: Sardines from Ore, Olives and Fish
-
-#### Suits
-
-- Hemp Farm: Hemp
-- Linen Cloth Maker: Linen from Hemp
-- Suits Factory: Suits from Linen and Wool
-
-#### Tea
-
-- Tea Importer: Imported Tea
-- Tea Factory: Tea from Imported Tea
-
-### Power Plants
-
-- Coal Power Plant with bonus when built next too coal mines (OW only)
-- Small Oil Power Plant (OW / NW*)
-- Small Gas Power Plant (OW / NW*)
-- Fuel Station with integrated oil pump (OW / NW)
-
-(*) Oil and Gas power plants are available in the NW when played together with `[Addon] New World Cities`.
-
-### Factory Variations
-
-Shift+V variations for production buildings.
-
-- Fur Dealer: 3 new variations
-- Bakery: 2 new variations (+ skin for stone pavement)
-- Cannery: 2 new variations
-- more will follow ...
-
-### Railway Ornaments
-
-- Dynamic railway freight and passenger platforms.
+- Dynamic railway freight and passenger platforms ornaments.
 - Randomized freight train skins.
 
-### Stone Pavement Ornaments
+## Notes and Known Issues
 
-- Also function as street.
-- Adds Shift+V variations with this ground to various City Decoration and City Lights Pack ornaments.
-
-
-
-## Known Issues
-
+- There is no cross progression from upgraded residences to their next population tier.
+You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
 - (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
 - The arrows for skyscraper upgrade don't show sometimes. The buildings will upgrade if you click anyway.
 
