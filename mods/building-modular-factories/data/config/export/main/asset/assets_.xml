@@ -85,7 +85,61 @@
                       <Item>
                         <Asset>1500011271</Asset>
                       </Item>
+                      <Item>
+                        <Asset>1500011273</Asset>
+                      </Item>
                     </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011275</GUID>
+          <Name>Unhide @ 1 Artisan</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010600</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011270</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011271</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011273</Asset>
+                      </Item>
+                    </UnhideAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>

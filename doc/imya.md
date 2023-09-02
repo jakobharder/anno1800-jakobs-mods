@@ -60,7 +60,7 @@ They come with new needs, productions and fitting ornaments.
 - Tea import dock, tea factory
 - Tools workshop
 - Suits factory, hemp farm, linen maker
-- Canned fish factory, olive orchard
+- Fish cannery, olive orchard
 
 ### Ornaments
 
@@ -124,7 +124,7 @@ Ideally for more farmer workforce with artisan-looking towns.
 - Cheese dairy, milk farm
 - Tools workshop
 - Suits factory, hemp farm, linen maker
-- Canned fish factory, olive orchard
+- Fish cannery, olive orchard
 - Olive soap maker, olives
 
 ## `Diagonal Residences (Jakob)`

@@ -25,7 +25,7 @@ Condition | Content | Unhide
 | | `Industrial Cities` terraced artisans level 1 | 1 Artisan
 | | `Industrial Cities` tea docks<br/>TBD (is 400 engineers) | none
 | | `Industrial Cities` Fish cannery |
-| | `Industrial Cities` products:<br/>cheese(why?), tools, suits, canned fish | none
+| | `Industrial Cities` products:<br/>cheese(why?), tools, suits, sardines | none
 1500 Artisans | *University (for Pesca II)* | 900 Artisans
 | | *Engineer unlock*
 1 Engineer | *Vanilla electricity & oil power plants* | none
@@ -65,7 +65,7 @@ Cheese | 0.00044 | 7 | | 300
 Bread | 0.0003 | 6 | | 300
 Suits | 0.0008 | 7 | | 500
 Pickles | 0.0004 | 6 | | 1000
-Canned Fish | 0.0004 | 7 | | 1000
+Sardines | 0.0004 | 7 | | 1000
 Music School | | 5 | | 1500
 --- | Luxury | --- | --- | --- | ---
 Church | | 5
@@ -84,7 +84,7 @@ Tools | 0.0004166 | 4 | | 1000
 Electricity | | 2 | | 1200 |
 --- | Level II | --- | --- | --- | ---
 Suits | 0.0004166 | 5 | | 1500
-Canned Fish | 0.0004166 | 5 | | 1500
+Sardines | 0.0004166 | 5 | | 1500
 
 ### Terraced Artisans
 
@@ -145,5 +145,5 @@ Need | Consumption | Residents | Coins
 Bread | 0.00047619 | 5 | 45
 Electricity | - | (20) | (45)
 Gramophones | 0.00011905  | 5 | 48
-Canned Fish | 0.00011905 | 10 | 60
+Sardines | 0.00011905 | 10 | 60
 Violins | 0.000053 | 10 | 75

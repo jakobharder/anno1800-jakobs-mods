@@ -1,12 +1,16 @@
 ![](./banner.jpg)
 
-Increased population residences, new productions, railway stations, more power stations.
+Terraced houses and industrialized productions.
+
+Give your cities a 19th/20th century industrialization vibe and increase population and production densitity.
+
+You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)`.
 
 ## Content
 
 ### Level I - Factory Complex
 
-*Unlocks at 250 Artisans*
+*Unlocks at 250 artisans*
 
 **Productions** visually merge together into big complexes.
 Some have doubled production, doubled workforce and tripled maintenance cost.
@@ -14,7 +18,7 @@ Some have doubled production, doubled workforce and tripled maintenance cost.
 - **Soap**
   - Rendering works (doubled)
   - Soap factory (doubled)
-- **Sewing Machines**
+- **Sewing machines**
   - Sewing machine factory (normal)
 - **Tools**
   - Tools factory consuming iron and wood
@@ -28,12 +32,14 @@ Other buildings:
 ### Level II - Terraced Houses
 
 Only with DLC `The High Life`.
-*Unlocks at 700 Engineers*
+*Unlocks at 700 engineers*
 
-- Worker Level 1: 30 workers
-- Worker Level 2: 40 workers
-- Artisan Level 1: 50 artisans
-- Artissan Level 2: 70 artisans
+- Terraced **worker** houses
+  - Level 1: +10 residents with tea, tools and electricity as basic needs.
+  - Level 2: +10 additional residents with suits and sardines as basic needs.
+- Terraced **artisan** houses
+  - Level 1: +20 residents with tea, bombins and electricity as basic needs.
+  - Level 2: +40 residents with gramophones, typewriters and violines as basic needs.
 
 You can either use the skyscraper upgrade button (recommended), or the build menu as a fallback in case of mod conflicts.
 
@@ -42,16 +48,14 @@ Use short-cut "I" to get into skyscraper upgrade mode before unlocking engineer/
 There is no cross progression from upgraded residences to their next population tier.
 You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
 
-You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)`.
-
 ### New Productions
 
 All products can also be imported through Docklands.
 
-#### Canned Fish
+#### Sardines
 
 - Olive Orchard: Olives
-- Fish Cannery: Canned Fish from Ore, Olives and Fish
+- Fish Cannery: Sardines from Ore, Olives and Fish
 
 #### Suits
 
@@ -104,6 +108,8 @@ Shift+V variations for production buildings.
 ### 3.1
 
 - Added industrial soap factory and rendering works
+- Renamed canned fish to sardines
+- Aligned unlocks (see readme)
 
 ### 3.0
 
