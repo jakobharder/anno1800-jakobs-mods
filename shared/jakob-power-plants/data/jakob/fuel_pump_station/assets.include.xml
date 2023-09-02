@@ -337,12 +337,14 @@
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
+            <Template>ConditionPlayerCounter</Template>
             <Values>
               <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>269840</UnlockNeeded>
-              </ConditionUnlocked>
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000003</Context>
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
           <TriggerActions>

@@ -10,13 +10,13 @@ Condition | Content | Unhide
 | | Cheese dairy<br/>(was 1 Artisan) | none
 750 Workers | *Artisan unlock* | 500 Workers
 250 Artisans | *Variaty theater (for Pesca II)*
-|| **Industrial Cities I - Advanced Factories**
+|| **Industrial Cities I - Factory Complex**
 | | `Industrial Cities` docklands gate | 1 Artisan
 | | `Industrial Cities` modular sewing machine factory (same as vanilla)
-| | TBD `Industrial Cities` soap factory, rendering works
+| | `Industrial Cities` soap factory, rendering works
 | | TBD `Industrial Cities` bakery, flour mill
 | | TBD `Industrial Cities` worker cloths
-| | `Industrial Cities` tools factory (need for Pesca I??)<br/>TBD (is 900 artisans) | none
+| | `Industrial Cities` tools factory (need for Pesca I??) | none
 1 Worker | `Industrial Cities` stone pavement | 1 Worker
 | | Olive soap factory (need for Pesca I)<br/>TBD (is 700 engineers)
 800 Artisans | **Industrial Cities II - Terraced Houses**
@@ -29,13 +29,13 @@ Condition | Content | Unhide
 1500 Artisans | *University (for Pesca II)* | 900 Artisans
 | | *Engineer unlock*
 1 Engineer | *Vanilla electricity & oil power plants* | none
-500 Engineers | **Industrial Cities III - Terraced Houses**
+500 Engineers | **Industrial Cities III - Terraced Houses II** | 1 engineer
 | | `Industrial Cities` small coal and oil power plants
-| | `Industrial Cities` railway platforms<br/>TBD (is immediately now)
+| | `Industrial Cities` railway platforms
 | | `Shared` diagonal ornaments<br/>TBD (is immediately now)
 | | `Industrial Cities` terraced workers level 2
 | | `Industrial Cities` terraced artisans level 2
-| | Windmill<br/>TBD (is 500 engineers) | 1 Engineer
+| | `Nate's Windmill`
 1 Investor | Biogas Production | 1 Engineer
 
 ## Old World Needs

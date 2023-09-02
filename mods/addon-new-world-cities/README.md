@@ -9,9 +9,9 @@ Terraced houses with more population, new needs and material productions for the
 
 ## Content
 
-### Level I - Terraced Houses
+### 1 - Terraced Houses
 
-*Unlocks at 750 Obreros - or creative mode*
+*Unlocks at 750 obreros - or creative mode*
 
 **Residences** with increased population capacity.
 They merge into blocks like Engineers and Investors.
@@ -41,9 +41,9 @@ They merge into blocks like Engineers and Investors.
 - Diagonal enclosed greenery on plaza and stone pavement
 - Skins with diagonal and other corner variations for fences and park paths
 
-### Level II - Materials & Electricity
+### 2 - Materials & Electricity
 
-*Unlocks at 1500 Obreros or 300 Artistas - or creative mode*
+*Unlocks at 1500 obreros or 300 artistas - or creative mode*
 
 **Construction materials** can be produced in the New World now.
 
@@ -67,10 +67,10 @@ They merge into blocks like Engineers and Investors.
   - `Biogas Production` and
   - `Industrial Cities` in the New World.
 
-### Level III - Terraced Artistas
+### 3 - Terraced Artistas
 
-Only with `New World Rising`.
-*Unlocks at 300 Artistas - or creative mode*
+*Unlocks at 300 artistas - or creative mode*.
+Only with DLC `New World Rising`.
 
 **Residences** with increased population capacity.
 
