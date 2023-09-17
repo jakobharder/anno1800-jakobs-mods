@@ -1,18 +1,109 @@
 <ModOps>
-  <!-- <ModOp Type="addNextSibling" GUID="1010035">
+  <!-- # Needs Plus Menu -->
+  <ModOp Type="addNextSibling" GUID="1010035">
     <Asset>
       <Template>ConstructionCategory</Template>
       <Values>
         <Standard>
           <GUID>1500011272</GUID>
-          <Name>Moderate Modding Menu</Name>
-          <IconFilename>data\ui\2kimages\main\icons\icon_pollution.png</IconFilename>
+          <Name>Moderate Needs Plus Menu</Name>
+          <IconFilename>data\ui\2kimages\main\icons\icon_itemsockets_02.png</IconFilename>
         </Standard>
         <ConstructionCategory>
-          <BuildingList />
+          <BuildingList>
+            <Item>
+              <Building>1500011316</Building>
+            </Item>
+            <Item>
+              <Building>1500011314</Building>
+            </Item>
+            <Item>
+              <Building>1500011291</Building>
+            </Item>
+            <Item>
+              <Building>1500011292</Building>
+            </Item>
+            <Item>
+              <Building>1500011319</Building>
+            </Item>
+            <Item>
+              <Building>1500010155</Building>
+            </Item>
+            <Item>
+              <Building>1500010600</Building>
+            </Item>
+            <Item>
+              <Building>124740</Building>
+            </Item>
+            <Item>
+              <Building>124741</Building>
+            </Item>
+            <Item>
+              <Building>124742</Building>
+            </Item>
+          </BuildingList>
           <CategoryDescription>19564</CategoryDescription>
         </ConstructionCategory>
+        <Text>
+          <TextOverride>500945</TextOverride>
+        </Text>
         <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011291</GUID>
+          <Name>bread plus chain</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>1500011310</Building>
+          <Tier1>
+            <Item>
+              <Building>1500011311</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010262</Building>
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+          <InfoTipHeight>450</InfoTipHeight>
+        </ProductionChain>
+        <Locked />
+        <Text>
+          <TextOverride>500004</TextOverride>
+        </Text>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011292</GUID>
+          <Name>soap chain</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_soap_2.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>1500011270</Building>
+          <Tier1>
+            <Item>
+              <Building>1500011271</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010269</Building>
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+          <InfoTipHeight>550</InfoTipHeight>
+        </ProductionChain>
+        <Locked />
+        <Text>
+          <TextOverride>25000220</TextOverride>
+        </Text>
       </Values>
     </Asset>
   </ModOp>
@@ -21,7 +112,7 @@
     <Item>
       <Category>1500011272</Category>
     </Item>
-  </ModOp> -->
+  </ModOp>
 
   <!-- # Modular Factories Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
@@ -59,6 +150,12 @@
   <!-- <ModOp Type="add" GUID="1500010601,1500011272" Path="/Values/ConstructionCategory/BuildingList"> -->
   <ModOp Type="add" GUID="1500010601" Path="/Values/ConstructionCategory/BuildingList">
     <Item>
+      <Building>1500011311</Building>
+    </Item>
+    <Item>
+      <Building>1500011310</Building>
+    </Item>
+    <Item>
       <Building>1500011271</Building>
     </Item>
     <Item>
@@ -73,6 +170,9 @@
   </ModOp>
 
   <ModOp Type="addNextSibling" GUID="25000191" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003' or position()=last()][1]">
+    <Item>
+      <Building>1500011312</Building>
+    </Item>
     <Item>
       <Building>1500011273</Building>
     </Item>

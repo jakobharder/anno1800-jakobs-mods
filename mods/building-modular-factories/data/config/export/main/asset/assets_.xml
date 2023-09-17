@@ -2,6 +2,8 @@
   <Include File="./menu.include.xml" />
   <Include File="./sewing.include.xml" />
   <Include File="./chemicals.include.xml" />
+  <Include File="./food.include.xml" />
+  <Include File="./beverages.include.xml" />
   <Include File="./unlocks.include.xml" />
 
   <!-- # Behavior Groups -->
@@ -17,6 +19,12 @@
       <Item>
         <Factory>1500011271</Factory>
       </Item>
+      <Item>
+        <Factory>1500011310</Factory>
+      </Item>
+      <Item>
+        <Factory>1500011311</Factory>
+      </Item>
     </ModOp>
     <!-- Feedback Spawn -->
     <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
@@ -29,9 +37,17 @@
       <Item>
         <Building>1500011271</Building>
       </Item>
+      <Item>
+        <Building>1500011310</Building>
+      </Item>
+      <Item>
+        <Building>1500011311</Building>
+      </Item>
     </ModOp>
     <!-- Neighbors -->
-    <ModOp Type="add" GUID="1500010154,1500010600,1500011270,1500011271" Condition="~"
+    <ModOp Type="add"
+      GUID="1500010154,1500010600,1500011270,1500011271,1500011310,1500011311"
+      Condition="~"
       Path="/Values/Building/InfluencedByNeighbors">
       <!-- sewing machine factory is already included -->
       <!-- <Item>
@@ -42,6 +58,15 @@
       </Item>
       <Item>
         <Building>1500011271</Building>
+      </Item>
+      <Item>
+        <Building>1500011310</Building>
+      </Item>
+      <Item>
+        <Building>1500011311</Building>
+      </Item>
+      <Item>
+        <Building>1010516</Building>
       </Item>
     </ModOp>
   </Group>
