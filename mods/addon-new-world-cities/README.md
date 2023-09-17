@@ -92,11 +92,11 @@ Only with DLC `New World Rising`.
 - 2.0.2: fixed duplicate citrus jam entry in consumables
 - Added terraced jornaleros and obreros
 - Added NW bread production: flour mill, bakery
-- Added NW cheese production: milking parlour, cheese dairy
+- Added NW cheese production: milking parlor, cheese dairy
 - Added NW jam kitchen (only with DLC `Tourist Season`)
 
 ## Credits
 
-Thanks to Lordy for the milking parlour model.
+Thanks to Lordy for the milking parlor model.
 
 Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!
