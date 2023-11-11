@@ -262,7 +262,8 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010919</GUID>
+          <GUID>1500010920</GUID>
+          <!-- <GUID>1500010919</GUID> -->
           <!-- <GUID>1500010918</GUID> -->
           <!-- <GUID>1500010917</GUID> -->
           <!-- <GUID>1500010916</GUID> -->
@@ -287,6 +288,7 @@
                   <ActionBuff>
                     <BuffAsset>1500010808</BuffAsset> <!-- remove old GUID -->
                     <AddBuff>0</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
@@ -299,6 +301,7 @@
                   <ActionBuff>
                     <BuffAsset>1500010826</BuffAsset>
                     <AddBuff>0</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
@@ -311,22 +314,26 @@
                   <ActionBuff>
                     <BuffAsset>1500010826</BuffAsset>
                     <AddBuff>1</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
             </Item>
-            <Item>
-              <TriggerAction>
-                <Template>ActionRegisterTrigger</Template>
-                <Values>
-                  <Action />
-                  <ActionRegisterTrigger>
-                    <TriggerAsset>1500010919</TriggerAsset>
-                  </ActionRegisterTrigger>
-                </Values>
-              </TriggerAction>
-            </Item>
           </TriggerActions>
+          <ResetTrigger>
+            <Template>AutoCreateTrigger</Template>
+            <Values>
+              <Trigger>
+                <TriggerCondition>
+                  <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                  <Values>
+                    <Condition />
+                    <ConditionAlwaysTrue />
+                  </Values>
+                </TriggerCondition>
+              </Trigger>
+            </Values>
+          </ResetTrigger>
         </Trigger>
       </Values>
     </Asset>
