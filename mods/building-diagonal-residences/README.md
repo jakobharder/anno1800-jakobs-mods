@@ -44,7 +44,9 @@ Known issues:
 
 ### 1.9
 
-- Added 3x1 investor residence
+- Added 3x1 narrow investor residence
+- Added `Vibrant City` skins to narrow engineer residence
+- Reduce lifestyle needs of narrow residences to 1/3 population
 
 ### 1.8
 
