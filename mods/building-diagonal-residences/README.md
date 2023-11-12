@@ -15,9 +15,10 @@ Buildings are fully functional, but expect some visual and user experience oddit
 
 ### Residences
 
-- Diagonal engineers: including Vibrant Cities and 4 custom skins
-- Diagonal investors: including Vibrant Cities and 3 custom skins
-- Narrow engineers
+- Diagonal engineers with 3 Vibrant Cities and 4 custom skins
+- Diagonal investors with 3 Vibrant Cities and 3 custom skins
+- Narrow engineers with 4 custom skins
+- Narrow investors with 3 Vibrant Cities and 3 custom skins
 - Skins matching jje's red tile roof buildings for engineers
 
 ### Ornaments
@@ -40,6 +41,10 @@ Known issues:
 - Horses, bicycle riders will be a bit drunk on diagonal roads ;-)
 
 ## Changes
+
+### 1.9
+
+- Added 3x1 investor residence
 
 ### 1.8
 
