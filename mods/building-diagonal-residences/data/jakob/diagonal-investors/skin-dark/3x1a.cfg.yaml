@@ -1,0 +1,7 @@
+variant:
+  source: ../skin-default/3x1a.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config[Name='roof']
+      cDiffuseColor.r: 0.6375
+      cDiffuseColor.g: 0.5625
+      cDiffuseColor.b: 0.7125

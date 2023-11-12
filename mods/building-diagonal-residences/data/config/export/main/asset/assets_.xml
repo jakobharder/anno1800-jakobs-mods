@@ -138,7 +138,7 @@
         <Locked />
         <Blocking />
         <Building>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <SecondPartyRelevant>0</SecondPartyRelevant>
           <!-- change picking asset to this one to ease building -->
           <PickingAsset>1500010415</PickingAsset>
@@ -257,8 +257,29 @@
           </Costs>
         </Cost>
         <Upgradable>
-          <!-- disable upgrade -->
-          <NextGUID>0</NextGUID>
+          <NextGUID>1500011350</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </UpgradeCost>
         </Upgradable>
         <Object>
           <Variations>
@@ -290,6 +311,10 @@
           <!-- disable skyscrapers -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
         </FloorStackOwner>
+        <Residence7>
+          <ResidentsRequiredForUpgrade>13</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>0</IsBaseResidence>
+        </Residence7>
         <UpgradeList>
           <DefaultBuff>1500010416</DefaultBuff>
         </UpgradeList>
@@ -522,6 +547,9 @@
             </Item>
             <Item>
               <Building>1500010415</Building>
+            </Item>
+            <Item>
+              <Building>1500011350</Building>
             </Item>
             <Item>
               <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>

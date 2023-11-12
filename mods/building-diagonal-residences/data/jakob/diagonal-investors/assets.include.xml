@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500011110</GUID>
           <Name>Diagonal Investor</Name>
-          <IconFilename>data/jakob/diagonal-investors/icon_diagonal_investors.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_diagonal_investors.png</IconFilename>
           <InfoDescription>1500010424</InfoDescription>
         </Standard>
         <Locked />
@@ -113,7 +113,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011119</GUID>
+          <GUID>1500011351</GUID>
+          <!-- <GUID>1500011119</GUID> -->
           <!-- <GUID>1500011117</GUID> -->
           <!-- <GUID>1500011118</GUID> -->
           <Name>@ Investors (1010347)</Name>
@@ -139,6 +140,9 @@
                       <Item>
                         <Asset>1500011110</Asset>
                       </Item>
+                      <Item>
+                        <Asset>1500011350</Asset>
+                      </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -151,6 +155,250 @@
         </TriggerSetup>
       </Values>
     </Asset>
+    <Asset>
+      <BaseAssetGUID>1010347</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500011350</GUID>
+          <Name>Narrow Investor Residence</Name>
+          <IconFilename>data/ui/jakob/icon_narrow_investors.png</IconFilename>
+        </Standard>
+        <Locked />
+        <Blocking />
+        <Building>
+          <BuildModeRandomRotation>180</BuildModeRandomRotation>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <!-- change picking asset to this one to ease building -->
+          <PickingAsset>1500011350</PickingAsset>
+          <BuildingBlockPool>
+            <Single />
+            <DontCare />
+            <Corner />
+            <Mid>
+              <Pool>
+                <Item>
+                  <Variation>0</Variation>
+                </Item>
+              </Pool>
+            </Mid>
+            <End />
+            <TCrossing />
+            <Crossing />
+          </BuildingBlockPool>
+          <InfluencedVariationDirection>
+            <Item>
+              <!-- single -->
+              <Direction>0</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, south -->
+              <Direction>2</Direction>
+              <Type>DontCare</Type>
+            </Item>
+            <Item>
+              <!-- end, north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- mid, south-west to north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, east -->
+              <Direction>3</Direction>
+              <Type>DontCare</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, north-west -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, west -->
+              <Direction>1</Direction>
+              <Type>DontCare</Type>
+            </Item>
+            <Item>
+              <!-- mid, north-west to south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-west  -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, north -->
+              <Type>DontCare</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- crossing -->
+            </Item>
+          </InfluencedVariationDirection>
+        </Building>
+        <Constructable>
+          <ConstructionMenuIcon>1500011350</ConstructionMenuIcon>
+        </Constructable>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>10</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>3</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Upgradable>
+          <!-- disable upgrade -->
+          <NextGUID>0</NextGUID>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/diagonal-investors/skin-default/3x1a.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/diagonal-investors/skin-default/3x1b.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500011353</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011354</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011355</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011356</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011357</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011358</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <FloorStackOwner>
+          <!-- disable skyscrapers -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+        <InfluenceSource>
+          <InfluenceSource>Investors</InfluenceSource>
+          <ProvidesDifficultyInfluence>0</ProvidesDifficultyInfluence>
+        </InfluenceSource>
+        <Residence7>
+          <ResidentsRequiredForUpgrade>16</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>0</IsBaseResidence>
+        </Residence7>
+        <UpgradeList>
+          <DefaultBuff>1500011352</DefaultBuff>
+        </UpgradeList>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011352</GUID>
+          <Name>3x1_pop</Name>
+          <IconFilename>data/ui/jakob/icon_narrow_investors.png</IconFilename>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500011350</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <PopulationUpgrade>
+          <InputBenefitModifier>
+            <Item>
+              <Product>120030</Product>
+              <AdditionalSupply>-10</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>120032</Product>
+              <AdditionalSupply>-6</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010208</Product>
+              <AdditionalSupply>-6</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010354</Product>
+              <AdditionalSupply>-5</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>120016</Product>
+              <AdditionalSupply>-2</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010259</Product>
+              <AdditionalSupply>-1</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010258</Product>
+              <AdditionalSupply>-2</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010225</Product>
+              <AdditionalSupply>-3</AdditionalSupply>
+            </Item>
+          </InputBenefitModifier>
+        </PopulationUpgrade>
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
+      </Values>
+    </Asset>
   </ModOp>
   <!-- # Targets -->
   <!-- add neighbor influences -->
@@ -158,11 +406,17 @@
     <Item>
       <Building>1500011110</Building>
     </Item>
+    <Item>
+      <Building>1500011350</Building>
+    </Item>
   </ModOp>
   <!-- add spawn feeback -->
   <ModOp GUID="2001092" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500011110</Building>
+    </Item>
+    <Item>
+      <Building>1500011350</Building>
     </Item>
   </ModOp>
 
@@ -366,7 +620,7 @@
         <Standard>
           <GUID>1500011114</GUID>
           <Name>Red roof, Investors</Name>
-          <IconFilename>data/jakob/diagonal-investors/skin-red/icon_tourist_red.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier05_tourist_red.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010318</SkinName>
@@ -426,7 +680,7 @@
         <Standard>
           <GUID>1500011115</GUID>
           <Name>Dark roof, Investors</Name>
-          <IconFilename>data/jakob/diagonal-investors/skin-dark/icon_pescatarian_dark.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier05_pescatarian_dark.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010310</SkinName>
@@ -486,7 +740,7 @@
         <Standard>
           <GUID>1500011116</GUID>
           <Name>Bordeaux roof, Investors</Name>
-          <IconFilename>data/jakob/diagonal-investors/skin-bordeaux/icon_bordeaux.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier05_bordeaux.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010319</SkinName>
@@ -540,13 +794,187 @@
         <Text />
       </Values>
     </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011353</GUID>
+          <Name>Narrow Skin Residence T05_S01</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier05_brick.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>728</SkinName>
+          <SkinDescription>729</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-vibrant-brick/3x1a.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-vibrant-brick/3x1b.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>5757</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>522</DLCDependency>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011354</GUID>
+          <Name>Narrow Skin Residence T05_S02</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier05_casino.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>734</SkinName>
+          <SkinDescription>735</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-vibrant-nightlife/3x1a.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-vibrant-nightlife/3x1b.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>5757</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>522</DLCDependency>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011355</GUID>
+          <Name>Narrow Skin Residence T05_S03</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/ornaments/cosmetic_dlc06/icon_tier05_colourful.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>730</SkinName>
+          <SkinDescription>731</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-vibrant-colorful/3x1a.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-vibrant-colorful/3x1b.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>5757</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <DLCDependency>522</DLCDependency>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011356</GUID>
+          <Name>Narrow Red roof, Investors</Name>
+          <IconFilename>data/ui/jakob/icon_tier05_tourist_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010318</SkinName>
+          <SkinDescription>1500010834</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-red/3x1a.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-red/3x1b.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010322</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011357</GUID>
+          <Name>Narrow Dark roof, Investors</Name>
+          <IconFilename>data/ui/jakob/icon_tier05_pescatarian_dark.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010310</SkinName>
+          <SkinDescription>1500010834</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-dark/3x1a.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-dark/3x1b.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010322</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011358</GUID>
+          <Name>Narrow Bordeaux roof, Investors</Name>
+          <IconFilename>data/ui/jakob/icon_tier05_bordeaux.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010319</SkinName>
+          <SkinDescription>1500010834</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-bordeaux/3x1a.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/jakob/diagonal-investors/skin-bordeaux/3x1b.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010322</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
   </ModOp>
-  
+
   <!-- # Lifestyle Needs -->
   <ModOp GUID="15000004" Type="add"
     Path="/Values/PopulationLevel7/PopulationInputs/Item/RequiredBuildings[Item/RequiredBuilding='1010347']">
     <Item>
       <RequiredBuilding>1500011110</RequiredBuilding>
+    </Item>
+    <Item>
+      <RequiredBuilding>1500011350</RequiredBuilding>
     </Item>
   </ModOp>
 
@@ -559,6 +987,12 @@
     </Item>
     <Item>
       <Building>1500011110</Building>
+    </Item>
+    <Item>
+      <Building>1500010415</Building>
+    </Item>
+    <Item>
+      <Building>1500011350</Building>
     </Item>
   </ModOp>
 </ModOps>
