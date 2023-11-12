@@ -1,5 +1,5 @@
 <ModOps>
-  <!-- # Investor Residence -->
+  <!-- # Buildings -->
   <ModOp GUID="1010347" Type="addNextSibling">
     <Asset>
       <BaseAssetGUID>1010347</BaseAssetGUID>
@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500011110</GUID>
           <Name>Diagonal Investor</Name>
-          <IconFilename>data/jakob/diagonal-investors/icon_diagonal_investors.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_diagonal_investors.png</IconFilename>
           <InfoDescription>1500010424</InfoDescription>
         </Standard>
         <Locked />
@@ -151,34 +151,6 @@
         </TriggerSetup>
       </Values>
     </Asset>
-  </ModOp>
-  <!-- # Targets -->
-  <!-- add neighbor influences -->
-  <ModOp GUID="1010346,1010347" Type="add" Path="/Values/Building/InfluencedByNeighbors">
-    <Item>
-      <Building>1500011110</Building>
-    </Item>
-  </ModOp>
-  <!-- add spawn feeback -->
-  <ModOp GUID="2001092" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500011110</Building>
-    </Item>
-  </ModOp>
-
-  <!-- Replace "Investors" with "All Investors" in items and specialists.
-       Can be done multiple times and mods properly adding themselves to 194026 should be fine. -->
-  <ModOp Type="replace" AllowNoMatch="1"
-    Path="//EffectTargets/Item[GUID='1010347' and (../../../../Template='TownhallBuff' or ../../../../Template='GuildhouseItem' or ../../../../Template='TownhallItem')]">
-    <Item>
-      <GUID>194026</GUID>
-    </Item>
-  </ModOp>
-  <!-- residence buff targets -->
-  <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010347']">
-    <Item>
-      <GUID>1500011110</GUID>
-    </Item>
   </ModOp>
 
   <!-- # Skins -->
@@ -366,7 +338,7 @@
         <Standard>
           <GUID>1500011114</GUID>
           <Name>Red roof, Investors</Name>
-          <IconFilename>data/jakob/diagonal-investors/skin-red/icon_tourist_red.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier05_tourist_red.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010318</SkinName>
@@ -426,7 +398,7 @@
         <Standard>
           <GUID>1500011115</GUID>
           <Name>Dark roof, Investors</Name>
-          <IconFilename>data/jakob/diagonal-investors/skin-dark/icon_pescatarian_dark.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier05_pescatarian_dark.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010310</SkinName>
@@ -486,7 +458,7 @@
         <Standard>
           <GUID>1500011116</GUID>
           <Name>Bordeaux roof, Investors</Name>
-          <IconFilename>data/jakob/diagonal-investors/skin-bordeaux/icon_bordeaux.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tier05_bordeaux.png</IconFilename>
         </Standard>
         <Skin>
           <SkinName>1500010319</SkinName>
@@ -541,24 +513,36 @@
       </Values>
     </Asset>
   </ModOp>
-  
-  <!-- # Lifestyle Needs -->
-  <ModOp GUID="15000004" Type="add"
+
+  <!-- # Feedback -->
+  <Group>
+    <!-- add neighbor influences -->
+    <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
+      <Item>
+        <Building>1500011110</Building>
+      </Item>
+    </ModOp>
+    <!-- add spawn feeback -->
+    <ModOp Type="add" GUID="2001092" Path="/Values/FeedbackBuildingGroup/Buildings">
+      <Item>
+        <Building>1500011110</Building>
+      </Item>
+    </ModOp>
+    <!-- add to neighbor feature for upgrade -->
+    <ModOp Type="add" GUID="7233"
+      Path="/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule">
+      <Item>
+        <Building>1500011110</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Needs & Population -->
+  <!-- required because of the Skyline Tower -->
+  <ModOp Type="add" GUID="15000004"
     Path="/Values/PopulationLevel7/PopulationInputs/Item/RequiredBuildings[Item/RequiredBuilding='1010347']">
     <Item>
       <RequiredBuilding>1500011110</RequiredBuilding>
-    </Item>
-  </ModOp>
-
-  <!-- # Misc -->
-  <!-- add to neighbor feature for upgrade -->
-  <ModOp GUID="7233" Type="add"
-    Path="/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule">
-    <Item>
-      <Building>1500010401</Building>
-    </Item>
-    <Item>
-      <Building>1500011110</Building>
     </Item>
   </ModOp>
 </ModOps>

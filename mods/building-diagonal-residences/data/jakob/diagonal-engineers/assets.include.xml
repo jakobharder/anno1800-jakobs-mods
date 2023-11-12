@@ -1,6 +1,185 @@
 <ModOps>
+  <!-- # Buildings -->
+  <ModOp Type="addNextSibling" GUID="1010346">
+    <Asset>
+      <BaseAssetGUID>1010346</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010401</GUID>
+          <Name>Diagonal Engineer Residence</Name>
+          <IconFilename>data/ui/jakob/icon_diagonal_engineers.png</IconFilename>
+          <InfoDescription>1500010424</InfoDescription>
+        </Standard>
+        <Locked />
+        <Blocking>
+          <DeletePropsRadius>1</DeletePropsRadius>
+          <HidePropsRadius>1</HidePropsRadius>
+          <RemovePropsRadius>1</RemovePropsRadius>
+        </Blocking>
+        <Building>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <!-- change picking asset to this one to ease building -->
+          <PickingAsset>1500010401</PickingAsset>
+          <!-- disable auto rotation / variation by neighbors -->
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>0</Building>
+            </Item>
+          </InfluencedByNeighbors>
+        </Building>
+        <Constructable>
+          <ConstructionMenuIcon>1500010401</ConstructionMenuIcon>
+        </Constructable>
+        <Upgradable>
+          <NextGUID>1500011110</NextGUID>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/diagonal_wide.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/diagonal_wide2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/diagonal_narrow.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/diagonal_narrow2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/diagonal_diagonal.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/diagonalx2.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500011130</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011131</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500011132</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010407</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010408</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010409</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010410</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010412</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <FloorStackOwner>
+          <!-- disable skyscrapers -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>OrnamentalBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010402</GUID>
+          <Name>Diagonal End Ornament</Name>
+          <IconFilename>data/ui/jakob/icon_diagonal_endpiece.png</IconFilename>
+          <InfoDescription>1500010425</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <BuildingCategoryName>11149</BuildingCategoryName>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/diagonal-engineers/endpiece.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Locked />
+        <Ornament>
+          <OrnamentUnit>1</OrnamentUnit>
+          <OrnamentDescription>1500010425</OrnamentDescription>
+        </Ornament>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010427</GUID>
+          <!-- <GUID>1500010411</GUID> -->
+          <!-- <GUID>1500010422</GUID> -->
+          <!-- <GUID>1500010423</GUID> -->
+          <Name>@ Engineers (1010346)</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>1010346</UnlockNeeded>
+              </ConditionUnlocked>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010401</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010402</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010403</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+
   <!-- # Custom Skins -->
-  <ModOp GUID="1010346" Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="1010346">
     <Asset>
       <Template>Skin</Template>
       <Values>
@@ -164,7 +343,7 @@
   </ModOp>
 
   <!-- # Vibrant City Skins -->
-  <ModOp GUID="1010346" Type="addNextSibling">
+  <ModOp Type="addNextSibling" GUID="1010346">
     <Asset>
       <Template>Skin</Template>
       <Values>
@@ -290,68 +469,29 @@
     </Asset>
   </ModOp>
 
-  <!-- # jje Skins -->
-  <ModOp Type="addNextSibling" GUID="101037221" Condition="//Standard[GUID='101037221']">
-    <Asset>
-      <Template>Skin</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010412</GUID>
-          <Name>Diagonal Engineer Skin, jje</Name>
-          <IconFilename>data/jakob/diagonal-engineers/skinjje/icon_tier04_jje.png</IconFilename>
-        </Standard>
-        <Skin>
-          <SkinName>1500010413</SkinName>
-          <SkinDescription>1500010414</SkinDescription>
-          <SkinVariations>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_wide.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_wide2.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_narrow.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_narrow2.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/diagonal_diagonal.cfg</FileName>
-            </Item>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/diagonalx2.cfg</FileName>
-            </Item>
-          </SkinVariations>
-        </Skin>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-        <Text />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Skin</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010421</GUID>
-          <Name>Narrow Engineer Skin, jje</Name>
-          <IconFilename>data/jakob/diagonal-engineers/skinjje/icon_tier04_jje.png</IconFilename>
-        </Standard>
-        <Skin>
-          <SkinName>1500010413</SkinName>
-          <SkinDescription>1500010414</SkinDescription>
-          <SkinVariations>
-            <Item>
-              <FileName>data/jakob/diagonal-engineers/skinjje/3x1.cfg</FileName>
-            </Item>
-          </SkinVariations>
-        </Skin>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
-        <Text />
-      </Values>
-    </Asset>
-  </ModOp>
+  <!-- # Feedback -->
+  <Group>
+    <!-- add neighbor influences -->
+    <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
+      <Item>
+        <Building>1500010401</Building>
+      </Item>
+    </ModOp>
+    <!-- add spawn feeback -->
+    <ModOp Type="add" GUID="2001091" Path="/Values/FeedbackBuildingGroup/Buildings">
+      <Item>
+        <Building>1500010401</Building>
+      </Item>
+    </ModOp>
+    <!-- add to neighbor feature for upgrade -->
+    <ModOp Type="add" GUID="7233"
+      Path="/Values/ResidenceUpgradeFeature/BuildingsExcludedFromDefaultVariationRule">
+      <Item>
+        <Building>1500010401</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Needs & Population -->
+  <!-- no change -->
 </ModOps>

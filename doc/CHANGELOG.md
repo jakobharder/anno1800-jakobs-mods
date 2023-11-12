@@ -2,9 +2,16 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## 6.2 - Industrial Soap Factory
+## 6.3 - Narrow Investors
 
-### New Content
+- Diagonal Residences, 1.9:
+  - Added narrow 3x1 tiles investor residence
+  - Added `Vibrant City` skins to narrow engineer residence
+  - Reduce lifestyle needs of narrow residences to 1/3 population
+- Alternative Needs, 2.0.2:
+  - Multiplayer fix (thanks to Serp)
+
+## 6.2 - Industrial Soap Factory
 
 - Industrial Cities, 3.1:
   - Added industrial soap factory, rendering works

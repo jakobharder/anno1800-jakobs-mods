@@ -33,7 +33,7 @@ Can be disabled with iMYA tweaks.
 
 ### Small Post Office
 
-Functoinal post office fitting into smaller OW towns.
+Functional post office fitting into smaller OW towns.
 
 Only with DLC `Empire of the Skies`.
 

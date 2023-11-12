@@ -151,10 +151,10 @@ Ideally for more farmer workforce with artisan-looking towns.
 
 ### Buildings
 
-- Diagonal engineers: including Vibrant Cities and 4 custom skins
-- Diagonal investors: including Vibrant Cities and 3 custom skins
-- Narrow engineers
-- Skins matching jje1000's red tile roof buildings for engineers
+- Diagonal and narrow 3x1 engineers + 3 custom roof skins
+- Diagonal and narrow 3x1 investors + 4 custom roof skins
+- Vibrant Cities skins are supported
+- Additionally, skins matching jje1000's red tile roof buildings for engineers
 
 ### Ornaments
 

@@ -20,6 +20,7 @@ There is no double consumption.
 
 ### 2.0
 
+- 2.0.2: Multiplayer fix (thanks to Serp)
 - 2.0.1: Fixed undiscovered sessions
 - 2.0.1: Updated French translations (thanks Water)
 - Combined menus are now tweakable with iMYA - default switched off.
