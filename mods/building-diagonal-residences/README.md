@@ -15,11 +15,10 @@ Buildings are fully functional, but expect some visual and user experience oddit
 
 ### Residences
 
-- Diagonal engineers with 3 Vibrant Cities and 4 custom skins
-- Diagonal investors with 3 Vibrant Cities and 3 custom skins
-- Narrow engineers with 4 custom skins
-- Narrow investors with 3 Vibrant Cities and 3 custom skins
-- Skins matching jje's red tile roof buildings for engineers
+- Diagonal and narrow 3x1 engineers + 3 custom roof skins
+- Diagonal and narrow 3x1 investors + 4 custom roof skins
+- Vibrant Cities skins are supported
+- Additionally, skins matching jje1000's red tile roof buildings for engineers
 
 ### Ornaments
 
@@ -44,7 +43,7 @@ Known issues:
 
 ### 1.9
 
-- Added 3x1 narrow investor residence
+- Added narrow 3x1 tiles investor residence
 - Added `Vibrant City` skins to narrow engineer residence
 - Reduce lifestyle needs of narrow residences to 1/3 population
 
