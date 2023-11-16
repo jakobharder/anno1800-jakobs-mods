@@ -1,3 +1,50 @@
 <ModOps>
   <Include File="./banners.include.xml" />
+
+  <!-- Enable floor upgrade button -->
+  <Group>
+    <!-- Unlock FloorUpgradeInAllRegions -->
+    <ModOp Type="addNextSibling" GUID="7233">
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011366</GUID>
+            <Name>Unlock @ Terraced Workers</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionUnlocked</Template>
+              <Values>
+                <Condition />
+                <ConditionUnlocked>
+                  <UnlockNeeded>1500010200</UnlockNeeded>
+                </ConditionUnlocked>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>30728</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
 </ModOps>
