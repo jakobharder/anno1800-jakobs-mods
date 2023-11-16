@@ -1,10 +1,6 @@
 <!--
-Small Gas Power Plant
-
-Git: https://github.com/jakobharder/anno-1800-jakobs-mods
-GUIDs: https://github.com/anno-mods/GuidRanges
+  https://github.com/jakobharder/anno1800-jakobs-mods
 -->
-
 <ModOps>
   <!-- # Includes -->
   <Include File="/data/jakob/fuel_pump_station/assets.include.xml" />
@@ -414,7 +410,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500011187</GUID>
+          <GUID>1500011188</GUID>
+          <!-- <GUID>1500011187</GUID> -->
           <Name>Add Coal Buff to newly entered session</Name>
         </Standard>
         <Trigger>
@@ -436,6 +433,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                   <ActionBuff>
                     <BuffAsset>1500010034</BuffAsset>
                     <AddBuff>0</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
@@ -448,22 +446,26 @@ GUIDs: https://github.com/anno-mods/GuidRanges
                   <ActionBuff>
                     <BuffAsset>1500010034</BuffAsset>
                     <AddBuff>1</AddBuff>
+                    <BuffProcessingParticipant>1</BuffProcessingParticipant>
                   </ActionBuff>
                 </Values>
               </TriggerAction>
             </Item>
-            <Item>
-              <TriggerAction>
-                <Template>ActionRegisterTrigger</Template>
-                <Values>
-                  <Action />
-                  <ActionRegisterTrigger>
-                    <TriggerAsset>1500011187</TriggerAsset>
-                  </ActionRegisterTrigger>
-                </Values>
-              </TriggerAction>
-            </Item>
           </TriggerActions>
+          <ResetTrigger>
+            <Template>AutoCreateTrigger</Template>
+            <Values>
+              <Trigger>
+                <TriggerCondition>
+                  <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+                  <Values>
+                    <Condition />
+                    <ConditionAlwaysTrue />
+                  </Values>
+                </TriggerCondition>
+              </Trigger>
+            </Values>
+          </ResetTrigger>
         </Trigger>
       </Values>
     </Asset>
