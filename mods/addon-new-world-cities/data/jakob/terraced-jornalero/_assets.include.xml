@@ -338,6 +338,25 @@
   </Group>
 
   <!-- # Build Menus -->
+  <!--
+    Add as floor upgrade to Jornaleros. Possible without a crash since 18.1.
+    Downgrade will automatically prefer non-floor upgrades.
+  -->
+  <ModOp Type="merge" GUID="101254" Path="/Values">
+    <FloorStackOwner>
+      <UpgradeTargetGUID>1500011250</UpgradeTargetGUID>
+      <AddFloorCost>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010205</Ingredient>
+          <Amount>1</Amount>
+        </Item>
+      </AddFloorCost>
+    </FloorStackOwner>
+  </ModOp>
   <!-- By Progress Jornalero -->
   <ModOp Type="addNextSibling" GUID="25000193"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">

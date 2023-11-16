@@ -645,10 +645,15 @@
   </ModOp>
 
   <!-- # Build Menus -->
-  <!-- <ModOp GUID="5405" Path="/Values/Upgradable" Type="replace">
-    <Upgradable>
-      <NextGUID>1500011044</NextGUID>
-      <UpgradeCost>
+
+  <!--
+    Add as floor upgrade to Artistas. Possible without a crash since 18.1.
+    Downgrade will automatically prefer non-floor upgrades.
+  -->
+  <ModOp Type="merge" GUID="5405" Path="/Values">
+    <FloorStackOwner>
+      <UpgradeTargetGUID>1500011044</UpgradeTargetGUID>
+      <AddFloorCost>
         <Item>
           <Ingredient>1010196</Ingredient>
           <Amount>2</Amount>
@@ -661,14 +666,14 @@
           <Ingredient>838</Ingredient>
           <Amount>1</Amount>
         </Item>
-      </UpgradeCost>
-    </Upgradable>
+      </AddFloorCost>
+    </FloorStackOwner>
   </ModOp>
   <ModOp Type="merge" GUID="5405" Path="/Values">
     <Residence7>
       <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
     </Residence7>
-  </ModOp> -->
+  </ModOp>
 
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
