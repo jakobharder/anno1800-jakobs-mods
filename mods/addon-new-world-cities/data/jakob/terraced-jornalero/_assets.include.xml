@@ -3,7 +3,7 @@
   <Group>
     <ModOp Type="addNextSibling" GUID="101255">
       <Asset>
-        <Template>JakobNWCResidence</Template>
+        <Template>ResidenceBuilding7_Colony</Template>
         <Values>
           <Standard>
             <GUID>1500011250</GUID>
@@ -12,6 +12,11 @@
             <InfoDescription>163059</InfoDescription>
           </Standard>
           <Building>
+            <BuildingType>Residence</BuildingType>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+            <AssociatedRegions>Colony01</AssociatedRegions>
+            <BuildingCategoryName>100004</BuildingCategoryName>
+            <AllowChangeVariation>1</AllowChangeVariation>
             <BuildingBlockPool>
               <!--
                 Multiple entries of the same variation for different rotations don't work.

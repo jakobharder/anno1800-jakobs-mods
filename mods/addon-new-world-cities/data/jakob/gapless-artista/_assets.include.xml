@@ -1,18 +1,8 @@
-<!-- 
-New World Cities
-
-GUIDs: https://github.com/anno-mods/GuidRanges
-1500011040 building
-1500011041 buff
-1500011042 plaza
-
--->
-
 <ModOps>
   <!-- # Terraced Artista Residences -->
   <ModOp Type="addNextSibling" GUID="101255">
     <Asset>
-      <Template>JakobNWCResidence</Template>
+      <Template>ResidenceBuilding7_Colony</Template>
       <Values>
         <Standard>
           <GUID>1500011044</GUID>
@@ -21,6 +11,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <InfoDescription>163059</InfoDescription>
         </Standard>
         <Building>
+          <BuildingType>Residence</BuildingType>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <AssociatedRegions>Colony01</AssociatedRegions>
+          <BuildingCategoryName>100004</BuildingCategoryName>
+          <AllowChangeVariation>1</AllowChangeVariation>
           <BuildingBlockPool>
             <!--
               Multiple entries of the same variation for different rotations don't work.
@@ -171,29 +166,8 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Locked>
         <Upgradable>
           <CurrentTier>3</CurrentTier>
-          <NextGUID>1500011090</NextGUID>
-          <UpgradeCost>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>2</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>2</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010218</Ingredient>
-              <Amount>2</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010207</Ingredient>
-              <Amount>2</Amount>
-            </Item>
-            <Item>
-              <Ingredient>838</Ingredient>
-              <Amount>1</Amount>
-            </Item>
-          </UpgradeCost>
+          <NextGUID>0</NextGUID>
+          <UpgradeCost />
         </Upgradable>
         <SoundEmitter>
           <BuildingRepaired>
@@ -282,6 +256,31 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>1500011090</UpgradeTargetGUID>
+          <AddFloorCost>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </AddFloorCost>
+        </FloorStackOwner>
       </Values>
     </Asset>
     <Asset>
@@ -296,15 +295,23 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <Costs>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
+              <Amount>10</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>4</Amount>
+              <Amount>6</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
             </Item>
             <Item>
               <Ingredient>838</Ingredient>
-              <Amount>1</Amount>
+              <Amount>2</Amount>
             </Item>
           </Costs>
         </Cost>
@@ -384,6 +391,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
             </Item>
           </Maintenances>
         </Maintenance>
+        <FloorStackOwner>
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+        </FloorStackOwner>
       </Values>
     </Asset>
     <Asset>

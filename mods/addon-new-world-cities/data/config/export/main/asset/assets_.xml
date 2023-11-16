@@ -66,7 +66,120 @@
     </Upgradable>
   </ModOp> -->
 
-  <!-- Enable floor upgrade button -->
+  <!-- # Neighbors -->
+  <Group>
+    <!--
+      Note: upgrading between different templates can crash.
+      A custom template can deviate from the base if another mod modifies the base.
+      It's better to copy over instead of using a template in that case.
+    -->
+    <ModOp Type="merge" GUID="1500011250,1500011043,1500011044"
+      Path="/Values/Building">
+      <Building>
+        <InfluencedByNeighbors>
+          <Item>
+            <Building>101255</Building>
+          </Item>
+          <Item>
+            <Building>5405</Building>
+          </Item>
+          <Item>
+            <Building>1500011250</Building>
+          </Item>
+          <Item>
+            <Building>1500011043</Building>
+          </Item>
+          <Item>
+            <Building>1500011044</Building>
+          </Item>
+          <Item>
+            <Building>1500011090</Building>
+          </Item>
+        </InfluencedByNeighbors>
+        <InfluencedVariationDirection>
+          <!--
+            Direction rotates counter clock wise.
+            Default facing is X towards NW, Y towards NE.
+          -->
+          <Item>
+            <!-- single -->
+            <Type>DontCare</Type>
+          </Item>
+          <Item>
+            <!-- end, south-west -->
+            <Direction>1</Direction>
+            <Type>End</Type>
+          </Item>
+          <Item>
+            <!-- end, south-east -->
+            <Direction>2</Direction>
+            <Type>End</Type>
+          </Item>
+          <Item>
+            <!-- corner, south -->
+            <Direction>2</Direction>
+            <Type>Corner</Type>
+          </Item>
+          <Item>
+            <!-- end, north-east -->
+            <Direction>3</Direction>
+            <Type>End</Type>
+          </Item>
+          <Item>
+            <!-- mid, south-west to north-east -->
+            <Direction>1</Direction>
+            <Type>Mid</Type>
+          </Item>
+          <Item>
+            <!-- corner, east -->
+            <Direction>3</Direction>
+            <Type>Corner</Type>
+          </Item>
+          <Item>
+            <!-- T, front facing south-east -->
+            <Direction>3</Direction>
+            <Type>Mid</Type>
+          </Item>
+          <Item>
+            <!-- end, north-west -->
+            <Type>End</Type>
+          </Item>
+          <Item>
+            <!-- corner, west -->
+            <Direction>1</Direction>
+            <Type>Corner</Type>
+          </Item>
+          <Item>
+            <!-- mid, north-west to south-east -->
+            <Type>Mid</Type>
+          </Item>
+          <Item>
+            <!-- T, front facing south-west  -->
+            <Direction>2</Direction>
+            <Type>Mid</Type>
+          </Item>
+          <Item>
+            <!-- corner, north -->
+            <Type>Corner</Type>
+          </Item>
+          <Item>
+            <!-- T, front facing north-west -->
+            <Direction>1</Direction>
+            <Type>Mid</Type>
+          </Item>
+          <Item>
+            <!-- T, front facing north-east -->
+            <Type>Mid</Type>
+          </Item>
+          <Item>
+            <!-- cross -->
+          </Item>
+        </InfluencedVariationDirection>
+      </Building>
+    </ModOp>
+  </Group>
+
+  <!-- # Enable floor upgrade button -->
   <Group>
     <!-- Unlock FloorUpgradeInAllRegions -->
     <ModOp Type="addNextSibling" GUID="7233">
