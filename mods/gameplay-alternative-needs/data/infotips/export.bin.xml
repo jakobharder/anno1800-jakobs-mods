@@ -1,0 +1,306 @@
+<!--
+  https://github.com/jakobharder/anno1800-jakobs-mods
+  Production uses &lt;b&gt;[AssetData([ItemAssetData([ToolOneHelper ItemActiveBuff([RefGuid])]) ReplaceInputNewInput(#index0#)]) Text]&lt;/b&gt; instead of &lt;b&gt;[AssetData([ItemAssetData([ToolOneHelper ItemActiveBuff([RefGuid])]) ReplaceInputOldInput(#index0#)]) Text]&lt;/b&gt;
+-->
+<ModOps>
+  <!--
+    Show alternative need supply when the need doesn't provide any coins.
+    I tried a few smarter ways:
+    - ValueAssetMap can be used to map directly to the alternative need, but floats are not precise enough for GUID
+    - loop through ReplaceInputNewInput/ReplaceInputOldInput, but there's no way to use text sources in ExpectedValue
+  -->
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='25000205']/InfoElement/InfoElement/InfoElement/InfoElement[Text/TextGUID='11938']">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>0</ExpectedValueInt>
+        <Condition>[Selection Object Residence MaxMoneyForGood([RefGuid])]</Condition>
+      </VisibilityElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010102</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010238) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010238) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010106</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010203) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010203) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010120</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010217) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010217) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010127</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010247) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010247) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010153</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010206) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010206) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010831</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010213) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010213) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010836</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(1010200) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(1010200) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010847</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(120032) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData(120032) Text]</Text>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction([RefGuid]) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+    </InfoElement>
+  </ModOp>
+
+  <!--
+    Show custom text instead of the super hard to read supply buff text.
+  -->
+  <ModOp Type="addPrevSibling"
+    Path="//InfoTipData[Guid='454144439']/InfoElement/InfoElement[InfoElement/Text/TextGUID='12315']/VisibilityElement/OperatorType">
+    <VisibilityElement>
+      <ElementType>
+        <ElementType>1</ElementType>
+      </ElementType>
+      <CompareOperator>
+        <CompareOperator>1</CompareOperator>
+      </CompareOperator>
+      <ResultType>
+        <ResultType>1</ResultType>
+      </ResultType>
+      <ExpectedValueInt>1500010826</ExpectedValueInt>
+      <Condition>[RefGuid]</Condition>
+    </VisibilityElement>
+  </ModOp>
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='454144439']/InfoElement/InfoElement[InfoElement/Text/TextGUID='12315']">
+    <InfoElement>
+      <ElementType>5</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010826</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+      <Text>
+        <Text>[AssetData(1500011370) Text]</Text>
+        <Style />
+      </Text>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+  </ModOp>
+</ModOps>
