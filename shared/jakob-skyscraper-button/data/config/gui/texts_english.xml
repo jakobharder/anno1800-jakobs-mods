@@ -1,0 +1,26 @@
+<ModOps>
+  <!-- # Vanilla Changes -->
+  <Group>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
+      <Text>Upgrade Floors</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
+      <Text>Once your residents' needs are fulfilled and the residence is at its full capacity, you'll be able to upgrade to the next building level.</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='23914']/Text">
+      <Text>Upgrade your building to the next level with additional floors.</Text>
+    </ModOp>
+  </Group>
+
+  <!-- # New Texts -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500011282</GUID>
+      <Text>Upgrade Terraced House</Text>
+    </Text>
+    <Text>
+      <GUID>1500011289</GUID>
+      <Text>Provide additional living space to increase your city's population.</Text>
+    </Text>
+  </ModOp>
+</ModOps>

@@ -2,11 +2,6 @@
   Upgradable Low Tiers
 -->
 <ModOps>
-  <!-- # Vanilla Changes -->
-  <ModOp Type="replace" GUID="412,502386" Path="/Values/Standard/IconFilename">
-    <IconFilename>data/ui/2kimages/main/icons/icon_increase_population_2.png</IconFilename>
-  </ModOp>
-
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
     <Asset>
@@ -625,7 +620,7 @@
               <InactiveAmount>28</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -1527,7 +1522,7 @@
               <InactiveAmount>28</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -1667,14 +1662,6 @@
           </Skins>
         </Object>
         <FloorStackOwner>
-          <FloorCount>2</FloorCount>
-          <Components>
-            <BigFloor>
-              <!-- UI icon next to floor level count -->
-              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
-            </BigFloor>
-          </Components>
-          <!-- last floor -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
           <AddFloorCost />
         </FloorStackOwner>
@@ -1686,7 +1673,7 @@
               <InactiveAmount>42</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>

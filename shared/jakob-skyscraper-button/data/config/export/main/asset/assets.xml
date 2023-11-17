@@ -1,0 +1,137 @@
+<!--
+  https://github.com/jakobharder/anno1800-jakobs-mods
+-->
+<ModOps>
+  <!-- # Unlock skyscraper upgrade button -->
+  <Group>
+    <!--
+      Unlock FloorUpgradeInAllRegions to enable construction menu skyscraper button.
+    -->
+    <ModOp Type="addNextSibling" GUID="7233">
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011366</GUID>
+            <Name>@ Terraced Workers</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionUnlocked</Template>
+              <Values>
+                <Condition />
+                <ConditionUnlocked>
+                  <UnlockNeeded>1500010200</UnlockNeeded>
+                </ConditionUnlocked>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>30728</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011365</GUID>
+            <Name>@ Terraced Jornalero</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionUnlocked</Template>
+              <Values>
+                <Condition />
+                <ConditionUnlocked>
+                  <UnlockNeeded>1500011250</UnlockNeeded>
+                </ConditionUnlocked>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>30728</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
+
+  <!-- # InfoTip/object menu icon -->
+  <Group>
+    <!--
+      Replace skyscraper upgrade icon with a neutral population upgrade one.
+      The original texture is also replaced to this one because there are some hardcoded references.
+    -->
+    <ModOp Type="replace" GUID="412,502386" Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/2kimages/main/icons/icon_increase_population_2.png</IconFilename>
+    </ModOp>
+    <!--
+      Re-add skyscraper upgrade icon with different GUID to be used in custom infotips.
+    -->
+    <ModOp Type="addNextSibling" GUID="502386">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011283</GUID>
+            <Name>Upgrade_Skyscraper</Name>
+            <IconFilename>data/ui/2kimages/main/icons/icon_skyscraper_upgrade_orig.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011282</GUID>
+            <Name>Upgrade Terraced House</Name>
+          </Standard>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011289</GUID>
+            <Name>Provide additional living space to increase your city's population.</Name>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
+</ModOps>
