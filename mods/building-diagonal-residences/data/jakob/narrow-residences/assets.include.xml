@@ -205,46 +205,6 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011359</GUID>
-          <Name>@ Engineers (1010346)</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
-            <Values>
-              <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1010346</UnlockNeeded>
-              </ConditionUnlocked>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010415</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
-      </Values>
-    </Asset>
-    <Asset>
       <BaseAssetGUID>1010347</BaseAssetGUID>
       <Values>
         <Standard>
@@ -433,46 +393,6 @@
           <DefaultBuff>1500011352</DefaultBuff>
         </UpgradeList>
         <Audio />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011351</GUID>
-          <Name>@ Investors (1010347)</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
-            <Values>
-              <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1010347</UnlockNeeded>
-              </ConditionUnlocked>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500011350</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
