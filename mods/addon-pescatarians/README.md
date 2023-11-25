@@ -51,6 +51,7 @@ All products come with new production buildings.
 
 ### 2.1
 
+- 2.1.10: Updated Korean translations (thanks to modpark817)
 - 2.1.9: Fixed vegetable farm sometimes disappearing
 - 2.1.7: Freshly upgraded artisan house has now same population as full worker houses
 - 2.1.7: Fixed various missing and broken text issues
@@ -66,4 +67,4 @@ All products come with new production buildings.
 
 ## Credits
 
-Thanks to @m_belonosov, redzmey1, MSHS, @Petritant, HeroOfOlympus, Aveneger432, darknesswei, mfuegar, DrD_AVEL for the translations!
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, HeroOfOlympus, Aveneger432, darknesswei, mfuegar, DrD_AVEL, modpark817 for the translations!

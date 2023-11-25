@@ -2,11 +2,6 @@
   Upgradable Low Tiers
 -->
 <ModOps>
-  <!-- # Vanilla Changes -->
-  <ModOp Type="replace" GUID="412,502386" Path="/Values/Standard/IconFilename">
-    <IconFilename>data/ui/2kimages/main/icons/icon_increase_population_2.png</IconFilename>
-  </ModOp>
-
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
     <Asset>
@@ -64,8 +59,7 @@
   </ModOp>
 
   <!-- # modify vanilla upgrade paths -->
-  <ModOp GUID='1010344' Type="add" Path="Values">
-    <!-- TODO this will not work if another mod already adds floors -->
+  <ModOp Type="merge" GUID="1010344" Path="Values">
     <FloorStackOwner>
       <UpgradeTargetGUID>1500010200</UpgradeTargetGUID>
       <AddFloorCost>
@@ -92,14 +86,13 @@
       </AddFloorCost>
     </FloorStackOwner>
   </ModOp>
-  <ModOp GUID='1010345' Type="add" Path="Values">
-    <!-- TODO this will not work if another mod already adds floors -->
+  <ModOp Type="merge" GUID="1010345" Path="Values">
     <FloorStackOwner>
       <UpgradeTargetGUID>1500010225</UpgradeTargetGUID>
       <AddFloorCost>
         <Item>
           <Ingredient>1010017</Ingredient>
-          <Amount>1000</Amount>
+          <Amount>1500</Amount>
         </Item>
         <Item>
           <Ingredient>1010196</Ingredient>
@@ -310,7 +303,7 @@
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>15</Amount>
+              <Amount>9</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
@@ -330,9 +323,29 @@
           <ConstructionMenuIcon>1500010200</ConstructionMenuIcon>
         </Constructable>
         <Upgradable>
-          <!-- disable upgrade -->
-          <NextGUID>0</NextGUID>
-          <UpgradeCost />
+          <NextGUID>1500010225</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </UpgradeCost>
         </Upgradable>
         <Object>
           <Variations>
@@ -430,68 +443,6 @@
           </HappinessDependentMurmur>
         </AmbientMoodProvider>
         <FloorStackOwner>
-          <FloorCount>1</FloorCount>
-          <Components>
-            <BigFloor>
-              <!-- UI icon next to floor level count -->
-              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
-              <!-- empty variations to make sure downgrade arrow is shown at the right position -->
-              <FloorVariations>
-                <!-- 4 straight -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <!-- 2 end/corner -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <!-- 4 corner -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <!-- 2 end/corner -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/worker_scraper/worker_scraper_roof.cfg</RoofCFG>
-                </Item>
-              </FloorVariations>
-            </BigFloor>
-          </Components>
           <UpgradeTargetGUID>1500010201</UpgradeTargetGUID>
           <AddFloorCost>
             <Item>
@@ -524,7 +475,7 @@
               <InactiveAmount>14</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -612,7 +563,7 @@
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>28</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
@@ -628,17 +579,35 @@
             </Item>
           </Costs>
         </Cost>
+        <Upgradable>
+          <NextGUID>1500010225</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>5</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+          </UpgradeCost>
+        </Upgradable>
         <Constructable>
           <ConstructionMenuIcon>1500010201</ConstructionMenuIcon>
         </Constructable>
         <FloorStackOwner>
-          <FloorCount>2</FloorCount>
-          <Components>
-            <!-- only use floor components for icon display -->
-            <BigFloor>
-              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
-            </BigFloor>
-          </Components>
           <!-- last floor -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
           <AddFloorCost />
@@ -651,7 +620,7 @@
               <InactiveAmount>28</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -1132,7 +1101,6 @@
         <Amount>0.00026</Amount>
         <SupplyWeight>4</SupplyWeight>
         <MoneyValue>120</MoneyValue>
-        <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>800</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -1149,7 +1117,6 @@
         <Amount>0.0004166</Amount>
         <SupplyWeight>4</SupplyWeight>
         <MoneyValue>80</MoneyValue>
-        <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>1000</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -1164,7 +1131,6 @@
       <Item>
         <Product>1010354</Product> <!-- electricity -->
         <SupplyWeight>2</SupplyWeight>
-        <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>1200</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -1182,7 +1148,6 @@
         <Amount>0.0004166</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>50</MoneyValue>
-        <RequiredFloorLevel>2</RequiredFloorLevel>
         <FullWeightPopulationCount>1500</FullWeightPopulationCount>
         <NoWeightPopulationCount>999</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -1196,7 +1161,6 @@
         <Amount>0.0004166</Amount>
         <SupplyWeight>5</SupplyWeight>
         <MoneyValue>25</MoneyValue>
-        <RequiredFloorLevel>2</RequiredFloorLevel>
         <FullWeightPopulationCount>1500</FullWeightPopulationCount>
         <NoWeightPopulationCount>999</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -1374,7 +1338,7 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>1000</Amount>
+              <Amount>1500</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
@@ -1398,9 +1362,29 @@
           <ConstructionMenuIcon>1500010225</ConstructionMenuIcon>
         </Constructable>
         <Upgradable>
-          <!-- disable upgrade -->
-          <NextGUID>0</NextGUID>
-          <UpgradeCost />
+          <NextGUID>1010346</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </UpgradeCost>
         </Upgradable>
         <Object>
           <Variations>
@@ -1506,73 +1490,11 @@
           </HappinessDependentMurmur>
         </AmbientMoodProvider>
         <FloorStackOwner>
-          <FloorCount>1</FloorCount>
-          <Components>
-            <BigFloor>
-              <!-- UI icon next to floor level count -->
-              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
-              <!-- empty variations to make sure downgrade arrow is shown at the right position -->
-              <FloorVariations>
-                <!-- 4 straight -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/wartisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <!-- 2 end/corner -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <!-- 4 corner -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <!-- 2 end/corner -->
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-                <Item>
-                  <FloorCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_empty.cfg</FloorCFG>
-                  <RoofCFG>data/jakob/buildings/residence/artisan_scraper/artisan_floor_roof.cfg</RoofCFG>
-                </Item>
-              </FloorVariations>
-            </BigFloor>
-          </Components>
           <UpgradeTargetGUID>1500010226</UpgradeTargetGUID>
           <AddFloorCost>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>1000</Amount>
+              <Amount>1500</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
@@ -1600,7 +1522,7 @@
               <InactiveAmount>28</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -1622,7 +1544,7 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>2000</Amount>
+              <Amount>3000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
@@ -1646,9 +1568,29 @@
           <ConstructionMenuIcon>1500010226</ConstructionMenuIcon>
         </Constructable>
         <Upgradable>
-          <!-- disable upgrade -->
-          <NextGUID>0</NextGUID>
-          <UpgradeCost />
+          <NextGUID>1010346</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>500</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>0</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </UpgradeCost>
         </Upgradable>
         <Object>
           <Variations>
@@ -1720,14 +1662,6 @@
           </Skins>
         </Object>
         <FloorStackOwner>
-          <FloorCount>2</FloorCount>
-          <Components>
-            <BigFloor>
-              <!-- UI icon next to floor level count -->
-              <FloorIcon>data/ui/2kimages/main/3dicons/icon_city_ornament_large.png</FloorIcon>
-            </BigFloor>
-          </Components>
-          <!-- last floor -->
           <UpgradeTargetGUID>0</UpgradeTargetGUID>
           <AddFloorCost />
         </FloorStackOwner>
@@ -1739,7 +1673,7 @@
               <InactiveAmount>42</InactiveAmount>
             </Item>
           </Maintenances>
-          <IncomeCategory>Skyscrapers</IncomeCategory>
+          <IncomeCategory>Residences</IncomeCategory>
         </Maintenance>
         <Audio />
       </Values>
@@ -2317,7 +2251,6 @@
         <Amount>0.00052</Amount>
         <SupplyWeight>7</SupplyWeight>
         <MoneyValue>100</MoneyValue>
-        <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>800</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -2334,7 +2267,6 @@
         <Amount>0.00005555</Amount>
         <SupplyWeight>7</SupplyWeight>
         <MoneyValue>60</MoneyValue>
-        <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>800</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -2349,7 +2281,6 @@
       <Item>
         <Product>1010354</Product> <!-- electricity -->
         <SupplyWeight>6</SupplyWeight>
-        <RequiredFloorLevel>1</RequiredFloorLevel>
         <FullWeightPopulationCount>1000</FullWeightPopulationCount>
         <NoWeightPopulationCount>749</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -2387,7 +2318,6 @@
         <Amount>0.000027775</Amount>
         <SupplyWeight>6</SupplyWeight>
         <MoneyValue>80</MoneyValue>
-        <RequiredFloorLevel>2</RequiredFloorLevel>
         <FullWeightPopulationCount>1500</FullWeightPopulationCount>
         <NoWeightPopulationCount>1199</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -2401,7 +2331,6 @@
         <Amount>0.000027775</Amount>
         <SupplyWeight>7</SupplyWeight>
         <MoneyValue>80</MoneyValue>
-        <RequiredFloorLevel>2</RequiredFloorLevel>
         <FullWeightPopulationCount>1500</FullWeightPopulationCount>
         <NoWeightPopulationCount>1199</NoWeightPopulationCount>
         <RequiredBuildings>
@@ -2415,7 +2344,6 @@
         <Amount>0.000027775</Amount>
         <SupplyWeight>7</SupplyWeight>
         <MoneyValue>100</MoneyValue>
-        <RequiredFloorLevel>2</RequiredFloorLevel>
         <FullWeightPopulationCount>2000</FullWeightPopulationCount>
         <NoWeightPopulationCount>1499</NoWeightPopulationCount>
         <RequiredBuildings>

@@ -2,6 +2,20 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## 6.4 - Quality Update
+
+- Industrial Cities, 3.2:
+  - Add cross-progression between terraced and vanilla residences
+  - Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
+  - Fixed fuel pump station showing no warehouse connection warning in the New World
+- New World Cities, 2.1:
+  - Floor upgrade button to upgrade from vanilla to terraced residences
+  - Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
+  - Fixed residences being unlocked too early
+- Alternative Needs, 2.1:
+  - Improve alternative needs infotips
+- Updated Korean translations (thanks to modpark817)
+
 ## 6.3 - Narrow Investors
 
 - Diagonal Residences, 1.9:

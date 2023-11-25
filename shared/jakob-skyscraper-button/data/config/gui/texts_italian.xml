@@ -1,0 +1,22 @@
+<ModOps>
+  <!-- # Vanilla Changes -->
+  <Group>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
+      <Text>Una volta che i bisogni dei residenti saranno stati soddisfatti e la residenza sarà a piena capienza, potrai passare al successivo livello dell'edeficio.</Text>
+    </ModOp>
+  </Group>
+
+  <!-- # New Texts -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011282</GUID>
+      <Text>Upgrade Terraced House</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011289</GUID>
+      <Text>Provide additional living space to increase your city's population.</Text>
+    </Text>
+  </ModOp>
+</ModOps>

@@ -1,7 +1,7 @@
 on:
   push:
     tags:
-      - "*"
+      - "v*"
 permissions:
   contents: write
 name: Publish

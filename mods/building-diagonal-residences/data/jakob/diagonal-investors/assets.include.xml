@@ -109,48 +109,6 @@
         <Audio />
       </Values>
     </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011119</GUID>
-          <!-- <GUID>1500011117</GUID> -->
-          <!-- <GUID>1500011118</GUID> -->
-          <Name>@ Investors (1010347)</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
-            <Values>
-              <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1010347</UnlockNeeded>
-              </ConditionUnlocked>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500011110</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
-      </Values>
-    </Asset>
   </ModOp>
 
   <!-- # Skins -->

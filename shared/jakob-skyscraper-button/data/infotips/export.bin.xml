@@ -1,0 +1,239 @@
+<!--
+  https://github.com/jakobharder/anno1800-jakobs-mods
+-->
+<ModOps>
+  <!--
+    Remove unlock condition text from skyscraper floor upgrade button.
+  -->
+  <ModOp Type="remove"
+    Condition="//InfoTipData[Guid='502198']/InfoElement[InfoElement/Text/TextGUID='100382']"
+    Path="//InfoTipData[Guid='502198']/InfoElement[InfoElement/Text/TextGUID='100382']" />
+
+  <!-- # Replace floor upgrade infotip -->
+  <Group>
+    <!--
+      Skyscrapers get skyscraper upgrade icon in the title.
+      Default is the icon from the object menu - population increase.
+    -->
+    <ModOp Type="merge"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137489']/Icon">
+      <Icon>
+        <IconGUID>1500011283</IconGUID>
+        <Style />
+      </Icon>
+    </ModOp>
+    <!--
+      Add terraced residence upgrade title text with GUID conditions.
+    -->
+    <ModOp Type="addNextSibling"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137489']">
+      <InfoElement>
+        <ElementType>1</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>1</ChildCount>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <Icon>
+          <IconGUID>502386</IconGUID>
+          <Style />
+        </Icon>
+        <Text>
+          <TextGUID>1500011282</TextGUID> <!-- Upgrade Terraced House -->
+          <Style />
+        </Text>
+        <Value>
+          <Style />
+        </Value>
+        <BackgroundType />
+      </InfoElement>
+    </ModOp>
+    <!--
+      Add terraced residence upgrade fluff text with GUID conditions.
+    -->
+    <ModOp Type="addNextSibling"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137490']">
+      <InfoElement>
+        <ElementType>5</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>1</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <ChildCount>2</ChildCount>
+            <VisibilityElement>
+              <ElementType>
+                <ElementType>1</ElementType>
+              </ElementType>
+              <CompareOperator />
+              <ResultType>
+                <ResultType>1</ResultType>
+              </ResultType>
+              <Condition>[Selection Object FloorAddability Reasons Count]</Condition>
+            </VisibilityElement>
+            <VisibilityElement>
+              <ElementType>
+                <ElementType>1</ElementType>
+              </ElementType>
+              <CompareOperator />
+              <ResultType />
+              <ExpectedValueBool>False</ExpectedValueBool>
+              <Condition>[Selection Object FloorAddability Reasons AT(0) HasNoUpgrade]</Condition>
+            </VisibilityElement>
+            <OperatorType>
+              <OperatorType>1</OperatorType>
+            </OperatorType>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <Text>
+          <TextGUID>1500011289</TextGUID> <!-- Provide additional living space to increase your city's population. -->
+          <Style />
+        </Text>
+        <BackgroundType />
+      </InfoElement>
+    </ModOp>
+    <!--
+      Add GUID based conditions to all non-generic upgrade elements.
+    -->
+    <ModOp Type="addPrevSibling"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137490' or Text/TextGUID='137489' or Text/TextGUID='1500011282' or Text/TextGUID='1500011289']/VisibilityElement/OperatorType">
+      <!-- Industrial Cities -->
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1010344</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1010345</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010200</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010201</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010225</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <!-- New World Cities -->
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>101254</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>101255</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>5405</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator>
+          <CompareOperator>1</CompareOperator>
+        </CompareOperator>
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500011044</ExpectedValueInt>
+        <Condition>[Selection Object GUID]</Condition>
+      </VisibilityElement>
+    </ModOp>
+    <!--
+      Flip operator on non-skyscraper upgrade elements.
+    -->
+    <ModOp Type="replace"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='1500011282' or Text/TextGUID='1500011289']/VisibilityElement/VisibilityElement/CompareOperator">
+      <CompareOperator />
+    </ModOp>
+  </Group>
+</ModOps>

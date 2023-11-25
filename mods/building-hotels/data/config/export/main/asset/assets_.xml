@@ -899,7 +899,6 @@
             </Skins>
           </Object>
           <Locked>
-            <VisibleWhenLocked>1</VisibleWhenLocked>
             <DLCDependency>410084</DLCDependency>
           </Locked>
           <UpgradeList>
@@ -913,14 +912,18 @@
         <Values>
           <Standard>
             <GUID>1500010539</GUID>
-            <Name>Always unhide</Name>
+            <Name>Unhide @ 1500 Obreros (NW Tourism)</Name>
           </Standard>
           <Trigger>
             <TriggerCondition>
               <Template>ConditionPlayerCounter</Template>
               <Values>
                 <Condition />
-                <ConditionAlwaysTrue />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000006</Context>
+                  <CounterAmount>1500</CounterAmount>
+                </ConditionPlayerCounter>
               </Values>
             </TriggerCondition>
             <TriggerActions>

@@ -1,15 +1,16 @@
 {
   "out": "${annoMods}/[Addon] New World Cities (Jakob)",
-  "Version": "2.0.2",
+  "Version": "2.1",
   "ModID": "jakob_new_world_cities",
+  "ModioResourceId": 3229897,
   "DeprecateIds": [
     "jakob_nw_construction",
     "jakob_bugfix_celluloid",
     "jakob_power_nw"
   ],
   "ModDependencies": [
-    "https://github.com/anno-mods/shared-resources/releases/download/v8.1/shared-pools-and-definitions.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.2.5/shared-products-jakob.zip"
+    "https://github.com/anno-mods/shared-resources/releases/download/v8.2/shared-pools-and-definitions.zip",
+    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-products-jakob.zip"
   ],
   "LoadAfterIds": [
     "shared-pools-and-definitions",
@@ -18,7 +19,8 @@
     "shared-products-jakob"
   ],
   "bundle": [
-    "../../shared/jakob-diagonal-ornaments"
+    "../../shared/jakob-diagonal-ornaments",
+    "../../shared/jakob-skyscraper-button"
   ],
   "Category": {
     "Chinese": "插件",

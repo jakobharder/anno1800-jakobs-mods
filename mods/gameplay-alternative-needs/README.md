@@ -18,6 +18,11 @@ There is no double consumption.
 
 ## Changes
 
+### 2.1
+
+- Improve alternative needs infotips
+- Updated Korean translations (thanks to modpark817)
+
 ### 2.0
 
 - 2.0.2: Multiplayer fix (thanks to Serp)
@@ -29,4 +34,4 @@ There is no double consumption.
 
 ## Credits
 
-Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL and Water for the translations!
+Thanks to redzmey1, darknesswei, HeroOfOlympus, Tonton Yip, mfuegar, DrD_AVEL, Water, modpark817 for the translations!

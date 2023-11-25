@@ -30,10 +30,11 @@ You find the biogas production in the material menu, and in the gas electricity 
 
 ### 1.6
 
+- 1.6.3: Updated Korean translations (thanks to modpark817)
 - 1.6.2: Russian translation
 - 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
 
 ## Credits
 
-Thanks to darknesswei, Tonton Yip for, mfuegar, DrD_AVEL translations!
+Thanks to darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!

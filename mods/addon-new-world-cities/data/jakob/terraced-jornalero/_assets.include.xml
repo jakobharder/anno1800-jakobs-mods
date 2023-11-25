@@ -3,7 +3,7 @@
   <Group>
     <ModOp Type="addNextSibling" GUID="101255">
       <Asset>
-        <Template>JakobNWCResidence</Template>
+        <Template>ResidenceBuilding7_Colony</Template>
         <Values>
           <Standard>
             <GUID>1500011250</GUID>
@@ -12,6 +12,11 @@
             <InfoDescription>163059</InfoDescription>
           </Standard>
           <Building>
+            <BuildingType>Residence</BuildingType>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+            <AssociatedRegions>Colony01</AssociatedRegions>
+            <BuildingCategoryName>100004</BuildingCategoryName>
+            <AllowChangeVariation>1</AllowChangeVariation>
             <BuildingBlockPool>
               <!--
                 Multiple entries of the same variation for different rotations don't work.
@@ -142,7 +147,9 @@
           <Selection>
             <ParticipantMessageArcheType>SA_Resident_tier01</ParticipantMessageArcheType>
           </Selection>
-          <Locked />
+          <Locked>
+            <DefaultLockedState>1</DefaultLockedState>
+          </Locked>
           <Upgradable>
             <CurrentTier>1</CurrentTier>
             <NextGUID>1500011043</NextGUID>
@@ -333,6 +340,25 @@
   </Group>
 
   <!-- # Build Menus -->
+  <!--
+    Add as floor upgrade to Jornaleros. Possible without a crash since 18.1.
+    Downgrade will automatically prefer non-floor upgrades.
+  -->
+  <ModOp Type="merge" GUID="101254" Path="/Values">
+    <FloorStackOwner>
+      <UpgradeTargetGUID>1500011250</UpgradeTargetGUID>
+      <AddFloorCost>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>2</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010205</Ingredient>
+          <Amount>1</Amount>
+        </Item>
+      </AddFloorCost>
+    </FloorStackOwner>
+  </ModOp>
   <!-- By Progress Jornalero -->
   <ModOp Type="addNextSibling" GUID="25000193"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
