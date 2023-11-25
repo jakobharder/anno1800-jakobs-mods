@@ -8,7 +8,7 @@ You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)
 
 ## Content
 
-### 1 - Industrial Complex
+### 1 - Industrial Factory Complex
 
 *Unlocks at 250 artisans - or creative mode*
 
@@ -97,12 +97,17 @@ Smaller **power plants** and additional energy options.
 
 ## Notes and Known Issues
 
-- There is no cross progression from upgraded residences to their next population tier.
-You have to downgrade to normal residences first - just like the skyscrapers handle it. This is due to technical reasons.
 - (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
 - The arrows for skyscraper upgrade don't show sometimes. The buildings will upgrade if you click anyway.
 
 ## Changes
+
+### 3.2
+
+- Add cross-progression between terraced and vanilla residences
+- Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
+- Updated Korean translations (thanks to modpark817)
+- Fixed fuel pump station showing no warehouse connection warning in the New World
 
 ### 3.1
 
@@ -128,4 +133,4 @@ You have to downgrade to normal residences first - just like the skyscrapers han
 
 ## Credits
 
-Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!

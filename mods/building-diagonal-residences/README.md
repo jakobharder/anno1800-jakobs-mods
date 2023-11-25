@@ -43,6 +43,8 @@ Known issues:
 
 ### 1.9
 
+- 1.9.1: Move unlock after first engineer/investor has been built
+- 1.9.1: Updated Korean translations (thanks to modpark817)
 - Added narrow 3x1 tiles investor residence
 - Added `Vibrant City` skins to narrow engineer residence
 - Reduce lifestyle needs of narrow residences to 1/3 population
@@ -60,8 +62,6 @@ Known issues:
 - Added greenery wall with diagonal skin
 - Added corner variations skins to fences, park paths
 
-## Translations
+## Credits
 
-Available: Chinese, French, English, German, Polish, Spanish
-
-Thanks go to Aveneger432, HeroOfOlympus, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for the translations!
+Thanks go to Aveneger432, HeroOfOlympus, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!

@@ -85,6 +85,13 @@ Only with DLC `New World Rising`.
 
 ## Changes
 
+### 2.1
+
+- Floor upgrade button to upgrade from vanilla to terraced residences
+- Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
+- Fixed residences being unlocked too early
+- Updated Korean translations (thanks to modpark817)
+
 ### 2.0
 
 - 2.0.2: fixed missing obrero -> artista upgrade
@@ -99,4 +106,4 @@ Only with DLC `New World Rising`.
 
 Thanks to Lordy for the milking parlor model.
 
-Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL for the translations!
+Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL, modpark817 for the translations!

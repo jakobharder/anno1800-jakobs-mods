@@ -16,8 +16,9 @@ Contact me if you have any mod conflicts so that I can take care of them.
 
 ### 1.3
 
+- 1.3.1: Updated Korean translations (thanks to modpark817)
 - Swapped NW warehouse and residence to be consistent with OW
 
 ## Credits
 
-Thanks to darknesswei, DrD_AVEL for the translations!
+Thanks to darknesswei, DrD_AVEL, modpark817 for the translations!

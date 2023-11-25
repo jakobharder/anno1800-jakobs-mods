@@ -71,9 +71,11 @@ The roofs are colored in realtime for reduced memory usage and better performanc
 
 ## Changes
 
-- 1.0.1: fixed missing hotels, commercial street icons
+- 1.0.2: Updated Korean translations (thanks to modpark817)
+- 1.0.2: Fixed New World hotel unhide
+- 1.0.1: Fixed missing hotels, commercial street icons
 
 ## Credits
 
-Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL for translations!
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for translations!
 

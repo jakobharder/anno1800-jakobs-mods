@@ -26,6 +26,7 @@ Includes a fix to correct the fan direction of grain mills.
 
 ### 1.6
 
+- 1.6.3: Updated Korean translations (thanks to modpark817)
 - 1.6.2: Russian translation
 - 1.6.1: Fixed blurry icons
 - Immediately unlock in creative mode
