@@ -20,9 +20,10 @@ jobs:
       - name: build mods
         run: |
           npm run build-changed
-      - name: upload mods
-        uses: actions/upload-artifact@v2
-        with:
-          name: changed-mods
-          path: out/**
-          if-no-files-found: error
+          npm run package
+      # - name: upload mods
+      #   uses: actions/upload-artifact@v2
+      #   with:
+      #     name: changed-mods
+      #     path: out/*.zip
+      #     if-no-files-found: error
