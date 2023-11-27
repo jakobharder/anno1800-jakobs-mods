@@ -1,0 +1,62 @@
+<ModOps>
+  <!--
+    Unlock anker asset with either DLC12 or other mods that unlock this anker (i.e. NW Cities).
+    That way we can check whether electricity is available in the NW.
+  -->
+  <ModOp Type="addNextSibling" GUID="100780">
+    <Asset>
+      <Template>UnlockableAsset</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010552</GUID>
+          <Name>Electricity Unlock Anker</Name>
+        </Standard>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010553</GUID>
+          <Name>@ DLC 12</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsDLCActive</Template>
+            <Values>
+              <Condition />
+              <ConditionIsDLCActive>
+                <DLCAssetList>
+                  <Item>
+                    <DLCAsset>24963</DLCAsset>
+                  </Item>
+                </DLCAssetList>
+              </ConditionIsDLCActive>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010552</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

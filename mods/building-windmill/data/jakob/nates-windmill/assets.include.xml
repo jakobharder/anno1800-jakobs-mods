@@ -149,9 +149,7 @@
   </ModOp>
 
 
-  <!-- # Buff Target Pools -->
-  <!-- ================= -->
-
+  <!-- # Effect Targets -->
   <!-- add to all maintenance buildings pool for e.g. Captain of Industry influence buff -->
   <!-- (don't use old 190611) -->
   <ModOp Type="add" GUID='368' Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
@@ -164,31 +162,34 @@
   </ModOp>
   <!-- don't add to powerplants to prevent range increase -->
 
-
-  <!-- # Build Menus -->
-  <!-- ============= -->
-  <!-- NW variant is only available via small power plants -->
-
-  <!-- Old World Menu Engineers, insert after oil power plant -->
-  <ModOp Type="addNextSibling" GUID="25000192"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506']">
-    <Item>
-      <Building>1500010001</Building>
-    </Item>
-  </ModOp>
-  <!-- Old World Menu Sorting City, insert after oil power plant -->
-  <ModOp Type="addNextSibling" GUID="500092"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506' or Building='117559'][last()]">
-    <Item>
-      <Building>1500010001</Building>
-    </Item>
-  </ModOp>
-
-
-  <!-- # Unlock Conditions -->
-  <!-- OW -->
+  <!-- # Construction Menu -->
   <Group>
-    <ModOp Type="addNextSibling" GUID="119">
+    <!-- OW after oil and gas power plants -->
+    <ModOp Type="addNextSibling" GUID="25000192,500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506' or Building='117559'][last()]">
+      <Item>
+        <Building>1500010001</Building>
+      </Item>
+    </ModOp>
+    <!-- NW after oil power plant -->
+    <ModOp Type="addNextSibling" GUID="500137,25000194"
+      Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500010458']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or Building='1500010457'][last()]">
+      <Item>
+        <Building>1500010458</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Unlocks -->
+  <Group>
+    <!--
+      Unlock anker asset with either DLC12 or other mods that unlock this anker (i.e. NW Cities).
+      That way we can check whether electricity is available in the NW.
+      -->
+    <Include File="/data/config/export/main/asset/electricity-anker.include.xml" />
+
+    <ModOp Type="addNextSibling" GUID="100780">
       <Asset>
         <Template>FeatureUnlock</Template>
         <Values>
@@ -203,7 +204,7 @@
                 <Condition />
                 <ConditionPlayerCounter>
                   <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000003</Context> <!-- engineers -->
+                  <Context>15000003</Context>
                   <CounterAmount>1</CounterAmount>
                 </ConditionPlayerCounter>
               </Values>
@@ -217,7 +218,7 @@
                     <ActionUnlockAsset>
                       <UnhideAssets>
                         <Item>
-                          <Asset>1500010001</Asset> <!-- windmill -->
+                          <Asset>1500010001</Asset>
                         </Item>
                       </UnhideAssets>
                     </ActionUnlockAsset>
@@ -245,7 +246,7 @@
                 <Condition />
                 <ConditionPlayerCounter>
                   <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000003</Context> <!-- engineers -->
+                  <Context>15000003</Context>
                   <CounterAmount>500</CounterAmount>
                 </ConditionPlayerCounter>
               </Values>
@@ -273,17 +274,13 @@
           </TriggerSetup>
         </Values>
       </Asset>
-    </ModOp>
-  </Group>
-  <!-- NW -->
-  <Group>
-    <ModOp Type="addNextSibling" GUID="119">
       <Asset>
         <Template>FeatureUnlock</Template>
         <Values>
           <Standard>
-            <GUID>1500010460</GUID>
-            <Name>Unhide @ 600 Obrero</Name>
+            <GUID>1500010556</GUID>
+            <!-- <GUID>1500010460</GUID> -->
+            <Name>Unhide @ 750 Obrero</Name>
           </Standard>
           <Trigger>
             <TriggerCondition>
@@ -292,8 +289,8 @@
                 <Condition />
                 <ConditionPlayerCounter>
                   <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000006</Context> <!-- obrero -->
-                  <CounterAmount>600</CounterAmount>
+                  <Context>15000006</Context>
+                  <CounterAmount>750</CounterAmount>
                 </ConditionPlayerCounter>
               </Values>
             </TriggerCondition>
@@ -306,7 +303,7 @@
                     <ActionUnlockAsset>
                       <UnhideAssets>
                         <Item>
-                          <Asset>1500010458</Asset> <!-- windmill -->
+                          <Asset>1500010458</Asset>
                         </Item>
                       </UnhideAssets>
                     </ActionUnlockAsset>
@@ -314,6 +311,26 @@
                 </TriggerAction>
               </Item>
             </TriggerActions>
+            <SubTriggers>
+              <Item>
+                <SubTrigger>
+                  <Template>AutoCreateTrigger</Template>
+                  <Values>
+                    <Trigger>
+                      <TriggerCondition>
+                        <Template>ConditionUnlocked</Template>
+                        <Values>
+                          <Condition />
+                          <ConditionUnlocked>
+                            <UnlockNeeded>1500010552</UnlockNeeded>
+                          </ConditionUnlocked>
+                        </Values>
+                      </TriggerCondition>
+                    </Trigger>
+                  </Values>
+                </SubTrigger>
+              </Item>
+            </SubTriggers>
           </Trigger>
           <TriggerSetup>
             <UsedBySecondParties>0</UsedBySecondParties>
@@ -324,9 +341,10 @@
         <Template>FeatureUnlock</Template>
         <Values>
           <Standard>
-            <GUID>1500010472</GUID>
+            <GUID>1500010550</GUID>
+            <!-- <GUID>1500010472</GUID> -->
             <!-- <GUID>1500010461</GUID> -->
-            <Name>Unlock @ 2000 Obrero</Name>
+            <Name>@ 1500 Obrero</Name>
           </Standard>
           <Trigger>
             <TriggerCondition>
@@ -335,8 +353,8 @@
                 <Condition />
                 <ConditionPlayerCounter>
                   <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000006</Context> <!-- obrero -->
-                  <CounterAmount>2000</CounterAmount>
+                  <Context>15000006</Context>
+                  <CounterAmount>1500</CounterAmount>
                 </ConditionPlayerCounter>
               </Values>
             </TriggerCondition>
@@ -349,7 +367,7 @@
                     <ActionUnlockAsset>
                       <UnlockAssets>
                         <Item>
-                          <Asset>1500010458</Asset> <!-- windmill -->
+                          <Asset>1500010458</Asset>
                         </Item>
                       </UnlockAssets>
                     </ActionUnlockAsset>
@@ -357,6 +375,26 @@
                 </TriggerAction>
               </Item>
             </TriggerActions>
+            <SubTriggers>
+              <Item>
+                <SubTrigger>
+                  <Template>AutoCreateTrigger</Template>
+                  <Values>
+                    <Trigger>
+                      <TriggerCondition>
+                        <Template>ConditionUnlocked</Template>
+                        <Values>
+                          <Condition />
+                          <ConditionUnlocked>
+                            <UnlockNeeded>1500010552</UnlockNeeded>
+                          </ConditionUnlocked>
+                        </Values>
+                      </TriggerCondition>
+                    </Trigger>
+                  </Values>
+                </SubTrigger>
+              </Item>
+            </SubTriggers>
           </Trigger>
           <TriggerSetup>
             <UsedBySecondParties>0</UsedBySecondParties>
@@ -367,8 +405,9 @@
         <Template>FeatureUnlock</Template>
         <Values>
           <Standard>
-            <GUID>1500010473</GUID>
-            <Name>Unlock @ 900 Artista</Name>
+            <GUID>1500010551</GUID>
+            <!-- <GUID>1500010473</GUID> -->
+            <Name>@ 300 Artista</Name>
           </Standard>
           <Trigger>
             <TriggerCondition>
@@ -378,7 +417,7 @@
                 <ConditionPlayerCounter>
                   <PlayerCounter>PopulationByLevel</PlayerCounter>
                   <Context>5403</Context>
-                  <CounterAmount>900</CounterAmount>
+                  <CounterAmount>300</CounterAmount>
                 </ConditionPlayerCounter>
               </Values>
             </TriggerCondition>
@@ -391,7 +430,7 @@
                     <ActionUnlockAsset>
                       <UnlockAssets>
                         <Item>
-                          <Asset>1500010458</Asset> <!-- windmill -->
+                          <Asset>1500010458</Asset>
                         </Item>
                       </UnlockAssets>
                     </ActionUnlockAsset>
@@ -399,17 +438,32 @@
                 </TriggerAction>
               </Item>
             </TriggerActions>
+            <SubTriggers>
+              <Item>
+                <SubTrigger>
+                  <Template>AutoCreateTrigger</Template>
+                  <Values>
+                    <Trigger>
+                      <TriggerCondition>
+                        <Template>ConditionUnlocked</Template>
+                        <Values>
+                          <Condition />
+                          <ConditionUnlocked>
+                            <UnlockNeeded>1500010552</UnlockNeeded>
+                          </ConditionUnlocked>
+                        </Values>
+                      </TriggerCondition>
+                    </Trigger>
+                  </Values>
+                </SubTrigger>
+              </Item>
+            </SubTriggers>
           </Trigger>
           <TriggerSetup>
             <UsedBySecondParties>0</UsedBySecondParties>
           </TriggerSetup>
         </Values>
       </Asset>
-    </ModOp>
-  </Group>
-  <!-- Creative Mode -->
-  <Group>
-    <ModOp Type="addNextSibling" GUID="119">
       <Asset>
         <Template>FeatureUnlock</Template>
         <Values>
