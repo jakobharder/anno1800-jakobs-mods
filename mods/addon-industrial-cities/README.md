@@ -112,6 +112,8 @@ Smaller **power plants** and additional energy options.
 
 ### 3.2
 
+- 3.2.1: Fixed docklands depot tool tip
+- 3.2.1: Fixed NW docklands gate quay color
 - Add cross-progression between terraced and vanilla residences
 - Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
 - Updated Korean translations (thanks to modpark817)
