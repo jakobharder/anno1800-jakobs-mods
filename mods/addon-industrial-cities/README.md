@@ -10,6 +10,8 @@ You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)
 
 ### 1 - Industrial Factory Complex
 
+![](./readme-industrial-complex.jpg)
+
 *Unlocks at 250 artisans - or creative mode*
 
 **Productions** visually merge together into big complexes.
@@ -30,6 +32,8 @@ Other buildings:
 *Note: the module menu has no scroll option. It may not show some modules if you already have too many module mods.*
 
 ### 2 - Terraced Houses
+
+![](./readme-terraced-houses-1.jpg)
 
 *Unlocks at 800 artisans - or creative mode*. Only with DLC `The High Life`.
 
@@ -63,6 +67,8 @@ They merge into blocks like engineers and investors.
 
 ### 3 - Terraced Houses II
 
+![](./readme-terraced-houses-2.jpg)
+
 *Unlocks at 800 engineers - or creative mode*. Only with DLC `The High Life`.
 
 **Residences** with increased population capacity.
@@ -87,13 +93,15 @@ Smaller **power plants** and additional energy options.
 
 ### Additional Cosmetics
 
+![](./readme-factory-variants.jpg)
+
 *Unlocks immediately*
 
 **Cosmetic** shift+V variations for production buildings.
 
 - Fur Dealer: 3 new variations
 - Bakery: 2 new variations (+ skin for stone pavement)
-- Cannery: 2 new variationsS
+- Cannery: 2 new variations
 
 ## Notes and Known Issues
 

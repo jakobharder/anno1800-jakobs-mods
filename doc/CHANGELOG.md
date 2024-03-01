@@ -2,6 +2,11 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+- Nate's Windmill, 1.7:
+  - Available in the New World if you have DLC `New World Rising` or mod `New World Cities`
+
 ## 6.4 - Quality Update
 
 - Industrial Cities, 3.2:
