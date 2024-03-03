@@ -2,10 +2,16 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## [Unreleased]
+## 6.5 - Quality Update
 
 - Nate's Windmill, 1.7:
   - Available in the New World if you have DLC `New World Rising` or mod `New World Cities`
+- New World Cities, 2.1.1:
+  - Compatibility change to support other NW electricity mods
+- Pescatarians, 2.1.11:
+  - Sardines, suits and pickles unlock with first level 2 Pescatarian residence
+- Docklands, 3.2.1:
+  - Fixed unlock, tool tip and quay color in the New World
 
 ## 6.4 - Quality Update
 
