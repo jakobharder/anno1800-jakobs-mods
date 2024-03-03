@@ -51,6 +51,7 @@ All products come with new production buildings.
 
 ### 2.1
 
+- 2.1.11: Fixed pickles unlocking too early
 - 2.1.10: Updated Korean translations (thanks to modpark817)
 - 2.1.9: Fixed vegetable farm sometimes disappearing
 - 2.1.7: Freshly upgraded artisan house has now same population as full worker houses
