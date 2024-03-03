@@ -1928,13 +1928,13 @@
                         <Asset>1500010100</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010143</Asset> 
+                        <Asset>1500010143</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010144</Asset> 
+                        <Asset>1500010144</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500010145</Asset> 
+                        <Asset>1500010145</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -1981,6 +1981,63 @@
                         <Asset>1500010100</Asset>
                       </Item>
                     </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- unlock goods earlier -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500012004</GUID>
+          <Name>Unlock additional chains</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010144</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010164</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010165</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010835</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010114</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010830</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010800</Asset>
+                      </Item>
+                    </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>

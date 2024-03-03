@@ -10,9 +10,6 @@
     <Item>
       <Building>1500010457</Building>
     </Item>
-    <Item>
-      <Building>1500010458</Building>
-    </Item>
   </ModOp>
   <!-- insert all after boxing area in obrero menu, fallback append -->
   <ModOp Type="addNextSibling" GUID="25000194"
@@ -20,6 +17,16 @@
     <Item>
       <Building>1500010457</Building>
     </Item>
+  </ModOp>
+
+  <!-- Windmill after oil and gas power plants -->
+  <!--
+    This code moved to the Windmill mod, but is left here as well for backwards compatibility.
+    Will be removed at some point in the future.
+  -->
+  <ModOp Type="addNextSibling" GUID="500137,25000194"
+    Condition="!/Values/ConstructionCategory/BuildingList[Item/Building='1500010458']"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500916' or Building='1500010457'][last()]">
     <Item>
       <Building>1500010458</Building>
     </Item>

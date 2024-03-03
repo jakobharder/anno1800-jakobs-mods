@@ -50,9 +50,7 @@
             </Item>
           </Variations>
         </Object>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
         <Warehouse>
           <WarehouseStorage>
             <StorageMax>75</StorageMax>
@@ -104,6 +102,12 @@
             </Item>
           </VariationIcons>
         </Building>
+        <Blocking>
+          <GroundDecalAsset>132528</GroundDecalAsset>
+          <GroundDecalInvisible>132529</GroundDecalInvisible>
+          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+          <HarbourAreaSize>1</HarbourAreaSize>
+        </Blocking>
         <Object>
           <Variations>
             <Item>
@@ -111,9 +115,7 @@
             </Item>
           </Variations>
         </Object>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
         <Warehouse>
           <WarehouseStorage>
             <StorageMax>75</StorageMax>
@@ -121,8 +123,104 @@
         </Warehouse>
       </Values>
     </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500012000</GUID>
+          <Name>Fix unlock</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionAlwaysTrue</Template>
+            <Values>
+              <Condition />
+              <ConditionAlwaysTrue />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionLockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionLockAsset>
+                    <LockAssets>
+                      <Item>
+                        <Asset>1500010079</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010080</Asset>
+                      </Item>
+                    </LockAssets>
+                  </ActionLockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+            <Item>
+              <TriggerAction>
+                <Template>ActionRegisterTrigger</Template>
+                <Values>
+                  <Action />
+                  <ActionRegisterTrigger>
+                    <TriggerAsset>1500012001</TriggerAsset>
+                  </ActionRegisterTrigger>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500012001</GUID>
+          <Name>@ Depot Module</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionUnlocked</Template>
+            <Values>
+              <Condition />
+              <ConditionUnlocked>
+                <UnlockNeeded>601463</UnlockNeeded>
+              </ConditionUnlocked>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010079</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010080</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+          <AutoRegisterTrigger>0</AutoRegisterTrigger>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="601470" Path="/Values/ModuleOwner/ConstructionOptions">
+  <ModOp Type="addPrevSibling" GUID="601470" Path="/Values/ModuleOwner/ConstructionOptions/Item[ModuleGUID='601463']">
     <Item>
       <ModuleGUID>1500010079</ModuleGUID>
     </Item>
@@ -133,8 +231,8 @@
       <Building>1500010079</Building>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="7291"
-    Path="/Values/ConstructionCategory/BuildingList">
+  <ModOp Type="addPrevSibling" GUID="7291"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='601463']">
     <Item>
       <Building>1500010079</Building>
       <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
@@ -142,8 +240,8 @@
   </ModOp>
 
   <!-- Lordy's NW Docklands -->
-  <Group Condition="//Values[Standard/GUID='1404422070']">
-    <ModOp Type="add" GUID="1404422070" Path="/Values/ModuleOwner/ConstructionOptions">
+  <Group Condition="#NewWorldDocklands">
+    <ModOp Type="addPrevSibling" GUID="1404422070" Path="/Values/ModuleOwner/ConstructionOptions/Item[ModuleGUID='1404422063']">
       <Item>
         <ModuleGUID>1500010080</ModuleGUID>
       </Item>
@@ -154,5 +252,13 @@
         <Building>1500010080</Building>
       </Item>
     </ModOp>
+    <!-- done in NW Docklands mod already -->
+    <!-- <ModOp Type="add" GUID="7291"
+      Path="/Values/ConstructionCategory/BuildingList">
+      <Item>
+        <Building>1500300071</Building>
+        <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+      </Item>
+    </ModOp> -->
   </Group>
 </ModOps>

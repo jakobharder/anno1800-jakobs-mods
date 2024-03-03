@@ -150,7 +150,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010914</GUID>
+          <GUID>1500012002</GUID>
+          <!-- <GUID>1500010914</GUID> -->
           <Name>@ 900 Artisans</Name>
         </Standard>
         <Locked />
@@ -177,6 +178,12 @@
                       <Item>
                         <Asset>1500010835</Asset>
                       </Item>
+                      <Item>
+                        <Asset>1500010114</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010830</Asset>
+                      </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -193,7 +200,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011170</GUID>
+          <GUID>1500012003</GUID>
+          <!-- <GUID>1500011170</GUID> -->
           <Name>Creative Mode</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
@@ -215,6 +223,12 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010835</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010114</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010830</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -265,9 +279,7 @@
             </Item>
           </Tier1>
         </ProductionChain>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
       </Values>
     </Asset>
   </ModOp>

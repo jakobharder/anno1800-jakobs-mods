@@ -294,6 +294,55 @@
   </ModOp>
 
   <!-- New World Cities II - Materials and Electricity -->
+  <Group>
+    <!--
+      Unlock anker asset with either DLC12 or when this mod is active.
+      The anker asset is also added in other mods.
+      That way you can use it as a condition to check whether electricity is available or not.
+     -->
+    <Include File="./electricity-anker.include.xml" />
+
+    <ModOp Type="addNextSibling" GUID="100780">
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010554</GUID>
+            <Name>@ always</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionAlwaysTrue</Template>
+              <Values>
+                <Condition />
+                <ConditionAlwaysTrue />
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500010552</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
 
   <!-- New World Cities III - Terraced Artista Houses -->
 </ModOps>

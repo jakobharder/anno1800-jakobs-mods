@@ -15,6 +15,8 @@ New World Docklands must be loaded first, so best not change the folder names of
 
 ### 1.2
 
+- 1.2.9: Fixed depot tool tip
+- 1.2.9: Fixed NW quay color
 - 1.2.7: Russian translation
 - 1.2.6: Fixed blurry icons
 - 1.2.5: Added to Docklands construction menu
