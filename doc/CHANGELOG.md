@@ -12,8 +12,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Compatibility change to support other NW electricity mods
 - Industrial Cities, 3.2.1:
   - Added Tea to all drinks production
-- Docklands, 3.2.1:
-  - Fixed unlock, tool tip and quay color in the New World
+  - Fixed Docklands Gate unlock, tool tip and quay color in the New World
 
 ## 6.4 - Quality Update
 

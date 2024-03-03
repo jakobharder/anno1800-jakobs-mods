@@ -87,6 +87,8 @@ Only with DLC `New World Rising`.
 
 ### 2.1
 
+- 2.1.2: Added cheese diary to various buffs (e.g. food production)
+- 2.1.1: Compatibility change to support other NW electricity mods
 - Floor upgrade button to upgrade from vanilla to terraced residences
 - Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
 - Fixed residences being unlocked too early
