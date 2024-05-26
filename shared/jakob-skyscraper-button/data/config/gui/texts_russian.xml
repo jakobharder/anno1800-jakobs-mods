@@ -1,15 +1,26 @@
 <ModOps>
+  <!-- # Vanilla Changes -->
+  <Group>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
+      <Text>Улучшить небоскреб/Добавить этаж</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
+      <Text>Как только потребности ваших жителей будут удовлетворены и жилое здание будет полностью заселено, вы сможете перейти на следующий уровень здания.</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='23914']/Text">
+      <Text>Поднимите здание на новый уровень с помощью дополнительных этажей.</Text>
+    </ModOp>
+  </Group>
+
   <!-- # New Texts -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011282</GUID>
-      <Text>Upgrade Terraced House</Text>
+      <Text>Улучшить дом с верандой</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011289</GUID>
-      <Text>Provide additional living space to increase your city's population.</Text>
+      <Text>Обеспечьте дополнительную жилую площадь, чтобы увеличить население города.</Text>
     </Text>
   </ModOp>
 </ModOps>

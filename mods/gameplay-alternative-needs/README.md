@@ -20,6 +20,7 @@ There is no double consumption.
 
 ### 2.1
 
+- 2.1.1: Improved Russian translation
 - Improve alternative needs infotips
 - Updated Korean translations (thanks to modpark817)
 

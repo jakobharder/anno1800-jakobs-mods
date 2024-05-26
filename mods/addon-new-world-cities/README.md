@@ -87,6 +87,7 @@ Only with DLC `New World Rising`.
 
 ### 2.1
 
+- 2.1.2: Improved Russian translation
 - 2.1.2: Added cheese diary to various buffs (e.g. food production)
 - 2.1.1: Compatibility change to support other NW electricity mods
 - Floor upgrade button to upgrade from vanilla to terraced residences

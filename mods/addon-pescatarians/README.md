@@ -51,6 +51,7 @@ All products come with new production buildings.
 
 ### 2.1
 
+- 2.1.12: Improved Russian translation
 - 2.1.11: Fixed pickles unlocking too early
 - 2.1.11: Unlock sardines, suits and pickles with the level two Pescatarians
 - 2.1.10: Updated Korean translations (thanks to modpark817)
