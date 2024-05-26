@@ -85,11 +85,15 @@ Only with DLC `New World Rising`.
 
 ## Changes
 
+### 2.2
+
+- Added Harborlife support for terraced houses
+- Improved Spanish translation (thanks to mfuegar)
+- Improved Russian translation (thanks to DrD_AVEL)
+- Added cheese diary to various buffs (e.g. food production)
+
 ### 2.1
 
-- 2.1.2: Improved Spanish translation (thanks to mfuegar)
-- 2.1.2: Improved Russian translation (thanks to DrD_AVEL)
-- 2.1.2: Added cheese diary to various buffs (e.g. food production)
 - 2.1.1: Compatibility change to support other NW electricity mods
 - Floor upgrade button to upgrade from vanilla to terraced residences
 - Unlock floor upgrade button in construction menu (only with DLC `The High Life`)

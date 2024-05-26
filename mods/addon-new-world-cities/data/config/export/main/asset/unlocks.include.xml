@@ -5,7 +5,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011252</GUID>
+          <GUID>1500011387</GUID>
+          <!-- <GUID>1500011252</GUID> -->
           <Name>Unhide @ 500 Obreros</Name>
         </Standard>
         <Locked />
@@ -30,10 +31,16 @@
                   <ActionUnlockAsset>
                     <UnhideAssets>
                       <Item>
+                        <Asset>1500011250</Asset>
+                      </Item>
+                      <Item>
                         <Asset>1500011043</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500011250</Asset>
+                        <Asset>1500011380</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011381</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
@@ -51,7 +58,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011253</GUID>
+          <GUID>1500011388</GUID>
+          <!-- <GUID>1500011253</GUID> -->
           <Name>@ 750 Obreros</Name>
         </Standard>
         <Trigger>
@@ -75,10 +83,16 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
+                        <Asset>1500011250</Asset>
+                      </Item>
+                      <Item>
                         <Asset>1500011043</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500011250</Asset>
+                        <Asset>1500011380</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011381</Asset>
                       </Item>
                       <Item>
                         <Asset>1500011230</Asset>
@@ -114,7 +128,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011254</GUID>
+          <GUID>1500011389</GUID>
+          <!-- <GUID>1500011254</GUID> -->
           <Name>Creative Mode</Name>
         </Standard>
         <Trigger>
@@ -134,10 +149,16 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
+                        <Asset>1500011250</Asset>
+                      </Item>
+                      <Item>
                         <Asset>1500011043</Asset>
                       </Item>
                       <Item>
-                        <Asset>1500011250</Asset>
+                        <Asset>1500011380</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011381</Asset>
                       </Item>
                       <Item>
                         <Asset>1500011230</Asset>
@@ -293,7 +314,7 @@
     </Asset>
   </ModOp>
 
-  <!-- New World Cities II - Materials and Electricity -->
+  <!-- # New World Cities II - Materials and Electricity -->
   <Group>
     <!--
       Unlock anker asset with either DLC12 or when this mod is active.
@@ -344,5 +365,211 @@
     </ModOp>
   </Group>
 
-  <!-- New World Cities III - Terraced Artista Houses -->
+  <!-- # New World Cities III - Terraced Artista Houses -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="119">
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011384</GUID>
+            <!-- <GUID>1500011007</GUID> -->
+            <!-- <GUID>1500011004</GUID> -->
+            <Name>Unhide @ Artista Unlock</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000006</Context>
+                  <CounterAmount>1000</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>5405</Asset> <!-- unlock Artistas due to a conflict of 1.3 and Harborlife -->
+                        </Item>
+                      </UnlockAssets>
+                      <UnhideAssets>
+                        <Item>
+                          <Asset>1500011044</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011090</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011382</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011383</Asset>
+                        </Item>
+                      </UnhideAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011008</GUID>
+            <Name>Lock to fix saves</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionAlwaysTrue</Template>
+              <Values>
+                <Condition />
+                <ConditionAlwaysTrue />
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionLockAsset>
+                      <LockAssets>
+                        <Item>
+                          <Asset>1500011044</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011090</Asset>
+                        </Item>
+                      </LockAssets>
+                    </ActionLockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011385</GUID>
+            <!-- <GUID>1500011014</GUID> -->
+            <!-- <GUID>1500011009</GUID> -->
+            <!-- <GUID>1500011008</GUID> -->
+            <Name>@ 300 Artista</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>5403</Context>
+                  <CounterAmount>300</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500011044</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011090</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011382</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011383</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011386</GUID>
+            <!-- <GUID>1500011013</GUID> -->
+            <Name>Creative Mode</Name>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionIsCreativeMode</Template>
+              <Values>
+                <Condition />
+                <ConditionIsCreativeMode />
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500011044</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011090</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011382</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011383</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
 </ModOps>
