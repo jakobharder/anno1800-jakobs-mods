@@ -112,7 +112,8 @@ Smaller **power plants** and additional energy options.
 
 ### 3.2
 
-- 3.2.2: Improved Russian translation
+- 3.2.2: Improved Spanish translation (thanks to mfuegar)
+- 3.2.2: Improved Russian translation (thanks to DrD_AVEL)
 - 3.2.1: Fixed docklands depot tool tip
 - 3.2.1: Fixed NW docklands gate quay color
 - Add cross-progression between terraced and vanilla residences
