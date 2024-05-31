@@ -2,6 +2,13 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## 6.6 - Quality Update
+
+- New World Cities, 2.2:
+  - Residences support the mod `Harbor Life`
+  - Added Cheese Dairy to various buffs
+- Updated Chinese, Spanish and Russian translations (thanks to hanthe2nd, mfuegar and DrD_AVEL)
+
 ## 6.5 - Quality Update
 
 - Nate's Windmill, 1.7:

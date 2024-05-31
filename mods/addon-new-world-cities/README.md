@@ -31,7 +31,7 @@ They merge into blocks like Engineers and Investors.
 - Minas **Cheese**
   - Dairy consuming milk
   - Milking parlour
-- Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
+- Citrus **Jam** (only with mod `NW Tourism`)
   - Jam kitchen consuming citrus
 
 **Ornaments** with fitting ground for new terraced houses.
@@ -109,7 +109,7 @@ Only with DLC `New World Rising`.
 - Added terraced jornaleros and obreros
 - Added NW bread production: flour mill, bakery
 - Added NW cheese production: milking parlor, cheese dairy
-- Added NW jam kitchen (only with DLC `Tourist Season`)
+- Added NW jam kitchen (only with mod `New World Tourism`)
 
 ## Credits
 
