@@ -2,6 +2,15 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## 6.6 - Quality Update
+
+- New World Cities, 2.2:
+  - Residences support the mod `Harbor Life`
+  - Added Cheese Dairy to various buffs
+- Industrial Cities, 3.2.2:
+  - Moved Tea to Artisan construction menu
+- Updated Chinese, Spanish and Russian translations (thanks to hanthe2nd, mfuegar and DrD_AVEL)
+
 ## 6.5 - Quality Update
 
 - Nate's Windmill, 1.7:
@@ -12,8 +21,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Compatibility change to support other NW electricity mods
 - Industrial Cities, 3.2.1:
   - Added Tea to all drinks production
-- Docklands, 3.2.1:
-  - Fixed unlock, tool tip and quay color in the New World
+  - Fixed Docklands Gate unlock, tool tip and quay color in the New World
 
 ## 6.4 - Quality Update
 

@@ -11,6 +11,8 @@ Terraced houses with more population, new needs and material productions for the
 
 ### 1 - Terraced Houses
 
+![](./readme-terraced.jpg)
+
 *Unlocks at 750 obreros - or creative mode*
 
 **Residences** with increased population capacity.
@@ -31,7 +33,7 @@ They merge into blocks like Engineers and Investors.
 - Minas **Cheese**
   - Dairy consuming milk
   - Milking parlour
-- Citrus **Jam** (only with DLCs `Tourist Season`, `The High Life` or `New World Rising`)
+- Citrus **Jam** (only with mod `NW Tourism`)
   - Jam kitchen consuming citrus
 
 **Ornaments** with fitting ground for new terraced houses.
@@ -42,6 +44,8 @@ They merge into blocks like Engineers and Investors.
 - Skins with diagonal and other corner variations for fences and park paths
 
 ### 2 - Materials & Electricity
+
+![](./readme-materials.jpg)
 
 *Unlocks at 1500 obreros or 300 artistas - or creative mode*
 
@@ -69,6 +73,8 @@ They merge into blocks like Engineers and Investors.
 
 ### 3 - Terraced Artistas
 
+![](./readme-artistas.jpg)
+
 *Unlocks at 300 artistas - or creative mode*.
 Only with DLC `New World Rising`.
 
@@ -85,8 +91,17 @@ Only with DLC `New World Rising`.
 
 ## Changes
 
+### 2.2
+
+- Added Harborlife support for terraced houses
+- Improved Chinese translation (thanks to hanthe2nd)
+- Improved Spanish translation (thanks to mfuegar)
+- Improved Russian translation (thanks to DrD_AVEL)
+- Added cheese diary to various buffs (e.g. food production)
+
 ### 2.1
 
+- 2.1.1: Compatibility change to support other NW electricity mods
 - Floor upgrade button to upgrade from vanilla to terraced residences
 - Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
 - Fixed residences being unlocked too early
@@ -100,7 +115,7 @@ Only with DLC `New World Rising`.
 - Added terraced jornaleros and obreros
 - Added NW bread production: flour mill, bakery
 - Added NW cheese production: milking parlor, cheese dairy
-- Added NW jam kitchen (only with DLC `Tourist Season`)
+- Added NW jam kitchen (only with mod `New World Tourism`)
 
 ## Credits
 

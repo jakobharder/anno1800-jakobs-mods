@@ -1,0 +1,8 @@
+variant:
+  source: ../terraced-jornalero/jornalero_7.cfg
+  modifications:
+    - xpath: //Config/Models/Config/Materials/Config
+      ADJUST_TO_TERRAIN_HEIGHT: 0
+    - xpath: //Config/PropContainers/Config/Props/Config
+      Flags: 0
+    - xpath-remove: //Config/Decals

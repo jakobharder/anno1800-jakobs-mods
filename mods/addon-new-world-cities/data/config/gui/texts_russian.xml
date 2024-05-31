@@ -3,7 +3,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010703</GUID>
-      <Text>[AssetData(500005) Text]</Text> <!-- menu: Steel Beams -->
+      <Text>Стальные балки</Text> <!-- menu: Steel Beams -->
     </Text>
     <Text>
       <GUID>1500010700</GUID> <!-- cannot use AssetData text -->
@@ -26,7 +26,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010704</GUID>
-      <Text>[AssetData(500010) Text]</Text> <!-- menu: Windows -->
+      <Text>Окна</Text> <!-- menu: Windows -->
     </Text>
     <Text>
       <GUID>1500010701</GUID> <!-- cannot use AssetData text -->
@@ -45,7 +45,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500010705</GUID>
-      <Text>[AssetData(500016) Text]</Text> <!-- menu: Reinforced Concrete -->
+      <Text>Железобетон</Text> <!-- menu: Reinforced Concrete -->
     </Text>
     <Text>
       <GUID>1500010702</GUID> <!-- cannot use AssetData text -->
@@ -57,18 +57,18 @@
     </Text>
     <Text>
       <GUID>1500010712</GUID>
-      <Text>Buildable on &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; [AssetData(1010507) Text].</Text> <!-- note: buildable on gold deposits -->
+      <Text>Строится &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; Месторождение золота.</Text> <!-- note: buildable on gold deposits -->
     </Text>
     <Text>
       <GUID>1500010713</GUID>
-      <Text>Buildable on &lt;img height='24' width='24' src="[AssetData(101061) Icon]"/&gt; [AssetData(101061) Text].</Text> <!-- note: buildable on clay deposits -->
+      <Text>Строится &lt;img height='24' width='24' src="[AssetData(101061) Icon]"/&gt; Месторождение глины.</Text> <!-- note: buildable on clay deposits -->
     </Text>
   </ModOp>
   <!-- # Ornaments -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011006</GUID>
-      <Text>[AssetData(454) Text]</Text> <!-- Enclosed Greenery -->
+      <Text>Зеленые насаждения</Text> <!-- Enclosed Greenery -->
     </Text>
     <Text>
       <GUID>1500011049</GUID>
@@ -100,15 +100,15 @@
     </Text>
     <Text>
       <GUID>1500011056</GUID>
-      <Text>[AssetData(114776) Text]</Text> <!-- Stone Flower Pot -->
+      <Text>Каменная ваза для цветов</Text> <!-- Stone Flower Pot -->
     </Text>
     <Text>
       <GUID>1500011057</GUID>
-      <Text>[AssetData(25173) Text]</Text> <!-- Hacienda Flower Bed -->
+      <Text>Асьенда – клумба</Text> <!-- Hacienda Flower Bed -->
     </Text>
     <Text>
       <GUID>1500011058</GUID>
-      <Text>[AssetData(25174) Text]</Text> <!-- Hacienda Tree -->
+      <Text>Асьенда – пальма</Text> <!-- Hacienda Tree -->
     </Text>
     <Text>
       <GUID>1500011059</GUID>
@@ -116,23 +116,23 @@
     </Text>
     <Text>
       <GUID>1500011060</GUID>
-      <Text>[AssetData(102482) Text]</Text> <!-- Newsstand -->
+      <Text>Газетный киоск</Text> <!-- Newsstand -->
     </Text>
     <Text>
       <GUID>1500011061</GUID>
-      <Text>[AssetData(134722) Text]</Text> <!-- Street Map -->
+      <Text>Карта улиц</Text> <!-- Street Map -->
     </Text>
     <Text>
       <GUID>1500011063</GUID>
-      <Text>[AssetData(101497) Text]</Text>
+      <Text>Скамейки для пьяццы</Text>
     </Text>
     <Text>
       <GUID>1500011064</GUID>
-      <Text>[AssetData(102482) Text]</Text>
+      <Text>Газетный киоск</Text>
     </Text>
     <Text>
       <GUID>1500011066</GUID>
-      <Text>[AssetData(134730) Text]</Text>
+      <Text>Желтый зонт</Text>
     </Text>
     <Text>
       <GUID>1500011067</GUID>
@@ -200,15 +200,15 @@
     </Text>
     <Text>
       <GUID>1500011087</GUID>
-      <Text>верандой "Города Нового Света"</Text> <!-- Menu: New World Cities Residences -->
+      <Text>Дома с верандой</Text> <!-- Menu: New World Cities Residences -->
     </Text>
     <Text>
       <GUID>1500011090</GUID>
-      <Text>Многоэтажный дом артиста</Text> <!-- Building: Artista Skyscraper -->
+      <Text>Небоскреб артиста</Text> <!-- Building: Artista Skyscraper -->
     </Text>
     <Text>
       <GUID>1500011100</GUID>
-      <Text>Белые стены (стиль)</Text> <!-- Skin: White Walls -->
+      <Text>Белые стены</Text> <!-- Skin: White Walls -->
     </Text>
     <Text>
       <GUID>1500011101</GUID>
@@ -216,17 +216,31 @@
     </Text>
     <Text>
       <GUID>1500011102</GUID>
-      <Text>Черепичная крыша (стиль)</Text> <!-- Skin: Tile Roof -->
+      <Text>Черепичная крыша</Text> <!-- Skin: Tile Roof -->
     </Text>
     <Text>
-      <!-- TODO translation -->
-      <GUID>1500011097</GUID>
-      <Text>Artista Skyscraper Buff</Text>
-    </Text>
-    <Text>
-      <!-- TODO translation -->
       <GUID>1500011250</GUID>
-      <Text>Terraced Jornalero House</Text>
+      <Text>Дом Хорналеро с верандой</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011380</GUID>
+      <Text>Дом Хорналеро с верандой (Портовое)</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011381</GUID>
+      <Text>Дом обреро с верандой (Портовое)</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011382</GUID>
+      <Text>Дом артиста с верандой (Портовое)</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011383</GUID>
+      <Text>Небоскреб артиста (Портовое)</Text>
     </Text>
   </ModOp>
 
@@ -242,59 +256,51 @@
     </Text>
     <Text>
       <GUID>1500011232</GUID>
-      <Text>[AssetData(1010213) Text]</Text>
+      <Text>Хлеб</Text>
     </Text>
     <Text>
       <GUID>1500011235</GUID>
-      <Text>Кухня с джемом</Text>
+      <Text>Кухня джема</Text>
     </Text>
     <Text>
       <GUID>1500011236</GUID>
-      <Text>[AssetData(133183) Text]</Text>
+      <Text>Джем</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011237</GUID>
-      <Text>Cheese Dairy</Text>
+      <Text>Молочный сыр</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011238</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
+      <Text>Сыр</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011240</GUID>
-      <Text>Milking Parlour</Text>
+      <Text>Доильный зал</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011241</GUID>
-      <Text>Milking Parlour</Text>
+      <Text>Доильный зал</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011243</GUID>
-      <Text>Cattle farms in range produce milk.</Text>
+      <Text>Скотофермы производят молоко.</Text>
     </Text>
   </ModOp>
 
   <!-- # Banners -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011260</GUID>
-      <Text>Terraced Houses</Text>
+      <Text>Дома с верандой</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011261</GUID>
-      <Text>Materials and Electricity</Text>
+      <Text>Материалы и электричество</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011262</GUID>
-      <Text>Terraced Artista Houses</Text>
+      <Text>Дома артиста с верандой</Text>
     </Text>
   </ModOp>
 </ModOps>

@@ -253,6 +253,127 @@
       <Item>
         <Building>1500011250</Building>
       </Item>
+      <Item>
+        <Building>1500011380</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Harbor Life Support -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1500011250">
+      <Asset>
+        <BaseAssetGUID>1500011250</BaseAssetGUID>
+        <Values>
+          <Standard>
+            <GUID>1500011380</GUID>
+            <Name>Terraced Jornalero Harbor</Name>
+            <IconFilename>data/ui/jakob/icon_terraced_jornalero.png</IconFilename>
+          </Standard>
+          <Building>
+            <TerrainType>Water_Including_Coast</TerrainType>
+          </Building>
+          <Blocking>
+            <GroundDecalAsset>132528</GroundDecalAsset>
+            <GroundDecalInvisible>132529</GroundDecalInvisible>
+            <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
+          </Blocking>
+          <Cost />
+          <Object>
+            <Variations>
+              <!-- corners -->
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_3.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_3b.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_4.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_6.cfg</Filename>
+              </Item>
+              <!-- straights -->
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_2.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_1.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_5.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_7.cfg</Filename>
+              </Item>
+              <!-- end -->
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_4.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_6.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_5.cfg</Filename>
+              </Item>
+              <Item>
+                <Filename>data\jakob\harborlife\jornalero_7.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Locked />
+          <Upgradable>
+            <CurrentTier>1</CurrentTier>
+            <NextGUID>1500011381</NextGUID>
+            <UpgradeCost>
+              <Costs>
+                <Item>
+                  <Ingredient>1010196</Ingredient>
+                  <Amount>2</Amount>
+                </Item>
+                <Item>
+                  <Ingredient>1010205</Ingredient>
+                  <Amount>1</Amount>
+                </Item>
+              </Costs>
+            </UpgradeCost>
+          </Upgradable>
+          <SoundEmitter />
+          <Residence7 />
+          <AmbientMoodProvider />
+          <Attackable>
+            <AttackableType>HarbourBuilding</AttackableType>
+            <MaximumHitPoints>600</MaximumHitPoints>
+            <DefenseByAIFactor>0</DefenseByAIFactor>
+            <MoralePower>0</MoralePower>
+          </Attackable>
+          <IncidentInfectable />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Condition="#Spice_Harborlife"
+      Type="merge" GUID="8856006" Path="/Values">
+      <FloorStackOwner>
+        <UpgradeTargetGUID>1500011380</UpgradeTargetGUID>
+        <AddFloorCost>
+          <Item>
+            <Ingredient>1010196</Ingredient>
+            <Amount>2</Amount>
+          </Item>
+          <Item>
+            <Ingredient>1010205</Ingredient>
+            <Amount>1</Amount>
+          </Item>
+        </AddFloorCost>
+      </FloorStackOwner>
+    </ModOp>
+    <ModOp Condition="#Spice_Harborlife"
+      Type="addPrevSibling" GUID="8855889"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='8856017']">
+      <Item>
+        <Building>1500011380</Building>
+      </Item>
     </ModOp>
   </Group>
 
@@ -262,6 +383,9 @@
       Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='120020']/RequiredBuildings">
       <Item>
         <RequiredBuilding>1500011250</RequiredBuilding>
+      </Item>
+      <Item>
+        <RequiredBuilding>1500011380</RequiredBuilding>
       </Item>
     </ModOp>
     <ModOp GUID="15000005" Type="add" Path="/Values/PopulationLevel7/PopulationInputs">
@@ -277,6 +401,9 @@
           <Item>
             <RequiredBuilding>1500011250</RequiredBuilding>
           </Item>
+          <Item>
+            <RequiredBuilding>1500011380</RequiredBuilding>
+          </Item>
         </RequiredBuildings>
       </Item>
       <Item>
@@ -290,6 +417,9 @@
         <RequiredBuildings>
           <Item>
             <RequiredBuilding>1500011250</RequiredBuilding>
+          </Item>
+          <Item>
+            <RequiredBuilding>1500011380</RequiredBuilding>
           </Item>
         </RequiredBuildings>
       </Item>
@@ -305,6 +435,9 @@
           <Item>
             <RequiredBuilding>1500011250</RequiredBuilding>
           </Item>
+          <Item>
+            <RequiredBuilding>1500011380</RequiredBuilding>
+          </Item>
         </RequiredBuildings>
       </Item>
       <Item>
@@ -318,6 +451,9 @@
           <Item>
             <RequiredBuilding>1500011250</RequiredBuilding>
           </Item>
+          <Item>
+            <RequiredBuilding>1500011380</RequiredBuilding>
+          </Item>
         </RequiredBuildings>
       </Item>
     </ModOp>
@@ -330,11 +466,17 @@
       <Item>
         <GUID>1500011250</GUID>
       </Item>
+      <Item>
+        <GUID>1500011380</GUID>
+      </Item>
     </ModOp>
     <ModOp Type="add"
       Path="//ItemEffect/EffectTargets[Item/GUID='101254']">
       <Item>
         <GUID>1500011250</GUID>
+      </Item>
+      <Item>
+        <GUID>1500011380</GUID>
       </Item>
     </ModOp>
   </Group>

@@ -47,7 +47,7 @@ Condition | Content | Unhide
 | | `New World Cities` terraced jornaleros |
 | | `New World Cities` terraced obreros |
 | | `New World Cities` maize bread chain |
-| | (Tourism DLC + NW Tourism only)<br/>`New World Cities` citrus jam chain |
+| | (NW Tourism only)<br/>`New World Cities` citrus jam chain |
 1000 Obreros | *Artista unlock*
 1500 Obreros<br/>300 Artistas | **New World Cities II** | 750 Obreros
 | | `New World Cities` construction materials |
