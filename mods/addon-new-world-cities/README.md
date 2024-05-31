@@ -88,6 +88,7 @@ Only with DLC `New World Rising`.
 ### 2.2
 
 - Added Harborlife support for terraced houses
+- Improved Chinese translation (thanks to hanthe2nd)
 - Improved Spanish translation (thanks to mfuegar)
 - Improved Russian translation (thanks to DrD_AVEL)
 - Added cheese diary to various buffs (e.g. food production)
