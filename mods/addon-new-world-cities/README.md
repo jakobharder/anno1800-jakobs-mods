@@ -11,6 +11,8 @@ Terraced houses with more population, new needs and material productions for the
 
 ### 1 - Terraced Houses
 
+![](./readme-terraced.jpg)
+
 *Unlocks at 750 obreros - or creative mode*
 
 **Residences** with increased population capacity.
@@ -43,6 +45,8 @@ They merge into blocks like Engineers and Investors.
 
 ### 2 - Materials & Electricity
 
+![](./readme-materials.jpg)
+
 *Unlocks at 1500 obreros or 300 artistas - or creative mode*
 
 **Construction materials** can be produced in the New World now.
@@ -68,6 +72,8 @@ They merge into blocks like Engineers and Investors.
   - `Industrial Cities` in the New World.
 
 ### 3 - Terraced Artistas
+
+![](./readme-artistas.jpg)
 
 *Unlocks at 300 artistas - or creative mode*.
 Only with DLC `New World Rising`.

@@ -112,6 +112,7 @@ Smaller **power plants** and additional energy options.
 
 ### 3.2
 
+- 3.2.2: Moved Tea to Artisan construction menu
 - 3.2.2: Improved Chinese translation (thanks to hanthe2nd)
 - 3.2.2: Improved Spanish translation (thanks to mfuegar)
 - 3.2.2: Improved Russian translation (thanks to DrD_AVEL)
