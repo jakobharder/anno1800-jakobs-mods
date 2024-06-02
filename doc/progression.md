@@ -1,9 +1,20 @@
 # Progression
 
+Condition | Milestone | Note
+--- | --- | ---
+250 Artisans | Factory Complex | TBD is 250 Artisans
+800 Artisans | Terraced Houses
+1 Engineer | Electricity
+| | Concrete Factory
+500 Engineers | Steam Machines
+| | Terraced Houses II
+5000 Investors | Elevators
+
 ## Old World Unlocks
 
 Condition | Content | Unhide
 --- | --- | ---
+1 Worker | `Industrial Cities` stone pavement | 1 Worker
 150 Workers | *Bakery unlock*
 400 Workers | `Pescatarians`<br/>needs unlocks? | immediately
 | | Vegetable farm
@@ -17,7 +28,6 @@ Condition | Content | Unhide
 | | TBD `Industrial Cities` bakery, flour mill
 | | TBD `Industrial Cities` worker cloths
 | | `Industrial Cities` tools factory (need for Pesca I??) | none
-1 Worker | `Industrial Cities` stone pavement | 1 Worker
 | | Olive soap factory (need for Pesca I)<br/>TBD (is 700 engineers)
 800 Artisans | **Industrial Cities II - Terraced Houses**
 | | `Industrial Cities` suits factory | none

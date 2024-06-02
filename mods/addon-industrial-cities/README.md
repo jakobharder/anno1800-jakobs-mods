@@ -17,7 +17,15 @@ You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)
 **Productions** visually merge together into big complexes.
 Some have doubled production, doubled workforce and tripled maintenance cost.
 
-- **Soap**
+- **Working Cloth** + Sails every 10th
+  - Knitter (doubled)
+  - -> workers instead of farmers
+- **Bread** + Flour
+  - Flour mill (doubled)
+  - Bakery (doubled)
+- **Sausages**
+  - Butcher (doubled)
+- **Soap** + Tallow and combine both into one??
   - Rendering works (doubled)
   - Soap factory (doubled)
 - **Sewing machines**

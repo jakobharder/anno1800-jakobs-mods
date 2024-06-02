@@ -1,6 +1,7 @@
 <ModOps>
   <Include File="./menu.include.xml" />
   <Include File="./sewing.include.xml" />
+  <Include File="./textiles.include.xml" />
   <Include File="./chemicals.include.xml" />
   <Include File="./food.include.xml" />
   <Include File="./beverages.include.xml" />
@@ -25,6 +26,9 @@
       <Item>
         <Factory>1500011311</Factory>
       </Item>
+      <Item>
+        <Building>1500011320</Building>
+      </Item>
     </ModOp>
     <!-- Feedback Spawn -->
     <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
@@ -42,6 +46,9 @@
       </Item>
       <Item>
         <Building>1500011311</Building>
+      </Item>
+      <Item>
+        <Building>1500011320</Building>
       </Item>
     </ModOp>
     <!-- Neighbors -->
@@ -67,6 +74,9 @@
       </Item>
       <Item>
         <Building>1010516</Building>
+      </Item>
+      <Item>
+        <Building>1500011320</Building>
       </Item>
     </ModOp>
   </Group>
