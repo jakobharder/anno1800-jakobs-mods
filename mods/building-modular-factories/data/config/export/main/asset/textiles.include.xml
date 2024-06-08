@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500011320</GUID>
           <Name>Cloth Factory</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_worker_cloth_p1.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -182,12 +182,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>150</Amount>
-              <InactiveAmount>75</InactiveAmount>
+              <Amount>100</Amount>
+              <InactiveAmount>50</InactiveAmount>
             </Item>
             <Item>
-              <Product>1010052</Product>
-              <Amount>50</Amount>
+              <Product>1010115</Product>
+              <Amount>25</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -226,6 +226,239 @@
           <CultureType>Culture</CultureType>
         </Culture>
         <Electrifiable />
+        <UpgradeList>
+          <DefaultBuff>1500011322</DefaultBuff>
+        </UpgradeList>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FactoryBuilding7Variable</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011324</GUID>
+          <Name>Hemp Cloth Factory</Name>
+          <IconFilename>data/ui/jakob/icon_industrial_worker_cloth_4x.png</IconFilename>
+        </Standard>
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <AllowChangeDirection>1</AllowChangeDirection>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1500010154</Building>
+            </Item>
+            <Item>
+              <Building>1500010600</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <DontCare />
+            <Single />
+            <Mid>
+              <Pool>
+                <Item>
+                  <Variation>1</Variation>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item>
+              </Pool>
+            </Mid>
+            <End>
+              <Pool>
+                <!-- <Item /> -->
+                <!-- <Item>
+                  <Variation>1</Variation>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item> -->
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>1</Variation>
+                </Item>
+              </Pool>
+            </End>
+            <!-- alt end -->
+            <Crossing>
+              <Pool>
+                <Item>
+                  <DirectionOffet>2</DirectionOffet>
+                </Item>
+                <!-- <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item> -->
+                <!-- <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>1</Variation>
+                </Item> -->
+              </Pool>
+            </Crossing>
+            <Corner>
+              <Pool>
+                <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>0</Variation>
+                </Item>
+                <!-- <Item>
+                  <DirectionOffet>3</DirectionOffet>
+                  <Variation>2</Variation>
+                </Item> -->
+              </Pool>
+            </Corner>
+            <!-- alt corner -->
+            <TCrossing>
+              <Pool>
+                <Item>
+                  <Variation>1</Variation>
+                  <DirectionOffet>1</DirectionOffet>
+                </Item>
+              </Pool>
+            </TCrossing>
+          </BuildingBlockPool>
+        </Building>
+        <Blocking />
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>4000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010202</Ingredient>
+            </Item>
+          </Costs>
+        </Cost>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\textiles\cloth.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\textiles\cloth2.cfg</Filename>
+            </Item>
+          </Variations>
+        </Object>
+        <Mesh />
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>216877</Sound>
+            </Item>
+            <Item>
+              <Sound>203616</Sound>
+            </Item>
+          </ActiveSounds>
+          <IncidentSounds>
+            <InfectedFire>
+              <Item>
+                <Sound>214659</Sound>
+              </Item>
+            </InfectedFire>
+          </IncidentSounds>
+        </SoundEmitter>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList />
+        <Factory7 />
+        <FactoryBase>
+          <FactoryInputs>
+            <Item>
+              <Product>114391</Product>
+              <Amount>1</Amount>
+              <StorageAmount>6</StorageAmount>
+            </Item>
+          </FactoryInputs>
+          <FactoryOutputs>
+            <Item>
+              <Product>1010237</Product>
+              <Amount>4</Amount>
+              <StorageAmount>24</StorageAmount>
+            </Item>
+          </FactoryOutputs>
+          <CycleTime>30</CycleTime>
+          <IsMainFactory>0</IsMainFactory>
+        </FactoryBase>
+        <LogisticNode />
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>100</Amount>
+              <InactiveAmount>50</InactiveAmount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>20</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>2500</MaximumHitPoints>
+          <SelfHealPerHealTick>6</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Explosion>
+              <Base>0</Base>
+              <Escalated>0</Escalated>
+            </Explosion>
+          </Infectable>
+          <Explosion>
+            <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
+            <Fire>
+              <DensityDistance>20</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+            </Fire>
+            <Riot>
+              <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+              <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+              <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+              <HappinessThreshold>20</HappinessThreshold>
+            </Riot>
+          </IncidentInfectionChanceFactors>
+        </IncidentInfectable>
+        <Industrializable />
+        <Culture>
+          <CultureType>Culture</CultureType>
+        </Culture>
+        <Electrifiable />
+        <UpgradeList>
+          <DefaultBuff>1500011322</DefaultBuff>
+        </UpgradeList>
       </Values>
     </Asset>
     <Asset>
@@ -237,11 +470,19 @@
           <IconFilename>data/ui/2kimages/main/3dicons/icon_working_cloth.png</IconFilename>
         </Standard>
         <Text>
-          <TextOverride>500004</TextOverride>
+          <TextOverride>500505</TextOverride>
         </Text>
         <ProductionChain>
-          <Building></Building>
+          <Building>1010371</Building>
           <Tier1>
+            <Item>
+              <Building>1010315</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010267</Building>
+                </Item>
+              </Tier2>
+            </Item>
             <Item>
               <Building>1500011320</Building>
               <Tier2>
@@ -250,10 +491,62 @@
                 </Item>
               </Tier2>
             </Item>
+            <Item>
+              <Building>1500011324</Building>
+              <Tier2>
+                <Item>
+                  <!-- <Building>1500010126</Building> -->
+                  <Building>1500010124</Building>
+                  <!-- <Tier3>
+                    <Item>
+                      <Building>1500010124</Building>
+                    </Item>
+                  </Tier3> -->
+                </Item>
+              </Tier2>
+            </Item>
           </Tier1>
-          <InfoTipHeight>550</InfoTipHeight>
+          <!-- <InfoTipHeight>550</InfoTipHeight> -->
         </ProductionChain>
         <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>GuildhouseBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011322</GUID>
+          <Name>Sails Buff</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_sail.png</IconFilename>
+          <InfoDescription>1500011323</InfoDescription>
+        </Standard>
+        <Buff />
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010035</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>1010210</Product>
+              <AdditionalOutputCycle>10</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011323</GUID>
+          <Name>Sails Buff Description</Name>
+        </Standard>
       </Values>
     </Asset>
   </ModOp>

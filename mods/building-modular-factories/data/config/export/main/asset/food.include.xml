@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500011310</GUID>
           <Name>Bakery</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_bread.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -90,23 +90,23 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>3000</Amount>
+              <Amount>4000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>10</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
-              <Amount>4</Amount>
+              <Amount>8</Amount>
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>2</Amount>
+              <Amount>4</Amount>
             </Item>
             <Item>
               <Ingredient>1010202</Ingredient>
@@ -188,7 +188,7 @@
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>100</Amount>
+              <Amount>75</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -235,7 +235,7 @@
         <Standard>
           <GUID>1500011311</GUID>
           <Name>Flour Mill</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_flour.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_flour.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -432,13 +432,31 @@
           <TextOverride>500004</TextOverride>
         </Text>
         <ProductionChain>
-          <Building>1500011310</Building>
+          <Building>1010371</Building>
           <Tier1>
             <Item>
-              <Building>1500011311</Building>
+              <Building>1010291</Building>
               <Tier2>
                 <Item>
-                  <Building>1010262</Building>
+                  <Building>1010313</Building>
+                  <Tier3>
+                    <Item>
+                      <Building>1010262</Building>
+                    </Item>
+                  </Tier3>
+                </Item>
+              </Tier2>
+            </Item>
+            <Item>
+              <Building>1500011310</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500011311</Building>
+                  <Tier3>
+                    <Item>
+                      <Building>1010262</Building>
+                    </Item>
+                  </Tier3>
                 </Item>
               </Tier2>
             </Item>
@@ -454,7 +472,7 @@
         <Standard>
           <GUID>1500011313</GUID>
           <Name>Slaughterhouse</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_sausage.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -537,23 +555,23 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>1500</Amount>
+              <Amount>4000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>10</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
-              <Amount>4</Amount>
+              <Amount>8</Amount>
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>2</Amount>
+              <Amount>4</Amount>
             </Item>
             <Item>
               <Ingredient>1010202</Ingredient>
@@ -632,7 +650,7 @@
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>100</Amount>
+              <Amount>75</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -680,19 +698,39 @@
         <Standard>
           <GUID>1500011314</GUID>
           <Name>Industrial Sausage Chain</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_meat_sausage.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_sausage_cheese.png</IconFilename>
         </Standard>
         <Text>
           <TextOverride>25000244</TextOverride>
         </Text>
         <ProductionChain>
-          <Building>1500011313</Building>
+          <Building>1010371</Building>
           <Tier1>
             <Item>
-              <Building>1010269</Building>
+              <Building>1010316</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010269</Building>
+                </Item>
+              </Tier2>
+            </Item>
+            <Item>
+              <Building>1500011313</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010269</Building>
+                </Item>
+              </Tier2>
+            </Item>
+            <Item>
+              <Building>1500010103</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500010104</Building>
+                </Item>
+              </Tier2>
             </Item>
           </Tier1>
-          <InfoTipHeight>500</InfoTipHeight>
         </ProductionChain>
         <Locked />
       </Values>
