@@ -19,6 +19,7 @@ Condition | Content | Unhide
 400 Workers | `Pescatarians`<br/>needs unlocks? | immediately
 | | Vegetable farm
 | | Cheese dairy<br/>(was 1 Artisan) | none
+| | Olive oil press
 750 Workers | *Artisan unlock* | 500 Workers
 250 Artisans | *Variaty theater (for Pesca II)*
 || **Industrial Cities I - Factory Complex**
