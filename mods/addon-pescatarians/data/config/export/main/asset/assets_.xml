@@ -35,6 +35,23 @@
     </Asset> -->
   </ModOp>
 
+  <!-- # modify vanilla upgrade paths -->
+  <ModOp Type="merge" GUID="1010343" Path="Values">
+    <FloorStackOwner>
+      <UpgradeTargetGUID>1500010143</UpgradeTargetGUID>
+      <AddFloorCost>
+        <Item>
+          <Ingredient>1010017</Ingredient>
+          <Amount>100</Amount>
+        </Item>
+        <Item>
+          <Ingredient>1010196</Ingredient>
+          <Amount>4</Amount>
+        </Item>
+      </AddFloorCost>
+    </FloorStackOwner>
+  </ModOp>
+
   <!-- # Population: Pescatarians -->
   <Group>
     <ModOp GUID="15000004" Type="addNextSibling">
@@ -55,8 +72,8 @@
             <PopulationInputs>
               <!-- Basic Needs -->
               <Item>
-                <Product>1500010119</Product>
-                <SupplyWeight>3</SupplyWeight>
+                <Product>120020</Product>
+                <SupplyWeight>4</SupplyWeight>
               </Item>
               <Item>
                 <Product>1010200</Product>
@@ -69,24 +86,21 @@
                   </Item>
                 </RequiredBuildings>
               </Item>
-              <!-- <Item>
-                <Product>1440005</Product>
-                <Amount>0.0004166</Amount>
-                <SupplyWeight>3</SupplyWeight>
-                <MoneyValue>10</MoneyValue>
+              <Item>
+                <Product>1010237</Product>
+                <Amount>0.0006</Amount>
+                <SupplyWeight>2</SupplyWeight>
+                <MoneyValue>30</MoneyValue>
                 <RequiredBuildings>
-                  <Item>
-                    <RequiredBuilding>1500010142</RequiredBuilding>
-                  </Item>
                   <Item>
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item> -->
-              <Item>
+              </Item>
+              <!-- <Item>
                 <Product>1500010836</Product>
                 <Amount>0.0006</Amount>
-                <SupplyWeight>6</SupplyWeight>
+                <SupplyWeight>2</SupplyWeight>
                 <MoneyValue>5</MoneyValue>
                 <FullWeightPopulationCount>150</FullWeightPopulationCount>
                 <RequiredBuildings>
@@ -94,7 +108,7 @@
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1500010818</Product>
                 <SupplyWeight>4</SupplyWeight>
@@ -103,22 +117,20 @@
               <Item>
                 <Product>1500010102</Product>
                 <Amount>0.00044</Amount>
-                <SupplyWeight>7</SupplyWeight>
-                <MoneyValue>20</MoneyValue>
+                <SupplyWeight>5</SupplyWeight>
+                <MoneyValue>30</MoneyValue>
                 <FullWeightPopulationCount>300</FullWeightPopulationCount>
               </Item>
               <Item>
                 <Product>1010213</Product>
                 <Amount>0.0003</Amount>
-                <SupplyWeight>6</SupplyWeight>
-                <MoneyValue>20</MoneyValue>
+                <SupplyWeight>5</SupplyWeight>
+                <MoneyValue>30</MoneyValue>
                 <FullWeightPopulationCount>300</FullWeightPopulationCount>
               </Item>
               <Item>
-                <Product>1500010127</Product>
-                <Amount>0.0008</Amount>
-                <SupplyWeight>7</SupplyWeight>
-                <MoneyValue>30</MoneyValue>
+                <Product>1500010801</Product>
+                <SupplyWeight>6</SupplyWeight>
                 <FullWeightPopulationCount>500</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
@@ -127,6 +139,18 @@
                 </RequiredBuildings>
               </Item>
               <Item>
+                <Product>1500010127</Product>
+                <Amount>0.0008</Amount>
+                <SupplyWeight>6</SupplyWeight>
+                <MoneyValue>30</MoneyValue>
+                <FullWeightPopulationCount>700</FullWeightPopulationCount>
+                <RequiredBuildings>
+                  <Item>
+                    <RequiredBuilding>1500010144</RequiredBuilding>
+                  </Item>
+                </RequiredBuildings>
+              </Item>
+              <!-- <Item>
                 <Product>1500010831</Product>
                 <Amount>0.0004</Amount>
                 <SupplyWeight>6</SupplyWeight>
@@ -137,11 +161,11 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1500010120</Product>
                 <Amount>0.0004</Amount>
-                <SupplyWeight>7</SupplyWeight>
+                <SupplyWeight>6</SupplyWeight>
                 <MoneyValue>30</MoneyValue>
                 <FullWeightPopulationCount>1000</FullWeightPopulationCount>
                 <RequiredBuildings>
@@ -150,17 +174,11 @@
                   </Item>
                 </RequiredBuildings>
               </Item>
-              <Item>
-                <Product>1500010801</Product>
-                <SupplyWeight>5</SupplyWeight>
-                <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-                <RequiredBuildings>
-                  <Item>
-                    <RequiredBuilding>1500010144</RequiredBuilding>
-                  </Item>
-                </RequiredBuildings>
-              </Item>
               <!-- Luxury Needs -->
+              <!-- <Item>
+                <Product>1500010119</Product>
+                <SupplyWeight>3</SupplyWeight>
+              </Item> -->
               <Item>
                 <Product>1500010118</Product>
                 <HappinessValue>5</HappinessValue>
@@ -170,7 +188,7 @@
                 <Amount>0.0003</Amount>
                 <HappinessValue>5</HappinessValue>
                 <!-- <SupplyWeight>7</SupplyWeight> -->
-                <MoneyValue>40</MoneyValue>
+                <MoneyValue>34</MoneyValue>
                 <RequiredBuildings>
                   <Item>
                     <RequiredBuilding>1500010143</RequiredBuilding>
@@ -202,17 +220,17 @@
                   </Item>
                 </RequiredBuildings>
               </Item> -->
-              <Item>
+              <!-- <Item>
                 <Product>1500010820</Product>
                 <HappinessValue>2</HappinessValue>
                 <MoneyValue>10</MoneyValue>
                 <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1500010153</Product>
                 <Amount>0.0002</Amount>
                 <HappinessValue>5</HappinessValue>
-                <MoneyValue>40</MoneyValue>
+                <MoneyValue>36</MoneyValue>
                 <FullWeightPopulationCount>1000</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
@@ -849,7 +867,7 @@
           <Costs>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>4</Amount>
+              <Amount>6</Amount>
             </Item>
           </Costs>
         </Cost>
@@ -857,20 +875,28 @@
           <DefaultLockedState>1</DefaultLockedState>
         </Locked>
         <Upgradable>
-          <NextGUID>1500010144</NextGUID>
+          <NextGUID>1500010225</NextGUID>
           <UpgradeCost>
             <Item>
-              <Amount>5</Amount>
-              <Ingredient>1010196</Ingredient>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000</Amount>
             </Item>
             <Item>
-              <Amount>4</Amount>
-              <Ingredient>1010205</Ingredient>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
             </Item>
-            <!-- <Item>
-              <Amount>3</Amount>
-              <Ingredient>1500010825</Ingredient>
-            </Item> -->
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
           </UpgradeCost>
         </Upgradable>
         <Object>
@@ -928,8 +954,17 @@
         </UpgradeList> -->
         <FloorStackOwner>
           <!-- disable floor upgrades -->
-          <UpgradeTargetGUID>0</UpgradeTargetGUID>
-          <AddFloorCost />
+          <UpgradeTargetGUID>1500010144</UpgradeTargetGUID>
+          <AddFloorCost>
+            <Item>
+              <Amount>5</Amount>
+              <Ingredient>1010196</Ingredient>
+            </Item>
+            <Item>
+              <Amount>4</Amount>
+              <Ingredient>1010205</Ingredient>
+            </Item>
+          </AddFloorCost>
         </FloorStackOwner>
         <Audio />
       </Values>
@@ -1075,28 +1110,44 @@
         <Building>
           <PickingAsset>1500010143</PickingAsset>
         </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>11</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+          </Costs>
+        </Cost>
         <Locked />
         <Constructable>
           <ConstructionMenuIcon>1500010144</ConstructionMenuIcon>
         </Constructable>
         <Upgradable>
-          <NextGUID>1500010145</NextGUID>
+          <NextGUID>1010346</NextGUID>
           <UpgradeCost>
             <Item>
-              <Amount>10</Amount>
+              <Ingredient>1010017</Ingredient>
+              <!-- <Amount>1000</Amount> -->
+            </Item>
+            <Item>
               <Ingredient>1010196</Ingredient>
+              <Amount>9</Amount>
             </Item>
             <Item>
-              <Amount>3</Amount>
               <Ingredient>1010205</Ingredient>
+              <Amount>1</Amount>
             </Item>
             <Item>
-              <Amount>2</Amount>
               <Ingredient>1010218</Ingredient>
+              <Amount>4</Amount>
             </Item>
             <Item>
-              <Amount>2</Amount>
               <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
             </Item>
           </UpgradeCost>
         </Upgradable>
@@ -1503,7 +1554,7 @@
       <Values>
         <Standard>
           <GUID>1500010100</GUID>
-          <Name>pescatarian_church_building</Name>
+          <Name>Community Center</Name>
           <IconFilename>data/ui/jakob/icon_pescatarian_church.png</IconFilename>
         </Standard>
         <Building>
@@ -1596,9 +1647,9 @@
           <FullSatisfactionDistance>40</FullSatisfactionDistance>
           <NoSatisfactionDistance>80</NoSatisfactionDistance>
           <PublicServiceOutputs>
-            <Item>
+            <!-- <Item>
               <Product>1500010119</Product>
-            </Item>
+            </Item> -->
             <Item>
               <Product>1500010118</Product>
             </Item>
@@ -1724,10 +1775,10 @@
         <ConstructionCategory>
           <BuildingList>
             <Item>
-              <Building>1500010100</Building>
+              <Building>1500010143</Building>
             </Item>
             <Item>
-              <Building>1500010143</Building>
+              <Building>1500010100</Building>
             </Item>
             <Item>
               <Building>1500010816</Building>
@@ -1758,7 +1809,9 @@
     </Asset>
   </ModOp>
   <!-- insert after market in city and farmers menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID="500092,25000189" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
+  <ModOp Type="addNextSibling" GUID="500092,25000189"
+    Condition="!#jakob_industrial_cities"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
     <Item>
       <Building>1500010186</Building>
     </Item>
