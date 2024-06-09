@@ -12,7 +12,45 @@ Buildings from Muggenstuermer and Xan are included.
 
 Contact me if you have any mod conflicts so that I can take care of them.
 
+## Modders
+
+Add `City` or `Secondary` if you want to change where your building is added to.
+The changes are applied with `LoadAfterIds: '*'`.
+Avoid adding your building in that loading stage, otherwise contact me to add a dependency.
+
+Merge culture building into City tab instead of Public Services tab:
+
+```xml
+<ConstructionCategory>
+  <BuildingList>
+    <Item>
+      <Building>123</Building>
+      <City>1</City>
+    </Item>
+  </BuildingList>
+</ConstructionCategory>
+```
+
+Merge Consumable building into Tourist, Skyscraper, Scholar tab:
+
+```xml
+<ConstructionCategory>
+  <BuildingList>
+    <Item>
+      <Building>123</Building>
+      <Secondary>1</CSecondaryity>
+    </Item>
+  </BuildingList>
+</ConstructionCategory>
+```
+
 ## Changes
+
+### 2.0
+
+- Split Consumables into vanilla tiers and DLC tiers
+- Merge Culture tab into City and Public Services
+- Group OW electricity, education and religion, culture buildings
 
 ### 1.3
 
