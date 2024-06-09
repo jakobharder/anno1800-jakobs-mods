@@ -368,7 +368,7 @@
   </Group>
 
   <!-- # Market -->
-  <Group>
+  <Group Condition="@500094/ConstructionCategory/BuildingList/Item[Building='1500010100']">
     <ModOp Type="addNextSibling" GUID="100415">
       <Asset>
         <Template>ConstructionCategory</Template>
