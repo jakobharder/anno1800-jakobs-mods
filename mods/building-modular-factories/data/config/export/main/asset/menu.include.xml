@@ -55,11 +55,14 @@
             <Item>
               <Building>1500010129</Building>
             </Item>
-            <Item>
+            <!-- <Item>
               <Building>124740</Building>
             </Item>
             <Item>
               <Building>1500010959</Building>
+            </Item> -->
+            <Item>
+              <Building>1500011338</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>19564</CategoryDescription>
@@ -124,6 +127,48 @@
         <Text>
           <TextOverride>25000220</TextOverride>
         </Text>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011338</GUID>
+          <Name>Tea and Coffee</Name>
+          <IconFilename>data/ui/jakob/icon_tea_menu.png</IconFilename>
+        </Standard>
+        <ProductionChain>
+          <Building>1010371</Building>
+          <Tier1>
+            <Item>
+              <Building>124738</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010314</Building>
+                  <Tier3>
+                    <Item>
+                      <Building>1010262</Building>
+                    </Item>
+                  </Tier3>
+                </Item>
+              </Tier2>
+            </Item>
+            <Item>
+              <Building>1500011162</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500011160</Building>
+                </Item>
+                <Item>
+                  <Building>1500302201</Building><!-- Kurila's Herb Garden -->
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
       </Values>
     </Asset>
   </ModOp>

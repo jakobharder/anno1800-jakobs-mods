@@ -27,7 +27,10 @@
         <Factory>1500011311</Factory>
       </Item>
       <Item>
-        <Building>1500011320</Building>
+        <Factory>1500011313</Factory>
+      </Item>
+      <Item>
+        <Factory>1500011320</Factory>
       </Item>
     </ModOp>
     <!-- Feedback Spawn -->
@@ -48,12 +51,15 @@
         <Building>1500011311</Building>
       </Item>
       <Item>
+        <Building>1500011313</Building>
+      </Item>
+      <Item>
         <Building>1500011320</Building>
       </Item>
     </ModOp>
     <!-- Neighbors -->
     <ModOp Type="add"
-      GUID="1500010154,1500010600,1500011270,1500011271,1500011310,1500011311,1500011320"
+      GUID="1500010154,1500010600,1500011270,1500011271,1500011310,1500011311,1500011313,1500011320"
       Condition="~"
       Path="/Values/Building/InfluencedByNeighbors">
       <!-- sewing machine factory is already included -->
@@ -71,6 +77,9 @@
       </Item>
       <Item>
         <Building>1500011311</Building>
+      </Item>
+      <Item>
+        <Building>1500011313</Building>
       </Item>
       <Item>
         <Building>1010516</Building>
