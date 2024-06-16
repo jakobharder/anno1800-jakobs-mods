@@ -387,6 +387,9 @@
                 <Building>1010372</Building>
               </Item>
               <Item>
+                <Building>101037222</Building><!-- Ref Roofs -->
+              </Item>
+              <Item>
                 <Building>1500010100</Building>
               </Item>
             </BuildingList>
@@ -396,19 +399,20 @@
         </Values>
       </Asset>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or position()=last()][1]">
+    <!-- 101037221 Red Roofs marketplace replacement -->
+    <ModOp Type="addNextSibling" GUID="500094,25000189"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or Building='101037221' or position()=last()][1]">
       <Item>
         <Building>1500011332</Building>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID="500094" Path="/Values/ConstructionCategory/BuildingList">
+    <ModOp Type="add" GUID="500094,25000189" Path="/Values/ConstructionCategory/BuildingList">
       <Item>
         <Building>0</Building>
       </Item>
     </ModOp>
-    <ModOp Type="remove" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010372' or Building='1500010100']" />
+    <ModOp Type="remove" GUID="500094,25000189"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010372' or Building='101037221' or Building='1500010100']" />
   </Group>
 
   <!-- # Electricity -->
