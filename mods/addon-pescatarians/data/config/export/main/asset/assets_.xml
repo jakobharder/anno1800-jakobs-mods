@@ -1809,13 +1809,13 @@
     </Asset>
   </ModOp>
   <!-- insert after market in city and farmers menu, fallback append -->
-  <ModOp Type="addNextSibling" GUID="500092,25000189"
+  <!-- <ModOp Type="addNextSibling" GUID="500092,25000189"
     Condition="!#jakob_industrial_cities"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
     <Item>
       <Building>1500010186</Building>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # Buff Targets -->
   <Group>

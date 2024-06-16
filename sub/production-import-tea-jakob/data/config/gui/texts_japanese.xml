@@ -1,4 +1,10 @@
 <ModOps>
+  <!-- # Maritime and Trade Resource -->
+  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='3033']/Text">
+    <!-- TODO translation -->
+    <Text>Maritime and Trade Resource</Text>
+  </ModOp>
+
   <!-- # Herb Farm, Tea Maker, Docks, Factory -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
@@ -25,7 +31,6 @@
       <GUID>1500010959</GUID>
       <Text>[AssetData(1500010847) Text]</Text> <!-- menu: Tea -->
     </Text>
-
     <Text>
       <!-- TODO translation -->
       <GUID>1500011160</GUID>
@@ -40,6 +45,16 @@
       <!-- TODO translation -->
       <GUID>1500011162</GUID>
       <Text>Tea Factory</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011398</GUID>
+      <Text>Old Save Support</Text>
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011399</GUID>
+      <Text>Fertility buff to support existing save games without Herbs fertility on islands.</Text>
     </Text>
   </ModOp>
 </ModOps>

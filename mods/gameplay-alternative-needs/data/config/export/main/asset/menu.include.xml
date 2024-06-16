@@ -113,9 +113,7 @@
             </Item>
           </Tier1>
         </ProductionChain>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
       </Values>
     </Asset>
     <Asset>
@@ -129,10 +127,12 @@
         <ConstructionCategory>
           <BuildingList>
             <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>1010278</Building>
             </Item>
             <Item>
-              <Building>1999002380</Building>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>1999002380</Building><!-- River Fishery -->
             </Item>
             <Item>
               <Building>1500010830</Building>
@@ -149,14 +149,17 @@
       <Values>
         <Standard>
           <GUID>1500011343</GUID>
-          <Name>Always true</Name>
+          <Name>@ Vegetable Farm</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionAlwaysTrue</Template>
+            <Template>ConditionUnlocked</Template>
             <Values>
               <Condition />
-              <ConditionAlwaysTrue />
+              <ConditionUnlocked>
+                <UnlockNeeded>1500010830</UnlockNeeded>
+              </ConditionUnlocked>
+              <ConditionPropsNegatable />
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -169,6 +172,90 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010846</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011371</GUID>
+          <Name>@ 800 Artisans</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>800</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011338</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011372</GUID>
+          <Name>Creative Mode</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010846</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011338</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

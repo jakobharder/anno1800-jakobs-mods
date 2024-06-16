@@ -10,7 +10,7 @@
   </ModOp>
 
   <ModOp Type="addNextSibling" GUID="500094"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010359']">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or position()=last()][1]">
     <Item>
       <Building>1500010100</Building>
     </Item>
