@@ -2,6 +2,30 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## 7.0 - Industrial Cities
+
+### Major Changes
+
+- Industrial Cities, 4.0:
+  - Integrated `Pescatarians` and `Alternative Needs`
+  - Added Herbs to Tea production chain
+  - Added Olive Oil to Sardines production chain
+- Pescatarians
+  - Upgrade to Pescatarians to farmer level 2 and 3
+  - Upgrade from Pescatarians to Terraced Houses
+  - Removed Pickles
+  - Replaced Olive Soap product with Soap
+
+### New Content
+
+- Industrial Cities, 4.0:
+  - Bread complex with bakery and flour factories
+  - Sausage complex with sausage factory
+  - Cloth complex with worker cloth factory
+  - Added construction menu tab for alternative productions
+  - Added fertilities for Herbs, Olives, Hemp and Vegetables
+    - Only for new saves. Existing saves ignore those.
+
 ## 6.6 - Quality Update
 
 - New World Cities, 2.2:

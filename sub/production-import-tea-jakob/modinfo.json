@@ -1,10 +1,13 @@
 {
-  "Version": "1.1.13",
+  "Version": "2.0.0",
   "ModID": "production-import-tea-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
     "../shared-products-jakob",
     "https://github.com/Qurila/shared-mods/releases/download/v7/shared_herb_garden_kurila.zip"
+  ],
+  "LoadAfterIds": [
+    "shared-products-jakob"
   ],
   "Category": {
     "English": "Production"

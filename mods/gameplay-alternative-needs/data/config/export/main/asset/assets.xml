@@ -1,4 +1,6 @@
 <ModOps>
+  <Include File="./menu.include.xml" />
+
   <!-- # Alternative Needs -->
   <!-- farmers -->
   <ModOp Type="add" GUID="15000000" Path="/Values/PopulationLevel7/PopulationInputs">
@@ -322,7 +324,7 @@
     </Asset>
   </ModOp>
 
-  <ModOp Type="replace" GUID="1500010120,1500010102,1500010831,1500010127,1500010847,1500010153,1500010836"
+  <ModOp Type="replace" GUID="1500010120,1500010102,1500010127,1500010847,1500010153,1500010836"
     Path="/Values/Product/ProductCategory">
     <ProductCategory>1500010950</ProductCategory>
   </ModOp>
