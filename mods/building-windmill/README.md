@@ -32,11 +32,10 @@ This mod fixes that to have both windmill and grain mill facing the same and cor
 
 ## Changes
 
-### 1.7
+### 2.0
 
-- 1.7.1: Improved Russian translation
-- Available in the New World if you have DLC `New World Rising` or mod `New World Cities`
-- Updated Korean translation (thanks to modpark817)
+- Added 3 influence cost
+- Reduced construction cost to 10k, 20 steel beams, 10 sails
 
 ## Credits
 
