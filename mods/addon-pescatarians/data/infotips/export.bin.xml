@@ -1,0 +1,197 @@
+<ModOps>
+  <!--
+    Show additional workforce for Pescatarians
+  -->
+  <!-- # Workforce -->
+  <!-- add mixed workforce counts for Pescatarian workforce -->
+  <ModOp Type="add"
+    Path="//InfoTipData[Guid='502374']/InfoElement[VisibilityElement/VisibilityElement[ExpectedValueInt='601445' and CompareOperator/CompareOperator='1']]">
+    <InfoElement>
+      <ElementType>3</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010804</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+      <Text>
+        <Text>[AssetData(1500011402) Text]</Text>
+        <Style />
+      </Text>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010804</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1010052) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetData(1010052) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <!-- <Text>[Selection Object Residence WorkforceOutput &gt;&gt; workforce]</Text> -->
+         <Text>[AssetForValue(1500011435, [Selection Object Residence WorkforceOutput]) Text]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010804</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1010115) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetData(1010115) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[AssetForValue(1500011403, [Selection Object Residence WorkforceOutput]) Text]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010804</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1010116) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetData(1010116) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <!-- <Text>[Selection Object Residence WorkforceOutput &gt;&gt; workforce]</Text> -->
+         <Text>[AssetForValue(1500011403, [Selection Object Residence WorkforceOutput]) Text]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+  </ModOp>
+  <!-- make sure there's a ChildCount, otherwise the added entry will be ignored -->
+  <ModOp Type="merge"
+    Path="//InfoTipData[Guid='502374']/InfoElement[VisibilityElement/VisibilityElement[ExpectedValueInt='601445' and CompareOperator/CompareOperator='1']]/InfoElement[Value/Text='[Selection Object Residence WorkforceOutput &gt;&gt; workforce]']">
+    <ChildCount>1</ChildCount>
+  </ModOp>
+  <!-- hide vanilla workforce count for Pescatarian workforce -->
+  <ModOp Type="add"
+    Path="//InfoTipData[Guid='502374']/InfoElement[VisibilityElement/VisibilityElement[ExpectedValueInt='601445' and CompareOperator/CompareOperator='1']]/InfoElement[Value/Text='[Selection Object Residence WorkforceOutput &gt;&gt; workforce]']">
+    <VisibilityElement>
+      <ElementType>
+        <ElementType>1</ElementType>
+      </ElementType>
+      <CompareOperator>
+        <CompareOperator>1</CompareOperator>
+      </CompareOperator>
+      <ResultType>
+        <ResultType>1</ResultType>
+      </ResultType>
+      <ExpectedValueInt>1500010804</ExpectedValueInt>
+      <Condition>[RefGuid]</Condition>
+    </VisibilityElement>
+  </ModOp>
+
+  <!-- # Title -->
+  <!-- add title line for Pescatarian workforce -->
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='502374']/InfoElement[1]/InfoElement[1]">
+    <InfoElement>
+			<ElementType>2</ElementType>
+			<VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010804</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+			<Icon>
+				<IconText>[AssetData([RefGuid]) Icon]</IconText>
+				<Style />
+			</Icon>
+			<Text>
+				<TextGUID>1500010804</TextGUID>
+				<Style />
+			</Text>
+			<SubText>
+				<TextGUID>17435</TextGUID>
+				<Style />
+			</SubText>
+			<BackgroundType />
+		</InfoElement>
+  </ModOp>
+  <!-- make sure there's a ChildCount, otherwise the added entry will be ignored -->
+  <ModOp Type="merge"
+    Path="//InfoTipData[Guid='502374']/InfoElement[1]/InfoElement[1]">
+    <ChildCount>1</ChildCount>
+  </ModOp>
+  <!-- hide vanilla title line for Pescatarian workforce -->
+  <ModOp Type="add"
+    Path="//InfoTipData[Guid='502374']/InfoElement[1]/InfoElement[1]">
+    <VisibilityElement>
+      <ElementType>
+        <ElementType>1</ElementType>
+      </ElementType>
+      <CompareOperator>
+        <CompareOperator>1</CompareOperator>
+      </CompareOperator>
+      <ResultType>
+        <ResultType>1</ResultType>
+      </ResultType>
+      <ExpectedValueInt>1500010804</ExpectedValueInt>
+      <Condition>[RefGuid]</Condition>
+    </VisibilityElement>
+  </ModOp>
+</ModOps>
