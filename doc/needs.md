@@ -15,14 +15,14 @@ Need | Consumption | Residents | Coins | Required | Unlock
 --- | --- | --- | --- | --- | ---
 <img src="./icons/icon_market.png" class="icon"/> Market | | 4 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" />
 <img src="./icons/icon_fish.png" class="icon"/> Fish | 0.0006 | 4  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 3 <img src="./icons/icon_coins.png" class="icon"/>
-<img src="./icons/icon_cloth.png" class="icon"/> Worker Cloth | 0.00044 | 2  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 9 <img src="./icons/icon_coins.png" class="icon"/>
+<img src="./icons/icon_cloth.png" class="icon"/> Worker Cloth | 0.00044 | 2  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/>
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon"/> Library | | 4  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | | 200
-<img src="./icons/icon_cheese.png" class="icon"/> Cheese | 0.00044 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 9 <img src="./icons/icon_coins.png" class="icon"/> | 300
-<img src="./icons/icon_bread.png" class="icon"/> Bread | 0.0003 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 9 <img src="./icons/icon_coins.png" class="icon"/> | 300
+<img src="./icons/icon_cheese.png" class="icon"/> Cheese | 0.00044 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/> | 300
+<img src="./icons/icon_bread.png" class="icon"/> Bread | 0.0003 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/> | 300
 | | | 24 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" />
 <img src="./icons/icon_happiness_20.png" class="icon" /> | **Luxury** | | | |
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_church.png" class="icon" /> Community | | 5 <img src="./icons/icon_happiness_20.png" class="icon" />
-<img src="../shared/production-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap | 0.0003 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 10 <img src="./icons/icon_coins.png" class="icon"/>
+<img src="../shared/production-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap | 0.0003 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 7 <img src="./icons/icon_coins.png" class="icon"/>
 <img src="./icons/icon_tools_16.png" class="icon" /> Tools | 0.0002 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 10 <img src="./icons/icon_coins.png" class="icon"/> | 1000
 <img src="./icons/icon_alternative_20.png" class="icon" /> | **Alternative** | | | |
 <img src="./icons/icon_vegetables.png" class="icon" /> Vegetables | 0.0006 | 6 | | 150 |
@@ -34,15 +34,15 @@ Need | Consumption | Residents | Coins | Required | Unlock
 --- | --- | --- | --- | --- | ---
 <img src="./icons/icon_market.png" class="icon"/> Market | | 4  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" />
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon" /> Library | | 4  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | | 200
-<img src="./icons/icon_cheese.png" class="icon"/> Cheese | 0.00044 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 16 <img src="./icons/icon_coins.png" class="icon"/> | 300
-<img src="./icons/icon_bread.png" class="icon"/> Bread | 0.0003 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 16 <img src="./icons/icon_coins.png" class="icon"/> | 300
+<img src="./icons/icon_cheese.png" class="icon"/> Cheese | 0.00044 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 11 <img src="./icons/icon_coins.png" class="icon"/> | 300
+<img src="./icons/icon_bread.png" class="icon"/> Bread | 0.0003 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 11 <img src="./icons/icon_coins.png" class="icon"/> | 300
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_music_school.png" class="icon" /> Music School | | 6 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | | 500
 <img src="./icons/icon_suits.png" class="icon" /> Suits | 0.0008 | 6 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 16 <img src="./icons/icon_coins.png" class="icon"/> | 700
 <img src="./icons/icon_fish_16.png" class="icon" /> Sardines | 0.0004 | 6 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 16 <img src="./icons/icon_coins.png" class="icon"/> | 1000
 | | | 36 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" />
 <img src="./icons/icon_happiness_20.png" class="icon" /> | **Luxury** | | | |
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_church.png" class="icon" /> Church | | 5 <img src="./icons/icon_happiness_20.png" class="icon" />
-<img src="../shared/production-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap | 0.0003 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 18 <img src="./icons/icon_coins.png" class="icon"/>
+<img src="../shared/production-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap | 0.0003 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 13 <img src="./icons/icon_coins.png" class="icon"/>
 Theater | | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 5 <img src="./icons/icon_coins.png" class="icon"/> | 2000
 University | | 1 <img src="./icons/icon_happiness_20.png" class="icon" /> | 7 <img src="./icons/icon_coins.png" class="icon"/> | 4000
 Sewing Machines | 0.0003 | 1 <img src="./icons/icon_happiness_20.png" class="icon" /> | 18 <img src="./icons/icon_coins.png" class="icon"/>

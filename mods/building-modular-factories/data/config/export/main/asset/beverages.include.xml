@@ -266,7 +266,7 @@
         <Standard>
           <GUID>1500011317</GUID>
           <Name>Brewery</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_beer.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_beer.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -349,15 +349,15 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>4800</Amount>
+              <Amount>4000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>10</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
@@ -365,7 +365,7 @@
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>2</Amount>
+              <Amount>4</Amount>
             </Item>
             <Item>
               <Ingredient>1010202</Ingredient>
@@ -375,13 +375,13 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\food\bakery.cfg</Filename>
+              <Filename>data/jakob/beverages/brewery.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\food\bakery2.cfg</Filename>
+              <Filename>data/jakob/beverages/brewery2.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\food\bakery3.cfg</Filename>
+              <Filename>data/jakob/beverages/brewery3.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -420,19 +420,19 @@
             <Item>
               <Product>1010194</Product>
               <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
             <Item>
               <Product>1010236</Product>
               <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
               <Product>1010214</Product>
               <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
           <CycleTime>30</CycleTime>
@@ -452,7 +452,7 @@
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>150</Amount>
+              <Amount>135</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -733,16 +733,37 @@
           <TextOverride>500006</TextOverride>
         </Text>
         <ProductionChain>
-          <Building>1500011317</Building>
+          <Building>1010371</Building>
           <Tier1>
             <Item>
-              <Building>1010264</Building>
-            </Item>
-            <Item>
-              <Building>1500011318</Building>
+              <Building>1010292</Building>
               <Tier2>
                 <Item>
-                  <Building>1010262</Building>
+                  <Building>1010264</Building>
+                </Item>
+                <Item>
+                  <Building>1010314</Building>
+                  <Tier3>
+                    <Item>
+                      <Building>1010262</Building>
+                    </Item>
+                  </Tier3>
+                </Item>
+              </Tier2>
+            </Item>
+            <Item>
+              <Building>1500011317</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010264</Building>
+                </Item>
+                <Item>
+                  <Building>1500011318</Building>
+                  <Tier3>
+                    <Item>
+                      <Building>1010262</Building>
+                    </Item>
+                  </Tier3>
                 </Item>
               </Tier2>
             </Item>

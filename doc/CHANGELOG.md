@@ -4,17 +4,31 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## 7.0 - Industrial Cities
 
+### Impact on Existing Saves
+
+- New fertilities are only applicable in new games.
+  Existing save games get a free buff instead and can build farms as before.
+- New input goods are only applicable when you build new factories.
+  Old factories stay as they are to avoid problems.
+  Some buffs have been removed from old factories though.
+- Olive soap has been replaced with vanilla soap.
+  You may need to update trade routes.
+
 ### Major Changes
 
 - Industrial Cities, 4.0:
   - Integrated `Pescatarians` and `Alternative Needs`
-  - Added Herbs to Tea production chain
-  - Added Olive Oil to Sardines production chain
+  - Sardines production
+    - Added Olive Oil as intermediate step (only new factories)
+  - Tea production
+    - Added Herbs as input (only new factories)
+    - Reduced maintenance cost
 - Pescatarians
-  - Upgrade to Pescatarians to farmer level 2 and 3
-  - Upgrade from Pescatarians to Terraced Houses
-  - Removed Pickles
-  - Replaced Olive Soap product with Soap
+  - Integrated as level 2 and 3 farmer
+  - Olive Soap production
+    - Added Olive Oil as intermediate step (only new factories)
+    - Replaced output with vanilla soap
+  - Removed Pickles completely
 
 ### New Content
 
@@ -24,7 +38,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Cloth complex with worker cloth factory
   - Added construction menu tab for alternative productions
   - Added fertilities for Herbs, Olives, Hemp and Vegetables
-    - Only for new saves. Existing saves ignore those.
+    - Only for new games. Existing save games ignore them
 
 ## 6.6 - Quality Update
 

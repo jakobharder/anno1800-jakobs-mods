@@ -102,9 +102,9 @@
     </Item>
   </ModOp>
   <!-- lifestyle menu category -->
-  <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds">
+  <ModOp Type="addNextSibling" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[1]">
     <Item>
-      <Category>1500010159</Category>
+      <Category>2268</Category>
       <Needs>
         <Item>
           <BonusNeed>1500010836</BonusNeed>
@@ -199,6 +199,19 @@
           <Name>Alternative Needs Production</Name>
           <IconFilename>data/ui/jakob/icon_alternative_lifestyle_category.png</IconFilename>
         </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>2268</GUID>
+          <Name>Alternative Needs Production</Name>
+          <IconFilename>data/ui/jakob/icon_alternative_lifestyle_category.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>1500010159</TextOverride>
+        </Text>
       </Values>
     </Asset>
     <!-- <Asset>
