@@ -720,8 +720,8 @@
 
   <!-- # Menu -->
   <Group>
-    <ModOp Type="addPrevSibling" GUID="500950"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='137604']">
+    <ModOp Type="addNextSibling" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='500909' or Building='500911' or position()=last()][1]">
       <Item>
         <Building>1500011232</Building>
       </Item>
