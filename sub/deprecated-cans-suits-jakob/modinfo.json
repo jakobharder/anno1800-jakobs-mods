@@ -3,14 +3,19 @@
   "ModID": "production-cans-and-suits-jakob",
   "ModDependencies": [
     "shared-ground-textures-industry-jakob",
-    "../shared-products-jakob",
-    "../production-olive-oil-jakob",
-    "../production-hemp-jakob",
+    "ow-olive-oil-jakob",
+    "olives-jakob",
+    "olive-oil-jakob",
+    "ow-hemp-jakob",
+    "hemp-jakob",
+    "suits-jakob",
     "../production-sardines-jakob"
   ],
   "LoadAfterIds": [
     "[Gameplay] Cattle needs to be butchered",
-    "Cattle Needs to be butchered"
+    "Cattle Needs to be butchered",
+    "ow-hemp-jakob",
+    "production-sardines-jakob"
   ],
   "Category": {
     "English": "Deprecated"
