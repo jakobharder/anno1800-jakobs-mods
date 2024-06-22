@@ -567,13 +567,10 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- remove windmill by first adding it and then deleting all occurences to avoid not found warnings -->
-  <ModOp Type="add" GUID="500092,25000192" Path="/Values/ConstructionCategory/BuildingList">
-    <Item>
-      <Building>1500010001</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="remove" GUID="500092,25000192" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']" />
+
+  <ModOp Type="remove" GUID="500092,25000192"
+    Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010001']" />
   <!-- insert all after gas power plant in city menu, fallback append -->
   <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='117559' or (not(../Item/Building='117559'))][last()]">
     <Item>

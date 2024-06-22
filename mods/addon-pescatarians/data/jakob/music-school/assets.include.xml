@@ -237,21 +237,22 @@
       <GUID>1500010800</GUID>
     </Item>
   </ModOp>
-  <ModOp Type="add" GUID="15000001" Path="/Values/PopulationLevel7/PopulationInputs">
+
+  <!-- # Modify Needs -->
+  <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
     <Item>
       <Product>1500010801</Product>
       <HappinessValue>2</HappinessValue>
       <MoneyValue>20</MoneyValue>
       <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
-      <RequiredFloorLevel>1</RequiredFloorLevel>
       <NoWeightPopulationCount>1200</NoWeightPopulationCount>
       <OptionalInputPopulationUnlock>749</OptionalInputPopulationUnlock>
       <RequiredBuildings>
         <Item>
-          <RequiredBuilding>1500010200</RequiredBuilding>
+          <RequiredBuilding>1500010225</RequiredBuilding>
         </Item>
         <Item>
-          <RequiredBuilding>1500010201</RequiredBuilding>
+          <RequiredBuilding>1500010226</RequiredBuilding>
         </Item>
       </RequiredBuildings>
     </Item>

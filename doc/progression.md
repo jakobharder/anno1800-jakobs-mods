@@ -1,42 +1,63 @@
 # Progression
 
+<style>
+  img.icon {
+    vertical-align: text-bottom;
+    width: 18px;
+  }
+</style>
+
+Condition | Milestone | Note
+--- | --- | ---
+400 <img src="./icons/icon_resident_worker.png" class="icon"/> | Pescatarians
+250 <img src="./icons/icon_resident_artisan.png" class="icon"/> | Factory Complex | TBD is 250 Artisans
+800 <img src="./icons/icon_resident_artisan.png" class="icon"/> | Terraced Houses
+1 <img src="./icons/icon_resident_engineer.png" class="icon"/> | Electricity
+| | Concrete Factory
+500 <img src="./icons/icon_resident_engineer.png" class="icon"/> | Steam Machines
+| | Terraced Houses II
+5000 Investors | Elevators
+
 ## Old World Unlocks
 
 Condition | Content | Unhide
 --- | --- | ---
-150 Workers | *Bakery unlock*
-400 Workers | `Pescatarians`<br/>needs unlocks? | immediately
-| | Vegetable farm
-| | Cheese dairy<br/>(was 1 Artisan) | none
-750 Workers | *Artisan unlock* | 500 Workers
-250 Artisans | *Variaty theater (for Pesca II)*
-|| **Industrial Cities I - Factory Complex**
-| | `Industrial Cities` docklands gate | 1 Artisan
+1 <img src="./icons/icon_resident_worker.png" class="icon"/> | `Industrial Cities` stone pavement | 1 <img src="./icons/icon_resident_worker.png" class="icon"/>
+150 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Bakery unlock*
+400 <img src="./icons/icon_resident_worker.png" class="icon"/> | **`Industrial Cities` - Pescatarians** <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_menu.png" class="icon"/> | immediately
+| | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_church.png" class="icon" /> Community
+| | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon"/> Library
+| | <img src="./icons/icon_vegetables.png" class="icon" /> Vegetable farm
+| | <img src="./icons/icon_cheese.png" class="icon" /> Cheese dairy
+| | <img src="./icons/icon_olive_oil2.png" class="icon" /> Olive oil press
+750 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Artisan unlock* | 500 <img src="./icons/icon_resident_worker.png" class="icon"/>
+250 <img src="./icons/icon_resident_artisan.png" class="icon"/> | *Variaty theater (for Pesca II)*
+|| **`Industrial Cities` - Factory Complex**
+| | `Industrial Cities` docklands gate | 1 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | `Industrial Cities` modular sewing machine factory (same as vanilla)
 | | `Industrial Cities` soap factory, rendering works
 | | TBD `Industrial Cities` bakery, flour mill
 | | TBD `Industrial Cities` worker cloths
 | | `Industrial Cities` tools factory (need for Pesca I??) | none
-1 Worker | `Industrial Cities` stone pavement | 1 Worker
 | | Olive soap factory (need for Pesca I)<br/>TBD (is 700 engineers)
-800 Artisans | **Industrial Cities II - Terraced Houses**
+800 <img src="./icons/icon_resident_artisan.png" class="icon"/> | **Industrial Cities III - Terraced Houses**
 | | `Industrial Cities` suits factory | none
 | | `Industrial Cities` terraced workers level 1 | 1 Worker
 | | `Industrial Cities` terraced artisans level 1 | 1 Artisan
 | | `Industrial Cities` tea docks<br/>TBD (is 400 engineers) | none
 | | `Industrial Cities` Fish cannery |
 | | `Industrial Cities` products:<br/>cheese(why?), tools, suits, sardines | none
-1500 Artisans | *University (for Pesca II)* | 900 Artisans
+1500 <img src="./icons/icon_resident_artisan.png" class="icon"/> | *University (for Pesca II)* | 900 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | *Engineer unlock*
-1 Engineer | *Vanilla electricity & oil power plants* | none
-500 Engineers | **Industrial Cities III - Terraced Houses II** | 1 engineer
+1 <img src="./icons/icon_resident_engineer.png" class="icon"/> | *Vanilla electricity & oil power plants* | none
+500 <img src="./icons/icon_resident_engineer.png" class="icon"/> | **Industrial Cities IV - Terraced Houses II** | 1 <img src="./icons/icon_resident_engineer.png" class="icon"/>
 | | `Industrial Cities` small coal and oil power plants
 | | `Industrial Cities` railway platforms
 | | `Shared` diagonal ornaments<br/>TBD (is immediately now)
 | | `Industrial Cities` terraced workers level 2
 | | `Industrial Cities` terraced artisans level 2
 | | `Nate's Windmill`
-1 Investor | Biogas Production | 1 Engineer
+1 Investor | Biogas Production | 1 <img src="./icons/icon_resident_engineer.png" class="icon"/>
 
 ## New World Unlocks
 

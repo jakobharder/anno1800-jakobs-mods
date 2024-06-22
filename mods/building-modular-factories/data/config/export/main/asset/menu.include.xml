@@ -1,28 +1,4 @@
 <ModOps>
-  <!-- <ModOp Type="addNextSibling" GUID="1010035">
-    <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011272</GUID>
-          <Name>Moderate Modding Menu</Name>
-          <IconFilename>data\ui\2kimages\main\icons\icon_pollution.png</IconFilename>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList />
-          <CategoryDescription>19564</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
-      </Values>
-    </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="25000035"
-    Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500945']">
-    <Item>
-      <Category>1500011272</Category>
-    </Item>
-  </ModOp> -->
-
   <!-- # Modular Factories Menu -->
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
@@ -58,6 +34,18 @@
 
   <!-- <ModOp Type="add" GUID="1500010601,1500011272" Path="/Values/ConstructionCategory/BuildingList"> -->
   <ModOp Type="add" GUID="1500010601" Path="/Values/ConstructionCategory/BuildingList">
+    <!-- <Item>
+      <Building>1500011320</Building>
+    </Item> -->
+    <Item>
+      <Building>1500011313</Building>
+    </Item>
+    <Item>
+      <Building>1500011311</Building>
+    </Item>
+    <Item>
+      <Building>1500011310</Building>
+    </Item>
     <Item>
       <Building>1500011271</Building>
     </Item>
@@ -65,16 +53,22 @@
       <Building>1500011270</Building>
     </Item>
     <Item>
-      <Building>1500010154</Building>
+      <Building>1500011317</Building>
     </Item>
     <Item>
-      <Building>1500010600</Building>
+      <Building>1500010154</Building>
     </Item>
+    <!-- <Item>
+      <Building>1500010600</Building>
+    </Item> -->
   </ModOp>
 
-  <ModOp Type="addNextSibling" GUID="25000191" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003' or position()=last()][1]">
+  <!-- <ModOp Type="addNextSibling" GUID="25000191" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003' or position()=last()][1]">
+    <Item>
+      <Building>1500011312</Building>
+    </Item>
     <Item>
       <Building>1500011273</Building>
     </Item>
-  </ModOp>
+  </ModOp> -->
 </ModOps>

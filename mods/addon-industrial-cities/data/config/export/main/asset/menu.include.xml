@@ -1,0 +1,27 @@
+<ModOps>
+  <ModOp Type="addNextSibling" GUID="25000190"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500145']">
+    <Item>
+      <Building>1500010100</Building>
+    </Item>
+    <Item>
+      <Building>1500010816</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="addNextSibling" GUID="500094"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or position()=last()][1]">
+    <Item>
+      <Building>1500010100</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500094"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010360']">
+    <Item>
+      <Building>1500010816</Building>
+    </Item>
+    <Item>
+      <Building>1500010800</Building>
+    </Item>
+  </ModOp>
+</ModOps>

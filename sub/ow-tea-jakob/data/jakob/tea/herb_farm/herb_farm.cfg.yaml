@@ -1,0 +1,13 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}/data/graphics/buildings/production/agriculture_04/agriculture_04.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\vegetables\vegetable_farm\rdm\cabbage_lod0.rdm
+    - xpath: //Config/Models/Config/Materials/Config
+      cModelDiffTex: data/graphics/buildings/production/agriculture_06/maps/agriculture_06_diff.psd
+      cModelNormalTex: data/graphics/buildings/production/agriculture_06/maps/agriculture_06_normal.psd
+      cModelMetallicTex: data/graphics/buildings/production/agriculture_06/maps/agriculture_06_metal.psd
+    - xpath-remove: //Config/PropContainers/Config[Name="wares"]/Props/Config[FileName="data\graphics\props\storage\flour_bag.prp"]
+    - xpath-remove: //Config/PropContainers/Config[Name="wares"]/Props/Config[FileName="data\graphics\props\storage\flour_bag.prp"]
+    - xpath-remove: //Config/Particles

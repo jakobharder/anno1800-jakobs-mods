@@ -1,0 +1,41 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- After Fur Coats -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010127']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010247']">
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All Europe -->
+  <!-- After Fur Coats -->
+  <ModOp Type="addNextSibling" GUID="502019"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010127']"
+    Path="/Values/ProductList/List/Item[Product='1010247' or Product='114391'][last()]">
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer Europe -->
+  <!-- After Fur Coats -->
+  <ModOp Type="addNextSibling" GUID="501997"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010127']"
+    Path="/Values/ProductList/List/Item[Product='1010247']">
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Fur Coats -->
+  <ModOp Type="addNextSibling" GUID="502006"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010127']"
+    Path="/Values/ProductList/List/Item[Product='1010247']">
+    <Item>
+      <Product>1500010127</Product>
+    </Item>
+  </ModOp>
+</ModOps>

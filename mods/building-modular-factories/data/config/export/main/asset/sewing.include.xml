@@ -8,7 +8,7 @@
         <Standard>
           <GUID>1500010600</GUID>
           <Name>sewing_workshop</Name>
-          <IconFilename>data\jakob\buildings\sewing_workshop\icon_sewing_machine.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_sewing_machines_half.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -269,11 +269,11 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="add" GUID="500003" Path="/Values/ProductionChain/Tier1">
+  <!-- <ModOp Type="add" GUID="500003" Path="/Values/ProductionChain/Tier1">
     <Item>
       <Building>1500010600</Building>
     </Item>
-  </ModOp>
+  </ModOp> -->
   <ModOp Type="add" Path="//ItemEffectTargetPool/EffectTargetGUIDs[Item/GUID='1010284']">
     <Item>
       <GUID>1500010600</GUID>

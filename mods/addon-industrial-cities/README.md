@@ -1,25 +1,76 @@
 ![](./banner.jpg)
 
-Terraced houses and industrialized productions.
+Terraced houses, industrialized productions and .
 
 Give your cities a 19th/20th century industrialization vibe and increase population and production densitity.
 
-You find more dense farmer workforce population in `[Addon] Pescatarians (Jakob)`.
-
 ## Content
 
-### 1 - Industrial Factory Complex
+### 1 - Pescatarians
+
+![](./readme-pescatarians.jpg)
+
+*Unlocks at 400 workers - or creative mode*
+
+Pescatarians are upgrades to **farmer residences** with mixed workforce of 50% farmer, 25% worker and 25% artisan.
+They allow for more dense farming towns.
+
+**Residences** to house the Pescatarians.
+
+- Pescatarian **Level 1**
+  - with cheese and library as basic needs.
+  - Upgrades to terraced artisans
+- Pescatarian **Level 2**
+  - with sardines and suits as basic needs.
+  - Upgrades to engineers
+
+**Public services**
+
+- **Community Center**
+  - Functions as both marketplace and church replacement for Pescatarians.
+- **Library**
+  - Basic need for Pescatarians
+  - Luxury need for 
+- **Small Post Office**
+
+**Needs productions** for additional residents.
+
+- **Cheese**
+  - Dairy Farm
+  - Cheese Dairy
+- **Soap** from Olives
+  - Olive Grove
+  - Olive Oil Press
+  - Olive Soap Factory
+- **Sardines**
+  - Fish cannery consuming olives, fish and iron ore
+  - Olive orchard
+- **Suits**
+  - Suits factory consuming linen and wool
+  - Linen cloth maker consuming hemp
+  - Hemp farm
+
+### 2 - Industrial Factory Complex
 
 ![](./readme-industrial-complex.jpg)
 
 *Unlocks at 250 artisans - or creative mode*
 
 **Productions** visually merge together into big complexes.
-Some have doubled production, doubled workforce and tripled maintenance cost.
+Doubled factories have 200% production, 180% workforce and 300% maintenance cost.
 
+- **Working Cloth**
+  - Knitter (doubled, worker workforce)
+- **Bread**
+  - Flour mill (doubled)
+  - Bakery (doubled)
+- **Sausages**
+  - Butcher (doubled)
 - **Soap**
   - Rendering works (doubled)
   - Soap factory (doubled)
+- **Beer**
+  - Brewery (doubled)
 - **Sewing machines**
   - Sewing machine factory (normal)
 - **Tools**
@@ -31,7 +82,7 @@ Other buildings:
 
 *Note: the module menu has no scroll option. It may not show some modules if you already have too many module mods.*
 
-### 2 - Terraced Houses
+### 3 - Terraced Houses
 
 ![](./readme-terraced-houses-1.jpg)
 
@@ -65,7 +116,7 @@ They merge into blocks like engineers and investors.
 - Stone pavement ornaments as Shift+V variations for various existing ornaments including `City Decoration` and `City Lights Pack`
 - Stone pavement with street function
 
-### 3 - Terraced Houses II
+### 4 - Terraced Houses II
 
 ![](./readme-terraced-houses-2.jpg)
 

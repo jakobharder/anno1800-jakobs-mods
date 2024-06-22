@@ -1,0 +1,41 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- After Canned Food -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010120']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010217']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All Europe -->
+  <!-- After Canned Food -->
+  <ModOp Type="addNextSibling" GUID="502019"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
+    Path="/Values/ProductList/List/Item[Product='1010217']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer Europe -->
+  <!-- After Canned Food -->
+  <ModOp Type="addNextSibling" GUID="501997"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
+    Path="/Values/ProductList/List/Item[Product='1010217']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Canned Food -->
+  <ModOp Type="addNextSibling" GUID="502006"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
+    Path="/Values/ProductList/List/Item[Product='1010217']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+</ModOps>

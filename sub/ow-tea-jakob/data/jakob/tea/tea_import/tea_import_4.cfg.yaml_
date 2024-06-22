@@ -1,0 +1,6 @@
+variant: 
+  # needs annoRda variable set in vscode settings
+  source: ./tea_import.cfg
+  modifications:
+    - xpath: //Config/Models/Config
+      FileName: data\jakob\tea\tea_import\rdm\tea_import_4_lod0.rdm

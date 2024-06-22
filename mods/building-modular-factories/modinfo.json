@@ -1,17 +1,21 @@
 {
   "out": "${annoMods}/[Addon] Industrial Cities (Jakob)/jakob-modular-factories",
-  "Version": "1.3.2",
+  "Version": "1.3.3",
   "ModID": "jakob-modular-factories",
   "DeprecateIds": [
     "jakob_modular_factories"
   ],
   "ModDependencies": [
-    "shared-products-jakob",
+    "ow-tools-jakob",
+    "ow-sardines-jakob",
+    "ow-suits-jakob",
+    "ow-cheese-jakob",
+    "ow-olive-soap-jakob",
     "shared-pools-and-definitions"
   ],
   "LoadAfterIds": [
     "shared-pools-and-definitions",
-    "production-tools-jakob"
+    "ow-tools-jakob"
   ],
   "Category": {
     "Chinese": "建筑",
@@ -19,7 +23,7 @@
   },
   "ModName": {
     "Chinese": "模块化工厂(Jakob)",
-    "English": "Modular Factories (Jakob)"
+    "English": "Industrial Complex (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"

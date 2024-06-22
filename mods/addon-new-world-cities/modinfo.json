@@ -1,26 +1,30 @@
 {
   "out": "${annoMods}/[Addon] New World Cities (Jakob)",
-  "Version": "2.2",
+  "Version": "2.2.1",
   "ModID": "jakob_new_world_cities",
   "ModioResourceId": 3229897,
   "DeprecateIds": [
     "jakob_nw_construction",
     "jakob_bugfix_celluloid",
-    "jakob_power_nw"
+    "jakob_power_nw",
+    "jakob_extra_goods"
   ],
   "ModDependencies": [
-    "https://github.com/anno-mods/shared-resources/releases/download/v8.7/shared-pools-and-definitions.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/shared-products-jakob.zip"
+    "https://github.com/anno-mods/shared-resources/releases/download/v9.2/shared-pools-and-definitions.zip",
+    "sardines-jakob",
+    "cheese-jakob"
   ],
   "LoadAfterIds": [
     "shared-pools-and-definitions",
+    "cheese-jakob",
     "Spice_Harborlife",
-    "FamTaubeLexy_NewWorldHotels",
-    "shared-products-jakob"
+    "FamTaubeLexy_NewWorldHotels"
   ],
   "bundle": [
     "../../shared/jakob-diagonal-ornaments",
-    "../../shared/jakob-skyscraper-button"
+    "../../shared/jakob-skyscraper-button",
+    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.0-rc1/product-cheese-jakob.zip",
+    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v4.0-rc1/product-sardines-jakob.zip"
   ],
   "Category": {
     "Chinese": "插件",

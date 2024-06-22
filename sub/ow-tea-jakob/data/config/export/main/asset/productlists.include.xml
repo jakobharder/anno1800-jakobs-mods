@@ -1,0 +1,67 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- After Coffee -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010847']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='120032']">
+    <Item>
+      <Product>1500010847</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All Europe -->
+  <!-- After Coffee  -->
+  <ModOp Type="addNextSibling" GUID="502020,502066"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010847']"
+    Path="/Values/ProductList/List/Item[Product='120032']">
+    <Item>
+      <Product>1500010847</Product>
+    </Item>
+  </ModOp>
+  <!-- After Coffee  -->
+  <ModOp Type="addNextSibling" GUID="502020,502066"
+    Condition="!~/Values/ProductList/List/Item[Product='5383']"
+    Path="/Values/ProductList/List/Item[Product='120032']">
+    <Item>
+      <Product>5383</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer Europe -->
+  <!-- After Coffee -->
+  <ModOp Type="addNextSibling" GUID="501998"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010847']"
+    Path="/Values/ProductList/List/Item[Product='120032']">
+    <Item>
+      <Product>1500010847</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Agriculture Europe -->
+  <!-- After Furs -->
+  <ModOp Type="addNextSibling" GUID="502037"
+    Condition="!~/Values/ProductList/List/Item[Product='5383']"
+    Path="/Values/ProductList/List/Item[Product='1010209' or Product='1440224'][last()]">
+    <Item>
+      <Product>5383</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Fur -->
+  <ModOp Type="addNextSibling" GUID="502004"
+    Condition="!~/Values/ProductList/List/Item[Product='5383']"
+    Path="/Values/ProductList/List/Item[Product='1010209']">
+    <Item>
+      <Product>5383</Product>
+    </Item>
+  </ModOp>
+  <!-- After Canned Food -->
+  <ModOp Type="addNextSibling" GUID="502006"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010847']"
+    Path="/Values/ProductList/List/Item[Product='1010247']">
+    <Item>
+      <Product>1500010847</Product>
+    </Item>
+  </ModOp>
+</ModOps>
