@@ -1,20 +1,33 @@
 ![](./banner.jpg)
 
-Exchange railway and New World stone street textures with visually improved versions.
-
-## Notes
-
-Street and railway assets are untouched, only their texture is changed.
-No game update troubles or compatibility issues with other mods are expected.
-
-You need to rebuild bridges if you want the right color after activating this mod.
-Likewise, if you deactivate the mod those new bridges will disappear.
+Exchange power lines, railways and New World stone streets with visually improved versions.
 
 The railway texture is inspired by [Gravel Railway Retexture](https://www.nexusmods.com/anno1800/mods/391) by Bluesatin.
 
+## Savegame Impact
+
+When **activating**: bridges won't automatically change to the new texture.
+You need to rebuild them.
+
+When **deactivating**: bridges with the new texture will disappear.
+You need to rebuild them.
+
+## Compatibility
+
+The following changes happen when other mods are active:
+- `Stone Railway`: railway textures of that mod are used instead
+- `Electric Lightling instead of Electricity Wires`: light posts of that mod are used instead
+- `MuggenTours_MU`: off-street poles of that mod are used instead
+
+## Disable Features
+
+You can use the following mods to disable features:
+- `Disable Railway` to use the vanilla railway texture
+- `Disable Streets` to use the vanilla street texture
+
 ## Changes
 
-- 1.3: disable railway skin when the mod `Stone Railway` is active
-- 1.2: added NW stone bridge
-- 1.2: improved compatibility with City Ornaments
-- 1.1: added railway skin
+### 2.0
+
+- merged with `Eletric Poles` mod
+- support for railway and street disable mods

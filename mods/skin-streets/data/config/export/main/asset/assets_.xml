@@ -1,33 +1,31 @@
 <ModOps>
-  <!-- replace NW street -->
-  <ModOp Type="replace" GUID="101309" Path="/Values/Street">
-    <Street>
-      <CfgFileName>data\jakob\nw-street\earth_street_02.cfg</CfgFileName>
-      <BridgeAsset>1500011005</BridgeAsset>
-      <InternalID>26</InternalID>
-      <DecalMapping>data/config/street/streetdecal.txt.bin</DecalMapping>
-      <DecalVariation>data/config/street/streetdecal_var.txt</DecalVariation>
-      <HidePropsAfterBuilding>1</HidePropsAfterBuilding>
-      <HidePropsWhileBuilding>1</HidePropsWhileBuilding>
-      <StyleRows>12</StyleRows>
-      <Quality>2</Quality>
-      <OverbuildRule>GoodStreet</OverbuildRule>
-      <SpeedFactor>1.5</SpeedFactor>
-      <CanBuildOnShore>1</CanBuildOnShore>
-      <AdaptToNeighbors>
-        <AdaptGroups>Street;StreetHighQuality</AdaptGroups>
-        <NeighborsThatMakeUsAdapt>Crossing_Rail_Street;Crossing_Rail_StreetHighQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetHighQuality;QuayStreet;StreetHighQuality</NeighborsThatMakeUsAdapt>
-      </AdaptToNeighbors>
-    </Street>
-  </ModOp>
+  <!-- # Street -->
+  <Group Condition="!#disable-street-jakob">
+    <!-- replace NW street -->
+    <ModOp Type="replace" GUID="101309" Path="/Values/Street">
+      <Street>
+        <CfgFileName>data\jakob\nw-street\earth_street_02.cfg</CfgFileName>
+        <BridgeAsset>1500011005</BridgeAsset>
+        <InternalID>26</InternalID>
+        <DecalMapping>data/config/street/streetdecal.txt.bin</DecalMapping>
+        <DecalVariation>data/config/street/streetdecal_var.txt</DecalVariation>
+        <HidePropsAfterBuilding>1</HidePropsAfterBuilding>
+        <HidePropsWhileBuilding>1</HidePropsWhileBuilding>
+        <StyleRows>12</StyleRows>
+        <Quality>2</Quality>
+        <OverbuildRule>GoodStreet</OverbuildRule>
+        <SpeedFactor>1.5</SpeedFactor>
+        <CanBuildOnShore>1</CanBuildOnShore>
+        <AdaptToNeighbors>
+          <AdaptGroups>Street;StreetHighQuality</AdaptGroups>
+          <NeighborsThatMakeUsAdapt>Crossing_Rail_Street;Crossing_Rail_StreetHighQuality;Quay_And_QuayBase_And_HiddenFences;Bridge_StreetHighQuality;QuayStreet;StreetHighQuality</NeighborsThatMakeUsAdapt>
+        </AdaptToNeighbors>
+      </Street>
+    </ModOp>
+  </Group>
 
-  <!-- replace railway, but leave out quay crossing 80138 -->
-  <ModOp Type="merge" Condition="!#Stone Railway" GUID="1010136,1010165,1010183,101409" Path="/Values/Street">
-    <CfgFileName>data\jakob\railroad\earth_street_03.cfg</CfgFileName>
-    <StyleCols>1</StyleCols>
-  </ModOp>
-
-  <!-- replace NW bridge -->
+  <!-- # Street Assets -->
+  <!-- NW bridge alternative, always add to avoid missing buildings in save games -->
   <ModOp Type="addNextSibling" GUID="101587">
     <Asset>
       <BaseAssetGUID>101587</BaseAssetGUID>
@@ -46,4 +44,13 @@
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # Railway -->
+  <Group Condition="!#disable-railway-jakob">
+    <!-- replace railway, but leave out quay crossing 80138 -->
+    <ModOp Type="merge" Condition="!#Stone Railway" GUID="1010136,1010165,1010183,101409" Path="/Values/Street">
+      <CfgFileName>data\jakob\railroad\earth_street_03.cfg</CfgFileName>
+      <StyleCols>1</StyleCols>
+    </ModOp>
+  </Group>
 </ModOps>
