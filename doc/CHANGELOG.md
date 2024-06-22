@@ -2,7 +2,7 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
-## 7.0 - Industrial Cities
+## 7.0 - More Factories, Integrated Pescatarians
 
 ### Impact on Existing Saves
 
@@ -23,6 +23,7 @@ You can simply overwrite older version. The modloader automatically takes the ri
   - Tea production
     - Added Herbs as input (only new factories)
     - Reduced maintenance cost
+  - Industrial Bread production
 - Pescatarians
   - Integrated as level 2 and 3 farmer
   - Olive Soap production
