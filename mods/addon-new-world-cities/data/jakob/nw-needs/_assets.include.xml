@@ -711,6 +711,7 @@
       </Asset>
     </ModOp>
     <ModOp Type="add" GUID="1500010102"
+      Condition="!/Values/Product/ProductionRegions[Item/RegionType='Colony01']"
       Path="/Values/Product/ProductionRegions">
       <Item>
         <RegionType>Colony01</RegionType>

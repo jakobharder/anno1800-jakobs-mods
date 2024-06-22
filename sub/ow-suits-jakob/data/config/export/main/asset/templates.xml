@@ -1,0 +1,15 @@
+<ModOps>
+  <!-- QuestBuilding disallows Shift+V -->
+  <Group Condition="!//Template[Name='JakobNonQuestFactory']">
+    <ModOp Type="addNextSibling" Template="FactoryBuilding7"
+      Content="//Template[Name='FactoryBuilding7']/Properties">
+      <Template>
+        <Name>JakobNonQuestFactory</Name>
+        <ModOpContent />
+      </Template>
+    </ModOp>
+    <ModOp Type="remove" Template="JakobNonQuestFactory"
+      Condition="/Properties/QuestObject"
+      Path="/Properties/QuestObject" />
+  </Group>
+</ModOps>

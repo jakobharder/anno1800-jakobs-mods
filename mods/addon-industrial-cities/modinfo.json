@@ -4,21 +4,24 @@
   "ModID": "jakob_industrial_cities",
   "ModioResourceId": 3227009,
   "ModDependencies": [
-    "https://github.com/anno-mods/shared-resources/releases/download/v9.1/shared-pools-and-definitions.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/shared-products-jakob.zip",
+    "https://github.com/anno-mods/shared-resources/releases/download/v9.2/shared-pools-and-definitions.zip",
     "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/shared-ground-textures-city-jakob.zip",
     "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/shared-ground-textures-industry-jakob.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/production-cans-and-suits-jakob.zip",
     "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/production-tools-jakob.zip",
-    "../../sub/production-import-tea-jakob"
+    "../../sub/ow-tea-jakob",
+    "../../sub/ow-sardines-jakob",
+    "../../sub/ow-suits-jakob",
+    "../../sub/ow-olive-soap-jakob"
   ],
   "DeprecateIds": [
-    "jakob_extra_goods"
+    "jakob_extra_goods",
+    "production-cans-and-suits-jakob",
+    "production-vegetables-and-cheese-jakob"
   ],
   "bundle": [
     "../../shared/jakob-power-plants",
-    "../../shared/shared-extra-goods",
-    "../../shared/jakob-skyscraper-button"
+    "../../shared/jakob-skyscraper-button",
+    "../../shared/jakob-small-post"
   ],
   "Category": {
     "Chinese": "插件",

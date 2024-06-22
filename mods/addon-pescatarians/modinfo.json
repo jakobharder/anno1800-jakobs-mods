@@ -4,40 +4,25 @@
   "ModID": "jakob_pescatarians",
   "ModioResourceId": 3229941,
   "DeprecateIds": [
-    "jakob_extra_goods"
+    "jakob_extra_goods",
+    "production-cans-and-suits-jakob",
+    "production-vegetables-and-cheese-jakob"
   ],
   "ModDependencies": [
-    "../../sub/production-olive-soap-jakob",
+    "ow-cheese-jakob",
+    "ow-tools-jakob",
+    "ow-suits-jakob",
+    "ow-sardines-jakob",
     "../../shared/production-pickles-jakob",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/production-cans-and-suits-jakob.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/production-tools-jakob.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/production-vegetables-and-cheese-jakob.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/shared-products-jakob.zip",
-    "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.5/shared-ground-textures-industry-jakob.zip"
-  ],
-  "bundle": [
-    "../../shared/shared-extra-goods",
-    "../../shared/jakob-small-post"
+    "shared-ground-textures-industry-jakob"
   ],
   "Category": {
-    "Chinese": "插件",
     "English": "Addon"
   },
   "ModName": {
-    "Chinese": "",
     "English": "Pescatarians (Jakob)",
     "German": "Pescetarier (Jakob)"
   },
-  "DLCDependencies": [
-    {
-      "DLC": "LandOfLions",
-      "Dependant": "atLeastOneRequired"
-    },
-    {
-      "DLC": "Docklands",
-      "Dependant": "atLeastOneRequired"
-    }
-  ],
   "CreatorName": "Jakob",
-  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+  "CreatorContact": "https://github.com/jakobharder/anno1800-jakobs-mods"
 }
