@@ -29,6 +29,10 @@ You can simply overwrite older version. The modloader automatically takes the ri
 - Nate's Windmill, 2.0.1:
   - Costs 3 influnce points now
   - Reduced construction cost
+- Streets & Railways, 2.0.1:
+  - Integrated `Eletric Poles`
+  - Added `Disable Street Texture` mod
+  - Added `Disable Railway Texture` mod
 
 ### New Content
 
