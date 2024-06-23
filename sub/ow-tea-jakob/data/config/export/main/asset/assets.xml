@@ -1092,10 +1092,11 @@
         <Building>1500010959</Building>
       </Item>
     </ModOp>
-    <ModOp Type="addPrevSibling" GUID="25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361']">
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
       <Item>
         <Building>1500010959</Building>
+        <Artisan>800</Artisan>
       </Item>
     </ModOp>
   </Group>

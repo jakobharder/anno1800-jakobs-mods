@@ -131,7 +131,6 @@
         </Selection>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -491,7 +490,6 @@
         </Standard>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Object>
           <Variations>
@@ -1189,7 +1187,6 @@
         </Selection>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -1538,7 +1535,6 @@
         </Standard>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Cost>
           <Costs>
@@ -2505,6 +2501,9 @@
         <ConstructionCategory>
           <BuildingList>
             <Item>
+              <Building>1500010100</Building>
+            </Item>
+            <Item>
               <Building>1500010143</Building>
             </Item>
             <Item>
@@ -2512,9 +2511,6 @@
             </Item>
             <Item>
               <Building>1500010225</Building>
-            </Item>
-            <Item>
-              <Building>1500010100</Building>
             </Item>
             <Item>
               <Building>1500010816</Building>
@@ -2534,7 +2530,6 @@
         </ConstructionCategory>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
       </Values>
     </Asset>
@@ -2565,15 +2560,19 @@
     </Item>
   </ModOp>
   <!-- workers menu: insert before bricks production chain, no fall back -->
-  <ModOp Type="addPrevSibling" GUID='25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500024']">
+  <ModOp Type="addNextSibling" GUID="25000190"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
     <Item>
       <Building>1500010200</Building>
+      <Artisan>800</Artisan>
     </Item>
   </ModOp>
   <!-- artisans menu: insert before anything, no fall back -->
-  <ModOp Type="addPrevSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+  <ModOp Type="addPrevSibling" GUID="25000191"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
     <Item>
       <Building>1500010225</Building>
+      <Artisan>800</Artisan>
     </Item>
   </ModOp>
 
@@ -2598,7 +2597,8 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010219</GUID>
+          <GUID>1500011453</GUID>
+          <!-- <GUID>1500010219</GUID> -->
           <Name>unhide construction menu</Name>
         </Standard>
         <Trigger>
@@ -2608,7 +2608,7 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context> <!-- workers -->
+                <Context>15000002</Context> <!-- workers -->
                 <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
@@ -2676,6 +2676,9 @@
                       </Item>
                       <Item>
                         <Asset>1500010225</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>30728</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

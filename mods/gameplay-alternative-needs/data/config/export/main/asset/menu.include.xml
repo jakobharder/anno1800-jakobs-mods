@@ -131,7 +131,6 @@
               <Building>1010278</Building>
             </Item>
             <Item>
-              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>1999002380</Building><!-- River Fishery -->
             </Item>
             <Item>
@@ -140,27 +139,27 @@
           </BuildingList>
           <CategoryDescription>13108</CategoryDescription>
         </ConstructionCategory>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
       </Values>
     </Asset>
     <Asset>
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011343</GUID>
-          <Name>@ Vegetable Farm</Name>
+          <GUID>1500011455</GUID>
+          <!-- <GUID>1500011343</GUID> -->
+          <Name>@ 1 Worker</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
+            <Template>ConditionPlayerCounter</Template>
             <Values>
               <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1500010830</UnlockNeeded>
-              </ConditionUnlocked>
-              <ConditionPropsNegatable />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
           <TriggerActions>
@@ -173,6 +172,93 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500010846</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011314</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011457</GUID>
+          <Name>@ 150 Workers</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>150</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011312</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011456</GUID>
+          <Name>@ 300 Workers</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>300</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011273</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

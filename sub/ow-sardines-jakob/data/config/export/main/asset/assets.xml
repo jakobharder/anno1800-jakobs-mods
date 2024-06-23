@@ -470,10 +470,17 @@
   </ModOp>
 
   <!-- # Construction Menu: after canned food -->
-  <ModOp Type="addNextSibling" GUID="25000191,500945"
+  <ModOp Type="addNextSibling" GUID="500945"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='500008']">
     <Item>
       <Building>1500010122</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000191"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
+    <Item>
+      <Building>1500010122</Building>
+      <Artisan>800</Artisan>
     </Item>
   </ModOp>
 

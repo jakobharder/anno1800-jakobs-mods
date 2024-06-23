@@ -1,0 +1,263 @@
+<ModOps>
+  <!-- # Unlocks, notifications -->
+  <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">
+    <Item>
+      <Asset>601382</Asset>
+    </Item>
+  </ModOp>
+  <!-- milestone banner: prepend -->
+  <ModOp Type="addPrevSibling" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners/Item[1]">
+    <Item>
+      <RequiredValue>1</RequiredValue>
+      <PopulationGUID>601382</PopulationGUID>
+      <Notification>1500010135</Notification>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="130249">
+    <Asset>
+      <Template>LockableNotification</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010135</GUID>
+          <Name>Banner</Name>
+        </Standard>
+        <Notification>
+          <NotificationType>
+            <Template>MainNotification</Template>
+            <Values>
+              <MainNotification>
+                <Title>1500010136</Title>
+                <NotificationMainIconAsset>601382</NotificationMainIconAsset>
+                <Icon01>1500010102</Icon01>
+                <Icon02>1500010836</Icon02>
+                <Icon03>1500010120</Icon03>
+                <Icon04>1500010127</Icon04>
+                <BackgroundAnimation>data\ui\video\ui_alpha\main_banner\mainbanner_city_luxuryneed_a.bk2</BackgroundAnimation>
+              </MainNotification>
+              <BaseNotification>
+                <NotificationText>1500010137</NotificationText>
+                <NotificationAudioAsset>201843</NotificationAudioAsset>
+              </BaseNotification>
+              <NotificationSubtitle>
+                <Subtitle>265159</Subtitle>
+              </NotificationSubtitle>
+            </Values>
+          </NotificationType>
+        </Notification>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010180</GUID>
+          <Name>Creative Mode</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionIsCreativeMode</Template>
+            <Values>
+              <Condition />
+              <ConditionIsCreativeMode />
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010100</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010143</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010144</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010145</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010800</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010801</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010816</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011454</GUID>
+          <!-- <GUID>1500010185</GUID> -->
+          <!-- <GUID>1500010187</GUID> -->
+          <Name>@ 400 Worker</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>400</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010100</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010143</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010144</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010145</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>30728</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- bugfix: unhide buildings -->
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011449</GUID>
+          <!-- <GUID>1500010802</GUID> -->
+          <Name>Unhide @ 1 Worker</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010143</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010100</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+    <!-- unlock goods earlier -->
+    <Asset>
+      <Template>Trigger</Template>
+      <Values>
+        <Standard>
+          <GUID>1500012004</GUID>
+          <Name>Unlock additional chains</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>ObjectBuilt</PlayerCounter>
+                <Context>1500010144</Context>
+                <CounterAmount>1</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010164</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010165</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010835</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010114</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010830</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010800</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup />
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>
