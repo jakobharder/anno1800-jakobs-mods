@@ -38,7 +38,7 @@
           <Standard>
             <GUID>1500010868</GUID>
             <Name>minimalls_menu</Name>
-            <IconFilename>data\jakob\ui\icons\icon_commercial.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_commercial.png</IconFilename>
           </Standard>
           <ConstructionCategory>
             <BuildingList>
@@ -72,9 +72,11 @@
         <Building>1500010868</Building>
       </Item>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID='25000192,500447' Path="/Values/ConstructionCategory/BuildingList/Item[Building='134629']">
+    <ModOp Type="addNextSibling" GUID="25000192,500447"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='134629']">
       <Item>
         <Building>1500010868</Building>
+        <Investor>5000</Investor>
       </Item>
     </ModOp>
   </Group>

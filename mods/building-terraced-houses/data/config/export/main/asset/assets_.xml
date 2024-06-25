@@ -2513,24 +2513,13 @@
               <Building>1500010225</Building>
             </Item>
             <Item>
-              <Building>1500010816</Building>
-            </Item>
-            <Item>
-              <Building>1500010800</Building>
-            </Item>
-            <Item>
-              <Building>1500010817</Building>
-            </Item>
-            <Item>
               <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>1500010224</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>1500010213</CategoryDescription>
         </ConstructionCategory>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-        </Locked>
+        <Locked />
       </Values>
     </Asset>
     <Asset>
@@ -2594,12 +2583,12 @@
   <!-- # Unlocks, notifications -->
   <ModOp Type="addNextSibling" GUID="130249">
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500011453</GUID>
           <!-- <GUID>1500010219</GUID> -->
-          <Name>unhide construction menu</Name>
+          <Name>Unhide @ 750 Workers</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -2608,8 +2597,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context> <!-- workers -->
-                <CounterAmount>1</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>750</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2637,7 +2626,9 @@
             </Item>
           </TriggerActions>
         </Trigger>
-        <TriggerSetup />
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
     <Asset>
@@ -2691,7 +2682,7 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010280</GUID>
@@ -2747,9 +2738,8 @@
       <Values>
         <Standard>
           <GUID>1500010238</GUID>
-          <Name>unhide artisans</Name>
+          <Name>Unhide @ 1 Artisan</Name>
         </Standard>
-        <Locked />
         <Trigger>
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>

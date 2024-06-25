@@ -1,89 +1,14 @@
 <ModOps>
   <!-- # Olive Soap Factory -->
-  <ModOp Type="addNextSibling" GUID="1010281">
+  <ModOp Type="addNextSibling" GUID="1010315">
     <Asset>
-      <BaseAssetGUID>1010281</BaseAssetGUID>
+      <BaseAssetGUID>1010315</BaseAssetGUID>
       <Values>
         <Standard>
-          <GUID>1500010108</GUID>
-          <Name>Old Olive Soap Factory</Name>
-          <IconFilename>data/ui/jakob/icon_olive_soap.png</IconFilename>
-        </Standard>
-        <Building>
-          <PickingAsset>1500011446</PickingAsset>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>2000</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>7</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\soap\olive_soap_factory\olive_soap_factory.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked />
-        <Selection>
-          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
-        </Selection>
-        <UpgradeList />
-        <FactoryBase>
-          <FactoryInputs>
-            <Item>
-              <Product>1500010105</Product>
-              <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
-            </Item>
-          </FactoryInputs>
-          <FactoryOutputs>
-            <Item>
-              <Product>1010203</Product>
-              <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>30</CycleTime>
-          <IsMainFactory>0</IsMainFactory>
-        </FactoryBase>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>50</Amount>
-              <InactiveAmount>25</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010116</Product>
-              <Amount>40</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <Culture>
-          <Attractiveness>0</Attractiveness>
-        </Culture>
-      </Values>
-    </Asset>
-    <Asset>
-      <BaseAssetGUID>1010281</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500011446</GUID>
-          <Name>Olive Soap Factory</Name>
-          <IconFilename>data/ui/jakob/icon_olive_soap.png</IconFilename>
+          <GUID>1500011460</GUID>
+          <Name>Flax Cloth Maker</Name>
+          <!-- Thanks Drakkam for the icon! -->
+          <IconFilename>data/ui/jakob/icon_flax_cloth.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -92,92 +17,83 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>2000</Amount>
+              <Amount>1000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>8</Amount>
-            </Item>
-            <Item>
-              <Ingredient>1010205</Ingredient>
-              <Amount>7</Amount>
+              <Amount>4</Amount>
             </Item>
           </Costs>
         </Cost>
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\soap\olive_soap_factory\olive_soap_factory.cfg</Filename>
+              <Filename>data/jakob/cloth-workshop/worker_multifactory.cfg</Filename>
             </Item>
           </Variations>
         </Object>
-        <Locked />
         <Selection>
-          <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
         </Selection>
-        <UpgradeList />
         <FactoryBase>
           <FactoryInputs>
             <Item>
-              <Product>1500011326</Product>
+              <Product>114365</Product>
               <Amount>1</Amount>
-              <StorageAmount>4</StorageAmount>
+              <StorageAmount>6</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
-              <Product>1010203</Product>
+              <Product>1010237</Product>
               <Amount>1</Amount>
               <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>30</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <Maintenance>
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>50</Amount>
-              <InactiveAmount>25</InactiveAmount>
+              <Amount>30</Amount>
+              <InactiveAmount>15</InactiveAmount>
             </Item>
             <Item>
-              <Product>1010115</Product>
-              <Amount>50</Amount>
+              <Product>1010052</Product>
+              <Amount>30</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
-        <Culture>
-          <Attractiveness>0</Attractiveness>
-        </Culture>
+        <Locked />
       </Values>
     </Asset>
     <Asset>
       <Template>AssetPool</Template>
       <Values>
         <Standard>
-          <GUID>1500010166</GUID>
-          <Name>asset pool olive soap</Name>
+          <GUID>1500011470</GUID>
+          <Name>asset pool cloth</Name>
         </Standard>
         <AssetPool>
           <AssetList>
             <Item>
-              <Asset>1500010105</Asset>
+              <Asset>114365</Asset>
             </Item>
             <Item>
-              <Asset>1500010107</Asset>
+              <Asset>1500011460</Asset>
             </Item>
             <Item>
-              <Asset>1500010110</Asset>
+              <Asset>1500011458</Asset>
             </Item>
             <Item>
-              <Asset>1500010108</Asset>
+              <Asset>1500011459</Asset>
             </Item>
             <Item>
-              <Asset>1500011446</Asset>
-            </Item>
-            <Item>
-              <Asset>1500010191</Asset>
+              <Asset>1500011465</Asset>
             </Item>
           </AssetList>
         </AssetPool>
@@ -187,9 +103,7 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011447</GUID>
-          <!-- <GUID>1500011179</GUID> -->
-          <!-- <GUID>1500010198</GUID> -->
+          <GUID>1500011471</GUID>
           <Name>@ 400 Worker</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
@@ -214,7 +128,7 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010166</Asset>
+                        <Asset>1500011470</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -232,8 +146,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011476</GUID>
-          <Name>Unhide @ 300 Workers</Name>
+          <GUID>1500011475</GUID>
+          <Name>@ 150 Farmer</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -243,8 +157,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context>
-                <CounterAmount>300</CounterAmount>
+                <Context>15000000</Context>
+                <CounterAmount>150</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -257,7 +171,7 @@
                   <ActionUnlockAsset>
                     <UnhideAssets>
                       <Item>
-                        <Asset>1500010166</Asset>
+                        <Asset>1500011470</Asset>
                       </Item>
                     </UnhideAssets>
                   </ActionUnlockAsset>
@@ -275,8 +189,7 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011448</GUID>
-          <!-- <GUID>1500011166</GUID> -->
+          <GUID>1500011472</GUID>
           <Name>Creative Mode</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
@@ -297,7 +210,7 @@
                   <ActionUnlockAsset>
                     <UnlockAssets>
                       <Item>
-                        <Asset>1500010166</Asset>
+                        <Asset>1500011470</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -315,43 +228,44 @@
 
   <!-- Feedback -->
   <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
+    <!-- <Item>
       <Building>1500010108</Building>
     </Item>
     <Item>
       <Building>1500011446</Building>
-    </Item>
+    </Item> -->
   </ModOp>
 
   <!-- # Effect Targets -->
   <Group>
-    <ModOp Type="add" GUID="191319,191317" Path="/Values/ItemEffect/EffectTargets">
+    <!-- all cloth productions -->
+    <ModOp Type="add" GUID="190890" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
       <Item>
-        <GUID>1500011446</GUID>
+        <GUID>1500011460</GUID>
+      </Item>
+    </ModOp>
+    <!-- specific items -->
+    <ModOp Type="add" GUID="191328,191329,191327" Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500011460</GUID>
       </Item>
     </ModOp>
     <!-- general production targets -->
     <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
       <Item>
-        <GUID>1500010108</GUID>
-      </Item>
-      <Item>
-        <GUID>1500011446</GUID>
+        <GUID>1500011460</GUID>
       </Item>
     </ModOp>
     <!-- electricity -->
     <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
       <Item>
-        <GUID>1500010108</GUID>
-      </Item>
-      <Item>
-        <GUID>1500011446</GUID>
+        <GUID>1500011460</GUID>
       </Item>
     </ModOp>
     <!-- boostable buildings -->
     <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
       <Item>
-        <Factory>1500011446</Factory>
+        <Factory>1500011460</Factory>
       </Item>
     </ModOp>
   </Group>
@@ -363,23 +277,15 @@
         <Template>ProductionChain</Template>
         <Values>
           <Standard>
-            <GUID>1500010191</GUID>
-            <Name>olive_soap_chain</Name>
-            <IconFilename>data/ui/jakob/icon_olive_soap.png</IconFilename>
+            <GUID>1500011465</GUID>
+            <Name>Flax Clothes</Name>
+            <IconFilename>data/ui/jakob/icon_flax_cloth.png</IconFilename>
           </Standard>
-          <Text>
-            <TextOverride>1500010106</TextOverride>
-          </Text>
           <ProductionChain>
-            <Building>1500011446</Building>
+            <Building>1500011460</Building>
             <Tier1>
               <Item>
-                <Building>1500011325</Building>
-                <Tier2>
-                  <Item>
-                    <Building>1500010107</Building>
-                  </Item>
-                </Tier2>
+                <Building>1500011458</Building>
               </Item>
             </Tier1>
           </ProductionChain>
@@ -387,10 +293,10 @@
         </Values>
       </Asset>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="25000190"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=400][last()]">
+    <ModOp Type="addNextSibling" GUID="25000189"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=400][last()]">
       <Item>
-        <Building>1500010191</Building>
+        <Building>1500011465</Building>
         <Worker>400</Worker>
       </Item>
     </ModOp>

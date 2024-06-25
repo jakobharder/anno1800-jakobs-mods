@@ -24,12 +24,13 @@ Condition | Content | Unhide
 --- | --- | ---
 1 <img src="./icons/icon_resident_worker.png" class="icon"/> | `Industrial Cities` stone pavement
 150 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Bakery unlock*
-400 <img src="./icons/icon_resident_worker.png" class="icon"/> | **`Industrial Cities` - Pescatarians** <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_menu.png" class="icon"/> | 1 <img src="./icons/icon_resident_worker.png" class="icon"/>
+400 <img src="./icons/icon_resident_worker.png" class="icon"/> | **`Pescatarians`** <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_menu.png" class="icon"/> | 1 <img src="./icons/icon_resident_worker.png" class="icon"/>
+| | <img src="./icons/icon_vegetables.png" class="icon" /> Vegetables | 150 <img src="./icons/icon_resident_farmer.png" class="icon"/>
+| | <img src="../sub/ow-clothes-jakob/data/ui/jakob/icon_flax_cloth.png" class="icon" /> Clothes (from <img src="./icons/icon_flax.png" class="icon" /> Flax) | 150 <img src="./icons/icon_resident_farmer.png" class="icon"/>
 | | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_church.png" class="icon" /> Community
 | | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon"/> Library
-| | <img src="./icons/icon_vegetables.png" class="icon" /> Vegetable farm
-| | <img src="./icons/icon_cheese.png" class="icon" /> Cheese dairy | 150 <img src="./icons/icon_resident_worker.png" class="icon"/>
-| | <img src="./icons/icon_olive_oil2.png" class="icon" /> Olive oil press
+| | <img src="./icons/icon_cheese.png" class="icon" /> Cheese (from <img src="./icons/icon_milk.png" class="icon" /> Milk) | 150 <img src="./icons/icon_resident_worker.png" class="icon"/>
+| | <img src="../sub/ow-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap (from <img src="./icons/icon_olive_oil2.png" class="icon" /> Olive Oil, <img src="./icons/icon_olives2.png" class="icon" /> Olives) | 300 <img src="./icons/icon_resident_worker.png" class="icon"/>
 750 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Artisan unlock* | 500 <img src="./icons/icon_resident_worker.png" class="icon"/>
 250 <img src="./icons/icon_resident_artisan.png" class="icon"/> | *Variaty theater (for Pesca II)*
 || **`Industrial Cities` - Factory Complex**
@@ -40,15 +41,13 @@ Condition | Content | Unhide
 | | `Industrial Cities` butcher
 | | TBD `Industrial Cities` worker cloths
 | | `Industrial Cities` tools factory (need for Pesca I??) | none
-| | Olive soap factory (need for Pesca I)<br/>TBD (is 700 engineers)
 800 <img src="./icons/icon_resident_artisan.png" class="icon"/> | **Industrial Cities III - Terraced Houses**
 | | `Industrial Cities` suits factory | none
-| | `Industrial Cities` terraced workers level 1 | 1 <img src="./icons/icon_resident_artisan.png" class="icon"/>
+| | `Industrial Cities` terraced workers level 1 | 750 <img src="./icons/icon_resident_worker.png" class="icon"/>
 | | `Industrial Cities` terraced artisans level 1 | 1 Artisan
 | | `Industrial Cities` tea docks<br/>TBD (is 400 engineers) | none
 | | `Industrial Cities` Fish cannery |
 | | `Industrial Cities` products:<br/>tools, suits, sardines | none
-| | <img src="../sub/ow-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Olive Soap Factory | 800 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 1500 <img src="./icons/icon_resident_artisan.png" class="icon"/> | *University (for Pesca II)* | 900 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | *Engineer unlock*
 1 <img src="./icons/icon_resident_engineer.png" class="icon"/> | *Vanilla electricity & oil power plants* | none

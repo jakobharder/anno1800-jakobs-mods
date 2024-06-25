@@ -60,6 +60,7 @@ They come with new needs, productions and fitting ornaments.
 ### Gameplay
 
 - Extra population tiers: 2 worker tiers, 2 artisan tiers
+- Alternative productions available as lifestyle needs to replace basic needs
 
 ### Buildings
 
@@ -192,9 +193,6 @@ Replaces electric wires and poles with lighter, less distracting models.
 
 Combine city construction menu icons into categories: tourists, public services, institutions, malls and administration.
 
-## `Alternative Needs (Jakob)`
-
-Adds products from `Industrial Cities` and `Pescatarians` available as lifestyle needs as alternatives to some basic needs.
 
 ## Build and Modify Yourself
 
@@ -213,12 +211,12 @@ Partial (sometimes complete): Russian, Korean, French, Polish, Spanish, Chinese.
 
 ## Credits
 
+- Taubenangriff, Lordys, Drakkam for sharing some graphic assets
+- Taludas, Ionovia for playtest feedback
+- Kurila for improvements on compact UI, shared products and extra goods
 - m_belonosov, redzmey1, DrD_AVEL for Russian translations
 - MSHS for Korean translations
 - Tonton Yip, Petritant, Water for French translations
 - HeroOfOlympus, Aveneger432 for Polish translations
 - darknesswei for Chinese translation
 - mfuegar for Spanish translations
-- Taubenangriff, Lordys for sharing some graphic assets
-- Taludas, Ionovia for playtest feedback
-- Kurila for improvements on compact UI, shared products and extra goods
