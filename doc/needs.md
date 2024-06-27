@@ -22,7 +22,7 @@ Need | Consumption | Residents | Coins | Required | Unlock
 | | | 24 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" />
 <img src="./icons/icon_happiness_20.png" class="icon" /> | **Luxury** | | | |
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_church.png" class="icon" /> Community | | 5 <img src="./icons/icon_happiness_20.png" class="icon" />
-<img src="../shared/production-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap | 0.0003 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 7 <img src="./icons/icon_coins.png" class="icon"/>
+<img src="../sub/ow-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap | 0.0003 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 7 <img src="./icons/icon_coins.png" class="icon"/>
 <img src="./icons/icon_tools_16.png" class="icon" /> Tools | 0.0002 | 5 <img src="./icons/icon_happiness_20.png" class="icon" /> | 10 <img src="./icons/icon_coins.png" class="icon"/> | 1000
 <img src="./icons/icon_alternative_20.png" class="icon" /> | **Alternative** | | | |
 <img src="./icons/icon_vegetables.png" class="icon" /> Vegetables | 0.0006 | 6 | | 150 |

@@ -389,7 +389,7 @@
           <GUID>1500011441</GUID>
           <!-- <GUID>1500011286</GUID> -->
           <!-- <GUID>1500011285</GUID> -->
-          <Name>@ 800 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -400,7 +400,51 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>900</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010164</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011489</GUID>
+          <!-- <GUID>1500011441</GUID> -->
+          <Name>Unhide @ 750 Artisans</Name>
+          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>750</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -477,10 +521,10 @@
     </Item>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="25000191"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
     <Item>
       <Building>1500010122</Building>
-      <Artisan>800</Artisan>
+      <Artisan>900</Artisan>
     </Item>
   </ModOp>
 

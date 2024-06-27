@@ -688,6 +688,14 @@
 
   <!-- # Population: Pescatarians -->
   <Group>
+    <ModOp Type="add" GUID="25000118"
+      Condition="!/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='2289']/Needs[Item/BonusNeed='1500011326']"
+      Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='2289']/Needs">
+      <Item>
+        <BonusNeed>1500011326</BonusNeed>
+      </Item>
+    </ModOp>
+
     <ModOp GUID="15000004" Type="addNextSibling">
       <Asset>
         <Template>PopulationLevel7</Template>
@@ -731,31 +739,25 @@
                   </Item>
                 </RequiredBuildings>
               </Item>
-              <!-- <Item>
+              <Item>
                 <Product>1500010836</Product>
                 <Amount>0.0006</Amount>
                 <SupplyWeight>2</SupplyWeight>
                 <MoneyValue>5</MoneyValue>
-                <FullWeightPopulationCount>150</FullWeightPopulationCount>
+                <FullWeightPopulationCount>200</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item> -->
-              <Item>
-                <Product>1500010818</Product>
-                <SupplyWeight>4</SupplyWeight>
-                <NoWeightPopulationCount>299</NoWeightPopulationCount>
-                <FullWeightPopulationCount>400</FullWeightPopulationCount>
               </Item>
               <Item>
                 <Product>1500010102</Product>
                 <Amount>0.00044</Amount>
                 <SupplyWeight>5</SupplyWeight>
                 <MoneyValue>22</MoneyValue>
-                <NoWeightPopulationCount>299</NoWeightPopulationCount>
-                <FullWeightPopulationCount>500</FullWeightPopulationCount>
+                <NoWeightPopulationCount>199</NoWeightPopulationCount>
+                <FullWeightPopulationCount>400</FullWeightPopulationCount>
               </Item>
               <Item>
                 <Product>1010213</Product>
@@ -764,6 +766,20 @@
                 <MoneyValue>22</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
                 <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>150</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
+              </Item>
+              <Item>
+                <Product>1500010818</Product>
+                <SupplyWeight>4</SupplyWeight>
+                <NoWeightPopulationCount>299</NoWeightPopulationCount>
+                <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <Item>
                 <Product>1500010801</Product>
@@ -825,7 +841,6 @@
                 <Product>1010203</Product>
                 <Amount>0.0003</Amount>
                 <HappinessValue>5</HappinessValue>
-                <!-- <SupplyWeight>7</SupplyWeight> -->
                 <MoneyValue>26</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
                 <FullWeightPopulationCount>1000</FullWeightPopulationCount>
@@ -837,18 +852,31 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
-              <!-- <Item>
+              <Item>
                 <Product>1500010825</Product>
-                <Amount>0.0002083</Amount>
+                <Amount>0.0003</Amount>
                 <HappinessValue>5</HappinessValue>
                 <MoneyValue>20</MoneyValue>
+                <NoWeightPopulationCount>499</NoWeightPopulationCount>
+                <FullWeightPopulationCount>1000</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
+                  <Item>
+                    <RequiredBuilding>1500010144</RequiredBuilding>
+                  </Item>
                 </RequiredBuildings>
-              </Item> -->
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
+              </Item>
               <!-- <Item>
                 <Product>114410</Product>
                 <Amount>0.0004</Amount>
@@ -866,7 +894,7 @@
                 <MoneyValue>10</MoneyValue>
                 <FullWeightPopulationCount>500</FullWeightPopulationCount>
               </Item> -->
-              <Item>
+              <!-- <Item>
                 <Product>1500010153</Product>
                 <Amount>0.0002</Amount>
                 <HappinessValue>5</HappinessValue>
@@ -878,7 +906,7 @@
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1010352</Product>
                 <HappinessValue>5</HappinessValue>
@@ -939,6 +967,25 @@
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+              </Item>
+              <Item>
+                <Product>1500011326</Product>
+                <Amount>0.0004</Amount>
+                <SupplyWeight>2</SupplyWeight>
+                <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+                <IsBonusNeed>1</IsBonusNeed>
+                <RequiredBuildings>
+                  <Item>
+                    <RequiredBuilding>1500010143</RequiredBuilding>
+                  </Item>
+                  <Item>
+                    <RequiredBuilding>1500010144</RequiredBuilding>
+                  </Item>
+                </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <Item>
                 <Product>133183</Product>

@@ -193,7 +193,7 @@
       <Values>
         <Standard>
           <GUID>1500011457</GUID>
-          <Name>@ 150 Workers</Name>
+          <Name>Unhide @ 150 Workers</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -214,11 +214,11 @@
                 <Values>
                   <Action />
                   <ActionUnlockAsset>
-                    <UnlockAssets>
+                    <UnhideAssets>
                       <Item>
                         <Asset>1500011312</Asset>
                       </Item>
-                    </UnlockAssets>
+                    </UnhideAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>
@@ -235,7 +235,7 @@
       <Values>
         <Standard>
           <GUID>1500011456</GUID>
-          <Name>@ 300 Workers</Name>
+          <Name>Unhide @ 300 Workers</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -256,11 +256,53 @@
                 <Values>
                   <Action />
                   <ActionUnlockAsset>
-                    <UnlockAssets>
+                    <UnhideAssets>
                       <Item>
                         <Asset>1500011273</Asset>
                       </Item>
-                    </UnlockAssets>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011498</GUID>
+          <Name>@ 500 Workers</Name>
+        </Standard>
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500011273</Asset>
+                      </Item>
+                    </UnhideAssets>
                   </ActionUnlockAsset>
                 </Values>
               </TriggerAction>

@@ -4,7 +4,15 @@ Terraced houses, industrialized productions and .
 
 Give your cities a 19th/20th century industrialization vibe and increase population and production densitity.
 
+## DLC Requirements
+
+You can play without any DLC, but the experience with upgrading residences is vastly better with the `High Life` DLC due bulk floor upgrade button.
+
 ## Content
+
+1. Pescatarians - aka upgradable farmers
+2. Industrial Complex - aka modular factories
+3. Terraced Houses - aka upgradable workers and artisans
 
 ### 1 - Pescatarians
 

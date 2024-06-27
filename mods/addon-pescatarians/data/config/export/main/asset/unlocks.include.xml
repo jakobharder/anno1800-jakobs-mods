@@ -102,13 +102,13 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011454</GUID>
+          <GUID>1500011454</GUID> <!-- 7.0 -->
           <!-- <GUID>1500010185</GUID> -->
           <!-- <GUID>1500010187</GUID> -->
-          <Name>@ 400 Worker</Name>
+          <Name>@ 1 Worker</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -119,7 +119,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000001</Context>
-                <CounterAmount>400</CounterAmount>
+                <CounterAmount>1</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -137,12 +137,12 @@
                       <Item>
                         <Asset>1500010143</Asset>
                       </Item>
-                      <Item>
+                      <!-- <Item>
                         <Asset>1500010144</Asset>
-                      </Item>
-                      <Item>
+                      </Item> -->
+                      <!-- <Item>
                         <Asset>1500010145</Asset>
-                      </Item>
+                      </Item> -->
                       <Item>
                         <Asset>30728</Asset>
                       </Item>
@@ -161,9 +161,9 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011449</GUID>
+          <GUID>1500011449</GUID> <!-- 7.0 -->
           <!-- <GUID>1500010802</GUID> -->
-          <Name>Unhide @ 1 Worker</Name>
+          <Name>Unhide @ 150 Farmers</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -173,8 +173,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context>
-                <CounterAmount>1</CounterAmount>
+                <Context>15000000</Context>
+                <CounterAmount>150</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -202,16 +202,191 @@
         <TriggerSetup />
       </Values>
     </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011479</GUID>
+          <!-- <GUID>1500010840</GUID> -->
+          <Name>@ 500 Workers</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500010816</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011480</GUID>
+          <Name>Unhide @ 300 Workers</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>300</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010816</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011483</GUID>
+          <Name>Unhide @ 750 Workers</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000001</Context>
+                <CounterAmount>750</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010144</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011484</GUID>
+          <Name>@ 900 Artisans</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>900</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500010144</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
     <!-- unlock goods earlier -->
     <Asset>
-      <Template>Trigger</Template>
+      <!-- <Template>Trigger</Template> -->
+      <Template>Text</Template>
       <Values>
         <Standard>
           <GUID>1500012004</GUID>
           <Name>Unlock additional chains</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
-        <Trigger>
+        <!-- <Trigger>
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>
             <Values>
@@ -256,7 +431,7 @@
             </Item>
           </TriggerActions>
         </Trigger>
-        <TriggerSetup />
+        <TriggerSetup /> -->
       </Values>
     </Asset>
   </ModOp>

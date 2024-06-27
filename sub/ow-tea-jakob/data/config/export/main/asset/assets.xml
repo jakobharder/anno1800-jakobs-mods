@@ -1,7 +1,6 @@
 <ModOps>
   <!-- # Includes -->
   <Include File="./productlists.include.xml" />
-  <Include File="./fertility.include.xml" />
 
   <!-- # Tea Maker -->
   <ModOp Type="addNextSibling" GUID="190901">
@@ -824,7 +823,7 @@
         <Standard>
           <GUID>1500011444</GUID>
           <!-- <GUID>1500011285</GUID> -->
-          <Name>@ 800 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -835,7 +834,50 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>900</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011164</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011492</GUID>
+          <Name>Unhide @ 750 Artisans</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>750</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -941,10 +983,10 @@
       </Item>
     </ModOp>
     <ModOp Type="addNextSibling" GUID="25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=900][last()]">
       <Item>
         <Building>1500010959</Building>
-        <Artisan>800</Artisan>
+        <Artisan>900</Artisan>
       </Item>
     </ModOp>
   </Group>

@@ -26,9 +26,16 @@
       </Values>
     </Asset>
   </ModOp>
-  <ModOp Type="addPrevSibling" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+  <!-- <ModOp Type="addPrevSibling" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
     <Item>
       <Building>1500010601</Building>
+    </Item>
+  </ModOp> -->
+  <ModOp Type="addNextSibling" GUID="25000191"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;500][last()]">
+    <Item>
+      <Building>1500010601</Building>
+      <Artisan>500</Artisan>
     </Item>
   </ModOp>
 

@@ -7,12 +7,13 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500010607</GUID>
+          <GUID>1500011482</GUID>
+          <!-- <GUID>1500010607</GUID> -->
           <!-- <GUID>1500010606</GUID> -->
           <!-- <GUID>1500010605</GUID> -->
           <!-- <GUID>1500010604</GUID> -->
           <!-- <GUID>1500010603</GUID> -->
-          <Name>@ 250 Artisans</Name>
+          <Name>@ 500 Artisans</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -22,7 +23,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>250</CounterAmount>
+                <CounterAmount>500</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -98,8 +99,9 @@
       <Template>Trigger</Template>
       <Values>
         <Standard>
-          <GUID>1500011275</GUID>
-          <Name>Unhide @ 1 Artisan</Name>
+          <GUID>1500011478</GUID>
+          <!-- <GUID>1500011275</GUID> -->
+          <Name>Unhide @ 250 Artisan</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -109,7 +111,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>1</CounterAmount>
+                <CounterAmount>250</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>

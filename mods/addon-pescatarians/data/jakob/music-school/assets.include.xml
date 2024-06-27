@@ -144,7 +144,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010283</GUID>
+          <GUID>1500011485</GUID>
+          <!-- <GUID>1500010283</GUID> -->
           <Name>@ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
@@ -156,7 +157,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>900</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -190,17 +191,20 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010803</GUID>
-          <Name>Unhide @ Community Center</Name>
+          <GUID>1500011486</GUID>
+          <!-- <GUID>1500010803</GUID> -->
+          <Name>Unhide @ 750 Artisans</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionUnlocked</Template>
+            <Template>ConditionPlayerCounter</Template>
             <Values>
               <Condition />
-              <ConditionUnlocked>
-                <UnlockNeeded>1500010100</UnlockNeeded>
-              </ConditionUnlocked>
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>750</CounterAmount>
+              </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
           <TriggerActions>
