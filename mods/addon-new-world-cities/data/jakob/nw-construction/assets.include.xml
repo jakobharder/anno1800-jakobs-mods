@@ -2,12 +2,18 @@
   NW Construction
 -->
 <ModOps>
-  <!-- # Unlock Charcoal Kiln for all -->
-  <ModOp Type="merge" GUID="1345" Path="/Values" />
-  <ModOp Type="remove" GUID="1345" Path="/Values/Locked/DLCDependency" Condition="~/Values/Locked/DLCDependency" />
-  <!-- # Unlock Steelworks for all -->
-  <ModOp Type="merge" GUID="6080" Path="/Values" />
-  <ModOp Type="remove" GUID="6080" Path="/Values/Locked/DLCDependency" Condition="~/Values/Locked/DLCDependency" />
+  <!-- # Unlock Charcoal & Steelworks. -->
+  <!--
+    I had my own based on data/eoy21 before, but it's now also part of a DLC assets.
+    Use the same for the sake of not duplicating it.
+   -->
+  <Group>
+    <ModOp Type="remove" GUID="1345"
+      Path="/Values/Locked/DLCDependency"
+      Condition="!~/Values/Locked[not(DLCDependency)]" />
+    <ModOp Type="remove" GUID="6080" Path="/Values/Locked/DLCDependency"
+      Condition="!~/Values/Locked[not(DLCDependency)]" />
+  </Group>
 
   <!-- # Steel Beams -->
   <Group>
