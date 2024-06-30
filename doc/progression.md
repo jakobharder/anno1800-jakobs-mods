@@ -30,16 +30,16 @@ Unlock | Content | Unhide
 | | <img src="../sub/ow-clothes-jakob/data/ui/jakob/icon_flax_cloth.png" class="icon" /> Clothes (from <img src="./icons/icon_flax.png" class="icon" /> Flax)
 | | <img src="./icons/icon_cheese.png" class="icon" /> Cheese (from <img src="./icons/icon_milk.png" class="icon" /> Milk) | 1 <img src="./icons/icon_resident_worker.png" class="icon"/>
 | | <img src="../mods/building-terraced-houses/data/ui/jakob/icon_stone_menu.png" class="icon"/> Stone Pavement
-150 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Bakery unlock*
 500 <img src="./icons/icon_resident_worker.png" class="icon"/> | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon"/> Library | 300 <img src="./icons/icon_resident_worker.png" class="icon"/>
 | | <img src="../sub/ow-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap (from <img src="./icons/icon_olive_oil3.png" class="icon" /> Olive Oil, <img src="./icons/icon_olives3.png" class="icon" /> Olives)
 | | <img src="./icons/icon_rope.png" class="icon" /> Ropes (from <img src="./icons/icon_hemp.png" class="icon" /> Hemp)
 750 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Artisan unlock* | 500 <img src="./icons/icon_resident_worker.png" class="icon"/>
 | | <img src="../mods/building-docklands/data/ui/jakob/icon_gate.png" class="icon"/> Docklands Gate | 1 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | **`Factory Complex`**
-500 <img src="./icons/icon_resident_artisan.png" class="icon"/> | <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_soap.png" class="icon" /> Industrial Soap + <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_tallow.png" class="icon" /> Industrial Tallow | 250 <img src="./icons/icon_resident_artisan.png" class="icon"/>
+500 <img src="./icons/icon_resident_artisan.png" class="icon"/> | <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_sausage.png" class="icon" /> Industrial Butcher | 250 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_bread.png" class="icon" /> Industrial Bakery + <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_flour.png" class="icon" /> Industrial Flour Mill
-| | <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_sausage.png" class="icon" /> Industrial Butcher
+| | <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_soap.png" class="icon" /> Industrial Soap Factory + <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_tallow.png" class="icon" /> Industrial Rendering
+| | <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_beer.png" class="icon" /> Industrial Brewery + <img src="../mods/building-modular-factories/data/ui/jakob/icon_industrial_malt.png" class="icon" /> Industrial Malthouse
 | | **`Terraced Houses`**
 900 <img src="./icons/icon_resident_artisan.png" class="icon"/> | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_menu.png" class="icon"/> Pescatarians - Level 2
 | | <img src="../mods/building-terraced-houses/data/ui/jakob/icon_worker_scraper2.png" class="icon"/> Terraced Workers - Level 1 | 750 <img src="./icons/icon_resident_worker.png" class="icon"/>
@@ -52,12 +52,11 @@ Unlock | Content | Unhide
 1500 <img src="./icons/icon_resident_artisan.png" class="icon"/> | *University (for Pesca II)* | 900 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | *Engineer unlock*
 1 <img src="./icons/icon_resident_engineer.png" class="icon"/> | *Vanilla electricity & oil power plants* | none
-500 <img src="./icons/icon_resident_engineer.png" class="icon"/> | **Industrial Cities IV - Terraced Houses II** | 1 <img src="./icons/icon_resident_engineer.png" class="icon"/>
-| | `Industrial Cities` small coal and oil power plants
-| | `Industrial Cities` railway platforms
-| | `Shared` diagonal ornaments<br/>TBD (is immediately now)
-| | `Industrial Cities` terraced workers level 2
-| | `Industrial Cities` terraced artisans level 2
+| | `Terraced Houses II`
+500 <img src="./icons/icon_resident_engineer.png" class="icon"/> | <img src="../mods/building-terraced-houses/data/ui/jakob/icon_worker_scraper2.png" class="icon"/> Terraced Workers - Level 2 | 1 <img src="./icons/icon_resident_engineer.png" class="icon"/>
+| | <img src="../mods/building-terraced-houses/data/ui/jakob/icon_artisan_scraper2.png" class="icon"/> Terraced Artisans - Level 2
+| | <img src="../sub/jakob-power-plants/data/ui/jakob/icon_small_coal_power_plant.png" class="icon"/> Small Coal + <img src="../sub/jakob-power-plants/data/ui/jakob/icon_small_oil_power_plant.png" class="icon"/> Small Oil Power Plant
+| | <img src="../mods/building-railway/data/ui/jakob/icon_platform_passenger.png" class="icon"/> Railway platforms
 | | `Nate's Windmill`
 1 Investor | Biogas Production | 1 <img src="./icons/icon_resident_engineer.png" class="icon"/>
 

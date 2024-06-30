@@ -1,7 +1,8 @@
 {
-  "Version": "1.0",
+  "Version": "1.0.1",
   "ModID": "ow-sardines-jakob",
   "ModDependencies": [
+    "shared-pools-and-definitions",
     "shared-ground-textures-industry-jakob",
     "olives-jakob",
     "olive-oil-jakob",
@@ -9,6 +10,7 @@
     "ow-olive-oil-jakob"
   ],
   "LoadAfterIds": [
+    "shared-pools-and-definitions",
     "[Gameplay] Cattle needs to be butchered",
     "Cattle Needs to be butchered"
   ],
@@ -16,7 +18,7 @@
     "English": "Production"
   },
   "ModName": {
-    "English": "Sardines (Jakob)"
+    "English": "OW Sardines (Jakob)"
   },
   "CreatorName": "Jakob",
   "CreatorContact": "https://github.com/jakobharder/anno1800-jakobs-mods"

@@ -2,8 +2,14 @@
   "Version": "1.0.4",
   "ModID": "jakob-city-variations",
   "ModioResourceId": 3229836,
-  "DeprecatedIds": [
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v10.0/shared-pools-and-definitions.zip"
+  ],
+  "DeprecateIds": [
     "skin-everything-skin-pack-jakob"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions"
   ],
   "bundle": [
     "https://github.com/jakobharder/anno1800-shared-mods/releases/download/v3.4/shared-ground-textures-industry-jakob.zip",

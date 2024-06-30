@@ -37,10 +37,12 @@ You can simply overwrite older version. The modloader automatically takes the ri
 ### New Content
 
 - Industrial Cities, 4.0:
-  - Bread complex with bakery and flour factories
   - Sausage complex with sausage factory
-  - Added construction menu tab for alternative productions
-  - Added fertilities for Herbs, Olives, Hemp and Vegetables
+  - Bread complex with bakery and flour mill
+  - Beer complex with brewery and malthouse
+  - Ropes as luxury need for Pescatarians
+  - New construction menu tab for alternative productions
+  - Fertilities for Herbs, Olives, Hemp and Vegetables
     - Only for new games. Existing save games ignore them
 
 ## 6.6 - Quality Update

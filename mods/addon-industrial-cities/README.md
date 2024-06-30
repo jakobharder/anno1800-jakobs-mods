@@ -6,7 +6,7 @@ Give your cities a 19th/20th century industrialization vibe and increase populat
 
 ## DLC Requirements
 
-You can play without any DLC, but the experience with upgrading residences is vastly better with the `High Life` DLC due bulk floor upgrade button.
+You can play without any DLC, but the experience with upgrading residences is vastly better with the `High Life` DLC due to having a bulk floor upgrade button.
 
 ## Content
 
@@ -18,7 +18,7 @@ You can play without any DLC, but the experience with upgrading residences is va
 
 ![](./readme-pescatarians.jpg)
 
-*Unlocks at 400 workers - or creative mode*
+*Unlocks begin at 1 worker - or creative mode*
 
 Pescatarians are upgrades to **farmer residences** with mixed workforce of 50% farmer, 25% worker and 25% artisan.
 They allow for more dense farming towns.
@@ -28,7 +28,7 @@ They allow for more dense farming towns.
 - Pescatarian **Level 1**
   - with cheese and library as basic needs.
   - Upgrades to terraced artisans
-- Pescatarian **Level 2**
+- Pescatarian **Level 2** *(unlocks later)*
   - with sardines and suits as basic needs.
   - Upgrades to engineers
 
@@ -38,7 +38,7 @@ They allow for more dense farming towns.
   - Functions as both marketplace and church replacement for Pescatarians.
 - **Library**
   - Basic need for Pescatarians
-  - Luxury need for 
+  - Luxury need for Terraced Houses
 - **Small Post Office**
 
 **Needs productions** for additional residents.
@@ -62,22 +62,21 @@ They allow for more dense farming towns.
 
 ![](./readme-industrial-complex.jpg)
 
-*Unlocks at 250 artisans - or creative mode*
+*Unlocks at 500 artisans - or creative mode*
 
 **Productions** visually merge together into big complexes.
-Doubled factories have 200% production, 180% workforce and 300% maintenance cost.
+Doubled factories have 200% production, 180% workforce and 250% maintenance cost.
 
-- **Working Cloth**
-  - Knitter (doubled, worker workforce)
+- **Sausages**
+  - Butcher (doubled)
 - **Bread**
   - Flour mill (doubled)
   - Bakery (doubled)
-- **Sausages**
-  - Butcher (doubled)
 - **Soap**
   - Rendering works (doubled)
   - Soap factory (doubled)
 - **Beer**
+  - Malthouse (doubled)
   - Brewery (doubled)
 - **Sewing machines**
   - Sewing machine factory (normal)
@@ -94,7 +93,7 @@ Other buildings:
 
 ![](./readme-terraced-houses-1.jpg)
 
-*Unlocks at 800 artisans - or creative mode*. Only with DLC `The High Life`.
+*Unlocks at 900 artisans - or creative mode*. Only with DLC `The High Life`.
 
 **Residences** with increased population capacity.
 They merge into blocks like engineers and investors.
@@ -128,7 +127,7 @@ They merge into blocks like engineers and investors.
 
 ![](./readme-terraced-houses-2.jpg)
 
-*Unlocks at 800 engineers - or creative mode*. Only with DLC `The High Life`.
+*Unlocks at 500 engineers - or creative mode*. Only with DLC `The High Life`.
 
 **Residences** with increased population capacity.
 They merge into blocks like engineers and investors.
@@ -150,18 +149,6 @@ Smaller **power plants** and additional energy options.
 - Dynamic railway freight and passenger platforms ornaments (only with cDLC `Industrial Zone`)
 - Randomized freight train skins
 
-### Additional Cosmetics
-
-![](./readme-factory-variants.jpg)
-
-*Unlocks immediately*
-
-**Cosmetic** shift+V variations for production buildings.
-
-- Fur Dealer: 3 new variations
-- Bakery: 2 new variations (+ skin for stone pavement)
-- Cannery: 2 new variations
-
 ## Notes and Known Issues
 
 - (workers only) The game always prefers one direction when building a single row of houses. You have to rotate such a building everytime you place or upgrade it or its neighbors.
@@ -169,41 +156,42 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
-### 3.2
+### 4.0
 
-- 3.2.2: Moved Tea to Artisan construction menu
-- 3.2.2: Improved Chinese translation (thanks to hanthe2nd)
-- 3.2.2: Improved Spanish translation (thanks to mfuegar)
-- 3.2.2: Improved Russian translation (thanks to DrD_AVEL)
-- 3.2.1: Fixed docklands depot tool tip
-- 3.2.1: Fixed NW docklands gate quay color
-- Add cross-progression between terraced and vanilla residences
-- Unlock floor upgrade button in construction menu (only with DLC `The High Life`)
-- Updated Korean translations (thanks to modpark817)
-- Fixed fuel pump station showing no warehouse connection warning in the New World
+#### Major Changes
 
-### 3.1
+- Integrated `Pescatarians` as skyscraper upgrade option for farmers
+- Integrated `Alternative Needs`
+- Tea additional uses Herbs as input
+- Tea docks and factories have reduced maintenance
+- Olive Soap and Sardine Factories use Olive Oil instead of Olives
+- Olive Soap factory produces normal Soap
+- Pickled Vegetables are removed
 
-- Added industrial soap factory and rendering works
-- Swaped terraced artisan gramophone and bombin needs
-- Rebalanced unlocks (see readme)
-- Renamed canned fish to sardines
-- Fixed power plants being attacked
+#### New Content
 
-### 3.0
+- Sausage complex with sausage factory
+- Bread complex with bakery and flour mill
+- Beer complex with brewery and malthouse
+- Ropes as luxury need for Pescatarians
+- Clothes from flax as alternative to wool-based worker clothes
+- New construction menu tab for alternative productions
+- Fertilities for Herbs, Olives, Hemp and Vegetables
+  - Only for new games. Existing save games ignore them
 
-- 3.0.5: Fixed various missing and broken text issues
-- 3.0.3: Fixed missing ground texture of the oil power plant
-- 3.0.3: Coal power plant doesn't drop buff icon anymore
-- 3.0.2: Russian translation
-- 3.0.1: Fixed blurry icons
-- Immediately unlock in creative mode
-- Merged `Upgradable Workers`, `Modular Factories`, `Dockland Gates` and `Railway Stations` into one mod
-- Added passengers to T crossing platforms
-- Added green roof skin for Artisan Terraced Houses
-- Increased income from tea
-- Fixed unlocks when High Life DLC is not owned
+#### Impact on Existing Saves
+
+- Product olive soap → vanilla soap.
+  Check your trade routes.
+- Pescatarians needs changed.
+  Check your consumption statistics.
+- Changed production chains are only applicable when you build new factories.
+- New fertilities only in new games.
+Farms get a fertility buff in existing save games.
+
 
 ## Credits
+
+Thanks to Drakkam for the Cloth icon.
 
 Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!
