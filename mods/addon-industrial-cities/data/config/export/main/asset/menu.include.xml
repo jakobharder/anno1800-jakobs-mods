@@ -1,14 +1,33 @@
 <ModOps>
-  <ModOp Type="addNextSibling" GUID="25000190"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='500145']">
+  <ModOp Type="remove" GUID="25000189" Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010830']" />
+  <!-- <ModOp Type="addNextSibling" GUID="25000189"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010358' or Building='2100115156'][last()]">
     <Item>
       <Building>1500010100</Building>
     </Item>
     <Item>
-      <Building>1500010816</Building>
+      <Building>1500010830</Building>
+    </Item>
+  </ModOp> -->
+
+  <ModOp Type="addNextSibling" GUID="25000189"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
+    <Item>
+      <Building>1500010100</Building>
+      <Worker>1</Worker>
+    </Item>
+    <Item>
+      <Building>1500010830</Building>
+      <Worker>1</Worker>
     </Item>
   </ModOp>
 
+  <ModOp Type="addNextSibling" GUID="25000190"
+  Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=400][last()]">
+    <Item>
+      <Building>1500010816</Building>
+    </Item>
+  </ModOp>
   <ModOp Type="addNextSibling" GUID="500094"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or position()=last()][1]">
     <Item>

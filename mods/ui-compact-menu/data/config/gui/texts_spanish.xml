@@ -14,7 +14,7 @@
     </Text>
   </ModOp>
 
-  <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='101037222']/Text">
+  <ModOp Type="replace" Condition="/TextExport/Texts/Text[GUID='101037222']" Path="/TextExport/Texts/Text[GUID='101037222']/Text">
     <Text>Mercado de Techo Rojo</Text>
   </ModOp>
 </ModOps>

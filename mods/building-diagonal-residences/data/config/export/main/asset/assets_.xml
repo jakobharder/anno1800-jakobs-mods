@@ -48,7 +48,8 @@
         <Template>ConstructionCategory</Template>
         <Values>
           <Standard>
-            <GUID>1500010403</GUID>
+            <GUID>1500011494</GUID>
+            <!-- <GUID>1500010403</GUID> -->
             <Name>diagonal_menu</Name>
             <IconFilename>data/ui/jakob/icon_diagonal_residences.png</IconFilename>
           </Standard>
@@ -98,14 +99,14 @@
     <!-- engineers menu: insert before first -->
     <ModOp GUID="25000192,500447" Type="addPrevSibling" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
       <Item>
-        <Building>1500010403</Building>
+        <Building>1500011494</Building>
       </Item>
     </ModOp>
     <!-- city menu: insert after upgradable workers, fallbacks: pescatarians, farmers, append -->
     <ModOp GUID="500092" Type="addNextSibling"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or Building='1500010212' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186') and not(../Item/Building='1500010212'))][last()]">
       <Item>
-        <Building>1500010403</Building>
+        <Building>1500011494</Building>
       </Item>
     </ModOp>
   </Group>
@@ -182,7 +183,7 @@
   </ModOp>
 
   <!-- # Post fixes -->
-  <ModOp Type="add" GUID="1500010401,1500010402,1500010403,1500010407,1500010408" Path="/Values">
+  <ModOp Type="add" GUID="1500010401,1500010402,1500010407,1500010408" Path="/Values">
     <CultureUpgrade>
       <!-- I accidentally used this GUID for a buff previously.
            This makes sure it's at least not shown in the UI. -->

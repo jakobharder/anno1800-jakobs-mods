@@ -131,7 +131,6 @@
         </Selection>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -491,7 +490,6 @@
         </Standard>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Object>
           <Variations>
@@ -1189,7 +1187,6 @@
         </Selection>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -1538,7 +1535,6 @@
         </Standard>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
         </Locked>
         <Cost>
           <Costs>
@@ -2505,6 +2501,9 @@
         <ConstructionCategory>
           <BuildingList>
             <Item>
+              <Building>1500010100</Building>
+            </Item>
+            <Item>
               <Building>1500010143</Building>
             </Item>
             <Item>
@@ -2514,28 +2513,13 @@
               <Building>1500010225</Building>
             </Item>
             <Item>
-              <Building>1500010100</Building>
-            </Item>
-            <Item>
-              <Building>1500010816</Building>
-            </Item>
-            <Item>
-              <Building>1500010800</Building>
-            </Item>
-            <Item>
-              <Building>1500010817</Building>
-            </Item>
-            <Item>
               <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
               <Building>1500010224</Building>
             </Item>
           </BuildingList>
           <CategoryDescription>1500010213</CategoryDescription>
         </ConstructionCategory>
-        <Locked>
-          <DefaultLockedState>0</DefaultLockedState>
-          <DLCDependency>410085</DLCDependency>
-        </Locked>
+        <Locked />
       </Values>
     </Asset>
     <Asset>
@@ -2565,15 +2549,19 @@
     </Item>
   </ModOp>
   <!-- workers menu: insert before bricks production chain, no fall back -->
-  <ModOp Type="addPrevSibling" GUID='25000190' Path="/Values/ConstructionCategory/BuildingList/Item[Building='500024']">
+  <ModOp Type="addNextSibling" GUID="25000190"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
     <Item>
       <Building>1500010200</Building>
+      <Artisan>800</Artisan>
     </Item>
   </ModOp>
   <!-- artisans menu: insert before anything, no fall back -->
-  <ModOp Type="addPrevSibling" GUID='25000191' Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+  <ModOp Type="addPrevSibling" GUID="25000191"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
     <Item>
       <Building>1500010225</Building>
+      <Artisan>800</Artisan>
     </Item>
   </ModOp>
 
@@ -2595,11 +2583,12 @@
   <!-- # Unlocks, notifications -->
   <ModOp Type="addNextSibling" GUID="130249">
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010219</GUID>
-          <Name>unhide construction menu</Name>
+          <GUID>1500011453</GUID>
+          <!-- <GUID>1500010219</GUID> -->
+          <Name>Unhide @ 750 Workers</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -2608,8 +2597,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context> <!-- workers -->
-                <CounterAmount>1</CounterAmount>
+                <Context>15000001</Context>
+                <CounterAmount>750</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2637,7 +2626,9 @@
             </Item>
           </TriggerActions>
         </Trigger>
-        <TriggerSetup />
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
       </Values>
     </Asset>
     <Asset>
@@ -2677,6 +2668,9 @@
                       <Item>
                         <Asset>1500010225</Asset>
                       </Item>
+                      <Item>
+                        <Asset>30728</Asset>
+                      </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
                 </Values>
@@ -2688,7 +2682,7 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>Trigger</Template>
+      <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
           <GUID>1500010280</GUID>
@@ -2744,9 +2738,8 @@
       <Values>
         <Standard>
           <GUID>1500010238</GUID>
-          <Name>unhide artisans</Name>
+          <Name>Unhide @ 1 Artisan</Name>
         </Standard>
-        <Locked />
         <Trigger>
           <TriggerCondition>
             <Template>ConditionPlayerCounter</Template>

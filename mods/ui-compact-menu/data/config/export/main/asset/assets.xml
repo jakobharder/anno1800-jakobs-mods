@@ -288,10 +288,10 @@
           <ConstructionCategory>
             <BuildingList>
               <Item>
-                <Building>1010360</Building>
+                <Building>1500010816</Building>
               </Item>
               <Item>
-                <Building>1500010816</Building>
+                <Building>1010360</Building>
               </Item>
               <Item>
                 <Building>1500010800</Building>
@@ -387,7 +387,7 @@
                 <Building>1010372</Building>
               </Item>
               <Item>
-                <Building>101037222</Building><!-- Ref Roofs -->
+                <Building>101037222</Building><!-- Red Roofs -->
               </Item>
               <Item>
                 <Building>1500010100</Building>
@@ -400,18 +400,18 @@
       </Asset>
     </ModOp>
     <!-- 101037221 Red Roofs marketplace replacement -->
-    <ModOp Type="addNextSibling" GUID="500094,25000189"
+    <ModOp Type="addNextSibling" GUID="500094"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or Building='101037221' or position()=last()][1]">
       <Item>
         <Building>1500011332</Building>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID="500094,25000189" Path="/Values/ConstructionCategory/BuildingList">
+    <ModOp Type="add" GUID="500094" Path="/Values/ConstructionCategory/BuildingList">
       <Item>
         <Building>0</Building>
       </Item>
     </ModOp>
-    <ModOp Type="remove" GUID="500094,25000189"
+    <ModOp Type="remove" GUID="500094"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010372' or Building='101037221' or Building='1500010100']" />
   </Group>
 
@@ -543,10 +543,10 @@
   </ModOp>
   <ModOp Type="add" GUID="1500011334"
     Path="/Values/ConstructionCategory/BuildingList"
-    Content="@500945/ConstructionCategory/BuildingList/Item[Building &lt;= 269756 or Secondary=1]">
+    Content="@500945/ConstructionCategory/BuildingList/Item[(Building &lt;= 269756 and not(Building='269756')) or Secondary=1]">
   </ModOp>
   <ModOp Type="remove" GUID="500945"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building &lt;= 269756 or Secondary=1]">
+    Path="/Values/ConstructionCategory/BuildingList/Item[(Building &lt;= 269756 and not(Building='269756')) or Secondary=1]">
   </ModOp>
 
   <!-- # Merge Culture into City and Public Services -->

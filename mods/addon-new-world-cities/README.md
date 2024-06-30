@@ -93,6 +93,7 @@ Only with DLC `New World Rising`.
 
 ### 2.2
 
+- 2.2.1: Improved Polish translation by Bzhydack (thanks!)
 - Added Harborlife support for terraced houses
 - Improved Chinese translation (thanks to hanthe2nd)
 - Improved Spanish translation (thanks to mfuegar)

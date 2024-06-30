@@ -1,0 +1,90 @@
+<ModOps>
+  <!-- # Park Path -->
+  <ModOp Type="merge" GUID="102099" Path="/Values/Object/Skins">
+    <OverrideDefaultIcon>data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/maps/park_props_system_1x1_corner_var02_bright_diff.psd</OverrideDefaultIcon>
+  </ModOp>
+  <ModOp Type="add" GUID="102099" Path="/Values/Object/Skins">
+    <SkinList>
+      <Item>
+        <SkinAssetGuid>1500010433</SkinAssetGuid>
+      </Item>
+      <Item>
+        <SkinAssetGuid>1500010439</SkinAssetGuid>
+      </Item>
+    </SkinList>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="119">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010433</GUID>
+          <Name>Diagonal Path</Name>
+          <IconFilename>data\jakob\diagonal-park\maps\path_diag_diff.psd</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011494</SkinCategoryDescription>
+          <SkinName>1500010433</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\diagonal-park\path_straight.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-park\path_end_diag.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-park\path_diag.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/park_props_system_1x1_30.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/park_props_system_1x1_31.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010439</GUID>
+          <Name>Curved Path</Name>
+          <IconFilename>data\jakob\diagonal-park\maps\path_curve_diff.psd</IconFilename>
+          <InfoDescription>163093</InfoDescription>
+        </Standard>
+        <Skin>
+          <SkinCategoryDescription>1500011494</SkinCategoryDescription>
+          <SkinName>1500010439</SkinName>
+          <SkinDescription>1500011186</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\diagonal-park\path_straight.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-park\path_end.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\diagonal-park\path_curve.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/park_props_system_1x1_30.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data/graphics/buildings/ornamental/park_props_system/park_props_system_1x1/park_props_system_1x1_31.cfg</FileName>
+            </Item>
+          </SkinVariations>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

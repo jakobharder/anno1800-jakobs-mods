@@ -1,39 +1,19 @@
 <!--
   Pescatarian
 
-  Don't use GUIDs: 1500010117, 1500010149
+  Don't use GUIDs: 1500010117, 1500010149, 1500010160, 1500010161
 -->
 
 <ModOps>
   <!-- # Includes -->
   <!-- <Include File="/data/jakob/ropes/assets.include.xml" /> -->
+  <Include File="./deprecated.include.xml" />
   <Include File="/data/jakob/music-school/assets.include.xml" />
   <Include File="/data/jakob/small-library/assets.include.xml" />
+  <Include File="./unlocks.include.xml" />
   <!-- <Include File="/data/jakob/seafood-restaurant/assets.include.xml" /> -->
 
   <!-- <Include File="../../../../jakob/3mast-schooner/assets.include.xml" /> -->
-
-  <!-- filter lists -->
-  <ModOp Type="addNextSibling" GUID="502019">
-  <!--  <Asset>
-      <Template>ProductList</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010160</GUID>
-          <Name>worker_unlock_goods</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>ProductList</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010161</GUID>
-          <Name>artisan_unlock_goods</Name>
-        </Standard>
-      </Values>
-    </Asset> -->
-  </ModOp>
 
   <!-- # modify vanilla upgrade paths -->
   <ModOp Type="merge" GUID="1010343" Path="Values">
@@ -708,6 +688,14 @@
 
   <!-- # Population: Pescatarians -->
   <Group>
+    <ModOp Type="add" GUID="25000118"
+      Condition="!/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='2289']/Needs[Item/BonusNeed='1500011326']"
+      Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='2289']/Needs">
+      <Item>
+        <BonusNeed>1500011326</BonusNeed>
+      </Item>
+    </ModOp>
+
     <ModOp GUID="15000004" Type="addNextSibling">
       <Asset>
         <Template>PopulationLevel7</Template>
@@ -751,31 +739,25 @@
                   </Item>
                 </RequiredBuildings>
               </Item>
-              <!-- <Item>
+              <Item>
                 <Product>1500010836</Product>
                 <Amount>0.0006</Amount>
                 <SupplyWeight>2</SupplyWeight>
                 <MoneyValue>5</MoneyValue>
-                <FullWeightPopulationCount>150</FullWeightPopulationCount>
+                <FullWeightPopulationCount>200</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item> -->
-              <Item>
-                <Product>1500010818</Product>
-                <SupplyWeight>4</SupplyWeight>
-                <NoWeightPopulationCount>299</NoWeightPopulationCount>
-                <FullWeightPopulationCount>400</FullWeightPopulationCount>
               </Item>
               <Item>
                 <Product>1500010102</Product>
                 <Amount>0.00044</Amount>
                 <SupplyWeight>5</SupplyWeight>
                 <MoneyValue>22</MoneyValue>
-                <NoWeightPopulationCount>299</NoWeightPopulationCount>
-                <FullWeightPopulationCount>500</FullWeightPopulationCount>
+                <NoWeightPopulationCount>199</NoWeightPopulationCount>
+                <FullWeightPopulationCount>400</FullWeightPopulationCount>
               </Item>
               <Item>
                 <Product>1010213</Product>
@@ -784,6 +766,20 @@
                 <MoneyValue>22</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
                 <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>150</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
+              </Item>
+              <Item>
+                <Product>1500010818</Product>
+                <SupplyWeight>4</SupplyWeight>
+                <NoWeightPopulationCount>299</NoWeightPopulationCount>
+                <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <Item>
                 <Product>1500010801</Product>
@@ -845,7 +841,6 @@
                 <Product>1010203</Product>
                 <Amount>0.0003</Amount>
                 <HappinessValue>5</HappinessValue>
-                <!-- <SupplyWeight>7</SupplyWeight> -->
                 <MoneyValue>26</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
                 <FullWeightPopulationCount>1000</FullWeightPopulationCount>
@@ -857,18 +852,31 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
-              <!-- <Item>
+              <Item>
                 <Product>1500010825</Product>
-                <Amount>0.0002083</Amount>
+                <Amount>0.0003</Amount>
                 <HappinessValue>5</HappinessValue>
                 <MoneyValue>20</MoneyValue>
+                <NoWeightPopulationCount>499</NoWeightPopulationCount>
+                <FullWeightPopulationCount>1000</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
+                  <Item>
+                    <RequiredBuilding>1500010144</RequiredBuilding>
+                  </Item>
                 </RequiredBuildings>
-              </Item> -->
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
+              </Item>
               <!-- <Item>
                 <Product>114410</Product>
                 <Amount>0.0004</Amount>
@@ -886,7 +894,7 @@
                 <MoneyValue>10</MoneyValue>
                 <FullWeightPopulationCount>500</FullWeightPopulationCount>
               </Item> -->
-              <Item>
+              <!-- <Item>
                 <Product>1500010153</Product>
                 <Amount>0.0002</Amount>
                 <HappinessValue>5</HappinessValue>
@@ -898,7 +906,7 @@
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1010352</Product>
                 <HappinessValue>5</HappinessValue>
@@ -961,9 +969,44 @@
                 </RequiredBuildings>
               </Item>
               <Item>
+                <Product>1500011326</Product>
+                <Amount>0.0004</Amount>
+                <SupplyWeight>2</SupplyWeight>
+                <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+                <IsBonusNeed>1</IsBonusNeed>
+                <RequiredBuildings>
+                  <Item>
+                    <RequiredBuilding>1500010143</RequiredBuilding>
+                  </Item>
+                  <Item>
+                    <RequiredBuilding>1500010144</RequiredBuilding>
+                  </Item>
+                </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>500</MinPopulationAmount>
+                  <Population>15000001</Population>
+                </AdditionalGlobalUnlockRequirement>
+              </Item>
+              <Item>
                 <Product>133183</Product>
                 <Amount>0.0004</Amount>
                 <SupplyWeight>5</SupplyWeight>
+                <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+                <IsBonusNeed>1</IsBonusNeed>
+                <RequiredBuildings>
+                  <Item>
+                    <RequiredBuilding>1500010143</RequiredBuilding>
+                  </Item>
+                </RequiredBuildings>
+              </Item>
+              <Item>
+                <Product>5383</Product>
+                <Amount>0.0003</Amount>
+                <SupplyWeight>3</SupplyWeight>
+                <AdditionalGlobalUnlockRequirement>
+                  <Population>15000002</Population>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                </AdditionalGlobalUnlockRequirement>
                 <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
                 <IsBonusNeed>1</IsBonusNeed>
                 <RequiredBuildings>
@@ -1326,183 +1369,6 @@
   </Group>
 
   <!-- TODO EconomyFeature -->
-
-  <!-- # Deprecate farmers -->
-  <ModOp GUID='1010343' Type="addNextSibling">
-    <Asset>
-      <BaseAssetGUID>1010343</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010142</GUID>
-          <Name>pescatarian_farmer</Name>
-          <IconFilename>data/ui/jakob/icon_pescatarian_menu.png</IconFilename>
-          <InfoDescription>1500010146</InfoDescription>
-        </Standard>
-        <Building>
-          <PickingAsset>1500010142</PickingAsset>
-        </Building>
-        <Locked />
-        <Upgradable>
-          <NextGUID>0</NextGUID>
-          <UpgradeCost>
-            <Item>
-              <Amount>2</Amount>
-              <Ingredient>1010196</Ingredient>
-            </Item>
-          </UpgradeCost>
-        </Upgradable>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate02/residence_tier01_estate02.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate03/residence_tier01_estate03.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate04/residence_tier01_estate04.cfg</Filename>
-            </Item>
-            <!-- repeat same variations again to double the color variations in non-default skins -->
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate01/residence_tier01_estate01.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate02/residence_tier01_estate02.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate03/residence_tier01_estate03.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data/graphics/buildings/residence/residence_tier01_estate04/residence_tier01_estate04.cfg</Filename>
-            </Item>
-          </Variations>
-          <Skins>
-            <!-- disable skins -->
-            <SkinList />
-          </Skins>
-        </Object>
-        <Residence7>
-          <ResidenceStorage>
-            <InputStorageMax>1</InputStorageMax>
-          </ResidenceStorage>
-          <PopulationLevel7>601382</PopulationLevel7>
-          <ResidentMax>10</ResidentMax>
-          <ResidentsRequiredForUpgrade>10</ResidentsRequiredForUpgrade>
-          <IsBaseResidence>0</IsBaseResidence>
-        </Residence7>
-        <FloorStackOwner>
-          <!-- disable floor upgrades -->
-          <UpgradeTargetGUID>0</UpgradeTargetGUID>
-          <AddFloorCost />
-        </FloorStackOwner>
-        <Audio />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010194</GUID>
-          <Name>farmers_love_to_farm</Name>
-          <IconFilename>data/ui/jakob/icon_pescatarian_church.png</IconFilename>
-          <InfoDescription>1500010171</InfoDescription>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010142</GUID>
-            </Item>
-          </EffectTargets>
-        </ItemEffect>
-        <BuildingUpgrade />
-        <Buff />
-        <PopulationUpgrade />
-        <ResidenceUpgrade />
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade />
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade>
-          <AddDeltas>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>4</Amount>
-            </Item>
-            <Item>
-              <Product>1010115</Product>
-              <Amount>4</Amount>
-            </Item>
-            <Item>
-              <Product>1010116</Product>
-              <Amount>4</Amount>
-            </Item>
-          </AddDeltas>
-        </DistributionUpgrade>
-        <ItemContainerUpgrade />
-      </Values>
-    </Asset>
-    <Asset>
-      <!-- 
-        Deprecate farmers.
-        Convert all existing farmers to workers.
-      -->
-      <Template>Trigger</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010809</GUID>
-          <Name>Convert Farmers to Workers</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier04.png</IconFilename>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>ObjectBuilt</PlayerCounter>
-                <Context>1500010142</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionSetObjectGUID</Template>
-                <Values>
-                  <Action />
-                  <ActionSetObjectGUID>
-                    <NewGUID>1500010143</NewGUID>
-                  </ActionSetObjectGUID>
-                  <ObjectFilter>
-                    <ObjectGUID>1500010142</ObjectGUID>
-                  </ObjectFilter>
-                </Values>
-              </TriggerAction>
-            </Item>
-            <Item>
-              <!-- register because players could have farmers in their quick build slots -->
-              <TriggerAction>
-                <Template>ActionRegisterTrigger</Template>
-                <Values>
-                  <Action />
-                  <ActionRegisterTrigger>
-                    <TriggerAsset>1500010809</TriggerAsset>
-                  </ActionRegisterTrigger>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
-      </Values>
-    </Asset>
-  </ModOp>
 
   <!-- # Residence: Worker -->
   <ModOp GUID='1010344' Type="addNextSibling">
@@ -2436,10 +2302,10 @@
         <ConstructionCategory>
           <BuildingList>
             <Item>
-              <Building>1500010143</Building>
+              <Building>1500010100</Building>
             </Item>
             <Item>
-              <Building>1500010100</Building>
+              <Building>1500010143</Building>
             </Item>
             <Item>
               <Building>1500010816</Building>
@@ -2506,260 +2372,4 @@
       </Item>
     </ModOp>
   </Group>
-
-  <!-- # Unlocks, notifications -->
-  <ModOp Type="add" GUID="700068" Path="/Values/PlayerCounterContextPool/Contexts">
-    <Item>
-      <Asset>601382</Asset>
-    </Item>
-  </ModOp>
-  <!-- milestone banner: prepend -->
-  <ModOp Type="addPrevSibling" GUID="142358" Path="/Values/BannerConfig/CityLevelBanners/Item[1]">
-    <Item>
-      <RequiredValue>1500</RequiredValue>
-      <PopulationGUID>15000002</PopulationGUID>
-      <Notification>1500010135</Notification>
-    </Item>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="130249">
-    <Asset>
-      <Template>LockableNotification</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010135</GUID>
-          <Name>Banner</Name>
-        </Standard>
-        <Notification>
-          <NotificationType>
-            <Template>MainNotification</Template>
-            <Values>
-              <MainNotification>
-                <Title>1500010136</Title>
-                <NotificationMainIconAsset>601382</NotificationMainIconAsset>
-                <Icon01>1500010102</Icon01>
-                <Icon02>1500010836</Icon02>
-                <Icon03>1500010120</Icon03>
-                <Icon04>1500010127</Icon04>
-                <BackgroundAnimation>data\ui\video\ui_alpha\main_banner\mainbanner_city_luxuryneed_a.bk2</BackgroundAnimation>
-              </MainNotification>
-              <BaseNotification>
-                <NotificationText>1500010137</NotificationText>
-                <NotificationAudioAsset>201843</NotificationAudioAsset>
-              </BaseNotification>
-              <NotificationSubtitle>
-                <Subtitle>265159</Subtitle>
-              </NotificationSubtitle>
-            </Values>
-          </NotificationType>
-        </Notification>
-        <Locked />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010180</GUID>
-          <Name>Creative Mode</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionIsCreativeMode</Template>
-            <Values>
-              <Condition />
-              <ConditionIsCreativeMode />
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010100</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010143</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010144</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010145</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010800</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010801</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010816</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Trigger</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010185</GUID>
-          <!-- <GUID>1500010187</GUID> -->
-          <Name>unlock everything</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000001</Context>
-                <CounterAmount>400</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010100</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010143</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010144</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010145</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
-      </Values>
-    </Asset>
-    <!-- bugfix: unhide buildings -->
-    <Asset>
-      <Template>Trigger</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010802</GUID>
-          <Name>unhide_residence_community_center</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
-            <Values>
-              <Condition />
-              <ConditionAlwaysTrue />
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnhideAssets>
-                      <Item>
-                        <Asset>1500010142</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010143</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010100</Asset>
-                      </Item>
-                    </UnhideAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
-      </Values>
-    </Asset>
-    <!-- unlock goods earlier -->
-    <Asset>
-      <Template>Trigger</Template>
-      <Values>
-        <Standard>
-          <GUID>1500012004</GUID>
-          <Name>Unlock additional chains</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>ObjectBuilt</PlayerCounter>
-                <Context>1500010144</Context>
-                <CounterAmount>1</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010164</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010165</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010835</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010114</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010830</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010800</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup />
-      </Values>
-    </Asset>
-  </ModOp>
 </ModOps>

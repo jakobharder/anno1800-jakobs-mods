@@ -125,49 +125,6 @@
         </Values>
       </Asset>
       <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010840</GUID>
-            <Name>Unlock @ 400 Workers</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionPlayerCounter</Template>
-              <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                  <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000001</Context>
-                  <CounterAmount>400</CounterAmount>
-                </ConditionPlayerCounter>
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnlockAssets>
-                        <Item>
-                          <Asset>1500010816</Asset>
-                        </Item>
-                      </UnlockAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-      <Asset>
         <Template>Skin</Template>
         <Values>
           <Standard>

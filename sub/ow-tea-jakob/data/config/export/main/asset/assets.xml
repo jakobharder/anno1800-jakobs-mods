@@ -1,7 +1,6 @@
 <ModOps>
   <!-- # Includes -->
   <Include File="./productlists.include.xml" />
-  <Include File="./fertility.include.xml" />
 
   <!-- # Tea Maker -->
   <ModOp Type="addNextSibling" GUID="190901">
@@ -824,7 +823,7 @@
         <Standard>
           <GUID>1500011444</GUID>
           <!-- <GUID>1500011285</GUID> -->
-          <Name>@ 800 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -835,7 +834,50 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>900</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011164</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011492</GUID>
+          <Name>Unhide @ 750 Artisans</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>750</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -903,161 +945,6 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- # Herb Farm -->
-  <ModOp Type="addNextSibling" GUID="502043">
-    <Asset>
-      <BaseAssetGUID>1010265</BaseAssetGUID>
-      <Values>
-        <Standard>
-          <GUID>1500010848</GUID>
-          <Name>Herb Farm</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/production_goods/icon_herbs_with_flower.png</IconFilename>
-        </Standard>
-        <Building>
-          <BuildModeRandomRotation>90</BuildModeRandomRotation>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant>
-        </Building>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_farm.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked />
-        <Factory7>
-          <NeededFertility>0</NeededFertility>
-        </Factory7>
-        <FactoryBase>
-          <FactoryOutputs>
-            <Item>
-              <Product>5383</Product>
-              <Amount>1</Amount>
-              <StorageAmount>1</StorageAmount>
-            </Item>
-          </FactoryOutputs>
-          <CycleTime>20</CycleTime>
-          <IsMainFactory>0</IsMainFactory>
-        </FactoryBase>
-        <ModuleOwner>
-          <ModuleLimits>
-            <Main>
-              <Limit>96</Limit>
-            </Main>
-          </ModuleLimits>
-          <ConstructionOptions>
-            <Item>
-              <ModuleGUID>1500010943</ModuleGUID>
-            </Item>
-            <Item>
-              <ModuleGUID>1010273</ModuleGUID>
-            </Item>
-          </ConstructionOptions>
-          <AdditionalModule>269837</AdditionalModule>
-          <AdjustModuleOrientationOnceSpecialModuleWasPlaced>1</AdjustModuleOrientationOnceSpecialModuleWasPlaced>
-          <ModuleBuildRadius>30</ModuleBuildRadius>
-          <FertilizerModuleData>
-            <Module>25240</Module>
-          </FertilizerModuleData>
-          <FarmType>PlantFarm</FarmType>
-        </ModuleOwner>
-        <Maintenance>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>200</Amount>
-              <InactiveAmount>100</InactiveAmount>
-            </Item>
-            <Item>
-              <Product>1010052</Product>
-              <Amount>20</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <LogisticNode />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Farmfield</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010943</GUID>
-          <Name>Herb Field</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_farmfield_module.png</IconFilename>
-        </Standard>
-        <Building>
-          <AssociatedRegions>Moderate</AssociatedRegions>
-        </Building>
-        <Blocking>
-          <GroundDecalAsset>102507</GroundDecalAsset>
-          <HasBuildingBaseTiles>1</HasBuildingBaseTiles>
-        </Blocking>
-        <Cost>
-          <Costs>
-            <Item>
-              <Ingredient>1010017</Ingredient>
-              <Amount>1</Amount>
-            </Item>
-          </Costs>
-        </Cost>
-        <Object>
-          <Variations>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_field_1.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_field_2.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_field_3.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_field_1.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_field_2.cfg</Filename>
-            </Item>
-            <Item>
-              <Filename>data\jakob\tea\herb_farm\herb_field_3.cfg</Filename>
-            </Item>
-          </Variations>
-        </Object>
-        <Locked />
-        <AmbientMoodProvider>
-          <AmbientMood>PotatoField</AmbientMood>
-          <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        </AmbientMoodProvider>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>GuildhouseBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010945</GUID>
-          <Name>Productivity - Decree 1 Buff_01</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_agricultural_subsidy.png</IconFilename>
-          <InfoDescription>269415</InfoDescription>
-        </Standard>
-        <ItemEffect>
-          <EffectTargets>
-            <Item>
-              <GUID>1500010848</GUID>
-            </Item>
-          </EffectTargets>
-        </ItemEffect>
-        <FactoryUpgrade>
-          <AdditionalOutput>
-            <Item>
-              <Product>5383</Product>
-              <AdditionalOutputCycle>2</AdditionalOutputCycle>
-              <Amount>1</Amount>
-            </Item>
-          </AdditionalOutput>
-        </FactoryUpgrade>
-      </Values>
-    </Asset>
-  </ModOp>
 
   <!-- # UI -->
   <!-- After Coffee -->
@@ -1080,6 +967,9 @@
               <Item>
                 <Building>1500302201</Building><!-- Kurila's Herb Garden -->
               </Item>
+              <Item>
+                <Building>1500010848</Building>
+              </Item>
             </Tier1>
           </ProductionChain>
           <Locked />
@@ -1092,10 +982,11 @@
         <Building>1500010959</Building>
       </Item>
     </ModOp>
-    <ModOp Type="addPrevSibling" GUID="25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361']">
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=900][last()]">
       <Item>
         <Building>1500010959</Building>
+        <Artisan>900</Artisan>
       </Item>
     </ModOp>
   </Group>
@@ -1112,9 +1003,6 @@
   <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
     <!-- Deprecated -->
     <!-- <Item>
-      <Factory>1500010848</Factory>
-    </Item>
-    <Item>
       <Factory>1500010940</Factory>
     </Item> -->
     <Item>
@@ -1125,22 +1013,11 @@
     </Item>
   </ModOp>
 
-  <!-- # Out of Order -->
-  <!-- land reform act -->
-  <!-- Deprecated -->
-  <!-- <ModOp Type="add" GUID="269365" Path="/Values/EffectContainer/Effects">
-    <Item>
-      <Effect>1500010945</Effect>
-    </Item>
-  </ModOp> -->
-  <!-- Feedback -->
+  <!-- # Feedback -->
   <Group>
     <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
       <!-- Deprecated -->
       <!-- <Item>
-        <Building>1500010848</Building>
-      </Item>
-      <Item>
         <Building>1500010940</Building>
       </Item> -->
       <Item>
@@ -1153,26 +1030,5 @@
         <Building>1500011160</Building>
       </Item>
     </ModOp>
-    <!-- tractor feedback -->
-    <!-- Deprecated -->
-    <!-- <ModOp Type="add" GUID="2001096" Path="/Values/FeedbackSessionDescription/FarmFieldConfig/FarmFieldBuildings">
-      <Item>
-        <Building>1500010848</Building>
-        <PersonSpawners>
-          <Item>
-            <UnitClass>141674</UnitClass>
-          </Item>
-        </PersonSpawners>
-        <VehicleSpawners>
-          <Item>
-            <UnitClass>270095</UnitClass>
-          </Item>
-          <Item>
-            <UnitClass>25272</UnitClass>
-            <VehicleType>Fertilizer</VehicleType>
-          </Item>
-        </VehicleSpawners>
-      </Item>
-    </ModOp> -->
   </Group>
 </ModOps>

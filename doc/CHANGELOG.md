@@ -6,39 +6,43 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ### Impact on Existing Saves
 
+- Olive soap has been replaced with vanilla soap.
+  Please check your trade routes.
+- Some needs for Pescatarians have changed.
+  Please check your consumption statistics.
 - New fertilities are only applicable in new games.
   Existing save games get a free buff instead and can build farms as before.
 - New input goods are only applicable when you build new factories.
   Old factories stay as they are to avoid problems.
   Some buffs have been removed from old factories though.
-- Olive soap has been replaced with vanilla soap.
-  You may need to update trade routes.
 
 ### Major Changes
 
 - Industrial Cities, 4.0:
-  - Integrated `Pescatarians` and `Alternative Needs`
-  - Sardines production
-    - Added Olive Oil as intermediate step (only new factories)
-  - Tea production
-    - Added Herbs as input (only new factories)
-    - Reduced maintenance cost
-  - Industrial Bread production
-- Pescatarians
-  - Integrated as level 2 and 3 farmer
-  - Olive Soap production
-    - Added Olive Oil as intermediate step (only new factories)
-    - Replaced output with vanilla soap
-  - Removed Pickles completely
+  - Integrated `Pescatarians` as skyscraper upgrade option for farmers
+  - Integrated `Alternative Needs`
+  - Tea additional uses Herbs as input
+  - Tea docks and factories have reduced maintenance
+  - Olive Soap and Sardine Factories use Olive Oil instead of Olives
+  - Olive Soap factory produces normal Soap
+  - Pickled Vegetables are removed
+- Nate's Windmill, 2.0.1:
+  - Costs 3 influnce points now
+  - Reduced construction cost
+- Streets & Railways, 2.0.1:
+  - Integrated `Eletric Poles`
+  - Added `Disable Street Texture` mod
+  - Added `Disable Railway Texture` mod
 
 ### New Content
 
 - Industrial Cities, 4.0:
-  - Bread complex with bakery and flour factories
   - Sausage complex with sausage factory
-  - Cloth complex with worker cloth factory
-  - Added construction menu tab for alternative productions
-  - Added fertilities for Herbs, Olives, Hemp and Vegetables
+  - Bread complex with bakery and flour mill
+  - Beer complex with brewery and malthouse
+  - Ropes as luxury need for Pescatarians
+  - New construction menu tab for alternative productions
+  - Fertilities for Herbs, Olives, Hemp and Vegetables
     - Only for new games. Existing save games ignore them
 
 ## 6.6 - Quality Update
