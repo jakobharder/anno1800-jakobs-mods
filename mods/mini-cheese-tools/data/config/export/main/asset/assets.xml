@@ -1,0 +1,57 @@
+<ModOps>
+  <Group Condition="!#jakob_industrial_cities">
+    <!-- workers -->
+    <ModOp Type="add" GUID="15000001" Path="/Values/PopulationLevel7/PopulationInputs">
+      <Item>
+        <Product>1500010102</Product>
+        <Amount>0.000333334</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1500010153</Product>
+        <Amount>0.00023810</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>25</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+        <AdditionalGlobalUnlockRequirement>
+          <Population>15000002</Population>
+          <MinPopulationAmount>900</MinPopulationAmount>
+        </AdditionalGlobalUnlockRequirement>
+      </Item>
+    </ModOp>
+    <!-- artisans -->
+    <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
+      <Item>
+        <Product>1500010102</Product>
+        <Amount>0.000666667</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>45</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+      <Item>
+        <Product>1500010153</Product>
+        <Amount>0.00047619</Amount>
+        <SupplyWeight>4</SupplyWeight>
+        <MoneyValue>45</MoneyValue>
+        <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+        <IsBonusNeed>1</IsBonusNeed>
+      </Item>
+    </ModOp>
+    <!-- lifestyle menu category -->
+    <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='2289']/Needs">
+      <Item>
+        <BonusNeed>1500010102</BonusNeed>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[Category='4837']/Needs">
+      <Item>
+        <BonusNeed>1500010153</BonusNeed>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>
