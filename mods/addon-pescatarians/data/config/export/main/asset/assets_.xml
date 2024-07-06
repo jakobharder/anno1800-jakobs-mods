@@ -741,7 +741,7 @@
               </Item>
               <Item>
                 <Product>1500010836</Product>
-                <Amount>0.0006</Amount>
+                <Amount>0.00044</Amount>
                 <SupplyWeight>2</SupplyWeight>
                 <MoneyValue>5</MoneyValue>
                 <FullWeightPopulationCount>200</FullWeightPopulationCount>
@@ -759,9 +759,9 @@
                 <NoWeightPopulationCount>199</NoWeightPopulationCount>
                 <FullWeightPopulationCount>400</FullWeightPopulationCount>
               </Item>
-              <Item>
+              <!-- <Item>
                 <Product>1010213</Product>
-                <Amount>0.0003</Amount>
+                <Amount>0.00030303</Amount>
                 <SupplyWeight>5</SupplyWeight>
                 <MoneyValue>22</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
@@ -770,6 +770,19 @@
                   <MinPopulationAmount>150</MinPopulationAmount>
                   <Population>15000001</Population>
                 </AdditionalGlobalUnlockRequirement>
+              </Item> -->
+              <Item>
+                <Product>114410</Product>
+                <Amount>0.00030303</Amount>
+                <SupplyWeight>5</SupplyWeight>
+                <MoneyValue>22</MoneyValue>
+                <NoWeightPopulationCount>299</NoWeightPopulationCount>
+                <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                <!-- <RequiredBuildings>
+                  <Item>
+                    <RequiredBuilding>1500010144</RequiredBuilding>
+                  </Item>
+                </RequiredBuildings> -->
               </Item>
               <Item>
                 <Product>1500010818</Product>
@@ -818,7 +831,7 @@
               </Item> -->
               <Item>
                 <Product>1500010120</Product>
-                <Amount>0.0004</Amount>
+                <Amount>0.00017094</Amount>
                 <SupplyWeight>6</SupplyWeight>
                 <MoneyValue>30</MoneyValue>
                 <FullWeightPopulationCount>1000</FullWeightPopulationCount>
@@ -839,7 +852,7 @@
               </Item>
               <Item>
                 <Product>1010203</Product>
-                <Amount>0.0003</Amount>
+                <Amount>0.000277778</Amount>
                 <HappinessValue>5</HappinessValue>
                 <MoneyValue>26</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
@@ -877,17 +890,6 @@
                   <Population>15000001</Population>
                 </AdditionalGlobalUnlockRequirement>
               </Item>
-              <!-- <Item>
-                <Product>114410</Product>
-                <Amount>0.0004</Amount>
-                <HappinessValue>3</HappinessValue>
-                <MoneyValue>80</MoneyValue>
-                <RequiredBuildings>
-                  <Item>
-                    <RequiredBuilding>1500010144</RequiredBuilding>
-                  </Item>
-                </RequiredBuildings>
-              </Item> -->
               <!-- <Item>
                 <Product>1500010820</Product>
                 <HappinessValue>2</HappinessValue>
@@ -1474,6 +1476,8 @@
           <ResidentMax>24</ResidentMax>  <!-- consumption calculation base -->
           <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
         </Residence7>
         <Selection />
         <!-- <UpgradeList>
@@ -1730,6 +1734,8 @@
           <ResidentMax>36</ResidentMax>  <!-- consumption calculation base -->
           <ResidentsRequiredForUpgrade>36</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
         </Residence7>
         <UpgradeList>
           <DefaultBuff>1500010172</DefaultBuff>

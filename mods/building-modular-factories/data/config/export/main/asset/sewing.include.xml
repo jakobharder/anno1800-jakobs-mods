@@ -1,5 +1,4 @@
 <ModOps>
-  
   <!-- # Sewing Machines Variations -->
   <ModOp Type="addNextSibling" GUID="1010284">
     <Asset>
@@ -54,9 +53,13 @@
             <End>
               <Pool>
                 <!-- left side -->
-                <Item>
+                <!-- <Item>
                   <DirectionOffet>3</DirectionOffet>
                   <Variation>2</Variation>
+                </Item> -->
+                <Item>
+                  <DirectionOffet>1</DirectionOffet>
+                  <Variation>7</Variation>
                 </Item>
                 <Item>
                   <DirectionOffet>3</DirectionOffet>
@@ -83,9 +86,9 @@
             <Crossing>
               <Pool>
                 <!-- right side -->
-                <Item>
+                <!-- <Item>
                   <Variation>1</Variation>
-                </Item>
+                </Item> -->
                 <Item>
                   <Variation>6</Variation>
                 </Item>
@@ -198,7 +201,7 @@
             <Item>
               <Product>1010219</Product>
               <Amount>1</Amount>
-              <StorageAmount>6</StorageAmount>
+              <StorageAmount>8</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>

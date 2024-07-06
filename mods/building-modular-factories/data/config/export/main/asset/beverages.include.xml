@@ -7,7 +7,7 @@
         <Standard>
           <GUID>1500011315</GUID>
           <Name>Schnapps Distillery</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_schnapps_4.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_industrial_schnapps.png</IconFilename>
         </Standard>
         <Building>
           <AllowChangeVariation>1</AllowChangeVariation>
@@ -25,22 +25,24 @@
           </InfluencedByNeighbors>
           <BuildingBlockPool>
             <DontCare />
-            <Single />
+            <Single>
+              <Pool>
+                <Item>
+                  <Variation>3</Variation>
+                  <DirectionOffet>0</DirectionOffet>
+                </Item>
+              </Pool>
+            </Single>
             <Mid>
               <Pool>
                 <Item>
                   <Variation>1</Variation>
-                  <DirectionOffet>1</DirectionOffet>
+                  <DirectionOffet>0</DirectionOffet>
                 </Item>
               </Pool>
             </Mid>
             <End>
               <Pool>
-                <!-- <Item /> -->
-                <!-- <Item>
-                  <Variation>1</Variation>
-                  <DirectionOffet>1</DirectionOffet>
-                </Item> -->
                 <Item>
                   <DirectionOffet>1</DirectionOffet>
                   <Variation>2</Variation>
@@ -53,13 +55,6 @@
                 <Item>
                   <DirectionOffet>2</DirectionOffet>
                 </Item>
-                <!-- <Item>
-                  <DirectionOffet>1</DirectionOffet>
-                </Item> -->
-                <!-- <Item>
-                  <DirectionOffet>1</DirectionOffet>
-                  <Variation>1</Variation>
-                </Item> -->
               </Pool>
             </Crossing>
             <Corner>
@@ -68,10 +63,6 @@
                   <DirectionOffet>3</DirectionOffet>
                   <Variation>0</Variation>
                 </Item>
-                <!-- <Item>
-                  <DirectionOffet>3</DirectionOffet>
-                  <Variation>2</Variation>
-                </Item> -->
               </Pool>
             </Corner>
             <!-- alt corner -->
@@ -90,23 +81,23 @@
           <Costs>
             <Item>
               <Ingredient>1010017</Ingredient>
-              <Amount>300</Amount>
+              <Amount>4000</Amount>
             </Item>
             <Item>
               <Ingredient>1010196</Ingredient>
-              <Amount>4</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010205</Ingredient>
-              <Amount>4</Amount>
+              <Amount>12</Amount>
             </Item>
             <Item>
               <Ingredient>1010218</Ingredient>
-              <Amount>2</Amount>
+              <Amount>8</Amount>
             </Item>
             <Item>
               <Ingredient>1010207</Ingredient>
-              <Amount>2</Amount>
+              <Amount>4</Amount>
             </Item>
             <Item>
               <Ingredient>1010202</Ingredient>
@@ -116,13 +107,16 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data\jakob\food\bakery.cfg</Filename>
+              <Filename>data/jakob/beverages/distillery_corner1.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\food\bakery2.cfg</Filename>
+              <Filename>data/jakob/beverages/distillery_mid.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data\jakob\food\bakery3.cfg</Filename>
+              <Filename>data/jakob/beverages/distillery_corner2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/beverages/distillery_single.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -162,14 +156,14 @@
             <Item>
               <Product>1010195</Product>
               <Amount>1</Amount>
-              <StorageAmount>3</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
               <Product>1010216</Product>
               <Amount>1</Amount>
-              <StorageAmount>2</StorageAmount>
+              <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
           <CycleTime>30</CycleTime>
@@ -184,12 +178,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>120</Amount>
-              <InactiveAmount>60</InactiveAmount>
+              <Amount>100</Amount>
+              <InactiveAmount>50</InactiveAmount>
             </Item>
             <Item>
-              <Product>1010052</Product>
-              <Amount>100</Amount>
+              <Product>1010115</Product>
+              <Amount>50</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -249,10 +243,23 @@
           <TextOverride>500002</TextOverride>
         </Text>
         <ProductionChain>
-          <Building>1500011315</Building>
+          <Building>1010371</Building>
           <Tier1>
             <Item>
-              <Building>1010265</Building>
+              <Building>1010294</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010265</Building>
+                </Item>
+              </Tier2>
+            </Item>
+            <Item>
+              <Building>1500011315</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010265</Building>
+                </Item>
+              </Tier2>
             </Item>
           </Tier1>
           <InfoTipHeight>450</InfoTipHeight>
@@ -429,7 +436,7 @@
               <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>30</CycleTime>
+          <CycleTime>45</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
@@ -441,12 +448,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>500</Amount>
-              <InactiveAmount>250</InactiveAmount>
+              <Amount>320</Amount>
+              <InactiveAmount>160</InactiveAmount>
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>135</Amount>
+              <Amount>100</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -596,7 +603,7 @@
               <Filename>data/jakob/beverages/malthouse_single.cfg</Filename>
             </Item>
             <Item>
-              <Filename>data/jakob/beverages/malthouse_single.cfg</Filename>
+              <Filename>data/jakob/beverages/malthouse_mid.cfg</Filename>
             </Item>
             <Item>
               <Filename>data/jakob/beverages/malthouse_single.cfg</Filename>
@@ -651,7 +658,7 @@
               <StorageAmount>4</StorageAmount>
             </Item>
           </FactoryOutputs>
-          <CycleTime>30</CycleTime>
+          <CycleTime>22.5</CycleTime>
           <IsMainFactory>0</IsMainFactory>
         </FactoryBase>
         <LogisticNode />
@@ -663,12 +670,12 @@
           <Maintenances>
             <Item>
               <Product>1010017</Product>
-              <Amount>370</Amount>
-              <InactiveAmount>185</InactiveAmount>
+              <Amount>220</Amount>
+              <InactiveAmount>110</InactiveAmount>
             </Item>
             <Item>
               <Product>1010115</Product>
-              <Amount>45</Amount>
+              <Amount>35</Amount>
             </Item>
           </Maintenances>
         </Maintenance>
@@ -726,16 +733,16 @@
             <Item>
               <Building>1010292</Building>
               <Tier2>
-                <Item>
+                <!-- <Item>
                   <Building>1010264</Building>
-                </Item>
+                </Item> -->
                 <Item>
                   <Building>1010314</Building>
-                  <Tier3>
+                  <!-- <Tier3>
                     <Item>
                       <Building>1010262</Building>
                     </Item>
-                  </Tier3>
+                  </Tier3> -->
                 </Item>
               </Tier2>
             </Item>

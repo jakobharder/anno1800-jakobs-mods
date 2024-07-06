@@ -160,24 +160,31 @@ Smaller **power plants** and additional energy options.
 
 #### Major Changes
 
-- Integrated `Pescatarians` as skyscraper upgrade option for farmers
-- Integrated `Alternative Needs`
-- Tea additional uses Herbs as input
+- Integrated mods
+  - `Pescatarians` as upgrade option for farmers
+  - `Alternative Needs`
+- More complex productions
+  - Tea additionally uses Herbs as input
+  - Olive Soap and Sardine Factories use Olive Oil instead of Olives
 - Tea docks and factories have reduced maintenance
-- Olive Soap and Sardine Factories use Olive Oil instead of Olives
-- Olive Soap factory produces normal Soap
+- Olive Soap factory now produces normal Soap
 - Pickled Vegetables are removed
+- Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
+  Exact numbers are now visible in the workforce InfoTip.
+- Increased speed people move into Pescatarian and Terraced Houses
 
 #### New Content
 
-- Sausage complex with sausage factory
-- Bread complex with bakery and flour mill
-- Beer complex with brewery and malthouse
-- Ropes as luxury need for Pescatarians
-- Clothes from flax as alternative to wool-based worker clothes
+- Modular factories
+  - Sausage complex with sausage factory
+  - Bread complex with bakery and flour mill
+  - Beer complex with brewery and malthouse
+- Productions
+  - Ropes as luxury need for Pescatarians
+  - Clothes from flax as alternative to wool-based worker clothes
+- Fertilities (only new saves)
+  - Herbs, Olives, Hemp and Vegetables
 - New construction menu tab for alternative productions
-- Fertilities for Herbs, Olives, Hemp and Vegetables
-  - Only for new games. Existing save games ignore them
 
 #### Impact on Existing Saves
 
@@ -187,11 +194,10 @@ Smaller **power plants** and additional energy options.
   Check your consumption statistics.
 - Changed production chains are only applicable when you build new factories.
 - New fertilities only in new games.
-Farms get a fertility buff in existing save games.
-
+  Farms get a fertility buff in existing save games.
 
 ## Credits
 
-Thanks to Drakkam for the Cloth icon.
+Thanks to Drakkam for the Clothes icon.
 
 Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!

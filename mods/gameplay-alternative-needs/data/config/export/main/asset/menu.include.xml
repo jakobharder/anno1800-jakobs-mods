@@ -19,9 +19,9 @@
             <Item>
               <Building>1500011321</Building>
             </Item>
-            <!-- <Item>
+            <Item>
               <Building>1500011316</Building>
-            </Item> -->
+            </Item>
             <Item>
               <Building>1500011314</Building>
             </Item>
@@ -41,7 +41,7 @@
               <Building>1500010122</Building>
             </Item>
             <Item>
-              <Building>500003</Building>
+              <Building>1500011503</Building> <!-- 500003 -->
             </Item>
             <Item>
               <Building>1500010155</Building>
@@ -70,9 +70,6 @@
           </BuildingList>
           <CategoryDescription>13108</CategoryDescription>
         </ConstructionCategory>
-        <!-- <Text>
-          <TextOverride>500945</TextOverride>
-        </Text> -->
         <Locked />
       </Values>
     </Asset>
@@ -111,6 +108,50 @@
                 </Item>
               </Tier2>
             </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011503</GUID>
+          <Name>Sewing Machines</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_sewing_machine.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>500003</TextOverride>
+        </Text>
+        <ProductionChain>
+          <Building>1010371</Building>
+          <Tier1>
+            <Item>
+              <Building>1010284</Building>
+            </Item>
+            <Item>
+              <Building>1500010600</Building>
+              <Tier2>
+                <Item>
+                  <Building>1010266</Building>
+                </Item>
+                <Item>
+                  <Building>1010297</Building>
+                  <Tier3>
+                    <Item>
+                      <Building>1010305</Building>
+                    </Item>
+                    <Item>
+                      <Building>1010304</Building>
+                    </Item>
+                  </Tier3>
+                </Item>
+              </Tier2>
+            </Item>
+            <!-- <Item>
+              <Building>1500010154</Building>
+            </Item> -->
           </Tier1>
         </ProductionChain>
         <Locked />
@@ -319,7 +360,7 @@
       <Values>
         <Standard>
           <GUID>1500011371</GUID>
-          <Name>@ 800 Artisans</Name>
+          <Name>@ 900 Artisans</Name>
         </Standard>
         <Trigger>
           <TriggerCondition>
@@ -329,7 +370,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>900</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -343,6 +384,9 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500011338</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011503</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -385,6 +429,9 @@
                       </Item>
                       <Item>
                         <Asset>1500011338</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011503</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>

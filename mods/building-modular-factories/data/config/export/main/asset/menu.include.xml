@@ -41,9 +41,12 @@
 
   <!-- <ModOp Type="add" GUID="1500010601,1500011272" Path="/Values/ConstructionCategory/BuildingList"> -->
   <ModOp Type="add" GUID="1500010601" Path="/Values/ConstructionCategory/BuildingList">
-    <!-- <Item>
+    <Item>
       <Building>1500011320</Building>
-    </Item> -->
+    </Item>
+    <Item>
+      <Building>1500011315</Building>
+    </Item>
     <Item>
       <Building>1500011313</Building>
     </Item>
@@ -66,11 +69,11 @@
       <Building>1500011317</Building>
     </Item>
     <Item>
+      <Building>1500010600</Building>
+    </Item>
+    <Item>
       <Building>1500010154</Building>
     </Item>
-    <!-- <Item>
-      <Building>1500010600</Building>
-    </Item> -->
   </ModOp>
 
   <!-- <ModOp Type="addNextSibling" GUID="25000191" Path="/Values/ConstructionCategory/BuildingList/Item[Building='500003' or position()=last()][1]">
