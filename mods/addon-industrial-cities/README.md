@@ -158,6 +158,18 @@ Smaller **power plants** and additional energy options.
 
 ### 4.0
 
+#### Impact on Existing Saves
+
+- Please check if you used `Pescatarians`
+  - Olive Soap, Pickled Vegetables are replaced by Soap and Seafood Stew.
+  Check your trade routes.
+  - Pescatarians needs changed.
+  Check your consumption statistics.
+- Good to know
+  - Changed production chains are only applicable when you build new factories.
+  - New fertilities only in new games.
+  Farms get a fertility buff in existing save games.
+
 #### Major Changes
 
 - Integrated mods
@@ -166,12 +178,17 @@ Smaller **power plants** and additional energy options.
 - More complex productions
   - Tea additionally uses Herbs as input
   - Olive Soap and Sardine Factories use Olive Oil instead of Olives
-- Tea docks and factories have reduced maintenance
-- Olive Soap factory now produces normal Soap
-- Pickled Vegetables are removed
-- Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
+  - Linen Mills (Suits) use Hemp and Flax
+  - Fish Canneries use Olive Oil instead of Olives
+  - (Pescatarian) Kitchen additionally uses Fish as input
+- Product changes
+  - Olive Soap factory now produces normal Soap
+  - Kitchen now produces Seafood Stea instead of Pickled Vegetables
+- Balancing
+  - Tea docks and factories have reduced maintenance
+  - Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
   Exact numbers are now visible in the workforce InfoTip.
-- Increased speed people move into Pescatarian and Terraced Houses
+  - Increased speed people move into Pescatarian and Terraced Houses
 
 #### New Content
 
@@ -185,16 +202,6 @@ Smaller **power plants** and additional energy options.
 - Fertilities (only new saves)
   - Herbs, Olives, Hemp and Vegetables
 - New construction menu tab for alternative productions
-
-#### Impact on Existing Saves
-
-- Product olive soap → vanilla soap.
-  Check your trade routes.
-- Pescatarians needs changed.
-  Check your consumption statistics.
-- Changed production chains are only applicable when you build new factories.
-- New fertilities only in new games.
-  Farms get a fertility buff in existing save games.
 
 ## Credits
 
