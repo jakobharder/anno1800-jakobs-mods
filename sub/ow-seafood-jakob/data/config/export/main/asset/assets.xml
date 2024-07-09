@@ -27,6 +27,7 @@
             <AssociatedRegions>Moderate</AssociatedRegions>
             <SecondPartyRelevant>0</SecondPartyRelevant>
             <PickingAsset>1500011511</PickingAsset>
+            <BuildingCategoryName>1500011513</BuildingCategoryName>
           </Building>
           <Blocking />
           <Cost>
@@ -169,6 +170,7 @@
             <BuildModeRandomRotation>90</BuildModeRandomRotation>
             <AssociatedRegions>Moderate</AssociatedRegions>
             <SecondPartyRelevant>0</SecondPartyRelevant>
+            <BuildingCategoryName>1500011513</BuildingCategoryName>
           </Building>
           <Blocking />
           <Cost>
@@ -228,12 +230,22 @@
           <FactoryBase>
             <FactoryInputs>
               <Item>
+                <Product>1010200</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+              <Item>
                 <Product>1500010836</Product>
                 <Amount>1</Amount>
                 <StorageAmount>4</StorageAmount>
               </Item>
               <Item>
-                <Product>1010200</Product>
+                <Product>1010198</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+              <Item>
+                <Product>1010195</Product>
                 <Amount>1</Amount>
                 <StorageAmount>4</StorageAmount>
               </Item>
@@ -488,6 +500,7 @@
           <GUID>1500010114</GUID>
           <Name>Seafood Stew</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png</IconFilename>
+          <InfoDescription>1500011513</InfoDescription>
         </Standard>
         <Text>
           <TextOverride>114410</TextOverride>
@@ -496,10 +509,16 @@
           <Building>1500011511</Building>
           <Tier1>
             <Item>
+              <Building>1010278</Building>
+            </Item>
+            <Item>
               <Building>1500010830</Building>
             </Item>
             <Item>
-              <Building>1010278</Building>
+              <Building>100654</Building>
+            </Item>
+            <Item>
+              <Building>1010265</Building>
             </Item>
           </Tier1>
         </ProductionChain>
