@@ -1,0 +1,62 @@
+<ModOps>
+  <ModOp Type="addNextSibling" GUID="1010035">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011272</GUID>
+          <Name>OW Needs Plus Menu</Name>
+          <IconFilename>data\ui\2kimages\main\icons\icon_trade.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <PlatformVisibility>Console</PlatformVisibility>
+              <Farmer>0</Farmer>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>13108</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011544</GUID>
+          <Name>NW Needs Plus Menu</Name>
+          <IconFilename>data\ui\2kimages\main\icons\icon_trade.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <PlatformVisibility>Console</PlatformVisibility>
+              <Jornalero>0</Jornalero>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>13108</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000035"
+    Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500945']">
+    <Item>
+      <Category>1500011272</Category>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000035"
+    Path="/Values/ConstructionMenu/RegionMenu/Colony01/CategoryMode/BuildingCategory/Categories/Item[Category='500950']">
+    <Item>
+      <Category>1500011544</Category>
+    </Item>
+  </ModOp>
+
+  <!-- TODO maybe some day -->
+  <!-- remove goods marked with alternative, as those should be part of the new alternative menu -->
+  <!-- <ModOp Type="remove" GUID="500945"
+    Condition="/Values/ConstructionCategory/BuildingList/Item[Alternative]"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Alternative]" /> -->
+</ModOps>

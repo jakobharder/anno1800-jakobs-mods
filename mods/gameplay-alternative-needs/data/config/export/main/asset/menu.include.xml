@@ -1,78 +1,64 @@
 <ModOps>
   <!-- # Needs Plus Menu -->
+  <!-- TODO, add by unlock -->
+  <ModOp Type="add" GUID="1500011272"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010846</Building>
+    </Item>
+    <Item>
+      <Building>1500011321</Building>
+    </Item>
+    <Item>
+      <Building>1500011316</Building>
+    </Item>
+    <Item>
+      <Building>1500011314</Building>
+    </Item>
+    <Item>
+      <Building>1500011312</Building>
+    </Item>
+    <Item>
+      <Building>1500011273</Building>
+    </Item>
+    <Item>
+      <Building>1500011319</Building>
+    </Item>
+    <Item>
+      <Building>500008</Building>
+    </Item>
+    <Item>
+      <Building>1500010122</Building>
+    </Item>
+    <Item>
+      <Building>1500011503</Building> <!-- 500003 -->
+    </Item>
+    <Item>
+      <Building>1500010155</Building>
+    </Item>
+    <Item>
+      <Building>124741</Building>
+    </Item>
+    <Item>
+      <Building>124742</Building>
+    </Item>
+    <Item>
+      <Building>500019</Building>
+    </Item>
+    <Item>
+      <Building>1500010129</Building>
+    </Item>
+    <!-- <Item>
+      <Building>124740</Building>
+    </Item>
+    <Item>
+      <Building>1500010959</Building>
+    </Item> -->
+    <Item>
+      <Building>1500011338</Building>
+    </Item>
+  </ModOp>
   <ModOp Type="addNextSibling" GUID="1010035">
-    <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011272</GUID>
-          <Name>Moderate Needs Plus Menu</Name>
-          <IconFilename>data\ui\2kimages\main\icons\icon_trade.png</IconFilename>
-          <!-- <IconFilename>data\ui\2kimages\main\icons\icon_itemsockets_02.png</IconFilename> -->
-          <!-- <IconFilename>data\ui\2kimages\main\icons\icon_pollution.png</IconFilename> -->
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1500010846</Building>
-            </Item>
-            <Item>
-              <Building>1500011321</Building>
-            </Item>
-            <Item>
-              <Building>1500011316</Building>
-            </Item>
-            <Item>
-              <Building>1500011314</Building>
-            </Item>
-            <Item>
-              <Building>1500011312</Building>
-            </Item>
-            <Item>
-              <Building>1500011273</Building>
-            </Item>
-            <Item>
-              <Building>1500011319</Building>
-            </Item>
-            <Item>
-              <Building>500008</Building>
-            </Item>
-            <Item>
-              <Building>1500010122</Building>
-            </Item>
-            <Item>
-              <Building>1500011503</Building> <!-- 500003 -->
-            </Item>
-            <Item>
-              <Building>1500010155</Building>
-            </Item>
-            <Item>
-              <Building>124741</Building>
-            </Item>
-            <Item>
-              <Building>124742</Building>
-            </Item>
-            <Item>
-              <Building>500019</Building>
-            </Item>
-            <Item>
-              <Building>1500010129</Building>
-            </Item>
-            <!-- <Item>
-              <Building>124740</Building>
-            </Item>
-            <Item>
-              <Building>1500010959</Building>
-            </Item> -->
-            <Item>
-              <Building>1500011338</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>13108</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
-      </Values>
-    </Asset>
     <Asset>
       <Template>ProductionChain</Template>
       <Values>
@@ -445,12 +431,6 @@
         </TriggerSetup>
       </Values>
     </Asset>
-  </ModOp>
-  <ModOp Type="addNextSibling" GUID="25000035"
-    Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500945']">
-    <Item>
-      <Category>1500011272</Category>
-    </Item>
   </ModOp>
 
   <!-- remove goods marked with alternative, as those should be part of the new alternative menu -->
