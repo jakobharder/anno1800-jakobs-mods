@@ -1,0 +1,52 @@
+<ModOps>
+  <!-- # Vanilla Fixes -->
+  <!-- swap NW warehouse and residence -->
+  <Group Condition="@500137/.//BuildingList[Item/Building='101323' and Item/Building='101254']">
+    <ModOp GUID='500137' Type="remove"
+			Path="/Values/ConstructionCategory/BuildingList/Item[Building='101323'][1]" />
+    <ModOp GUID='500137' Type="addPrevSibling"
+			Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254'][1]">
+			<Item>
+				<Building>101323</Building>
+			</Item>
+		</ModOp>
+  </Group>
+
+  <!-- # Electricity -->
+  <Group>
+    <!--
+      Swap base oil chain with Artista oil chain.
+      It's important to keep 7305 alive, otherwise triggers for it won't register.
+      This way you can safely add and remove the mod without harming any triggers.
+    -->
+    <ModOp Type="replace" GUID="500916" Path="/Values/Standard/GUID">
+      <GUID>swap</GUID>
+    </ModOp>
+    <ModOp Type="replace" GUID="7305" Path="/Values/Standard/GUID">
+      <GUID>500916</GUID>
+    </ModOp>
+    <ModOp Type="replace" GUID="swap" Path="/Values/Standard/GUID">
+      <GUID>7305</GUID>
+    </ModOp>
+    <!-- replace in Artista menu-->
+    <ModOp Type="replace" GUID="5466" Path="/Values/ConstructionCategory/BuildingList/Item[Building='7305']">
+      <Item>
+        <Building>500916</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="remove" GUID="500137" Path="/Values/ConstructionCategory/BuildingList/Item[Building='7305']" />
+  </Group>
+
+  <!-- # Sewing Machines -->
+  <Group>
+    <!--
+      Move aluminium sewing machines to base sewing machines and replace them.
+    -->
+    <ModOp Type="remove" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='6623']" />
+    <ModOp Type="replace" GUID="500950" Path="/Values/ConstructionCategory/BuildingList/Item[Building='501254']">
+      <Item>
+        <Building>6623</Building>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

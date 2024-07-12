@@ -1,0 +1,97 @@
+<ModOps>
+  <!-- # Harbor Weapons Enbesa-->
+  <ModOp Type="addNextSibling" GUID="117861">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011122</GUID>
+          <Name>Enbesa Harbor Weapon Menu</Name>
+          <IconFilename>data/ui/jakob/icon_harbor_defence.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>1500011120</TextOverride>
+        </Text>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>117861</Building>
+            </Item>
+            <Item>
+              <Building>743</Building>
+            </Item>
+            <Item>
+              <Building>117863</Building>
+            </Item>
+            <Item>
+              <Building>823</Building>
+            </Item>
+            <Item>
+              <Building>4799</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500011541</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="119014" Path="/Values/ConstructionCategory/BuildingList/Item[Building='117871']">
+    <Item>
+      <Building>1500011122</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="119014" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>0</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="119014" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='117861' or Building='743' or Building='117863' or Building='823' or Building='4799']" />
+
+  <!-- # Harbor Weapons Arctic-->
+  <ModOp Type="addNextSibling" GUID="112671">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011123</GUID>
+          <Name>Arctic Harbor Weapon Menu</Name>
+          <IconFilename>data/ui/jakob/icon_harbor_defence.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>1500011120</TextOverride>
+        </Text>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>112671</Building>
+            </Item>
+            <Item>
+              <Building>824</Building>
+            </Item>
+            <Item>
+              <Building>822</Building>
+            </Item>
+            <Item>
+              <Building>4798</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500011541</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="116345" Path="/Values/ConstructionCategory/BuildingList/Item[Building='116030']">
+    <Item>
+      <Building>1500011123</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="116345" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>0</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="116345" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='112671' or Building='824' or Building='822' or Building='4798']" />
+
+</ModOps>

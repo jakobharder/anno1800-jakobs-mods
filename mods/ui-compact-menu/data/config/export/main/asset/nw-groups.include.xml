@@ -1,0 +1,159 @@
+<ModOps>
+  <!-- # Groups -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="100415">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010934</GUID>
+            <Name>NW Administration Menu</Name>
+            <IconFilename>data/ui/jakob/icon_administrations_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>11152</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010933</GUID>
+            <Name>NW Institutions Menu</Name>
+            <IconFilename>data/ui/jakob/icon_institutions_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>22368</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101285' or position()=last()][1]">
+      <Item>
+        <Building>1500010934</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101275' or position()=last()][1]">
+      <Item>
+        <Building>1500010933</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Institution -->
+  <Group>
+    <ModOp Type="add" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101275' or Building='101274' or Building='101276' or Building='1337500011' or Building='1337500012' or Building='1337500018' or Building='1337500019' or Building='2000150010' or Building='2000150036']">
+      <CompactInstitution />
+    </ModOp>
+    <ModOp Type="add" GUID="1500010933"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500137/ConstructionCategory/BuildingList/Item[CompactInstitution]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500010933"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Orchard -->
+  <Group>
+    <ModOp Type="add" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='133004' or Building='133030' or Building='133031' or Building='134614']">
+      <CompactOrchard />
+    </ModOp>
+    <!-- keep in mind others like Taludas do the same, so use guards -->
+    <Group Condition="!@500950/ConstructionCategory/BuildingList[not(Item/Building='134614')]">
+      <ModOp Type="addNextSibling" GUID="500950"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='134614']">
+        <Item>
+          <Building>7425</Building>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <!-- # Administration -->
+  <Group>
+    <ModOp Type="add" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101285' or Building='101284' or Building='101286']">
+      <CompactAdministration />
+    </ModOp>
+    <ModOp Type="add" GUID="1500010934"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500137/ConstructionCategory/BuildingList/Item[CompactAdministration]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500010934"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Remove Entries -->
+  <Group>
+    <ModOp Type="remove" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactAdministration or CompactInstitution or CompactHide]" />
+    <ModOp Type="remove" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactOrchard or CompactHide]" />
+  </Group>
+
+  <!-- # Harbor Weapons NW -->
+  <ModOp Type="addNextSibling" GUID="101563">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011121</GUID>
+          <Name>NW Harbor Weapon Menu</Name>
+          <IconFilename>data/ui/jakob/icon_harbor_defence.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>1500011120</TextOverride>
+        </Text>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>101563</Building>
+            </Item>
+            <Item>
+              <Building>101570</Building>
+            </Item>
+            <Item>
+              <Building>632</Building>
+            </Item>
+            <Item>
+              <Building>742</Building>
+            </Item>
+            <Item>
+              <Building>4797</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500011541</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500149" Path="/Values/ConstructionCategory/BuildingList/Item[Building='101344']">
+    <Item>
+      <Building>1500011121</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="500149" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>0</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="remove" GUID="500149" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='101563' or Building='101570' or Building='632' or Building='742' or Building='4797']" />
+</ModOps>

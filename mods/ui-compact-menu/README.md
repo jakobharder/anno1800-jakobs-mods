@@ -39,7 +39,52 @@ Contact me if you have any mod conflicts so that I can take care of them.
 
 ## Modders
 
-Add `City` or `Secondary` if you want to change where your building is added to.
+### Add to Groups
+
+You need to add a tag to your building to be included in one of the new groups.
+
+```xml
+<ConstructionCategory>
+  <BuildingList>
+    ...
+    <Item>
+      <Building>123</Building>
+      <CompactAdministration />
+    </Item>
+    ...
+  </BuildingList>
+</ConstructionCategory>
+```
+
+The changes are applied with `LoadAfterIds: '*'`.
+Avoid adding your building in that loading stage, otherwise contact me to add a dependency.
+
+#### Available Tags
+
+Tag | Category | Region | Comment
+---|---|---|---
+`CompactAdministration` | City | OW, NW
+`CompactInstitution` | City | OW, NW
+`CompactEducation` | Services | OW
+`CompactReligion` | Services | OW
+`CompactOrchard` | Consumables | NW | only for hiding, progress menu group is used
+`CompactMarket` | Services | OW | only groups when there are 2+ buildings
+`CompactTourist` | City, Services | OW
+`CompactCulture` | Services | OW
+`CompactMall` | Services | OW
+
+#### Handle Own Groups
+
+Add entries with `<PlatformVisibility>Console</PlatformVisibility>` as if you had no group of your own.
+Those entries will only be considered when using this mod.
+
+Additionally add `<CompactHide />` to your group to make it disappear when using this mod.
+
+### Add to Category Tabs
+
+By default mod buildings are added to public services and vanilla tier consumables.
+
+Add `City` or `Secondary` if you want to change that.
 The changes are applied with `LoadAfterIds: '*'`.
 Avoid adding your building in that loading stage, otherwise contact me to add a dependency.
 
@@ -48,10 +93,12 @@ Merge culture building into City tab instead of Public Services tab:
 ```xml
 <ConstructionCategory>
   <BuildingList>
+    ...
     <Item>
       <Building>123</Building>
-      <City>1</City>
+      <City />
     </Item>
+    ...
   </BuildingList>
 </ConstructionCategory>
 ```
@@ -61,15 +108,21 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 ```xml
 <ConstructionCategory>
   <BuildingList>
+    ...
     <Item>
       <Building>123</Building>
-      <Secondary>1</CSecondaryity>
+      <Secondary />
     </Item>
+    ...
   </BuildingList>
 </ConstructionCategory>
 ```
 
 ## Changes
+
+### 2.1
+
+- Tags to easily add mod buildings to groups
 
 ### 2.0
 

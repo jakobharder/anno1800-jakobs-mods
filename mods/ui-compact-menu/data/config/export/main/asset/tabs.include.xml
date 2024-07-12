@@ -1,0 +1,69 @@
+<ModOps>
+  <!-- # Merge Culture into City and Public Services -->
+  <Group>
+    <ModOp Type="add" GUID="500116"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='7431' or Building='100429' or Building='403']">
+      <City />
+    </ModOp>
+    <ModOp Type="add" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500116/ConstructionCategory/BuildingList/Item[City]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500116"
+      Path="/Values/ConstructionCategory/BuildingList/Item[City]">
+    </ModOp>
+    <ModOp Type="add" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500116/ConstructionCategory/BuildingList/Item">
+    </ModOp>
+    <ModOp Type="remove" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500116']" />
+    <!-- Public Services -> Services -->
+    <ModOp Type="merge" GUID="500094,500138"
+      Path="/Values">
+      <Values>
+        <Text>
+          <TextOverride>1500011543</TextOverride>
+        </Text>
+      </Values>
+    </ModOp>
+  </Group>
+
+  <!-- # Split Consumables -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010035">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011334</GUID>
+            <Name>Moderate Higher Tier</Name>
+            <IconFilename>data\ui\2kimages\main\icons\icon_itemsockets_02.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+            </BuildingList>
+            <CategoryDescription>19564</CategoryDescription>
+          </ConstructionCategory>
+          <Text>
+            <TextOverride>500945</TextOverride>
+          </Text>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500945']">
+      <Item>
+        <Category>1500011334</Category>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1500011334"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500945/ConstructionCategory/BuildingList/Item[(Building &lt;= 269756 and not(Building='269756')) or Secondary]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[(Building &lt;= 269756 and not(Building='269756')) or Secondary]">
+    </ModOp>
+  </Group>
+</ModOps>
