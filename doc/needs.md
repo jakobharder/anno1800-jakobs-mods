@@ -15,7 +15,7 @@ Need | Consumption | Residents | Coins | Required | Unlock
 --- | --- | --- | --- | --- | ---
 <img src="./icons/icon_market.png" class="icon"/> Market | | 4 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" />
 <img src="./icons/icon_fish.png" class="icon"/> Fish | 0.0006 | 4 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 3 <img src="./icons/icon_coins.png" class="icon"/>
-<img src="./icons/icon_cloth.png" class="icon"/> Worker Cloth | 0.00044 | 2  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/>
+<img src="./icons/icon_cloth.png" class="icon"/> ~~Worker Cloth~~ | 0.00044 | 2  <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/>
 <img src="./icons/icon_vegetables.png" class="icon"/> Vegetables | 0.0006 | 2 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | ? <img src="./icons/icon_coins.png" class="icon"/> | 200
 <img src="./icons/icon_cheese.png" class="icon"/> Cheese | 0.00044 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/> | 200/400
 <img src="./icons/icon_bread.png" class="icon"/> Bread | 0.0003 | 5 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_pescatarian_workforce.png" class="icon" /> | 6 <img src="./icons/icon_coins.png" class="icon"/> | 300/600
