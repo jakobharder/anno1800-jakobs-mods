@@ -158,40 +158,52 @@ Smaller **power plants** and additional energy options.
 
 ### 4.0
 
+#### Impact on Existing Saves
+
+- Please check if you used `Pescatarians`
+  - Olive Soap, Pickled Vegetables are replaced by Soap and Seafood Stew.
+  Check your trade routes.
+  - Pescatarians needs changed.
+  Check your consumption statistics.
+- Good to know
+  - Changed production chains are only applicable when you build new factories.
+  - New fertilities only in new games.
+  Farms get a fertility buff in existing save games.
+
 #### Major Changes
 
-- Integrated `Pescatarians` as skyscraper upgrade option for farmers
-- Integrated `Alternative Needs`
-- Tea additional uses Herbs as input
-- Tea docks and factories have reduced maintenance
-- Olive Soap and Sardine Factories use Olive Oil instead of Olives
-- Olive Soap factory produces normal Soap
-- Pickled Vegetables are removed
+- Integrated mods
+  - `Pescatarians` as upgrade option for farmers
+  - `Alternative Needs`
+- More complex productions
+  - Tea additionally uses Herbs as input
+  - Olive Soap and Sardine Factories use Olive Oil instead of Olives
+  - Linen Mills (Suits) use Hemp and Flax
+  - Fish Canneries use Olive Oil instead of Olives
+  - (Pescatarian) Kitchen additionally uses Fish as input
+- Product changes
+  - Olive Soap factory now produces normal Soap
+  - Kitchen now produces Seafood Stea instead of Pickled Vegetables
+- Balancing
+  - Tea docks and factories have reduced maintenance
+  - Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
+  Exact numbers are now visible in the workforce InfoTip.
+  - Increased speed people move into Pescatarian and Terraced Houses
 
 #### New Content
 
-- Sausage complex with sausage factory
-- Bread complex with bakery and flour mill
-- Beer complex with brewery and malthouse
-- Ropes as luxury need for Pescatarians
-- Clothes from flax as alternative to wool-based worker clothes
+- Modular factories
+  - Sausage complex with sausage factory
+  - Bread complex with bakery and flour mill
+  - Beer complex with brewery and malthouse
+- Productions
+  - Ropes as luxury need for Pescatarians
+  - Clothes from flax as alternative to wool-based worker clothes
+  - OW Seafood Stew from calamari, vegetables and potatoes
+- Fertilities (only new saves)
+  - Herbs, Olives, Hemp and Vegetables
 - New construction menu tab for alternative productions
-- Fertilities for Herbs, Olives, Hemp and Vegetables
-  - Only for new games. Existing save games ignore them
-
-#### Impact on Existing Saves
-
-- Product olive soap → vanilla soap.
-  Check your trade routes.
-- Pescatarians needs changed.
-  Check your consumption statistics.
-- Changed production chains are only applicable when you build new factories.
-- New fertilities only in new games.
-Farms get a fertility buff in existing save games.
-
 
 ## Credits
-
-Thanks to Drakkam for the Cloth icon.
 
 Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!

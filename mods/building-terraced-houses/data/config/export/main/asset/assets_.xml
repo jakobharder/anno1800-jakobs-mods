@@ -137,6 +137,7 @@
           <PickingAsset>1500010200</PickingAsset>
           <!-- overwrite influence direction have front fassades always facing outwards -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
           <BuildingBlockPool>
             <Single>
               <Pool>
@@ -416,7 +417,7 @@
           <ResidentMax>20</ResidentMax> <!-- needs to be the standard max for the population level -->
           <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
           <IsBaseResidence>0</IsBaseResidence>
-          <MoveInMs>8000</MoveInMs>
+          <MoveInMs>5000</MoveInMs>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -1192,6 +1193,7 @@
           <SecondPartyRelevant>0</SecondPartyRelevant>
           <PickingAsset>1500010225</PickingAsset>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
           <!--
             Artisans are either upgraded from modern workers or vanilla artisans.
             Vanilla has 4 variants. Those translate to straights.
@@ -1460,7 +1462,7 @@
           <ResidentMax>30</ResidentMax> <!-- needs to be the standard max for the population level -->
           <ResidentsRequiredForUpgrade>50</ResidentsRequiredForUpgrade>
           <IsBaseResidence>0</IsBaseResidence>
-          <MoveInMs>8000</MoveInMs>
+          <MoveInMs>5000</MoveInMs>
         </Residence7>
         <LogisticNode>
           <REMOVE_THIS_LATER_FeedbackUnitTier>Level3</REMOVE_THIS_LATER_FeedbackUnitTier>
@@ -2517,7 +2519,7 @@
               <Building>1500010224</Building>
             </Item>
           </BuildingList>
-          <CategoryDescription>1500010213</CategoryDescription>
+          <CategoryDescription>1500011513</CategoryDescription>
         </ConstructionCategory>
         <Locked />
       </Values>

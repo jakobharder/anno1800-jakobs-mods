@@ -720,7 +720,7 @@
               <Item>
                 <Product>1010200</Product>
                 <Amount>0.0006</Amount>
-                <SupplyWeight>4</SupplyWeight>
+                <SupplyWeight>6</SupplyWeight>
                 <MoneyValue>10</MoneyValue>
                 <RequiredBuildings>
                   <Item>
@@ -728,7 +728,7 @@
                   </Item>
                 </RequiredBuildings>
               </Item>
-              <Item>
+              <!-- <Item>
                 <Product>1010237</Product>
                 <Amount>0.0006</Amount>
                 <SupplyWeight>2</SupplyWeight>
@@ -738,12 +738,12 @@
                     <RequiredBuilding>1500010143</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1500010836</Product>
-                <Amount>0.0006</Amount>
+                <Amount>0.00044</Amount>
                 <SupplyWeight>2</SupplyWeight>
-                <MoneyValue>5</MoneyValue>
+                <MoneyValue>10</MoneyValue>
                 <FullWeightPopulationCount>200</FullWeightPopulationCount>
                 <RequiredBuildings>
                   <Item>
@@ -759,9 +759,9 @@
                 <NoWeightPopulationCount>199</NoWeightPopulationCount>
                 <FullWeightPopulationCount>400</FullWeightPopulationCount>
               </Item>
-              <Item>
+              <!-- <Item>
                 <Product>1010213</Product>
-                <Amount>0.0003</Amount>
+                <Amount>0.00030303</Amount>
                 <SupplyWeight>5</SupplyWeight>
                 <MoneyValue>22</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
@@ -770,7 +770,7 @@
                   <MinPopulationAmount>150</MinPopulationAmount>
                   <Population>15000001</Population>
                 </AdditionalGlobalUnlockRequirement>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1500010818</Product>
                 <SupplyWeight>4</SupplyWeight>
@@ -782,10 +782,22 @@
                 </AdditionalGlobalUnlockRequirement>
               </Item>
               <Item>
+                <Product>114410</Product>
+                <Amount>0.0002</Amount>
+                <SupplyWeight>5</SupplyWeight>
+                <MoneyValue>22</MoneyValue>
+                <NoWeightPopulationCount>399</NoWeightPopulationCount>
+                <FullWeightPopulationCount>750</FullWeightPopulationCount>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>1</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
+              </Item>
+              <Item>
                 <Product>1500010801</Product>
                 <SupplyWeight>6</SupplyWeight>
-                <NoWeightPopulationCount>299</NoWeightPopulationCount>
-                <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                <!-- <NoWeightPopulationCount>299</NoWeightPopulationCount>
+                <FullWeightPopulationCount>600</FullWeightPopulationCount> -->
                 <RequiredBuildings>
                   <Item>
                     <RequiredBuilding>1500010144</RequiredBuilding>
@@ -794,7 +806,7 @@
               </Item>
               <Item>
                 <Product>1500010127</Product>
-                <Amount>0.0008</Amount>
+                <Amount>0.000303</Amount>
                 <SupplyWeight>6</SupplyWeight>
                 <MoneyValue>30</MoneyValue>
                 <FullWeightPopulationCount>700</FullWeightPopulationCount>
@@ -818,7 +830,7 @@
               </Item> -->
               <Item>
                 <Product>1500010120</Product>
-                <Amount>0.0004</Amount>
+                <Amount>0.000303</Amount>
                 <SupplyWeight>6</SupplyWeight>
                 <MoneyValue>30</MoneyValue>
                 <FullWeightPopulationCount>1000</FullWeightPopulationCount>
@@ -839,7 +851,7 @@
               </Item>
               <Item>
                 <Product>1010203</Product>
-                <Amount>0.0003</Amount>
+                <Amount>0.000277778</Amount>
                 <HappinessValue>5</HappinessValue>
                 <MoneyValue>26</MoneyValue>
                 <NoWeightPopulationCount>299</NoWeightPopulationCount>
@@ -859,7 +871,7 @@
               </Item>
               <Item>
                 <Product>1500010825</Product>
-                <Amount>0.0003</Amount>
+                <Amount>0.00017</Amount>
                 <HappinessValue>5</HappinessValue>
                 <MoneyValue>20</MoneyValue>
                 <NoWeightPopulationCount>499</NoWeightPopulationCount>
@@ -878,34 +890,10 @@
                 </AdditionalGlobalUnlockRequirement>
               </Item>
               <!-- <Item>
-                <Product>114410</Product>
-                <Amount>0.0004</Amount>
-                <HappinessValue>3</HappinessValue>
-                <MoneyValue>80</MoneyValue>
-                <RequiredBuildings>
-                  <Item>
-                    <RequiredBuilding>1500010144</RequiredBuilding>
-                  </Item>
-                </RequiredBuildings>
-              </Item> -->
-              <!-- <Item>
                 <Product>1500010820</Product>
                 <HappinessValue>2</HappinessValue>
                 <MoneyValue>10</MoneyValue>
                 <FullWeightPopulationCount>500</FullWeightPopulationCount>
-              </Item> -->
-              <!-- <Item>
-                <Product>1500010153</Product>
-                <Amount>0.0002</Amount>
-                <HappinessValue>5</HappinessValue>
-                <MoneyValue>36</MoneyValue>
-                <NoWeightPopulationCount>499</NoWeightPopulationCount>
-                <FullWeightPopulationCount>1500</FullWeightPopulationCount>
-                <RequiredBuildings>
-                  <Item>
-                    <RequiredBuilding>1500010143</RequiredBuilding>
-                  </Item>
-                </RequiredBuildings>
               </Item> -->
               <Item>
                 <Product>1010352</Product>
@@ -1389,6 +1377,7 @@
           <BuildingType>Residence</BuildingType>
           <PickingAsset>1500010143</PickingAsset>
           <AssociatedRegions>Moderate</AssociatedRegions>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
         </Building>
         <Cost>
           <Costs>
@@ -1474,6 +1463,8 @@
           <ResidentMax>24</ResidentMax>  <!-- consumption calculation base -->
           <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
         </Residence7>
         <Selection />
         <!-- <UpgradeList>
@@ -1636,6 +1627,7 @@
         </Standard>
         <Building>
           <PickingAsset>1500010143</PickingAsset>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
         </Building>
         <Cost>
           <Costs>
@@ -1730,6 +1722,8 @@
           <ResidentMax>36</ResidentMax>  <!-- consumption calculation base -->
           <ResidentsRequiredForUpgrade>36</ResidentsRequiredForUpgrade>
           <IsBaseResidence>1</IsBaseResidence>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
         </Residence7>
         <UpgradeList>
           <DefaultBuff>1500010172</DefaultBuff>
@@ -2086,7 +2080,7 @@
         </Standard>
         <Building>
           <BuildingType>Logistic</BuildingType>
-          <BuildingCategoryName>100003</BuildingCategoryName>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
           <SkipUnlockMessage>1</SkipUnlockMessage>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
@@ -2298,6 +2292,7 @@
           <GUID>1500010186</GUID>
           <Name>Pescatarians Menu</Name>
           <IconFilename>data/ui/jakob/icon_pescatarian_menu.png</IconFilename>
+          <InfoDescription>1500011513</InfoDescription>
         </Standard>
         <ConstructionCategory>
           <BuildingList>

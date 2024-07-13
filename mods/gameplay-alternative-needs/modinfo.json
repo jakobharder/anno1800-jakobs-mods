@@ -1,9 +1,10 @@
 {
   "out": "${annoMods}/[Addon] Industrial Cities (Jakob)/jakob_alternative_needs",
-  "Version": "3.0.1",
+  "Version": "3.0.3",
   "ModID": "jakob_alternative_needs",
   "ModioResourceId": 3230052,
   "ModDependencies": [
+    "alt-menu-jakob",
     "ow-sardines-jakob",
     "ow-suits-jakob",
     "ow-cheese-jakob",
@@ -19,7 +20,7 @@
     "tools-jakob"
   ],
   "LoadAfterIds": [
-    "*",
+    "alt-menu-jakob",
     "jakob_pescatarians",
     "sardines-jakob",
     "suits-jakob",
@@ -46,5 +47,5 @@
     }
   ],
   "CreatorName": "Jakob",
-  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+  "CreatorContact": "https://github.com/jakobharder/anno1800-jakobs-mods"
 }

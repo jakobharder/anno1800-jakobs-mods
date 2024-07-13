@@ -1,0 +1,581 @@
+<ModOps>
+  <!-- # Includes -->
+  <Include File="./productlists.include.xml" />
+
+  <ModOp Type="add" GUID="114410"
+    Condition="!/Values/Product/ProductionRegions[Item/RegionType='Moderate']"
+    Path="/Values/Product/ProductionRegions">
+    <Item>
+      <RegionType>Moderate</RegionType>
+    </Item>
+  </ModOp>
+
+  <!-- # Production -->
+  <Group>
+    <ModOp GUID="1010265" Type="addNextSibling">
+      <Asset>
+        <Template>FactoryBuilding7</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010835</GUID>
+            <!-- Deprecated, don't use -->
+            <Name>Old Seafood Kitchen</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png</IconFilename>
+          </Standard>
+          <Building>
+            <BuildModeRandomRotation>180</BuildModeRandomRotation>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+            <PickingAsset>1500011511</PickingAsset>
+            <BuildingCategoryName>1500011513</BuildingCategoryName>
+          </Building>
+          <Blocking />
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>2000</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>12</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>6</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data\jakob\pickled-vegetables\kitchen\kitchen.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Mesh />
+          <Selection>
+            <ParticipantMessageArcheType>Resident_tier03_atWork</ParticipantMessageArcheType>
+            <Colors>
+              <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+            </Colors>
+          </Selection>
+          <Constructable />
+          <Locked />
+          <SoundEmitter>
+            <ActiveSounds>
+              <Item>
+                <Sound>216871</Sound>
+              </Item>
+              <Item>
+                <Sound>206327</Sound>
+              </Item>
+            </ActiveSounds>
+            <IncidentSounds>
+              <InfectedFire>
+                <Item>
+                  <Sound>214659</Sound>
+                </Item>
+              </InfectedFire>
+            </IncidentSounds>
+            <MaterialType>Soil</MaterialType>
+          </SoundEmitter>
+          <FeedbackController />
+          <Infolayer />
+          <UpgradeList />
+          <Factory7 />
+          <FactoryBase>
+            <FactoryInputs>
+              <Item>
+                <Product>1500010836</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+            </FactoryInputs>
+            <FactoryOutputs>
+              <Item>
+                <Product>114410</Product>
+                <Amount>1</Amount>
+                <StorageAmount>2</StorageAmount>
+              </Item>
+            </FactoryOutputs>
+            <CycleTime>60</CycleTime>
+            <IsMainFactory>0</IsMainFactory>
+          </FactoryBase>
+          <LogisticNode />
+          <AmbientMoodProvider>
+            <Murmur>Factory</Murmur>
+            <DynamicEnvironmentType>None</DynamicEnvironmentType>
+          </AmbientMoodProvider>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>80</Amount>
+                <InactiveAmount>40</InactiveAmount>
+              </Item>
+              <Item>
+                <Product>1010116</Product>
+                <Amount>50</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+          <Attackable>
+            <AttackableType>IslandBuilding</AttackableType>
+            <MaximumHitPoints>2500</MaximumHitPoints>
+            <SelfHealPerHealTick>6</SelfHealPerHealTick>
+          </Attackable>
+          <Pausable />
+          <IncidentInfectable>
+            <Infectable>
+              <Explosion>
+                <Base>0</Base>
+                <Escalated>0</Escalated>
+              </Explosion>
+            </Infectable>
+            <Explosion>
+              <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+            </Explosion>
+            <IncidentInfectionChanceFactors>
+              <Fire>
+                <DensityDistance>20</DensityDistance>
+                <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+                <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+              </Fire>
+              <Riot>
+                <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+                <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+                <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+                <HappinessThreshold>20</HappinessThreshold>
+              </Riot>
+            </IncidentInfectionChanceFactors>
+          </IncidentInfectable>
+          <Industrializable />
+          <Culture>
+            <CultureType>Culture</CultureType>
+          </Culture>
+          <QuestObject />
+          <Electrifiable />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FactoryBuilding7</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011511</GUID>
+            <Name>Seafood Kitchen</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png</IconFilename>
+          </Standard>
+          <Building>
+            <BuildModeRandomRotation>90</BuildModeRandomRotation>
+            <AssociatedRegions>Moderate</AssociatedRegions>
+            <SecondPartyRelevant>0</SecondPartyRelevant>
+            <BuildingCategoryName>1500011513</BuildingCategoryName>
+          </Building>
+          <Blocking />
+          <Cost>
+            <Costs>
+              <Item>
+                <Ingredient>1010017</Ingredient>
+                <Amount>2000</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010196</Ingredient>
+                <Amount>12</Amount>
+              </Item>
+              <Item>
+                <Ingredient>1010205</Ingredient>
+                <Amount>6</Amount>
+              </Item>
+            </Costs>
+          </Cost>
+          <Object>
+            <Variations>
+              <Item>
+                <Filename>data/jakob/seafood/kitchen.cfg</Filename>
+              </Item>
+            </Variations>
+          </Object>
+          <Mesh />
+          <Selection>
+            <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+            <Colors>
+              <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+            </Colors>
+          </Selection>
+          <Constructable />
+          <Locked />
+          <SoundEmitter>
+            <ActiveSounds>
+              <Item>
+                <Sound>216871</Sound>
+              </Item>
+              <Item>
+                <Sound>206327</Sound>
+              </Item>
+            </ActiveSounds>
+            <IncidentSounds>
+              <InfectedFire>
+                <Item>
+                  <Sound>214659</Sound>
+                </Item>
+              </InfectedFire>
+            </IncidentSounds>
+            <MaterialType>Soil</MaterialType>
+          </SoundEmitter>
+          <FeedbackController />
+          <Infolayer />
+          <UpgradeList />
+          <Factory7 />
+          <FactoryBase>
+            <FactoryInputs>
+              <Item>
+                <Product>5380</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+              <Item>
+                <Product>1500010836</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+              <!-- <Item>
+                <Product>1010198</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item> -->
+              <Item>
+                <Product>1010195</Product>
+                <Amount>1</Amount>
+                <StorageAmount>4</StorageAmount>
+              </Item>
+            </FactoryInputs>
+            <FactoryOutputs>
+              <Item>
+                <Product>114410</Product>
+                <Amount>1</Amount>
+                <StorageAmount>2</StorageAmount>
+              </Item>
+            </FactoryOutputs>
+            <CycleTime>60</CycleTime>
+            <IsMainFactory>0</IsMainFactory>
+          </FactoryBase>
+          <LogisticNode />
+          <AmbientMoodProvider>
+            <Murmur>Factory</Murmur>
+            <DynamicEnvironmentType>None</DynamicEnvironmentType>
+          </AmbientMoodProvider>
+          <Maintenance>
+            <Maintenances>
+              <Item>
+                <Product>1010017</Product>
+                <Amount>80</Amount>
+                <InactiveAmount>40</InactiveAmount>
+              </Item>
+              <Item>
+                <Product>1010115</Product>
+                <Amount>50</Amount>
+              </Item>
+            </Maintenances>
+          </Maintenance>
+          <Attackable>
+            <AttackableType>IslandBuilding</AttackableType>
+            <MaximumHitPoints>2500</MaximumHitPoints>
+            <SelfHealPerHealTick>6</SelfHealPerHealTick>
+          </Attackable>
+          <Pausable />
+          <IncidentInfectable>
+            <Infectable>
+              <Explosion>
+                <Base>0</Base>
+                <Escalated>0</Escalated>
+              </Explosion>
+            </Infectable>
+            <Explosion>
+              <ExplosionCoreDamage>1000</ExplosionCoreDamage>
+            </Explosion>
+            <IncidentInfectionChanceFactors>
+              <Fire>
+                <DensityDistance>20</DensityDistance>
+                <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+                <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
+              </Fire>
+              <Riot>
+                <FactoryOvertimeFactor>0.4</FactoryOvertimeFactor>
+                <FactoryUndertimeFactor>0.2</FactoryUndertimeFactor>
+                <FactoryHappinessFactor>0.2</FactoryHappinessFactor>
+                <HappinessThreshold>20</HappinessThreshold>
+              </Riot>
+            </IncidentInfectionChanceFactors>
+          </IncidentInfectable>
+          <Industrializable />
+          <Culture>
+            <CultureType>Culture</CultureType>
+          </Culture>
+          <QuestObject />
+          <Electrifiable />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011510</GUID>
+            <!-- <GUID>1500012002</GUID> -->
+            <!-- <GUID>1500010914</GUID> -->
+            <Name>@ 500 Workers</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000001</Context>
+                  <CounterAmount>500</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500010835</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011511</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010114</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010830</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011512</GUID>
+            <Name>Unhide @ 300 Workers</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000001</Context>
+                  <CounterAmount>300</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnhideAssets>
+                        <Item>
+                          <Asset>1500010835</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011511</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010114</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010830</Asset>
+                        </Item>
+                      </UnhideAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500012003</GUID>
+            <!-- <GUID>1500011170</GUID> -->
+            <Name>Creative Mode</Name>
+            <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
+          </Standard>
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionIsCreativeMode</Template>
+              <Values>
+                <Condition />
+                <ConditionIsCreativeMode />
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1500010835</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011511</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010114</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500010830</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+    <!-- General -->
+    <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+      <Item>
+        <Factory>1500010835</Factory>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="142311" Path="/Values/FeedbackBuildingGroup/Buildings">
+      <Item>
+        <Building>1500010835</Building>
+      </Item>
+    </ModOp>
+    <!-- general/food production pools -->
+    <ModOp Type="add" GUID="368,6000018,193856,190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010835</GUID>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Construction Menu-->
+  <ModOp Type="addNextSibling" GUID="1010263">
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010114</GUID>
+          <Name>Seafood Stew</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png</IconFilename>
+          <InfoDescription>1500011513</InfoDescription>
+        </Standard>
+        <Text>
+          <TextOverride>114410</TextOverride>
+        </Text>
+        <ProductionChain>
+          <Building>1500011511</Building>
+          <Tier1>
+            <!-- <Item>
+              <Building>1010278</Building>
+            </Item> -->
+            <Item>
+              <Building>1500011531</Building>
+            </Item>
+            <Item>
+              <Building>1500010830</Building>
+            </Item>
+            <!-- <Item>
+              <Building>100654</Building>
+            </Item> -->
+            <Item>
+              <Building>1010265</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500945"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=500 or Building='500004'][last()]">
+    <Item>
+      <Building>1500010114</Building>
+      <Worker>500</Worker>
+      <!-- <Secondary /> -->
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000190"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=500][last()]">
+    <Item>
+      <Building>1500010114</Building>
+      <Worker>500</Worker>
+    </Item>
+  </ModOp>
+
+  <!-- # Targets -->
+  <Group>
+    <!-- all food productions -->
+    <ModOp Type="add" GUID="190897,1500301027" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500011511</GUID>
+      </Item>
+    </ModOp>
+    <!-- specific items -->
+    <ModOp Type="add" GUID="191405" Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500011511</GUID>
+      </Item>
+    </ModOp>
+    <!-- general production targets -->
+    <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500011511</GUID>
+      </Item>
+    </ModOp>
+    <!-- electricity -->
+    <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500011511</GUID>
+      </Item>
+    </ModOp>
+    <!-- boostable buildings -->
+    <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+      <Item>
+        <Factory>1500011511</Factory>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

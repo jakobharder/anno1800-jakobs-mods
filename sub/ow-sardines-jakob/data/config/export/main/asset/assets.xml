@@ -17,6 +17,7 @@
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
           <PickingAsset>1500011440</PickingAsset>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
         </Building>
         <Blocking />
         <Cost>
@@ -160,12 +161,13 @@
         <Standard>
           <GUID>1500011440</GUID>
           <Name>Fish Cannery</Name>
-          <IconFilename>data\ui\2kimages\main\3dicons\icon_canned_food.png</IconFilename>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_food.png</IconFilename>
         </Standard>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
         </Building>
         <Blocking />
         <Cost>
@@ -310,6 +312,7 @@
           <GUID>1500010122</GUID>
           <Name>Sardines</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_canned_food.png</IconFilename>
+          <InfoDescription>1500011513</InfoDescription>
         </Standard>
         <Text>
           <TextOverride>1500010120</TextOverride>
@@ -538,55 +541,57 @@
     </Item>
   </ModOp>
 
-  <!-- # buff targets -->
-  <!-- all food productions -->
-  <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010121</GUID>
-    </Item>
-    <Item>
-      <GUID>1500011440</GUID>
-    </Item>
-  </ModOp>
+  <!-- # Targets -->
+  <Group>
+    <!-- all food productions -->
+    <ModOp Type="add" GUID="190897" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010121</GUID>
+      </Item>
+      <Item>
+        <GUID>1500011440</GUID>
+      </Item>
+    </ModOp>
 
-  <!-- specific items -->
-  <ModOp Type="add" GUID="191398" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500011440</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="190841,190840" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500011440</GUID>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="191405,191407,191404" Path="/Values/ItemEffect/EffectTargets">
-    <Item>
-      <GUID>1500011440</GUID>
-    </Item>
-  </ModOp>
-  <!-- general production targets -->
-  <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010121</GUID>
-    </Item>
-    <Item>
-      <GUID>1500011440</GUID>
-    </Item>
-  </ModOp>
-  <!-- electricity -->
-  <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010121</GUID>
-    </Item>
-    <Item>
-      <GUID>1500011440</GUID>
-    </Item>
-  </ModOp>
-  <!-- boostable buildings -->
-  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
-    <Item>
-      <Factory>1500011440</Factory>
-    </Item>
-  </ModOp>
+    <!-- specific items -->
+    <ModOp Type="add" GUID="191398" Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500011440</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="190841,190840" Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500011440</GUID>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="191405,191407,191404" Path="/Values/ItemEffect/EffectTargets">
+      <Item>
+        <GUID>1500011440</GUID>
+      </Item>
+    </ModOp>
+    <!-- general production targets -->
+    <ModOp Type="add" GUID="368,6000018,193856" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010121</GUID>
+      </Item>
+      <Item>
+        <GUID>1500011440</GUID>
+      </Item>
+    </ModOp>
+    <!-- electricity -->
+    <ModOp Type="add" GUID="193875" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+      <Item>
+        <GUID>1500010121</GUID>
+      </Item>
+      <Item>
+        <GUID>1500011440</GUID>
+      </Item>
+    </ModOp>
+    <!-- boostable buildings -->
+    <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+      <Item>
+        <Factory>1500011440</Factory>
+      </Item>
+    </ModOp>
+  </Group>
 </ModOps>

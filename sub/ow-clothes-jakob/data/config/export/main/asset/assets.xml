@@ -7,10 +7,10 @@
         <Standard>
           <GUID>1500011460</GUID>
           <Name>Flax Cloth Maker</Name>
-          <!-- Thanks Drakkam for the icon! -->
           <IconFilename>data/ui/jakob/icon_flax_cloth.png</IconFilename>
         </Standard>
         <Building>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
           <SecondPartyRelevant>0</SecondPartyRelevant>
         </Building>
         <Cost>
@@ -280,6 +280,7 @@
             <GUID>1500011465</GUID>
             <Name>Flax Clothes</Name>
             <IconFilename>data/ui/jakob/icon_flax_cloth.png</IconFilename>
+            <InfoDescription>1500011513</InfoDescription>
           </Standard>
           <ProductionChain>
             <Building>1500011460</Building>
@@ -304,6 +305,7 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='500505']">
       <Item>
         <Building>1500011465</Building>
+        <Alternative />
       </Item>
     </ModOp>
   </Group>

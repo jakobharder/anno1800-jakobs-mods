@@ -39,11 +39,11 @@
   </MeshBoundingBox>
   <DisableFeedbackArea>0</DisableFeedbackArea>
   <IntersectBox>
-    <Name>hitbox.007</Name>
+    <Name>hitbox.025</Name>
     <Position>
-      <xf>-0.820439</xf>
-      <yf>1.232480</yf>
-      <zf>-1.315203</zf>
+      <xf>-0.403754</xf>
+      <yf>1.019050</yf>
+      <zf>-1.782515</zf>
     </Position>
     <Rotation>
       <xf>0.000000</xf>
@@ -52,17 +52,17 @@
       <wf>1.000000</wf>
     </Rotation>
     <Extents>
-      <xf>0.683721</xf>
-      <yf>1.232480</yf>
-      <zf>0.724156</zf>
+      <xf>0.686617</xf>
+      <yf>1.019050</yf>
+      <zf>0.712106</zf>
     </Extents>
   </IntersectBox>
   <IntersectBox>
-    <Name>hitbox.008</Name>
+    <Name>hitbox.026</Name>
     <Position>
-      <xf>0.786282</xf>
+      <xf>1.366944</xf>
       <yf>0.571305</yf>
-      <zf>0.928519</zf>
+      <zf>1.421970</zf>
     </Position>
     <Rotation>
       <xf>0.000000</xf>
@@ -71,17 +71,17 @@
       <wf>1.000000</wf>
     </Rotation>
     <Extents>
-      <xf>1.215398</xf>
+      <xf>1.168181</xf>
       <yf>0.571305</yf>
-      <zf>0.657295</zf>
+      <zf>0.679579</zf>
     </Extents>
   </IntersectBox>
   <IntersectBox>
-    <Name>hitbox.009</Name>
+    <Name>hitbox.027</Name>
     <Position>
-      <xf>-0.057286</xf>
+      <xf>0.269607</xf>
       <yf>1.555477</yf>
-      <zf>-1.808288</zf>
+      <zf>-2.305722</zf>
     </Position>
     <Rotation>
       <xf>0.000000</xf>
@@ -90,9 +90,28 @@
       <wf>1.000000</wf>
     </Rotation>
     <Extents>
-      <xf>0.135054</xf>
+      <xf>0.140875</xf>
       <yf>1.555477</yf>
-      <zf>0.100016</zf>
+      <zf>0.146580</zf>
+    </Extents>
+  </IntersectBox>
+  <IntersectBox>
+    <Name>hitbox.028</Name>
+    <Position>
+      <xf>1.692239</xf>
+      <yf>1.252627</yf>
+      <zf>0.165223</zf>
+    </Position>
+    <Rotation>
+      <xf>0.000000</xf>
+      <yf>0.000000</yf>
+      <zf>0.000000</zf>
+      <wf>1.000000</wf>
+    </Rotation>
+    <Extents>
+      <xf>0.686617</xf>
+      <yf>1.252627</yf>
+      <zf>0.712106</zf>
     </Extents>
   </IntersectBox>
   <Dummy>
@@ -117,9 +136,9 @@
   <Dummy>
     <Name>transporter_spawn</Name>
     <Position>
-      <xf>1.665748</xf>
+      <xf>-2.450266</xf>
       <yf>0.000046</yf>
-      <zf>-1.626064</zf>
+      <zf>-2.296959</zf>
     </Position>
     <Rotation>
       <xf>0</xf>
@@ -185,20 +204,20 @@
   </Sequence>
   <BuildBlocker>
     <Position>
-      <xf>-2</xf>
-      <zf>-2</zf>
+      <xf>-2.5</xf>
+      <zf>-2.5</zf>
     </Position>
     <Position>
-      <xf>-2</xf>
-      <zf>2</zf>
+      <xf>-2.5</xf>
+      <zf>2.5</zf>
     </Position>
     <Position>
-      <xf>2</xf>
-      <zf>2</zf>
+      <xf>2.5</xf>
+      <zf>2.5</zf>
     </Position>
     <Position>
-      <xf>2</xf>
-      <zf>-2</zf>
+      <xf>2.5</xf>
+      <zf>-2.5</zf>
     </Position>
   </BuildBlocker>
   <FeedbackBlocker>
@@ -221,110 +240,110 @@
   </FeedbackBlocker>
   <FeedbackBlocker>
     <Position>
-      <xf>-2</xf>
-      <zf>-2</zf>
+      <xf>-2.5</xf>
+      <zf>-2.5</zf>
     </Position>
     <Position>
-      <xf>-2</xf>
-      <zf>1.75</zf>
+      <xf>-2.5</xf>
+      <zf>2.5</zf>
     </Position>
     <Position>
-      <xf>-1.75</xf>
-      <zf>1.75</zf>
+      <xf>-2.25</xf>
+      <zf>2.5</zf>
     </Position>
     <Position>
-      <xf>-1.75</xf>
-      <zf>-2</zf>
+      <xf>-2.25</xf>
+      <zf>-2.5</zf>
     </Position>
   </FeedbackBlocker>
   <FeedbackBlocker>
     <Position>
       <xf>0.75</xf>
-      <zf>-1</zf>
+      <zf>-2.5</zf>
     </Position>
     <Position>
       <xf>0.75</xf>
-      <zf>-0.5</zf>
-    </Position>
-    <Position>
-      <xf>1.25</xf>
-      <zf>-0.5</zf>
-    </Position>
-    <Position>
-      <xf>1.25</xf>
-      <zf>-1</zf>
-    </Position>
-  </FeedbackBlocker>
-  <FeedbackBlocker>
-    <Position>
-      <xf>-1.75</xf>
-      <zf>0</zf>
-    </Position>
-    <Position>
-      <xf>-1.75</xf>
-      <zf>-0.25</zf>
-    </Position>
-    <Position>
-      <xf>1</xf>
-      <zf>-0.25</zf>
-    </Position>
-    <Position>
-      <xf>1</xf>
-      <zf>0</zf>
-    </Position>
-  </FeedbackBlocker>
-  <FeedbackBlocker>
-    <Position>
-      <xf>1.25</xf>
       <zf>-2</zf>
     </Position>
     <Position>
-      <xf>1.25</xf>
+      <xf>2.5</xf>
+      <zf>-2</zf>
+    </Position>
+    <Position>
+      <xf>2.5</xf>
+      <zf>-2.5</zf>
+    </Position>
+  </FeedbackBlocker>
+  <FeedbackBlocker>
+    <Position>
+      <xf>-2.25</xf>
       <zf>-0.75</zf>
     </Position>
     <Position>
-      <xf>2</xf>
-      <zf>-0.75</zf>
+      <xf>-2.25</xf>
+      <zf>-0.25</zf>
     </Position>
     <Position>
-      <xf>2</xf>
-      <zf>-2</zf>
+      <xf>0.75</xf>
+      <zf>-0.25</zf>
+    </Position>
+    <Position>
+      <xf>0.75</xf>
+      <zf>-0.75</zf>
     </Position>
   </FeedbackBlocker>
   <FeedbackBlocker>
     <Position>
-      <xf>0.75</xf>
-      <zf>-0.5</zf>
+      <xf>0.5</xf>
+      <zf>-2.5</zf>
+    </Position>
+    <Position>
+      <xf>0.5</xf>
+      <zf>-0.75</zf>
     </Position>
     <Position>
       <xf>0.75</xf>
-      <zf>-0.25</zf>
+      <zf>-0.75</zf>
     </Position>
     <Position>
-      <xf>1</xf>
-      <zf>-0.25</zf>
+      <xf>0.75</xf>
+      <zf>-2.5</zf>
+    </Position>
+  </FeedbackBlocker>
+  <FeedbackBlocker>
+    <Position>
+      <xf>-2.25</xf>
+      <zf>2.25</zf>
     </Position>
     <Position>
-      <xf>1</xf>
-      <zf>-0.5</zf>
+      <xf>-2.25</xf>
+      <zf>2.5</zf>
+    </Position>
+    <Position>
+      <xf>2.5</xf>
+      <zf>2.5</zf>
+    </Position>
+    <Position>
+      <xf>2.5</xf>
+      <zf>2.25</zf>
     </Position>
   </FeedbackBlocker>
   <UnevenBlocker>
     <Position>
-      <xf>-1.75</xf>
+      <xf>-0.75</xf>
+      <zf>-1.5</zf>
+    </Position>
+    <Position>
+      <xf>0.5</xf>
       <zf>-2.25</zf>
     </Position>
     <Position>
-      <xf>-1.5</xf>
-      <zf>-0.75</zf>
+      <xf>2</xf>
+      <zf>-0.25</zf>
     </Position>
     <Position>
-      <xf>-0.25</xf>
-      <zf>-0.75</zf>
-    </Position>
-    <Position>
-      <xf>-0.25</xf>
-      <zf>-2.25</zf>
+      <xf>1.25</xf>
+      <zf>0.5</zf>
     </Position>
   </UnevenBlocker>
 </Info>
