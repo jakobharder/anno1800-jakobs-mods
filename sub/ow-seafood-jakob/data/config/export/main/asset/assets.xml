@@ -230,7 +230,7 @@
           <FactoryBase>
             <FactoryInputs>
               <Item>
-                <Product>1010200</Product>
+                <Product>5380</Product>
                 <Amount>1</Amount>
                 <StorageAmount>4</StorageAmount>
               </Item>
@@ -239,11 +239,11 @@
                 <Amount>1</Amount>
                 <StorageAmount>4</StorageAmount>
               </Item>
-              <Item>
+              <!-- <Item>
                 <Product>1010198</Product>
                 <Amount>1</Amount>
                 <StorageAmount>4</StorageAmount>
-              </Item>
+              </Item> -->
               <Item>
                 <Product>1010195</Product>
                 <Amount>1</Amount>
@@ -508,15 +508,18 @@
         <ProductionChain>
           <Building>1500011511</Building>
           <Tier1>
-            <Item>
+            <!-- <Item>
               <Building>1010278</Building>
+            </Item> -->
+            <Item>
+              <Building>1500011531</Building>
             </Item>
             <Item>
               <Building>1500010830</Building>
             </Item>
-            <Item>
+            <!-- <Item>
               <Building>100654</Building>
-            </Item>
+            </Item> -->
             <Item>
               <Building>1010265</Building>
             </Item>
@@ -531,7 +534,7 @@
     <Item>
       <Building>1500010114</Building>
       <Worker>500</Worker>
-      <!-- <Alternative /> -->
+      <!-- <Secondary /> -->
     </Item>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="25000190"

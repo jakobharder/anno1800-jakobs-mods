@@ -199,12 +199,11 @@ Smaller **power plants** and additional energy options.
 - Productions
   - Ropes as luxury need for Pescatarians
   - Clothes from flax as alternative to wool-based worker clothes
+  - OW Seafood Stew from calamari, vegetables and potatoes
 - Fertilities (only new saves)
   - Herbs, Olives, Hemp and Vegetables
 - New construction menu tab for alternative productions
 
 ## Credits
-
-Thanks to Drakkam for the Clothes icon.
 
 Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!

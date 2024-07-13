@@ -33,6 +33,7 @@ Unlock | Content | Unhide
 500 <img src="./icons/icon_resident_worker.png" class="icon"/> | <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon"/> Library | 300 <img src="./icons/icon_resident_worker.png" class="icon"/>
 | | <img src="../sub/ow-olive-soap-jakob/data/ui/jakob/icon_olive_soap.png" class="icon" /> Soap (from <img src="./icons/icon_olive_oil3.png" class="icon" /> Olive Oil, <img src="./icons/icon_olives3.png" class="icon" /> Olives)
 | | <img src="./icons/icon_rope.png" class="icon" /> Ropes (from <img src="./icons/icon_hemp.png" class="icon" /> Hemp)
+| | <img src="./icons/icon_wat_stew.png" class="icon" /> Seafood Stew<br/>(from <img src="./icons/icon_squid.png" class="icon" /> Calamari + <img src="./icons/icon_vegetables.png" class="icon" /> Vegetables + <img src="./icons/icon_potatoes.png" class="icon" /> Potatoes)
 750 <img src="./icons/icon_resident_worker.png" class="icon"/> | *Artisan unlock* | 500 <img src="./icons/icon_resident_worker.png" class="icon"/>
 | | <img src="../mods/building-docklands/data/ui/jakob/icon_gate.png" class="icon"/> Docklands Gate | 1 <img src="./icons/icon_resident_artisan.png" class="icon"/>
 | | **`Factory Complex`**

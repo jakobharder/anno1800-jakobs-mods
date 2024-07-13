@@ -28,15 +28,14 @@
       <Text>Provide additional living space to increase your city's population.</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011513</GUID>
       <!-- Mod origin/name -->
-      <Text>Industrial Cities (Jakob)</Text>
+      <Text>Industrial Cities</Text>
     </Text>
   </ModOp>
 
   <!-- Declare the following shared mods as Industrial Cities mods -->
   <ModOp Type="replace" Condition="/TextExport/Texts/Text[IndustrialCities]" Path="/TextExport/Texts/Text[IndustrialCities]/Text">
-    <Text>Industrial Cities (Jakob)</Text>
+    <Text>Industrial Cities</Text>
   </ModOp>
 </ModOps>
