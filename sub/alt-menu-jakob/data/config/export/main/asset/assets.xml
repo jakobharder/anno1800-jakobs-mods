@@ -54,9 +54,8 @@
     </Item>
   </ModOp>
 
-  <!-- TODO maybe some day -->
   <!-- remove goods marked with alternative, as those should be part of the new alternative menu -->
-  <!-- <ModOp Type="remove" GUID="500945"
+  <ModOp Type="remove" GUID="500945"
     Condition="/Values/ConstructionCategory/BuildingList/Item[Alternative]"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Alternative]" /> -->
+    Path="/Values/ConstructionCategory/BuildingList/Item[Alternative]" />
 </ModOps>
