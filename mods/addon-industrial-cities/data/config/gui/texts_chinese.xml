@@ -18,24 +18,14 @@
       <Text>工业城市</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
-      <GUID>1500011282</GUID>
-      <Text>Upgrade Terraced House</Text>
-    </Text>
-    <Text>
-      <!-- TODO translation -->
-      <GUID>1500011289</GUID>
-      <Text>Provide additional living space to increase your city's population.</Text>
-    </Text>
-    <Text>
       <GUID>1500011513</GUID>
       <!-- Mod origin/name -->
-      <Text>Industrial Cities</Text>
+      <Text>工业城市</Text>
     </Text>
   </ModOp>
 
-  <!-- Declare the following shared mods as Industrial Cities mods -->
+  <!-- Declare some shared mods as 工业城市 mods -->
   <ModOp Type="replace" Condition="/TextExport/Texts/Text[IndustrialCities]" Path="/TextExport/Texts/Text[IndustrialCities]/Text">
-    <Text>Industrial Cities</Text>
+    <Text>工业城市</Text>
   </ModOp>
 </ModOps>
