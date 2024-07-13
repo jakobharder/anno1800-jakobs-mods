@@ -6,26 +6,36 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ### Impact on Existing Saves
 
-- Olive soap has been replaced with vanilla soap.
-  Please check your trade routes.
-- Some needs for Pescatarians have changed.
-  Please check your consumption statistics.
-- New fertilities are only applicable in new games.
-  Existing save games get a free buff instead and can build farms as before.
-- New input goods are only applicable when you build new factories.
-  Old factories stay as they are to avoid problems.
-  Some buffs have been removed from old factories though.
+- Please check if you used `Pescatarians`
+  - Olive Soap, Pickled Vegetables are replaced by Soap and Seafood Stew.
+  Check your trade routes.
+  - Pescatarians needs changed.
+  Check your consumption statistics.
+- Good to know
+  - Changed production chains are only applicable when you build new factories.
+  - New fertilities only in new games.
+  Farms get a fertility buff in existing save games.
 
 ### Major Changes
 
 - Industrial Cities, 4.0:
-  - Integrated `Pescatarians` as skyscraper upgrade option for farmers
-  - Integrated `Alternative Needs`
-  - Tea additional uses Herbs as input
-  - Tea docks and factories have reduced maintenance
-  - Olive Soap and Sardine Factories use Olive Oil instead of Olives
-  - Olive Soap factory produces normal Soap
-  - Pickled Vegetables are removed
+  - Integrated mods
+    - `Pescatarians` as upgrade option for farmers
+    - `Alternative Needs`
+  - More complex productions
+    - Tea additionally uses Herbs as input
+    - Olive Soap and Sardine Factories use Olive Oil instead of Olives
+    - Linen Mills (Suits) use Hemp and Flax
+    - Fish Canneries use Olive Oil instead of Olives
+    - (Pescatarian) Kitchen additionally uses Calamari and Potatoes as input
+  - Product changes
+    - Olive Soap factory now produces normal Soap
+    - Kitchen now produces Seafood Stea instead of Pickled Vegetables
+  - Balancing
+    - Tea docks and factories have reduced maintenance
+    - Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
+    Exact numbers are now visible in the workforce InfoTip.
+    - Increased speed people move into Pescatarian and Terraced Houses
 - Nate's Windmill, 2.0.1:
   - Costs 3 influnce points now
   - Reduced construction cost
@@ -37,13 +47,16 @@ You can simply overwrite older version. The modloader automatically takes the ri
 ### New Content
 
 - Industrial Cities, 4.0:
-  - Sausage complex with sausage factory
-  - Bread complex with bakery and flour mill
-  - Beer complex with brewery and malthouse
-  - Ropes as luxury need for Pescatarians
+  - Modular factories
+    - Sausage complex with sausage factory
+    - Bread complex with bakery and flour mill
+    - Beer complex with brewery and malthouse
+  - Productions
+    - Ropes as luxury need for Pescatarians
+    - Clothes from flax as alternative to wool-based worker clothes
+  - Fertilities (only new saves)
+    - Herbs, Olives, Hemp and Vegetables
   - New construction menu tab for alternative productions
-  - Fertilities for Herbs, Olives, Hemp and Vegetables
-    - Only for new games. Existing save games ignore them
 
 ## 6.6 - Quality Update
 

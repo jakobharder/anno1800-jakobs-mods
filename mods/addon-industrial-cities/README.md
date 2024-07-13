@@ -180,7 +180,7 @@ Smaller **power plants** and additional energy options.
   - Olive Soap and Sardine Factories use Olive Oil instead of Olives
   - Linen Mills (Suits) use Hemp and Flax
   - Fish Canneries use Olive Oil instead of Olives
-  - (Pescatarian) Kitchen additionally uses Fish as input
+  - (Pescatarian) Kitchen additionally uses Calamari and Potatoes as input
 - Product changes
   - Olive Soap factory now produces normal Soap
   - Kitchen now produces Seafood Stea instead of Pickled Vegetables
@@ -199,7 +199,6 @@ Smaller **power plants** and additional energy options.
 - Productions
   - Ropes as luxury need for Pescatarians
   - Clothes from flax as alternative to wool-based worker clothes
-  - OW Seafood Stew from calamari, vegetables and potatoes
 - Fertilities (only new saves)
   - Herbs, Olives, Hemp and Vegetables
 - New construction menu tab for alternative productions
