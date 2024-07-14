@@ -22,7 +22,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         run: |
           npm run package
-          tar --exclude *.zip --exclude versions.md --exclude "[Disable]*" --exclude "[Building] Cheese and Tools (Jakob)" -caf ./out/Jakobs-Collection-${{ github.ref_name }}.zip -C ./out/ *
+          tar --exclude *.zip --exclude versions.md -caf ./out/Jakobs-Collection-${{ github.ref_name }}.zip -C ./out/ *
       - name: release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
