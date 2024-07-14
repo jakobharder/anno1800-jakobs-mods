@@ -40,7 +40,10 @@ const idsToPackage = [
   "jakob_diagonal_residences",
   "jakob_Nates_Windmill",
   "jakob_street_skins",
-  "jakob_compact_menus"
+  "jakob_compact_menus",
+  "disable-fertilities-jakob",
+  "disable-street-jakob",
+  "disable-railway-jakob"
 ];
 
 const modsToPackage = glob.sync("./out/*/modinfo.json")
