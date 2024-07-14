@@ -35,26 +35,19 @@ function copyFolderSync(source, target) {
 const idsToPackage = [
   "jakob-city-variations",
   "jakob_new_world_cities",
-  "jakob_pescatarians",
   "jakob_industrial_cities",
   "jakob_Biogas_Plant",
   "jakob_diagonal_residences",
   "jakob_Nates_Windmill",
-  "jakob_alternative_needs",
-  "jakob_skin_electric_poles",
   "jakob_street_skins",
   "jakob_compact_menus"
 ];
 
 const modsToPackage = glob.sync("./out/*/modinfo.json")
   .map(e => readMeta(e))
-  // .filter(e => fs.existsSync(path.join('out', e.folder)));
   .filter(e => idsToPackage.indexOf(e.id) >= 0);
-const modsToInclude = glob.sync("./{mods,shared}/**/modinfo.json")
-  .map(e => readMeta(e));
 
 for (mod of modsToPackage) {
-  // const sharedMods = modsToInclude.filter(e => mod.ModDependencies?.indexOf(e.id) >= 0);
   console.log(`Package ${mod.name}-${mod.version}.zip`);
 
   child_process.execSync(
