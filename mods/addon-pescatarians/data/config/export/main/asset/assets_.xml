@@ -8,7 +8,6 @@
   <!-- # Includes -->
   <!-- <Include File="/data/jakob/ropes/assets.include.xml" /> -->
   <Include File="./deprecated.include.xml" />
-  <Include File="/data/jakob/music-school/assets.include.xml" />
   <Include File="/data/jakob/small-library/assets.include.xml" />
   <Include File="./unlocks.include.xml" />
   <!-- <Include File="/data/jakob/seafood-restaurant/assets.include.xml" /> -->
@@ -803,6 +802,10 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <Item>
                 <Product>1500010127</Product>
@@ -815,6 +818,10 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <!-- <Item>
                 <Product>1500010831</Product>
@@ -839,6 +846,10 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <!-- Luxury Needs -->
               <!-- <Item>

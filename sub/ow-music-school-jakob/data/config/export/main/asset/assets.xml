@@ -130,6 +130,9 @@
           <Name>Music School Service</Name>
           <IconFilename>data/ui/jakob/icon_music_school.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>1500010800</TextOverride>
+        </Text>
         <Locked />
         <Product>
           <ProductColor>-11415604</ProductColor>
@@ -139,96 +142,6 @@
           <AssociatedRegion>Moderate</AssociatedRegion>
         </Product>
         <ExpeditionAttribute />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011485</GUID>
-          <!-- <GUID>1500010283</GUID> -->
-          <Name>@ 900 Artisans</Name>
-          <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context>
-                <CounterAmount>900</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnlockAssets>
-                      <Item>
-                        <Asset>1500010800</Asset>
-                      </Item>
-                      <Item>
-                        <Asset>1500010801</Asset>
-                      </Item>
-                    </UnlockAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>FeatureUnlock</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011486</GUID>
-          <!-- <GUID>1500010803</GUID> -->
-          <Name>Unhide @ 750 Artisans</Name>
-        </Standard>
-        <Trigger>
-          <TriggerCondition>
-            <Template>ConditionPlayerCounter</Template>
-            <Values>
-              <Condition />
-              <ConditionPlayerCounter>
-                <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000002</Context>
-                <CounterAmount>750</CounterAmount>
-              </ConditionPlayerCounter>
-            </Values>
-          </TriggerCondition>
-          <TriggerActions>
-            <Item>
-              <TriggerAction>
-                <Template>ActionUnlockAsset</Template>
-                <Values>
-                  <Action />
-                  <ActionUnlockAsset>
-                    <UnhideAssets>
-                      <Item>
-                        <Asset>1500010800</Asset>
-                      </Item>
-                    </UnhideAssets>
-                  </ActionUnlockAsset>
-                </Values>
-              </TriggerAction>
-            </Item>
-          </TriggerActions>
-        </Trigger>
-        <TriggerSetup>
-          <UsedBySecondParties>0</UsedBySecondParties>
-        </TriggerSetup>
       </Values>
     </Asset>
   </ModOp>
@@ -243,6 +156,21 @@
     </Item>
   </ModOp>
 
+  <!-- # Menu -->
+  <ModOp Type="addNextSibling" GUID="25000191"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
+    <Item>
+      <Building>1500010800</Building>
+      <Artisan>900</Artisan>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="500094"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010360' or Building='1500010816'][last()]">
+    <Item>
+      <Building>1500010800</Building>
+    </Item>
+  </ModOp>
+
   <!-- # Modify Needs -->
   <ModOp Type="add" GUID="15000002" Path="/Values/PopulationLevel7/PopulationInputs">
     <Item>
@@ -251,7 +179,7 @@
       <MoneyValue>20</MoneyValue>
       <IsOptionalHappinessValue>1</IsOptionalHappinessValue>
       <NoWeightPopulationCount>1200</NoWeightPopulationCount>
-      <OptionalInputPopulationUnlock>749</OptionalInputPopulationUnlock>
+      <OptionalInputPopulationUnlock>750</OptionalInputPopulationUnlock>
       <RequiredBuildings>
         <Item>
           <RequiredBuilding>1500010225</RequiredBuilding>
