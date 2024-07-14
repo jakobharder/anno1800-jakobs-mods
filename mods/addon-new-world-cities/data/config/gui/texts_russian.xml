@@ -1,60 +1,6 @@
 <ModOps>
-  <!-- # Steel Beams -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010703</GUID>
-      <Text>Стальные балки</Text> <!-- menu: Steel Beams -->
-    </Text>
-    <Text>
-      <GUID>1500010700</GUID> <!-- cannot use AssetData text -->
-      <Text>Сталелитейный завод</Text> <!-- building: Steelworks -->
-    </Text>
-    <Text>
-      <GUID>1500010706</GUID> <!-- cannot use AssetData text -->
-      <Text>Плавильня</Text> <!-- building: Furnace -->
-    </Text>
-    <Text>
-      <GUID>1345</GUID> <!-- cannot use AssetData text -->
-      <Text>Угольная печь</Text> <!-- building: Charcoal Kiln -->
-    </Text>
-    <Text>
-      <GUID>1500010710</GUID> <!-- cannot use AssetData text -->
-      <Text>Железный рудник</Text> <!-- building: Iron Mine -->
-    </Text>
-  </ModOp>
-  <!-- # Windows -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010704</GUID>
-      <Text>Окна</Text> <!-- menu: Windows -->
-    </Text>
-    <Text>
-      <GUID>1500010701</GUID> <!-- cannot use AssetData text -->
-      <Text>Оконная фабрика</Text> <!-- building: Window Makers -->
-    </Text>
-    <Text>
-      <GUID>1500010707</GUID> <!-- cannot use AssetData text -->
-      <Text>Стекольная фабрика</Text> <!-- building: Glassmakers -->
-    </Text>
-    <Text>
-      <GUID>1500010708</GUID> <!-- cannot use AssetData text -->
-      <Text>Песчаный карьер</Text> <!-- building: Sand Mine -->
-    </Text>
-  </ModOp>
   <!-- # Concrete -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010705</GUID>
-      <Text>Железобетон</Text> <!-- menu: Reinforced Concrete -->
-    </Text>
-    <Text>
-      <GUID>1500010702</GUID> <!-- cannot use AssetData text -->
-      <Text>Бетоносмесительный завод</Text> <!-- building: Concrete Factory -->
-    </Text>
-    <Text>
-      <GUID>1500010711</GUID> <!-- cannot use AssetData text -->
-      <Text>Известняковый карьер</Text> <!-- building: Limestone Quarry -->
-    </Text>
     <Text>
       <GUID>1500010712</GUID>
       <Text>Строится &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; Месторождение золота.</Text> <!-- note: buildable on gold deposits -->
@@ -66,10 +12,6 @@
   </ModOp>
   <!-- # Ornaments -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500011006</GUID>
-      <Text>Зеленые насаждения</Text> <!-- Enclosed Greenery -->
-    </Text>
     <Text>
       <GUID>1500011049</GUID>
       <Text>Каменная мостовая</Text> <!-- Stone Paving -->
@@ -99,92 +41,8 @@
       <Text>New World Cities</Text> <!-- mod name: do not translate -->
     </Text>
     <Text>
-      <GUID>1500011056</GUID>
-      <Text>Каменная ваза для цветов</Text> <!-- Stone Flower Pot -->
-    </Text>
-    <Text>
-      <GUID>1500011057</GUID>
-      <Text>Асьенда – клумба</Text> <!-- Hacienda Flower Bed -->
-    </Text>
-    <Text>
-      <GUID>1500011058</GUID>
-      <Text>Асьенда – пальма</Text> <!-- Hacienda Tree -->
-    </Text>
-    <Text>
-      <GUID>1500011059</GUID>
-      <Text>[AssetData(5207) Text]</Text> <!-- Statue of a Woman -->
-    </Text>
-    <Text>
-      <GUID>1500011060</GUID>
-      <Text>Газетный киоск</Text> <!-- Newsstand -->
-    </Text>
-    <Text>
-      <GUID>1500011061</GUID>
-      <Text>Карта улиц</Text> <!-- Street Map -->
-    </Text>
-    <Text>
-      <GUID>1500011063</GUID>
-      <Text>Скамейки для пьяццы</Text>
-    </Text>
-    <Text>
       <GUID>1500011064</GUID>
       <Text>Газетный киоск</Text>
-    </Text>
-    <Text>
-      <GUID>1500011066</GUID>
-      <Text>Желтый зонт</Text>
-    </Text>
-    <Text>
-      <GUID>1500011067</GUID>
-      <Text>[AssetData(134731) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011068</GUID>
-      <Text>[AssetData(134732) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011069</GUID>
-      <Text>[AssetData(134733) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011070</GUID>
-      <Text>[AssetData(134735) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011071</GUID>
-      <Text>[AssetData(80040) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011072</GUID>
-      <Text>[AssetData(80041) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011073</GUID>
-      <Text>[AssetData(80042) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011074</GUID>
-      <Text>[AssetData(80043) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011075</GUID>
-      <Text>[AssetData(80044) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011076</GUID>
-      <Text>[AssetData(80060) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011077</GUID>
-      <Text>[AssetData(80061) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011078</GUID>
-      <Text>[AssetData(80062) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011079</GUID>
-      <Text>[AssetData(80063) Text]</Text>
     </Text>
   </ModOp>
 
@@ -247,32 +105,12 @@
   <!-- # NW Needs -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500011230</GUID>
-      <Text>Мельница</Text> <!-- 1010313 -->
-    </Text>
-    <Text>
-      <GUID>1500011231</GUID>
-      <Text>Пекарня</Text> <!-- 1010291 -->
-    </Text>
-    <Text>
-      <GUID>1500011232</GUID>
-      <Text>Хлеб</Text>
-    </Text>
-    <Text>
       <GUID>1500011235</GUID>
       <Text>Кухня джема</Text>
     </Text>
     <Text>
-      <GUID>1500011236</GUID>
-      <Text>Джем</Text>
-    </Text>
-    <Text>
       <GUID>1500011237</GUID>
       <Text>Молочный сыр</Text>
-    </Text>
-    <Text>
-      <GUID>1500011238</GUID>
-      <Text>Сыр</Text>
     </Text>
     <Text>
       <GUID>1500011240</GUID>

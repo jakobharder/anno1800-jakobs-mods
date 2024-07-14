@@ -9,10 +9,14 @@
           <Name>Flour Mill</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_flour.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>1010313</TextOverride>
+        </Text>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Colony01</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011055</BuildingCategoryName>
         </Building>
         <Cost>
           <Costs>
@@ -154,10 +158,14 @@
           <Name>Bakery</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>1010291</TextOverride>
+        </Text>
         <Building>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Colony01</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011055</BuildingCategoryName>
         </Building>
         <Cost>
           <Costs>
@@ -297,7 +305,11 @@
           <GUID>1500011232</GUID>
           <Name>Bread Chain</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
+          <InfoDescription>1500011055</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>1010213</TextOverride>
+        </Text>
         <ProductionChain>
           <Building>1500011231</Building>
           <Tier1>
@@ -324,6 +336,7 @@
           <GUID>1500011233</GUID>
           <Name>Bread Chain NW Tourism</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_bread.png</IconFilename>
+          <InfoDescription>1500011055</InfoDescription>
         </Standard>
         <ProductionChain>
           <Building>1500011231</Building>
@@ -367,6 +380,7 @@
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Colony01</AssociatedRegions>
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011055</BuildingCategoryName>
         </Building>
         <Blocking />
         <Cost>
@@ -511,7 +525,11 @@
           <GUID>1500011236</GUID>
           <Name>Jam Chain</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_jam.png</IconFilename>
+          <InfoDescription>1500011055</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>133183</TextOverride>
+        </Text>
         <ProductionChain>
           <Building>1500011235</Building>
           <Tier1>
@@ -547,6 +565,7 @@
             <BuildModeRandomRotation>180</BuildModeRandomRotation>
             <AssociatedRegions>Colony01</AssociatedRegions>
             <SecondPartyRelevant>0</SecondPartyRelevant>
+            <BuildingCategoryName>1500011055</BuildingCategoryName>
           </Building>
           <Blocking />
           <Cost>
@@ -692,7 +711,11 @@
             <GUID>1500011238</GUID>
             <Name>Cheese Chain</Name>
             <IconFilename>data/ui/2kimages/main/3dicons/icon_sheep_cheese.png</IconFilename>
+            <InfoDescription>1500011055</InfoDescription>
           </Standard>
+          <Text>
+            <TextOverride>1500010102</TextOverride>
+          </Text>
           <ProductionChain>
             <Building>1500011237</Building>
             <Tier1>
