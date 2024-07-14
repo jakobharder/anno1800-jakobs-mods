@@ -25,6 +25,7 @@
         <ExpectedValueInt>0</ExpectedValueInt>
         <Condition>[Selection Object Residence MaxMoneyForGood([RefGuid])]</Condition>
       </VisibilityElement>
+      <!-- Cheese -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -54,6 +55,7 @@
         <WarningType />
         <BackgroundType />
       </InfoElement>
+      <!-- Sardines -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -83,6 +85,7 @@
         <WarningType />
         <BackgroundType />
       </InfoElement>
+      <!-- Suits -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -112,6 +115,7 @@
         <WarningType />
         <BackgroundType />
       </InfoElement>
+      <!-- Tools -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -141,6 +145,7 @@
         <WarningType />
         <BackgroundType />
       </InfoElement>
+      <!-- Seafood Stew -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -152,7 +157,7 @@
           <ResultType>
             <ResultType>1</ResultType>
           </ResultType>
-          <ExpectedValueInt>1500010831</ExpectedValueInt>
+          <ExpectedValueInt>114410</ExpectedValueInt>
           <Condition>[RefGuid]</Condition>
         </VisibilityElement>
         <Icon>
@@ -170,6 +175,7 @@
         <WarningType />
         <BackgroundType />
       </InfoElement>
+      <!-- Vegetables -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -199,6 +205,7 @@
         <WarningType />
         <BackgroundType />
       </InfoElement>
+      <!-- Tea -->
       <InfoElement>
         <ElementType>4</ElementType>
         <ChildCount>1</ChildCount>
@@ -473,6 +480,128 @@
         </Text>
         <Value>
           <Text>[Selection Object Residence Satisfaction(1500010102) &gt;&gt; percentage]%</Text>
+          <Style />
+        </Value>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+    </InfoElement>
+    <!-- Seafood Stew -->
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <ChildCount>2</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010213</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Workers and Artisans -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000001</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType />
+          <Condition>[Selection Object Area Economy IsDistributionPaused(114410, [Selection Object Residence PopulationLevel Guid])]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(114410) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <TextGUID>1500011546</TextGUID>
+          <Style />
+        </Text>
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>5</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType />
+          <Condition>[Selection Object Area Economy IsDistributionPaused(114410, [Selection Object Residence PopulationLevel Guid])]</Condition>
+        </VisibilityElement>
+        <Text>
+          <TextGUID>1500011370</TextGUID>
+          <Style />
+        </Text>
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator>
+            <CompareOperator>1</CompareOperator>
+          </CompareOperator>
+          <ResultType />
+          <Condition>[Selection Object Area Economy IsDistributionPaused(114410, [Selection Object Residence PopulationLevel Guid])]</Condition>
+        </VisibilityElement>
+        <Icon>
+          <IconText>[AssetData(114410) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <TextGUID>1500011545</TextGUID>
+          <Style />
+        </Text>
+        <Value>
+          <Text>[Selection Object Residence Satisfaction(114410) &gt;&gt; percentage]%</Text>
           <Style />
         </Value>
         <WarningType />
