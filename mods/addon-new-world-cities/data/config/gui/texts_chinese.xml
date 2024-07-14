@@ -1,60 +1,6 @@
 <ModOps>
-  <!-- # Steel Beams -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010703</GUID>
-      <Text>[AssetData(500005) Text]</Text> <!-- menu: Steel Beams -->
-    </Text>
-    <Text>
-      <GUID>1500010700</GUID> <!-- cannot use AssetData text -->
-      <Text>炼钢厂</Text> <!-- building: Steelworks -->
-    </Text>
-    <Text>
-      <GUID>1500010706</GUID> <!-- cannot use AssetData text -->
-      <Text>高炉</Text> <!-- building: Furnace -->
-    </Text>
-    <Text>
-      <GUID>1345</GUID> <!-- cannot use AssetData text -->
-      <Text>炭窑</Text> <!-- building: Charcoal Kiln -->
-    </Text>
-    <Text>
-      <GUID>1500010710</GUID> <!-- cannot use AssetData text -->
-      <Text>铁矿</Text> <!-- building: Iron Mine -->
-    </Text>
-  </ModOp>
-  <!-- # Windows -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010704</GUID>
-      <Text>[AssetData(500010) Text]</Text> <!-- menu: Windows -->
-    </Text>
-    <Text>
-      <GUID>1500010701</GUID> <!-- cannot use AssetData text -->
-      <Text>窗户制造厂</Text> <!-- building: Window Makers -->
-    </Text>
-    <Text>
-      <GUID>1500010707</GUID> <!-- cannot use AssetData text -->
-      <Text>玻璃制造厂</Text> <!-- building: Glassmakers -->
-    </Text>
-    <Text>
-      <GUID>1500010708</GUID> <!-- cannot use AssetData text -->
-      <Text>沙矿</Text> <!-- building: Sand Mine -->
-    </Text>
-  </ModOp>
   <!-- # Concrete -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010705</GUID>
-      <Text>[AssetData(500016) Text]</Text> <!-- menu: Reinforced Concrete -->
-    </Text>
-    <Text>
-      <GUID>1500010702</GUID> <!-- cannot use AssetData text -->
-      <Text>混凝土工厂</Text> <!-- building: Concrete Factory -->
-    </Text>
-    <Text>
-      <GUID>1500010711</GUID> <!-- cannot use AssetData text -->
-      <Text>石灰岩矿场</Text> <!-- building: Limestone Quarry -->
-    </Text>
     <Text>
       <GUID>1500010712</GUID>
       <Text>可建造在 &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; [AssetData(1010507) Text].</Text> <!-- note: buildable on gold deposits -->
@@ -66,10 +12,6 @@
   </ModOp>
   <!-- # Ornaments -->
   <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500011006</GUID>
-      <Text>[AssetData(454) Text]</Text> <!-- Enclosed Greenery -->
-    </Text>
     <Text>
       <GUID>1500011049</GUID>
       <Text>铺石道路</Text> <!-- Stone Paving -->
@@ -99,92 +41,8 @@
       <Text>新世界城市Mod(Jakob)</Text> <!-- mod name: do not translate -->
     </Text>
     <Text>
-      <GUID>1500011056</GUID>
-      <Text>[AssetData(114776) Text]</Text> <!-- Stone Flower Pot -->
-    </Text>
-    <Text>
-      <GUID>1500011057</GUID>
-      <Text>[AssetData(25173) Text]</Text> <!-- Hacienda Flower Bed -->
-    </Text>
-    <Text>
-      <GUID>1500011058</GUID>
-      <Text>[AssetData(25174) Text]</Text> <!-- Hacienda Tree -->
-    </Text>
-    <Text>
-      <GUID>1500011059</GUID>
-      <Text>[AssetData(5207) Text]</Text> <!-- Statue of a Woman -->
-    </Text>
-    <Text>
-      <GUID>1500011060</GUID>
-      <Text>[AssetData(102482) Text]</Text> <!-- Newsstand -->
-    </Text>
-    <Text>
-      <GUID>1500011061</GUID>
-      <Text>[AssetData(134722) Text]</Text> <!-- Street Map -->
-    </Text>
-    <Text>
-      <GUID>1500011063</GUID>
-      <Text>[AssetData(101497) Text]</Text>
-    </Text>
-    <Text>
       <GUID>1500011064</GUID>
       <Text>[AssetData(102482) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011066</GUID>
-      <Text>[AssetData(134730) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011067</GUID>
-      <Text>[AssetData(134731) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011068</GUID>
-      <Text>[AssetData(134732) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011069</GUID>
-      <Text>[AssetData(134733) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011070</GUID>
-      <Text>[AssetData(134735) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011071</GUID>
-      <Text>[AssetData(80040) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011072</GUID>
-      <Text>[AssetData(80041) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011073</GUID>
-      <Text>[AssetData(80042) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011074</GUID>
-      <Text>[AssetData(80043) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011075</GUID>
-      <Text>[AssetData(80044) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011076</GUID>
-      <Text>[AssetData(80060) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011077</GUID>
-      <Text>[AssetData(80061) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011078</GUID>
-      <Text>[AssetData(80062) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011079</GUID>
-      <Text>[AssetData(80063) Text]</Text>
     </Text>
   </ModOp>
 
@@ -219,44 +77,36 @@
       <Text>瓦制屋顶外观</Text> <!-- Skin: Tile Roof -->
     </Text>
     <Text>
-      <GUID>1500011097</GUID>
-      <Text>Buff：艺术家楼房</Text>
-    </Text>
-    <Text>
       <GUID>1500011250</GUID>
       <Text>临时工楼房</Text>
+    </Text>
+    <Text>
+      <GUID>1500011380</GUID>
+      <Text>临时工楼房（海港）</Text>
+    </Text>
+    <Text>
+      <GUID>1500011381</GUID>
+      <Text>劳工楼房（海港）</Text>
+    </Text>
+    <Text>
+      <GUID>1500011382</GUID>
+      <Text>艺术家楼房（海港）</Text>
+    </Text>
+    <Text>
+      <GUID>1500011383</GUID>
+      <Text>艺术家楼房（海港）</Text>
     </Text>
   </ModOp>
 
   <!-- # NW Needs -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500011230</GUID>
-      <Text>磨坊</Text> <!-- 1010313 -->
-    </Text>
-    <Text>
-      <GUID>1500011231</GUID>
-      <Text>面包店</Text> <!-- 1010291 -->
-    </Text>
-    <Text>
-      <GUID>1500011232</GUID>
-      <Text>[AssetData(1010213) Text]</Text>
-    </Text>
-    <Text>
       <GUID>1500011235</GUID>
       <Text>果酱厨房</Text>
     </Text>
     <Text>
-      <GUID>1500011236</GUID>
-      <Text>[AssetData(133183) Text]</Text>
-    </Text>
-    <Text>
       <GUID>1500011237</GUID>
       <Text>制酪厂</Text>
-    </Text>
-    <Text>
-      <GUID>1500011238</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
     </Text>
     <Text>
       <GUID>1500011240</GUID>

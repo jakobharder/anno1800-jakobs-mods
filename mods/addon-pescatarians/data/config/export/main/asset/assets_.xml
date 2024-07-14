@@ -8,7 +8,6 @@
   <!-- # Includes -->
   <!-- <Include File="/data/jakob/ropes/assets.include.xml" /> -->
   <Include File="./deprecated.include.xml" />
-  <Include File="/data/jakob/music-school/assets.include.xml" />
   <Include File="/data/jakob/small-library/assets.include.xml" />
   <Include File="./unlocks.include.xml" />
   <!-- <Include File="/data/jakob/seafood-restaurant/assets.include.xml" /> -->
@@ -803,6 +802,10 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <Item>
                 <Product>1500010127</Product>
@@ -815,6 +818,10 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <!-- <Item>
                 <Product>1500010831</Product>
@@ -839,6 +846,10 @@
                     <RequiredBuilding>1500010144</RequiredBuilding>
                   </Item>
                 </RequiredBuildings>
+                <AdditionalGlobalUnlockRequirement>
+                  <MinPopulationAmount>900</MinPopulationAmount>
+                  <Population>15000002</Population>
+                </AdditionalGlobalUnlockRequirement>
               </Item>
               <!-- Luxury Needs -->
               <!-- <Item>
@@ -1446,7 +1457,7 @@
           <Skins>
             <DefaultSkinName>23852</DefaultSkinName>
             <DefaultSkinDescription>1500010189</DefaultSkinDescription>
-            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
+            <DefaultSkinCategoryName>1500011513</DefaultSkinCategoryName>
             <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
             <SkinList>
               <Item>
@@ -1593,7 +1604,7 @@
               <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
-          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011513</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -1701,7 +1712,7 @@
           <Skins>
             <DefaultSkinName>23852</DefaultSkinName>
             <DefaultSkinDescription>1500010169</DefaultSkinDescription>
-            <DefaultSkinCategoryName>1500010170</DefaultSkinCategoryName>
+            <DefaultSkinCategoryName>1500011513</DefaultSkinCategoryName>
             <!-- is only visible in combination with skin mod -->
             <OverrideDefaultIcon>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</OverrideDefaultIcon>
             <SkinList>
@@ -1854,7 +1865,7 @@
               <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
-          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011513</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>
@@ -1902,7 +1913,7 @@
               <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04.cfg</FileName>
             </Item>
           </SkinVariations>
-          <SkinCategoryDescription>1500010170</SkinCategoryDescription>
+          <SkinCategoryDescription>1500011513</SkinCategoryDescription>
         </Skin>
         <Locked>
           <DefaultLockedState>0</DefaultLockedState>

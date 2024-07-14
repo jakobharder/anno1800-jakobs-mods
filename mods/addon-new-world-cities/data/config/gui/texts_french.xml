@@ -1,190 +1,48 @@
 <ModOps>
-  <!-- # Steel Beams -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010703</GUID>
-      <Text>[AssetData(500005) Text]</Text> <!-- menu: Steel Beams -->
-    </Text>
-    <Text>
-      <GUID>1500010700</GUID> <!-- cannot use AssetData text -->
-      <Text>Aciérie</Text> <!-- building: Steelworks -->
-    </Text>
-    <Text>
-      <GUID>1500010706</GUID> <!-- cannot use AssetData text -->
-      <Text>Fourneau</Text> <!-- building: Furnace -->
-    </Text>
-    <Text>
-      <GUID>1345</GUID> <!-- cannot use AssetData text -->
-      <Text>Charbonnière</Text> <!-- building: Charcoal Kiln -->
-    </Text>
-    <Text>
-      <GUID>1500010710</GUID> <!-- cannot use AssetData text -->
-      <Text>Mine de fer</Text> <!-- building: Iron Mine -->
-    </Text>
-  </ModOp>
-  <!-- # Windows -->
-  <ModOp Type="add" Path="/TextExport/Texts">
-    <Text>
-      <GUID>1500010704</GUID>
-      <Text>[AssetData(500010) Text]</Text> <!-- menu: Windows -->
-    </Text>
-    <Text>
-      <GUID>1500010701</GUID> <!-- cannot use AssetData text -->
-      <Text>Vitrerie</Text> <!-- building: Window Makers -->
-    </Text>
-    <Text>
-      <GUID>1500010707</GUID> <!-- cannot use AssetData text -->
-      <Text>Verrerie</Text> <!-- building: Glassmakers -->
-    </Text>
-    <Text>
-      <GUID>1500010708</GUID> <!-- cannot use AssetData text -->
-      <Text>Mine de silice</Text> <!-- building: Sand Mine -->
-    </Text>
-  </ModOp>
   <!-- # Concrete -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500010705</GUID>
-      <Text>[AssetData(500016) Text]</Text> <!-- menu: Reinforced Concrete -->
-    </Text>
-    <Text>
-      <GUID>1500010702</GUID> <!-- cannot use AssetData text -->
-      <Text>Cimenterie</Text> <!-- building: Concrete Factory -->
-    </Text>
-    <Text>
-      <GUID>1500010711</GUID> <!-- cannot use AssetData text -->
-      <Text>Carrière de calcaire</Text> <!-- building: Limestone Quarry -->
-    </Text>
-    <Text>
       <GUID>1500010712</GUID>
-      <Text>Buildable on &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; [AssetData(1010507) Text].</Text> <!-- note: buildable on gold deposits -->
+      <Text>Peut être construit sur &lt;img height='24' width='24' src="[AssetData(1010507) Icon]"/&gt; [AssetData(1010507) Text].</Text> <!-- note: buildable on gold deposits -->
     </Text>
     <Text>
       <GUID>1500010713</GUID>
-      <Text>Buildable on &lt;img height='24' width='24' src="[AssetData(101061) Icon]"/&gt; [AssetData(101061) Text].</Text> <!-- note: buildable on clay deposits -->
+      <Text>Peut être construit sur &lt;img height='24' width='24' src="[AssetData(101061) Icon]"/&gt; [AssetData(101061) Text].</Text> <!-- note: buildable on clay deposits -->
     </Text>
   </ModOp>
   <!-- # Ornaments -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500011006</GUID>
-      <Text>[AssetData(454) Text]</Text> <!-- Enclosed Greenery -->
-    </Text>
-    <Text>
       <GUID>1500011049</GUID>
-      <Text>Stone Paving</Text> <!-- Stone Paving -->
+      <Text>Pavage en Pierre</Text> <!-- Stone Paving -->
     </Text>
     <Text>
       <GUID>1500011050</GUID>
-      <Text>Walls on Dirt</Text> <!-- Walls on Dirt -->
+      <Text>Murs sur Terre</Text> <!-- Walls on Dirt -->
     </Text>
     <Text>
       <GUID>1500011051</GUID>
-      <Text>"New World Cities" Ornaments</Text> <!-- "New World Cities" Ornaments -->
+      <Text>Ornements "Villes du Nouveau Monde"</Text> <!-- "New World Cities" Ornaments -->
     </Text>
     <Text>
       <GUID>1500011052</GUID>
-      <Text>Dirt</Text> <!-- Dirt -->
+      <Text>Terre</Text> <!-- Dirt -->
     </Text>
     <Text>
       <GUID>1500011053</GUID>
-      <Text>Walls on Grass</Text> <!-- Walls on Grass -->
+      <Text>Murs sur Herbe</Text> <!-- Walls on Grass -->
     </Text>
     <Text>
       <GUID>1500011054</GUID>
-      <Text>Tree with Bench</Text> <!-- Tree with Bench -->
+      <Text>Arbre avec Banc</Text> <!-- Tree with Bench -->
     </Text>
     <Text>
       <GUID>1500011055</GUID>
-      <Text>New World Cities</Text> <!-- mod name: do not translate -->
-    </Text>
-    <Text>
-      <GUID>1500011056</GUID>
-      <Text>[AssetData(114776) Text]</Text> <!-- Stone Flower Pot -->
-    </Text>
-    <Text>
-      <GUID>1500011057</GUID>
-      <Text>[AssetData(25173) Text]</Text> <!-- Hacienda Flower Bed -->
-    </Text>
-    <Text>
-      <GUID>1500011058</GUID>
-      <Text>[AssetData(25174) Text]</Text> <!-- Hacienda Tree -->
-    </Text>
-    <Text>
-      <GUID>1500011059</GUID>
-      <Text>[AssetData(5207) Text]</Text> <!-- Statue of a Woman -->
-    </Text>
-    <Text>
-      <GUID>1500011060</GUID>
-      <Text>[AssetData(102482) Text]</Text> <!-- Newsstand -->
-    </Text>
-    <Text>
-      <GUID>1500011061</GUID>
-      <Text>[AssetData(134722) Text]</Text> <!-- Street Map -->
-    </Text>
-    <Text>
-      <GUID>1500011063</GUID>
-      <Text>[AssetData(101497) Text]</Text>
+      <Text>New World Cities (Jakob)</Text> <!-- mod name: do not translate -->
     </Text>
     <Text>
       <GUID>1500011064</GUID>
       <Text>[AssetData(102482) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011066</GUID>
-      <Text>[AssetData(134730) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011067</GUID>
-      <Text>[AssetData(134731) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011068</GUID>
-      <Text>[AssetData(134732) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011069</GUID>
-      <Text>[AssetData(134733) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011070</GUID>
-      <Text>[AssetData(134735) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011071</GUID>
-      <Text>[AssetData(80040) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011072</GUID>
-      <Text>[AssetData(80041) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011073</GUID>
-      <Text>[AssetData(80042) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011074</GUID>
-      <Text>[AssetData(80043) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011075</GUID>
-      <Text>[AssetData(80044) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011076</GUID>
-      <Text>[AssetData(80060) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011077</GUID>
-      <Text>[AssetData(80061) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011078</GUID>
-      <Text>[AssetData(80062) Text]</Text>
-    </Text>
-    <Text>
-      <GUID>1500011079</GUID>
-      <Text>[AssetData(80063) Text]</Text>
     </Text>
   </ModOp>
 
@@ -192,124 +50,91 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011043</GUID>
-      <Text>Terraced Obrero Residence</Text> <!-- Building: Terraced Obrero Residence -->
+      <Text>Résidence Terrassée d'Obrero</Text>
     </Text>
     <Text>
       <GUID>1500011044</GUID>
-      <Text>Terraced Artista Residence</Text> <!-- Building: Terraced Artista Residence -->
+      <Text>Résidence Terrassée d'Artista</Text>
     </Text>
     <Text>
       <GUID>1500011087</GUID>
-      <Text>Terraced Houses</Text> <!-- Menu: New World Cities Residences -->
+      <Text>Maisons en Terrasse</Text>
     </Text>
     <Text>
       <GUID>1500011090</GUID>
-      <Text>Artista Skyscraper</Text> <!-- Building: Artista Skyscraper -->
+      <Text>Gratte-ciel d'Artista</Text>
     </Text>
     <Text>
       <GUID>1500011100</GUID>
-      <Text>White Walls Skin</Text> <!-- Skin: White Walls -->
+      <Text>Peau de Murs Blancs</Text>
     </Text>
     <Text>
       <GUID>1500011101</GUID>
-      <Text>Tile roofs to match with your Obrero residences.</Text> <!-- Skin: Description -->
+      <Text>Toits en tuiles assortis à vos résidences Obrero.</Text>
     </Text>
     <Text>
       <GUID>1500011102</GUID>
-      <Text>Tile Roof Skin</Text> <!-- Skin: Tile Roof -->
+      <Text>Peau de Toit en Tuile</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011250</GUID>
-      <Text>Terraced Jornalero House</Text>
+      <Text>Maison Terrassée de Jornalero</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011380</GUID>
-      <Text>Terraced Jornalero House (Harbor)</Text>
+      <Text>Maison Terrassée de Jornalero (Port)</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011381</GUID>
-      <Text>Terraced Obrero House (Harbor)</Text>
+      <Text>Maison Terrassée d'Obrero (Port)</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011382</GUID>
-      <Text>Terraced Artista House (Harbor)</Text>
+      <Text>Maison Terrassée d'Artista (Port)</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011383</GUID>
-      <Text>Artista Skyscraper (Harbor)</Text>
+      <Text>Gratte-ciel d'Artista (Port)</Text>
     </Text>
   </ModOp>
 
   <!-- # NW Needs -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500011230</GUID>
-      <Text>Moulin</Text> <!-- 1010313 -->
-    </Text>
-    <Text>
-      <GUID>1500011231</GUID>
-      <Text>Boulangerie</Text> <!-- 1010291 -->
-    </Text>
-    <Text>
-      <GUID>1500011232</GUID>
-      <Text>[AssetData(1010213) Text]</Text>
-    </Text>
-    <Text>
       <GUID>1500011235</GUID>
       <Text>Cuisine de confiture</Text>
     </Text>
     <Text>
-      <GUID>1500011236</GUID>
-      <Text>[AssetData(133183) Text]</Text>
-    </Text>
-    <Text>
-      <!-- TODO translation -->
       <GUID>1500011237</GUID>
-      <Text>Cheese Dairy</Text>
+      <Text>Fromagerie</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
-      <GUID>1500011238</GUID>
-      <Text>[AssetData(1500010102) Text]</Text>
-    </Text>
-    <Text>
-      <!-- TODO translation -->
       <GUID>1500011240</GUID>
-      <Text>Milking Parlour</Text>
+      <Text>Salle de Traite</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011241</GUID>
-      <Text>Milking Parlour</Text>
+      <Text>Salle de Traite</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011243</GUID>
-      <Text>Cattle farms in range produce milk.</Text>
+      <Text>Les fermes bovines à portée produisent du lait.</Text>
     </Text>
   </ModOp>
 
   <!-- # Banners -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011260</GUID>
-      <Text>Terraced Houses</Text>
+      <Text>Maisons en Terrasse</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011261</GUID>
-      <Text>Materials and Electricity</Text>
+      <Text>Matériaux et Électricité</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011262</GUID>
-      <Text>Terraced Artista Houses</Text>
+      <Text>Maisons Terrassées d'Artista</Text>
     </Text>
   </ModOp>
 </ModOps>
