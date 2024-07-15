@@ -29,7 +29,7 @@
     </Text>
     <Text>
       <GUID>1500011370</GUID>
-      <Text>Open &lt;font overrideTextColor="true" color='#ffe4ad'&gt;Lifestyle Needs&lt;/font&gt; and enable Alternative Needs to let your residents consume those instead of their basic counterparts.</Text>
+      <Text>Activate alternative consumption in &lt;font overrideTextColor="true" color='#ffe4ad'&gt;Lifestyle Needs&lt;/font&gt;.</Text>
     </Text>
     <Text>
       <GUID>1500010159</GUID>
@@ -43,17 +43,26 @@
       <GUID>1500010950</GUID>
       <Text>Alternative &amp; Basic Need</Text>
     </Text>
+    <Text>
+      <GUID>1500011545</GUID>
+      <Text>Alternative Supply</Text>
+    </Text>
+    <Text>
+      <GUID>1500011546</GUID>
+      <Text>Alternative Prohibited</Text>
+    </Text>
   </ModOp>
 
   <!-- # Alternatives Tab -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <GUID>1500011272</GUID>
-      <Text>Alternatives</Text>
-    </Text>
-    <Text>
       <GUID>1500011338</GUID>
       <Text>Coffee and Tea</Text>
     </Text>
+  </ModOp>
+
+  <!-- remove Lifestyle needs fluff text to increase space a bit -->
+  <ModOp Type="replace" Path="/TextExports/Texts/Text[GUID='2292']/Text">
+    <Text />
   </ModOp>
 </ModOps>
