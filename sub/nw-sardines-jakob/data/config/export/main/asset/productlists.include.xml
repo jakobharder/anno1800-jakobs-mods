@@ -1,0 +1,41 @@
+<ModOps>
+  <!-- # Marketplace -->
+  <!-- After Canned Food, must be same as ow-sardines -->
+  <ModOp Type="addNextSibling" GUID="120057"
+    Condition="!~/Values/ProductStorageList/ProductList/Item[Product='1500010120']"
+    Path="/Values/ProductStorageList/ProductList/Item[Product='1010217']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # All New World -->
+  <!-- After Electric Cables -->
+  <ModOp Type="addNextSibling" GUID="7397"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
+    Path="/Values/ProductList/List/Item[Product='6280']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Consumer New World -->
+  <!-- After Soccer Balls -->
+  <ModOp Type="addNextSibling" GUID="7398"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
+    Path="/Values/ProductList/List/Item[Product='5803']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+
+  <!-- # Workforce Goods -->
+  <!-- After Chocolate -->
+  <ModOp Type="addNextSibling" GUID="502009"
+    Condition="!~/Values/ProductList/List/Item[Product='1500010120']"
+    Path="/Values/ProductList/List/Item[Product='1010258']">
+    <Item>
+      <Product>1500010120</Product>
+    </Item>
+  </ModOp>
+</ModOps>
