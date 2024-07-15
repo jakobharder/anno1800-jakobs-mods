@@ -1098,6 +1098,487 @@
     </InfoElement>
   </ModOp>
 
+  <!-- Show alternative need storage -->
+  <ModOp Type="addPrevSibling"
+    Path="//InfoTipData[Guid='25000205']/InfoElement/InfoElement[InfoElement/Text/TextGUID='163019']/InfoElement[ElementType='6']">
+    <!-- Veggies -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010200</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Farmers and Workers -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000000</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000001</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1500010836) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(1500010836)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(1500010836) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(1500010836) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <!-- Cheese -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010238</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Workers and Artisans -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000001</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1500010102) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(1500010102)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(1500010102) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(1500010102) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <!-- Seafood Stew -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010213</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Workers and Artisans -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000001</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(114410) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(114410)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(114410) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(114410) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <!-- Sardines -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010217</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Artisans and Engineers -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000003</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1500010120) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(1500010120)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(1500010120) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(1500010120) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <!-- Tools -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010206</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Artisans and Engineers -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000003</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1500010153) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(1500010153)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(1500010153) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(1500010153) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <!-- Suits -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1010247</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Artisans and Engineers -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000003</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1500010127) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(1500010127)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(1500010127) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(1500010127) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+    <!-- Tea -->
+    <InfoElement>
+      <ElementType>4</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>1</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>120032</ExpectedValueInt>
+          <Condition>[RefGuid]</Condition>
+        </VisibilityElement>
+        <!-- only Artisans and Engineers -->
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000002</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator />
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>15000003</ExpectedValueInt>
+            <Condition>[Selection Object Residence PopulationLevel Guid]</Condition>
+          </VisibilityElement>
+          <OperatorType>
+            <OperatorType>1</OperatorType>
+          </OperatorType>
+        </VisibilityElement>
+        <OperatorType />
+      </VisibilityElement>
+      <Icon>
+        <IconText>[AssetData(1500010847) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <Text>[AssetForValue(500424, [Selection Object Area Economy StorageTrend(1500010847)]) Text]</Text>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[Selection Object Area Economy StorageAmount(1500010847) &gt;&gt; storagegood]/[Selection Object Area Economy StorageCapacity(1500010847) &gt;&gt; storagegood]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
+    </InfoElement>
+  </ModOp>
+
   <!--
     Show custom text instead of the super hard to read supply buff text.
   -->
