@@ -57,7 +57,7 @@ Need | Consumption | Residents | Coins | Required | Unlock
 --- | --- | --- | --- | --- | ---
 <img src="./icons/icon_tea.png" class="icon" /> Tea | 0.00026 | 4 | | 800
 <img src="./icons/icon_tools.png" class="icon" /> Tools | 0.0004166 | 4 | | 1000
-Electricity | | 2 | | 1200 |
+<img src="./icons/icon_electricity.png" class="icon"/> Electricity | | 2 | | 1200 |
 <img src="./icons/icon_happiness_20.png" class="icon" /> | **Luxury** | | | |
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon" /> Library | | 2 <img src="./icons/icon_happiness_20.png" class="icon" /> | 20
 <img src="./icons/icon_level2.png" class="icon" /> | **Level II** | | | |
@@ -70,7 +70,7 @@ Need | Consumption | Residents | Coins | Required | Unlock
 --- | --- | --- | --- | --- | ---
 <img src="./icons/icon_tea.png" class="icon" /> Tea | 0.00052 | 7 | | 800
 Gramophones | 0.000027775 | 7 | | 800 | 3000 investors
-Electricity | | 6 | | 1000 |
+<img src="./icons/icon_electricity.png" class="icon"/> Electricity | | 6 | | 1000 |
 <img src="./icons/icon_happiness_20.png" class="icon" /> | **Luxury** | | | |
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_music_school.png" class="icon" /> Music School | | 2 <img src="./icons/icon_happiness_20.png" class="icon" /> | 20
 <img src="../mods/addon-pescatarians/data/ui/jakob/icon_library.png" class="icon" /> Library | | 2 <img src="./icons/icon_happiness_20.png" class="icon" /> | 20
@@ -96,16 +96,26 @@ Need | Consumption | Residents | Coins
 (Tortillas) | 0.00047619 | 4 | 2
 <img src="./icons/icon_bread.png" class="icon"/> Bread | 0.00047619 | 5 | 5
 <img src="./icons/icon_cheese.png" class="icon"/> Cheese | 0.00047619 | 5 | 5
-Electricity | - | 5 | 2
+<img src="./icons/icon_electricity.png" class="icon"/> Electricity | - | 5 | 2
 
 ### Artistas
 
-Need | Consumption | Residents | Coins
---- | --- | --- | ---
+Need | Consumption | Residents | Coins | Required | Unlock
+--- | --- | --- | --- | --- | ---
 (Tortillas) | 0.00047619 | 5 | (10) 15
-(Scooter) | 0.00002898 | 5 | (45) 67
+(Scooter) | 0.00002898 | 5 | (45) 67 | 6000/8000
+| | **Terraced Artista** |
 <img src="./icons/icon_bread.png" class="icon"/> Bread | 0.00047619 | 5 | 45
-Electricity | - | (20) | (45)
-Gramophones | 0.00011905  | 5 | 48
-Sardines | 0.00011905 | 10 | 60
+<img src="./icons/icon_electricity.png" class="icon"/> Electricity | - | (20) | (45)
+<img src="./icons/icon_gramophone.png" class="icon"/> Gramophones | 0.00011905  | 5 <img src="./icons/icon_artista.png" class="icon"/> | 48 <img src="./icons/icon_coins.png" class="icon"/> | 3200/6000
+| | **Artista Skyscraper** |
+<img src="./icons/icon_sardines.png" class="icon"/> Sardines | 0.00011905 | 10 <img src="./icons/icon_artista.png" class="icon"/> | 60 <img src="./icons/icon_coins.png" class="icon"/> | 6000/8000
 Violins | 0.000053 | 10 | 75
+
+### Patronos
+
+Need | Consumption | Residents | Coins | Required | Unlock
+--- | --- | --- | --- | --- | ---
+<img src="./icons/icon_electricity.png" class="icon"/> Electricity | - | ? | ?
+<img src="./icons/icon_gramophone.png" class="icon"/> Gramophones | 0.00011905  | ? <img src="./icons/icon_artista.png" class="icon"/> | ? <img src="./icons/icon_coins.png" class="icon"/> | ?
+<img src="./icons/icon_sardines.png" class="icon"/> Sardines | 0.00011905 | ? <img src="./icons/icon_artista.png" class="icon"/> | ? <img src="./icons/icon_coins.png" class="icon"/> | ?
