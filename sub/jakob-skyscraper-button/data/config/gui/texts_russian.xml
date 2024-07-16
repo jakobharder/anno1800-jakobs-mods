@@ -2,7 +2,7 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Улучшить небоскреб/Добавить этаж</Text>
+      <Text>Upgrade Floors</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
       <Text>Как только потребности ваших жителей будут удовлетворены и жилое здание будет полностью заселено, вы сможете перейти на следующий уровень здания.</Text>
@@ -16,11 +16,24 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011282</GUID>
-      <Text>Улучшить дом с верандой</Text>
+      <Text>Улучшить дом с верандой</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011293</GUID>
+      <Text>Upgrade Pescatarian</Text>
     </Text>
     <Text>
       <GUID>1500011289</GUID>
       <Text>Обеспечьте дополнительную жилую площадь, чтобы увеличить население города.</Text>
     </Text>
+    <Text>
+      <GUID>1500011553</GUID>
+      <Text>Повысьте уровень вашего здания.</Text>
+    </Text>
   </ModOp>
+
+  <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='163095']/Text">
+    <Text>Upgrade to [AssetData([Selection Object Upgradability UpgradeTargetGUID Text]) Text]</Text>
+  </ModOp> -->
 </ModOps>
