@@ -1,0 +1,141 @@
+<ModOps>
+  <!-- # Target residence name and icon -->
+
+  <!-- skyscraper upgrade -->
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137490' or Text/TextGUID='1500011289'][last()]">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>2</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <Condition>[Selection Object FloorAddability Reasons Count]</Condition>
+        </VisibilityElement>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType />
+          <ExpectedValueBool>False</ExpectedValueBool>
+          <Condition>[Selection Object FloorAddability Reasons AT(0) HasNoUpgrade]</Condition>
+        </VisibilityElement>
+        <OperatorType>
+          <OperatorType>1</OperatorType>
+        </OperatorType>
+      </VisibilityElement>
+      <ChildCount>2</ChildCount>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <Icon>
+          <IconText>[AssetData([Selection Object FloorAddability UpgradeTargetGUID]) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData([Selection Object FloorAddability UpgradeTargetGUID]) Text]</Text>
+          <Style />
+        </Text>
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>6</ElementType>
+        <Icon />
+        <Text />
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+    </InfoElement>
+  </ModOp>
+
+  <!-- population upgrade -->
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='500090']/InfoElement[Text/TextGUID='21717']">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>2</ElementType>
+        </ElementType>
+        <ChildCount>2</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <Condition>[Selection Object Upgradability Reasons Count]</Condition>
+        </VisibilityElement>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType />
+          <ExpectedValueBool>False</ExpectedValueBool>
+          <Condition>[Selection Object Upgradability Reasons AT(0) HasNoUpgrade]</Condition>
+        </VisibilityElement>
+        <OperatorType>
+          <OperatorType>1</OperatorType>
+        </OperatorType>
+      </VisibilityElement>
+      <ChildCount>3</ChildCount>
+      <InfoElement>
+        <ElementType>5</ElementType>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <Condition>[Selection Object Upgradability Reasons Count]</Condition>
+        </VisibilityElement>
+        <Icon />
+        <Text>
+          <TextGUID>1500011553</TextGUID>
+        </Text>
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <Icon>
+          <IconText>[AssetData([Selection Object Upgradability UpgradeTargetGUID]) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <Text>[AssetData([Selection Object Upgradability UpgradeTargetGUID]) Text]</Text>
+          <Style />
+        </Text>
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+      <InfoElement>
+        <ElementType>6</ElementType>
+        <Icon />
+        <Text />
+        <Value />
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+    </InfoElement>
+  </ModOp>
+</ModOps>

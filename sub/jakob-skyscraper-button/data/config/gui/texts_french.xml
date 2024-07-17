@@ -2,7 +2,7 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Ajouter des étages</Text>
+      <Text>Upgrade Floors</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
       <Text>Lorsque les besoins de vos habitants seront comblés et la résidence à pleine capacité, vous pourrez accéder au niveau du bâtiment suivant.</Text>
@@ -17,12 +17,25 @@
     <Text>
       <!-- TODO translation -->
       <GUID>1500011282</GUID>
-      <Text>Upgrade Terraced House</Text>
+      <Text>Upgrade Terraced House</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+    </Text>
+    <Text>
+      <!-- TODO translation -->
+      <GUID>1500011293</GUID>
+      <Text>Upgrade Pescatarian</Text>
     </Text>
     <Text>
       <!-- TODO translation -->
       <GUID>1500011289</GUID>
       <Text>Provide additional living space to increase your city's population.</Text>
     </Text>
+    <Text>
+      <GUID>1500011553</GUID>
+      <Text>Améliorez votre bâtiment au niveau suivant.</Text>
+    </Text>
   </ModOp>
+
+  <!-- <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='163095']/Text">
+    <Text>Upgrade to [AssetData([Selection Object Upgradability UpgradeTargetGUID Text]) Text]</Text>
+  </ModOp> -->
 </ModOps>

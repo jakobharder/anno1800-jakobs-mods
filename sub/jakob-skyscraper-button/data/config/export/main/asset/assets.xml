@@ -137,10 +137,38 @@
         <Values>
           <Standard>
             <GUID>1500011293</GUID>
-            <Name>Upgrade Pescatarian</Name>
+            <Name>Upgrade to Pescatarian</Name>
           </Standard>
         </Values>
       </Asset>
+    </ModOp>
+  </Group>
+
+  <!-- # Replace Vanilla Residence Icons -->
+  <Group>
+    <ModOp Type="merge" GUID="1010344"
+      Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_instant_workers.png</IconFilename>
+    </ModOp>
+    <ModOp Type="merge" GUID="1010345"
+      Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_instant_artisans.png</IconFilename>
+    </ModOp>
+    <ModOp Type="merge" GUID="1010346"
+      Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_instant_engineers.png</IconFilename>
+    </ModOp>
+    <ModOp Type="merge" GUID="1010347"
+      Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_instant_investors.png</IconFilename>
+    </ModOp>
+    <ModOp Type="merge" GUID="101255"
+      Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_instant_obreros.png</IconFilename>
+    </ModOp>
+    <ModOp Type="merge" GUID="5405"
+      Path="/Values/Standard/IconFilename">
+      <IconFilename>data/ui/jakob/icon_instant_artistas.png</IconFilename>
     </ModOp>
   </Group>
 </ModOps>

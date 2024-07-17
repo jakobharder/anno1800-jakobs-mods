@@ -34,9 +34,16 @@
             <ElementType>2</ElementType>
           </ElementType>
           <ChildCount>1</ChildCount>
-          <OperatorType>
-            <OperatorType>1</OperatorType>
-          </OperatorType>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <ChildCount>1</ChildCount>
+            <InsertAnker />
+            <OperatorType>
+              <OperatorType>1</OperatorType>
+            </OperatorType>
+          </VisibilityElement>
         </VisibilityElement>
         <Icon>
           <IconGUID>502386</IconGUID>
@@ -63,7 +70,7 @@
           <ElementType>
             <ElementType>2</ElementType>
           </ElementType>
-          <ChildCount>1</ChildCount>
+          <ChildCount>2</ChildCount>
           <VisibilityElement>
             <ElementType>
               <ElementType>2</ElementType>
@@ -92,9 +99,17 @@
               <OperatorType>1</OperatorType>
             </OperatorType>
           </VisibilityElement>
-          <OperatorType>
-            <OperatorType>1</OperatorType>
-          </OperatorType>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <ChildCount>0</ChildCount>
+            <InsertAnker />
+            <OperatorType>
+              <OperatorType>1</OperatorType>
+            </OperatorType>
+          </VisibilityElement>
+          <OperatorType />
         </VisibilityElement>
         <Text>
           <TextGUID>1500011289</TextGUID> <!-- Provide additional living space to increase your city's population. -->
@@ -103,11 +118,16 @@
         <BackgroundType />
       </InfoElement>
     </ModOp>
+    <ModOp Type="addPrevSibling"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137490' or Text/TextGUID='137489']/VisibilityElement/OperatorType">
+      <InsertAnker />
+    </ModOp>
+
     <!--
       Add GUID based conditions to all non-generic upgrade elements.
     -->
-    <ModOp Type="addPrevSibling"
-      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137490' or Text/TextGUID='137489' or Text/TextGUID='1500011282' or Text/TextGUID='1500011289']/VisibilityElement/OperatorType">
+    <ModOp Type="replace"
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='137490' or Text/TextGUID='137489' or Text/TextGUID='1500011282' or Text/TextGUID='1500011289']//InsertAnker">
       <!-- Industrial Cities -->
       <VisibilityElement>
         <ElementType>
@@ -119,87 +139,8 @@
         <ResultType>
           <ResultType>1</ResultType>
         </ResultType>
-        <ExpectedValueInt>1010344</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1010345</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500010200</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500010201</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500010225</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <!-- Pescatarians -->
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1010343</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500010143</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
+        <ExpectedValueInt>1500011513</ExpectedValueInt>
+        <Condition>[ToolOneHelper BuildingCategory([Selection Object FloorAddability UpgradeTargetGUID]) Guid]</Condition>
       </VisibilityElement>
       <!-- New World Cities -->
       <VisibilityElement>
@@ -212,94 +153,19 @@
         <ResultType>
           <ResultType>1</ResultType>
         </ResultType>
-        <ExpectedValueInt>101254</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>101255</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>5405</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500011044</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>8856006</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>8856007</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
-      </VisibilityElement>
-      <VisibilityElement>
-        <ElementType>
-          <ElementType>1</ElementType>
-        </ElementType>
-        <CompareOperator>
-          <CompareOperator>1</CompareOperator>
-        </CompareOperator>
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500011382</ExpectedValueInt>
-        <Condition>[Selection Object GUID]</Condition>
+        <ExpectedValueInt>1500011055</ExpectedValueInt>
+        <Condition>[ToolOneHelper BuildingCategory([Selection Object FloorAddability UpgradeTargetGUID]) Guid]</Condition>
       </VisibilityElement>
     </ModOp>
+
     <!--
       Flip operator on non-skyscraper upgrade elements.
     -->
     <ModOp Type="replace"
-      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='1500011282' or Text/TextGUID='1500011289']/VisibilityElement/VisibilityElement/CompareOperator">
+      Path="//InfoTipData[Guid='137488']/InfoElement[Text/TextGUID='1500011282' or Text/TextGUID='1500011289']/VisibilityElement/VisibilityElement/VisibilityElement/CompareOperator">
       <CompareOperator />
     </ModOp>
   </Group>
+
+  <Include File="./upgrade.include.xml" />
 </ModOps>
