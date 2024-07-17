@@ -2,24 +2,21 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Upgrade Floors</Text>
+      <Text>升級樓層</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
-      <!-- TODO translation -->
-      <Text>Once your residents' needs are fulfilled and the residence is at its full capacity, you'll be able to upgrade to the next building level.</Text>
+      <Text>一旦滿足居民的需求並且住所已滿員，您就可以升級到下一個建築等級。</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='23914']/Text">
-      <!-- TODO translation -->
-      <Text>Upgrade your building to the next level with additional floors.</Text>
+      <Text>透過增加樓層將您的建築升級到下一個等級。</Text>
     </ModOp>
   </Group>
 
   <!-- # New Texts -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011282</GUID>
-      <Text>Upgrade Terraced House</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+      <Text>增加生活空間</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
     </Text>
     <Text>
       <!-- TODO translation -->
@@ -27,9 +24,8 @@
       <Text>Upgrade Pescatarian</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011289</GUID>
-      <Text>Provide additional living space to increase your city's population.</Text>
+      <Text>提供額外的生活空間以增加城市人口。</Text>
     </Text>
     <Text>
       <GUID>1500011553</GUID>
