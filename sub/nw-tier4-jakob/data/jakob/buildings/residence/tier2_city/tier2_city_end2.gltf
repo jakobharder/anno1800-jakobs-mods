@@ -1,0 +1,146 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "chimney.002",
+            "rotation" : [
+                0,
+                0.3153931796550751,
+                0,
+                0.9489611983299255
+            ],
+            "scale" : [
+                0.9210348725318909,
+                1,
+                0.9210348725318909
+            ],
+            "translation" : [
+                -0.0031890645623207092,
+                2.30507493019104,
+                -0.7592145800590515
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "mat_yellow",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0.182",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "residence_yellow_diff",
+            "uri" : "residence_yellow_diff.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 5341,
+            "max" : [
+                1.3291988372802734,
+                0.17474132776260376,
+                2.1331684589385986
+            ],
+            "min" : [
+                -2.003669023513794,
+                -2.852323055267334,
+                -1.2751199007034302
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 5341,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 5341,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 8733,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 64092,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 64092,
+            "byteOffset" : 64092
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 42728,
+            "byteOffset" : 128184
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17466,
+            "byteOffset" : 170912
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 188380,
+            "uri" : "tier2_city_end2.bin"
+        }
+    ]
+}

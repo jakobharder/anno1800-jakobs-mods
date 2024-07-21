@@ -1,0 +1,7 @@
+variant: 
+  source: residence_colony01_tier02_estate01.cfg
+  modifications:
+    - xpath: /Config/Models/Config/Materials/Config[Name="main_building"]
+      cModelDiffTex: data/jakob/buildings/residence/tier2_city/maps/residence_sakura_diff.psd
+    - xpath: /Config/Models/Config
+      FileName: data/jakob/buildings/residence/tier2_city/rdm/tier2_city_corner3_lod0.rdm

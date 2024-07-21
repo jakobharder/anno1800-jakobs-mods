@@ -1,0 +1,9 @@
+variant: 
+  source: residence_colony01_tier02_estate01.cfg
+  modifications:
+    - xpath: /Config/Models/Config/Materials/Config[Name="main_building"]
+      cModelDiffTex: data/dlc09/graphics/buildings/public/mall/maps/mall_diff_02.psd
+      cModelMetallicTex: data/dlc09/graphics/buildings/public/mall/maps/mall_metal.psd
+      cModelNormalTex: data/dlc09/graphics/buildings/public/mall/maps/mall_norm.psd
+    - xpath: /Config/Models/Config
+      FileName: data/jakob/buildings/residence/tier2_city/rdm/attractive_facade_03_lod0.rdm

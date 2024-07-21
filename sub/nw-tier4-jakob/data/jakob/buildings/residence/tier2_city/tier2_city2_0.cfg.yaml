@@ -1,0 +1,9 @@
+variant: 
+  source: residence_colony01_tier02_estate01.cfg
+  modifications:
+    - xpath: /Config/Models/Config/Materials/Config[Name="main_building"]
+      cModelDiffTex: data\graphics\buildings\residence\residence_tier04_04\maps\residence_tier04_04_diff.psd
+      cModelMetallicTex: data\graphics\buildings\residence\residence_tier04_04\maps\residence_tier04_04_metal.psd
+      cModelNormalTex: data\graphics\buildings\residence\residence_tier04_04\maps\residence_tier04_04_norm.psd
+    - xpath: /Config/Models/Config
+      FileName: data/jakob/buildings/residence/tier2_city/rdm/tier2_city2_lod0.rdm
