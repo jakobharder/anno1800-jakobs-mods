@@ -158,7 +158,9 @@ Smaller **power plants** and additional energy options.
 
 ### 4.0
 
-- 4.0.8: Improved Russian translations thanks to DATM
+- 4.0.8: Updated Russian translations thanks to DATM
+- 4.0.8: Hide flax clothes when used with `Production Works`
+- 4.0.8: Minor improvements
 
 #### Impact on Existing Saves
 

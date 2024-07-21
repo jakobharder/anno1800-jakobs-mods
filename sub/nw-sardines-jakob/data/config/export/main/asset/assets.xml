@@ -49,7 +49,8 @@
         <Object>
           <Variations>
             <Item>
-              <Filename>data/jakob/sardines/fish_cannery.cfg</Filename>
+              <!-- <Filename>data/jakob/sardines/fish_cannery.cfg</Filename> -->
+               <Filename>data\eoy21\graphics\buildings\production\factory_colony_01_03\factory_colony_01_03.cfg</Filename>
             </Item>
           </Variations>
         </Object>
@@ -61,7 +62,9 @@
           </Colors>
         </Selection>
         <Constructable />
-        <Locked />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
         <SoundEmitter>
           <ActiveSounds>
             <Item>
@@ -170,23 +173,18 @@
           <Building>1500011547</Building>
           <Tier1>
             <Item>
-              <Building>1010305</Building>
+              <Building>1388</Building>
             </Item>
             <Item>
-              <Building>1010278</Building>
+              <Building>101262</Building>
             </Item>
             <Item>
-              <Building>1500011325</Building>
-              <Tier2>
-                <Item>
-                  <Building>1500010107</Building>
-                </Item>
-              </Tier2>
+              <Building>133031</Building>
             </Item>
           </Tier1>
         </ProductionChain>
         <Locked>
-          <DefaultLockedState>1</DefaultLockedState>
+          <DefaultLockedState>0</DefaultLockedState>
         </Locked>
       </Values>
     </Asset>
@@ -354,6 +352,12 @@
       <Artisan>900</Artisan>
     </Item>
   </ModOp> -->
+  <ModOp Type="add" GUID="5466"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011548</Building>
+    </Item>
+  </ModOp>
 
   <!-- # Feedback -->
   <ModOp Type="add" GUID="142413" Path="/Values/FeedbackBuildingGroup/Buildings">
