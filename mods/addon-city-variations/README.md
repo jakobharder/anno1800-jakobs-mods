@@ -71,12 +71,9 @@ The roofs are colored in realtime for reduced memory usage and better performanc
 
 ## Changes
 
-- 1.0.3: Improved Russian translation
-- 1.0.2: Updated Korean translation (thanks to modpark817)
-- 1.0.2: Fixed New World hotel unhide
-- 1.0.1: Fixed missing hotels, commercial street icons
+- 1.0.10: Improved Russian translations thanks to DATM
 
 ## Credits
 
-Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for translations!
+Thanks to MSHS, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817, DATM for translations!
 

@@ -2,15 +2,13 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Upgrade Floors</Text>
+      <Text>升级楼层</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
-      <!-- TODO translation -->
-      <Text>Once your residents' needs are fulfilled and the residence is at its full capacity, you'll be able to upgrade to the next building level.</Text>
+      <Text>一旦满足居民的需求并且住所已满员，您就可以升级到下一个建筑等级。</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='23914']/Text">
-      <!-- TODO translation -->
-      <Text>Upgrade your building to the next level with additional floors.</Text>
+      <Text>通过增加楼层将您的建筑升级到下一个等级。</Text>
     </ModOp>
   </Group>
 
@@ -18,7 +16,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011282</GUID>
-      <Text>升级摩天大楼</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+      <Text>增加生活空间</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
     </Text>
     <Text>
       <!-- TODO translation -->

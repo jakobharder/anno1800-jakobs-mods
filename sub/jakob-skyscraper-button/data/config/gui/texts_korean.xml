@@ -2,7 +2,7 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Upgrade Floors</Text>
+      <Text>층 업그레이드</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
       <Text>주민들의 요구가 충족되었고 주민들의 수가 거주지 최대 수용량에 도달했다면 다음 빌딩 레벨로 업그레이드할 수 있습니다.</Text>
@@ -15,9 +15,8 @@
   <!-- # New Texts -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011282</GUID>
-      <Text>Upgrade Terraced House</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+      <Text>주거 공간 확장</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
     </Text>
     <Text>
       <!-- TODO translation -->
@@ -25,9 +24,8 @@
       <Text>Upgrade Pescatarian</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011289</GUID>
-      <Text>Provide additional living space to increase your city's population.</Text>
+      <Text>도시 인구를 늘리기 위해 추가 주거 공간을 제공하십시오.</Text>
     </Text>
     <Text>
       <GUID>1500011553</GUID>

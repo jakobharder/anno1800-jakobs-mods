@@ -271,7 +271,7 @@
   </Group>
 
   <!-- # Construction Menu: after Soap -->
-  <Group>
+  <Group Condition="!#production_works_kurila">
     <ModOp Type="addNextSibling" GUID="1010281">
       <Asset>
         <Template>ProductionChain</Template>

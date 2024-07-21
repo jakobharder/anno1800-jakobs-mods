@@ -2,7 +2,7 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Upgrade Floors</Text>
+      <Text>階をアップグレード</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
       <Text>住民の需要を満たし、かつ住居を満杯にすると、次のレベルにアップグレードできるようになる。</Text>
@@ -15,9 +15,8 @@
   <!-- # New Texts -->
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011282</GUID>
-      <Text>Upgrade Terraced House</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+      <Text>居住空間を増やす</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
     </Text>
     <Text>
       <!-- TODO translation -->
@@ -25,9 +24,8 @@
       <Text>Upgrade Pescatarian</Text>
     </Text>
     <Text>
-      <!-- TODO translation -->
       <GUID>1500011289</GUID>
-      <Text>Provide additional living space to increase your city's population.</Text>
+      <Text>都市の人口を増やすために追加の居住空間を提供する。</Text>
     </Text>
     <Text>
       <GUID>1500011553</GUID>

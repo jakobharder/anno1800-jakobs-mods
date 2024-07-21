@@ -2,14 +2,13 @@
   <!-- # Vanilla Changes -->
   <Group>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137489' or GUID='412']/Text">
-      <Text>Upgrade Floors</Text>
+      <Text>Mejorar pisos</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='137854']/Text">
       <Text>Cuando satisfagas las necesidades de tus residentes y la capacidad de la residencia esté al completo, podrás mejorar el nivel del edificios.</Text>
     </ModOp>
     <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='23914']/Text">
-      <!-- TODO translation -->
-      <Text>Upgrade your building to the next level with additional floors.</Text>
+      <Text>Mejore su edificio al siguiente nivel con pisos adicionales.</Text>
     </ModOp>
   </Group>
 
@@ -17,7 +16,7 @@
   <ModOp Type="add" Path="/TextExport/Texts">
     <Text>
       <GUID>1500011282</GUID>
-      <Text>Mejora de casa adosada</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
+      <Text>Aumentar el espacio habitable</Text> <!-- [Selection Object FloorAddability UpgradeTargetGUID Text] -->
     </Text>
     <Text>
       <!-- TODO translation -->
