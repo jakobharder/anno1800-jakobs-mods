@@ -158,17 +158,19 @@ Smaller **power plants** and additional energy options.
 
 ### 4.0
 
+- 4.0.8: Improved Russian translations thanks to DATM
+
 #### Impact on Existing Saves
 
 - Please check if you used `Pescatarians`
   - Olive Soap, Pickled Vegetables are replaced by Soap and Seafood Stew.
-  Check your trade routes.
+    Check your trade routes.
   - Pescatarians needs changed.
-  Check your consumption statistics.
+    Check your consumption statistics.
 - Good to know
   - Changed production chains are only applicable when you build new factories.
   - New fertilities only in new games.
-  Farms get a fertility buff in existing save games.
+    Farms get a fertility buff in existing save games.
 
 #### Major Changes
 
@@ -187,7 +189,7 @@ Smaller **power plants** and additional energy options.
 - Balancing
   - Tea docks and factories have reduced maintenance
   - Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
-  Exact numbers are now visible in the workforce InfoTip.
+    Exact numbers are now visible in the workforce InfoTip.
   - Increased speed people move into Pescatarian and Terraced Houses
 
 #### New Content
@@ -205,4 +207,4 @@ Smaller **power plants** and additional energy options.
 
 ## Credits
 
-Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817 for the translations!
+Thanks to m_belonosov, redzmey1, MSHS, Petritant, Aveneger432, darknesswei, Tonton Yip, mfuegar, DrD_AVEL, modpark817, DATM for the translations!

@@ -93,6 +93,7 @@ Only with DLC `New World Rising`.
 
 ### 2.2
 
+- 2.2.8: Improved Russian translations thanks to DATM
 - 2.2.5: Minor fixes
 - 2.2.5: Added missing translations
 - 2.2.1: Improved Polish translation by Bzhydack (thanks!)
@@ -124,4 +125,4 @@ Only with DLC `New World Rising`.
 
 Thanks to Lordy for the milking parlor model.
 
-Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL, modpark817 for the translations!
+Thanks to HeroOfOlympus, darknesswei, mfuegar, DrD_AVEL, modpark817, DATM for the translations!

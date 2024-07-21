@@ -2,6 +2,10 @@
 
 You can simply overwrite older version. The modloader automatically takes the right versions.
 
+## [Unreleased]
+
+- Improved Russian translations thanks to DATM
+
 ## 7.0 - More Factories, Integrated Pescatarians
 
 ### Impact on Existing Saves
