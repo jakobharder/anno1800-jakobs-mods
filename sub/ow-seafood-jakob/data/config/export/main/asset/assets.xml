@@ -528,6 +528,121 @@
         <Locked />
       </Values>
     </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011554</GUID>
+          <Name>Seafood Stew Scholar</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/goods_africa/icon_wat_stew.png</IconFilename>
+          <InfoDescription>1500011513</InfoDescription>
+        </Standard>
+        <Text>
+          <TextOverride>114410</TextOverride>
+        </Text>
+        <ProductionChain>
+          <Building>1500011511</Building>
+          <Tier1>
+            <Item>
+              <Building>1500011531</Building>
+            </Item>
+            <Item>
+              <Building>1500010830</Building>
+            </Item>
+            <Item>
+              <Building>1010265</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011555</GUID>
+          <Name>@ 2000 Scholars</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>118745</Context>
+                <CounterAmount>2000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnlockAssets>
+                      <Item>
+                        <Asset>1500011554</Asset>
+                      </Item>
+                    </UnlockAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>FeatureUnlock</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011555</GUID>
+          <Name>Unhide @ 1000 Scholars</Name>
+        </Standard>
+        <Locked />
+        <Trigger>
+          <TriggerCondition>
+            <Template>ConditionPlayerCounter</Template>
+            <Values>
+              <Condition />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>118745</Context>
+                <CounterAmount>1000</CounterAmount>
+              </ConditionPlayerCounter>
+            </Values>
+          </TriggerCondition>
+          <TriggerActions>
+            <Item>
+              <TriggerAction>
+                <Template>ActionUnlockAsset</Template>
+                <Values>
+                  <Action />
+                  <ActionUnlockAsset>
+                    <UnhideAssets>
+                      <Item>
+                        <Asset>1500011554</Asset>
+                      </Item>
+                    </UnhideAssets>
+                  </ActionUnlockAsset>
+                </Values>
+              </TriggerAction>
+            </Item>
+          </TriggerActions>
+        </Trigger>
+        <TriggerSetup>
+          <UsedBySecondParties>0</UsedBySecondParties>
+        </TriggerSetup>
+      </Values>
+    </Asset>
   </ModOp>
   <ModOp Type="addNextSibling" GUID="500945"
     Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=500 or Building='500004'][last()]">
@@ -543,6 +658,18 @@
       <Building>1500010114</Building>
       <Worker>500</Worker>
     </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="502107,500945"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='120287']">
+    <Item>
+      <Building>1500010114</Building>
+      <Scholar>2000</Scholar>
+      <Secondary />
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="502107,500945"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='120287']">
+    <PlatformVisibility>Console</PlatformVisibility>
   </ModOp>
 
   <!-- # Targets -->
