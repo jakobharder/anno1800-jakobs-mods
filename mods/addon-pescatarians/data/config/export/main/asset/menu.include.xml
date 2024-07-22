@@ -1,0 +1,89 @@
+<ModOps>
+  <!-- # Build Menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010186</GUID>
+          <Name>Pescatarians Menu</Name>
+          <IconFilename>data/ui/jakob/icon_pescatarian_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010100</Building>
+              <Worker>1</Worker>
+            </Item>
+            <Item>
+              <Building>1500010816</Building>
+              <Worker>500</Worker>
+            </Item>
+            <!-- <Item>
+              <Building>1500010819</Building>
+              <Worker>500</Worker>
+            </Item> -->
+            <Item>
+              <Building>1500010800</Building>
+              <Artisan>900</Artisan>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500011513</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010188</GUID>
+          <Name>pescatarian_menu_description</Name>
+        </Standard>
+        <Text>
+          <TextOverride>1500010134</TextOverride>
+        </Text>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- insert after market in city and farmers menu, fallback append -->
+  <!-- <ModOp Type="addNextSibling" GUID="500092,25000189"
+    Condition="!#jakob_industrial_cities"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or (not(../Item/Building='1010343'))][last()]">
+    <Item>
+      <Building>1500010186</Building>
+    </Item>
+  </ModOp> -->
+
+  <!-- # Cheats -->
+  <Group Condition="@1500011561/InstantResidences">
+    <ModOp Type="addNextSibling" GUID="1500010186"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1][last()]">
+      <Item>
+        <Building>1500010143</Building>
+        <Worker>1</Worker>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="1500010186"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
+      <Item>
+        <Building>1500010144</Building>
+        <Artisan>900</Artisan>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000190"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1][last()]">
+      <Item>
+        <Building>1500010143</Building>
+        <Worker>1</Worker>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
+      <Item>
+        <Building>1500010144</Building>
+        <Artisan>900</Artisan>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>
