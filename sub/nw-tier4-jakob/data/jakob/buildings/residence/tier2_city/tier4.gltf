@@ -1,0 +1,234 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.3.27",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "_lod0",
+            "rotation" : [
+                0,
+                -0.9485774636268616,
+                0,
+                0.31654512882232666
+            ],
+            "scale" : [
+                0.9210348725318909,
+                1,
+                0.9210348725318909
+            ],
+            "translation" : [
+                0.6404220461845398,
+                2.741063117980957,
+                0.19584015011787415
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "hotel",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                }
+            }
+        },
+        {
+            "name" : "palace-main",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0.347",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "residence_yellow_diff",
+            "uri" : "residence_yellow_diff.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "palace_main_building_diff_0",
+            "uri" : "palace_main_building_diff_0.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 13845,
+            "max" : [
+                2.3311855792999268,
+                0.6635320782661438,
+                2.5427298545837402
+            ],
+            "min" : [
+                -1.4161714315414429,
+                -3.274243116378784,
+                -1.4073066711425781
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 13845,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 13845,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 23310,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 4356,
+            "max" : [
+                2.3378264904022217,
+                -0.07120251655578613,
+                2.6306569576263428
+            ],
+            "min" : [
+                -1.4687726497650146,
+                -4.096811294555664,
+                -1.3758537769317627
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 4356,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 4356,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 11100,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 166140,
+            "byteOffset" : 0,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 166140,
+            "byteOffset" : 166140,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 110760,
+            "byteOffset" : 332280,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 46620,
+            "byteOffset" : 443040,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 52272,
+            "byteOffset" : 489660,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 52272,
+            "byteOffset" : 541932,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 34848,
+            "byteOffset" : 594204,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22200,
+            "byteOffset" : 629052,
+            "target" : 34963
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 651252,
+            "uri" : "tier4.bin"
+        }
+    ]
+}

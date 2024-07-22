@@ -1,20 +1,19 @@
-<!-- 
-  New World Cities
-  GUIDs: https://github.com/anno-mods/GuidRanges
--->
 <ModOps>
   <!-- # Includes -->
   <Include File="../../../../jakob/nw-ministry/assets.include.xml" />
+  <Include File="./menu.include.xml" />
+  <Include File="./population.include.xml" />
+  <Include File="./unlocks.include.xml" />
 
-  <!-- # Fancy New Residences -->
+  <!-- # Residences -->
   <ModOp Type="addNextSibling" GUID="101255">
     <Asset>
       <Template>ResidenceBuilding7_Colony</Template>
       <Values>
         <Standard>
           <GUID>1500011040</GUID>
-          <Name>Tourist Residence</Name>
-          <IconFilename>data\jakob\ui\icons\icon_newworldcities_residence.png</IconFilename>
+          <Name>Patrono Residence</Name>
+          <IconFilename>data/ui/jakob/icon_instant_patronos.png</IconFilename>
           <InfoDescription>163059</InfoDescription>
         </Standard>
         <Blocking>
@@ -24,6 +23,7 @@
           <BuildingType>Residence</BuildingType>
           <!-- <PickingAsset>101254</PickingAsset> -->
           <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011055</BuildingCategoryName>
           <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
           <InfluencedByNeighbors>
             <Item>
@@ -281,7 +281,7 @@
           <DefaultParticipant>SA_Resident_tier02</DefaultParticipant>
         </Object>
         <Selection>
-          <ParticipantMessageArcheType>SA_Resident_tier02</ParticipantMessageArcheType>
+          <ParticipantMessageArcheType>Resident_tier05_atWork</ParticipantMessageArcheType>
         </Selection>
         <Constructable />
         <Locked>
@@ -304,14 +304,17 @@
           <ResidenceStorage>
             <InputStorageMax>1</InputStorageMax>
           </ResidenceStorage>
-          <PopulationLevel7>15000006</PopulationLevel7>
+          <PopulationLevel7>1500011557</PopulationLevel7>
+          <IsBaseResidence>1</IsBaseResidence>
           <ResidentMax>80</ResidentMax>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
         </Residence7>
         <LogisticNode>
-          <REMOVE_THIS_LATER_FeedbackUnitTier>Level2</REMOVE_THIS_LATER_FeedbackUnitTier>
+          <REMOVE_THIS_LATER_FeedbackUnitTier>Level5</REMOVE_THIS_LATER_FeedbackUnitTier>
         </LogisticNode>
         <AmbientMoodProvider>
-          <DynamicEnvironmentType>ResidenceT1</DynamicEnvironmentType>
+          <DynamicEnvironmentType>ResidenceT5</DynamicEnvironmentType>
           <HappinessDependentMurmur>
             <Angry>
               <Murmur>OberaUnhappy</Murmur>
@@ -330,93 +333,36 @@
             </Euphoric>
           </HappinessDependentMurmur>
         </AmbientMoodProvider>
-        <UpgradeList>
-          <DefaultBuff>1500011041</DefaultBuff> <!-- extra population in this building -->
-        </UpgradeList>
+        <!-- <UpgradeList>
+          <DefaultBuff>1500011041</DefaultBuff>
+        </UpgradeList> -->
         <Attackable>
           <MaximumHitPoints>2000</MaximumHitPoints>
         </Attackable>
         <IncidentInfectable />
-        <Pausable />
-        <Culture>
-          <Attractiveness>2</Attractiveness>
-        </Culture>
+        <Culture />
         <StreetActivation />
-        <InfluenceSource />
+        <InfluenceSource>
+          <InfluenceAmount>1</InfluenceAmount>
+        </InfluenceSource>
       </Values>
     </Asset>
-    <Asset>
-      <Template>TownhallBuff</Template>
-      <Values>
-        <Standard>
-          <GUID>1500011041</GUID>
-          <Name>double_population</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
-        </Standard>
-        <ItemEffect />
-        <BuildingUpgrade />
-        <!--<Buff>
-          <ShortName>137234</ShortName>
-        </Buff>-->
-        <PopulationUpgrade>
-        </PopulationUpgrade>
-        <ResidenceUpgrade>
-          <WorkforceModifierInPercent>100</WorkforceModifierInPercent>
-        </ResidenceUpgrade>
-        <IncidentInfectableUpgrade />
-        <CultureUpgrade>
-          <HideBuff>1</HideBuff>
-        </CultureUpgrade>
-        <InfluenceSourceUpgrade />
-        <WarehouseUpgrade />
-        <DistributionUpgrade />
-        <ItemContainerUpgrade />
-      </Values>
-    </Asset>
-  </ModOp>
-  <!-- <ModOp Type="merge" GUID="1010345" Path="/Values">
-    <Upgradable>
-      <NextGUID>1500011043</NextGUID>
-    </Upgradable>
   </ModOp>
   <ModOp Type="add" GUID="5405" Path="/Values">
     <Upgradable>
-      <NextGUID>1500011044</NextGUID>
+      <NextGUID>1500011040</NextGUID>
     </Upgradable>
-  </ModOp> -->
-  <!-- <ModOp Type="merge" GUID="5405" Path="/Values">
+  </ModOp>
+  <ModOp Type="merge" GUID="5405" Path="/Values">
     <Residence7>
-      <ResidentsRequiredForUpgrade>20</ResidentsRequiredForUpgrade>
+      <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
     </Residence7>
-  </ModOp> -->
+  </ModOp>
 
-  <ModOp Type="add" GUID="15000006" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='120020']/RequiredBuildings">
-    <Item>
-      <RequiredBuilding>1500011040</RequiredBuilding>
-    </Item>
-    <Item>
-      <RequiredBuilding>1500011043</RequiredBuilding>
-    </Item>
-  </ModOp>
   <!-- add spawn feeback -->
-  <ModOp GUID="142785" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+  <ModOp GUID="142785,2001092" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500011040</Building>
-    </Item>
-    <Item>
-      <Building>1500011043</Building>
-    </Item>
-  </ModOp>
-  <!-- add spawn feeback -->
-  <ModOp GUID="142976" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500011040</Building>
-    </Item>
-  </ModOp>
-  <!-- add spawn feeback -->
-  <ModOp GUID="2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
-    <Item>
-      <Building>1500011043</Building>
     </Item>
   </ModOp>
 

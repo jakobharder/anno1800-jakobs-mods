@@ -1,0 +1,290 @@
+<ModOps>
+  <ModOp GUID="15000004" Type="addNextSibling">
+    <Asset>
+      <Template>PopulationLevel7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011557</GUID>
+          <!--
+            Use GUID before any vanila population for the following reasons:
+            - GUID is used for island population order, marketplace order
+            - the last population providing a workforce is used for working conditions menu
+          -->
+          <Name>Patronos</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\specialists\systemic\icon_travelagent_516.png</IconFilename>
+        </Standard>
+        <PopulationLevel7>
+          <PopulationInputs>
+            <!-- Basic Needs -->
+            <Item>
+              <Product>5803</Product>
+              <Amount>0.000416667</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <MoneyValue>20</MoneyValue>
+              <Artista>0</Artista>
+            </Item>
+            <Item>
+              <Product>6600</Product>
+              <Amount>0.000952381</Amount>
+              <SupplyWeight>2</SupplyWeight>
+              <MoneyValue>30</MoneyValue>
+              <Artista>0</Artista>
+            </Item>
+            <Item>
+              <Product>5381</Product>
+              <Amount>0.00055</Amount>
+              <SupplyWeight>2</SupplyWeight>
+              <MoneyValue>30</MoneyValue>
+              <Artista>900</Artista>
+            </Item>
+            <Item>
+              <Product>6265</Product>
+              <SupplyWeight>2</SupplyWeight>
+              <MoneyValue>40</MoneyValue>
+              <Artista>1800</Artista>
+            </Item>
+            <Item>
+              <Product>5382</Product>
+              <Amount>8.99E-05</Amount>
+              <HappinessValue>4</HappinessValue>
+              <MoneyValue>60</MoneyValue>
+              <Artista>1800</Artista>
+            </Item>
+            <Item>
+              <Product>5831</Product>
+              <HappinessValue>4</HappinessValue>
+              <MoneyValue>30</MoneyValue>
+              <Artista>2700</Artista>
+            </Item>
+            <Item>
+              <Product>5388</Product>
+              <Amount>0.000833333</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <MoneyValue>70</MoneyValue>
+              <Artista>2700</Artista>
+            </Item>
+            <Item>
+              <Product>5395</Product>
+              <Amount>5.2E-05</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <MoneyValue>80</MoneyValue>
+              <Artista>4000</Artista>
+            </Item>
+            <Item>
+              <Product>5830</Product>
+              <HappinessValue>6</HappinessValue>
+              <MoneyValue>40</MoneyValue>
+              <Artista>4000</Artista>
+            </Item>
+            <Item>
+              <Product>5391</Product>
+              <Amount>2.898E-05</Amount>
+              <SupplyWeight>5</SupplyWeight>
+              <MoneyValue>90</MoneyValue>
+              <Artista>6000</Artista>
+            </Item>
+            <!-- Lifestyle Needs -->
+            <Item>
+              <Product>1010197</Product>
+              <Amount>0.001</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>1010201</Product>
+              <Amount>0.0005</Amount>
+              <SupplyWeight>3</SupplyWeight>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <!-- Lifestyle Needs: Mail -->
+            <Item>
+              <Product>535</Product>
+              <Amount>0.00075</Amount>
+              <SupplyWeight>4</SupplyWeight>
+              <MoneyValue>7</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000002</Population>
+                <MinPopulationAmount>500</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>536</Product>
+              <Amount>0.00025</Amount>
+              <SupplyWeight>6</SupplyWeight>
+              <MoneyValue>27</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000006</Population>
+                <MinPopulationAmount>1</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+            <Item>
+              <Product>2524</Product>
+              <Amount>0.00017094</Amount>
+              <SupplyWeight>13</SupplyWeight>
+              <MoneyValue>40</MoneyValue>
+              <AdditionalGlobalUnlockRequirement>
+                <Population>15000006</Population>
+                <MinPopulationAmount>1000</MinPopulationAmount>
+              </AdditionalGlobalUnlockRequirement>
+              <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
+              <IsBonusNeed>1</IsBonusNeed>
+            </Item>
+          </PopulationInputs>
+          <DefaultResidence>1500011040</DefaultResidence>
+          <PopulationOutputs>
+            <Item>
+              <Product>1010128</Product>
+              <Amount>100</Amount>
+            </Item>
+          </PopulationOutputs>
+          <CategoryIcon>data/ui/2kimages/main/icons/icon_arrow.png</CategoryIcon>
+          <PopulationParticipant>Third_enemy_01_Grant</PopulationParticipant>
+          <PopulationAtWorkParticipant>Resident_tier05_atWork</PopulationAtWorkParticipant>
+          <MoodText>
+            <Angry>
+              <Text>1500010810</Text>
+            </Angry>
+            <Unhappy>
+              <Text>1500010811</Text>
+            </Unhappy>
+            <Neutral>
+              <Text>1500010812</Text>
+            </Neutral>
+            <Happy>
+              <Text>1500010813</Text>
+            </Happy>
+            <Euphoric>
+              <Text>1500010814</Text>
+            </Euphoric>
+          </MoodText>
+        </PopulationLevel7>
+        <Locked />
+      </Values>
+    </Asset>
+    <!-- <Asset>
+      <Template>PopulationGroup7</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011560</GUID>
+          <Name>NW Extra Population</Name>
+        </Standard>
+        <PopulationGroup7>
+          <PopulationLevels>
+            <Item>
+              <Level>1500011557</Level>
+            </Item>
+          </PopulationLevels>
+          <Regional>Colony01</Regional>
+        </PopulationGroup7>
+      </Values>
+    </Asset> -->
+    <!-- <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010810</GUID>
+          <Name>Satisfaction Artisans None</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010811</GUID>
+          <Name>Satisfaction Artisans Unhappy</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010812</GUID>
+          <Name>Satisfaction Artisans Content</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010813</GUID>
+          <Name>Satisfaction Artisans Happy</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010814</GUID>
+          <Name>Satisfaction Artisans Perfect</Name>
+        </Standard>
+        <Text />
+      </Values>
+    </Asset> -->
+    <Asset>
+      <Template>Product</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011558</GUID>
+          <Name>Patronos Workforce</Name>
+          <IconFilename>data\ui\2kimages\main\icons\workforce\icon_workforce_2.5d_investor.png</IconFilename>
+        </Standard>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Product>
+          <StorageLevel>Area</StorageLevel>
+          <DeltaOnly>1</DeltaOnly>
+          <IsWorkforce>1</IsWorkforce>
+          <CanUseWorkforceTransfer>0</CanUseWorkforceTransfer>
+        </Product>
+      </Values>
+    </Asset>
+  </ModOp>
+
+    <!-- global population -->
+    <ModOp Type="addNextSibling" GUID="2001271" Path="/Values/GUIConfig/PopulationLevelList/Item[PopulationLevel='5403']">
+      <Item>
+        <PopulationLevel>1500011557</PopulationLevel>
+      </Item>
+    </ModOp>
+    <!-- <WorkforceOrder> -->
+    <!-- product filters -->
+    <!-- <ModOp Type="add" GUID="501962" Path="/Values/KeywordFilter/Keywords">
+      <Item>
+        <Keyword>1500011557</Keyword>
+        <ProductList>1500010140</ProductList>
+      </Item>
+      <Item>
+        <Keyword>1500011557</Keyword>
+        <ProductList>1500010140</ProductList>
+      </Item>
+    </ModOp> -->
+    <!-- residence UI: append -->
+    <ModOp Type="add" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/HappinessConfigs">
+      <Item>
+        <PopulationLevel>1500011557</PopulationLevel>
+        <AssignedConfig>502287</AssignedConfig>
+      </Item>
+    </ModOp>
+
+  <!-- <ModOp Type="add" GUID="15000083"
+    Path="/Values/PopulationGroup7/PopulationLevels">
+    <Item>
+      <Level>1500011557</Level>
+    </Item>
+  </ModOp> -->
+</ModOps>
