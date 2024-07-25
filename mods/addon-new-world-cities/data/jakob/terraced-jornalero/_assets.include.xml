@@ -13,6 +13,7 @@
           </Standard>
           <Building>
             <BuildingType>Residence</BuildingType>
+            <PickingAsset>101254</PickingAsset>
             <SecondPartyRelevant>0</SecondPartyRelevant>
             <AssociatedRegions>Colony01</AssociatedRegions>
             <BuildingCategoryName>1500011055</BuildingCategoryName>
@@ -271,6 +272,7 @@
             <IconFilename>data/ui/jakob/icon_terraced_jornalero.png</IconFilename>
           </Standard>
           <Building>
+            <PickingAsset>8856001</PickingAsset>
             <TerrainType>Water_Including_Coast</TerrainType>
             <BuildingCategoryName>1500011055</BuildingCategoryName>
           </Building>
@@ -501,12 +503,5 @@
         </Item>
       </AddFloorCost>
     </FloorStackOwner>
-  </ModOp>
-  <!-- By Progress Jornalero -->
-  <ModOp Type="addNextSibling" GUID="25000193"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
-    <Item>
-      <Building>1500011250</Building>
-    </Item>
   </ModOp>
 </ModOps>

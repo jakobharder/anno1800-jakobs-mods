@@ -1,4 +1,30 @@
 <ModOps>
+  <!-- # Includes -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010372">
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011564</GUID>
+            <Name>Cheats Marker</Name>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <ModOp Type="merge" GUID="1500011564"
+      Condition="#cheat-instant-residences-jakob"
+      Path="/Values">
+      <InstantResidences />
+    </ModOp>
+    <ModOp Type="merge" GUID="1500011564"
+      Condition="#Insta_Residences"
+      Path="/Values">
+      <InstantResidences />
+    </ModOp>
+  </Group>
+
   <!-- Add electrity support to the New World -->
   <Include File="/data/jakob/nw-electricity/assets.include.xml" />
 
@@ -24,6 +50,8 @@
 
   <Include File="./banners.include.xml" />
   <Include File="./unlocks.include.xml" />
+
+  <Include File="./menu.include.xml" />
 
   <!-- # Neighbors -->
   <!-- <ModOp Type="add" GUID="1500011043,1500011044,1500011250"
@@ -69,6 +97,15 @@
       <Building>1500011383</Building>
     </Item>
   </ModOp>
+
+  <!-- # Cheats -->
+  <Group Condition="@1500011564/InstantResidences">
+    <ModOp Type="replace" GUID="1500011044,1500011090,1500011382,1500011383,1500011250,1500011380,1500011043,1500011381"
+      Path="/Values/Building/PickingAsset"
+      Content="~/Values/Standard/GUID/text()">
+      <PickingAsset><ModOpContent /></PickingAsset>
+    </ModOp>
+  </Group>
 
   <!-- # Harborlife Fix -->
   <!-- just in case people didn't update and blame upgradable worker for it -->

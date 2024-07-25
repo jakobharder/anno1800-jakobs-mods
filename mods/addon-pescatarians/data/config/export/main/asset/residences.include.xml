@@ -575,13 +575,10 @@
 
   <!-- # Cheats -->
   <Group Condition="@1500011561/InstantResidences">
-    <ModOp Type="replace" GUID="1500010143"
-      Path="/Values/Building/PickingAsset">
-      <PickingAsset>1500010143</PickingAsset>
-    </ModOp>
-    <ModOp Type="replace" GUID="1500010144"
-      Path="/Values/Building/PickingAsset">
-      <PickingAsset>1500010144</PickingAsset>
+    <ModOp Type="replace" GUID="1500010143,1500010144"
+      Path="/Values/Building/PickingAsset"
+      Content="~/Values/Standard/GUID/text()">
+      <PickingAsset><ModOpContent /></PickingAsset>
     </ModOp>
   </Group>
 </ModOps>

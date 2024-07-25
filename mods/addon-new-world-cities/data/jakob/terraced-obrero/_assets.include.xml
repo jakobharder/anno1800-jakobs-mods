@@ -13,6 +13,7 @@
           </Standard>
           <Building>
             <BuildingType>Residence</BuildingType>
+            <PickingAsset>101254</PickingAsset>
             <SecondPartyRelevant>0</SecondPartyRelevant>
             <AssociatedRegions>Colony01</AssociatedRegions>
             <BuildingCategoryName>1500011055</BuildingCategoryName>
@@ -272,9 +273,6 @@
 
     <ModOp Type="add" GUID="15000006" Path="/Values/PopulationLevel7/PopulationInputs/Item[Product='120020']/RequiredBuildings">
       <Item>
-        <RequiredBuilding>1500011040</RequiredBuilding>
-      </Item>
-      <Item>
         <RequiredBuilding>1500011043</RequiredBuilding>
       </Item>
     </ModOp>
@@ -301,6 +299,7 @@
             <IconFilename>data/ui/jakob/icon_terraced_obrera.png</IconFilename>
           </Standard>
           <Building>
+            <PickingAsset>8856001</PickingAsset>
             <TerrainType>Water_Including_Coast</TerrainType>
           </Building>
           <Blocking>
@@ -524,13 +523,6 @@
       </AddFloorCost>
     </FloorStackOwner>
   </ModOp>
-  <!-- New World, Obrero -->
-  <ModOp Type="addPrevSibling" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-    <Item>
-      <Building>1500011043</Building>
-    </Item>
-  </ModOp>
-
 
   <ModOp Type="add" GUID="269492"
     Path=".//EffectTargets[Item/GUID='1010516']">

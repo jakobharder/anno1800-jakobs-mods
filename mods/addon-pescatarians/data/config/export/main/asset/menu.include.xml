@@ -64,26 +64,26 @@
         <Worker>1</Worker>
       </Item>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="1500010186"
+    <!-- <ModOp Type="addNextSibling" GUID="1500010186"
       Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
       <Item>
         <Building>1500010144</Building>
         <Artisan>900</Artisan>
       </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="25000190"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1][last()]">
+    </ModOp> -->
+    <ModOp Type="addNextSibling" GUID="25000189"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
       <Item>
         <Building>1500010143</Building>
         <Worker>1</Worker>
       </Item>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
+    <!-- <ModOp Type="addNextSibling" GUID="25000189"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker or Artisan&lt;=900][last()]">
       <Item>
         <Building>1500010144</Building>
         <Artisan>900</Artisan>
       </Item>
-    </ModOp>
+    </ModOp> -->
   </Group>
 </ModOps>
