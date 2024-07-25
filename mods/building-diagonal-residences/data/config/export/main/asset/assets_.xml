@@ -59,16 +59,10 @@
                 <Building>1500010401</Building>
               </Item>
               <Item>
-                <Building>1500011110</Building>
-              </Item>
-              <Item>
                 <Building>1500010402</Building>
               </Item>
               <Item>
                 <Building>1500010415</Building>
-              </Item>
-              <Item>
-                <Building>1500011350</Building>
               </Item>
               <Item>
                 <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
@@ -95,11 +89,22 @@
           <Locked />
         </Values>
       </Asset>
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010426</GUID>
+            <Name>Mod Name: Diagonal Residences (Jakob)</Name>
+          </Standard>
+        </Values>
+      </Asset>
     </ModOp>
     <!-- engineers menu: insert before first -->
-    <ModOp GUID="25000192,500447" Type="addPrevSibling" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <ModOp GUID="25000192" Type="addPrevSibling"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Engineer&lt;=1][1]">
       <Item>
         <Building>1500011494</Building>
+        <Engineer>1</Engineer>
       </Item>
     </ModOp>
     <!-- city menu: insert after upgradable workers, fallbacks: pescatarians, farmers, append -->
@@ -107,8 +112,58 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or Building='1500010212' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186') and not(../Item/Building='1500010212'))][last()]">
       <Item>
         <Building>1500011494</Building>
+        <Engineer>1</Engineer>
       </Item>
     </ModOp>
+  </Group>
+
+  <!-- # Cheats -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="101608">
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011565</GUID>
+            <Name>Cheats Marker</Name>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <ModOp Type="merge" GUID="1500011565"
+      Condition="#cheat-instant-residences-jakob"
+      Path="/Values">
+      <InstantResidences />
+    </ModOp>
+    <ModOp Type="merge" GUID="1500011565"
+      Condition="#Insta_Residences"
+      Path="/Values">
+      <InstantResidences />
+    </ModOp>
+
+    <Group Condition="@1500011565/InstantResidences">
+      <ModOp Type="addNextSibling" GUID="1500011494"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010401']">
+        <Item>
+          <Building>1500011110</Building>
+        </Item>
+      </ModOp>
+      <ModOp Type="addNextSibling" GUID="1500011494"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010415']">
+        <Item>
+          <Building>1500011350</Building>
+        </Item>
+      </ModOp>
+      <!-- investor menu -->
+      <ModOp GUID="500447" Type="addPrevSibling"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Investor&lt;=1][1]">
+        <Item>
+          <Building>1500011494</Building>
+          <Investor>1</Investor>
+        </Item>
+      </ModOp>
+    </Group>
   </Group>
 
   <!-- # Includes -->
