@@ -23,27 +23,33 @@
       </Item>
     </ModOp>
     <!-- New World, City -->
-    <ModOp Type="addNextSibling" GUID='500137' Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
+    <ModOp Type="addNextSibling" GUID='500137'
+      Condition="!#cheat-instant-residences-jakob"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
       <Item>
         <Building>1500011087</Building>
-        <CompactHide />
-      </Item>
-      <Item>
-        <Building>1500011250</Building>
-        <PlatformVisibility>Console</PlatformVisibility>
-        <CompactResidence />
-      </Item>
-      <Item>
-        <Building>1500011043</Building>
-        <PlatformVisibility>Console</PlatformVisibility>
-        <CompactResidence />
-      </Item>
-      <Item>
-        <Building>1500011044</Building>
-        <PlatformVisibility>Console</PlatformVisibility>
-        <CompactResidence />
       </Item>
     </ModOp>
+    <Group Condition="#cheat-instant-residences-jakob">
+      <ModOp Type="addNextSibling" GUID="1500011567"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Jornalero or Obrero&lt;=500][last()]">
+        <Item>
+          <Building>1500011250</Building>
+          <Obrero>500</Obrero>
+        </Item>
+        <Item>
+          <Building>1500011043</Building>
+          <Obrero>500</Obrero>
+        </Item>
+      </ModOp>
+      <ModOp Type="addNextSibling" GUID="1500011567"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Jornalero or Obrero or Artista&lt;=300][last()]">
+        <Item>
+          <Building>1500011044</Building>
+          <Artista>300</Artista>
+        </Item>
+      </ModOp>
+    </Group>
   </Group>
 
   <ModOp Type="addNextSibling" GUID="1010372">

@@ -371,13 +371,15 @@
         </AddFloorCost>
       </FloorStackOwner>
     </ModOp>
-    <ModOp Condition="#Spice_Harborlife"
-      Type="addPrevSibling" GUID="8855889"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='8856017']">
-      <Item>
-        <Building>1500011380</Building>
-      </Item>
-    </ModOp>
+    <Group Condition="@1500011564/InstantResidences">
+      <ModOp Condition="#Spice_Harborlife"
+        Type="addPrevSibling" GUID="8855889"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='8856017']">
+        <Item>
+          <Building>1500011380</Building>
+        </Item>
+      </ModOp>
+    </Group>
   </Group>
 
   <!-- # Needs -->

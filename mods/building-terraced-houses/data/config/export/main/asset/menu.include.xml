@@ -61,17 +61,43 @@
 
   <!-- # Cheats -->
   <Group Condition="@1500011562/InstantResidences">
-    <!-- workers menu: insert before bricks production chain, no fall back -->
     <ModOp Type="addNextSibling" GUID="25000190"
       Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
       <Item>
         <Building>1500010200</Building>
+        <CompactResidence />
         <Artisan>800</Artisan>
       </Item>
     </ModOp>
-    <!-- artisans menu: insert before anything, no fall back -->
-    <ModOp Type="addPrevSibling" GUID="25000191"
+    <!-- <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan or Engineer&lt;=500][last()]">
+      <Item>
+        <Building>1500010200</Building>
+        <Engineer>500</Engineer>
+      </Item>
+    </ModOp> -->
+    <ModOp Type="addNextSibling" GUID="25000191"
       Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
+      <Item>
+        <Building>1500010225</Building>
+        <CompactResidence />
+        <Artisan>800</Artisan>
+      </Item>
+    </ModOp>
+    <!-- <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan or Engineer&lt;=500][last()]">
+      <Item>
+        <Building>1500010225</Building>
+        <Engineer>500</Engineer>
+      </Item>
+    </ModOp> -->
+    <ModOp Type="addNextSibling" GUID="1500011566"
+      Condition="#cheat-instant-residences-jakob"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker or Artisan&lt;=800][last()]">
+      <Item>
+        <Building>1500010200</Building>
+        <Artisan>800</Artisan>
+      </Item>
       <Item>
         <Building>1500010225</Building>
         <Artisan>800</Artisan>

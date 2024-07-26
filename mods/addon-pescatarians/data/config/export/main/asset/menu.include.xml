@@ -85,5 +85,13 @@
         <Artisan>900</Artisan>
       </Item>
     </ModOp> -->
+    <ModOp Type="addNextSibling" GUID="1500011566"
+      Condition="#cheat-instant-residences-jakob"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
+      <Item>
+        <Building>1500010143</Building>
+        <Worker>1</Worker>
+      </Item>
+    </ModOp>
   </Group>
 </ModOps>
