@@ -1,0 +1,134 @@
+<ModOps>
+  <!-- # Commercial Street -->
+  <!-- Old World Menu Engineers, insert after oil power plant -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="135100">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010868</GUID>
+            <Name>minimalls_menu</Name>
+            <IconFilename>data/ui/jakob/icon_commercial.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+              <!-- <Item>
+                <Building>1500010517</Building>
+              </Item> -->
+              <Item>
+                <Building>1500010888</Building>
+              </Item>
+              <Item>
+                <Building>1500010850</Building>
+              </Item>
+              <Item>
+                <Building>1500010856</Building>
+              </Item>
+              <Item>
+                <Building>1500010862</Building>
+              </Item>
+              <Item>
+                <Building>1500010909</Building>
+              </Item>
+            </BuildingList>
+            <CategoryDescription>1500010512</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addPrevSibling" GUID='500094' Path="/Values/ConstructionCategory/BuildingList/Item[Building='2015']">
+      <Item>
+        <Building>1500010868</Building>
+        <Investor>5000</Investor>
+        <CompactHide />
+      </Item>
+      <Item>
+        <CompactBuilding>1500010888</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010850</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010856</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010862</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010909</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000192,500447"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Engineer or Investor&lt;=5000][last()]">
+      <Item>
+        <Building>1500010868</Building>
+        <Investor>5000</Investor>
+        <CompactHide />
+      </Item>
+      <Item>
+        <CompactBuilding>1500010888</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010850</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010856</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010862</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+      <Item>
+        <CompactBuilding>1500010909</CompactBuilding>
+        <CompactMall />
+        <Investor>5000</Investor>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or position()=last()][last()]">
+      <Item>
+        <CompactBuilding>1500010517</CompactBuilding>
+        <CompactTourist />
+        <Tourist>250</Tourist>
+        <PlatformVisibility>Console</PlatformVisibility>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="132779"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Tourist&lt;=250][last()]">
+      <Item>
+        <Building>1500010517</Building>
+        <CompactTourist />
+        <Tourist>250</Tourist>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

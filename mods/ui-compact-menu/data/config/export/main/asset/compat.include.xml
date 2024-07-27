@@ -1,0 +1,88 @@
+<ModOps>
+  <!--
+    Add support to some mods I use that don't have it natively.
+    You can use this code as a template.
+  -->
+  <Group Condition="#lion053_ow_chapels">
+    <!-- determine support by checking CompactHide -->
+    <Group Condition="@500094/ConstructionCategory/BuildingList/Item[Building='2100115156' and not(CompactHide)]">
+      <ModOp Type="addNextSibling" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='2100115156']">
+        <Item>
+          <CompactBuilding>2100115121</CompactBuilding>
+          <PlatformVisibility>Console</PlatformVisibility>
+          <CompactReligion />
+        </Item>
+        <Item>
+          <CompactBuilding>2100115127</CompactBuilding>
+          <PlatformVisibility>Console</PlatformVisibility>
+          <CompactReligion />
+        </Item>
+      </ModOp>
+      <ModOp Type="add" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='2100115156']">
+        <CompactHide />
+      </ModOp>
+    </Group>
+    <!-- also add to worker menu -->
+    <Group Condition="@25000190/ConstructionCategory/BuildingList[not(Item/Building='2100115156')]">
+      <ModOp Type="addPrevSibling" GUID="25000190"
+        Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+        <Item>
+          <CompactBuilding>2100115121</CompactBuilding>
+          <PlatformVisibility>Console</PlatformVisibility>
+          <CompactReligion />
+          <Farmer>200</Farmer>
+          <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+        </Item>
+        <Item>
+          <CompactBuilding>2100115127</CompactBuilding>
+          <PlatformVisibility>Console</PlatformVisibility>
+          <CompactReligion />
+          <Farmer>200</Farmer>
+          <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <Group Condition="#jakob_pescatarians">
+    <ModOp Type="add" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010100']">
+      <CompactReligion />
+      <CompactMarket />
+    </ModOp>
+    <ModOp Type="add" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010100']">
+      <CompactMarket />
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000190"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010816' or Building='1500010800']">
+      <CompactEducation />
+    </ModOp>
+  </Group>
+
+  <Group Condition="#red_tile_roof_building_variations">
+    <ModOp Type="add" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101037222']">
+      <CompactMarket />
+    </ModOp>
+  </Group>
+
+  <!--
+    - mugge Firestation
+    - mugge Firestation small
+    - mugge Police
+    - mugge Police small
+    - mugge Hospital
+    - mugge Hospital small
+    - xan Police
+    - xan Hospital
+
+    include 1010463 to avoid warnings if none of the above exist
+  -->
+  <ModOp Type="add" GUID="500092"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or Building='1337500011' or Building='1337500012' or Building='1337500018' or Building='1337500019' or Building='2000150010' or Building='2000150036']">
+    <CompactInstitution />
+  </ModOp>
+</ModOps>

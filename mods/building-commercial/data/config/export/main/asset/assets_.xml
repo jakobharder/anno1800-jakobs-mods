@@ -1,4 +1,6 @@
 <ModOps>
+  <Include File="./menu.include.xml" />
+
   <!-- # Minimall: Department Store -->
   <ModOp GUID='135210' Type="addNextSibling">
     <Asset>
@@ -7,7 +9,7 @@
         <Standard>
           <GUID>1500010850</GUID>
           <Name>department_blank</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_mall.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_mall_3x3.png</IconFilename>
           <InfoDescription>137243</InfoDescription>
         </Standard>
         <Text>
@@ -740,7 +742,7 @@
         <Standard>
           <GUID>1500010856</GUID>
           <Name>furniture_blank</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_furnitures.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_furniture_3x3.png</IconFilename>
         </Standard>
         <Building>
           <PickingAsset>1500010856</PickingAsset>
@@ -1435,7 +1437,7 @@
         <Standard>
           <GUID>1500010862</GUID>
           <Name>drugstore_blank</Name>
-          <IconFilename>data/ui/2kimages/main/3dicons/icon_drugstore.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_drugstore_3x3.png</IconFilename>
         </Standard>
         <Building>
           <PickingAsset>1500010862</PickingAsset>
@@ -2131,6 +2133,7 @@
         <Standard>
           <GUID>1500010517</GUID>
           <Name>courtyard_restaurant</Name>
+          <IconFilename>data/ui/jakob/icon_restaurant_3x3.png</IconFilename>
         </Standard>
         <Text>
           <TextOverride>132780</TextOverride>
