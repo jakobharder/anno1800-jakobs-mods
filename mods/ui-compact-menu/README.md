@@ -146,6 +146,10 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 
 ## Changes
 
+### 2.2
+
+- Schools, Churches and Malls in progression sorting menus
+
 ### 2.1
 
 - Tags to easily add mod buildings to groups
