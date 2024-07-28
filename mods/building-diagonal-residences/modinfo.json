@@ -1,8 +1,12 @@
 {
-  "Version": "1.9.3",
+  "Version": "1.10.0",
   "ModID": "jakob_diagonal_residences",
   "ModioResourceId": 2816085,
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v10.4/shared-pools-and-definitions.zip"
+  ],
   "LoadAfterIds": [
+    "shared-pools-and-definitions",
     "[Ornamental] Red Tile Roof Building Variations GU16",
     "[Ornamental] Red Tile Roof Building Variations"
   ],
