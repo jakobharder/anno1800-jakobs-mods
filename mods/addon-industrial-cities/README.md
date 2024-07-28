@@ -156,6 +156,10 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
+### 4.1
+
+- Re-organize construction menu
+
 ### 4.0
 
 - 4.0.8: Updated Russian translations thanks to DATM

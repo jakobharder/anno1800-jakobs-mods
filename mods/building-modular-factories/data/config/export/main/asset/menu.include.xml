@@ -31,11 +31,11 @@
       <Building>1500010601</Building>
     </Item>
   </ModOp> -->
-  <ModOp Type="addNextSibling" GUID="25000191"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;500][last()]">
+  <ModOp Type="addPrevSibling" GUID="25000191"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&gt;1 or position()=1][1]">
     <Item>
       <Building>1500010601</Building>
-      <Artisan>500</Artisan>
+      <Artisan>0</Artisan>
     </Item>
   </ModOp>
 
