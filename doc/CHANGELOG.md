@@ -4,7 +4,11 @@ You can simply overwrite older version. The modloader automatically takes the ri
 
 ## [Unreleased]
 
+- Brick Post Office skin
+- Compact Menu
 - Improved Russian translations thanks to DATM
+- Re-organized construction menu
+- Instant Residences
 
 ## 7.0 - More Factories, Integrated Pescatarians
 

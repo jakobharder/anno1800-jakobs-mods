@@ -561,7 +561,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011555</GUID>
+          <GUID>1500011580</GUID>
+          <!-- <GUID>1500011555</GUID> -->
           <Name>@ 2000 Scholars</Name>
         </Standard>
         <Locked />
@@ -587,6 +588,12 @@
                     <UnlockAssets>
                       <Item>
                         <Asset>1500011554</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500011511</Asset>
+                      </Item>
+                      <Item>
+                        <Asset>1500010830</Asset>
                       </Item>
                     </UnlockAssets>
                   </ActionUnlockAsset>
@@ -662,7 +669,7 @@
   <ModOp Type="addNextSibling" GUID="502107,500945"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='120287']">
     <Item>
-      <Building>1500010114</Building>
+      <Building>1500011554</Building>
       <Scholar>2000</Scholar>
       <Secondary />
     </Item>
