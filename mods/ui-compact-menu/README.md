@@ -150,6 +150,7 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 ### 2.3
 
 - Added jje's buildings
+- Improved some icons
 
 ### 2.2
 
