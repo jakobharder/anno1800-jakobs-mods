@@ -92,24 +92,6 @@
           <Locked />
         </Values>
       </Asset>
-      <Asset>
-        <Template>ConstructionCategory</Template>
-        <Values>
-          <Standard>
-            <GUID>1500011335</GUID>
-            <Name>OW Culture Menu</Name>
-            <IconFilename>data/ui/jakob/icon_culture_menu.png</IconFilename>
-          </Standard>
-          <Text>
-            <TextOverride>119015</TextOverride>
-          </Text>
-          <ConstructionCategory>
-            <BuildingList />
-            <CategoryDescription>1500011541</CategoryDescription>
-          </ConstructionCategory>
-          <Locked />
-        </Values>
-      </Asset>
     </ModOp>
 
     <ModOp Type="addNextSibling" GUID="500092"
@@ -128,12 +110,6 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
       <Item>
         <Building>1500010930</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='2015' or position()=last()][1]">
-      <Item>
-        <Building>1500011335</Building>
       </Item>
     </ModOp>
   </Group>
@@ -392,7 +368,57 @@
 
   <!-- # Culture -->
   <Group>
-    <ModOp Type="add" GUID="500094"
+    <ModOp Type="addNextSibling" GUID="100415">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011335</GUID>
+            <Name>OW Culture Menu</Name>
+            <IconFilename>data/ui/jakob/icon_culture_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>119015</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011582</GUID>
+            <Name>Artisan Culture Menu</Name>
+            <IconFilename>data/ui/jakob/icon_culture_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>119015</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or position()=last()][1]">
+      <Item>
+        <Building>1500011335</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or position()=last()][1]">
+      <Item>
+        <Building>1500011582</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000191"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or Building='1010471' or Building='110935' or Building='1010489']">
       <CompactCulture />
     </ModOp>
@@ -400,7 +426,11 @@
       Path="/Values/ConstructionCategory/BuildingList"
       Content="@500094/ConstructionCategory/BuildingList/Item[CompactCulture]">
     </ModOp>
-    <ModOp Type="remove" GUID="1500011335"
+    <ModOp Type="add" GUID="1500011582"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000191/ConstructionCategory/BuildingList/Item[CompactCulture]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011335,1500011582"
       Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
       Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
   </Group>
@@ -509,6 +539,54 @@
     </ModOp>
   </Group> -->
 
+  <!-- # Religion -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011581</GUID>
+            <Name>OW Theatre Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_cabaret.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>6216</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361']">
+      <CompactEntertainment />
+    </ModOp>
+
+    <ModOp Type="add" GUID="1500011581"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactEntertainment]">
+    </ModOp>
+    <!-- only swap if there's more than one entry in the group -->
+    <Group Condition="@1500011581/ConstructionCategory/BuildingList/Item[2]">
+      <ModOp Type="addNextSibling" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361' or position()=last()][1]">
+        <Item>
+          <Building>1500011581</Building>
+          <Artisan>250</Artisan>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="1500011581"
+        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+      <ModOp Type="remove" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[CompactEntertainment]" />
+    </Group>
+  </Group>
+
   <!-- # Remove Entries -->
   <Group>
     <ModOp Type="remove" GUID="500092"
@@ -520,6 +598,8 @@
     <ModOp Type="remove" GUID="25000190"
       Condition="/Values/ConstructionCategory/BuildingList/Item[CompactHide]"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactHide]" />
+    <ModOp Type="remove" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactCulture or CompactHide]" />
   </Group>
 
   <!-- # Fix CompactBuilding -->

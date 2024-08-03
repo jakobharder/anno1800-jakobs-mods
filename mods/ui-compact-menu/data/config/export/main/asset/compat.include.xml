@@ -69,6 +69,54 @@
     </ModOp>
   </Group>
 
+  <Group Condition="#votive_church">
+    <ModOp Type="add" GUID="500447,500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1453238000']">
+      <CompactReligion />
+    </ModOp>
+  </Group>
+
+  <Group Condition="#gymnasium_school">
+    <ModOp Type="add" GUID="500447,500094,25000194,500138"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601126110']">
+      <CompactEducation />
+    </ModOp>
+  </Group>
+
+  <Group Condition="#city_hall">
+    <ModOp Type="add" GUID="500447,25000194,500138"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1453239050']">
+      <CompactAdministration />
+    </ModOp>
+    <!-- town halls belong to city menu -->
+    <Group Condition="@500092/ConstructionCategory/BuildingList[not(Item/Building='1453239050')]">
+      <ModOp Type="remove" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1453239050']" />
+      <ModOp Type="addNextSibling" GUID="500092"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or Engineer or Investor&lt;=20000][last()]">
+        <Item>
+          <Building>1453239050</Building>
+          <CompactAdministration />
+          <Investor>20000</Investor>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <Group Condition="#municipal_theatre">
+    <ModOp Type="add" GUID="500447,500094,25000194,500138"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='102037222']">
+      <CompactEntertainment />
+    </ModOp>
+  </Group>
+
+  <Group Condition="#post_offices">
+    <ModOp Type="add" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601128113']">
+      <CompactHide />
+    </ModOp>
+  </Group>
+
   <!--
     - mugge Firestation
     - mugge Firestation small

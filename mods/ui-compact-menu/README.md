@@ -72,6 +72,7 @@ Tag | Category | Region | Comment
 `CompactTourist` | City, Services | OW
 `CompactCulture` | Services | OW
 `CompactMall` | Services | OW
+`CompactEntertainment` | Services | OW
 
 #### Handle Own Groups
 
@@ -145,6 +146,10 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 ```
 
 ## Changes
+
+### 2.3
+
+- Added jje's buildings
 
 ### 2.2
 
