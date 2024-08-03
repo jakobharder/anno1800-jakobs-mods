@@ -13,6 +13,7 @@
           </Standard>
           <Building>
             <BuildingType>Residence</BuildingType>
+            <PickingAsset>101254</PickingAsset>
             <SecondPartyRelevant>0</SecondPartyRelevant>
             <AssociatedRegions>Colony01</AssociatedRegions>
             <BuildingCategoryName>1500011055</BuildingCategoryName>
@@ -271,6 +272,7 @@
             <IconFilename>data/ui/jakob/icon_terraced_jornalero.png</IconFilename>
           </Standard>
           <Building>
+            <PickingAsset>8856001</PickingAsset>
             <TerrainType>Water_Including_Coast</TerrainType>
             <BuildingCategoryName>1500011055</BuildingCategoryName>
           </Building>
@@ -369,13 +371,15 @@
         </AddFloorCost>
       </FloorStackOwner>
     </ModOp>
-    <ModOp Condition="#Spice_Harborlife"
-      Type="addPrevSibling" GUID="8855889"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='8856017']">
-      <Item>
-        <Building>1500011380</Building>
-      </Item>
-    </ModOp>
+    <Group Condition="@1500011564/InstantResidences">
+      <ModOp Condition="#Spice_Harborlife"
+        Type="addPrevSibling" GUID="8855889"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='8856017']">
+        <Item>
+          <Building>1500011380</Building>
+        </Item>
+      </ModOp>
+    </Group>
   </Group>
 
   <!-- # Needs -->
@@ -501,12 +505,5 @@
         </Item>
       </AddFloorCost>
     </FloorStackOwner>
-  </ModOp>
-  <!-- By Progress Jornalero -->
-  <ModOp Type="addNextSibling" GUID="25000193"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
-    <Item>
-      <Building>1500011250</Building>
-    </Item>
   </ModOp>
 </ModOps>

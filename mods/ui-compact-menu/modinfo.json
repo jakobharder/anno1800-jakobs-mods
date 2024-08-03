@@ -1,9 +1,15 @@
 {
   "out": "${annoMods}/[UI] Compact Build Menus (Jakob)",
-  "Version": "2.1",
+  "Version": "2.3",
   "ModioResourceId": 3229818,
   "ModID": "jakob_compact_menus",
-  "LoadAfterIds": [ "*", "jakob_alternative_needs" ],
+  "ModDependencies": [
+    "https://github.com/anno-mods/shared-resources/releases/download/v10.5/shared-pools-and-definitions.zip"
+  ],
+  "LoadAfterIds": [
+    "*",
+    "shared-pools-and-definitions"
+  ],
   "OptionalDependencies": [
     "jakob_small_hotels",
     "lion053_ow_chapels"

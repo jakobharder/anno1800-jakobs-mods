@@ -156,6 +156,13 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
+### 4.1
+
+- 4.1.1: Removed storage info for services in needs InfoTip
+- Re-organized construction menu
+- Removed residence construction menu entries.
+  Use mod `Instant Residences` if you still want them.
+
 ### 4.0
 
 - 4.0.8: Updated Russian translations thanks to DATM

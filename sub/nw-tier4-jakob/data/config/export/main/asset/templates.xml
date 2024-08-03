@@ -1,0 +1,90 @@
+<ModOps>
+  <ModOp Type="addNextSibling" Template="PalaceMinistry">
+    <Template>
+      <Name>JakobNWMinistry</Name>
+      <Properties>
+        <Standard />
+        <Building>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <AllowChangeVariation>1</AllowChangeVariation>
+        </Building>
+        <Blocking />
+        <Object />
+        <Constructable>
+          <DestructionCategory>Public</DestructionCategory>
+        </Constructable>
+        <BuildingUnique />
+        <Mesh />
+        <Selection>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
+        </Selection>
+        <Infolayer />
+        <SoundEmitter>
+          <ActiveSounds>
+            <Item>
+              <Sound>269544</Sound>
+            </Item>
+            <Item>
+              <Sound>269540</Sound>
+            </Item>
+          </ActiveSounds>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+          <DestroySounds>
+            <Item>
+              <Sound>9818756</Sound>
+            </Item>
+          </DestroySounds>
+          <ConstructionSounds>
+            <BuildFailed>
+              <Item>
+                <Sound>9818387</Sound>
+              </Item>
+            </BuildFailed>
+            <BuildMoveStart>
+              <Item>
+                <Sound>9818755</Sound>
+              </Item>
+            </BuildMoveStart>
+            <BuildMoveSuccess>
+              <Item>
+                <Sound>203995</Sound>
+              </Item>
+            </BuildMoveSuccess>
+            <BuildMoveEnd>
+              <Item>
+                <Sound>200141</Sound>
+              </Item>
+            </BuildMoveEnd>
+          </ConstructionSounds>
+        </SoundEmitter>
+        <LogisticNode>
+          <TransporterCountMax>0</TransporterCountMax>
+          <NeedsTransporterQueue>0</NeedsTransporterQueue>
+        </LogisticNode>
+        <Cost />
+        <Locked />
+        <Text />
+        <UpgradeList />
+        <FeedbackController />
+        <Culture>
+          <CultureType>Palace</CultureType>
+        </Culture>
+        <AmbientMoodProvider />
+        <Maintenance />
+        <FactoryBase />
+        <BuffFactory />
+        <PublicService />
+        <BusActivation />
+      </Properties>
+    </Template>
+  </ModOp>
+</ModOps>

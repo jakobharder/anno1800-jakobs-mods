@@ -1,0 +1,41 @@
+<ModOps>
+  <!-- # As Skins -->
+  <ModOp Type="addNextSibling" GUID="100415">
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011578</GUID>
+          <Name>Brick Post Office</Name>
+          <IconFilename>data/ui/jakob/icon_skin_post_brick.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500011578</SkinName>
+          <SkinDescription>1500011146</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data/jakob/ow-post/scholar-post.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500010058</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="merge" GUID="3741" Path="/Values/Object/Skins">
+    <SkinList />
+    <OverrideDefaultIcon>data/ui/jakob/icon_skin_post_default.png</OverrideDefaultIcon>
+  </ModOp>
+  <ModOp Type="add" GUID="3741" Path="/Values/Object/Skins/SkinList">
+    <Item>
+      <SkinAssetGuid>1500011578</SkinAssetGuid>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="remove" GUID="3741"
+    Path="/Values/Cost/Costs/Item[VectorElement/InheritedIndex&gt;'2']" />
+</ModOps>

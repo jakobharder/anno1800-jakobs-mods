@@ -1,0 +1,40 @@
+<ModOps>
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011556</GUID>
+          <Name>NW Patronos Menu</Name>
+          <IconFilename>data\ui\2kimages\main\icons\icon_trade.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>1500011557</TextOverride>
+        </Text>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <PlatformVisibility>Console</PlatformVisibility>
+              <Patrono>0</Patrono>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>13108</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000035"
+    Path="/Values/ConstructionMenu/RegionMenu/Colony01/CategoryMode/Tier/Categories/Item[Category='5466']">
+    <Item>
+      <Category>1500011556</Category>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="1500011556"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Patrono&lt;=0]">
+    <Item>
+      <Building>1500011040</Building>
+      <Patrono>0</Patrono>
+    </Item>
+  </ModOp>
+</ModOps>

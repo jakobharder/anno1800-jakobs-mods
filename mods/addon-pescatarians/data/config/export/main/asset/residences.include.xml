@@ -1,0 +1,584 @@
+<ModOps>
+  <!-- # Residence: Worker -->
+  <ModOp GUID='1010344' Type="addNextSibling">
+    <Asset>
+      <!-- <BaseAssetGUID>1010344</BaseAssetGUID> -->
+      <Template>ResidenceBuilding</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010143</GUID>
+          <Name>Pescatarian Worker House</Name>
+          <IconFilename>data/ui/jakob/icon_pescatarian_residence.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Blocking />
+        <Building>
+          <AllowChangeVariation>1</AllowChangeVariation>
+          <BuildModeRandomRotation>90</BuildModeRandomRotation>
+          <BuildingType>Residence</BuildingType>
+          <PickingAsset>1010343</PickingAsset>
+          <AssociatedRegions>Moderate</AssociatedRegions>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>6</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Locked>
+          <DefaultLockedState>1</DefaultLockedState>
+        </Locked>
+        <Upgradable>
+          <NextGUID>1500010225</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <Amount>1000</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </UpgradeCost>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/worker-skins/yellow/residence_tier02_estate04.cfg</Filename>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate01b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate02b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\worker-artisan\worker-artisan_estate03b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/worker-skins/yellow/residence_tier02_estate04.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>1500010189</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500011513</DefaultSkinCategoryName>
+            <OverrideDefaultIcon>data\jakob\buildings\residence\worker-artisan\icon_worker_red.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010833</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>601382</PopulationLevel7>
+          <ResidentMax>24</ResidentMax>  <!-- consumption calculation base -->
+          <ResidentsRequiredForUpgrade>24</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
+        </Residence7>
+        <Selection />
+        <!-- <UpgradeList>
+          <DefaultBuff>1500010147</DefaultBuff>
+        </UpgradeList> -->
+        <FloorStackOwner>
+          <!-- disable floor upgrades -->
+          <UpgradeTargetGUID>1500010144</UpgradeTargetGUID>
+          <AddFloorCost>
+            <Item>
+              <Amount>5</Amount>
+              <Ingredient>1010196</Ingredient>
+            </Item>
+            <Item>
+              <Amount>4</Amount>
+              <Ingredient>1010205</Ingredient>
+            </Item>
+          </AddFloorCost>
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010147</GUID>
+          <Name>workers_love_to_farm</Name>
+          <IconFilename>data/ui/jakob/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+          </EffectTargets>
+        </ItemEffect>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>8</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>8</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ItemEffectTargetPool</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010282</GUID>
+          <Name>all_pescatarian_residences</Name>
+        </Standard>
+        <ItemEffectTargetPool>
+          <EffectTargetGUIDs>
+            <!-- <Item>
+              <GUID>1500010142</GUID>
+            </Item> -->
+            <Item>
+              <GUID>1500010143</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010144</GUID>
+            </Item>
+          </EffectTargetGUIDs>
+        </ItemEffectTargetPool>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010146</GUID>
+          <Name>Residence Hint</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010833</GUID>
+          <Name>Dark Roof Worker Skin</Name>
+          <IconFilename>data/ui/jakob/pesca/icon_worker_dark.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010833</SkinName>
+          <SkinDescription>1500010189</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\worker-artisan\dark\worker-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\graphics\buildings\residence\residence_tier02_estate04\residence_tier02_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500011513</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010170</GUID>
+          <Name>Mod Name</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # Residence: Artisan -->
+  <ModOp GUID='1010345' Type="addNextSibling">
+    <Asset>
+      <BaseAssetGUID>1010345</BaseAssetGUID>
+      <Values>
+        <Standard>
+          <GUID>1500010144</GUID>
+          <Name>Pescatarian Artisan House</Name>
+          <IconFilename>data/ui/jakob/icon_pescatarian_residence.png</IconFilename>
+          <InfoDescription>1500010146</InfoDescription>
+        </Standard>
+        <Building>
+          <PickingAsset>1010343</PickingAsset>
+          <BuildingCategoryName>1500011513</BuildingCategoryName>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>11</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Locked />
+        <Constructable>
+          <ConstructionMenuIcon>1500010144</ConstructionMenuIcon>
+        </Constructable>
+        <Upgradable>
+          <NextGUID>1010346</NextGUID>
+          <UpgradeCost>
+            <Item>
+              <Ingredient>1010017</Ingredient>
+              <!-- <Amount>1000</Amount> -->
+            </Item>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>9</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010205</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010218</Ingredient>
+              <Amount>4</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+          </UpgradeCost>
+        </Upgradable>
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03b.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04b.cfg</Filename>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data\jakob\buildings\residence\high-artisan\high-artisan_estate04.cfg</Filename>
+            </Item>
+          </Variations>
+          <Skins>
+            <DefaultSkinName>23852</DefaultSkinName>
+            <DefaultSkinDescription>1500010169</DefaultSkinDescription>
+            <DefaultSkinCategoryName>1500011513</DefaultSkinCategoryName>
+            <!-- is only visible in combination with skin mod -->
+            <OverrideDefaultIcon>data\jakob\buildings\residence\high-artisan\icon_tall_blue.png</OverrideDefaultIcon>
+            <SkinList>
+              <Item>
+                <SkinAssetGuid>1500010311</SkinAssetGuid>
+              </Item>
+              <Item>
+                <SkinAssetGuid>1500010321</SkinAssetGuid>
+              </Item>
+            </SkinList>
+          </Skins>
+        </Object>
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>601382</PopulationLevel7>
+          <ResidentMax>36</ResidentMax>  <!-- consumption calculation base -->
+          <ResidentsRequiredForUpgrade>36</ResidentsRequiredForUpgrade>
+          <IsBaseResidence>1</IsBaseResidence>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
+        </Residence7>
+        <UpgradeList>
+          <DefaultBuff>1500010172</DefaultBuff>
+        </UpgradeList>
+        <FloorStackOwner>
+          <!-- disable floor upgrades -->
+          <UpgradeTargetGUID>0</UpgradeTargetGUID>
+          <AddFloorCost />
+        </FloorStackOwner>
+        <Audio />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010148</GUID>
+          <Name>Unused: artisans_love_to_farm</Name>
+          <IconFilename>data/ui/jakob/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade />
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade />
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade>
+          <AddDeltas>
+            <Item>
+              <Product>1010052</Product>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>12</Amount>
+            </Item>
+            <Item>
+              <Product>1010116</Product>
+              <Amount>12</Amount>
+            </Item>
+          </AddDeltas>
+        </DistributionUpgrade>
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>TownhallBuff</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010172</GUID>
+          <Name>Increase Artisan Need Population</Name>
+          <IconFilename>data/ui/jakob/icon_pescatarian_church.png</IconFilename>
+          <InfoDescription>1500010171</InfoDescription>
+        </Standard>
+        <ItemEffect />
+        <BuildingUpgrade />
+        <Buff />
+        <PopulationUpgrade>
+          <InputBenefitModifier>
+            <Item>
+              <Product>1500010119</Product>
+              <AdditionalSupply>3</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1500010818</Product>
+              <AdditionalSupply>3</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1500010102</Product>
+              <AdditionalSupply>2</AdditionalSupply>
+            </Item>
+            <Item>
+              <Product>1010213</Product>
+              <AdditionalSupply>2</AdditionalSupply>
+            </Item>
+          </InputBenefitModifier>
+        </PopulationUpgrade>
+        <ResidenceUpgrade />
+        <IncidentInfectableUpgrade />
+        <CultureUpgrade>
+          <HideBuff>1</HideBuff>
+        </CultureUpgrade>
+        <InfluenceSourceUpgrade />
+        <WarehouseUpgrade />
+        <DistributionUpgrade />
+        <ItemContainerUpgrade />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010321</GUID>
+          <Name>Red Tall Artisan</Name>
+          <IconFilename>data/ui/jakob/pesca/icon_tall_red.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010321</SkinName>
+          <SkinDescription>1500010173</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\red\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500011513</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Skin</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010311</GUID>
+          <Name>Tall Blue Artisan Skin</Name>
+          <IconFilename>data/ui/jakob/pesca/icon_tall_blue.png</IconFilename>
+        </Standard>
+        <Skin>
+          <SkinName>1500010311</SkinName>
+          <SkinDescription>1500010173</SkinDescription>
+          <SkinVariations>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate02b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate03b.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04b.cfg</FileName>
+            </Item>
+            <!-- repeat same variations again to double the color variations in non-default skins -->
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate01.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate02.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate03.cfg</FileName>
+            </Item>
+            <Item>
+              <FileName>data\jakob\buildings\residence\high-artisan\blue\high-artisan_estate04.cfg</FileName>
+            </Item>
+          </SkinVariations>
+          <SkinCategoryDescription>1500011513</SkinCategoryDescription>
+        </Skin>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+          <Scope>Account</Scope>
+          <VisibleWhenLocked>1</VisibleWhenLocked>
+        </Locked>
+        <Text />
+      </Values>
+    </Asset>
+  </ModOp>
+
+  <!-- # InfluencedByNeighbors, spawn feedback, ... -->
+  <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
+    <Item>
+      <Building>1500010143</Building>
+    </Item>
+    <Item>
+      <Building>1500010144</Building>
+    </Item>
+  </ModOp>
+  <ModOp GUID="142785,2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500010143</Building>
+    </Item>
+    <Item>
+      <Building>1500010144</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Cheats -->
+  <Group Condition="@1500011561/InstantResidences">
+    <ModOp Type="replace" GUID="1500010143,1500010144"
+      Path="/Values/Building/PickingAsset"
+      Content="~/Values/Standard/GUID/text()">
+      <PickingAsset><ModOpContent /></PickingAsset>
+    </ModOp>
+  </Group>
+</ModOps>

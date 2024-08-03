@@ -41,6 +41,11 @@ Known issues:
 
 ## Changes
 
+### 1.10
+
+- Allow direct construction of investors only with `Instant Residences` mod
+- Updated description
+
 ### 1.9
 
 - 1.9.1: Move unlock after first engineer/investor has been built

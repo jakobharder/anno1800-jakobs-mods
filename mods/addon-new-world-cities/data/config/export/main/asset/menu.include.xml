@@ -1,0 +1,87 @@
+<ModOps>
+  <Group Condition="@1500011564/InstantResidences">
+    <!-- New World, Obrero -->
+    <ModOp Type="addPrevSibling" GUID="25000194" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+      <Item>
+        <Building>1500011043</Building>
+        <CompactResidence />
+      </Item>
+    </ModOp>
+    <!-- By Progress Jornalero -->
+    <ModOp Type="addNextSibling" GUID="25000193"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
+      <Item>
+        <Building>1500011250</Building>
+        <CompactResidence />
+      </Item>
+    </ModOp>
+    <!-- New World, Artista -->
+    <ModOp Type="addPrevSibling" GUID="5466" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+      <Item>
+        <Building>1500011044</Building>
+        <CompactResidence />
+      </Item>
+    </ModOp>
+    <!-- New World, City -->
+    <ModOp Type="addNextSibling" GUID='500137'
+      Condition="!#cheat-instant-residences-jakob"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
+      <Item>
+        <Building>1500011087</Building>
+      </Item>
+    </ModOp>
+    <Group Condition="#cheat-instant-residences-jakob">
+      <ModOp Type="addNextSibling" GUID="1500011567"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Jornalero or Obrero&lt;=500][last()]">
+        <Item>
+          <Building>1500011250</Building>
+          <Obrero>500</Obrero>
+        </Item>
+        <Item>
+          <Building>1500011043</Building>
+          <Obrero>500</Obrero>
+        </Item>
+      </ModOp>
+      <ModOp Type="addNextSibling" GUID="1500011567"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Jornalero or Obrero or Artista&lt;=300][last()]">
+        <Item>
+          <Building>1500011044</Building>
+          <Artista>300</Artista>
+        </Item>
+      </ModOp>
+    </Group>
+  </Group>
+
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011087</GUID>
+          <Name>New World Cities</Name>
+          <IconFilename>data\ui\jakob\nwc\icon_menu.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500011250</Building>
+            </Item>
+            <Item>
+              <Building>1500011043</Building>
+            </Item>
+            <Item>
+              <Building>1500011044</Building>
+            </Item>
+            <!-- <Item>
+              <Building>1500011090</Building>
+            </Item> -->
+          </BuildingList>
+          <CategoryDescription>1500011055</CategoryDescription>
+        </ConstructionCategory>
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+      </Values>
+    </Asset>
+  </ModOp>
+</ModOps>

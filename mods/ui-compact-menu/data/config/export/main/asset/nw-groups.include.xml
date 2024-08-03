@@ -69,20 +69,18 @@
   </Group>
 
   <!-- # Orchard -->
-  <Group>
+  <!-- keep in mind others like Taludas do the same, so use guards -->
+  <Group Condition="!@500950/ConstructionCategory/BuildingList[not(Item/Building='134614')]">
     <ModOp Type="add" GUID="500950"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='133004' or Building='133030' or Building='133031' or Building='134614']">
       <CompactOrchard />
     </ModOp>
-    <!-- keep in mind others like Taludas do the same, so use guards -->
-    <Group Condition="!@500950/ConstructionCategory/BuildingList[not(Item/Building='134614')]">
-      <ModOp Type="addNextSibling" GUID="500950"
-        Path="/Values/ConstructionCategory/BuildingList/Item[Building='134614']">
-        <Item>
-          <Building>7425</Building>
-        </Item>
-      </ModOp>
-    </Group>
+    <ModOp Type="addNextSibling" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='134614']">
+      <Item>
+        <Building>7425</Building>
+      </Item>
+    </ModOp>
   </Group>
 
   <!-- # Administration -->
@@ -105,6 +103,7 @@
     <ModOp Type="remove" GUID="500137"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactAdministration or CompactInstitution or CompactHide]" />
     <ModOp Type="remove" GUID="500950"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactOrchard or CompactHide]"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactOrchard or CompactHide]" />
   </Group>
 

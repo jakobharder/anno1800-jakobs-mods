@@ -72,13 +72,40 @@ Tag | Category | Region | Comment
 `CompactTourist` | City, Services | OW
 `CompactCulture` | Services | OW
 `CompactMall` | Services | OW
+`CompactEntertainment` | Services | OW
 
 #### Handle Own Groups
 
 Add entries with `<PlatformVisibility>Console</PlatformVisibility>` as if you had no group of your own.
 Those entries will only be considered when using this mod.
+You must use `CompactBuilding` instead of `Building` though, because unfortunately hidding applies to all instances of the same GUID.
 
 Additionally add `<CompactHide />` to your group to make it disappear when using this mod.
+
+
+```xml
+<ModOp Type="addNextSibling" GUID="25000192,500447"
+  Path="/Values/ConstructionCategory/BuildingList/Item[Engineer or Investor&lt;=5000][last()]">
+  <!-- mall category -->
+  <Item>
+    <Building>1500010868</Building>
+    <Investor>5000</Investor>
+    <!-- hide with compact ui -->
+    <CompactHide />
+  </Item>
+  <!-- mall building -->
+  <Item>
+    <!-- important! use CompactBuilding -->
+    <CompactBuilding>1500010888</CompactBuilding>
+    <!-- mark for mall category pickup -->
+    <CompactMall />
+    <Investor>5000</Investor>
+    <!-- hide by default -->
+    <PlatformVisibility>Console</PlatformVisibility>
+  </Item>
+  <!-- more malls -->
+</ModOp>
+```
 
 ### Add to Category Tabs
 
@@ -119,6 +146,15 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 ```
 
 ## Changes
+
+### 2.3
+
+- Added jje's buildings
+- Improved some icons
+
+### 2.2
+
+- Schools, Churches and Malls in progression sorting menus
 
 ### 2.1
 

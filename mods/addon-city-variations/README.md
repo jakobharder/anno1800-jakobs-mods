@@ -71,7 +71,7 @@ The roofs are colored in realtime for reduced memory usage and better performanc
 
 ## Changes
 
-- 1.0.10: Improved Russian translations thanks to DATM
+- 1.1: Brick Post Office skin
 
 ## Credits
 

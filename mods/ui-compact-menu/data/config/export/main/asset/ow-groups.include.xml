@@ -42,6 +42,74 @@
         <Template>ConstructionCategory</Template>
         <Values>
           <Standard>
+            <GUID>1500011332</GUID>
+            <Name>OW Markets Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_marketplace.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>120020</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+
+    </ModOp>
+
+    <ModOp Type="addNextSibling" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or position()=last()][1]">
+      <Item>
+        <Building>1500010931</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or position()=last()][1]">
+      <Item>
+        <Building>1500010932</Building>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Administration -->
+  <Group>
+    <ModOp Type="add" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or Building='1010516' or Building='100586']">
+      <CompactAdministration />
+    </ModOp>
+    <ModOp Type="add" GUID="1500010931"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactAdministration]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500010931"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Institution -->
+  <Group>
+    <ModOp Type="add" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or Building='1010462' or Building='1010464']">
+      <CompactInstitution />
+    </ModOp>
+    <ModOp Type="add" GUID="1500010932"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactInstitution]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500010932"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Education -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
             <GUID>1500011330</GUID>
             <Name>OW Schools Menu</Name>
             <IconFilename>data/ui/2kimages/main/3dicons/icon_school.png</IconFilename>
@@ -53,6 +121,68 @@
           <Locked />
         </Values>
       </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011576</GUID>
+            <Name>Worker Schools Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_school.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>1500011330</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010360' or position()=last()][1]">
+      <Item>
+        <Building>1500011330</Building>
+        <Worker>750</Worker>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000190"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010360' or Building='1010362']">
+      <CompactEducation />
+    </ModOp>
+    <ModOp Type="add" GUID="1500011330"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactEducation]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011330"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+
+    <ModOp Type="add" GUID="1500011576"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000190/ConstructionCategory/BuildingList/Item[CompactEducation]">
+    </ModOp>
+    <!-- only swap if there's more than one entry in the group -->
+    <Group Condition="@1500011576/ConstructionCategory/BuildingList/Item[2]">
+      <ModOp Type="addPrevSibling" GUID="25000190"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010360' or Worker&gt;'750'][1]">
+        <Item>
+          <Building>1500011576</Building>
+          <Worker>750</Worker>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="1500011576"
+        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+      <ModOp Type="remove" GUID="25000190"
+        Path="/Values/ConstructionCategory/BuildingList/Item[CompactEducation]" />
+    </Group>
+  </Group>
+
+  <!-- # Religion -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
       <Asset>
         <Template>ConstructionCategory</Template>
         <Values>
@@ -72,12 +202,12 @@
         <Template>ConstructionCategory</Template>
         <Values>
           <Standard>
-            <GUID>1500011332</GUID>
-            <Name>OW Markets Menu</Name>
-            <IconFilename>data/ui/2kimages/main/3dicons/icon_marketplace.png</IconFilename>
+            <GUID>1500011575</GUID>
+            <Name>Worker Church Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_church.png</IconFilename>
           </Standard>
           <Text>
-            <TextOverride>120020</TextOverride>
+            <TextOverride>1500011331</TextOverride>
           </Text>
           <ConstructionCategory>
             <BuildingList />
@@ -86,6 +216,77 @@
           <Locked />
         </Values>
       </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010359' or position()=last()][1]">
+      <Item>
+        <Building>1500011331</Building>
+        <Worker>150</Worker>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000190"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010359']">
+      <CompactReligion />
+    </ModOp>
+    <ModOp Type="add" GUID="1500011331"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactReligion]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011331"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+
+    <ModOp Type="add" GUID="1500011575"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000190/ConstructionCategory/BuildingList/Item[CompactReligion]">
+    </ModOp>
+    <!-- only swap if there's more than one entry in the group -->
+    <Group Condition="@1500011575/ConstructionCategory/BuildingList/Item[2]">
+      <ModOp Type="addPrevSibling" GUID="25000190"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010359' or Worker&gt;'150'][1]">
+        <Item>
+          <Building>1500011575</Building>
+          <Worker>150</Worker>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="1500011575"
+        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+      <ModOp Type="remove" GUID="25000190"
+        Path="/Values/ConstructionCategory/BuildingList/Item[CompactReligion]" />
+    </Group>
+  </Group>
+
+  <!-- # Market -->
+  <Group>
+    <ModOp Type="add" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372']">
+      <CompactMarket />
+    </ModOp>
+    <ModOp Type="add" GUID="1500011332"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactMarket]">
+    </ModOp>
+    <!-- only swap if there's more than one entry in the group -->
+    <Group Condition="@1500011332/ConstructionCategory/BuildingList/Item[2]">
+      <!-- marketplace might be replaced, also hook after 101037221 -->
+      <ModOp Type="addPrevSibling" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+        <Item>
+          <Building>1500011332</Building>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="1500011332"
+        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+      <ModOp Type="remove" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[CompactMarket]" />
+    </Group>
+  </Group>
+
+  <!-- # Tourist -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="100415">
       <Asset>
         <Template>ConstructionCategory</Template>
         <Values>
@@ -110,7 +311,7 @@
           <Standard>
             <GUID>1500011542</GUID>
             <Name>OW Tourism Services</Name>
-            <IconFilename>data/ui/2kimages/main/3dicons/icon_hotel.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_restaurants_menu.png</IconFilename>
           </Standard>
           <Text>
             <TextOverride>601379</TextOverride>
@@ -122,6 +323,55 @@
           <Locked />
         </Values>
       </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
+      <Item>
+        <Building>1500010930</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or position()=last()][1]">
+      <Item>
+        <Building>1500011542</Building>
+      </Item>
+    </ModOp>
+    <!-- <ModOp Type="addPrevSibling" GUID="132779"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or Tourist&gt;'250' or position()=last()][1]">
+      <Item>
+        <Building>1500011542</Building>
+        <Tourist>250</Tourist>
+      </Item>
+    </ModOp> -->
+    <!--
+      by default included mods
+      - Small Hotel
+    -->
+    <ModOp Type="add" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100429']">
+      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+      <CompactTourist />
+    </ModOp>
+    <ModOp Type="add" GUID="500092,500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601326' or Building='601445' or Building='1500010500' or Building='132780' or Building='132782' or Building='132781' or Building='132765']">
+      <CompactTourist />
+    </ModOp>
+    <ModOp Type="add" GUID="1500010930"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactTourist]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011542"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactTourist]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500010930,1500011542"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Culture -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="100415">
       <Asset>
         <Template>ConstructionCategory</Template>
         <Values>
@@ -144,9 +394,60 @@
         <Template>ConstructionCategory</Template>
         <Values>
           <Standard>
+            <GUID>1500011582</GUID>
+            <Name>Artisan Culture Menu</Name>
+            <IconFilename>data/ui/jakob/icon_culture_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>119015</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or position()=last()][1]">
+      <Item>
+        <Building>1500011335</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or position()=last()][1]">
+      <Item>
+        <Building>1500011582</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or Building='1010471' or Building='110935' or Building='1010489']">
+      <CompactCulture />
+    </ModOp>
+    <ModOp Type="add" GUID="1500011335"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactCulture]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011582"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@25000191/ConstructionCategory/BuildingList/Item[CompactCulture]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011335,1500011582"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Mall -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
             <GUID>1500011336</GUID>
             <Name>OW Malls Menu</Name>
-            <IconFilename>data/ui/2kimages/main/3dicons/icon_mall.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_malls_menu.png</IconFilename>
           </Standard>
           <Text>
             <TextOverride>137720</TextOverride>
@@ -159,247 +460,20 @@
         </Values>
       </Asset>
     </ModOp>
-
-    <ModOp Type="addNextSibling" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or position()=last()][1]">
-      <Item>
-        <Building>1500010931</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or position()=last()][1]">
-      <Item>
-        <Building>1500010932</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010360' or position()=last()][1]">
-      <Item>
-        <Building>1500011330</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010359' or position()=last()][1]">
-      <Item>
-        <Building>1500011331</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
-      <Item>
-        <Building>1500010930</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780']">
-      <Item>
-        <Building>1500011542</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='2015' or position()=last()][1]">
-      <Item>
-        <Building>1500011335</Building>
-      </Item>
-    </ModOp>
     <ModOp Type="addNextSibling" GUID="500094"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='135100' or position()=last()][1]">
       <Item>
         <Building>1500011336</Building>
       </Item>
     </ModOp>
-  </Group>
-
-  <!-- # Administration -->
-  <Group>
-    <ModOp Type="add" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100415' or Building='1010516' or Building='100586']">
-      <CompactAdministration />
+    <ModOp Type="addPrevSibling" GUID="25000192,500447"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='135100' or Investor&gt;'5000' or position()=last()][1]">
+      <Item>
+        <Building>1500011336</Building>
+        <Investor>5000</Investor>
+      </Item>
     </ModOp>
-    <ModOp Type="add" GUID="1500010931"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500092/ConstructionCategory/BuildingList/Item[CompactAdministration]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500010931"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-  </Group>
-
-  <!-- # Institution -->
-  <Group>
-    <!--
-      by default included mods
-      - mugge Firestation
-      - mugge Firestation small
-      - mugge Police
-      - mugge Police small
-      - mugge Hospital
-      - mugge Hospital small
-      - xan Police
-      - xan Hospital
-    -->
-    <ModOp Type="add" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or Building='1010462' or Building='1010464' or Building='1337500011' or Building='1337500012' or Building='1337500018' or Building='1337500019' or Building='2000150010' or Building='2000150036']">
-      <CompactInstitution />
-    </ModOp>
-    <ModOp Type="add" GUID="1500010932"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500092/ConstructionCategory/BuildingList/Item[CompactInstitution]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500010932"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-  </Group>
-
-  <!-- # Education -->
-  <Group>
-    <!--
-      by default included mods
-      - pesca Library (should have flag, remove soon)
-      - pesca Music School (should have flag, remove soon)
-    -->
-    <ModOp Type="add" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010816' or Building='1010360' or Building='1500010800' or Building='1010362']">
-      <CompactEducation />
-    </ModOp>
-    <ModOp Type="add" GUID="1500011330"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500094/ConstructionCategory/BuildingList/Item[CompactEducation]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500011330"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-  </Group>
-
-  <!-- # Religion -->
-  <Group>
-    <!--
-      by default included mods
-      - pesca Community Center (should have flag, remove soon)
-      - lion Chapels
-    -->
-    <ModOp Type="add" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010359' or Building='1500010100']">
-      <CompactReligion />
-    </ModOp>
-    <Group Condition="#lion053_ow_chapels">
-      <!-- determine support by checking CompactHide -->
-      <Group Condition="@500094ConstructionCategory/BuildingList/Item[Building='2100115156' and not(CompactHide)]">
-        <ModOp Type="addNextSibling" GUID="500094"
-          Path="/Values/ConstructionCategory/BuildingList/Item[Building='2100115156']">
-          <Item>
-            <Building>2100115121</Building>
-            <PlatformVisibility>Console</PlatformVisibility>
-            <CompactReligion />
-          </Item>
-          <Item>
-            <Building>2100115127</Building>
-            <PlatformVisibility>Console</PlatformVisibility>
-            <CompactReligion />
-          </Item>
-        </ModOp>
-        <ModOp Type="add" GUID="500094"
-          Path="/Values/ConstructionCategory/BuildingList/Item[Building='2100115156']">
-          <CompactHide />
-        </ModOp>
-      </Group>
-    </Group>
-    <ModOp Type="add" GUID="1500011331"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500094/ConstructionCategory/BuildingList/Item[CompactReligion]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500011331"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-
-    <Group Condition="#lion053_ow_chapels">
-      <!-- only add if it doesn't use tags yet -->
-      <!-- <Group Condition="@500094/ConstructionCategory/BuildingListItem[Building='2100115156' and not(CompactHide)]">
-        <ModOp Type="addPrevSibling" GUID="1500011331"
-          Path="/Values/ConstructionCategory/BuildingList/Item[1]"
-          Content="@2100115156/ConstructionCategory/BuildingList/Item">
-        </ModOp>
-      </Group> -->
-    </Group>
-  </Group>
-
-  <!-- # Market -->
-  <Group>
-    <!--
-      by default included mods
-      - pesca Community Center (should have flag, remove soon)
-    -->
-    <ModOp Type="add" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or Building='101037222' or Building='1500010100']">
-      <CompactMarket />
-    </ModOp>
-    <ModOp Type="add" GUID="1500011332"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500094/ConstructionCategory/BuildingList/Item[CompactMarket]">
-    </ModOp>
-    <!-- only swap if there's more than one entry in the group -->
-    <Group Condition="@1500011332/ConstructionCategory/BuildingList/Item[2]">
-      <!-- marketplace might be replaced, also hook after 101037221 -->
-      <ModOp Type="addNextSibling" GUID="500094"
-        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010372' or Building='101037221' or position()=last()][1]">
-        <Item>
-          <Building>1500011332</Building>
-        </Item>
-      </ModOp>
-      <ModOp Type="remove" GUID="1500011332"
-        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-      <ModOp Type="remove" GUID="500094"
-        Path="/Values/ConstructionCategory/BuildingList/Item[CompactMarket]" />
-    </Group>
-  </Group>
-
-  <!-- # Tourist -->
-  <Group>
-    <!--
-      by default included mods
-      - Small Hotel
-    -->
-    <ModOp Type="add" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100429']">
-      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
-      <CompactTourist />
-    </ModOp>
-    <ModOp Type="add" GUID="500092,500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601326' or Building='601445' or Building='1500010500' or Building='132780' or Building='132782' or Building='132781' or Building='132765']">
-      <CompactTourist />
-    </ModOp>
-    <ModOp Type="add" GUID="1500010930"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500092/ConstructionCategory/BuildingList/Item[CompactTourist]">
-    </ModOp>
-    <ModOp Type="add" GUID="1500011542"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500094/ConstructionCategory/BuildingList/Item[CompactTourist]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500010930"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-  </Group>
-
-  <!-- # Culture -->
-  <Group>
-    <ModOp Type="add" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or Building='1010471' or Building='110935' or Building='1010489']">
-      <CompactCulture />
-    </ModOp>
-    <ModOp Type="add" GUID="1500011335"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500094/ConstructionCategory/BuildingList/Item[CompactCulture]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500011335"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-  </Group>
-
-  <!-- # Mall -->
-  <Group>
-    <ModOp Type="add" GUID="500094"
+    <ModOp Type="add" GUID="500094,25000192,500447"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='135100' or Building='135099' or Building='134629']">
       <CompactMall />
     </ModOp>
@@ -412,13 +486,134 @@
       Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
   </Group>
 
+  <!-- # Restaurant -->
+  <!-- <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011577</GUID>
+            <Name>OW Restaurants Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_restaurant.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>137740</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or position()=last()][1]">
+      <Item>
+        <Building>1500011577</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addPrevSibling" GUID="25000192,500447"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or Tourist&gt;'250' or position()=last()][1]">
+      <Item>
+        <Building>1500011577</Building>
+        <Investor>5000</Investor>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,132779"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or Building='132782' or Building='132781']">
+      <CompactRestaurant />
+    </ModOp>
+    <ModOp Type="add" GUID="1500011577"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactRestaurant]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011577"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+    <ModOp Type="merge" GUID="1500011577"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building]"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="/Values/ConstructionCategory/BuildingList/Item/*[name()='Building' or name()='CompactBuilding']/text()">
+      <Item>
+        <Building><ModOpContent /></Building>
+      </Item>
+    </ModOp>
+  </Group> -->
+
+  <!-- # Religion -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011581</GUID>
+            <Name>OW Theatre Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_cabaret.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>6216</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361']">
+      <CompactEntertainment />
+    </ModOp>
+
+    <ModOp Type="add" GUID="1500011581"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactEntertainment]">
+    </ModOp>
+    <!-- only swap if there's more than one entry in the group -->
+    <Group Condition="@1500011581/ConstructionCategory/BuildingList/Item[2]">
+      <ModOp Type="addNextSibling" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010361' or position()=last()][1]">
+        <Item>
+          <Building>1500011581</Building>
+          <Artisan>250</Artisan>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="1500011581"
+        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+      <ModOp Type="remove" GUID="500094"
+        Path="/Values/ConstructionCategory/BuildingList/Item[CompactEntertainment]" />
+    </Group>
+  </Group>
+
   <!-- # Remove Entries -->
   <Group>
     <ModOp Type="remove" GUID="500092"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactAdministration or CompactInstitution or CompactTourist or CompactHide]" />
     <ModOp Type="remove" GUID="500094"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactEducation or CompactReligion or CompactTourist or CompactCulture or CompactMall or CompactHide]" />
+    <ModOp Type="remove" GUID="25000192,500447"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactMall or CompactHide]" />
+    <ModOp Type="remove" GUID="25000190"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactHide]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactHide]" />
+    <ModOp Type="remove" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactCulture or CompactHide]" />
   </Group>
+
+  <!-- # Fix CompactBuilding -->
+  <ModOp Type="merge" GUID="1500011542,1500010930,1500011336,1500011575,1500011331,1500011576,1500011330"
+    Condition="/Values/ConstructionCategory/BuildingList/Item[Building]"
+    Path="/Values/ConstructionCategory/BuildingList"
+    Content="/Values/ConstructionCategory/BuildingList/Item/*[name()='Building' or name()='CompactBuilding']/text()">
+    <Item>
+      <Building><ModOpContent /></Building>
+    </Item>
+  </ModOp>
 
   <!-- # Electricity -->
   <Group>

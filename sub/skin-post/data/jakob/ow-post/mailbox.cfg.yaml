@@ -1,0 +1,7 @@
+variant:
+  # needs annoRda variable set in vscode settings
+  source: ${annoRda}\data\dlc11\graphics\buildings\special\mailbox\mailbox_01_single.cfg
+  modifications:
+    # replace with model split into walls and roof
+    - xpath: //Config/Models/Config
+      FileName: data/jakob/ow-post/rdm/mailbox_lod0.rdm

@@ -1,7 +1,32 @@
-<!--
-  Upgradable Low Tiers
--->
 <ModOps>
+  <!-- # Includes -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010372">
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011562</GUID>
+            <Name>Cheats Marker</Name>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <ModOp Type="merge" GUID="1500011562"
+      Condition="#cheat-instant-residences-jakob"
+      Path="/Values">
+      <InstantResidences />
+    </ModOp>
+    <ModOp Type="merge" GUID="1500011562"
+      Condition="#Insta_Residences"
+      Path="/Values">
+      <InstantResidences />
+    </ModOp>
+  </Group>
+
+  <Include File="./menu.include.xml" />
+
   <!-- copy in case somebody forgot to include the extra goods collection -->
   <ModOp GUID='1010200' Type="addNextSibling">
     <Asset>
@@ -122,7 +147,7 @@
       <Values>
         <Standard>
           <GUID>1500010200</GUID>
-          <Name>Worker Level 1</Name>
+          <Name>Terraced Worker Level 1</Name>
           <IconFilename>data/ui/jakob/icon_worker_scraper2.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
@@ -134,7 +159,7 @@
         </Locked>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <PickingAsset>1500010200</PickingAsset>
+          <PickingAsset>1010343</PickingAsset>
           <!-- overwrite influence direction have front fassades always facing outwards -->
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingCategoryName>1500011513</BuildingCategoryName>
@@ -485,10 +510,13 @@
       <Values>
         <Standard>
           <GUID>1500010201</GUID>
-          <Name>Worker Level 2</Name>
+          <Name>Terraced Worker Level 2</Name>
           <IconFilename>data/ui/jakob/icon_worker_scraper2.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
+        <Building>
+          <PickingAsset>1010343</PickingAsset>
+        </Building>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
         </Locked>
@@ -1179,7 +1207,7 @@
       <Values>
         <Standard>
           <GUID>1500010225</GUID>
-          <Name>Artisan Level 1</Name>
+          <Name>Terraced Artisan Level 1</Name>
           <IconFilename>data/ui/jakob/icon_artisan_scraper2.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
@@ -1191,7 +1219,7 @@
         </Locked>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
-          <PickingAsset>1500010225</PickingAsset>
+          <PickingAsset>1010343</PickingAsset>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <BuildingCategoryName>1500011513</BuildingCategoryName>
           <!--
@@ -1531,10 +1559,13 @@
       <Values>
         <Standard>
           <GUID>1500010226</GUID>
-          <Name>Artisan Level 2</Name>
+          <Name>Terraced Artisan Level 2</Name>
           <IconFilename>data/ui/jakob/icon_artisan_scraper2.png</IconFilename>
           <InfoDescription>1500010214</InfoDescription>
         </Standard>
+        <Building>
+          <PickingAsset>1010343</PickingAsset>
+        </Building>
         <Locked>
           <DefaultLockedState>1</DefaultLockedState>
         </Locked>
@@ -2490,83 +2521,6 @@
 
   <Include File="../../../../jakob/stone-pavement/assets.include.xml" />
 
-  <!-- # Build Menu -->
-  <ModOp Type="addNextSibling" GUID="1010372">
-    <Asset>
-      <Template>ConstructionCategory</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010212</GUID>
-          <Name>Upgradable Residences</Name>
-          <IconFilename>data/ui/jakob/icon_upgradable_low_tier.png</IconFilename>
-        </Standard>
-        <ConstructionCategory>
-          <BuildingList>
-            <Item>
-              <Building>1500010100</Building>
-            </Item>
-            <Item>
-              <Building>1500010143</Building>
-            </Item>
-            <Item>
-              <Building>1500010200</Building>
-            </Item>
-            <Item>
-              <Building>1500010225</Building>
-            </Item>
-            <Item>
-              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
-              <Building>1500010224</Building>
-            </Item>
-          </BuildingList>
-          <CategoryDescription>1500011513</CategoryDescription>
-        </ConstructionCategory>
-        <Locked />
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010213</GUID>
-          <Name>workers_rise_menu_description</Name>
-        </Standard>
-      </Values>
-    </Asset>
-    <Asset>
-      <Template>Text</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010214</GUID>
-          <Name>workers_rise_mod_compat_desc</Name>
-        </Standard>
-      </Values>
-    </Asset>
-  </ModOp>
-  <!-- city menu: insert after pescatarian menu, vanilla farmer, fallback append GUID='500092' -->
-  <!-- <ModOp Type="addNextSibling" Path="//Asset[Values/Standard/GUID='500092']/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186'][last()]"> -->
-  <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186'))][last()]">
-    <Item>
-      <Building>1500010212</Building>
-    </Item>
-  </ModOp>
-  <!-- workers menu: insert before bricks production chain, no fall back -->
-  <ModOp Type="addNextSibling" GUID="25000190"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
-    <Item>
-      <Building>1500010200</Building>
-      <Artisan>800</Artisan>
-    </Item>
-  </ModOp>
-  <!-- artisans menu: insert before anything, no fall back -->
-  <ModOp Type="addPrevSibling" GUID="25000191"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
-    <Item>
-      <Building>1500010225</Building>
-      <Artisan>800</Artisan>
-    </Item>
-  </ModOp>
-
   <!-- # Worker Buff Targets -->
   <ModOp Type="add" Path="//ItemEffect/EffectTargets[Item/GUID='1010344']">
     <Item>
@@ -2638,7 +2592,7 @@
       <Values>
         <Standard>
           <GUID>1500011284</GUID>
-          <Name>I @ 800 Artisans</Name>
+          <Name>I @ 900 Artisans</Name>
           <IconFilename>data/ui/2kimages/main/profiles/resident_tier01.png</IconFilename>
         </Standard>
         <Trigger>
@@ -2649,7 +2603,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000002</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>900</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2784,8 +2738,9 @@
       <Template>FeatureUnlock</Template> <!-- 2.0 unlock -->
       <Values>
         <Standard>
-          <GUID>1500010239</GUID>
-          <Name>II @ 800 engineers</Name>
+          <GUID>1500011563</GUID>
+          <!-- <GUID>1500010239</GUID> -->
+          <Name>II @ 500 engineers</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -2796,7 +2751,7 @@
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
                 <Context>15000003</Context>
-                <CounterAmount>800</CounterAmount>
+                <CounterAmount>500</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
@@ -2930,6 +2885,15 @@
       </Values>
     </Asset>
   </ModOp>
+
+  <!-- # Cheats -->
+  <Group Condition="!@1500011562/InstantResidences">
+    <ModOp Type="replace" GUID="1500010200,1500010201,1500010225,1500010226"
+      Path="/Values/Building/PickingAsset"
+      Content="~/Values/Standard/GUID/text()">
+      <PickingAsset><ModOpContent /></PickingAsset>
+    </ModOp>
+  </Group>
 
   <!-- # Harborlife Fix -->
   <!-- just in case people didn't update and blame upgradable worker for it -->

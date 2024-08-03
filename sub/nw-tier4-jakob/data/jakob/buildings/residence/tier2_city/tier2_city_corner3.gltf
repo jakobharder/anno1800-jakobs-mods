@@ -1,0 +1,152 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "ground-wall.001",
+            "scale" : [
+                0.9210348129272461,
+                0.8967611789703369,
+                0.9210348129272461
+            ],
+            "translation" : [
+                0.9010829925537109,
+                0.07221335172653198,
+                -0.7652959823608398
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "name" : "mat_toroko",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                }
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Mesh_0.099",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TANGENT" : 2,
+                        "TEXCOORD_0" : 3
+                    },
+                    "indices" : 4,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "residence_torokoiro_diff",
+            "uri" : "residence_torokoiro_diff.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 6058,
+            "max" : [
+                0.10364991426467896,
+                2.6847758293151855,
+                2.0965278148651123
+            ],
+            "min" : [
+                -2.621211528778076,
+                -0.6750889420509338,
+                -0.8127023577690125
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 6058,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 6058,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 6058,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5123,
+            "count" : 8841,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 72696,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 72696,
+            "byteOffset" : 72696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 96928,
+            "byteOffset" : 145392
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48464,
+            "byteOffset" : 242320
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17682,
+            "byteOffset" : 290784
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 308468,
+            "uri" : "tier2_city_corner3.bin"
+        }
+    ]
+}

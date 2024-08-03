@@ -1,0 +1,107 @@
+<ModOps>
+  <!-- # Build Menu -->
+  <ModOp Type="addNextSibling" GUID="1010372">
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010212</GUID>
+          <Name>Upgradable Residences</Name>
+          <IconFilename>data/ui/jakob/icon_upgradable_low_tier.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList>
+            <Item>
+              <Building>1500010100</Building>
+            </Item>
+            <Item>
+              <Building>1500010143</Building>
+            </Item>
+            <Item>
+              <Building>1500010200</Building>
+            </Item>
+            <Item>
+              <Building>1500010225</Building>
+            </Item>
+            <Item>
+              <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+              <Building>1500010224</Building>
+            </Item>
+          </BuildingList>
+          <CategoryDescription>1500011513</CategoryDescription>
+        </ConstructionCategory>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010213</GUID>
+          <Name>workers_rise_menu_description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010214</GUID>
+          <Name>workers_rise_mod_compat_desc</Name>
+        </Standard>
+      </Values>
+    </Asset>
+  </ModOp>
+  <!-- city menu: insert after pescatarian menu, vanilla farmer, fallback append GUID='500092' -->
+  <!-- <ModOp Type="addNextSibling" GUID='500092' Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343' or Building='1500010186' or (not(../Item/Building='1010343') and not(../Item/Building='1500010186'))][last()]">
+    <Item>
+      <Building>1500010212</Building>
+    </Item>
+  </ModOp> -->
+
+  <!-- # Cheats -->
+  <Group Condition="@1500011562/InstantResidences">
+    <ModOp Type="addNextSibling" GUID="25000190"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=800][last()]">
+      <Item>
+        <Building>1500010200</Building>
+        <CompactResidence />
+        <Artisan>800</Artisan>
+      </Item>
+    </ModOp>
+    <!-- <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan or Engineer&lt;=500][last()]">
+      <Item>
+        <Building>1500010200</Building>
+        <Engineer>500</Engineer>
+      </Item>
+    </ModOp> -->
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=800][last()]">
+      <Item>
+        <Building>1500010225</Building>
+        <CompactResidence />
+        <Artisan>800</Artisan>
+      </Item>
+    </ModOp>
+    <!-- <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan or Engineer&lt;=500][last()]">
+      <Item>
+        <Building>1500010225</Building>
+        <Engineer>500</Engineer>
+      </Item>
+    </ModOp> -->
+    <ModOp Type="addNextSibling" GUID="1500011566"
+      Condition="#cheat-instant-residences-jakob"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker or Artisan&lt;=800][last()]">
+      <Item>
+        <Building>1500010200</Building>
+        <Artisan>800</Artisan>
+      </Item>
+      <Item>
+        <Building>1500010225</Building>
+        <Artisan>800</Artisan>
+      </Item>
+    </ModOp>
+  </Group>
+</ModOps>

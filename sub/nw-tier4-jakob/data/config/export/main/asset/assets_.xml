@@ -1,0 +1,503 @@
+<ModOps>
+  <!-- # Includes -->
+  <Include File="../../../../jakob/nw-ministry/assets.include.xml" />
+  <Include File="./menu.include.xml" />
+  <Include File="./population.include.xml" />
+  <Include File="./unlocks.include.xml" />
+
+  <!-- # Residences -->
+  <ModOp Type="addNextSibling" GUID="101255">
+    <Asset>
+      <Template>ResidenceBuilding7_Colony</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011040</GUID>
+          <Name>Patrono Residence</Name>
+          <IconFilename>data/ui/jakob/icon_instant_patronos.png</IconFilename>
+          <InfoDescription>163059</InfoDescription>
+        </Standard>
+        <Blocking>
+          <AdditionalBlockRectSize>1</AdditionalBlockRectSize>
+        </Blocking>
+        <Building>
+          <BuildingType>Residence</BuildingType>
+          <!-- <PickingAsset>101254</PickingAsset> -->
+          <SecondPartyRelevant>0</SecondPartyRelevant>
+          <BuildingCategoryName>1500011055</BuildingCategoryName>
+          <AssociatedRegions>Moderate;Colony01</AssociatedRegions>
+          <InfluencedByNeighbors>
+            <Item>
+              <Building>1500011040</Building>
+            </Item>
+            <Item>
+              <Building>101255</Building>
+            </Item>
+            <Item>
+              <Building>5405</Building>
+            </Item>
+            <Item>
+              <Building>1500011043</Building>
+            </Item>
+            <Item>
+              <Building>1500011044</Building>
+            </Item>
+          </InfluencedByNeighbors>
+          <BuildingBlockPool>
+            <!--
+              Multiple entries of the same variation for different rotations don't work.
+              But vanilla assets.xml also defines them, so they were supposed to work at some point.
+            -->
+            <Corner>
+              <Pool>
+                <Item />
+                <Item>
+                  <Variation>1</Variation>
+                </Item>
+                <Item>
+                  <Variation>2</Variation>
+                </Item>
+                <Item>
+                  <Variation>3</Variation>
+                </Item>
+                <Item>
+                  <Variation>4</Variation>
+                </Item>
+                <Item>
+                  <Variation>5</Variation>
+                </Item>
+                <Item>
+                  <Variation>6</Variation>
+                </Item>
+                <Item>
+                  <Variation>10</Variation>
+                </Item>
+                <Item>
+                  <Variation>11</Variation>
+                </Item>
+                <Item>
+                  <Variation>12</Variation>
+                </Item>
+              </Pool>
+            </Corner>
+            <Mid>
+              <Pool>
+                <Item>
+                  <Variation>7</Variation>
+                </Item>
+                <Item>
+                  <Variation>8</Variation>
+                </Item>
+                <Item>
+                  <Variation>9</Variation>
+                </Item>
+                <Item>
+                  <Variation>13</Variation>
+                </Item>
+              </Pool>
+            </Mid>
+            <End>
+              <Pool>
+                <Item>
+                  <Variation>13</Variation>
+                </Item>
+                <Item>
+                  <Variation>14</Variation>
+                </Item>
+                <Item>
+                  <Variation>15</Variation>
+                </Item>
+                <Item>
+                  <Variation>16</Variation>
+                </Item>
+                <Item>
+                  <Variation>17</Variation>
+                </Item>
+                <Item>
+                  <Variation>18</Variation>
+                </Item>
+              </Pool>
+            </End>
+          </BuildingBlockPool>
+          <InfluencedVariationDirection>
+            <!--
+              Direction rotates counter clock wise.
+              Default facing is X towards NW, Y towards NE.
+            -->
+            <Item>
+              <!-- single -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, south-west -->
+              <Direction>1</Direction>
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- end, south-east -->
+              <Direction>2</Direction>
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- corner, south -->
+              <Direction>2</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- end, north-east -->
+              <Direction>3</Direction>
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- mid, south-west to north-east -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, east -->
+              <Direction>3</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-east -->
+              <Direction>3</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- end, north-west -->
+              <Type>End</Type>
+            </Item>
+            <Item>
+              <!-- corner, west -->
+              <Direction>1</Direction>
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- mid, north-west to south-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing south-west  -->
+              <Direction>2</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- corner, north -->
+              <Type>Corner</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-west -->
+              <Direction>1</Direction>
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- T, front facing north-east -->
+              <Type>Mid</Type>
+            </Item>
+            <Item>
+              <!-- cross -->
+            </Item>
+          </InfluencedVariationDirection>
+        </Building>
+        <Cost>
+          <Costs>
+            <Item>
+              <Ingredient>1010196</Ingredient>
+              <Amount>3</Amount>
+            </Item>
+            <Item>
+              <Ingredient>1010207</Ingredient>
+              <Amount>2</Amount>
+            </Item>
+            <Item>
+              <Ingredient>838</Ingredient>
+              <Amount>1</Amount>
+            </Item>
+          </Costs>
+        </Cost>
+        <Mesh />
+        <Object>
+          <Variations>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner2_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner2_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner2_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/residence_colony01_tier02_estate05.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/residence_colony01_tier02_estate01.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/residence_colony01_tier02_estate02.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/residence_colony01_tier02_estate03.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner3_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner3_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_corner3_2.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_end_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_end2_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_end2_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_end3_0.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_end3_1.cfg</Filename>
+            </Item>
+            <Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city_end3_2.cfg</Filename>
+            </Item>
+                        <!--<Item>
+              <Filename>data/jakob/buildings/residence/tier2_city/tier2_city2_0.cfg</Filename>
+            </Item>-->
+          </Variations>
+          <DefaultParticipant>SA_Resident_tier02</DefaultParticipant>
+        </Object>
+        <Selection>
+          <ParticipantMessageArcheType>Resident_tier05_atWork</ParticipantMessageArcheType>
+        </Selection>
+        <Constructable />
+        <Locked>
+          <DefaultLockedState>0</DefaultLockedState>
+        </Locked>
+        <Upgradable>
+          <UpgradeCost />
+        </Upgradable>
+        <SoundEmitter>
+          <BuildingRepaired>
+            <Item>
+              <Sound>203866</Sound>
+            </Item>
+          </BuildingRepaired>
+          <MaterialType>Wood</MaterialType>
+        </SoundEmitter>
+        <Infolayer />
+        <FeedbackController />
+        <Residence7>
+          <ResidenceStorage>
+            <InputStorageMax>1</InputStorageMax>
+          </ResidenceStorage>
+          <PopulationLevel7>1500011557</PopulationLevel7>
+          <IsBaseResidence>1</IsBaseResidence>
+          <ResidentMax>80</ResidentMax>
+          <MoveInMs>5000</MoveInMs>
+          <MoveOutMs>90000</MoveOutMs>
+        </Residence7>
+        <LogisticNode>
+          <REMOVE_THIS_LATER_FeedbackUnitTier>Level5</REMOVE_THIS_LATER_FeedbackUnitTier>
+        </LogisticNode>
+        <AmbientMoodProvider>
+          <DynamicEnvironmentType>ResidenceT5</DynamicEnvironmentType>
+          <HappinessDependentMurmur>
+            <Angry>
+              <Murmur>OberaUnhappy</Murmur>
+            </Angry>
+            <Unhappy>
+              <Murmur>OberaContent</Murmur>
+            </Unhappy>
+            <Neutral>
+              <Murmur>OberaContent</Murmur>
+            </Neutral>
+            <Happy>
+              <Murmur>OberaHappy</Murmur>
+            </Happy>
+            <Euphoric>
+              <Murmur>OberaHappy</Murmur>
+            </Euphoric>
+          </HappinessDependentMurmur>
+        </AmbientMoodProvider>
+        <!-- <UpgradeList>
+          <DefaultBuff>1500011041</DefaultBuff>
+        </UpgradeList> -->
+        <Attackable>
+          <MaximumHitPoints>2000</MaximumHitPoints>
+        </Attackable>
+        <IncidentInfectable />
+        <Culture />
+        <StreetActivation />
+        <InfluenceSource>
+          <InfluenceAmount>1</InfluenceAmount>
+        </InfluenceSource>
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="5405" Path="/Values">
+    <Upgradable>
+      <NextGUID>1500011040</NextGUID>
+    </Upgradable>
+  </ModOp>
+  <ModOp Type="merge" GUID="5405" Path="/Values">
+    <Residence7>
+      <ResidentsRequiredForUpgrade>30</ResidentsRequiredForUpgrade>
+    </Residence7>
+  </ModOp>
+
+  <!-- add spawn feeback -->
+  <ModOp GUID="142785,2001092" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
+    <Item>
+      <Building>1500011040</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Build Menus -->
+  <!-- New World, Obrero -->
+  <ModOp Type="addPrevSibling" GUID="25000194"
+    Path="/Values/ConstructionCategory/BuildingList/Item[1]">
+    <Item>
+      <Building>1500011040</Building>
+    </Item>
+  </ModOp>
+
+  <!-- # Unlock Conditions -->
+  <!-- =================== -->
+  <!-- just rely on unlock of gas power plant construction menu -->
+
+
+  <!--
+
+<PopulationInputs>
+                        <Item>
+                          <Product>120020</Product>
+                          <SupplyWeight>5</SupplyWeight>
+                        </Item>
+                        <Item>
+                          <Product>120033</Product>
+                          <Amount>0.000952381</Amount>
+                          <SupplyWeight>3</SupplyWeight>
+                          <MoneyValue>25</MoneyValue>
+                        </Item>
+                        <Item>
+                          <Product>1010257</Product>
+                          <Amount>0.000476191</Amount>
+                          <HappinessValue>3</HappinessValue>
+                          <MoneyValue>25</MoneyValue>
+                        </Item>
+                        <Item>
+                          <Product>120043</Product>
+                          <Amount>0.000833333</Amount>
+                          <SupplyWeight>2</SupplyWeight>
+                          <MoneyValue>25</MoneyValue>
+                        </Item>
+                        <Item>
+                          <Product>120050</Product>
+                          <HappinessValue>7</HappinessValue>
+                        </Item>
+                        <Item>
+                          <Product>120035</Product>
+                          <Amount>0.00047619</Amount>
+                          <SupplyWeight>4</SupplyWeight>
+                          <MoneyValue>10</MoneyValue>
+                          <FullWeightPopulationCount>300</FullWeightPopulationCount>
+                        </Item>
+                        <Item>
+                          <Product>120032</Product>
+                          <Amount>0.000196079</Amount>
+                          <SupplyWeight>2</SupplyWeight>
+                          <MoneyValue>10</MoneyValue>
+                          <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                          <NoWeightPopulationCount>299</NoWeightPopulationCount>
+                        </Item>
+                        <Item>
+                          <Product>1010348</Product>
+                          <HappinessValue>4</HappinessValue>
+                          <MoneyValue>10</MoneyValue>
+                          <FullWeightPopulationCount>600</FullWeightPopulationCount>
+                          <NoWeightPopulationCount>299</NoWeightPopulationCount>
+                        </Item>
+                        <Item>
+                          <Product>120037</Product>
+                          <Amount>0.000444444</Amount>
+                          <SupplyWeight>2</SupplyWeight>
+                          <MoneyValue>10</MoneyValue>
+                          <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+                          <NoWeightPopulationCount>599</NoWeightPopulationCount>
+                        </Item>
+                        <Item>
+                          <Product>1010214</Product>
+                          <Amount>0.000444444</Amount>
+                          <HappinessValue>4</HappinessValue>
+                          <MoneyValue>30</MoneyValue>
+                          <FullWeightPopulationCount>1000</FullWeightPopulationCount>
+                          <NoWeightPopulationCount>599</NoWeightPopulationCount>
+                        </Item>
+                        <Item>
+                          <Product>1010259</Product>
+                          <Amount>0.000185185</Amount>
+                          <HappinessValue>2</HappinessValue>
+                          <MoneyValue>35</MoneyValue>
+                          <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+                          <NoWeightPopulationCount>999</NoWeightPopulationCount>
+                        </Item>
+                        <Item>
+                          <Product>1010206</Product>
+                          <Amount>0.000416667</Amount>
+                          <SupplyWeight>2</SupplyWeight>
+                          <MoneyValue>25</MoneyValue>
+                          <FullWeightPopulationCount>1500</FullWeightPopulationCount>
+                          <NoWeightPopulationCount>999</NoWeightPopulationCount>
+                        </Item>
+                      </PopulationInputs>
+
+
+                            <Residence7>
+                              <ResidenceStorage>
+                                <InputStorageMax>1</InputStorageMax>
+                              </ResidenceStorage>
+                              <PopulationLevel7>15000004</PopulationLevel7>
+                              <ResidentMax>75</ResidentMax>
+                              <CanHaveGoodViewBuff>1</CanHaveGoodViewBuff>
+                              <GoodViewStartValue>1</GoodViewStartValue>
+                              <GoodViewRadius>4</GoodViewRadius>
+                              <GoodViewBuffs>
+                                <Item>
+                                  <GoodViewBuff>601904</GoodViewBuff>
+                                </Item>
+                                <Item>
+                                  <GoodViewBuff>601903</GoodViewBuff>
+                                </Item>
+                                <Item>
+                                  <GoodViewBuff>601905</GoodViewBuff>
+                                </Item>
+                                <Item>
+                                  <GoodViewBuff>601906</GoodViewBuff>
+                                </Item>
+                                <Item>
+                                  <GoodViewBuff>601902</GoodViewBuff>
+                                </Item>
+                              </GoodViewBuffs>
+                              <GoodViewEmpty>137280</GoodViewEmpty>
+                              <MoveInMs>9000</MoveInMs>
+                              <MoveOutMs>5000</MoveOutMs>
+                              <MoveRandomMs>250</MoveRandomMs>
+                            </Residence7>
+
+
+  -->
+</ModOps>
