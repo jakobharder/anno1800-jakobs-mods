@@ -13,14 +13,13 @@
       </Asset>
     </ModOp>
 
-    <ModOp Type="merge" GUID="1500011562"
-      Condition="#cheat-instant-residences-jakob"
-      Path="/Values">
+    <ModOp Condition="#cheat-instant-residences-jakob" Type="merge" GUID="1500011562" Path="/Values">
       <InstantResidences />
     </ModOp>
-    <ModOp Type="merge" GUID="1500011562"
-      Condition="#Insta_Residences"
-      Path="/Values">
+    <ModOp Condition="#Insta_Residences"  Type="merge" GUID="1500011562" Path="/Values">
+      <InstantResidences />
+    </ModOp>
+    <ModOp Condition="#buildable_residences" Type="merge" GUID="1500011562" Path="/Values">
       <InstantResidences />
     </ModOp>
   </Group>
@@ -2887,7 +2886,7 @@
   </ModOp>
 
   <!-- # Cheats -->
-  <Group Condition="!@1500011562/InstantResidences">
+  <Group Condition="@1500011562/InstantResidences">
     <ModOp Type="replace" GUID="1500010200,1500010201,1500010225,1500010226"
       Path="/Values/Building/PickingAsset"
       Content="~/Values/Standard/GUID/text()">

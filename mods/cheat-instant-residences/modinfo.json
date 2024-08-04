@@ -1,12 +1,14 @@
 {
-  "Version": "1.0",
+  "Version": "1.0.1",
   "ModID": "cheat-instant-residences-jakob",
   "ModDependencies": [
     "https://github.com/anno-mods/shared-resources/releases/download/v10.5/shared-pools-and-definitions.zip",
     "../../sub/jakob-skyscraper-button"
   ],
   "LoadAfterIds": [
-    "shared-pools-and-definitions"
+    "*",
+    "shared-pools-and-definitions",
+    "buildable_residences"
   ],
   "Category": {
     "English": "Cheat"

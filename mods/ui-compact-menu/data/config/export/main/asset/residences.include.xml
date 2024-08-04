@@ -1,8 +1,9 @@
 <ModOps>
+  <!-- <Include File="./assets-buildable.include.xml" /> -->
   <!-- use skyscraper button mod to fetch unique residence icons -->
 
   <!-- # Picking Asset -->
-  <Group>
+  <!-- <Group>
     <ModOp Type="merge" GUID="1010344,1010345,1010346,1010347,101255,5405,114437,112652"
       Path="/Values/Building"
       Content="~/Values/Standard/GUID/text()">
@@ -10,7 +11,7 @@
         <PickingAsset><ModOpContent /></PickingAsset>
       </Building>
     </ModOp>
-  </Group>
+  </Group> -->
 
   <!-- # Icons -->
   <Group>
@@ -102,29 +103,8 @@
             <TextOverride>22976</TextOverride>
           </Text>
           <ConstructionCategory>
-            <CategoryDescription>1500011569</CategoryDescription>
-            <BuildingList>
-              <Item>
-                <Building>1010343</Building>
-                <Farmer>0</Farmer>
-              </Item>
-              <Item>
-                <Building>1010344</Building>
-                <Worker>1</Worker>
-              </Item>
-              <Item>
-                <Building>1010345</Building>
-                <Artisan>1</Artisan>
-              </Item>
-              <Item>
-                <Building>1010346</Building>
-                <Engineer>1</Engineer>
-              </Item>
-              <Item>
-                <Building>1010347</Building>
-                <Investor>1</Investor>
-              </Item>
-            </BuildingList>
+            <CategoryDescription>1500011541</CategoryDescription>
+            <BuildingList />
           </ConstructionCategory>
         </Values>
       </Asset>
@@ -140,21 +120,8 @@
             <TextOverride>22976</TextOverride>
           </Text>
           <ConstructionCategory>
-            <CategoryDescription>1500011569</CategoryDescription>
-            <BuildingList>
-              <Item>
-                <Building>101254</Building>
-                <Jornalero>0</Jornalero>
-              </Item>
-              <Item>
-                <Building>101255</Building>
-                <Obrero>1</Obrero>
-              </Item>
-              <Item>
-                <Building>5405</Building>
-                <Artista>1</Artista>
-              </Item>
-            </BuildingList>
+            <CategoryDescription>1500011541</CategoryDescription>
+            <BuildingList />
           </ConstructionCategory>
         </Values>
       </Asset>
@@ -170,7 +137,7 @@
             <TextOverride>22976</TextOverride>
           </Text>
           <ConstructionCategory>
-            <CategoryDescription>1500011569</CategoryDescription>
+            <CategoryDescription>1500011541</CategoryDescription>
             <BuildingList>
               <Item>
                 <Building>114436</Building>
@@ -188,7 +155,7 @@
         <Template>ConstructionCategory</Template>
         <Values>
           <Standard>
-            <GUID>1500011568</GUID>
+            <GUID>1500011583</GUID>
             <Name>Arctic Instant Residences</Name>
             <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
           </Standard>
@@ -196,7 +163,7 @@
             <TextOverride>22976</TextOverride>
           </Text>
           <ConstructionCategory>
-            <CategoryDescription>1500011569</CategoryDescription>
+            <CategoryDescription>1500011541</CategoryDescription>
             <BuildingList>
               <Item>
                 <Building>112091</Building>
@@ -220,7 +187,39 @@
         </Values>
       </Asset>
     </ModOp>
+  </Group>
 
+  <!-- # OW Construction Menus -->
+  <!-- trigger when Workers are in the menu -->
+  <Group Condition="@500092/ConstructionCategory/BuildingList/Item[Building='1010344']">
+    <ModOp Type="merge" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
+      <CompactResidence />
+      <Farmer>0</Farmer>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010344']">
+      <CompactResidence />
+      <Worker>0</Worker>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010345']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010345']">
+      <CompactResidence />
+      <Artisan>0</Artisan>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010346']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010346']">
+      <CompactResidence />
+      <Engineer>0</Engineer>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010347']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010347']">
+      <CompactResidence />
+      <Investor>0</Investor>
+    </ModOp>
     <ModOp Type="addNextSibling" GUID="500092"
       Path="/Values/ConstructionCategory/BuildingList/Item[Residence and Farmer&lt;=0][last()]">
       <Item>
@@ -228,10 +227,37 @@
         <Farmer>0</Farmer>
       </Item>
     </ModOp>
+    <ModOp Type="add" GUID="1500011566"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactResidence]">
+    </ModOp>
     <ModOp Type="remove" GUID="500092"
-      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']" />
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]" />
+    <ModOp Type="remove" GUID="1500011566"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
 
+  <!-- # NW Construction Menus -->
+  <!-- trigger when Obreros are in the menu -->
+  <Group Condition="@500137/ConstructionCategory/BuildingList/Item[Building='101255']">
+    <ModOp Type="merge" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
+      <CompactResidence />
+      <Jornalero>0</Jornalero>
+    </ModOp>
+    <ModOp Type="merge" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101255']">
+      <CompactResidence />
+      <Obrero>0</Obrero>
+    </ModOp>
+    <ModOp Type="merge" GUID="500137"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='5405']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='5405']">
+      <CompactResidence />
+      <Artista>0</Artista>
+    </ModOp>
     <ModOp Type="addNextSibling" GUID="500137"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254'][last()]">
       <Item>
@@ -239,94 +265,15 @@
         <Jornalero>0</Jornalero>
       </Item>
     </ModOp>
+    <ModOp Type="add" GUID="1500011567"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500137/ConstructionCategory/BuildingList/Item[CompactResidence]">
+    </ModOp>
     <ModOp Type="remove" GUID="500137"
-      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='101254']"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']" />
-
-    <ModOp Type="addNextSibling" GUID="119012"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='114436'][last()]">
-      <Item>
-        <Building>114437</Building>
-        <Elder>0</Elder>
-      </Item>
-    </ModOp>
-    <!-- <ModOp Type="remove" GUID="119012"
-      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='114436']"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='114436']" /> -->
-
-    <ModOp Type="addNextSibling" GUID="116343"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='112091'][last()]">
-      <Item>
-        <Building>112652</Building>
-        <Technician>0</Technician>
-      </Item>
-    </ModOp>
-    <!-- <ModOp Type="remove" GUID="119012"
-      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='112091']"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='112091']" /> -->
-  </Group>
-
-  <!-- # OW Construction Menus -->
-  <Group>
-    <ModOp Type="addPrevSibling" GUID="25000190"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>1010344</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addPrevSibling" GUID="25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>1010345</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addPrevSibling" GUID="25000192"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>1010346</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addPrevSibling" GUID="500447"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>1010347</Building>
-      </Item>
-    </ModOp>
-  </Group>
-
-  <!-- # NW Construction Menus -->
-  <Group>
-    <ModOp Type="addPrevSibling" GUID="25000194"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>101255</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addPrevSibling" GUID="5466"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>5405</Building>
-      </Item>
-    </ModOp>
-  </Group>
-
-  <!-- # Enbesa Construction Menus -->
-  <Group>
-    <ModOp Type="addPrevSibling" GUID="114554"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>114437</Building>
-      </Item>
-    </ModOp>
-  </Group>
-
-  <!-- # Arctic Construction Menus -->
-  <Group>
-    <ModOp Type="addPrevSibling" GUID="112791"
-      Path="/Values/ConstructionCategory/BuildingList/Item[1]">
-      <Item>
-        <Building>112652</Building>
-      </Item>
-    </ModOp>
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]" />
+    <ModOp Type="remove" GUID="1500011567"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
   </Group>
 </ModOps>

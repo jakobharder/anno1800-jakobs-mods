@@ -6,9 +6,13 @@
   "ModDependencies": [
     "https://github.com/anno-mods/shared-resources/releases/download/v10.5/shared-pools-and-definitions.zip"
   ],
+  "DeprecateIds": [
+    "cheat-instant-residences-jakob"
+  ],
   "LoadAfterIds": [
     "*",
-    "shared-pools-and-definitions"
+    "shared-pools-and-definitions",
+    "buildable_residences"
   ],
   "OptionalDependencies": [
     "jakob_small_hotels",

@@ -18,14 +18,13 @@
     </Asset>
   </ModOp>
 
-  <ModOp Type="merge" GUID="1500011561"
-    Condition="#cheat-instant-residences-jakob"
-    Path="/Values">
+  <ModOp Condition="#cheat-instant-residences-jakob" Type="merge" GUID="1500011561" Path="/Values">
     <InstantResidences />
   </ModOp>
-  <ModOp Type="merge" GUID="1500011561"
-    Condition="#Insta_Residences"
-    Path="/Values">
+  <ModOp Condition="#Insta_Residences"  Type="merge" GUID="1500011561" Path="/Values">
+    <InstantResidences />
+  </ModOp>
+  <ModOp Condition="#buildable_residences" Type="merge" GUID="1500011561" Path="/Values">
     <InstantResidences />
   </ModOp>
 

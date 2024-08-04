@@ -124,6 +124,7 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Worker&lt;=1][last()]">
       <Item>
         <Building>1500010143</Building>
+        <CompactResidence />
         <Worker>1</Worker>
       </Item>
     </ModOp>
@@ -138,6 +139,7 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
       <Item>
         <Building>1500010143</Building>
+        <CompactResidence />
         <Worker>1</Worker>
       </Item>
     </ModOp>
@@ -148,11 +150,12 @@
         <Artisan>900</Artisan>
       </Item>
     </ModOp> -->
-    <ModOp Type="addNextSibling" GUID="1500011566"
-      Condition="#cheat-instant-residences-jakob"
+    <ModOp Type="addNextSibling" GUID="500092"
+      Condition="#jakob_compact_menus"
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
       <Item>
         <Building>1500010143</Building>
+        <CompactResidence />
         <Worker>1</Worker>
       </Item>
     </ModOp>
