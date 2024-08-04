@@ -14,7 +14,7 @@
   </Group> -->
 
   <!-- # Icons -->
-  <Group>
+  <Group Condition="@500092/ConstructionCategory/BuildingList/Item[Building='1010344']">
     <ModOp Type="merge" GUID="1010344,1010345,1010346,1010347,101255,5405,114437,112652"
       Path="/Values/Constructable"
       Content="~/Values/Standard/GUID/text()">
