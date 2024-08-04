@@ -38,7 +38,8 @@ const idsToPackage = [
   "jakob_Biogas_Plant",
   "jakob_Nates_Windmill",
   "jakob_compact_menus",
-  "disable-fertilities-jakob"
+  "disable-fertilities-jakob",
+  "cheat-instant-residences-jakob"
 ];
 
 const modsToPackage = glob.sync("./out/*/modinfo.json")
