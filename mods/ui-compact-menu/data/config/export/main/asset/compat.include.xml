@@ -64,6 +64,7 @@
 
   <Group Condition="#red_tile_roof_building_variations">
     <ModOp Type="add" GUID="500094"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='101037222']"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='101037222']">
       <CompactMarket />
     </ModOp>
@@ -130,6 +131,7 @@
     include 1010463 to avoid warnings if none of the above exist
   -->
   <ModOp Type="add" GUID="500092"
+    Condiiton="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or Building='1337500011' or Building='1337500012' or Building='1337500018' or Building='1337500019' or Building='2000150010' or Building='2000150036']"
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or Building='1337500011' or Building='1337500012' or Building='1337500018' or Building='1337500019' or Building='2000150010' or Building='2000150036']">
     <CompactInstitution />
   </ModOp>

@@ -35,7 +35,7 @@ function copyFolderSync(source, target) {
 const idsToPackage = [
   "jakob_new_world_cities",
   "jakob_industrial_cities",
-  "jakob_Biogas_Plant",
+  "jakob_biogas",
   "jakob_Nates_Windmill",
   "jakob_compact_menus",
   "disable-fertilities-jakob",
