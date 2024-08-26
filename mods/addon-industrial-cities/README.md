@@ -156,6 +156,10 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
+### 4.2
+
+- Added Kurila's salt to cheese production
+
 ### 4.1
 
 - 4.1.1: Removed storage info for services in needs InfoTip

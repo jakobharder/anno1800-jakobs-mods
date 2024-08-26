@@ -34,6 +34,10 @@
       <Amount>0.00030303</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
+      <AdditionalGlobalUnlockRequirement>
+        <Population>15000001</Population>
+        <MinPopulationAmount>500</MinPopulationAmount>
+      </AdditionalGlobalUnlockRequirement>
     </Item>
   </ModOp>
   <!-- artisans -->
@@ -55,18 +59,30 @@
       <Amount>0.00017094</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
+      <AdditionalGlobalUnlockRequirement>
+        <Population>15000002</Population>
+        <MinPopulationAmount>900</MinPopulationAmount>
+      </AdditionalGlobalUnlockRequirement>
     </Item>
     <Item>
       <Product>1500010153</Product>
       <Amount>0.00047619</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
+      <AdditionalGlobalUnlockRequirement>
+        <Population>15000002</Population>
+        <MinPopulationAmount>900</MinPopulationAmount>
+      </AdditionalGlobalUnlockRequirement>
     </Item>
     <Item>
       <Product>1500010127</Product>
       <Amount>0.000444444</Amount>
       <ExcludePopulationFromMoneyAndConsumptionCalculation>1</ExcludePopulationFromMoneyAndConsumptionCalculation>
       <IsBonusNeed>1</IsBonusNeed>
+      <AdditionalGlobalUnlockRequirement>
+        <Population>15000002</Population>
+        <MinPopulationAmount>900</MinPopulationAmount>
+      </AdditionalGlobalUnlockRequirement>
     </Item>
   </ModOp>
   <!-- engineers -->
@@ -108,7 +124,7 @@
   <!-- lifestyle menu category -->
   <ModOp Type="addNextSibling" GUID="25000118" Path="/Values/ObjectmenuResidenceScene/BonusNeeds/BonusNeeds/Item[1]">
     <Item>
-      <Category>2268</Category>
+      <Category>2147483600</Category>
       <Needs>
         <Item>
           <BonusNeed>1500010836</BonusNeed>
@@ -211,6 +227,19 @@
       <Values>
         <Standard>
           <GUID>2268</GUID>
+          <Name>Alternative Needs Production</Name>
+          <IconFilename>data/ui/jakob/icon_alternative_lifestyle_category.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>1500010159</TextOverride>
+        </Text>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>2147483600</GUID>
           <Name>Alternative Needs Production</Name>
           <IconFilename>data/ui/jakob/icon_alternative_lifestyle_category.png</IconFilename>
         </Standard>
