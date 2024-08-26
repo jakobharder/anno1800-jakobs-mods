@@ -33,17 +33,13 @@ function copyFolderSync(source, target) {
 }
 
 const idsToPackage = [
-  "jakob-city-variations",
   "jakob_new_world_cities",
   "jakob_industrial_cities",
-  "jakob_Biogas_Plant",
-  "jakob_diagonal_residences",
+  "jakob_biogas",
   "jakob_Nates_Windmill",
-  "jakob_street_skins",
   "jakob_compact_menus",
   "disable-fertilities-jakob",
-  "disable-street-jakob",
-  "disable-railway-jakob"
+  "cheat-instant-residences-jakob"
 ];
 
 const modsToPackage = glob.sync("./out/*/modinfo.json")

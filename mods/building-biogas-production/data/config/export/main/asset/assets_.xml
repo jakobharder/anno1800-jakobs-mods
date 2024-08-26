@@ -1,18 +1,9 @@
 <!--
-Biogas Production
-
-Git: https://github.com/jakobharder/anno-1800-jakobs-mods
-GUIDs: https://github.com/anno-mods/GuidRanges
-
-1500010010-19
 // 1500010014 obsolete farm waste
 // 1500010017 (conflicts with InfoDescription in other mods)
-1500010037-38
-
 -->
-
 <ModOps>
-  <Include File="/data/jakob/small_gas_power_plant/assets.include.xml" />
+  <Include File="./gas-power-plant.include.xml" />
 
   <!-- # OW Biogas-->
   <ModOp Type="addNextSibling" GUID="100780">
@@ -26,29 +17,29 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <InfoDescription>1500010011</InfoDescription>
         </Standard>
         <Building>
-          <BuildingCategoryName>100000</BuildingCategoryName> <!-- production -->
+          <BuildingCategoryName>1500011584</BuildingCategoryName>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
           <AllowChangeVariation>1</AllowChangeVariation>
-          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+          <SecondPartyRelevant>0</SecondPartyRelevant>
           <BuildModeStartVariation>1</BuildModeStartVariation>
         </Building>
         <Cost>
           <Costs>
             <Item>
-              <Ingredient>1010017</Ingredient> <!-- Credits -->
+              <Ingredient>1010017</Ingredient>
               <Amount>80000</Amount>
             </Item>
             <Item>
-              <Ingredient>1010196</Ingredient> <!-- Timber -->
+              <Ingredient>1010196</Ingredient>
               <Amount>20</Amount>
             </Item>
             <Item>
-              <Ingredient>1010205</Ingredient> <!-- Bricks -->
+              <Ingredient>1010205</Ingredient>
               <Amount>20</Amount>
             </Item>
             <Item>
-              <Ingredient>1010218</Ingredient> <!-- Beams -->
+              <Ingredient>1010218</Ingredient>
               <Amount>20</Amount>
             </Item>
           </Costs>
@@ -57,11 +48,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IncomeCategory>ProductionBuildings</IncomeCategory>
           <Maintenances>
             <Item>
-              <Product>1010017</Product> <!-- Credits -->
+              <Product>1010017</Product>
               <Amount>400</Amount>
             </Item>
             <Item>
-              <Product>1010115</Product> <!-- Workers -->
+              <Product>1010115</Product>
               <Amount>300</Amount>
             </Item>
           </Maintenances>
@@ -181,10 +172,10 @@ GUIDs: https://github.com/anno-mods/GuidRanges
         </Standard>
         <Blocking />
         <Building>
-          <BuildingCategoryName>11151</BuildingCategoryName> <!-- infrastructure -->
+          <BuildingCategoryName>1500011584</BuildingCategoryName>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Moderate</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+          <SecondPartyRelevant>0</SecondPartyRelevant>
           <!-- Variation 1 is obsolete. You can still switch to it, but it shouldn't not show up by default. -->
           <AllowChangeVariation>1</AllowChangeVariation>
           <BuildModeStartVariation>0</BuildModeStartVariation>
@@ -309,6 +300,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <Name>farm_waste_service</Name>
           <IconFilename>data/ui/2kimages/main/3dicons/icon_dung.png</IconFilename>
         </Standard>
+        <Text>
+          <TextOverride>24806</TextOverride>
+        </Text>
         <Locked>
           <DLCDependency>410042</DLCDependency>
         </Locked>
@@ -331,6 +325,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data/ui/2kimages/main/3dicons/icon_dung.png</IconFilename>
           <InfoDescription>1500010013</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>24806</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -359,6 +356,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data/ui/2kimages/main/3dicons/icon_dung.png</IconFilename>
           <InfoDescription>1500010013</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>24806</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -387,6 +387,9 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data/ui/2kimages/main/3dicons/icon_dung.png</IconFilename>
           <InfoDescription>1500010013</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>24806</TextOverride>
+        </Text>
         <ItemEffect>
           <EffectTargets>
             <Item>
@@ -434,6 +437,7 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <GUID>1500010451</GUID>
           <Name>biogas_chain</Name>
           <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
+          <InfoDescription>1500011584</InfoDescription>
         </Standard>
         <ProductionChain>
           <Building>1500010010</Building>
@@ -469,22 +473,25 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
           <InfoDescription>1500010011</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>1500010010</TextOverride>
+        </Text>
         <Building>
-          <BuildingCategoryName>100000</BuildingCategoryName> <!-- production -->
+          <BuildingCategoryName>1500011584</BuildingCategoryName>
           <BuildModeRandomRotation>90</BuildModeRandomRotation>
           <AssociatedRegions>Colony01</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+          <SecondPartyRelevant>0</SecondPartyRelevant>
           <AllowChangeVariation>0</AllowChangeVariation>
         </Building>
         <Maintenance>
           <IncomeCategory>AdministrationBuildings</IncomeCategory>
           <Maintenances>
             <Item>
-              <Product>1010017</Product> <!-- Credits -->
+              <Product>1010017</Product>
               <Amount>400</Amount>
             </Item>
             <Item>
-              <Product>1010367</Product> <!-- Obreros -->
+              <Product>1010367</Product>
               <Amount>200</Amount>
             </Item>
           </Maintenances>
@@ -512,11 +519,14 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <IconFilename>data/ui/2kimages/main/3dicons/icon_dung.png</IconFilename>
           <InfoDescription>1500010013</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>1500010015</TextOverride>
+        </Text>
         <Building>
-          <BuildingCategoryName>100000</BuildingCategoryName> <!-- production -->
+          <BuildingCategoryName>1500011584</BuildingCategoryName>
           <BuildModeRandomRotation>180</BuildModeRandomRotation>
           <AssociatedRegions>Colony01</AssociatedRegions>
-          <SecondPartyRelevant>0</SecondPartyRelevant> <!-- tell AI to ignore this building -->
+          <SecondPartyRelevant>0</SecondPartyRelevant>
           <AllowChangeVariation>0</AllowChangeVariation>
         </Building>
         <Object>
@@ -542,7 +552,11 @@ GUIDs: https://github.com/anno-mods/GuidRanges
           <GUID>1500010452</GUID>
           <Name>biogas_chain_nw</Name>
           <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
+          <InfoDescription>1500011584</InfoDescription>
         </Standard>
+        <Text>
+          <TextOverride>1500010451</TextOverride>
+        </Text>
         <ProductionChain>
           <Building>1500010450</Building>
           <Tier1>

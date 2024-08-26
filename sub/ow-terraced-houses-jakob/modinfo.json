@@ -1,0 +1,38 @@
+{
+  "Version": "2.5.11",
+  "ModID": "jakob_terraced_houses",
+  "DeprecateIds": [
+    "jakob_upgradable_low_tier"
+  ],
+  "ModDependencies": [
+    "shared-pools-and-definitions",
+    "ow-sardines-jakob",
+    "ow-suits-jakob",
+    "ow-tea-jakob",
+    "ow-tools-jakob"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions",
+    "cheat-instant-residences-jakob"
+  ],
+  "Category": {
+    "Chinese": "建筑",
+    "English": "Building"
+  },
+  "ModName": {
+    "Chinese": "排屋(Jakob)",
+    "English": "Terraced Houses (Jakob)"
+  },
+  "DLCDependencies": [
+    {
+      "DLC": "Highlife",
+      "Dependant": "partly"
+    },
+    {
+      "DLC": "Docklands",
+      "Dependant": "partly"
+    }
+  ],
+  "CreatorName": "Jakob",
+  "CreatorContact": "https://github.com/jakobharder/anno-1800-jakobs-mods"
+}

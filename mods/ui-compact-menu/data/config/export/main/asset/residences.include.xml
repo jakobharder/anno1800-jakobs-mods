@@ -1,0 +1,279 @@
+<ModOps>
+  <!-- <Include File="./assets-buildable.include.xml" /> -->
+  <!-- use skyscraper button mod to fetch unique residence icons -->
+
+  <!-- # Picking Asset -->
+  <!-- <Group>
+    <ModOp Type="merge" GUID="1010344,1010345,1010346,1010347,101255,5405,114437,112652"
+      Path="/Values/Building"
+      Content="~/Values/Standard/GUID/text()">
+      <Building>
+        <PickingAsset><ModOpContent /></PickingAsset>
+      </Building>
+    </ModOp>
+  </Group> -->
+
+  <!-- # Icons -->
+  <Group Condition="@500092/ConstructionCategory/BuildingList/Item[Building='1010344']">
+    <ModOp Type="merge" GUID="1010344,1010345,1010346,1010347,101255,5405,114437,112652"
+      Path="/Values/Constructable"
+      Content="~/Values/Standard/GUID/text()">
+      <Constructable>
+        <ConstructionMenuIcon><ModOpContent /></ConstructionMenuIcon>
+      </Constructable>
+    </ModOp>
+
+    <ModOp Type="addNextSibling" GUID="1010343">
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011570</GUID>
+            <Name>Farmer Icon</Name>
+            <IconFilename>data/ui/jakob/icon_instant_farmers.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011571</GUID>
+            <Name>Jornalero Icon</Name>
+            <IconFilename>data/ui/jakob/icon_instant_jornaleros.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011572</GUID>
+            <Name>Shepherd Icon</Name>
+            <IconFilename>data/ui/jakob/icon_instant_shepherds.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Icon</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011573</GUID>
+            <Name>Explorer Icon</Name>
+            <IconFilename>data/ui/jakob/icon_instant_explorers.png</IconFilename>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+
+    <ModOp Type="merge" GUID="1010343" Path="/Values/Constructable">
+      <Constructable>
+        <ConstructionMenuIcon>1500011570</ConstructionMenuIcon>
+      </Constructable>
+    </ModOp>
+    <ModOp Type="merge" GUID="101254" Path="/Values/Constructable">
+      <Constructable>
+        <ConstructionMenuIcon>1500011571</ConstructionMenuIcon>
+      </Constructable>
+    </ModOp>
+    <ModOp Type="merge" GUID="114436" Path="/Values/Constructable">
+      <Constructable>
+        <ConstructionMenuIcon>1500011572</ConstructionMenuIcon>
+      </Constructable>
+    </ModOp>
+    <ModOp Type="merge" GUID="112091" Path="/Values/Constructable">
+      <Constructable>
+        <ConstructionMenuIcon>1500011573</ConstructionMenuIcon>
+      </Constructable>
+    </ModOp>
+  </Group>
+
+  <!-- # City Menu -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010343">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011566</GUID>
+            <Name>OW Instant Residences</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>22976</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <CategoryDescription>1500011541</CategoryDescription>
+            <BuildingList />
+          </ConstructionCategory>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011567</GUID>
+            <Name>NW Instant Residences</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>22976</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <CategoryDescription>1500011541</CategoryDescription>
+            <BuildingList />
+          </ConstructionCategory>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011568</GUID>
+            <Name>Enbesa Instant Residences</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>22976</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <CategoryDescription>1500011541</CategoryDescription>
+            <BuildingList>
+              <Item>
+                <Building>114436</Building>
+                <Shepherd>0</Shepherd>
+              </Item>
+              <Item>
+                <Building>114437</Building>
+                <Elder>1</Elder>
+              </Item>
+            </BuildingList>
+          </ConstructionCategory>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011583</GUID>
+            <Name>Arctic Instant Residences</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_resident.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>22976</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <CategoryDescription>1500011541</CategoryDescription>
+            <BuildingList>
+              <Item>
+                <Building>112091</Building>
+                <Explorer>0</Explorer>
+              </Item>
+              <Item>
+                <Building>112652</Building>
+                <Technician>1</Technician>
+              </Item>
+            </BuildingList>
+          </ConstructionCategory>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>Text</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011569</GUID>
+            <Name>Mod name: Instant Residences (Jakob)</Name>
+          </Standard>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
+
+  <!-- # OW Construction Menus -->
+  <!-- trigger when Workers are in the menu -->
+  <Group Condition="@500092/ConstructionCategory/BuildingList/Item[Building='1010344']">
+    <ModOp Type="merge" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010343']">
+      <CompactResidence />
+      <Farmer>0</Farmer>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010344']">
+      <CompactResidence />
+      <Worker>0</Worker>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010345']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010345']">
+      <CompactResidence />
+      <Artisan>0</Artisan>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010346']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010346']">
+      <CompactResidence />
+      <Engineer>0</Engineer>
+    </ModOp>
+    <ModOp Type="merge" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1010347']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010347']">
+      <CompactResidence />
+      <Investor>0</Investor>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Residence and Farmer&lt;=0][last()]">
+      <Item>
+        <Building>1500011566</Building>
+        <Farmer>0</Farmer>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1500011566"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactResidence]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500092"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]" />
+    <ModOp Type="remove" GUID="1500011566"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # NW Construction Menus -->
+  <!-- trigger when Obreros are in the menu -->
+  <Group Condition="@500137/ConstructionCategory/BuildingList/Item[Building='101255']">
+    <ModOp Type="merge" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254']">
+      <CompactResidence />
+      <Jornalero>0</Jornalero>
+    </ModOp>
+    <ModOp Type="merge" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101255']">
+      <CompactResidence />
+      <Obrero>0</Obrero>
+    </ModOp>
+    <ModOp Type="merge" GUID="500137"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='5405']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='5405']">
+      <CompactResidence />
+      <Artista>0</Artista>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500137"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='101254'][last()]">
+      <Item>
+        <Building>1500011567</Building>
+        <Jornalero>0</Jornalero>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="1500011567"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500137/ConstructionCategory/BuildingList/Item[CompactResidence]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500137"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactResidence]" />
+    <ModOp Type="remove" GUID="1500011567"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+</ModOps>

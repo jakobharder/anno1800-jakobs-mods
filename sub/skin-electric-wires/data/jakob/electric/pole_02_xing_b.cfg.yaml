@@ -1,7 +1,0 @@
-variant:
-  source: pole_01_straight.cfg
-  modifications:
-    - xpath: //Config/Models/Config
-      FileName: data\jakob\electric\rdm\electricity_pole_03b_lod0.rdm
-    - xpath-remove: //Config/Lights
-    - xpath-remove: //Config/Models/Config/Materials/Config[Name='pole']

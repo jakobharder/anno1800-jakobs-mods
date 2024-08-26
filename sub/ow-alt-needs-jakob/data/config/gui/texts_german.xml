@@ -1,0 +1,63 @@
+<ModOps>
+  <!-- # Alternative Needs -->
+  <Group Skip="1">
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500019']/Text">
+      <Text>Kleidung</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='25000244']/Text">
+      <Text>Nahrung</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500004']/Text">
+      <Text>Nahrung</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500008']/Text">
+      <Text>Konserven</Text>
+    </ModOp>
+    <ModOp Type="replace" Path="/TextExport/Texts/Text[GUID='500003']/Text">
+      <Text>[AssetData(984) Text]</Text> <!-- Tools -->
+    </ModOp>
+  </Group>
+
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500010846</GUID>
+      <Text>Einfache Nahrung</Text>
+    </Text>
+    <Text>
+      <GUID>1500010826</GUID>
+      <Text>Alternative Bedürfnisse</Text>
+    </Text>
+    <Text>
+      <GUID>1500011370</GUID>
+      <Text>Aktiviere alternative Versorgung in &lt;font overrideTextColor="true" color='#ffe4ad'&gt;Lebensqualitätsbedürfnisse&lt;/font&gt; oder im &lt;font overrideTextColor="true" color='#ffe4ad'&gt;Marktplatz&lt;/font&gt;.</Text>
+    </Text>
+    <Text>
+      <GUID>1500010159</GUID>
+      <Text>Alternative Bedürfnisse</Text>
+    </Text>
+    <Text>
+      <GUID>1500010949</GUID>
+      <Text>Alternativ- &amp; Luxusbedürfnis</Text>
+    </Text>
+    <Text>
+      <GUID>1500010950</GUID>
+      <Text>Alternativ- &amp; Grundbedürfnis</Text>
+    </Text>
+    <Text>
+      <GUID>1500011545</GUID>
+      <Text>Alternative Versorgung</Text>
+    </Text>
+    <Text>
+      <GUID>1500011546</GUID>
+      <Text>Alternativen verboten</Text>
+    </Text>
+  </ModOp>
+
+  <!-- # Alternatives Tab -->
+  <ModOp Type="add" Path="/TextExport/Texts">
+    <Text>
+      <GUID>1500011338</GUID>
+      <Text>Kaffee und Tee</Text>
+    </Text>
+  </ModOp>
+</ModOps>

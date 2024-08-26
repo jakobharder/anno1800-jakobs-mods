@@ -156,6 +156,18 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
+### 4.2
+
+- Renamed Vegetables into Field Vegetables to differentiate better from Red Peppers
+- Added support for Khobs' land oil depot
+- Added Olive Grove to all crop farms pool
+- Removed 100 cost when upgrading from farmer to Pescatarian I
+- Fixed Dockland sell prices for Ropes and Olive Oil
+- Fixed Pescatarian menu unlocking to early because of the Potato farm
+- Fixed Distillery and Malthouse missing in boost menu
+- Alternative Needs are now listed last in Lifestyle Needs.
+  Recommend to use the Marketplace to activate in InfoTips.
+
 ### 4.1
 
 - 4.1.1: Removed storage info for services in needs InfoTip
