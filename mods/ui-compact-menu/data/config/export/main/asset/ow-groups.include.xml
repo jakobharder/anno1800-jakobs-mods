@@ -698,6 +698,12 @@
         </Values>
       </Asset>
     </ModOp>
+    <ModOp GUID="500506" Type="add" Condition="#khobs_land_oil_depot"
+      Path="/Values/ProductionChain/Tier1">
+      <Item>
+        <Building>2143505006</Building>
+      </Item>
+    </ModOp>
     <ModOp Type="addNextSibling" GUID="500092,25000192"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='500506' or position()=last()][1]">
       <Item>
