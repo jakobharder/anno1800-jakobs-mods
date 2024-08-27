@@ -7,8 +7,12 @@ New population tiers, products, industries and tons of new visual assets (custom
 These are your options:
 
 - Subscribe at [Mod.io](https://mod.io/g/anno-1800/u/jakobscollection)
-- Download and install using [iModYourAnno](https://github.com/anno-mods/iModYourAnno/releases) mod manager
-- [Install manually](https://github.com/jakobharder/anno1800-mod-loader#mods) with downloads from [Mod.io](https://mod.io/g/anno-1800/u/jakobscollection) or [GitHub releases](https://github.com/jakobharder/anno-1800-jakobs-mods/releases).
+- [Install manually](https://github.com/jakobharder/anno1800-mod-loader#mods) with downloads from
+  - [Mod.io: all mods](https://mod.io/g/anno-1800/u/jakobscollection)
+  - [GitHub: Industrial Cities](https://github.com/jakobharder/anno1800-jakobs-mods/releases)
+  - [GitHub: City Variations](https://github.com/jakobharder/anno1800-city-variations/releases)
+  - [GitHub: New World Cities](https://github.com/jakobharder/anno1800-city-variations/releases)
+
 
 ## Changes
 
