@@ -11,7 +11,7 @@ These are your options:
   - [Mod.io: all mods](https://mod.io/g/anno-1800/u/jakobscollection)
   - [GitHub: Industrial Cities](https://github.com/jakobharder/anno1800-jakobs-mods/releases)
   - [GitHub: City Variations](https://github.com/jakobharder/anno1800-city-variations/releases)
-  - [GitHub: New World Cities](https://github.com/jakobharder/anno1800-city-variations/releases)
+  - [GitHub: New World Cities](https://github.com/jakobharder/anno1800-new-world-cities/releases)
 
 
 ## Changes
