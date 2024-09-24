@@ -81,22 +81,19 @@
       <Values>
         <Standard>
           <GUID>1500011205</GUID>
-          <Name>Always unlock with Empire Skies</Name>
+          <Name>@ 500 Artisans</Name>
         </Standard>
         <Locked />
         <Trigger>
           <TriggerCondition>
-            <Template>ConditionIsDLCActive</Template>
+            <Template>ConditionPlayerCounter</Template>
             <Values>
               <Condition />
-              <ConditionIsDLCActive>
-                <DLCAssetList>
-                  <Item>
-                    <DLCAsset>24962</DLCAsset>
-                  </Item>
-                </DLCAssetList>
-              </ConditionIsDLCActive>
-              <ConditionPropsNegatable />
+              <ConditionPlayerCounter>
+                <PlayerCounter>PopulationByLevel</PlayerCounter>
+                <Context>15000002</Context>
+                <CounterAmount>500</CounterAmount>
+              </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
           <TriggerActions>
