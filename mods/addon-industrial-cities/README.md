@@ -158,6 +158,8 @@ Smaller **power plants** and additional energy options.
 
 ### 4.2
 
+- 4.2.1: Fixed Dockland export prices for Olives and Olive Oil
+- 4.2.1: Fixed minor unlock/unhide timings
 - Renamed Vegetables into Field Vegetables to differentiate better from Red Peppers
 - Added support for Khobs' land oil depot
 - Added Olive Grove to all crop farms pool
