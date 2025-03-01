@@ -4,6 +4,17 @@
 -->
 <ModOps>
   <Include File="./gas-power-plant.include.xml" />
+  <Include File="./fuel.include.xml" />
+  <Include File="./menu.include.xml" />
+  <Include File="./unlocks.include.xml" />
+
+  <!-- # Bugfix broken building data 1500010010 -->
+  <ModOp Type="addNextSibling" GUID="142954" Path="/Values/GameUpdateFeature/Updates">
+    <Item>
+      <OldGUID>1500010010</OldGUID>
+      <NewGUID>1500011594</NewGUID>
+    </Item>
+  </ModOp>
 
   <!-- # OW Biogas-->
   <ModOp Type="addNextSibling" GUID="100780">
@@ -11,6 +22,7 @@
       <Template>FactoryBuilding7</Template>
       <Values>
         <Standard>
+          <!-- <GUID>1500010010</GUID> -->
           <GUID>1500010010</GUID>
           <Name>biogas_plant</Name>
           <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
@@ -44,26 +56,6 @@
             </Item>
           </Costs>
         </Cost>
-        <Maintenance>
-          <IncomeCategory>ProductionBuildings</IncomeCategory>
-          <Maintenances>
-            <Item>
-              <Product>1010017</Product>
-              <Amount>400</Amount>
-            </Item>
-            <Item>
-              <Product>1010115</Product>
-              <Amount>300</Amount>
-            </Item>
-          </Maintenances>
-        </Maintenance>
-        <Selection>
-          <GUIType>Production</GUIType>
-          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
-          <Colors>
-            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
-          </Colors>
-        </Selection>
         <Object>
           <Variations>
             <Item>
@@ -74,6 +66,18 @@
             </Item>
           </Variations>
         </Object>
+        <Mesh />
+        <Selection>
+          <GUIType>Production</GUIType>
+          <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
+          <Colors>
+            <WeakSelectionColorType>NoColor</WeakSelectionColorType>
+          </Colors>
+        </Selection>
+        <Constructable>
+          <DestructionCategory>Production</DestructionCategory>
+        </Constructable>
+        <Locked />
         <SoundEmitter>
           <ActiveSounds>
             <!-- from soap factory -->
@@ -98,46 +102,23 @@
             </Item>
           </DestroySounds>
         </SoundEmitter>
-        <Locked />
-        <AmbientMoodProvider>
-          <Murmur>Factory</Murmur>
-          <DynamicEnvironmentType>None</DynamicEnvironmentType>
-        </AmbientMoodProvider>
-        <Attackable>
-          <AttackableType>IslandBuilding</AttackableType>
-          <MaximumHitPoints>1000</MaximumHitPoints>
-          <SelfHealPerHealTick>4</SelfHealPerHealTick>
-        </Attackable>
-        <IncidentInfectable>
-          <Infectable>
-            <Fire>
-              <Base>1</Base>
-            </Fire>
-          </Infectable>
-        </IncidentInfectable>
-        <Culture>
-          <Attractiveness>-40</Attractiveness>
-          <CultureType>Factory</CultureType>
-          <HasPollution>1</HasPollution>
-        </Culture>
-        <Industrializable>
-          <!-- disable electricity -->
-          <BoostedByIndustrialization>0</BoostedByIndustrialization>
-        </Industrializable>
-        <Electrifiable>
-          <ElectricityBoost>0</ElectricityBoost>
-        </Electrifiable>
+        <FeedbackController />
+        <Infolayer />
+        <UpgradeList>
+          <DefaultBuff>1500011589</DefaultBuff>
+        </UpgradeList>
+        <Factory7 />
         <FactoryBase>
           <FactoryInputs>
             <Item>
-              <Product>24807</Product> <!-- bio waste -->
+              <Product>24807</Product>
               <Amount>3</Amount>
               <StorageAmount>12</StorageAmount>
             </Item>
           </FactoryInputs>
           <FactoryOutputs>
             <Item>
-              <Product>112706</Product> <!-- gas -->
+              <Product>112706</Product>
               <Amount>1</Amount>
               <StorageAmount>4</StorageAmount>
             </Item>
@@ -150,6 +131,50 @@
         <LogisticNode>
           <TransporterCountMax>2</TransporterCountMax>
         </LogisticNode>
+        <AmbientMoodProvider>
+          <Murmur>Factory</Murmur>
+          <DynamicEnvironmentType>None</DynamicEnvironmentType>
+        </AmbientMoodProvider>
+        <Maintenance>
+          <IncomeCategory>ProductionBuildings</IncomeCategory>
+          <Maintenances>
+            <Item>
+              <Product>1010017</Product>
+              <Amount>400</Amount>
+            </Item>
+            <Item>
+              <Product>1010115</Product>
+              <Amount>300</Amount>
+            </Item>
+          </Maintenances>
+        </Maintenance>
+        <Attackable>
+          <AttackableType>IslandBuilding</AttackableType>
+          <MaximumHitPoints>1000</MaximumHitPoints>
+          <SelfHealPerHealTick>4</SelfHealPerHealTick>
+        </Attackable>
+        <Pausable />
+        <IncidentInfectable>
+          <Infectable>
+            <Fire>
+              <Base>1</Base>
+            </Fire>
+          </Infectable>
+        </IncidentInfectable>
+        <Industrializable>
+          <!-- disable electricity -->
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Culture>
+          <Attractiveness>-40</Attractiveness>
+          <CultureType>Factory</CultureType>
+          <HasPollution>1</HasPollution>
+        </Culture>
+        <QuestObject />
+        <Electrifiable>
+          <ElectricityBoost>0</ElectricityBoost>
+        </Electrifiable>
+        <EcoSystemProvider />
       </Values>
     </Asset>
     <Asset>
@@ -431,36 +456,37 @@
       </Values>
     </Asset>
     <Asset>
-      <Template>ProductionChain</Template>
+      <Template>GuildhouseBuff</Template>
       <Values>
         <Standard>
-          <GUID>1500010451</GUID>
-          <Name>biogas_chain</Name>
-          <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
-          <InfoDescription>1500011584</InfoDescription>
+          <GUID>1500011589</GUID>
+          <Name>Fertilizer Byproduct</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/scenario/goods/icon_fertilizer_good.png</IconFilename>
+          <InfoDescription>1500010013</InfoDescription>
         </Standard>
-        <ProductionChain>
-          <Building>1500010010</Building>
-          <Tier1>
+        <Text>
+          <TextOverride>25760</TextOverride>
+        </Text>
+        <ItemEffect>
+          <EffectTargets>
             <Item>
-              <Building>1500010015</Building>
+              <GUID>1500010010</GUID>
             </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked />
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+        <FactoryUpgrade>
+          <AdditionalOutput>
+            <Item>
+              <Product>24808</Product>
+              <AdditionalOutputCycle>1</AdditionalOutputCycle>
+              <Amount>1</Amount>
+            </Item>
+          </AdditionalOutput>
+        </FactoryUpgrade>
       </Values>
     </Asset>
   </ModOp>
-  <!-- +/-50% boostable factories -->
-  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
-    <Item>
-      <Factory>1500010010</Factory>
-    </Item>
-    <Item>
-      <Factory>1500010450</Factory>
-    </Item>
-  </ModOp>
-
 
   <!-- # NW Biogas -->
   <ModOp Type="addNextSibling" GUID="1500010015">
@@ -545,404 +571,5 @@
         <Locked />
       </Values>
     </Asset>
-    <Asset>
-      <Template>ProductionChain</Template>
-      <Values>
-        <Standard>
-          <GUID>1500010452</GUID>
-          <Name>biogas_chain_nw</Name>
-          <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
-          <InfoDescription>1500011584</InfoDescription>
-        </Standard>
-        <Text>
-          <TextOverride>1500010451</TextOverride>
-        </Text>
-        <ProductionChain>
-          <Building>1500010450</Building>
-          <Tier1>
-            <Item>
-              <Building>1500010453</Building>
-            </Item>
-          </Tier1>
-        </ProductionChain>
-        <Locked />
-      </Values>
-    </Asset>
   </ModOp>
-
-
-  <!-- # Buff target pools -->
-  <!-- add to maintenance, public -->
-  <ModOp Type="add" GUID="368,190136" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010010</GUID> <!-- biogas plant -->
-    </Item>
-    <Item>
-      <GUID>1500010015</GUID> <!-- depot -->
-    </Item>
-    <Item>
-      <GUID>1500010450</GUID> <!-- biogas plant -->
-    </Item>
-    <Item>
-      <GUID>1500010453</GUID> <!-- depot -->
-    </Item>
-  </ModOp>
-  <!-- add to production -->
-  <ModOp Type="add" GUID="6000018" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
-    <Item>
-      <GUID>1500010010</GUID> <!-- biogas plant -->
-    </Item>
-    <Item>
-      <GUID>1500010450</GUID> <!-- biogas plant -->
-    </Item>
-  </ModOp>
-
-
-  <!-- # Construction menus -->
-  <ModOp Type="addNextSibling" GUID="117559"
-    Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
-    <Item>
-      <Building>1500010010</Building>
-      <Tier2>
-        <Item>
-          <Building>1500010015</Building>
-        </Item>
-      </Tier2>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="500943"
-    Path="/Values/ConstructionCategory/BuildingList">
-    <Item>
-      <Building>1500010451</Building>
-    </Item>
-  </ModOp>
-  <ModOp Type="add" GUID="500949"
-    Path="/Values/ConstructionCategory/BuildingList">
-    <Item>
-      <Building>1500010452</Building>
-    </Item>
-  </ModOp>
-
-
-  <!-- # Unlocks -->
-  <!-- OW -->
-  <Group>
-    <!-- same as gas powerplant -->
-    <ModOp Type="addNextSibling" GUID="119">
-      <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010454</GUID>
-            <!-- <GUID>1500010016</GUID> -->
-            <Name>@ 1 Investor</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionPlayerCounter</Template>
-              <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                  <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000004</Context>
-                  <CounterAmount>1</CounterAmount>
-                </ConditionPlayerCounter>
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnlockAssets>
-                        <Item>
-                          <Asset>1500010010</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010015</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010451</Asset>
-                        </Item>
-                      </UnlockAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-      <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010455</GUID>
-            <!-- <GUID>1500010017</GUID> -->
-            <Name>Unhide @ 1 Engineer</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionPlayerCounter</Template>
-              <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                  <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000003</Context> <!-- 1 engineer -->
-                  <CounterAmount>1</CounterAmount>
-                </ConditionPlayerCounter>
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnhideAssets>
-                        <Item>
-                          <Asset>1500010010</Asset> <!-- biogas plant -->
-                        </Item>
-                        <Item>
-                          <Asset>1500010015</Asset> <!-- waste depot -->
-                        </Item>
-                        <Item>
-                          <Asset>1500010451</Asset>
-                        </Item>
-                      </UnhideAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-    </ModOp>
-  </Group>
-  <!-- NW -->
-  <Group>
-    <ModOp Type="addNextSibling" GUID="119">
-      <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010465</GUID>
-            <Name>@ 2000 Obreros</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionPlayerCounter</Template>
-              <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                  <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000006</Context>
-                  <CounterAmount>2000</CounterAmount>
-                </ConditionPlayerCounter>
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnlockAssets>
-                        <Item>
-                          <Asset>1500010450</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010452</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010453</Asset>
-                        </Item>
-                      </UnlockAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-      <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010478</GUID>
-            <Name>@ 1 Artista</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionPlayerCounter</Template>
-              <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                  <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>5403</Context>
-                  <CounterAmount>1</CounterAmount>
-                </ConditionPlayerCounter>
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnlockAssets>
-                        <Item>
-                          <Asset>1500010450</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010452</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010453</Asset>
-                        </Item>
-                      </UnlockAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-      <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010466</GUID>
-            <Name>Unhide @ 600 Obreros</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionPlayerCounter</Template>
-              <Values>
-                <Condition />
-                <ConditionPlayerCounter>
-                  <PlayerCounter>PopulationByLevel</PlayerCounter>
-                  <Context>15000006</Context>
-                  <CounterAmount>600</CounterAmount>
-                </ConditionPlayerCounter>
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnhideAssets>
-                        <Item>
-                          <Asset>1500010450</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010451</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010452</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010453</Asset>
-                        </Item>
-                      </UnhideAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-    </ModOp>
-  </Group>
-  <!-- Creative Mode -->
-  <Group>
-    <ModOp Type="addNextSibling" GUID="119">
-      <Asset>
-        <Template>FeatureUnlock</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010477</GUID>
-            <Name>Creative Mode</Name>
-          </Standard>
-          <Locked />
-          <Trigger>
-            <TriggerCondition>
-              <Template>ConditionIsCreativeMode</Template>
-              <Values>
-                <Condition />
-                <ConditionIsCreativeMode />
-              </Values>
-            </TriggerCondition>
-            <TriggerActions>
-              <Item>
-                <TriggerAction>
-                  <Template>ActionUnlockAsset</Template>
-                  <Values>
-                    <Action />
-                    <ActionUnlockAsset>
-                      <UnlockAssets>
-                        <Item>
-                          <Asset>1500010010</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010015</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010451</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010450</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010452</Asset>
-                        </Item>
-                        <Item>
-                          <Asset>1500010453</Asset>
-                        </Item>
-                      </UnlockAssets>
-                    </ActionUnlockAsset>
-                  </Values>
-                </TriggerAction>
-              </Item>
-            </TriggerActions>
-          </Trigger>
-          <TriggerSetup>
-            <UsedBySecondParties>0</UsedBySecondParties>
-          </TriggerSetup>
-        </Values>
-      </Asset>
-    </ModOp>
-  </Group>
 </ModOps>

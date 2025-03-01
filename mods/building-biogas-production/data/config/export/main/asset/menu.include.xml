@@ -1,0 +1,167 @@
+<ModOps>
+  <!-- # Construction menus -->
+  <ModOp Type="addNextSibling" GUID="117559"
+    Path="/Values/ProductionChain/Tier1/Item[Building='112690']">
+    <Item>
+      <Building>1500010010</Building>
+      <Tier2>
+        <Item>
+          <Building>1500010015</Building>
+        </Item>
+      </Tier2>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="500943"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010451</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="500945" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011591</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan or Engineer&lt;=500][last()]">
+      <Item>
+        <Building>1500011591</Building>
+        <Engineer>500</Engineer>
+      </Item>
+    </ModOp>
+  <ModOp Type="add" GUID="500949"
+    Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500010452</Building>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="100780">
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010451</GUID>
+          <Name>biogas_chain</Name>
+          <IconFilename>data/ui/jakob/icon_gas_and_fuel.png</IconFilename>
+          <InfoDescription>1500011584</InfoDescription>
+        </Standard>
+        <ProductionChain>
+          <Building>1500011590</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010010</Building>
+              <Tier2>
+                <Item>
+                  <Building>1500010015</Building>
+                </Item>
+              </Tier2>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011591</GUID>
+          <Name>fertilizer chain</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/scenario/goods/icon_fertilizer_good.png</IconFilename>
+          <InfoDescription>1500011584</InfoDescription>
+        </Standard>
+        <Text>
+          <TextOverride>24808</TextOverride>
+        </Text>
+        <ProductionChain>
+          <Building>1500010010</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010015</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ProductionChain</Template>
+      <Values>
+        <Standard>
+          <GUID>1500010452</GUID>
+          <Name>biogas_chain_nw</Name>
+          <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>
+          <InfoDescription>1500011584</InfoDescription>
+        </Standard>
+        <ProductionChain>
+          <Building>1500010450</Building>
+          <Tier1>
+            <Item>
+              <Building>1500010453</Building>
+            </Item>
+          </Tier1>
+        </ProductionChain>
+        <Locked />
+      </Values>
+    </Asset>
+  </ModOp>
+  <ModOp Type="add" GUID="269756" Path="/Values/ProductionChain/Tier1">
+    <Item>
+      <Building>1500011590</Building>
+      <Tier2>
+        <Item>
+          <Building>1500010010</Building>
+          <Tier3>
+            <Item>
+              <Building>1500010015</Building>
+            </Item>
+          </Tier3>
+        </Item>
+      </Tier2>
+    </Item>
+  </ModOp>
+
+  <!-- # Buff target pools -->
+  <!-- add to maintenance, public -->
+  <ModOp Type="add" GUID="368,190136" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010010</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010015</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010450</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010453</GUID>
+    </Item>
+    <Item>
+      <GUID>1500011590</GUID>
+    </Item>
+  </ModOp>
+  <!-- add to production -->
+  <ModOp Type="add" GUID="6000018" Path="/Values/ItemEffectTargetPool/EffectTargetGUIDs">
+    <Item>
+      <GUID>1500010010</GUID>
+    </Item>
+    <Item>
+      <GUID>1500010450</GUID>
+    </Item>
+    <Item>
+      <GUID>1500011590</GUID>
+    </Item>
+  </ModOp>
+  <!-- +/-50% boostable factories -->
+  <ModOp Type="add" GUID="25000087" Path="/Values/WorkforceMenu/BoostableFactories">
+    <Item>
+      <Factory>1500010010</Factory>
+    </Item>
+    <Item>
+      <Factory>1500010450</Factory>
+    </Item>
+    <Item>
+      <Factory>1500011590</Factory>
+    </Item>
+  </ModOp>
+</ModOps>
