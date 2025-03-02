@@ -68,7 +68,12 @@
         </Object>
         <Mesh />
         <Selection>
-          <GUIType>Production</GUIType>
+          <OnSelection>
+            <IsBaseAutoCreateAsset>1</IsBaseAutoCreateAsset>
+            <Values>
+              <ActionList />
+            </Values>
+          </OnSelection>
           <ParticipantMessageArcheType>Resident_tier02_atWork</ParticipantMessageArcheType>
           <Colors>
             <WeakSelectionColorType>NoColor</WeakSelectionColorType>
@@ -89,7 +94,6 @@
             </Item>
           </ActiveSounds>
           <IncidentSounds>
-            <!-- from soap factory -->
             <InfectedFire>
               <Item>
                 <Sound>214659</Sound>
@@ -136,7 +140,6 @@
           <DynamicEnvironmentType>None</DynamicEnvironmentType>
         </AmbientMoodProvider>
         <Maintenance>
-          <IncomeCategory>ProductionBuildings</IncomeCategory>
           <Maintenances>
             <Item>
               <Product>1010017</Product>
@@ -155,11 +158,19 @@
         </Attackable>
         <Pausable />
         <IncidentInfectable>
-          <Infectable>
+          <Explosion>
+            <DamageExplosionChance>10</DamageExplosionChance>
+          </Explosion>
+          <IncidentInfectionChanceFactors>
             <Fire>
-              <Base>1</Base>
+              <DensityDistance>15</DensityDistance>
+              <FactoryProductivityFactor>0.1</FactoryProductivityFactor>
+              <FactoryUndertimeFactor>0.05</FactoryUndertimeFactor>
             </Fire>
-          </Infectable>
+            <Explosion>
+              <BaseChance>4</BaseChance>
+            </Explosion>
+          </IncidentInfectionChanceFactors>
         </IncidentInfectable>
         <Industrializable>
           <!-- disable electricity -->
@@ -273,29 +284,11 @@
         <LogisticNode />
         <FactoryBase />
         <BuffFactory>
-          <BaseBuff>1500010012</BaseBuff> <!-- pig farm -->
+          <BaseBuff>1500011596</BaseBuff>
           <BaseBuffScope>Radius</BaseBuffScope>
           <BaseBuffDistance>10</BaseBuffDistance>
-          <ProductionBuffs>
-            <!-- note: multiple buffs won't work. Only last applicable buff is chosen. -->
-            <Item>
-              <ProductivityBuff>1500010018</ProductivityBuff> <!-- cattle farm -->
-            </Item>
-          </ProductionBuffs>
-          <ProductionBuffScope>Radius</ProductionBuffScope>
-          <ProductionBuffDistance>10</ProductionBuffDistance>
         </BuffFactory>
-        <!-- and now a hack to to highlight at least production buildings when building -->
-        <!-- <ItemContainer>
-          <SocketCount>0</SocketCount>
-          <SocketAllocation>RadiusBuilding</SocketAllocation>
-          <SocketScope>Radius</SocketScope>
-          <SocketScopeRadius>10</SocketScopeRadius>
-        </ItemContainer> -->
-        <UpgradeList>
-          <!-- use forwardbuff on self to get a 3rd buff -->
-          <DefaultBuff>1500010038</DefaultBuff>
-        </UpgradeList>
+        <UpgradeList />
         <PublicService>
           <!-- dummy public service to ensure ProductionBuffs are working -->
           <FullSatisfactionDistance>10</FullSatisfactionDistance>
@@ -486,6 +479,50 @@
         </FactoryUpgrade>
       </Values>
     </Asset>
+    <Asset>
+      <Template>EffectContainer</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011596</GUID>
+          <Name>Productivity_Decree5</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/palace/icon_union_impulse.png</IconFilename>
+        </Standard>
+        <Text>
+          <TextOverride>24806</TextOverride>
+        </Text>
+        <EffectContainer>
+          <Effects>
+            <Item>
+              <Effect>1500010018</Effect>
+            </Item>
+            <Item>
+              <Effect>1500010012</Effect>
+            </Item>
+            <Item>
+              <Effect>1500010037</Effect>
+            </Item>
+          </Effects>
+        </EffectContainer>
+        <!-- stupid hack to get all farms highlighted -->
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>1010269</GUID>
+            </Item>
+            <Item>
+              <GUID>1010263</GUID>
+            </Item>
+            <Item>
+              <GUID>1500010104</GUID>
+            </Item>
+            <Item>
+              <GUID>1010267</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
+      </Values>
+    </Asset>
   </ModOp>
 
   <!-- # NW Biogas -->
@@ -564,11 +601,49 @@
         </Object>
         <BuffFactory>
           <ProductionBuffScope>Radius</ProductionBuffScope>
-          <BaseBuff>24806</BaseBuff>
+          <BaseBuff>1500011595</BaseBuff>
           <BaseBuffScope>Radius</BaseBuffScope>
           <BaseBuffDistance>10</BaseBuffDistance>
         </BuffFactory>
         <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <!-- use an effect container for two reasons:
+        1. forward the same Dung effect to avoid stacking
+        2. define own effect targets to have only NW farms in the InfoTip
+      -->
+      <Template>EffectContainer</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011595</GUID>
+          <Name>Dung_Buff</Name>
+          <IconFilename>data/ui/2kimages/main/3dicons/icon_dung.png</IconFilename>
+        </Standard>
+        <EffectContainer>
+          <Effects>
+            <Item>
+              <Effect>24806</Effect>
+            </Item>
+          </Effects>
+        </EffectContainer>
+        <ItemEffect>
+          <EffectTargets>
+            <Item>
+              <GUID>101272</GUID>
+            </Item>
+            <Item>
+              <GUID>114456</GUID>
+            </Item>
+            <Item>
+              <GUID>114439</GUID>
+            </Item>
+            <Item>
+              <GUID>5457</GUID>
+            </Item>
+          </EffectTargets>
+          <AllowStacking>0</AllowStacking>
+        </ItemEffect>
       </Values>
     </Asset>
   </ModOp>

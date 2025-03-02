@@ -55,7 +55,8 @@
       </InfoElement>
     </InfoElement>
   </ModOp>
-  <!-- # Dung Collector -->
+
+  <!-- # Dung Collector OW  -->
   <ModOp Type="addNextSibling"
     Path="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/InfoElement/Text/TextGUID='100006']">
     <InfoElement>
@@ -63,36 +64,17 @@
       <ChildCount>1</ChildCount>
       <VisibilityElement>
         <ElementType>
-          <ElementType>2</ElementType>
+          <ElementType>1</ElementType>
         </ElementType>
-        <ChildCount>2</ChildCount>
-        <OperatorType>
-          <OperatorType>1</OperatorType>
-        </OperatorType>
-        <VisibilityElement>
-          <ElementType>
-            <ElementType>1</ElementType>
-          </ElementType>
-          <CompareOperator />
-          <ResultType>
-            <ResultType>1</ResultType>
-          </ResultType>
-          <ExpectedValueInt>1500010015</ExpectedValueInt>
-          <Condition>[RefGuid]</Condition>
-        </VisibilityElement>
-        <VisibilityElement>
-          <ElementType>
-            <ElementType>1</ElementType>
-          </ElementType>
-          <CompareOperator />
-          <ResultType>
-            <ResultType>1</ResultType>
-          </ResultType>
-          <ExpectedValueInt>1500010453</ExpectedValueInt>
-          <Condition>[RefGuid]</Condition>
-        </VisibilityElement>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010015</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
       </VisibilityElement>
 
+      <!-- Targets -->
       <InfoElement>
         <ElementType>8</ElementType>
         <ChildCount>1</ChildCount>
@@ -185,6 +167,100 @@
         </InfoElement>
       </InfoElement>
 
+      <!-- Extra Goods -->
+      <InfoElement>
+        <ElementType>8</ElementType>
+        <ChildCount>1</ChildCount>
+        <InfoElement>
+          <ElementType>5</ElementType>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <OperatorType />
+          </VisibilityElement>
+          <Text>
+            <TextGUID>20074</TextGUID>
+            <Style />
+          </Text>
+          <BackgroundType />
+        </InfoElement>
+        <InfoElement>
+          <ElementType>4</ElementType>
+          <ChildCount>1</ChildCount>
+          <Icon>
+            <IconText>[AssetData(24807) Icon]</IconText>
+            <Style />
+          </Icon>
+          <Text>
+            <Text>[AssetData(24807) Text]</Text>
+            <Style />
+          </Text>
+          <Value>
+            <Text>1</Text>
+            <Style />
+          </Value>
+          <WarningType />
+          <BackgroundType />
+        </InfoElement>
+      </InfoElement>
+    </InfoElement>
+  </ModOp>
+
+    <!-- # Dung Collector NW  -->
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/InfoElement/Text/TextGUID='100006']">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010453</ExpectedValueInt>
+        <Condition>[RefGuid]</Condition>
+      </VisibilityElement>
+
+      <!-- Targets -->
+      <InfoElement>
+        <ElementType>8</ElementType>
+        <ChildCount>1</ChildCount>
+        <InfoElement>
+          <ElementType>7</ElementType>
+          <ChildCount>4</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <OperatorType />
+          </VisibilityElement>
+          <InfoElement>
+            <ElementType>4</ElementType>
+            <ChildCount>1</ChildCount>
+            <Icon>
+              <IconText>[AssetData([ToolOneHelper ItemOrBuffEffectTargets(1500011595) At(#index0#)]) Icon]</IconText>
+              <Style />
+            </Icon>
+            <Text>
+              <Text>[AssetData([ToolOneHelper ItemOrBuffEffectTargets(1500011595) At(#index0#)]) Text]</Text>
+              <Style />
+            </Text>
+            <Value>
+              <Text>1/3</Text>
+              <Style />
+            </Value>
+            <WarningType />
+            <BackgroundType />
+          </InfoElement>
+          <Source>[ToolOneHelper ItemOrBuffEffectTargets(1500011595) Count]</Source>
+        </InfoElement>
+      </InfoElement>
+
+      <!-- Extra Goods -->
       <InfoElement>
         <ElementType>8</ElementType>
         <ChildCount>1</ChildCount>

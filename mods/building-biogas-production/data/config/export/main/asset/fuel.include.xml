@@ -82,7 +82,6 @@
         <LogisticNode>
           <TransporterCountMax>5</TransporterCountMax>
           <TransporterAsset>120062</TransporterAsset>
-          <!-- <PathLayers>Street</PathLayers> -->
           <NeedsTransporterQueue>0</NeedsTransporterQueue>
         </LogisticNode>
         <AmbientMoodProvider />
@@ -137,14 +136,15 @@
             </Item>
           </FactoryOutputs>
           <CycleTime>45</CycleTime>
-          <!-- <ProductivityTimeMultiplier>30</ProductivityTimeMultiplier> -->
-          <!-- <ProductivityPoints>1</ProductivityPoints> -->
-          <WarehouseTransporterAsset>120025</WarehouseTransporterAsset>
           <IsMainFactory>0</IsMainFactory>
-          <!-- <MissingConnectionInfolayer>0</MissingConnectionInfolayer> -->
         </FactoryBase>
-        <Industrializable />
-        <Electrifiable />
+        <Industrializable>
+          <!-- disable electricity -->
+          <BoostedByIndustrialization>0</BoostedByIndustrialization>
+        </Industrializable>
+        <Electrifiable>
+          <ElectricityBoost>0</ElectricityBoost>
+        </Electrifiable>
       </Values>
     </Asset>
   </ModOp>

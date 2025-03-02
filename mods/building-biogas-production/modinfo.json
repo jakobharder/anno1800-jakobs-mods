@@ -1,7 +1,18 @@
 {
-  "Version": "1.6.6",
+  "Version": "1.7",
   "ModID": "jakob_biogas",
   "ModioResourceId": 3229958,
+  "ModDependencies": [
+    "shared-pools-and-definitions",
+    "shared_TT_MenuInputOutputAmounts_Serp"
+  ],
+  "LoadAfterIds": [
+    "shared-pools-and-definitions",
+    "shared_TT_MenuInputOutputAmounts_Serp"
+  ],
+  "bundle": [
+    "../../external/shared_TT_MenuInputOutputAmounts_Serp"
+  ],
   "DeprecateIds": [
     "jakob_Biogas_Plant"
   ],

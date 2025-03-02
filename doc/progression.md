@@ -16,6 +16,7 @@ Condition | Milestone | Note
 | | Concrete Factory
 500 <img src="./icons/icon_resident_engineer.png" class="icon"/> | Steam Machines
 | | Terraced Houses II
+| | Biogas, Biofuel
 5000 Investors | Elevators
 
 ## Old World Unlocks
