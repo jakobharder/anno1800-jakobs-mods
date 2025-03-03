@@ -156,6 +156,16 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
+### 4.3
+
+- Removed field vegetable fertility. They are hardy and grow everywhere.
+  That also reduces problems with Noblesse Oblige which merges red pepper and field vegetables.
+- Adjusted Pescatarian income to match farmers after upgrading
+- Improved icons and factory models for Tea, Imported Tea, Olive Oil
+- Fixed some out of order unlocks
+- Added "Basic Food" menu group for fish and vegetables
+- Removed "Alternatives" menu
+
 ### 4.2
 
 - 4.2.2: Fixed compatibility issue with influence for residence mods
