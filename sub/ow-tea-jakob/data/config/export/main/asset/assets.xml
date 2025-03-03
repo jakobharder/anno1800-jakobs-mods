@@ -1,6 +1,8 @@
 <ModOps>
   <!-- # Includes -->
   <Include File="./productlists.include.xml" />
+  <!-- <Include File="./import-dock.include.xml" /> -->
+  <!-- <Include File="./trading.include.xml" /> -->
 
   <!-- # Tea Maker -->
   <ModOp Type="addNextSibling" GUID="190901">
@@ -627,7 +629,7 @@
         <Standard>
           <GUID>1500011443</GUID>
           <Name>Tea Factory</Name>
-          <IconFilename>data/ui/jakob/icon_tea.png</IconFilename>
+          <IconFilename>data/ui/jakob/icon_tea2.png</IconFilename>
         </Standard>
         <Building>
           <SecondPartyRelevant>0</SecondPartyRelevant>
@@ -803,6 +805,9 @@
               <Asset>1500011160</Asset>
             </Item>
             <Item>
+              <Asset>1500011603</Asset>
+            </Item>
+            <Item>
               <Asset>1500011162</Asset>
             </Item>
             <Item>
@@ -825,7 +830,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500011444</GUID>
+        <GUID>1500011601</GUID>
+          <!-- <GUID>1500011444</GUID> -->
           <!-- <GUID>1500011285</GUID> -->
           <Name>@ 900 Artisans</Name>
         </Standard>
@@ -960,7 +966,7 @@
           <Standard>
             <GUID>1500010959</GUID>
             <Name>Tea</Name>
-            <IconFilename>data/ui/jakob/icon_tea.png</IconFilename>
+            <IconFilename>data/ui/jakob/icon_tea2.png</IconFilename>
             <InfoDescription>1500011513</InfoDescription>
           </Standard>
           <ProductionChain>
@@ -969,6 +975,14 @@
               <Item>
                 <Building>1500011160</Building>
               </Item>
+              <!-- <Item>
+                <Building>1500011603</Building>
+                <Tier2>
+                  <Item>
+                    <Building>1999005385</Building>
+                  </Item>
+                </Tier2>
+              </Item> -->
               <Item>
                 <Building>1500010848</Building>
               </Item>

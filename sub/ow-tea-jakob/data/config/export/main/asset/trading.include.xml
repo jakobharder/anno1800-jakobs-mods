@@ -1,0 +1,91 @@
+<ModOps>
+  <!-- # Menu -->
+  <Group>
+    <!-- Menu entries should move to the trading company mod. -->
+    <ModOp Type="addNextSibling" GUID="500111"
+      Condition="/Values/ConstructionCategory/BuildingList[not(Item/Building='1999005648')]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[last()]">
+      <Item>
+        <Building>1999005648</Building>
+        <Artisan>900</Artisan>
+      </Item>
+      <Item>
+        <Building>1999005409</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="25000191"
+      Condition="/Values/ConstructionCategory/BuildingList[not(Item/Building='1999005648')]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=900][last()]">
+      <Item>
+        <Building>1999005648</Building>
+        <Artisan>900</Artisan>
+      </Item>
+    </ModOp>
+  </Group>
+
+  <!-- # Storage -->
+  <!-- <Group>
+    <ModOp Type="add" GUID="1999005354"
+      Condition="!//Values[Standard/GUID='120055']/ProductStorageList/ProductList/Item[Product='1500011161']"
+      Path="/Values/ProductStorageList/ProductList">
+      <Item>
+        <Product>1500011161</Product>
+      </Item>
+    </ModOp>
+  </Group> -->
+
+  <!-- # Unlock -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500111">
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011604</GUID>
+            <Name>@ 1 Engineers</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000003</Context>
+                  <CounterAmount>1</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnlockAssets>
+                        <Item>
+                          <Asset>1999005649</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1500011603</Asset>
+                        </Item>
+                        <Item>
+                          <Asset>1999005409</Asset>
+                        </Item>
+                      </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+    </ModOp>
+  </Group>
+</ModOps>
