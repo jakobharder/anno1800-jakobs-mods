@@ -135,4 +135,11 @@
     Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010463' or Building='1337500011' or Building='1337500012' or Building='1337500018' or Building='1337500019' or Building='2000150010' or Building='2000150036']">
     <CompactInstitution />
   </ModOp>
+
+  <Group Condition="#lion053_downtown">
+    <!-- remove doubled hotel entry -->
+    <ModOp Type="remove" GUID="132779"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='2100116115'][2]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='2100116115'][position()&lt;last()]" />
+  </Group>
 </ModOps>
