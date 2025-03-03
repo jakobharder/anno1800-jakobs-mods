@@ -608,9 +608,10 @@
         <Template>FeatureUnlock</Template>
         <Values>
           <Standard>
-            <GUID>1500010480</GUID>
+          <GUID>1500011605</GUID>
+            <!-- <GUID>1500010480</GUID> -->
             <!-- <GUID>1500010041</GUID> -->
-            <Name>@ 800 engineers</Name>
+            <Name>@ 500 engineers</Name>
           </Standard>
           <Locked />
           <Trigger>
@@ -621,7 +622,7 @@
                 <ConditionPlayerCounter>
                   <PlayerCounter>PopulationByLevel</PlayerCounter>
                   <Context>15000003</Context>
-                  <CounterAmount>800</CounterAmount>
+                  <CounterAmount>500</CounterAmount>
                 </ConditionPlayerCounter>
               </Values>
             </TriggerCondition>
@@ -640,6 +641,52 @@
                           <Asset>1500010033</Asset>
                         </Item>
                       </UnlockAssets>
+                    </ActionUnlockAsset>
+                  </Values>
+                </TriggerAction>
+              </Item>
+            </TriggerActions>
+          </Trigger>
+          <TriggerSetup>
+            <UsedBySecondParties>0</UsedBySecondParties>
+          </TriggerSetup>
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>FeatureUnlock</Template>
+        <Values>
+          <Standard>
+          <GUID>1500011607</GUID>
+            <Name>Unhide @ 1 engineers</Name>
+          </Standard>
+          <Locked />
+          <Trigger>
+            <TriggerCondition>
+              <Template>ConditionPlayerCounter</Template>
+              <Values>
+                <Condition />
+                <ConditionPlayerCounter>
+                  <PlayerCounter>PopulationByLevel</PlayerCounter>
+                  <Context>15000003</Context>
+                  <CounterAmount>1</CounterAmount>
+                </ConditionPlayerCounter>
+              </Values>
+            </TriggerCondition>
+            <TriggerActions>
+              <Item>
+                <TriggerAction>
+                  <Template>ActionUnlockAsset</Template>
+                  <Values>
+                    <Action />
+                    <ActionUnlockAsset>
+                      <UnhideAssets>
+                        <Item>
+                          <Asset>1500010035</Asset> <!-- coal -->
+                        </Item>
+                        <Item>
+                          <Asset>1500010033</Asset>
+                        </Item>
+                      </UnhideAssets>
                     </ActionUnlockAsset>
                   </Values>
                 </TriggerAction>

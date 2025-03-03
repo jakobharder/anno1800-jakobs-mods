@@ -198,8 +198,9 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-          <GUID>1500010042</GUID>
-          <Name>@ 1 Investor</Name>
+          <GUID>1500011608</GUID>
+          <!-- <GUID>1500010042</GUID> -->
+          <Name>@ 500 Engineers</Name>
         </Standard>
         <Locked />
         <Trigger>
@@ -209,8 +210,8 @@
               <Condition />
               <ConditionPlayerCounter>
                 <PlayerCounter>PopulationByLevel</PlayerCounter>
-                <Context>15000004</Context> <!-- 1 investor -->
-                <CounterAmount>1</CounterAmount>
+                <Context>15000003</Context> <!-- 1 investor -->
+                <CounterAmount>500</CounterAmount>
               </ConditionPlayerCounter>
             </Values>
           </TriggerCondition>
