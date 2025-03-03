@@ -9,12 +9,12 @@
   <Include File="./unlocks.include.xml" />
 
   <!-- # Bugfix broken building data 1500010010 -->
-  <ModOp Type="addNextSibling" GUID="142954" Path="/Values/GameUpdateFeature/Updates">
+  <!-- <ModOp Type="addNextSibling" GUID="142954" Path="/Values/GameUpdateFeature/Updates">
     <Item>
       <OldGUID>1500010010</OldGUID>
       <NewGUID>1500011594</NewGUID>
     </Item>
-  </ModOp>
+  </ModOp> -->
 
   <!-- # OW Biogas-->
   <ModOp Type="addNextSibling" GUID="100780">
@@ -22,7 +22,6 @@
       <Template>FactoryBuilding7</Template>
       <Values>
         <Standard>
-          <!-- <GUID>1500010010</GUID> -->
           <GUID>1500010010</GUID>
           <Name>biogas_plant</Name>
           <IconFilename>data/ui/jakob/icon_biogas_plant.png</IconFilename>

@@ -41,6 +41,8 @@ All buildings unlock with 500 engineers.
 
 - Gas Fuel Station
 - Biogas Plant produces Fertilizer as by-product
+- Improved construction menu InfoTips
+- Lowered unlock to 500 Engineers
 
 ### 1.6
 
