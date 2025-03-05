@@ -1,5 +1,19 @@
 <ModOps>
   <!-- # Build Menu -->
+  <Group Condition="#lion053_ow_chapels">
+    <Group Condition="@25000189/ConstructionCategory/BuildingList/Item[Building='2100115156' and not(Farmer)]">
+      <ModOp Type="addNextSibling" GUID="25000189"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Farmer&lt;=200][last()]"
+        Content="@25000189/ConstructionCategory/BuildingList/Item[Building='2100115156']/*">
+        <Item>
+          <ModOpContent />
+          <Farmer>200</Farmer>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="25000189"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='2100115156' and not(Farmer)]" />
+    </Group>
+  </Group>
   <ModOp Type="addNextSibling" GUID="1010372">
     <Asset>
       <Template>ConstructionCategory</Template>
@@ -42,16 +56,29 @@
       </Values>
     </Asset>
   </ModOp>
-  <!-- insert after market in city and farmers menu, fallback append -->
-  <ModOp Type="addPrevSibling" GUID="25000190"
-    Path="/Values/ConstructionCategory/BuildingList/Item[Worker&gt;0 or position()=1][1]">
+  <ModOp Type="addNextSibling" GUID="25000189"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=0][last()]">
     <Item>
-      <Building>1500010186</Building>
+      <Building>1500010100</Building>
       <Worker>0</Worker>
     </Item>
   </ModOp>
+  <!-- <ModOp Type="addNextSibling" GUID="25000189"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=500][last()]">
+    <Item>
+      <Building>1500010816</Building>
+      <Worker>500</Worker>
+    </Item>
+  </ModOp>
+  <ModOp Type="addNextSibling" GUID="25000189"
+    Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=500][last()]">
+    <Item>
+      <Building>1500010800</Building>
+      <Worker>900</Worker>
+    </Item>
+  </ModOp> -->
   <Group Condition="#ow-vegetables-jakob">
-    <ModOp Type="addNextSibling" GUID="1500010186"
+    <ModOp Type="addNextSibling" GUID="25000189"
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
       <Item>
         <Building>1500010830</Building>
@@ -60,34 +87,20 @@
     </ModOp>
   </Group>
   <Group Condition="#ow-clothes-jakob">
-    <ModOp Type="addNextSibling" GUID="1500010186"
+    <ModOp Type="addNextSibling" GUID="25000189"
+      Condition="/Values/ConstructionCategory/BuildingList[not(Item/Building='1500011465')]"
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
       <Item>
-        <Building>1500011458</Building>
-        <Worker>1</Worker>
-      </Item>
-      <Item>
-        <Building>1500011460</Building>
+        <Building>1500011465</Building>
         <Worker>1</Worker>
       </Item>
     </ModOp>
-    <ModOp Type="remove" GUID="25000189"
-      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='1500011465']"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500011465']" />
   </Group>
   <Group Condition="#ow-olive-soap-jakob">
-    <ModOp Type="addNextSibling" GUID="1500010186"
+    <ModOp Type="addNextSibling" GUID="25000189"
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=500][last()]">
       <Item>
-        <Building>1500010107</Building>
-        <Worker>500</Worker>
-      </Item>
-      <Item>
-        <Building>1500011325</Building>
-        <Worker>500</Worker>
-      </Item>
-      <Item>
-        <Building>1500011446</Building>
+        <Building>1500010191</Building>
         <Worker>500</Worker>
       </Item>
     </ModOp>
@@ -95,23 +108,10 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010191']" />
   </Group>
   <Group Condition="#ow-seafood-jakob">
-    <ModOp Type="addNextSibling" GUID="1500010186"
+    <ModOp Type="addNextSibling" GUID="25000189"
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=500][last()]">
       <Item>
-        <Building>1010265</Building>
-        <Worker>500</Worker>
-        <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
-      </Item>
-      <!-- <Item>
-        <Building>1500010830</Building>
-        <Worker>500</Worker>
-      </Item> -->
-      <Item>
-        <Building>1500011531</Building>
-        <Worker>500</Worker>
-      </Item>
-      <Item>
-        <Building>1500011511</Building>
+        <Building>1500010114</Building>
         <Worker>500</Worker>
       </Item>
     </ModOp>

@@ -158,6 +158,9 @@ Smaller **power plants** and additional energy options.
 
 ### 4.3
 
+- 4.3.1: Fixed stage banners
+- 4.3.1: Fixed vegetable fertility
+- 4.3.1: Merge some construction menu tabs when there's not enough space
 - Removed field vegetable fertility. They are hardy and grow everywhere.
   That also reduces problems with Noblesse Oblige which merges red pepper and field vegetables.
 - Adjusted Pescatarian income to match farmers after upgrading

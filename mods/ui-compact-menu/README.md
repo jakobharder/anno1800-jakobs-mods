@@ -147,6 +147,11 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 
 ## Changes
 
+### 2.4
+
+- Merge some construction menu tabs when there's not enough space
+- A few adjustments to improve groups for e.g. `Downtown`, `Large Fishery`
+
 ### 2.3
 
 - Added jje's buildings

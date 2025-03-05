@@ -150,4 +150,16 @@
       </Item>
     </ModOp>
   </Group>
+
+  <Group Condition="#IndustrializedLowTierProductionFishery">
+    <ModOp Type="addNextSibling" GUID="500945"
+      Condition="/Values/ConstructionCategory/BuildingList[not(Item/Building='1404423000')]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Artisan&lt;=1][last()]">
+      <Item>
+        <Building>1404423000</Building>
+        <Artisan>1</Artisan>
+        <CompactBasicFood />
+      </Item>
+    </ModOp>
+  </Group>
 </ModOps>

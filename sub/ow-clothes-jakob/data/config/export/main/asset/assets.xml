@@ -271,7 +271,7 @@
   </Group>
 
   <!-- # Construction Menu: after Soap -->
-  <Group Condition="!#production_works_kurila">
+  <Group>
     <ModOp Type="addNextSibling" GUID="1010281">
       <Asset>
         <Template>ProductionChain</Template>
@@ -295,6 +295,7 @@
       </Asset>
     </ModOp>
     <ModOp Type="addNextSibling" GUID="25000189"
+      Condition="!#production_works_kurila"
       Path="/Values/ConstructionCategory/BuildingList/Item[Farmer or Worker&lt;=1][last()]">
       <Item>
         <Building>1500011465</Building>
