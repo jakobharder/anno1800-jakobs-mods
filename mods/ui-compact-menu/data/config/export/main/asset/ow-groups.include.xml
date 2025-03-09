@@ -283,91 +283,6 @@
     </Group>
   </Group>
 
-  <!-- # Tourist -->
-  <Group>
-    <ModOp Type="addNextSibling" GUID="100415">
-      <Asset>
-        <Template>ConstructionCategory</Template>
-        <Values>
-          <Standard>
-            <GUID>1500010930</GUID>
-            <Name>OW Tourism Menu</Name>
-            <IconFilename>data/ui/2kimages/main/3dicons/icon_hotel.png</IconFilename>
-          </Standard>
-          <Text>
-            <TextOverride>601379</TextOverride>
-          </Text>
-          <ConstructionCategory>
-            <BuildingList />
-            <CategoryDescription>1500011541</CategoryDescription>
-          </ConstructionCategory>
-          <Locked />
-        </Values>
-      </Asset>
-      <Asset>
-        <Template>ConstructionCategory</Template>
-        <Values>
-          <Standard>
-            <GUID>1500011542</GUID>
-            <Name>OW Tourism Services</Name>
-            <IconFilename>data/ui/jakob/icon_restaurants_menu.png</IconFilename>
-          </Standard>
-          <Text>
-            <TextOverride>601379</TextOverride>
-          </Text>
-          <ConstructionCategory>
-            <BuildingList />
-            <CategoryDescription>1500011541</CategoryDescription>
-          </ConstructionCategory>
-          <Locked />
-        </Values>
-      </Asset>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
-      <Item>
-        <Building>1500010930</Building>
-      </Item>
-    </ModOp>
-    <ModOp Type="addNextSibling" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or position()=last()][1]">
-      <Item>
-        <Building>1500011542</Building>
-      </Item>
-    </ModOp>
-    <!-- <ModOp Type="addPrevSibling" GUID="132779"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='132780' or Tourist&gt;'250' or position()=last()][1]">
-      <Item>
-        <Building>1500011542</Building>
-        <Tourist>250</Tourist>
-      </Item>
-    </ModOp> -->
-    <!--
-      by default included mods
-      - Small Hotel
-    -->
-    <ModOp Type="add" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100429']">
-      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
-      <CompactTourist />
-    </ModOp>
-    <ModOp Type="add" GUID="500092,500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601326' or Building='601445' or Building='1500010500' or Building='132780' or Building='132782' or Building='132781' or Building='132765']">
-      <CompactTourist />
-    </ModOp>
-    <ModOp Type="add" GUID="1500010930"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500092/ConstructionCategory/BuildingList/Item[CompactTourist]">
-    </ModOp>
-    <ModOp Type="add" GUID="1500011542"
-      Path="/Values/ConstructionCategory/BuildingList"
-      Content="@500094/ConstructionCategory/BuildingList/Item[CompactTourist]">
-    </ModOp>
-    <ModOp Type="remove" GUID="1500010930,1500011542"
-      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
-      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
-  </Group>
-
   <!-- # Culture -->
   <Group>
     <ModOp Type="addNextSibling" GUID="100415">
@@ -421,7 +336,7 @@
       </Item>
     </ModOp>
     <ModOp Type="add" GUID="500094,25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or Building='1010471' or Building='110935' or Building='1010489']">
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010470' or Building='1010471' or Building='110935']">
       <CompactCulture />
     </ModOp>
     <ModOp Type="add" GUID="1500011335"
@@ -635,31 +550,6 @@
     </Group>
   </Group>
 
-  <!-- # Remove Entries -->
-  <Group>
-    <ModOp Type="remove" GUID="500092"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactAdministration or CompactInstitution or CompactTourist or CompactHide]" />
-    <ModOp Type="remove" GUID="500094"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactEducation or CompactReligion or CompactTourist or CompactCulture or CompactMall or CompactHide]" />
-    <ModOp Type="remove" GUID="25000192,500447"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactMall or CompactHide]" />
-    <ModOp Type="remove" GUID="25000190"
-      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactHide]"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactHide]" />
-    <ModOp Type="remove" GUID="25000191"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactCulture or CompactHide]" />
-  </Group>
-
-  <!-- # Fix CompactBuilding -->
-  <ModOp Type="merge" GUID="1500011542,1500010930,1500011336,1500011575,1500011331,1500011576,1500011330"
-    Condition="/Values/ConstructionCategory/BuildingList/Item[Building]"
-    Path="/Values/ConstructionCategory/BuildingList"
-    Content="/Values/ConstructionCategory/BuildingList/Item/*[name()='Building' or name()='CompactBuilding']/text()">
-    <Item>
-      <Building><ModOpContent /></Building>
-    </Item>
-  </ModOp>
-
   <!-- # Electricity -->
   <Group>
     <ModOp Type="addNextSibling" GUID="100415">
@@ -720,7 +610,7 @@
             <IconFilename>data/ui/2kimages/main/3dicons/icon_oil_habour_01.png</IconFilename>
           </Standard>
           <Text>
-            <TextOverride>100783</TextOverride>
+            <TextOverride>151320</TextOverride>
           </Text>
           <ProductionChain>
             <Building>100783</Building>

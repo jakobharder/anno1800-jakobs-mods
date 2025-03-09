@@ -14,16 +14,24 @@ Reduce construction menu scrolling with better grouping of entries.
 - Marketplace: vanilla, Pescatarian community center
 - Religion: Lion053's chapels, church, Pescatarian community center
 - Education: school, library, music school, university
-- Tourists: public mooring, bus stop, hotel, small hotel, restaurant, cafe, bar, iron tower
+- Tourists: public mooring, bus stop, hotel, small hotel
 - Malls: department store, furniture store, drug store
 - Culture: zoo, museum, botanical garden, world fair
 
 ### Public Services Groups
 
-- Tourists: public mooring, bus stop, hotel, small hotel, restaurant, cafe, bar, iron tower
+- Food & Drink Venues: pub, restaurant, cafe, bar
 - Institutions: fire station, police, hospital
 - Administration: guild house, harbour master, town hall
 - Electricity: vanilla, river power plant, small power plants
+
+### Consumables Groups
+
+- Basic Food: fish, vegetables
+
+### Tourists Tab Groups
+
+- Food & Drink Venues: restaurant, cafe, bar
 
 ### Harbour Groups
 
@@ -73,6 +81,7 @@ Tag | Category | Region | Comment
 `CompactCulture` | Services | OW
 `CompactMall` | Services | OW
 `CompactEntertainment` | Services | OW
+`CompactVenue` | Food & Drink Venues | OW
 
 #### Handle Own Groups
 
@@ -147,29 +156,14 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
 
 ## Changes
 
+### 2.5
+
+- Added food and drink venues to tourists and services tabs
+
 ### 2.4
 
 - Merge some construction menu tabs when there's not enough space
 - A few adjustments to improve groups for e.g. `Downtown`, `Large Fishery`
-
-### 2.3
-
-- Added jje's buildings
-- Improved some icons
-
-### 2.2
-
-- Schools, Churches and Malls in progression sorting menus
-
-### 2.1
-
-- Tags to easily add mod buildings to groups
-
-### 2.0
-
-- Split Consumables into vanilla tiers and DLC tiers
-- Merge Culture tab into City and Public Services
-- Group OW electricity, education and religion, culture buildings
 
 ## Credits
 

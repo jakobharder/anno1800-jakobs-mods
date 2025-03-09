@@ -3,7 +3,41 @@
   <Include File="./compat.include.xml" />
   <Include File="./tabs.include.xml" />
   <Include File="./ow-groups.include.xml" />
+  <Include File="./ow-tourist.include.xml" />
   <Include File="./nw-groups.include.xml" />
   <Include File="./other-groups.include.xml" />
   <Include File="./residences.include.xml" />
+
+  <!-- # Remove Entries -->
+  <Group>
+    <!-- OW City -->
+    <ModOp Type="remove" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactAdministration or CompactInstitution or CompactTourist or CompactHide]" />
+    <!-- OW Public -->
+    <ModOp Type="remove" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactEducation or CompactReligion or CompactCulture or CompactMall or CompactVenue or CompactHide]" />
+    <!-- OW Workers -->
+    <ModOp Type="remove" GUID="25000190"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[CompactHide]"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactHide]" />
+    <!-- OW Artisans -->
+    <ModOp Type="remove" GUID="25000191"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactCulture or CompactHide]" />
+    <!-- OW Tourists -->
+    <ModOp Type="remove" GUID="132779"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactVenue or CompactHide]" />
+    <!-- OW Engineers + Investors -->
+    <ModOp Type="remove" GUID="25000192,500447"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactMall or CompactHide]" />
+  </Group>
+
+  <!-- # Fix CompactBuilding -->
+  <ModOp Type="merge" GUID="1500011542,1500010930,1500011336,1500011575,1500011331,1500011576,1500011330"
+    Condition="/Values/ConstructionCategory/BuildingList/Item[Building]"
+    Path="/Values/ConstructionCategory/BuildingList"
+    Content="/Values/ConstructionCategory/BuildingList/Item/*[name()='Building' or name()='CompactBuilding']/text()">
+    <Item>
+      <Building><ModOpContent /></Building>
+    </Item>
+  </ModOp>
 </ModOps>

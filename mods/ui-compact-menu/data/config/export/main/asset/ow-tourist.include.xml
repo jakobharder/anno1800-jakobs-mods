@@ -1,0 +1,121 @@
+<ModOps>
+  <!-- # Tourist -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="100415">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500010930</GUID>
+            <Name>OW Tourism Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_hotel.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>601379</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601445']">
+      <Item>
+        <Building>1500010930</Building>
+      </Item>
+    </ModOp>
+    <!--
+      by default included mods
+      - Small Hotel
+    -->
+    <ModOp Type="add" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='100429']">
+      <IgnoreUnlockStateForCategoryVisibility>1</IgnoreUnlockStateForCategoryVisibility>
+      <CompactTourist />
+    </ModOp>
+    <ModOp Type="add" GUID="500092,500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='601326' or Building='601445' or Building='1500010500' or Building='132780' or Building='132782' or Building='132781' or Building='132765']">
+      <CompactTourist />
+    </ModOp>
+    <ModOp Type="add" GUID="1500010930"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactTourist]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500010930"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Tourist Food and Drink Venues -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="100415">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011672</GUID>
+            <Name>OW Tourism Venues</Name>
+            <IconFilename>data/ui/jakob/icon_restaurants_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>137740</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011542</GUID>
+            <Name>Food and Drink Venues (including Pub)</Name>
+            <IconFilename>data/ui/jakob/icon_restaurants_menu.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>137740</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="132779"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Tourist&lt;=250][last()]">
+      <Item>
+        <Building>1500011672</Building>
+        <Tourist>250</Tourist>
+      </Item>
+    </ModOp>
+    <ModOp Type="addNextSibling" GUID="500094"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010358' or Farmer&lt;=150][last()]">
+      <Item>
+        <Building>1500011542</Building>
+      </Item>
+    </ModOp>
+    <ModOp Type="add" GUID="500094,132779"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010358' or Building='132780' or Building='132782' or Building='132781']">
+      <CompactVenue />
+    </ModOp>
+    <ModOp Type="add" GUID="1500011542"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500094/ConstructionCategory/BuildingList/Item[CompactVenue]">
+    </ModOp>
+    <ModOp Type="add" GUID="1500011672"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@132779/ConstructionCategory/BuildingList/Item[CompactVenue]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011542,1500011672"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+</ModOps>
