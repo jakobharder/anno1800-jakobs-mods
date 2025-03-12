@@ -82,7 +82,6 @@
         <LogisticNode>
           <TransporterCountMax>5</TransporterCountMax>
           <TransporterAsset>120062</TransporterAsset>
-          <NeedsTransporterQueue>0</NeedsTransporterQueue>
         </LogisticNode>
         <AmbientMoodProvider />
         <Maintenance>
@@ -137,6 +136,9 @@
           </FactoryOutputs>
           <CycleTime>45</CycleTime>
           <IsMainFactory>0</IsMainFactory>
+          <ClampMaxTransporterLogisticCost>1</ClampMaxTransporterLogisticCost>
+          <ClampedMaxTransporterLogisticCost>174</ClampedMaxTransporterLogisticCost>
+          <WarehouseTransporterAsset>120028</WarehouseTransporterAsset>
         </FactoryBase>
         <Industrializable>
           <!-- disable electricity -->
