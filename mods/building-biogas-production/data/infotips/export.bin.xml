@@ -1,5 +1,5 @@
 <ModOps>
-  <!-- # Biogas Plant -->
+  <!-- # Construction: Biogas Plant -->
   <ModOp Type="addPrevSibling"
     Path="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/Text/TextGUID='100006']">
     <InfoElement>
@@ -56,7 +56,7 @@
     </InfoElement>
   </ModOp>
 
-  <!-- # Dung Collector OW  -->
+  <!-- # Construction: Dung Collector OW  -->
   <ModOp Type="addNextSibling"
     Path="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/InfoElement/Text/TextGUID='100006']">
     <InfoElement>
@@ -207,7 +207,7 @@
     </InfoElement>
   </ModOp>
 
-    <!-- # Dung Collector NW  -->
+  <!-- # Construction: Dung Collector NW  -->
   <ModOp Type="addNextSibling"
     Path="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/InfoElement/Text/TextGUID='100006']">
     <InfoElement>
@@ -298,5 +298,28 @@
         </InfoElement>
       </InfoElement>
     </InfoElement>
+  </ModOp>
+
+  <!-- # Object Menu: Fuel Output -->
+  <!--
+    Disable "In Island Storage" section for fuel.
+    Vanilla disables buildings individually, but this will do it once for all.
+  -->
+  <ModOp Type="replace"
+    Condition="//InfoTipData[Guid='25000208']//VisibilityElement[VisibilityElement/ExpectedValueInt='269840' and not(VisibilityElement/ExpectedValueInt='270042')]"
+    Path="//InfoTipData[Guid='25000208']//VisibilityElement[ExpectedValueInt='269840']">
+    <VisibilityElement>
+      <ElementType>
+        <ElementType>1</ElementType>
+      </ElementType>
+      <CompareOperator>
+        <CompareOperator>1</CompareOperator>
+      </CompareOperator>
+      <ResultType>
+        <ResultType>1</ResultType>
+      </ResultType>
+      <ExpectedValueInt>270042</ExpectedValueInt>
+      <Condition>[RefGuid]</Condition>
+    </VisibilityElement>
   </ModOp>
 </ModOps>

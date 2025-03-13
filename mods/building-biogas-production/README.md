@@ -39,6 +39,9 @@ All buildings unlock with 500 engineers.
 
 ### 1.7
 
+- 1.7.2: Fixed crash when selecting the gas plant while it tries to unload at a fuel station
+- 1.7.2: Improved InfoTips (wrong warehouse warning, ...)
+- 1.7.2: Adjusted range of Gas Fuel Station to match Fuel Station
 - Gas Fuel Station
 - Biogas Plant produces Fertilizer as by-product
 - Improved construction menu InfoTips
