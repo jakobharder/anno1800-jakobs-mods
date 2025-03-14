@@ -10,6 +10,7 @@
           <Name>Pescatarian Worker House</Name>
           <IconFilename>data/ui/jakob/icon_pescatarian_residence.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
+          <NeighborLevel>Farmer</NeighborLevel>
         </Standard>
         <Blocking />
         <Building>
@@ -266,6 +267,7 @@
           <Name>Pescatarian Artisan House</Name>
           <IconFilename>data/ui/jakob/icon_pescatarian_residence.png</IconFilename>
           <InfoDescription>1500010146</InfoDescription>
+          <NeighborLevel>Farmer</NeighborLevel>
         </Standard>
         <Building>
           <PickingAsset>1010343</PickingAsset>
@@ -557,14 +559,6 @@
   </ModOp>
 
   <!-- # InfluencedByNeighbors, spawn feedback, ... -->
-  <ModOp Type="add" GUID="1010346,1010347" Path="/Values/Building/InfluencedByNeighbors">
-    <Item>
-      <Building>1500010143</Building>
-    </Item>
-    <Item>
-      <Building>1500010144</Building>
-    </Item>
-  </ModOp>
   <ModOp GUID="142785,2001089" Type="add" Path="/Values/FeedbackBuildingGroup/Buildings">
     <Item>
       <Building>1500010143</Building>
