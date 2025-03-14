@@ -3,7 +3,7 @@
   <Include File="./compat.include.xml" />
   <Include File="./tabs.include.xml" />
   <Include File="./ow-groups.include.xml" />
-  <Include File="./ow-tourist.include.xml" />
+  <Include File="./ow-dlc.include.xml" />
   <Include File="./nw-groups.include.xml" />
   <Include File="./other-groups.include.xml" />
   <Include File="./residences.include.xml" />
@@ -23,12 +23,6 @@
     <!-- OW Artisans -->
     <ModOp Type="remove" GUID="25000191"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactCulture or CompactHide]" />
-    <!-- OW Tourists -->
-    <ModOp Type="remove" GUID="132779"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactVenue or CompactHide]" />
-    <!-- OW Engineers + Investors -->
-    <ModOp Type="remove" GUID="25000192,500447"
-      Path="/Values/ConstructionCategory/BuildingList/Item[CompactMall or CompactHide]" />
   </Group>
 
   <!-- # Fix CompactBuilding -->
