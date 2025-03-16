@@ -17,6 +17,42 @@
       </Values>
     </Asset>
     <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011682</GUID>
+          <Name>Modular Factories Menu Goods</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_multifactory_assembly_line.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList />
+          <CategoryDescription>1500011513</CategoryDescription>
+        </ConstructionCategory>
+        <Text>
+          <TextOverride>1500010601</TextOverride>
+        </Text>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>ConstructionCategory</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011681</GUID>
+          <Name>Modular Factories Menu Food</Name>
+          <IconFilename>data\ui\2kimages\main\3dicons\icon_multifactory_assembly_line.png</IconFilename>
+        </Standard>
+        <ConstructionCategory>
+          <BuildingList />
+          <CategoryDescription>1500011513</CategoryDescription>
+        </ConstructionCategory>
+        <Text>
+          <TextOverride>1500010601</TextOverride>
+        </Text>
+        <Locked />
+      </Values>
+    </Asset>
+    <Asset>
       <Template>Text</Template>
       <Values>
         <Standard>
@@ -25,10 +61,43 @@
         </Standard>
       </Values>
     </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011683</GUID>
+          <Name>4x4 infotip description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011684</GUID>
+          <Name>5x5 infotip description</Name>
+        </Standard>
+      </Values>
+    </Asset>
+    <Asset>
+      <Template>Text</Template>
+      <Values>
+        <Standard>
+          <GUID>1500011685</GUID>
+          <Name>4x4 infotip</Name>
+          <IconFilename>data/ui/jakob/icon_modular_factory_infotip.png</IconFilename>
+        </Standard>
+      </Values>
+    </Asset>
   </ModOp>
   <ModOp Type="addPrevSibling" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[1]">
     <Item>
-      <Building>1500010601</Building>
+      <Building>1500011681</Building>
+      <CompactFood />
+      <Farmer>0</Farmer>
+    </Item>
+    <Item>
+      <Building>1500011682</Building>
       <Farmer>0</Farmer>
     </Item>
   </ModOp>
@@ -69,11 +138,40 @@
     <Item>
       <Building>1500011317</Building>
     </Item>
+  </ModOp>
+  <ModOp Type="add" GUID="1500011682" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011271</Building>
+    </Item>
+    <Item>
+      <Building>1500011270</Building>
+    </Item>
     <Item>
       <Building>1500010600</Building>
     </Item>
     <Item>
       <Building>1500010154</Building>
+    </Item>
+  </ModOp>
+
+  <ModOp Type="add" GUID="1500011681" Path="/Values/ConstructionCategory/BuildingList">
+    <Item>
+      <Building>1500011315</Building>
+    </Item>
+    <Item>
+      <Building>1500011313</Building>
+    </Item>
+    <Item>
+      <Building>1500011311</Building>
+    </Item>
+    <Item>
+      <Building>1500011310</Building>
+    </Item>
+    <Item>
+      <Building>1500011318</Building>
+    </Item>
+    <Item>
+      <Building>1500011317</Building>
     </Item>
   </ModOp>
 

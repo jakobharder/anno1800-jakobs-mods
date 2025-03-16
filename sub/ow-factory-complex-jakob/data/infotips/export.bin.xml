@@ -1,0 +1,197 @@
+<ModOps>
+  <!-- # Construction Menu Building InfoTip -->
+  <ModOp Type="addPrevSibling"
+    Path="//InfoTipData[Guid='25000020']//InfoElement/InfoElement[Text/Text='[ToolOneHelper InfoDescription([RefGuid]) Text]']">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500010602</ExpectedValueInt>
+        <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
+      </VisibilityElement>
+      <InfoElement>
+        <ElementType>4</ElementType>
+        <ChildCount>1</ChildCount>
+        <Icon>
+          <IconText>[AssetData(1500011685) Icon]</IconText>
+          <Style />
+        </Icon>
+        <Text>
+          <TextGUID>1500011685</TextGUID>
+          <Style />
+        </Text>
+        <WarningType />
+        <BackgroundType />
+      </InfoElement>
+    </InfoElement>
+  </ModOp>
+  <!-- <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='25000020']//InfoElement/InfoElement[Text/Text='[ToolOneHelper InfoDescription([RefGuid]) Text]']">
+    <InfoElement>
+      <ElementType>8</ElementType>
+      <ChildCount>1</ChildCount>
+      <VisibilityElement>
+        <ElementType>
+          <ElementType>1</ElementType>
+        </ElementType>
+        <CompareOperator />
+        <ResultType>
+          <ResultType>1</ResultType>
+        </ResultType>
+        <ExpectedValueInt>1500011674</ExpectedValueInt>
+        <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
+      </VisibilityElement>
+      <InfoElement>
+        <ElementType>8</ElementType>
+        <ChildCount>3</ChildCount>
+        <InfoElement>
+          <ElementType>4</ElementType>
+          <ChildCount>1</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>2</ElementType>
+            </ElementType>
+            <ChildCount>2</ChildCount>
+            <VisibilityElement>
+              <ElementType>
+                <ElementType>1</ElementType>
+              </ElementType>
+              <CompareOperator />
+              <ResultType>
+                <ResultType>1</ResultType>
+              </ResultType>
+              <ExpectedValueInt>1500011613</ExpectedValueInt>
+              <Condition>[RefGuid]</Condition>
+            </VisibilityElement>
+            <VisibilityElement>
+              <ElementType>
+                <ElementType>1</ElementType>
+              </ElementType>
+              <CompareOperator />
+              <ResultType>
+                <ResultType>1</ResultType>
+              </ResultType>
+              <ExpectedValueInt>1500011632</ExpectedValueInt>
+              <Condition>[RefGuid]</Condition>
+            </VisibilityElement>
+            <VisibilityElement>
+              <ElementType>
+                <ElementType>1</ElementType>
+              </ElementType>
+              <CompareOperator />
+              <ResultType>
+                <ResultType>1</ResultType>
+              </ResultType>
+              <ExpectedValueInt>1500011652</ExpectedValueInt>
+              <Condition>[RefGuid]</Condition>
+            </VisibilityElement>
+            <OperatorType>
+              <OperatorType>1</OperatorType>
+            </OperatorType>
+          </VisibilityElement>
+          <Icon>
+            <IconText>[AssetData(2321) Icon]</IconText>
+            <Style />
+          </Icon>
+          <Text>
+            <TextGUID>2321</TextGUID>
+            <Style />
+          </Text>
+          <Value>
+            <Text>-5</Text>
+            <Style />
+          </Value>
+          <WarningType />
+          <BackgroundType />
+        </InfoElement>
+        <InfoElement>
+          <ElementType>8</ElementType>
+          <ChildCount>1</ChildCount>
+          <VisibilityElement>
+          <ElementType>
+            <ElementType>2</ElementType>
+          </ElementType>
+          <ChildCount>2</ChildCount>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator>
+              <CompareOperator>4</CompareOperator>
+            </CompareOperator>
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>1500010850</ExpectedValueInt>
+            <Condition>[RefGuid]</Condition>
+          </VisibilityElement>
+          <VisibilityElement>
+            <ElementType>
+              <ElementType>1</ElementType>
+            </ElementType>
+            <CompareOperator>
+              <CompareOperator>3</CompareOperator>
+            </CompareOperator>
+            <ResultType>
+              <ResultType>1</ResultType>
+            </ResultType>
+            <ExpectedValueInt>1500010862</ExpectedValueInt>
+            <Condition>[RefGuid]</Condition>
+          </VisibilityElement>
+          <OperatorType />
+        </VisibilityElement>
+          <InfoElement>
+            <ElementType>4</ElementType>
+            <ChildCount>1</ChildCount>
+            <Icon>
+              <IconText>[AssetData(2321) Icon]</IconText>
+              <Style />
+            </Icon>
+            <Text>
+              <TextGUID>2321</TextGUID>
+              <Style />
+            </Text>
+            <Value>
+              <Text>-25</Text>
+              <Style />
+            </Value>
+            <WarningType />
+            <BackgroundType />
+          </InfoElement>
+          <InfoElement>
+            <ElementType>4</ElementType>
+            <ChildCount>1</ChildCount>
+            <Icon>
+              <IconText>[AssetData(500452) Icon]</IconText>
+              <Style />
+            </Icon>
+            <Text>
+              <TextGUID>1500011675</TextGUID>
+              <Style />
+            </Text>
+            <Value>
+              <Text>33%</Text>
+              <Style />
+            </Value>
+            <WarningType />
+            <BackgroundType />
+          </InfoElement>
+        </InfoElement>
+        <InfoElement>
+          <ElementType>6</ElementType>
+          <ChildCount>1</ChildCount>
+          <Text />
+          <WarningType />
+          <BackgroundType />
+        </InfoElement>
+      </InfoElement>
+    </InfoElement>
+  </ModOp> -->
+</ModOps>
