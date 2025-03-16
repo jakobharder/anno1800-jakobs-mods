@@ -224,6 +224,14 @@
     </ModOp>
   </Group>
 
+  <!-- Industrialized Low Tier Productions -->
+  <Group Condition="#IndustrializedLowTierProduction">
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1404423021' or Building='1404423011' or Building='1500301107' or Building='1404423036' or Building='1500302341']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
   <!-- Merchants -->
   <Group Condition="#Drakkam-new-population-Merchants">
     <ModOp Type="add" GUID="500945"
