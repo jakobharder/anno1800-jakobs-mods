@@ -1,0 +1,57 @@
+<ModOps>
+  <!-- # Split Consumables -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010035">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011680</GUID>
+            <Name>NW Provisions</Name>
+            <IconFilename>data\ui\2kimages\main\icons\icon_pub_2d.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+            </BuildingList>
+            <CategoryDescription>19564</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+          <Text>
+            <TextOverride>1500011334</TextOverride>
+          </Text>
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addPrevSibling" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Colony01/CategoryMode/BuildingCategory/Categories/Item[Category='500950']">
+      <Item>
+        <Category>1500011680</Category>
+      </Item>
+    </ModOp>
+    <ModOp Type="merge" GUID="500950"
+      Path="/Values/Text">
+      <Text>
+        <TextOverride>1500011678</TextOverride>
+      </Text>
+    </ModOp>
+
+    <!-- vanilla -->
+    <ModOp Type="add" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='500905' or Building='500906' or Building='500911' or Building='500913' or Building='500909' or Building='500914']">
+      <CompactFood />
+    </ModOp>
+    <!-- DLCs -->
+    <ModOp Type="add" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='501429' or Building='137604' or Building='6610' or Building='5813' or Building='5465']">
+      <CompactFood />
+    </ModOp>
+
+    <ModOp Type="add" GUID="1500011680"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500950/ConstructionCategory/BuildingList/Item[CompactFood]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactFood]">
+    </ModOp>
+  </Group>
+</ModOps>

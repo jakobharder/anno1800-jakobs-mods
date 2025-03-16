@@ -46,6 +46,7 @@
     </Group>
   </Group>
 
+  <!-- Pescatarians -->
   <Group Condition="#jakob_pescatarians">
     <ModOp Type="add" GUID="500094"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010100']">
@@ -60,6 +61,64 @@
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010816' or Building='1500010800']">
       <CompactEducation />
     </ModOp>
+  </Group>
+
+  <!-- NW Cities -->
+  <Group Condition="#jakob_new_world_cities">
+    <ModOp Type="add" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500011232' or Building='1500011238' or Building='1500011236']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
+  <!-- NW Tourism -->
+  <Group Condition="#FamTaubeLexy_NewWorldHotels">
+    <ModOp Type="add" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='133496' or Building='137607']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
+  <!-- Wholesome Hacienda Haul -->
+  <Group Condition="#Taludas_TheWholesomeHaciendaHaul">
+    <ModOp Type="add" GUID="500950"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1999002072']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
+  <!-- OW Sardines -->
+  <Group Condition="#ow-sardines-jakob">
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010122']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
+  <!-- OW Cheese -->
+  <Group Condition="#ow-cheese-jakob">
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010111']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
+  <!-- OW Tea -->
+  <Group Condition="#ow-tea-jakob">
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010959']">
+      <CompactFood />
+    </ModOp>
+  </Group>
+
+  <!-- OW Seafood -->
+  <Group Condition="#ow-seafood-jakob">
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010114' or Building='1500011554']">
+      <CompactFood />
+    </ModOp>
+    <ModOp Type="remove" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500011554']" />
   </Group>
 
   <Group Condition="#red_tile_roof_building_variations">
@@ -136,6 +195,7 @@
     <CompactInstitution />
   </ModOp>
 
+  <!-- Downtown -->
   <Group Condition="#lion053_downtown">
     <!-- remove doubled hotel entry -->
     <ModOp Type="remove" GUID="132779"
@@ -151,6 +211,7 @@
     </ModOp>
   </Group>
 
+  <!-- Industrialized Fishery -->
   <Group Condition="#IndustrializedLowTierProductionFishery">
     <ModOp Type="addNextSibling" GUID="500945"
       Condition="/Values/ConstructionCategory/BuildingList[not(Item/Building='1404423000')]"
@@ -160,6 +221,14 @@
         <Artisan>1</Artisan>
         <CompactBasicFood />
       </Item>
+    </ModOp>
+  </Group>
+
+  <!-- Merchants -->
+  <Group Condition="#Drakkam-new-population-Merchants">
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1555000496' or Building='1555000074' or Building='1555000148' or Building='1555000077']">
+      <CompactFood />
     </ModOp>
   </Group>
 </ModOps>

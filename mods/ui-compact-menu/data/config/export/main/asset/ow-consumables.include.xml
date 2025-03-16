@@ -1,0 +1,64 @@
+<ModOps>
+  <!-- # Split Consumables -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="1010035">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011334</GUID>
+            <Name>OW Provisions</Name>
+            <!-- <IconFilename>data\ui\2kimages\main\icons\icon_itemsockets_02.png</IconFilename> -->
+            <IconFilename>data\ui\2kimages\main\icons\icon_pub_2d.png</IconFilename>
+          </Standard>
+          <ConstructionCategory>
+            <BuildingList>
+            </BuildingList>
+            <CategoryDescription>19564</CategoryDescription>
+          </ConstructionCategory>
+          <!-- <Text>
+            <TextOverride>2289</TextOverride>
+          </Text> -->
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="addPrevSibling" GUID="25000035"
+      Path="/Values/ConstructionMenu/RegionMenu/Moderate/CategoryMode/BuildingCategory/Categories/Item[Category='500945']">
+      <Item>
+        <Category>1500011334</Category>
+      </Item>
+    </ModOp>
+    <ModOp Type="merge" GUID="500945"
+      Path="/Values/Text">
+      <Text>
+        <TextOverride>1500011678</TextOverride>
+      </Text>
+    </ModOp>
+
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='25000244' or Building='500004' or Building='500002' or Building='500006' or Building='500008' or Building='500902' or Building='500434' or Building='500014' or Building='500013' or Building='500018']">
+      <CompactFood />
+    </ModOp>
+    <ModOp Type="add" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='133496' or Building='137601' or Building='137607' or Building='120287' or Building='137599' or Building='120286' or Building='124740' or Building='137604' or Building='124741']">
+      <CompactFood />
+    </ModOp>
+
+    <ModOp Type="add" GUID="1500011334"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500945/ConstructionCategory/BuildingList/Item[CompactFood]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactFood]">
+    </ModOp>
+
+    <!-- <ModOp Type="add" GUID="1500011334"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500945/ConstructionCategory/BuildingList/Item[(Building &lt;= 269756 and not(Building='269756')) or Secondary]">
+    </ModOp>
+    <ModOp Type="remove" GUID="500945"
+      Path="/Values/ConstructionCategory/BuildingList/Item[(Building &lt;= 269756 and not(Building='269756')) or Secondary]">
+    </ModOp> -->
+  </Group>
+</ModOps>
