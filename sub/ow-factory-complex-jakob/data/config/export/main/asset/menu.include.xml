@@ -68,6 +68,9 @@
           <GUID>1500011683</GUID>
           <Name>4x4 infotip description</Name>
         </Standard>
+        <Text>
+          <TextOverride>1500010602</TextOverride>
+        </Text>
       </Values>
     </Asset>
     <Asset>
@@ -75,7 +78,8 @@
       <Values>
         <Standard>
           <GUID>1500011684</GUID>
-          <Name>5x5 infotip description</Name>
+          <Name>doubled productivity infotip</Name>
+          <IconFilename>data/ui/jakob/icon_doubled_productivity.png</IconFilename>
         </Standard>
       </Values>
     </Asset>
@@ -84,7 +88,7 @@
       <Values>
         <Standard>
           <GUID>1500011685</GUID>
-          <Name>4x4 infotip</Name>
+          <Name>modular factory infotip</Name>
           <IconFilename>data/ui/jakob/icon_modular_factory_infotip.png</IconFilename>
         </Standard>
       </Values>
@@ -138,6 +142,12 @@
     <Item>
       <Building>1500011317</Building>
     </Item>
+    <Item>
+      <Building>1500010600</Building>
+    </Item>
+    <Item>
+      <Building>1500010154</Building>
+    </Item>
   </ModOp>
   <ModOp Type="add" GUID="1500011682" Path="/Values/ConstructionCategory/BuildingList">
     <Item>
@@ -183,4 +193,11 @@
       <Building>1500011273</Building>
     </Item>
   </ModOp> -->
+
+  <ModOp Type="merge" GUID="1500010154"
+    Path="/Values/Standard">
+    <Standard>
+      <InfoDescription>1500010602</InfoDescription>
+    </Standard>
+  </ModOp>
 </ModOps>

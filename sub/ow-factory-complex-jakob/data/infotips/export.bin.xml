@@ -7,14 +7,34 @@
       <ChildCount>1</ChildCount>
       <VisibilityElement>
         <ElementType>
-          <ElementType>1</ElementType>
+          <ElementType>2</ElementType>
         </ElementType>
-        <CompareOperator />
-        <ResultType>
-          <ResultType>1</ResultType>
-        </ResultType>
-        <ExpectedValueInt>1500010602</ExpectedValueInt>
-        <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
+        <ChildCount>2</ChildCount>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500010602</ExpectedValueInt>
+          <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
+        </VisibilityElement>
+        <VisibilityElement>
+          <ElementType>
+            <ElementType>1</ElementType>
+          </ElementType>
+          <CompareOperator />
+          <ResultType>
+            <ResultType>1</ResultType>
+          </ResultType>
+          <ExpectedValueInt>1500011683</ExpectedValueInt>
+          <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
+        </VisibilityElement>
+        <OperatorType>
+          <OperatorType>1</OperatorType>
+        </OperatorType>
       </VisibilityElement>
       <InfoElement>
         <ElementType>4</ElementType>
@@ -32,11 +52,37 @@
       </InfoElement>
     </InfoElement>
   </ModOp>
-  <!-- <ModOp Type="addNextSibling"
-    Path="//InfoTipData[Guid='25000020']//InfoElement/InfoElement[Text/Text='[ToolOneHelper InfoDescription([RefGuid]) Text]']">
+  <!-- move electricity bonus up -->
+  <ModOp Type="addPrevSibling"
+    Path="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/Text/TextGUID='13659']">
+    <DeleteMe />
+  </ModOp>
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='25000020']//InfoElement/InfoElement[Value/Text='[StaticData Factory CycleTimeRespectElectricity([RefGuid]) &gt;&gt; time]']"
+    Content="//InfoTipData[Guid='25000020']//InfoElement[InfoElement/Text/TextGUID='13659']">
+  </ModOp>
+  <!-- hide normal cycle speed -->
+  <ModOp Type="replace"
+    Path="//InfoTipData[Guid='25000020']//InfoElement[Value/Text='[StaticData Factory CycleTimeRespectElectricity([RefGuid]) &gt;&gt; time]']/VisibilityElement">
+    <VisibilityElement>
+      <ElementType>
+        <ElementType>1</ElementType>
+      </ElementType>
+      <CompareOperator>
+        <CompareOperator>1</CompareOperator>
+      </CompareOperator>
+      <ResultType>
+        <ResultType>1</ResultType>
+      </ResultType>
+      <ExpectedValueInt>1500011683</ExpectedValueInt>
+      <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
+    </VisibilityElement>
+  </ModOp>
+  <!-- show double speed -->
+  <ModOp Type="addNextSibling"
+    Path="//InfoTipData[Guid='25000020']//InfoElement/InfoElement[Value/Text='[StaticData Factory CycleTimeRespectElectricity([RefGuid]) &gt;&gt; time]']">
     <InfoElement>
-      <ElementType>8</ElementType>
-      <ChildCount>1</ChildCount>
+      <ElementType>4</ElementType>
       <VisibilityElement>
         <ElementType>
           <ElementType>1</ElementType>
@@ -45,153 +91,35 @@
         <ResultType>
           <ResultType>1</ResultType>
         </ResultType>
-        <ExpectedValueInt>1500011674</ExpectedValueInt>
+        <ExpectedValueInt>1500011683</ExpectedValueInt>
         <Condition>[ToolOneHelper InfoDescription([RefGuid]) Guid]</Condition>
       </VisibilityElement>
-      <InfoElement>
-        <ElementType>8</ElementType>
-        <ChildCount>3</ChildCount>
-        <InfoElement>
-          <ElementType>4</ElementType>
-          <ChildCount>1</ChildCount>
-          <VisibilityElement>
-            <ElementType>
-              <ElementType>2</ElementType>
-            </ElementType>
-            <ChildCount>2</ChildCount>
-            <VisibilityElement>
-              <ElementType>
-                <ElementType>1</ElementType>
-              </ElementType>
-              <CompareOperator />
-              <ResultType>
-                <ResultType>1</ResultType>
-              </ResultType>
-              <ExpectedValueInt>1500011613</ExpectedValueInt>
-              <Condition>[RefGuid]</Condition>
-            </VisibilityElement>
-            <VisibilityElement>
-              <ElementType>
-                <ElementType>1</ElementType>
-              </ElementType>
-              <CompareOperator />
-              <ResultType>
-                <ResultType>1</ResultType>
-              </ResultType>
-              <ExpectedValueInt>1500011632</ExpectedValueInt>
-              <Condition>[RefGuid]</Condition>
-            </VisibilityElement>
-            <VisibilityElement>
-              <ElementType>
-                <ElementType>1</ElementType>
-              </ElementType>
-              <CompareOperator />
-              <ResultType>
-                <ResultType>1</ResultType>
-              </ResultType>
-              <ExpectedValueInt>1500011652</ExpectedValueInt>
-              <Condition>[RefGuid]</Condition>
-            </VisibilityElement>
-            <OperatorType>
-              <OperatorType>1</OperatorType>
-            </OperatorType>
-          </VisibilityElement>
-          <Icon>
-            <IconText>[AssetData(2321) Icon]</IconText>
-            <Style />
-          </Icon>
-          <Text>
-            <TextGUID>2321</TextGUID>
-            <Style />
-          </Text>
-          <Value>
-            <Text>-5</Text>
-            <Style />
-          </Value>
-          <WarningType />
-          <BackgroundType />
-        </InfoElement>
-        <InfoElement>
-          <ElementType>8</ElementType>
-          <ChildCount>1</ChildCount>
-          <VisibilityElement>
-          <ElementType>
-            <ElementType>2</ElementType>
-          </ElementType>
-          <ChildCount>2</ChildCount>
-          <VisibilityElement>
-            <ElementType>
-              <ElementType>1</ElementType>
-            </ElementType>
-            <CompareOperator>
-              <CompareOperator>4</CompareOperator>
-            </CompareOperator>
-            <ResultType>
-              <ResultType>1</ResultType>
-            </ResultType>
-            <ExpectedValueInt>1500010850</ExpectedValueInt>
-            <Condition>[RefGuid]</Condition>
-          </VisibilityElement>
-          <VisibilityElement>
-            <ElementType>
-              <ElementType>1</ElementType>
-            </ElementType>
-            <CompareOperator>
-              <CompareOperator>3</CompareOperator>
-            </CompareOperator>
-            <ResultType>
-              <ResultType>1</ResultType>
-            </ResultType>
-            <ExpectedValueInt>1500010862</ExpectedValueInt>
-            <Condition>[RefGuid]</Condition>
-          </VisibilityElement>
-          <OperatorType />
-        </VisibilityElement>
-          <InfoElement>
-            <ElementType>4</ElementType>
-            <ChildCount>1</ChildCount>
-            <Icon>
-              <IconText>[AssetData(2321) Icon]</IconText>
-              <Style />
-            </Icon>
-            <Text>
-              <TextGUID>2321</TextGUID>
-              <Style />
-            </Text>
-            <Value>
-              <Text>-25</Text>
-              <Style />
-            </Value>
-            <WarningType />
-            <BackgroundType />
-          </InfoElement>
-          <InfoElement>
-            <ElementType>4</ElementType>
-            <ChildCount>1</ChildCount>
-            <Icon>
-              <IconText>[AssetData(500452) Icon]</IconText>
-              <Style />
-            </Icon>
-            <Text>
-              <TextGUID>1500011675</TextGUID>
-              <Style />
-            </Text>
-            <Value>
-              <Text>33%</Text>
-              <Style />
-            </Value>
-            <WarningType />
-            <BackgroundType />
-          </InfoElement>
-        </InfoElement>
-        <InfoElement>
-          <ElementType>6</ElementType>
-          <ChildCount>1</ChildCount>
-          <Text />
-          <WarningType />
-          <BackgroundType />
-        </InfoElement>
-      </InfoElement>
+      <Icon>
+        <IconText>[AssetData(1500011684) Icon]</IconText>
+        <Style />
+      </Icon>
+      <Text>
+        <TextGUID>1500011684</TextGUID>
+        <Style />
+      </Text>
+      <Value>
+        <Text>[StaticData Factory CycleTimeRespectElectricity([RefGuid]) &gt;&gt; time]</Text>
+        <Style />
+      </Value>
+      <WarningType />
+      <BackgroundType />
     </InfoElement>
-  </ModOp> -->
+  </ModOp>
+
+  <!-- Remove Attractiveness, Influence header and border -->
+  <Group>
+    <ModOp Type="addPrevSibling"
+      Path="//InfoTipData[Guid='25000020']//InfoElement[(Text/TextGUID='11971' and not(Icon)) or (ElementType='6' and ../InfoElement[Text/TextGUID='11971' and not(Icon)])]">
+      <DeleteMe />
+    </ModOp>
+  </Group>
+
+  <ModOp Type="remove"
+    Path="//DeleteMe | //DeleteMe/following-sibling::InfoElement[1]">
+  </ModOp>
 </ModOps>
