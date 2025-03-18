@@ -156,6 +156,17 @@ Smaller **power plants** and additional energy options.
 
 ## Changes
 
+### 4.4
+
+- Split consumables construction menu into food provisions and other supplies. Please report if you have issues.
+- Merge Engineers and Investors when 3 mod tabs are active
+- Remove duplicate entries in merged tabs if they were in both tiers
+- Added food and drink venues group to tourists and services construction menu tabs
+- Rebalanced Expedition values
+- Improved industrial complex construction InfoTips
+- Fixed Pescatarian skin icon
+
+
 ### 4.3
 
 - 4.3.1: Fixed stage banners

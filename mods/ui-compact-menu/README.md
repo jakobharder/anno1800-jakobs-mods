@@ -7,6 +7,11 @@ Reduce construction menu scrolling with better grouping of entries.
 - Consumables tab is split into Farmer to Investor and Scholar, Tourist and Skyscraper tab
 - Culture tab is merged into City and Public Services tab
 
+The mod merges tabs until there are only 7 left to make room for mod tabs:
+- Tourists + Scholars
+- Farmers + Workers
+- Engineers + Investors
+
 ## Groups
 
 ### Citys Tab Groups
@@ -82,6 +87,7 @@ Tag | Category | Region | Comment
 `CompactMall` | Services | OW
 `CompactEntertainment` | Services | OW
 `CompactVenue` | Food & Drink Venues | OW
+`CompactFood` | Consumables | OW, NW | move out to Provisions tab
 
 #### Handle Own Groups
 
