@@ -158,14 +158,20 @@ Smaller **power plants** and additional energy options.
 
 ### 4.4
 
+#### Gameplay
+
+- Rebalanced Expedition values to better fit vanilla difficulty
+
+#### UI
+
+- Fixed Tea issues with Noblesse Obligue
 - Split consumables construction menu into food provisions and other supplies. Please report if you have issues.
 - Merge Engineers and Investors when 3 mod tabs are active
 - Remove duplicate entries in merged tabs if they were in both tiers
 - Added food and drink venues group to tourists and services construction menu tabs
-- Rebalanced Expedition values
+- Improved Compact Menu grouping with Military Attention
 - Improved industrial complex construction InfoTips
 - Fixed Pescatarian skin icon
-
 
 ### 4.3
 
