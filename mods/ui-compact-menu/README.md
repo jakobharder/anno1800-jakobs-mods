@@ -88,6 +88,8 @@ Tag | Category | Region | Comment
 `CompactEntertainment` | Services | OW
 `CompactVenue` | Food & Drink Venues | OW
 `CompactFood` | Consumables | OW, NW | move out to Provisions tab
+`CompactPost` | Services | OW
+`CompactWarehouse` | City | OW
 
 #### Handle Own Groups
 
@@ -159,17 +161,6 @@ Merge Consumable building into Tourist, Skyscraper, Scholar tab:
   </BuildingList>
 </ConstructionCategory>
 ```
-
-## Changes
-
-### 2.5
-
-- Added food and drink venues to tourists and services tabs
-
-### 2.4
-
-- Merge some construction menu tabs when there's not enough space
-- A few adjustments to improve groups for e.g. `Downtown`, `Large Fishery`
 
 ## Credits
 

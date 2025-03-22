@@ -613,42 +613,77 @@
             <IconFilename>data/ui/jakob/icon_harbor_defence.png</IconFilename>
           </Standard>
           <ConstructionCategory>
-            <BuildingList>
-              <Item>
-                <Building>1010522</Building>
-              </Item>
-              <Item>
-                <Building>1010523</Building>
-              </Item>
-              <Item>
-                <Building>736</Building>
-              </Item>
-              <Item>
-                <Building>625</Building>
-              </Item>
-              <Item>
-                <Building>3700</Building>
-              </Item>
-              <Item>
-                <Building>1010524</Building>
-              </Item>
-            </BuildingList>
+            <BuildingList />
             <CategoryDescription>1500011541</CategoryDescription>
           </ConstructionCategory>
           <Locked />
         </Values>
       </Asset>
     </ModOp>
-    <ModOp Type="addNextSibling" GUID="500111" Path="/Values/ConstructionCategory/BuildingList/Item[Building='100519']">
+
+    <ModOp Type="addNextSibling" GUID="500111" Path="/Values/ConstructionCategory/BuildingList/Item[Building='100519' or position()=last()][1]">
       <Item>
         <Building>1500011120</Building>
       </Item>
     </ModOp>
-    <ModOp Type="add" GUID="500111" Path="/Values/ConstructionCategory/BuildingList">
-      <Item>
-        <Building>0</Building>
-      </Item>
+
+    <ModOp Type="add" GUID="500111"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010522' or Building='1010523' or Building='736' or Building='625' or Building='3700' or Building='1010524']">
+      <CompactDefense />
     </ModOp>
-    <ModOp Type="remove" GUID="500111" Path="/Values/ConstructionCategory/BuildingList/Item[Building='0' or Building='1010522' or Building='1010523' or Building='736' or Building='625' or Building='3700' or Building='1010524']" />
+    <ModOp Type="add" GUID="1500011120"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500111/ConstructionCategory/BuildingList/Item[CompactDefense]">
+    </ModOp>
+    <ModOp Type="remove" GUID="1500011120"
+      Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+      Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+  </Group>
+
+  <!-- # Warehouse -->
+  <Group>
+    <ModOp Type="addNextSibling" GUID="500094">
+      <Asset>
+        <Template>ConstructionCategory</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011686</GUID>
+            <Name>OW Warehouse Menu</Name>
+            <IconFilename>data/ui/2kimages/main/3dicons/icon_warehouse.png</IconFilename>
+          </Standard>
+          <Text>
+            <TextOverride>132524</TextOverride>
+          </Text>
+          <ConstructionCategory>
+            <BuildingList />
+            <CategoryDescription>1500011541</CategoryDescription>
+          </ConstructionCategory>
+          <Locked />
+        </Values>
+      </Asset>
+    </ModOp>
+    <ModOp Type="add" GUID="500092"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010371']">
+      <CompactWarehouse />
+    </ModOp>
+
+    <ModOp Type="add" GUID="1500011686"
+      Path="/Values/ConstructionCategory/BuildingList"
+      Content="@500092/ConstructionCategory/BuildingList/Item[CompactWarehouse]">
+    </ModOp>
+    <!-- only swap if there's more than one entry in the group -->
+    <Group Condition="@1500011686/ConstructionCategory/BuildingList/Item[2]">
+      <ModOp Type="addNextSibling" GUID="500092"
+        Path="/Values/ConstructionCategory/BuildingList/Item[Building='1010371' or position()=last()][1]">
+        <Item>
+          <Building>1500011686</Building>
+        </Item>
+      </ModOp>
+      <ModOp Type="remove" GUID="1500011686"
+        Condition="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']"
+        Path="/Values/ConstructionCategory/BuildingList/Item/PlatformVisibility[text()='Console']" />
+      <ModOp Type="remove" GUID="500092"
+        Path="/Values/ConstructionCategory/BuildingList/Item[CompactWarehouse]" />
+    </Group>
   </Group>
 </ModOps>

@@ -19,6 +19,9 @@
     <!-- OW Public -->
     <ModOp Type="remove" GUID="500094"
       Path="/Values/ConstructionCategory/BuildingList/Item[CompactEducation or CompactReligion or CompactCulture or CompactMall or CompactVenue or CompactHide]" />
+    <!-- OW Harbor -->
+    <ModOp Type="remove" GUID="500111"
+      Path="/Values/ConstructionCategory/BuildingList/Item[CompactDefense or CompactHide]" />
     <!-- OW Workers -->
     <ModOp Type="remove" GUID="25000190"
       Condition="/Values/ConstructionCategory/BuildingList/Item[CompactHide]"

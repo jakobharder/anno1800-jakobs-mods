@@ -76,6 +76,8 @@
         <Building>137602</Building>
       </Item>
     </ModOp>
-    <ModOp Type="remove" GUID="500945" Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602']" />
+    <ModOp Type="remove" GUID="500945"
+      Condition="/Values/ConstructionCategory/BuildingList/Item[Building='137602']"
+      Path="/Values/ConstructionCategory/BuildingList/Item[Building='137602']" />
   </Group>
 </ModOps>
