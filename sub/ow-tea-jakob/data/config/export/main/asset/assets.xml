@@ -822,6 +822,9 @@
             <Item>
               <Asset>1500302201</Asset><!-- Kurila's Herb Garden -->
             </Item>
+            <Item>
+              <Asset>1500011687</Asset>
+            </Item>
           </AssetList>
         </AssetPool>
       </Values>
@@ -830,7 +833,8 @@
       <Template>FeatureUnlock</Template>
       <Values>
         <Standard>
-        <GUID>1500011601</GUID>
+          <GUID>1500011688</GUID>
+          <!-- <GUID>1500011601</GUID> -->
           <!-- <GUID>1500011444</GUID> -->
           <!-- <GUID>1500011285</GUID> -->
           <Name>@ 900 Artisans</Name>
@@ -991,17 +995,44 @@
           <Locked />
         </Values>
       </Asset>
+      <Asset>
+        <Template>ProductionChain</Template>
+        <Values>
+          <Standard>
+            <GUID>1500011687</GUID>
+            <Name>Tea NO</Name>
+            <IconFilename>data/ui/jakob/icon_tea2.png</IconFilename>
+            <InfoDescription>1500011513</InfoDescription>
+          </Standard>
+          <Text>
+            <TextOverride>1500010959</TextOverride>
+          </Text>
+          <ProductionChain>
+            <Building>1500011443</Building>
+            <Tier1>
+              <Item>
+                <Building>1500011160</Building>
+              </Item>
+              <Item>
+                <Building>1500010848</Building>
+              </Item>
+            </Tier1>
+          </ProductionChain>
+          <Locked />
+        </Values>
+      </Asset>
     </ModOp>
     <ModOp Type="addNextSibling" GUID="500945"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='500902']">
       <Item>
-        <Building>1500010959</Building>
+        <Building>1500011687</Building>
+        <CompactFood />
       </Item>
     </ModOp>
     <ModOp Type="addNextSibling" GUID="25000191"
       Path="/Values/ConstructionCategory/BuildingList/Item[Worker or Artisan&lt;=900][last()]">
       <Item>
-        <Building>1500010959</Building>
+        <Building>1500011687</Building>
         <Artisan>900</Artisan>
       </Item>
     </ModOp>
@@ -1011,7 +1042,7 @@
     <ModOp Type="addNextSibling" GUID="500111"
       Path="/Values/ConstructionCategory/BuildingList/Item[Building='7291']">
       <Item>
-        <Building>1500010959</Building>
+        <Building>1500011687</Building>
       </Item>
     </ModOp>
   </Group>
