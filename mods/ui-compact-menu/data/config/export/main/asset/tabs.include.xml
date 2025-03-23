@@ -29,14 +29,14 @@
     </ModOp>
   </Group>
 
-  <!-- # NW Cultuture into City and Public Services -->
+  <!-- # NW Culture into City and Public Services -->
   <Group>
     <ModOp Type="add" GUID="500138"
       Path="/Values/ConstructionCategory/BuildingList"
       Content="@500150/ConstructionCategory/BuildingList/Item[not(Building='102284')]">
     </ModOp>
     <ModOp Type="remove" GUID="25000035"
-      Path="/Values/ConstructionMenu/RegionMenu/Colony01/CategoryMode/BuildingCategory/Categories/Item[Category='500138']" />
+      Path="/Values/ConstructionMenu/RegionMenu/Colony01/CategoryMode/BuildingCategory/Categories/Item[Category='500150']" />
     <!-- Public Services -> Services -->
     <ModOp Type="merge" GUID="500094,500138"
       Path="/Values">

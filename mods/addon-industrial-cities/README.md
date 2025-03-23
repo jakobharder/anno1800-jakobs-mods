@@ -164,6 +164,7 @@ Smaller **power plants** and additional energy options.
 
 #### UI
 
+- 4.4.1: Fixed NW Services Tab
 - Fixed Tea issues with Noblesse Obligue
 - Split consumables construction menu into food provisions and other supplies. Please report if you have issues.
 - Merge Engineers and Investors when 3 mod tabs are active

@@ -83,6 +83,7 @@
     <!-- OW Tea -->
     <Group Condition="#ow-tea-jakob">
       <ModOp Type="add" GUID="500945"
+        Condition="!/Values/ConstructionCategory/BuildingList[not(Item/Building='1500010959')]"
         Path="/Values/ConstructionCategory/BuildingList/Item[Building='1500010959']">
         <CompactFood />
       </ModOp>
