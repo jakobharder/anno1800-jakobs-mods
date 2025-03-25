@@ -1,8 +1,9 @@
 ![](./banner.jpg)
 
-Terraced houses, industrialized productions and .
-
 Give your cities a 19th/20th century industrialization vibe and increase population and production densitity.
+
+All features are additional and balanced in difficulty - like DLCs.
+No gameplay changes are done to the game.
 
 ## DLC Requirements
 
