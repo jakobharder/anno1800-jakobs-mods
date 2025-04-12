@@ -159,12 +159,14 @@ Smaller **power plants** and additional energy options.
 
 ### 4.4
 
-#### Gameplay
+#### General
 
+- 4.4.2: Fixed Docklands Gate blocker
 - Rebalanced Expedition values to better fit vanilla difficulty
 
 #### UI
 
+- 4.4.2: Fixed Investors tab merging when "More Construction Menu Tabs" is active
 - 4.4.1: Fixed NW Services Tab
 - Fixed Tea issues with Noblesse Obligue
 - Split consumables construction menu into food provisions and other supplies. Please report if you have issues.
@@ -203,64 +205,6 @@ Smaller **power plants** and additional energy options.
 - Fixed Distillery and Malthouse missing in boost menu
 - Alternative Needs are now listed last in Lifestyle Needs.
   Recommend to use the Marketplace to activate in InfoTips.
-
-### 4.1
-
-- 4.1.1: Removed storage info for services in needs InfoTip
-- Re-organized construction menu
-- Removed residence construction menu entries.
-  Use mod `Instant Residences` if you still want them.
-
-### 4.0
-
-- 4.0.8: Updated Russian translations thanks to DATM
-- 4.0.8: Hide flax clothes when used with `Production Works`
-- 4.0.8: Minor improvements
-
-#### Impact on Existing Saves
-
-- Please check if you used `Pescatarians`
-  - Olive Soap, Pickled Vegetables are replaced by Soap and Seafood Stew.
-    Check your trade routes.
-  - Pescatarians needs changed.
-    Check your consumption statistics.
-- Good to know
-  - Changed production chains are only applicable when you build new factories.
-  - New fertilities only in new games.
-    Farms get a fertility buff in existing save games.
-
-#### Major Changes
-
-- Integrated mods
-  - `Pescatarians` as upgrade option for farmers
-  - `Alternative Needs`
-- More complex productions
-  - Tea additionally uses Herbs as input
-  - Olive Soap and Sardine Factories use Olive Oil instead of Olives
-  - Linen Mills (Suits) use Hemp and Flax
-  - Fish Canneries use Olive Oil instead of Olives
-  - (Pescatarian) Kitchen additionally uses Calamari and Potatoes as input
-- Product changes
-  - Olive Soap factory now produces normal Soap
-  - Kitchen now produces Seafood Stea instead of Pickled Vegetables
-- Balancing
-  - Tea docks and factories have reduced maintenance
-  - Pescatarian residences house 50% farmer, 25% worker and 25% artisan workforce.
-    Exact numbers are now visible in the workforce InfoTip.
-  - Increased speed people move into Pescatarian and Terraced Houses
-
-#### New Content
-
-- Modular factories
-  - Sausage complex with sausage factory
-  - Bread complex with bakery and flour mill
-  - Beer complex with brewery and malthouse
-- Productions
-  - Ropes as luxury need for Pescatarians
-  - Clothes from flax as alternative to wool-based worker clothes
-- Fertilities (only new saves)
-  - Herbs, Olives, Hemp and Vegetables
-- New construction menu tab for alternative productions
 
 ## Credits
 
