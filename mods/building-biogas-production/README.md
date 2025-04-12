@@ -39,6 +39,8 @@ All buildings unlock with 500 engineers.
 
 ### 1.7
 
+- 1.7.4: Fixed production cycle of the biogas plant and power plant.
+  They should have been half the speed of the normal gas power plant.
 - 1.7.3: Fixed income category of NW biogas plant
 - 1.7.2: Fixed crash when selecting the gas plant while it tries to unload at a fuel station
 - 1.7.2: Improved InfoTips (wrong warehouse warning, ...)
