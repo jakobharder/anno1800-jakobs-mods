@@ -161,11 +161,14 @@ Smaller **power plants** and additional energy options.
 
 #### General
 
-- 4.4.2: Fixed Docklands Gate blocker
+- 4.4.3: Fixed Docklands Gate blocker
+- 4.4.3: Fixed small gas power plant production cycle
+- 4.4.3: Fixed milk cattle farm workforce
 - Rebalanced Expedition values to better fit vanilla difficulty
 
 #### UI
 
+- 4.4.3: Fixed InfoTip compatibility issue with Kurila's mods
 - 4.4.2: Fixed Investors tab merging when "More Construction Menu Tabs" is active
 - 4.4.1: Fixed NW Services Tab
 - Fixed Tea issues with Noblesse Obligue
