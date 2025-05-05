@@ -161,9 +161,9 @@ Smaller **power plants** and additional energy options.
 
 #### General
 
+- 4.4.4: Fixed dairy cattle farm workforce. You need to rebuild the pastures or the whole farm.
 - 4.4.3: Fixed Docklands Gate blocker
 - 4.4.3: Fixed small gas power plant production cycle
-- 4.4.3: Fixed milk cattle farm workforce
 - Rebalanced Expedition values to better fit vanilla difficulty
 
 #### UI
